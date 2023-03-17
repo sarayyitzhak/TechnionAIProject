@@ -2,19 +2,18 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from Server.DataBuilder.Utils import write_to_file
 import time
+import re
+import math
 
-SCROLL_JUMPING = 2000
-SLEEP_TIME = 2
+SLEEP_TIME = 1
 
 
-def scroll_to_end(driver):
-    old_scroll_value = -1
-    scroll_value = driver.execute_script("return window.pageYOffset;")
-    while old_scroll_value != scroll_value:
-        driver.execute_script("window.scrollBy(0, " + str(SCROLL_JUMPING) + ");")
-        time.sleep(SLEEP_TIME)
-        old_scroll_value = scroll_value
-        scroll_value = driver.execute_script("return window.pageYOffset;")
+def get_num_of_pages(driver):
+    driver.get('https://www.rest.co.il/restaurants/haifa/')
+    time.sleep(1)
+    restaurant_info = driver.find_element(By.CLASS_NAME, 'restaurant-info-top')
+    rest_num = int(re.sub(",", "", restaurant_info.text.split(" ")[1]))
+    return math.ceil(rest_num / 15)
 
 
 def get_data(driver):
@@ -45,9 +44,13 @@ def get_data(driver):
 
 def rest_build_data():
     driver = webdriver.Chrome(executable_path='chromedriver')
-    driver.get('https://www.rest.co.il/restaurants/haifa/')
 
-    scroll_to_end(driver)
-    write_to_file(get_data(driver), "../Dataset/rest-data.json")
+    res = []
+    for i in range(get_num_of_pages(driver)):
+        driver.get('https://www.rest.co.il/restaurants/haifa/page-' + str(i + 1) + "/")
+        time.sleep(SLEEP_TIME)
+        res += get_data(driver)
+
+    write_to_file(res, "./Dataset/rest-data.json")
 
     driver.quit()

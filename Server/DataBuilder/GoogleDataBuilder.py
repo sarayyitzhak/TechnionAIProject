@@ -39,4 +39,4 @@ def google_build_data():
     if key is None:
         print("ERROR")
     else:
-        write_to_file(get_raw_data(key), "../Dataset/google-data.json")
+        write_to_file(get_raw_data(key), "./Dataset/google-data.json")
