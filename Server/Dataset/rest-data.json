@@ -1,0 +1,5390 @@
+[
+    {
+        "name": "סאן רמו - מטבח איטלקי - SanRemo",
+        "type": "מסעדה איטלקית",
+        "kosher": false,
+        "address": "שער פלמר 1, חיפה"
+    },
+    {
+        "name": "בי פי מפרץ חיפה - BP Kosher Bistro",
+        "type": "מסעדת בשרים, שף",
+        "kosher": true,
+        "address": "שד' ההסתדרות 157, חיפה"
+    },
+    {
+        "name": "בי פי מרכז חורב - BP Kosher Bistro",
+        "type": "ביסטרו",
+        "kosher": true,
+        "address": "חורב 15, מרכז חורב, חיפה"
+    },
+    {
+        "name": "אקליפס",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "קדושי בגדד 30, חיפה"
+    },
+    {
+        "name": "מצה",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "פיתה מונטנה",
+        "type": "מסעדת בשרים",
+        "kosher": true,
+        "address": "אירוס 1, קרית ים"
+    },
+    {
+        "name": "יאן-יאן - yan-yan",
+        "type": "מסעדה סינית",
+        "kosher": false,
+        "address": "דרך יפו 26, חיפה"
+    },
+    {
+        "name": "איזבלה",
+        "type": "מסעדה איטלקית",
+        "kosher": false,
+        "address": "מחניים 8, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "סטקיית הבוקרים - STEAK HOUSE",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "קדושי יאסי 1, חיפה"
+    },
+    {
+        "name": "פרנג'ליקו - Frangelico",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "שד' בן גוריון 22, המושבה הגרמנית, חיפה"
+    },
+    {
+        "name": "לנדוור גראנד",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "דרך שמחה גולן 54, גרנד קניון חיפה"
+    },
+    {
+        "name": "דוזאן",
+        "type": "מסעדה ים תיכונית",
+        "kosher": false,
+        "address": "שד' בן גוריון 35, המושבה הגרמנית, חיפה"
+    },
+    {
+        "name": "ג'ירף חיפה",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "שד' הנשיא 131, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "קפה לנדוור מרכז הכרמל חיפה - landwer cafe",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' הנשיא 134, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "רפאלו, קניון קסטרא, חיפה - Raffaello",
+        "type": "מסעדה איטלקית",
+        "kosher": false,
+        "address": "פלימן משה 8, קניון קסטרא, חיפה"
+    },
+    {
+        "name": "באסל בורגר BASEL BURGER",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "קולוני גריל-מסעדת קצבים",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "דרך אלנבי 56, חיפה"
+    },
+    {
+        "name": "Ewar",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "דוד אלעזר 10, חיפה"
+    },
+    {
+        "name": "ראסיף 33 - RASEEF 33",
+        "type": "ביסטרו",
+        "kosher": false,
+        "address": "דרך העצמאות 33, נמל חיפה"
+    },
+    {
+        "name": "חאלד עדוי",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "רב אלוף דורי יעקב 20, חיפה"
+    },
+    {
+        "name": "בית הסטייק",
+        "type": "מסעדת בשרים",
+        "kosher": true,
+        "address": "התעשיה 17, נשר"
+    },
+    {
+        "name": "מסעדה רומנית-קפה גלידה \"יונק\"",
+        "type": "מסעדה רומנית",
+        "kosher": false,
+        "address": "קיבוץ גלויות 23, חיפה"
+    },
+    {
+        "name": "שאלתי אלי",
+        "type": "מסעדת בשרים",
+        "kosher": true,
+        "address": "יוחאי בן נון 6, חיפה"
+    },
+    {
+        "name": "wok street",
+        "type": "מסעדה אסייאתית",
+        "kosher": true,
+        "address": "שד' הנשיא 129, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "del mar",
+        "type": "מסעדת דגים, שף",
+        "kosher": false,
+        "address": "יפה נוף 99, חיפה"
+    },
+    {
+        "name": "גולדן קורל - Golden Coral",
+        "type": "מסעדה ים תיכונית",
+        "kosher": false,
+        "address": "דרך סטלה מריס 130, חיפה"
+    },
+    {
+        "name": "הקונדיטוריה של גל - Gal's BaKery",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "שד' הנשיא 131, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "קפה גרג חוצות המפרץ",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "החרושת 8, צומת וולקן, חיפה"
+    },
+    {
+        "name": "צאנג' בה",
+        "type": "מסעדה תאילנדית",
+        "kosher": false,
+        "address": "הנמל 23, נמל חיפה"
+    },
+    {
+        "name": "מסעדת שטרודל - Shtroudl",
+        "type": "מסעדה ים תיכונית",
+        "kosher": false,
+        "address": "שד' בן גוריון 39, המושבה הגרמנית, חיפה"
+    },
+    {
+        "name": "מאמא מיה",
+        "type": "מסעדה איטלקית",
+        "kosher": false,
+        "address": "שד' ההסתדרות 279, קריית חיים, חיפה"
+    },
+    {
+        "name": "בולס - BULLS",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "אח\"י אילת 60, קריית חיים, חיפה"
+    },
+    {
+        "name": "לוקס - LUX",
+        "type": "מסעדה ים תיכונית, שף",
+        "kosher": false,
+        "address": "הנמל 13, נמל חיפה"
+    },
+    {
+        "name": "נג'מה - najma",
+        "type": "מסעדה צרפתית",
+        "kosher": false,
+        "address": "העליה השניה 96, חיפה"
+    },
+    {
+        "name": "רפאלו ביג קריות - Raffaello",
+        "type": "מסעדה איטלקית",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "שרימפס האוס - Shrimps House",
+        "type": "מסעדת דגים",
+        "kosher": false,
+        "address": "שד' ההגנה 105, חיפה"
+    },
+    {
+        "name": "ביגה חיפה - BiGA",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "אח\"י אילת 15, קריית חיים, חיפה"
+    },
+    {
+        "name": "חומוס ברדיצ'ב",
+        "type": "חומוסייה",
+        "kosher": true,
+        "address": "וודג'ווד 1, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "פטוש",
+        "type": "מסעדה ים תיכונית",
+        "kosher": false,
+        "address": "שד' בן גוריון 38, המושבה הגרמנית, חיפה"
+    },
+    {
+        "name": "רק בשר",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "שד' בן גוריון 59, חיפה"
+    },
+    {
+        "name": "בורגר סאלון חיפה - Burger Saloon",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "דרך פיק\"א 69, חיפה"
+    },
+    {
+        "name": "ביגה - BIGA",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "חיפה"
+    },
+    {
+        "name": "בית הפנקייק המקורי חיפה",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "אח\"י אילת 60, חיפה"
+    },
+    {
+        "name": "מסעדת שהרזאד 37",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' בן גוריון 37, חיפה"
+    },
+    {
+        "name": "אווזי חיפה",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "החרושת 26, צומת וולקן, חיפה"
+    },
+    {
+        "name": "מיט מאסטר",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "חלוצי התעשייה 6, חיפה"
+    },
+    {
+        "name": "mtokim",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "המטבח של רחל",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "המלך שלמה 29, חיפה"
+    },
+    {
+        "name": "פאני פיצה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "החלוץ 38, חיפה"
+    },
+    {
+        "name": "סינקופה בר - Syncopa Bar",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "כיאט 5, חיפה"
+    },
+    {
+        "name": "caffe nuna קפה נונה",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "חיפה"
+    },
+    {
+        "name": "סינטה בר חיפה",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "MYFISH MARKET",
+        "type": "מסעדת דגים",
+        "kosher": false,
+        "address": "הנביאים, חיפה"
+    },
+    {
+        "name": "בורגראנץ'",
+        "type": "מסעדת המבורגרים",
+        "kosher": true,
+        "address": "חיפה"
+    },
+    {
+        "name": "פיצה אמאזונס",
+        "type": "פיצריות",
+        "kosher": true,
+        "address": "גדליהו 6, חיפה"
+    },
+    {
+        "name": "Ink’d pub",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "קהילת סלוניקי 2, חיפה"
+    },
+    {
+        "name": "ג'אפן ג'אפן - JAPAN JAPAN",
+        "type": "מסעדה אסייאתית",
+        "kosher": true,
+        "address": "שד' ההסתדרות 271, קריית חיים, חיפה"
+    },
+    {
+        "name": "גארדן - garden",
+        "type": "מסעדה ים תיכונית",
+        "kosher": false,
+        "address": "שד' בן גוריון 43, המושבה הגרמנית, חיפה"
+    },
+    {
+        "name": "סאנסט בר",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "חלוצי התעשייה 79, חיפה"
+    },
+    {
+        "name": "קליל- טעים טרי בריא",
+        "type": "בר סלט",
+        "kosher": true,
+        "address": "בעלי מלאכה 26, חיפה"
+    },
+    {
+        "name": "הבאר",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "הדגן 8, חיפה"
+    },
+    {
+        "name": "לנצ'ס",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "הנמל 32, נמל חיפה"
+    },
+    {
+        "name": "מימינו",
+        "type": "מסעדה גרוזינית",
+        "kosher": false,
+        "address": "המשטרה 5, חיפה"
+    },
+    {
+        "name": "ליאון את יוז'י",
+        "type": "מסעדה רומנית",
+        "kosher": false,
+        "address": "הנביאים 31, חיפה"
+    },
+    {
+        "name": "מנדרין",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "טאטאמי",
+        "type": "מסעדה אסייאתית",
+        "kosher": true,
+        "address": "קדושי יאסי 1, חיפה"
+    },
+    {
+        "name": "מעיין הבירה",
+        "type": "מסעדה מזרח אירופאית",
+        "kosher": false,
+        "address": "נתנזון 4, חיפה"
+    },
+    {
+        "name": "מאסה - masa",
+        "type": "מסעדת בשרים, שף",
+        "kosher": false,
+        "address": "שד' מוריה 29, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "קפה קפה טכניון חיפה - cafe cafe",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "שכ' קרית הטכניון, חיפה"
+    },
+    {
+        "name": "שווארמה בילי",
+        "type": "אוכל רחוב",
+        "kosher": false,
+        "address": "שד' הנשיא 130, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "בית המאפה של אמא",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "קיבוץ גלויות 118, חיפה"
+    },
+    {
+        "name": "פיינה זאכן",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "כיסונים ורביולי",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "אורן 25, חיפה"
+    },
+    {
+        "name": "פלאפל אריק",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "הרצל 29, חיפה"
+    },
+    {
+        "name": "ארומה - אספרסו בר",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' בן גוריון 8, קניון סיטי סנטר, חיפה"
+    },
+    {
+        "name": "קונדיטורית טיבי",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": true,
+        "address": "שד' הנשיא 35, חיפה"
+    },
+    {
+        "name": "הבסטה של בנסי",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "אבו מרון",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "קדושי יאסי 2, חיפה"
+    },
+    {
+        "name": "מירון בית מאפה חיפה",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": true,
+        "address": "דרך הים 2, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "פיצה וינו וינו",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "שד' הציונות 31, חיפה"
+    },
+    {
+        "name": "עיזה בר - iza bar",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "משה אהרון 1, חיפה"
+    },
+    {
+        "name": "פלאפל הנשיא",
+        "type": "אוכל רחוב",
+        "kosher": true,
+        "address": "שד' הנשיא 135, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "בורגרים - Burgerim",
+        "type": "מסעדת המבורגרים",
+        "kosher": true,
+        "address": "אלמוג 20, חיפה"
+    },
+    {
+        "name": "צ'יצ'ו בר אוכל מרוקאי,נווה שאנן",
+        "type": "מסעדה מרוקאית",
+        "kosher": true,
+        "address": "שד' טרומפלדור 56, חיפה"
+    },
+    {
+        "name": "צ'י'צ'ו לחם קציצות רוטב",
+        "type": "סנדוויץ' בר",
+        "kosher": false,
+        "address": "נתנזון 6, חיפה"
+    },
+    {
+        "name": "יעקב קבב בת גלים",
+        "type": "מסעדת בשרים",
+        "kosher": true,
+        "address": "העליה השניה 20, בת גלים, חיפה"
+    },
+    {
+        "name": "פיצה פדאל חיפה קרית אליעזר",
+        "type": "פיצריות",
+        "kosher": true,
+        "address": "ככר מאירהוף 3, חיפה"
+    },
+    {
+        "name": "בליקר בייקרי - Bleecker Bakery",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "אלברט איינשטיין 139, חיפה"
+    },
+    {
+        "name": "דומינו'ס פיצה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "שד' מוריה 108, חיפה"
+    },
+    {
+        "name": "וגהבונד - vegabond",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "ניצנים 14, חיפה"
+    },
+    {
+        "name": "Furman's נווה שאנן",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "הגליל 100, חיפה"
+    },
+    {
+        "name": "מרכוס ובניו",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": true,
+        "address": "החלוץ 49, חיפה"
+    },
+    {
+        "name": "ששון-הבר באחוזה",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "חורב 10, חיפה"
+    },
+    {
+        "name": "ב. ביירות b beirut",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "דרך העצמאות 140, חיפה"
+    },
+    {
+        "name": "אמיליה - Emilia",
+        "type": "מסעדה איטלקית",
+        "kosher": false,
+        "address": "שד' מוריה 120, חיפה"
+    },
+    {
+        "name": "שווארמה בילי",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "שד' המגינים 5, חיפה"
+    },
+    {
+        "name": "הבית המתוק",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "נחמיה 17, חיפה"
+    },
+    {
+        "name": "רולדין - ROLADIN",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": true,
+        "address": "העליה השניה 8, קריה רפואית רמב\"ם, חיפה"
+    },
+    {
+        "name": "מאפיית שילת",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "חניתה 30, חיפה"
+    },
+    {
+        "name": "פיתה בעיר",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "כטיב 4, חיפה"
+    },
+    {
+        "name": "NUNA",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' מוריה 105, חיפה"
+    },
+    {
+        "name": "בורקס בכר העגלה",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": true,
+        "address": "הגליל 76, חיפה"
+    },
+    {
+        "name": "קפה גרג",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "פלימן משה 4, קניון חיפה"
+    },
+    {
+        "name": "מאפית דגן עודי",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "פלימן משה 4, קניון חיפה"
+    },
+    {
+        "name": "בשרלה",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "אח\"י אילת 61, קריית חיים, חיפה"
+    },
+    {
+        "name": "קפה בריסל",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' מוריה 13, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "GAGA גאגא",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "דוד אלעזר 10, חיפה"
+    },
+    {
+        "name": "האיטלקיה החמה",
+        "type": "מסעדה איטלקית",
+        "kosher": false,
+        "address": "ארלוזורוב 80, חיפה"
+    },
+    {
+        "name": "סילבה",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' מוריה 120, חיפה"
+    },
+    {
+        "name": "סנדוויץ הכיכר",
+        "type": "סנדוויץ' בר",
+        "kosher": true,
+        "address": "הסולל 1, ביג קריות"
+    },
+    {
+        "name": "פאב הדוב",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "וודג'ווד 4, חיפה"
+    },
+    {
+        "name": "חומוסאחבק",
+        "type": "חומוסייה",
+        "kosher": true,
+        "address": "חלוצי התעשייה 2, חיפה"
+    },
+    {
+        "name": "ארומה - אספרסו בר",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "פלימן משה 4, קניון חיפה"
+    },
+    {
+        "name": "לואיזה - luissa",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "שדרות הנשיא טרומן 119, חיפה"
+    },
+    {
+        "name": "LEGGENDA - LEGGENDA",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "הסולל 8, ביג קריות"
+    },
+    {
+        "name": "שיפודי גבעתיים",
+        "type": "מסעדת בשרים",
+        "kosher": true,
+        "address": "שד' ההגנה 38, בת גלים, חיפה"
+    },
+    {
+        "name": "B BAKERY 58",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "שד' מוריה 58, חיפה"
+    },
+    {
+        "name": "קפה אגוז",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "הרצל 20, חיפה"
+    },
+    {
+        "name": "דולפין",
+        "type": "מסעדת דגים",
+        "kosher": false,
+        "address": "שד' בת גלים 13, בת גלים, חיפה"
+    },
+    {
+        "name": "דונטלה פיצת שף",
+        "type": "פיצריות",
+        "kosher": true,
+        "address": "נתנזון 14, חיפה"
+    },
+    {
+        "name": "קסבה",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "נתנזון 5, חיפה"
+    },
+    {
+        "name": "Flafel Orion פלאפל אוריון",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "הרצל 14, חיפה"
+    },
+    {
+        "name": "השניצליה",
+        "type": "שניצליה",
+        "kosher": true,
+        "address": "מאיר הזורע 1, מרכזית חוף הכרמל, חיפה"
+    },
+    {
+        "name": "ליבירה",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "הנמל 26, נמל חיפה"
+    },
+    {
+        "name": "שיש קבאב שיפודי העיר הכשרה",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "שד' המגינים 28, חיפה"
+    },
+    {
+        "name": "קפה בוביס",
+        "type": "מסעדה חלבית",
+        "kosher": true,
+        "address": "שלמה בן יוסף 6, חיפה"
+    },
+    {
+        "name": "עולם האוכל",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "השיש 31, חיפה"
+    },
+    {
+        "name": "PIZZAMEAT",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "נקסט דור",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "שער פלמר 1, חיפה"
+    },
+    {
+        "name": "מקדונלד'ס",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "אח\"י אילת 63, קריית חיים, חיפה"
+    },
+    {
+        "name": "רובן - Ruben",
+        "type": "מסעדה אמריקאית",
+        "kosher": true,
+        "address": "אח\"י אילת 10, קריית חיים, חיפה"
+    },
+    {
+        "name": "חונטה בר - Junta Bar",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "שכ' קרית הטכניון, חיפה"
+    },
+    {
+        "name": "אבו זיד",
+        "type": "מסעדה ים תיכונית",
+        "kosher": false,
+        "address": "העליה השניה 52, בת גלים, חיפה"
+    },
+    {
+        "name": "בית קפה DOUBLE",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "הנמל 53, חיפה"
+    },
+    {
+        "name": "Churchill's",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "האיצטדיון 25, קריית חיים, חיפה"
+    },
+    {
+        "name": "EL PALADAR",
+        "type": "שף",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "איטליאנו דה לה קוסטה - Eataliano",
+        "type": "מסעדה איטלקית",
+        "kosher": false,
+        "address": "העליה השניה 96, חיפה"
+    },
+    {
+        "name": "קפה נעימה",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "דרך יפו 49, חיפה"
+    },
+    {
+        "name": "סנדוויץ' בר סמי הגדול חיפה",
+        "type": "סנדוויץ' בר",
+        "kosher": true,
+        "address": "חלוצי התעשייה 2, חיפה"
+    },
+    {
+        "name": "reva",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "דרך העצמאות 70, חיפה"
+    },
+    {
+        "name": "טבסקו - Tabasco",
+        "type": "מטבח ביתי",
+        "kosher": true,
+        "address": "האשלג 3, חיפה"
+    },
+    {
+        "name": "קפה עלית-אספרסו בר",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "שכ' כפר סמיר 7, חיפה"
+    },
+    {
+        "name": "שווארמה הנמל",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "דרך יפו 19, חיפה"
+    },
+    {
+        "name": "פיצה טורינו",
+        "type": "פיצריות",
+        "kosher": true,
+        "address": "שד' הנשיא 121, חיפה"
+    },
+    {
+        "name": "Friends Gastrobar",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "דוד אלעזר 10, חיפה"
+    },
+    {
+        "name": "קפה פאזל",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "מסדה 21, חיפה"
+    },
+    {
+        "name": "חומוס פאדי",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "הבנקים 4, חיפה"
+    },
+    {
+        "name": "שיבולת הדר",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": true,
+        "address": "החלוץ 65, חיפה"
+    },
+    {
+        "name": "דיוק",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "שד' מוריה 107, חיפה"
+    },
+    {
+        "name": "ארומה - אספרסו בר",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' ההגנה, בת גלים, חיפה"
+    },
+    {
+        "name": "האשטג בר",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "דרך אלנבי 55, חיפה"
+    },
+    {
+        "name": "סינמה פרדיסו CinemaParadiso",
+        "type": "שף",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "קונדיטוריה ויזל",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "שד' הפלי\"ם 5, חיפה"
+    },
+    {
+        "name": "חיפושית בקפה",
+        "type": "כשר",
+        "kosher": true,
+        "address": "שד' טרומפלדור 1, חיפה"
+    },
+    {
+        "name": "יודי",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "סירקין 30, חיפה"
+    },
+    {
+        "name": "Next Door חיפה",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "שער פלמר 1, חיפה"
+    },
+    {
+        "name": "לה מקסיקנה טאקו מקסים",
+        "type": "מסעדה מקסיקנית",
+        "kosher": false,
+        "address": "סירקין 21, חיפה"
+    },
+    {
+        "name": "לחם גל",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "שד' מוריה 3, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "קפה שלו",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' הנשיא 21, חיפה"
+    },
+    {
+        "name": "קפאין",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "לירז אקסלרד 1, חיפה"
+    },
+    {
+        "name": "בליקר בייקרי - Bleecker Bakery",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "התשבי 130, חיפה"
+    },
+    {
+        "name": "סבתא - כריכים עבודת יד חיפה - SAVTA",
+        "type": "סנדוויץ' בר",
+        "kosher": false,
+        "address": "צפרירים 2, חיפה"
+    },
+    {
+        "name": "המקום של אליהו",
+        "type": "מסעדה ים תיכונית",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "סילביה פיצה רומאית Silvia",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "שד' הנשיא 133, חיפה"
+    },
+    {
+        "name": "מאמא פיתה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "דרך אלנבי 57, חיפה"
+    },
+    {
+        "name": "אצל בני",
+        "type": "מסעדה מזרחית",
+        "kosher": true,
+        "address": "החלוץ 23, חיפה"
+    },
+    {
+        "name": "בא לי פיתה",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "דרך יפו 30, חיפה"
+    },
+    {
+        "name": "ראני",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "שרה 3, חיפה"
+    },
+    {
+        "name": "חומוס אבו גוש",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "שד' ההסתדרות 55, קניון סינמול, חיפה"
+    },
+    {
+        "name": "בלאק - Black",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "דרך שמחה גולן 54, גרנד קניון חיפה"
+    },
+    {
+        "name": "ההודית",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "אבולעפיה",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "דרך יפו 138, חיפה"
+    },
+    {
+        "name": "נולה סוקס Nola Socks חיפה - Nola Socks",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "שלום עליכם 4, חיפה"
+    },
+    {
+        "name": "קולג' בר",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "חלוצי התעשייה 79, חיפה"
+    },
+    {
+        "name": "יעקב קבב",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "אח\"י אילת 21, קריית חיים, חיפה"
+    },
+    {
+        "name": "בית קפה \"העליון\"",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "חומוס אליהו",
+        "type": "חומוסייה",
+        "kosher": true,
+        "address": "משה דיין 2, צומת וולקן, חיפה"
+    },
+    {
+        "name": "חומוס הנמל אבו רמי",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "הנמל 30, נמל חיפה"
+    },
+    {
+        "name": "רולדין - ROLADIN",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": true,
+        "address": "חורב 18, חיפה"
+    },
+    {
+        "name": "המקום",
+        "type": "מסעדה רומנית",
+        "kosher": false,
+        "address": "דגניה 65, קריית חיים, חיפה"
+    },
+    {
+        "name": "Captain Burger",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "שד' רוטשילד 53, חיפה"
+    },
+    {
+        "name": "BATARD",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "כיאט 1, חיפה"
+    },
+    {
+        "name": "קראון פלאזה",
+        "type": "מסעדה חלבית",
+        "kosher": true,
+        "address": "יפה נוף 111, חיפה"
+    },
+    {
+        "name": "רובן - Ruben",
+        "type": "מסעדה אמריקאית",
+        "kosher": true,
+        "address": "שד' הנשיא 131, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "מיי פיש מרקט",
+        "type": "מסעדת דגים",
+        "kosher": false,
+        "address": "ח'ורי 2, חיפה"
+    },
+    {
+        "name": "פלאפל ירושלמי",
+        "type": "מסעדה מזרחית",
+        "kosher": true,
+        "address": "הרצל 62, חיפה"
+    },
+    {
+        "name": "דומינו'ס פיצה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "שד' הנשיא 119, חיפה"
+    },
+    {
+        "name": "המטבח של רוית",
+        "type": "קייטרינג",
+        "kosher": true,
+        "address": "סלומון 18, חיפה"
+    },
+    {
+        "name": "מקדונלד'ס",
+        "type": "מסעדת המבורגרים",
+        "kosher": true,
+        "address": "העליה השניה 8, קריה רפואית רמב\"ם, חיפה"
+    },
+    {
+        "name": "ALF אלף",
+        "type": "מסעדה טבעונית",
+        "kosher": false,
+        "address": "דרך יפו 44, חיפה"
+    },
+    {
+        "name": "קפה גרג",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "אח\"י אילת 20, קריית חיים, חיפה"
+    },
+    {
+        "name": "פלאפל אוריון חיפה",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "הרצליה 14, חיפה"
+    },
+    {
+        "name": "הג'חנון של שרון",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "השיירה 11, קריית חיים, חיפה"
+    },
+    {
+        "name": "קונדיטוריה שני",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "שד' טרומפלדור 29, חיפה"
+    },
+    {
+        "name": "מאפיית רוממה",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "אורן 25, חיפה"
+    },
+    {
+        "name": "אום כולתום",
+        "type": "מסעדה טבעונית, שף",
+        "kosher": false,
+        "address": "שד' מוריה 60, חיפה"
+    },
+    {
+        "name": "Cofizz",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "שלום עליכם 1, חיפה"
+    },
+    {
+        "name": "קייטרינג יובלים",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "קופי לוקו",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "חלוצי התעשייה 6, חיפה"
+    },
+    {
+        "name": "הג'חנון מבית אמא",
+        "type": "מסעדה תימנית",
+        "kosher": false,
+        "address": "אח\"י אילת 11, קריית חיים, חיפה"
+    },
+    {
+        "name": "קפה פלמר",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שער פלמר 1, חיפה"
+    },
+    {
+        "name": "אחים מוגרבי",
+        "type": "אוכל רחוב",
+        "kosher": false,
+        "address": "דרך יפו 140, חיפה"
+    },
+    {
+        "name": "ניו דלי - New Deli",
+        "type": "סנדוויץ' בר",
+        "kosher": true,
+        "address": "פלימן משה 4, קניון חיפה"
+    },
+    {
+        "name": "לחמניותי",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "דרך אלנבי 119, חיפה"
+    },
+    {
+        "name": "Double",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "הנמל 53, חיפה"
+    },
+    {
+        "name": "קראנץ' ביף",
+        "type": "אוכל רחוב",
+        "kosher": true,
+        "address": "נתנזון 18, חיפה"
+    },
+    {
+        "name": "חומוס וטאבון הקריה",
+        "type": "אוכל רחוב",
+        "kosher": false,
+        "address": "אח\"י אילת 55, קריית חיים, חיפה"
+    },
+    {
+        "name": "טוטו גדליהו",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "צפרירים 2, חיפה"
+    },
+    {
+        "name": "רולדין",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "העליה השניה, חיפה"
+    },
+    {
+        "name": "קייטרינג גימי",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "קפה קפה - cafe cafe",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "הגליל 100, חיפה"
+    },
+    {
+        "name": "בבושקה",
+        "type": "מסעדה רוסית",
+        "kosher": false,
+        "address": "שד' ההסתדרות 35, חיפה"
+    },
+    {
+        "name": "ביגה - BIGA",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "שלום עליכם 5, חיפה"
+    },
+    {
+        "name": "פיצה הגולן",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "קיבוץ גלויות 84, חיפה"
+    },
+    {
+        "name": "MR. BUN BURGER - MR.BUN BURGER",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "נתיב האור 1, חיפה"
+    },
+    {
+        "name": "אדן אספרסו בר",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "אנדרי סחרוב 9, חיפה"
+    },
+    {
+        "name": "שווארמה דליה",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "האשלג 3, חיפה"
+    },
+    {
+        "name": "El Burgery חיפה",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "הנמל 43, נמל חיפה"
+    },
+    {
+        "name": "נאופוליטן Neopolitan",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "סקולה לאונג' בר",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "חמם אל פשה 5, חיפה"
+    },
+    {
+        "name": "התרבוש",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "שד' בן גוריון 36, המושבה הגרמנית, חיפה"
+    },
+    {
+        "name": "לוקה - LUCCA",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "מסדה 1, חיפה"
+    },
+    {
+        "name": "אלי אטדגי - אטדגוס שף פרטי",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "פיצה האט",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "שד' בן גוריון 53, המושבה הגרמנית, חיפה"
+    },
+    {
+        "name": "זנזרה",
+        "type": "מסעדה איטלקית",
+        "kosher": false,
+        "address": "הגליל 103, חיפה"
+    },
+    {
+        "name": "shisu",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "שווארמה במבינו",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "דרך יפו 137, חיפה"
+    },
+    {
+        "name": "עוגות רדה",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "אבו יוסף",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "זיסו 29, חיפה"
+    },
+    {
+        "name": "קפה נמרוד",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' הנשיא 119, חיפה"
+    },
+    {
+        "name": "דים סאם",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "D1 diwan",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "הנמל 15, חיפה"
+    },
+    {
+        "name": "כפיות",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "יפה נוף 99, חיפה"
+    },
+    {
+        "name": "שווארמה בכיכר טבעון",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "נתנזון, חיפה"
+    },
+    {
+        "name": "פלח הרימון",
+        "type": "קייטרינג",
+        "kosher": true,
+        "address": "חלוצי התעשייה 73, חיפה"
+    },
+    {
+        "name": "הבאגט הלוהט",
+        "type": "סנדוויץ' בר",
+        "kosher": false,
+        "address": "ארלוזורוב 73, חיפה"
+    },
+    {
+        "name": "איטאיט - Eatit",
+        "type": "קייטרינג",
+        "kosher": true,
+        "address": "חטיבת גולני 66, חיפה"
+    },
+    {
+        "name": "דודו אוטמזגין",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": true,
+        "address": "וודג'ווד 3, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "אגס הזהב",
+        "type": "קייטרינג",
+        "kosher": true,
+        "address": "שלמה בן יוסף 4, חיפה"
+    },
+    {
+        "name": "אמרטי",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "פלמ\"ח 25, חיפה"
+    },
+    {
+        "name": "קפה דיומא",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' הנשיא 119, חיפה"
+    },
+    {
+        "name": "תאג מסעדה ובר",
+        "type": "מסעדת בשרים, שף",
+        "kosher": false,
+        "address": "דרך אלנבי 26, חיפה"
+    },
+    {
+        "name": "אותנטבעי",
+        "type": "מסעדה טבעונית",
+        "kosher": false,
+        "address": "סירקין 27, חיפה"
+    },
+    {
+        "name": "בורקס העגלה חיפה",
+        "type": "מחיר ₪₪₪₪",
+        "kosher": false,
+        "address": "חלוצי התעשייה 2, חיפה"
+    },
+    {
+        "name": "מורגן-פאב אירי",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "בהרב יקותיאל 3, קריית חיים, חיפה"
+    },
+    {
+        "name": "קניבר קריות - חוצות המפרץ - Kanibar",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "הקיטור 21, חיפה"
+    },
+    {
+        "name": "לה פצ'ינה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "הגליל 100, חיפה"
+    },
+    {
+        "name": "קרפ האוס",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "הנביאים 7, חיפה"
+    },
+    {
+        "name": "מוריה 105",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' מוריה 105, חיפה"
+    },
+    {
+        "name": "רונזו ronzo",
+        "type": "מסעדה ים תיכונית, שף",
+        "kosher": false,
+        "address": "מחניים 8, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "לה גואטה",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "חניתה 64, חיפה"
+    },
+    {
+        "name": "Beram bar and coffee",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "דרך יפו 31, חיפה"
+    },
+    {
+        "name": "פיצה האט",
+        "type": "פיצריות",
+        "kosher": true,
+        "address": "שד' הנשיא, חיפה"
+    },
+    {
+        "name": "לוצ'יאנו - luciano",
+        "type": "מסעדה איטלקית",
+        "kosher": false,
+        "address": "שד' הנשיא 122, חיפה"
+    },
+    {
+        "name": "הפינה",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "מסדה 43, חיפה"
+    },
+    {
+        "name": "קפאין",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' הנשיא 125, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "קפה קפה הכרמל חיפה - cafe cafe",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' הנשיא 139, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "אבו מרון",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "דרך יוליוס סימון 42, חיפה"
+    },
+    {
+        "name": "סושילי SUSHILI",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "Beach Club Haifa",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "יוחאי בן נון 1, חיפה"
+    },
+    {
+        "name": "ארומה - אספרסו בר",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "השיש, צומת וולקן, חיפה"
+    },
+    {
+        "name": "פלאפל מישל חיפה",
+        "type": "אוכל רחוב",
+        "kosher": false,
+        "address": "ואדי 21, ואדי ניסנאס, חיפה"
+    },
+    {
+        "name": "קונדיטוריה שני",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "דרך העצמאות 53, חיפה"
+    },
+    {
+        "name": "סנטה מריה",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "דרך סטלה מריס 101, חיפה"
+    },
+    {
+        "name": "טו פיצה - Tu Pizza",
+        "type": "פיצריות",
+        "kosher": true,
+        "address": "גוט לוין 2, חיפה"
+    },
+    {
+        "name": "חומוס דובנוב 26 - חומוס ברמז",
+        "type": "חומוסייה",
+        "kosher": true,
+        "address": "דובנוב 26, חיפה"
+    },
+    {
+        "name": "מדרחוף",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "ניחוחות של שבת",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "שוקו לאטה",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "דרך העצמאות 80, חיפה"
+    },
+    {
+        "name": "מקדונלד'ס",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "דרך שמחה גולן 54, גרנד קניון חיפה"
+    },
+    {
+        "name": "טסטי - TASTY",
+        "type": "פיצריות",
+        "kosher": true,
+        "address": "דרך יפו 141, חיפה"
+    },
+    {
+        "name": "מאנקיס פיצה - Monkey's Pizza",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "שונית 12, חיפה"
+    },
+    {
+        "name": "Oak Burgers - Oak Burgers",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "שד' בן גוריון 29, המושבה הגרמנית, חיפה"
+    },
+    {
+        "name": "הסושיה",
+        "type": "מסעדה אסייאתית",
+        "kosher": true,
+        "address": "אנדרי סחרוב 9, חיפה"
+    },
+    {
+        "name": "פיצה טומי חיפה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "דרך העצמאות 80, חיפה"
+    },
+    {
+        "name": "חומוס ברכה",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "מק דיוויד",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "שד' טרומפלדור 56, חיפה"
+    },
+    {
+        "name": "גלידת מור",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "עין דור 22, חיפה"
+    },
+    {
+        "name": "בלקון",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "שד' בן גוריון 40, המושבה הגרמנית, חיפה"
+    },
+    {
+        "name": "פיצה נינה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "דובנוב 26, חיפה"
+    },
+    {
+        "name": "סושי מאנמי",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "חמאם פאשה",
+        "type": "בתי קפה, שף",
+        "kosher": false,
+        "address": "חמם אל פשה 9, חיפה"
+    },
+    {
+        "name": "פלאפל הזקנים",
+        "type": "אוכל רחוב",
+        "kosher": false,
+        "address": "ואדי 18, ואדי ניסנאס, חיפה"
+    },
+    {
+        "name": "פרדייז",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "אח\"י אילת, חיפה"
+    },
+    {
+        "name": "פלאפל מישל",
+        "type": "מטבח ביתי",
+        "kosher": true,
+        "address": "אח\"י אילת 21, קריית חיים, חיפה"
+    },
+    {
+        "name": "לחם ארז",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' מוריה 33, חיפה"
+    },
+    {
+        "name": "זסטי כרמל - Zesty",
+        "type": "מסעדת המבורגרים",
+        "kosher": true,
+        "address": "שד' הנשיא 129, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "רובן קריות",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "שד' ההסתדרות 248, חיפה"
+    },
+    {
+        "name": "ארקפה Arcaffe חיפה - Arcaffe",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "אוסקר שינדלר 7, חיפה"
+    },
+    {
+        "name": "סוד הפיצה",
+        "type": "פיצריות",
+        "kosher": true,
+        "address": "חניתה 40, חיפה"
+    },
+    {
+        "name": "מסעדג",
+        "type": "מסעדת דגים",
+        "kosher": false,
+        "address": "רציף פנחס מרגולין 29, בת גלים, חיפה"
+    },
+    {
+        "name": "פסטה פאסטה",
+        "type": "פיצריות",
+        "kosher": true,
+        "address": "שד' ההסתדרות 55, קניון סינמול, חיפה"
+    },
+    {
+        "name": "בית האוכל של סלבה",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "יחיאל 10, חיפה"
+    },
+    {
+        "name": "טלק",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "סירקין 26, חיפה"
+    },
+    {
+        "name": "הש מאפיית מורגאן",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "דרך אלנבי 20, חיפה"
+    },
+    {
+        "name": "מקאו",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "לה גופרה",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "שד' בן גוריון 25, חיפה"
+    },
+    {
+        "name": "וספר קוקטייל בר - Vesper",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "דוברין נחום 9, חיפה"
+    },
+    {
+        "name": "סטרוברי",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "האיצטדיון 23, חיפה"
+    },
+    {
+        "name": "לג'נדה",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "קראנץ' פיצה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "דרך צרפת 63, חיפה"
+    },
+    {
+        "name": "מאפיית הארץ",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": true,
+        "address": "העליה השניה 33, בת גלים, חיפה"
+    },
+    {
+        "name": "ברוסקטה אירועים",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "הגליל, חיפה"
+    },
+    {
+        "name": "גולד פיש - Gold Fish",
+        "type": "מסעדת דגים",
+        "kosher": false,
+        "address": "זיסו 26, חיפה"
+    },
+    {
+        "name": "ג'פניקה",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "שד' הנשיא 122, חיפה"
+    },
+    {
+        "name": "טורטוגה",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "דוד אלעזר 10, חיפה"
+    },
+    {
+        "name": "האמפנדס של קרינה",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "אמריקן פיצה הדר",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "הנביאים 4, חיפה"
+    },
+    {
+        "name": "אוכל של אריה באהבה",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "שווארמה חזאן",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "שד' ההסתדרות 58, חיפה"
+    },
+    {
+        "name": "הסנדק",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "קדושי בגדד 19, חיפה"
+    },
+    {
+        "name": "סביח גריל בשרים",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "שד' ההסתדרות 211, חיפה"
+    },
+    {
+        "name": "אמריקן פיצה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "חניתה 16, חיפה"
+    },
+    {
+        "name": "הסושיה",
+        "type": "מסעדה אסייאתית",
+        "kosher": true,
+        "address": "העליה השניה 8, קריה רפואית רמב\"ם, חיפה"
+    },
+    {
+        "name": "WASABI SUSHI",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "דוד אלעזר 10, חיפה"
+    },
+    {
+        "name": "פיצה מאנד",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "Back to Black",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "דרך יפו 26, חיפה"
+    },
+    {
+        "name": "הפינה של אריק",
+        "type": "אוכל רחוב",
+        "kosher": true,
+        "address": "החלוץ 32, חיפה"
+    },
+    {
+        "name": "במבוק",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "האשלג 3, חיפה"
+    },
+    {
+        "name": "ביסטרו 128 - Bistro",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "הבנקים 5, חיפה"
+    },
+    {
+        "name": "פרש קיטשן - Fresh kitchen",
+        "type": "מסעדה איטלקית",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "אלפנט",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "האיצטדיון 4, חיפה"
+    },
+    {
+        "name": "לג'נדה - LEGGENDA",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "אח\"י אילת 10, קריית חיים, חיפה"
+    },
+    {
+        "name": "אלחיר",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "שד' הנשיא 139, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "אינג'רה אקספרס",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "MY COFFEE",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "פלימן משה 8, קניון קסטרא, חיפה"
+    },
+    {
+        "name": "אפטר דארק",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "דרך יפו 30, חיפה"
+    },
+    {
+        "name": "A&M BURGERS",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "הנביאים 35, ואדי ניסנאס, חיפה"
+    },
+    {
+        "name": "פיתה אקספרס",
+        "type": "חומוסייה",
+        "kosher": true,
+        "address": "האיצטדיון 4, חיפה"
+    },
+    {
+        "name": "DUDA meat box",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "הדגן 23, חיפה"
+    },
+    {
+        "name": "El Burgery",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "הנמל 43, נמל חיפה"
+    },
+    {
+        "name": "מקדונלד'ס",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "שד' בן גוריון 6, קניון סיטי סנטר, חיפה"
+    },
+    {
+        "name": "קלמאריס - Kalamaris",
+        "type": "מסעדה ים תיכונית",
+        "kosher": false,
+        "address": "דרך סטלה מריס 100, חיפה"
+    },
+    {
+        "name": "אבו מרון",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "קיבוץ גלויות 1, חיפה"
+    },
+    {
+        "name": "בורקס פיצה מטר",
+        "type": "אוכל רחוב",
+        "kosher": false,
+        "address": "שד' המגינים 60, חיפה"
+    },
+    {
+        "name": "טאקו סאלש Taco Slash",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "שער פלמר 2, נמל חיפה"
+    },
+    {
+        "name": "Bakery & more",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "נתנזון 19, חיפה"
+    },
+    {
+        "name": "ג'יוקוסו",
+        "type": "מסעדה איטלקית",
+        "kosher": false,
+        "address": "הנמל 21, נמל חיפה"
+    },
+    {
+        "name": "קפה לנדוור",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "דרך בר יהודה 111, חיפה"
+    },
+    {
+        "name": "אוכל ביתי",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "אוכל תאילנדי אותנטי",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "וילה כרמל",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "כיכר היינריך היינה 1, חיפה"
+    },
+    {
+        "name": "פסטהל'ה",
+        "type": "מסעדה איטלקית",
+        "kosher": false,
+        "address": "אוסקר שינדלר 7, חיפה"
+    },
+    {
+        "name": "גוד פוד - Good food",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "שד' אבא חושי 13, חיפה"
+    },
+    {
+        "name": "רוטשילד בר",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "הדגן 8, חיפה"
+    },
+    {
+        "name": "cofix",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "חיפה"
+    },
+    {
+        "name": "pizzaרייה פיצרייה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "שד' ההסתדרות 84, חיפה"
+    },
+    {
+        "name": "דרך הגריל",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "באבא ג'ון",
+        "type": "חומוסייה",
+        "kosher": true,
+        "address": "דרך בר יהודה 33, חיפה"
+    },
+    {
+        "name": "לה-דולצה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "ווק טאון",
+        "type": "מסעדה אסייאתית",
+        "kosher": true,
+        "address": "שד' הפלי\"ם 19, חיפה"
+    },
+    {
+        "name": "גאדה",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "גילטו מונדו",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "דרך יפו 19, חיפה"
+    },
+    {
+        "name": "ארומה - אספרסו בר",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "דרך שמחה גולן 64, חיפה"
+    },
+    {
+        "name": "במבינו",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "הבנקים 2, חיפה"
+    },
+    {
+        "name": "ה'שווארמה",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "אח\"י אילת 55, חיפה"
+    },
+    {
+        "name": "פסטה בסטה",
+        "type": "מסעדה איטלקית",
+        "kosher": false,
+        "address": "שד' מוריה 12, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "בורקס בכר העגלה",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": true,
+        "address": "פלימן משה 4, קניון חיפה"
+    },
+    {
+        "name": "רוית - קייטרינג לאירועים",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "מנדרין",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "צפרירים 1, חיפה"
+    },
+    {
+        "name": "מאיר'S פתיליות",
+        "type": "מטבח ביתי",
+        "kosher": true,
+        "address": "שד' הפלי\"ם 7, חיפה"
+    },
+    {
+        "name": "שווארמה אוכל ביתי",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "הנביאים 3, חיפה"
+    },
+    {
+        "name": "מלביר",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "הנמל 32, נמל חיפה"
+    },
+    {
+        "name": "Sababa Bar",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "ברדיצ'ב מאכלי עדות",
+        "type": "מטבח ביתי",
+        "kosher": true,
+        "address": "שיבת ציון 34, חיפה"
+    },
+    {
+        "name": "פיצה פנורמה",
+        "type": "פיצריות",
+        "kosher": true,
+        "address": "שער הלבנון 6, חיפה"
+    },
+    {
+        "name": "MY COFFEE - MY COFFEE",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "אנטוורפן 56, חיפה"
+    },
+    {
+        "name": "שיפודי הטלה",
+        "type": "מסעדת בשרים",
+        "kosher": true,
+        "address": "דגניה 30, קריית חיים, חיפה"
+    },
+    {
+        "name": "דולמה Dolma",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "עבאס 35, חיפה"
+    },
+    {
+        "name": "ברדא",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "הנמל 6, חיפה"
+    },
+    {
+        "name": "צפרירים 1",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "צפרירים 1, חיפה"
+    },
+    {
+        "name": "הבנרה",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "דרך העצמאות 88, חיפה"
+    },
+    {
+        "name": "סודוקו",
+        "type": "סנדוויץ' בר",
+        "kosher": false,
+        "address": "הנפח 4, חיפה"
+    },
+    {
+        "name": "קרמרי דה ל'אקלר",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "דרך העצמאות 49, חיפה"
+    },
+    {
+        "name": "גסנוב חיפה",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "שד' ההסתדרות 72, חיפה"
+    },
+    {
+        "name": "אזומאמי Azumami",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "אוסקר שינדלר 7, חיפה"
+    },
+    {
+        "name": "קולינאריק - Kulinarik",
+        "type": "מעדניה",
+        "kosher": true,
+        "address": "חורב 15, מרכז חורב, חיפה"
+    },
+    {
+        "name": "cofix",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "נתנזון 18, חיפה"
+    },
+    {
+        "name": "סטייק בר - Steak Bar S&B",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "נתנזון 17, חיפה"
+    },
+    {
+        "name": "גלית אביטן קינוחים",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "יאמי שווארמה",
+        "type": "אוכל רחוב",
+        "kosher": true,
+        "address": "דרך יפו 196, בת גלים, חיפה"
+    },
+    {
+        "name": "נוצ'ולה-גלידריה",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "שד' טרומפלדור 56, חיפה"
+    },
+    {
+        "name": "קפה טוב",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "בת חן 63, חיפה"
+    },
+    {
+        "name": "היינה קיוסקפה",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "דרך הים 68, כרמל מערבי, חיפה"
+    },
+    {
+        "name": "פיצה פלוס קריות",
+        "type": "פיצריות",
+        "kosher": true,
+        "address": "משה חיים שפירא 12, חיפה"
+    },
+    {
+        "name": "קייטרינג עין הואדי",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "סורוקה משה 40, רמת בגין, חיפה"
+    },
+    {
+        "name": "מרקובה",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "מרפיס - Murphys",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "שד' ההסתדרות 55, חיפה"
+    },
+    {
+        "name": "simsima סימסימה",
+        "type": "מסעדה ים תיכונית",
+        "kosher": false,
+        "address": "נתנזון 19, חיפה"
+    },
+    {
+        "name": "סארו קונדיטוריה",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "דרך יפו 19, חיפה"
+    },
+    {
+        "name": "על האש קווקזי",
+        "type": "מסעדת בשרים",
+        "kosher": true,
+        "address": "ארלוזורוב 4, חיפה"
+    },
+    {
+        "name": "sticky rice",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "שווארמה",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "שבתאי לוי 22, חיפה"
+    },
+    {
+        "name": "מקום מעורב",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "שד' הנשיא 130, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "ג'וני קבב",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "הבנקים 12, חיפה"
+    },
+    {
+        "name": "פיצריה",
+        "type": "פיצריות",
+        "kosher": true,
+        "address": "אח\"י אילת 9, קריית חיים, חיפה"
+    },
+    {
+        "name": "המסילה - בר ישראלי",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "שד' הנשיא 135, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "Star Sweet",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "גרג קיטשן - Greg Kitchen",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' מוריה 110, חיפה"
+    },
+    {
+        "name": "חלומות שטח - אוכל משובח בטבע",
+        "type": "קייטרינג",
+        "kosher": true,
+        "address": "שד' המגינים 137, חיפה"
+    },
+    {
+        "name": "אווזי - avazi",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "פלימן משה 4, קניון חיפה"
+    },
+    {
+        "name": "מאפיית אריאל בע\"מ",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "צה\"ל 12, חיפה"
+    },
+    {
+        "name": "Kabareet",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "הזגג, חיפה"
+    },
+    {
+        "name": "אליאחור - Al Yakhour",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "שד' בן גוריון 24, המושבה הגרמנית, חיפה"
+    },
+    {
+        "name": "עונות",
+        "type": "מסעדה ים תיכונית",
+        "kosher": false,
+        "address": "דוד אלעזר 10, חיפה"
+    },
+    {
+        "name": "שיפודי טליה",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "משה דיין 2, צומת וולקן, חיפה"
+    },
+    {
+        "name": "מקדונלד'ס",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "פלימן משה 4, קניון חיפה"
+    },
+    {
+        "name": "קפה קפה - cafe cafe",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "דרך פיק\"א 69, חיפה"
+    },
+    {
+        "name": "פביאנו",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "שד' אבא חושי 199, חיפה"
+    },
+    {
+        "name": "משהו מתבשל אצל אורן",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "אל גאוצ'ו",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "יפה נוף 120, חיפה"
+    },
+    {
+        "name": "באר וונג אוכל אסיאתי",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "שמלי הגריל הבולגרי",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "דרך יפו 56, חיפה"
+    },
+    {
+        "name": "Omnivore gastrobar",
+        "type": "מסעדה רוסית",
+        "kosher": false,
+        "address": "קהילת סלוניקי 6, חיפה"
+    },
+    {
+        "name": "מלכת הטאבון",
+        "type": "מטבח ביתי",
+        "kosher": true,
+        "address": "חורב 16, חיפה"
+    },
+    {
+        "name": "Gelato mondo",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "דרך יפו 19, חיפה"
+    },
+    {
+        "name": "קפה קפה - cafe cafe",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "לחם ארז",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "דרך שמחה גולן 54, גרנד קניון חיפה"
+    },
+    {
+        "name": "לג'נדה - LEGGENDA",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "שד' הנשיא 129, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "אקלאתי - AKLATY",
+        "type": "מסעדה ים תיכונית, שף",
+        "kosher": false,
+        "address": "שד' הנשיא 139, חיפה"
+    },
+    {
+        "name": "ויוה בר",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "ורדיה 12, חיפה"
+    },
+    {
+        "name": "ניו דלי - New Deli",
+        "type": "סנדוויץ' בר",
+        "kosher": true,
+        "address": "שד' ההסתדרות 55, קניון סינמול, חיפה"
+    },
+    {
+        "name": "מילהאוס קפה",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "Mint Haifa",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "דרך העצמאות 84, חיפה"
+    },
+    {
+        "name": "בוריטו BURRITO",
+        "type": "מסעדה מקסיקנית",
+        "kosher": false,
+        "address": "שד' הנשיא 121, חיפה"
+    },
+    {
+        "name": "אלי בגט",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "שד' המגינים 79, חיפה"
+    },
+    {
+        "name": "פיצה יפו",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "דרך יפו 141, חיפה"
+    },
+    {
+        "name": "Wine Bar By Andre Suidan",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "שד' הנשיא 98, חיפה"
+    },
+    {
+        "name": "מאפיית שילת",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "האיצטדיון 4, חיפה"
+    },
+    {
+        "name": "פונטנה",
+        "type": "מסעדה צמחונית",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "קוקוריצה",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "פאדיס פיצה - Joseph Bakery",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "הבנקים 10, חיפה"
+    },
+    {
+        "name": "כל טוב",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "מפגש הפלאפל אחי",
+        "type": "אוכל רחוב",
+        "kosher": true,
+        "address": "העליה השניה 20, בת גלים, חיפה"
+    },
+    {
+        "name": "קפה ניצה",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "הרצל 2, חיפה"
+    },
+    {
+        "name": "דון פלגרינו Don Pellegrino",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "שווארמה חאזן פורד",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "פלימן משה 4, קניון חיפה"
+    },
+    {
+        "name": "שווארמה כאוס",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "הרצל 37, חיפה"
+    },
+    {
+        "name": "מאפיית המפגש",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "דרך העצמאות 54, חיפה"
+    },
+    {
+        "name": "פרנג'ליקו - Frangelico",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "שד' ההסתדרות 55, קניון סינמול, חיפה"
+    },
+    {
+        "name": "בסרביה",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "מאפית אריאל בע\"מ",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "חורב 13, חיפה"
+    },
+    {
+        "name": "חומוס פלאפל נ נח",
+        "type": "חומוסייה",
+        "kosher": true,
+        "address": "הגליל 100, חיפה"
+    },
+    {
+        "name": "אלדו - ALDO",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "אח\"י אילת 55, קריית חיים, חיפה"
+    },
+    {
+        "name": "אהבתי",
+        "type": "מסעדת בשרים",
+        "kosher": true,
+        "address": "השיש 49, חיפה"
+    },
+    {
+        "name": "קפה גרג",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "דרך שמחה גולן 54, גרנד קניון חיפה"
+    },
+    {
+        "name": "קפה עלית-אספרסו בר",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "חיפה"
+    },
+    {
+        "name": "ממבו מילאנו",
+        "type": "מסעדה איטלקית",
+        "kosher": false,
+        "address": "שד' מוריה 127, חיפה"
+    },
+    {
+        "name": "מקדונלד'ס",
+        "type": "מסעדת המבורגרים",
+        "kosher": true,
+        "address": "שד' ההסתדרות 55, קניון סינמול, חיפה"
+    },
+    {
+        "name": "אצל בר וגרי",
+        "type": "מסעדה דרום אמריקאית",
+        "kosher": false,
+        "address": "סירקין 22, חיפה"
+    },
+    {
+        "name": "סושי אווניו",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "הנביאים 31, חיפה"
+    },
+    {
+        "name": "שיפודי חיפה",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "שד' ההסתדרות 249, חיפה"
+    },
+    {
+        "name": "WASABI SUSHI",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "נורדאו 5, חיפה"
+    },
+    {
+        "name": "מאי סנדוויץ'",
+        "type": "סנדוויץ' בר",
+        "kosher": false,
+        "address": "דרך יפו 139, חיפה"
+    },
+    {
+        "name": "אצה - סושי בר",
+        "type": "מסעדה אסייאתית",
+        "kosher": true,
+        "address": "אח\"י אילת 55, קריית חיים, חיפה"
+    },
+    {
+        "name": "מאכלי הבית",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "שד' ההסתדרות 251, חיפה"
+    },
+    {
+        "name": "איטליאנו פיצה מרקט",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "דרך העצמאות 80, חיפה"
+    },
+    {
+        "name": "פלאפל וסביח",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "חלוצי התעשייה 11, חיפה"
+    },
+    {
+        "name": "ביירן מרקט",
+        "type": "אוכל רחוב",
+        "kosher": false,
+        "address": "שד' ההסתדרות 55, קניון סינמול, חיפה"
+    },
+    {
+        "name": "ארטו - Arto",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "קדושי יאסי 2, חיפה"
+    },
+    {
+        "name": "הפרלמנט",
+        "type": "קייטרינג",
+        "kosher": true,
+        "address": "חלוצי התעשייה 47, חיפה"
+    },
+    {
+        "name": "זמן קפה",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "הרצל 41, חיפה"
+    },
+    {
+        "name": "סטיישן סנדביץ' קלאב-STATION SANDWICH CLUB",
+        "type": "סנדוויץ' בר",
+        "kosher": true,
+        "address": "דרך שמחה גולן 54, גרנד קניון חיפה"
+    },
+    {
+        "name": "ממתקי עבד אלהאדי",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "שחאדה שלח 3, ואדי ניסנאס, חיפה"
+    },
+    {
+        "name": "פורמנס",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "הגליל 100, חיפה"
+    },
+    {
+        "name": "משאוושה Mashawasha",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "העליה השניה 14, חיפה"
+    },
+    {
+        "name": "כתום",
+        "type": "מסעדת בשרים",
+        "kosher": true,
+        "address": "שד' המגינים 48, חיפה"
+    },
+    {
+        "name": "BEER&FOOD",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "יחיאל 7, חיפה"
+    },
+    {
+        "name": "בראון - Brown",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "שד' מוריה 131, חיפה"
+    },
+    {
+        "name": "LORI-kitchen",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "Gelato Mondo",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "דרך יפו 19, חיפה"
+    },
+    {
+        "name": "החומוסיה של צביקה",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "כברי 2, קריית חיים, חיפה"
+    },
+    {
+        "name": "ורושקה - אוכל ביתי",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "בריסקט ארט פוד",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "הנאמנים 3, חיפה"
+    },
+    {
+        "name": "Enkidu",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "נתנזון 14, חיפה"
+    },
+    {
+        "name": "פאב מוריסון",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "יפה נוף 115, חיפה"
+    },
+    {
+        "name": "מקדונלד'ס",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "הרצל 20, חיפה"
+    },
+    {
+        "name": "האוכל של מאמא",
+        "type": "מסעדה מזרחית",
+        "kosher": true,
+        "address": "שד' ההסתדרות 8, חיפה"
+    },
+    {
+        "name": "מאפית דגן עודי",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "מאיר הזורע 1, חיפה"
+    },
+    {
+        "name": "גולדה",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "דוברין נחום 3, חיפה"
+    },
+    {
+        "name": "קפה דרך הים",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "דרך הים 68, חיפה"
+    },
+    {
+        "name": "שווארמה אמיר",
+        "type": "אוכל רחוב",
+        "kosher": false,
+        "address": "שד' ההסתדרות 56, חיפה"
+    },
+    {
+        "name": "נוק אאוט סמאש שופ - Knockout Smashop",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "קאסה איטליאנו צומת קריית אתא",
+        "type": "מסעדה איטלקית",
+        "kosher": false,
+        "address": "חלוצי התעשייה 2, חיפה"
+    },
+    {
+        "name": "קפה קפה - cafe cafe",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "אח\"י אילת 55, חיפה"
+    },
+    {
+        "name": "נפוליאון סושי בר - Napoleon Sushi Bar",
+        "type": "מסעדה יפנית",
+        "kosher": true,
+        "address": "שכ' קרית הטכניון, חיפה"
+    },
+    {
+        "name": "ליילא",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שרה 2, חיפה"
+    },
+    {
+        "name": "Rabbit Hole",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "מסדה 16, חיפה"
+    },
+    {
+        "name": "אורן גיא קייטרינג",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "שד' רוטשילד 67, חיפה"
+    },
+    {
+        "name": "butterfly cafe",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "הנמל 25, נמל חיפה"
+    },
+    {
+        "name": "דרך האוכל",
+        "type": "קייטרינג",
+        "kosher": true,
+        "address": "חניתה 16, חיפה"
+    },
+    {
+        "name": "טעמים",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "אליעזר בונה 17, חיפה"
+    },
+    {
+        "name": "קפה גרג",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "שד' ההסתדרות 55, קניון סינמול, חיפה"
+    },
+    {
+        "name": "חומוס ברדיצ'ב",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "שיבת ציון 34, חיפה"
+    },
+    {
+        "name": "חומוס זיו של דני חיפה",
+        "type": "חומוסייה",
+        "kosher": true,
+        "address": "שד' טרומפלדור 54, חיפה"
+    },
+    {
+        "name": "פלאפל אבו אחמד",
+        "type": "אוכל רחוב",
+        "kosher": false,
+        "address": "קיבוץ גלויות 34, חיפה"
+    },
+    {
+        "name": "ויינר בית מאפה בע\"מ",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "האיצטדיון 25, קריית חיים, חיפה"
+    },
+    {
+        "name": "MY COFFEE - My Coffee",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "דרך יפו 157, חיפה"
+    },
+    {
+        "name": "דומינו'ס פיצה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "אלברט איינשטיין 139, חיפה"
+    },
+    {
+        "name": "MORE PIZZA",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "Feiwel",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "מחניים 4, חיפה"
+    },
+    {
+        "name": "Kulinarik - קולינאריק",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "אנטוורפן 56, חיפה"
+    },
+    {
+        "name": "וינו פיצה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "דרך יפו 57, חיפה"
+    },
+    {
+        "name": "שווארמה חאזן פורד",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "דרך יפו 140, חיפה"
+    },
+    {
+        "name": "טאטאמי",
+        "type": "מסעדה אסייאתית, שף",
+        "kosher": false,
+        "address": "שד' הנשיא 134, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "פלאפל מישל",
+        "type": "אוכל רחוב",
+        "kosher": false,
+        "address": "דרך יפו 39, חיפה"
+    },
+    {
+        "name": "סקאי פיצה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "ח'ורי 15, ואדי ניסנאס, חיפה"
+    },
+    {
+        "name": "מסעדת עצמון",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "הנביאים 32, ואדי ניסנאס, חיפה"
+    },
+    {
+        "name": "מלנישס",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "הקיבוצים 58, חיפה"
+    },
+    {
+        "name": "מנדרין",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "דרך שמחה גולן 54, גרנד קניון חיפה"
+    },
+    {
+        "name": "ג'יו קוסו - GIOCOSO",
+        "type": "מסעדה איטלקית",
+        "kosher": false,
+        "address": "הנמל 21, נמל חיפה"
+    },
+    {
+        "name": "KING KONG",
+        "type": "מסעדה דרום אמריקאית",
+        "kosher": false,
+        "address": "חורב 15, חיפה"
+    },
+    {
+        "name": "שיפודי אודי",
+        "type": "מסעדת בשרים",
+        "kosher": true,
+        "address": "שד' ההסתדרות 247, חיפה"
+    },
+    {
+        "name": "TRIOקונספט - Trio",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' אבא חושי 147, חיפה"
+    },
+    {
+        "name": "פאפא ג'ונס חיפה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "שד' מוריה 132, חיפה"
+    },
+    {
+        "name": "אדיס גריל - Eddi's Grill",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "י\"ל פרץ 31, ואדי ניסנאס, חיפה"
+    },
+    {
+        "name": "מסעדת אבו שקארה",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "גרינבוים יצחק 18, חיפה"
+    },
+    {
+        "name": "קפה היינה -רגע בגן",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "הנריך הרץ 3, חיפה"
+    },
+    {
+        "name": "בייקרס פיצה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "אח\"י אילת 19, חיפה"
+    },
+    {
+        "name": "לחם תושיה",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "הרצל 27, חיפה"
+    },
+    {
+        "name": "טעים לכולם",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "חלוצי התעשייה 19, חיפה"
+    },
+    {
+        "name": "פיצה עגבניה",
+        "type": "פיצריות",
+        "kosher": true,
+        "address": "חורב 15, מרכז חורב, חיפה"
+    },
+    {
+        "name": "קפה קפה גרנד קניון חיפה - cafe cafe",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "דרך שמחה גולן, חיפה"
+    },
+    {
+        "name": "cofix",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "שד' אבא חושי 199, חיפה"
+    },
+    {
+        "name": "Lebakery",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "טאיפיי – Taipei מסעדה סינית",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "יפה נוף 108, חיפה"
+    },
+    {
+        "name": "ג'פניקה",
+        "type": "מסעדה אסייאתית",
+        "kosher": true,
+        "address": "דרך בר יהודה 111, צ'ק פוסט, חיפה"
+    },
+    {
+        "name": "מינה טומיי קסטרא חיפה",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "פלימן משה 8, קניון קסטרא, חיפה"
+    },
+    {
+        "name": "קפה גרג",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "דרך בר יהודה 111, מרכז ביג חיפה"
+    },
+    {
+        "name": "El viejo",
+        "type": "מסעדה דרום אמריקאית",
+        "kosher": false,
+        "address": "נתנזון 16, חיפה"
+    },
+    {
+        "name": "Biga- שער הצפון",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "דרך חיפה 30, חיפה"
+    },
+    {
+        "name": "שווארמה אלחלאל",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "האשלג 3, חיפה"
+    },
+    {
+        "name": "במיוס",
+        "type": "אוכל רחוב",
+        "kosher": true,
+        "address": "אח\"י אילת 19, קריית חיים, חיפה"
+    },
+    {
+        "name": "בית התבשיל חיפה",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "לחם ארז",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "יוחאי בן נון, חיפה"
+    },
+    {
+        "name": "קפה לואיז",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' מוריה 58, חיפה"
+    },
+    {
+        "name": "פיצה פדאל",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "דגניה 29, קריית חיים, חיפה"
+    },
+    {
+        "name": "זית זיתון",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "סירקין 33, חיפה"
+    },
+    {
+        "name": "בונג'ור",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "דגניה 30, חיפה"
+    },
+    {
+        "name": "גלידיום - Glidium",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "שד' ההסתדרות 55, קניון סינמול, חיפה"
+    },
+    {
+        "name": "סבתוש",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "יוחנן הקדוש 30, חיפה"
+    },
+    {
+        "name": "cofix",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "פלימן משה 4, קניון חיפה"
+    },
+    {
+        "name": "פיצה האט",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "שד' מוריה 13, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "סנדוויץ' בר כרמל",
+        "type": "סנדוויץ' בר",
+        "kosher": false,
+        "address": "שד' הנשיא 128, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "בית מאפה - לחם הגליל",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "אח\"י אילת 60, חיפה"
+    },
+    {
+        "name": "שיפודי סימי",
+        "type": "מסעדת בשרים",
+        "kosher": true,
+        "address": "שד' ההסתדרות 84, חיפה"
+    },
+    {
+        "name": "קייטרינג טופז",
+        "type": "קייטרינג",
+        "kosher": true,
+        "address": "תובל 11, חיפה"
+    },
+    {
+        "name": "קולינריה",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "שד' ההסתדרות 76, חיפה"
+    },
+    {
+        "name": "טיב וטעים בע\"מ",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "חניתה 24, חיפה"
+    },
+    {
+        "name": "מסעדת משאוושה",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "שד' ההסתדרות 251, חיפה"
+    },
+    {
+        "name": "קראנצ' פיצה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "דרך צרפת 63, חיפה"
+    },
+    {
+        "name": "אלריאן",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "שד' בן גוריון 46, המושבה הגרמנית, חיפה"
+    },
+    {
+        "name": "שניצל פלפלת",
+        "type": "שניצליה",
+        "kosher": false,
+        "address": "דרך שמחה גולן 54, גרנד קניון חיפה"
+    },
+    {
+        "name": "בורגראנץ'",
+        "type": "מסעדת המבורגרים",
+        "kosher": true,
+        "address": "שד' ההסתדרות 248, ביג קריות"
+    },
+    {
+        "name": "לג'נדה",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "שד' טרומפלדור 53, חיפה"
+    },
+    {
+        "name": "מאפיית פלפלה",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "ואדי 41, ואדי ניסנאס, חיפה"
+    },
+    {
+        "name": "בורקס טורקי מאיזמיר",
+        "type": "אוכל רחוב",
+        "kosher": false,
+        "address": "משה אהרון 8, חיפה"
+    },
+    {
+        "name": "העוגה",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": true,
+        "address": "הרצל 14, חיפה"
+    },
+    {
+        "name": "וי גוזה בייקרי",
+        "type": "מסעדה צמחונית",
+        "kosher": false,
+        "address": "סמ' אליהו הנביא 1, חיפה"
+    },
+    {
+        "name": "Areeka - Areeka",
+        "type": "מסעדה איטלקית",
+        "kosher": false,
+        "address": "שער פלמר 3, נמל חיפה"
+    },
+    {
+        "name": "Faces",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' בן גוריון 37, חיפה"
+    },
+    {
+        "name": "EscoBar",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "הנמל 30, חיפה"
+    },
+    {
+        "name": "bet33",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "שד' מוריה 33, חיפה"
+    },
+    {
+        "name": "אייססלון - Eissalon",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "אוסקר שינדלר 7, חיפה"
+    },
+    {
+        "name": "קפה דנדי",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' ההסתדרות 8, חיפה"
+    },
+    {
+        "name": "Cafe Tlateen",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "מסדה 30, חיפה"
+    },
+    {
+        "name": "גולדה",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "אח\"י אילת 15, חיפה"
+    },
+    {
+        "name": "קנטינה סושיאל - cantina sociale",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "מחניים 4, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "פיצה דאלי",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "שד' המגינים 53, חיפה"
+    },
+    {
+        "name": "מנדרין - קהונה ביץ'",
+        "type": "מסעדת דגים",
+        "kosher": false,
+        "address": "דוד אלעזר 10, חיפה"
+    },
+    {
+        "name": "גולדה קניון עזריאלי חיפה",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "פלימן משה 4, חיפה"
+    },
+    {
+        "name": "ביג מון - big moon",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "דרך הים 6, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "פיצה פלוס",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "משה חיים שפירא 12, חיפה"
+    },
+    {
+        "name": "PIZZA BIG",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "שד' ההסתדרות 248, חיפה"
+    },
+    {
+        "name": "אבו יוסף ובניו",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "ככר פריס 1, חיפה"
+    },
+    {
+        "name": "Paprika",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "דרך אלנבי 12, חיפה"
+    },
+    {
+        "name": "ג'פניקה",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "שד' ההסתדרות 248, ביג קריות"
+    },
+    {
+        "name": "הג'חנון של מורן",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "האג 17, חיפה"
+    },
+    {
+        "name": "הוואנה פלוס - Havana Plus",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "שד' בן גוריון 12, המושבה הגרמנית, חיפה"
+    },
+    {
+        "name": "beatrice burger",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "נתנזון 11, חיפה"
+    },
+    {
+        "name": "חומוס אבו מרון",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "דרך יפו 139, חיפה"
+    },
+    {
+        "name": "זיגמנס בית של גלידה",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "שוארמה אמיל",
+        "type": "אוכל רחוב",
+        "kosher": false,
+        "address": "דרך אלנבי 33, ואדי ניסנאס, חיפה"
+    },
+    {
+        "name": "ubhan - the pint",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "מצדה 8, חיפה"
+    },
+    {
+        "name": "אפונענע",
+        "type": "קייטרינג",
+        "kosher": true,
+        "address": "חטיבת גולני 66, חיפה"
+    },
+    {
+        "name": "זברה",
+        "type": "מסעדה צרפתית",
+        "kosher": false,
+        "address": "טשרניחובסקי 39, חיפה"
+    },
+    {
+        "name": "מזנון תמר",
+        "type": "סנדוויץ' בר",
+        "kosher": false,
+        "address": "הנביאים 7, חיפה"
+    },
+    {
+        "name": "חומוסמוס",
+        "type": "חומוסייה",
+        "kosher": true,
+        "address": "אנדרי סחרוב 9, חיפה"
+    },
+    {
+        "name": "שוארמה האחים מוגרבי",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "דרך יפו 140, חיפה"
+    },
+    {
+        "name": "קרונפול",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "שד' המגינים 68, חיפה"
+    },
+    {
+        "name": "קפה טיפול",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "מסדה 1, חיפה"
+    },
+    {
+        "name": "רפי",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "אופיר 31, חיפה"
+    },
+    {
+        "name": "שווארמה שניצל",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "Donutella",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "שד' הנשיא 126, חיפה"
+    },
+    {
+        "name": "מנדרין",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' הנשיא 129, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "בורקס בכר העגלה",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "קיבוץ גלויות 64, חיפה"
+    },
+    {
+        "name": "מסעדת טוביה",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "מרדכי מקלף 22, חיפה"
+    },
+    {
+        "name": "סאטושי- קולינריה יפנית",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "בית הפיצה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "יוכבד 18, חיפה"
+    },
+    {
+        "name": "צ'רלי בר",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "שער הלבנון 2, חיפה"
+    },
+    {
+        "name": "ארומה - אספרסו בר",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "העליה השניה 8, קריה רפואית רמב\"ם, חיפה"
+    },
+    {
+        "name": "סנדביץ' בר זיו",
+        "type": "סנדוויץ' בר",
+        "kosher": true,
+        "address": "שד' טרומפלדור 56, חיפה"
+    },
+    {
+        "name": "פלאפל ג'ורג'",
+        "type": "אוכל רחוב",
+        "kosher": false,
+        "address": "יוחנן הקדוש 26, ואדי ניסנאס, חיפה"
+    },
+    {
+        "name": "קטנה ומטריפה",
+        "type": "מסעדה מזרחית",
+        "kosher": true,
+        "address": "גת 4, חיפה"
+    },
+    {
+        "name": "מקדונלד'ס",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "החרושת 1, צומת וולקן, חיפה"
+    },
+    {
+        "name": "חומוס ברדיצ'ב",
+        "type": "חומוסייה",
+        "kosher": true,
+        "address": "שד' טרומפלדור 53, חיפה"
+    },
+    {
+        "name": "סנגריה",
+        "type": "מסעדה ספרדית, שף",
+        "kosher": false,
+        "address": "הבנקים 5, חיפה"
+    },
+    {
+        "name": "מקדונלד'ס",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "דרך בר יהודה 111, חיפה"
+    },
+    {
+        "name": "טלי בישולים",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "זסטי - Zesty",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "אסתריקה",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "Yaffa בורגר בר חיפה",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "דרך יפו 30, חיפה"
+    },
+    {
+        "name": "ביר סטיישן - Beer Station",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "דוברין נחום 3, חיפה"
+    },
+    {
+        "name": "דוברין 7",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "דוברין 7, חיפה"
+    },
+    {
+        "name": "בר גלים - Bar Galim",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "יונתן 3, בת גלים, חיפה"
+    },
+    {
+        "name": "cofix",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "הנביאים 5, חיפה"
+    },
+    {
+        "name": "אלדיאר - Aldiyar",
+        "type": "מסעדה ים תיכונית",
+        "kosher": false,
+        "address": "שד' בן גוריון 55, המושבה הגרמנית, חיפה"
+    },
+    {
+        "name": "דולסה",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": true,
+        "address": "דרך הים 6, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "מעדני יעקב",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "יהודה איתין 5, חיפה"
+    },
+    {
+        "name": "מנדרין",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' מוריה 117, חיפה"
+    },
+    {
+        "name": "שווארמה ג'יבלי",
+        "type": "מסעדה מזרחית",
+        "kosher": true,
+        "address": "דרך יפו 134, חיפה"
+    },
+    {
+        "name": "SUSHICITY",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "MAX BURGER",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "האיצטדיון, חיפה"
+    },
+    {
+        "name": "קפה עלית-אספרסו בר",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "שד' אבא חושי 199, חיפה"
+    },
+    {
+        "name": "קפה אליקה",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "מסדה 24, חיפה"
+    },
+    {
+        "name": "כרמלה אירוח ואירועי בוטיק",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "חצ'פורי מאיה",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": true,
+        "address": "חלוצי התעשייה 12, חיפה"
+    },
+    {
+        "name": "ראיי - Rai",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "הלל 2, חיפה"
+    },
+    {
+        "name": "כחול לבן אירועים",
+        "type": "קייטרינג",
+        "kosher": true,
+        "address": "שד' הנשיא 124, חיפה"
+    },
+    {
+        "name": "אספרגוס אוכל דרוזי",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "אנדרי סחרוב 9, חיפה"
+    },
+    {
+        "name": "פטוש גלרי",
+        "type": "מסעדה ים תיכונית",
+        "kosher": false,
+        "address": "הנמל 6, נמל חיפה"
+    },
+    {
+        "name": "Mish-Mish",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' ההסתדרות 58, חיפה"
+    },
+    {
+        "name": "מיסטר פאי חיפה",
+        "type": "מסעדה צמחונית",
+        "kosher": false,
+        "address": "שד' הנשיא 119, חיפה"
+    },
+    {
+        "name": "סגאפו",
+        "type": "מסעדה איטלקית",
+        "kosher": true,
+        "address": "שד' הפלי\"ם 2, חיפה"
+    },
+    {
+        "name": "pizza meat",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "גלידרית גילטו",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "מוהליבר 14, חיפה"
+    },
+    {
+        "name": "לחם עיניים בע\"מ",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "סירקין 21, חיפה"
+    },
+    {
+        "name": "שווארמה ותבשילי דליה",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "האשלג 3, חיפה"
+    },
+    {
+        "name": "פיצה טומי חיפה",
+        "type": "פיצריות",
+        "kosher": true,
+        "address": "התיכון 86, חיפה"
+    },
+    {
+        "name": "אצל מושיקו - מאז 1954",
+        "type": "מסעדה מזרחית",
+        "kosher": true,
+        "address": "דוברין נחום 3, חיפה"
+    },
+    {
+        "name": "מאפיית בייקרס אגמי",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "אח\"י אילת 21, קריית חיים, חיפה"
+    },
+    {
+        "name": "סטאר - star",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "שד' המגינים 19, ואדי ניסנאס, חיפה"
+    },
+    {
+        "name": "פיצה לינגה - Linga pizza",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "דרך יפו 40, חיפה"
+    },
+    {
+        "name": "רודיאו",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "בלפור 23, חיפה"
+    },
+    {
+        "name": "ד\"ר פיצה בע\"מ",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "דרך אלנבי 97, חיפה"
+    },
+    {
+        "name": "פיצה סטורי",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "שד' המגינים 3, חיפה"
+    },
+    {
+        "name": "לחמניותי",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "דרך יפו 27, חיפה"
+    },
+    {
+        "name": "פטריק'ס - PATRICK'S",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "שד' ההסתדרות 248, ביג קריות"
+    },
+    {
+        "name": "סמי בייקרי",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "דרך יפו 137, חיפה"
+    },
+    {
+        "name": "מיט",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "שד' הנשיא 129, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "כרמלה אורחים נוספים הגיעו",
+        "type": "קייטרינג",
+        "kosher": true,
+        "address": "יגאל אלון 29, חיפה"
+    },
+    {
+        "name": "מקסים",
+        "type": "מסעדה ים תיכונית",
+        "kosher": false,
+        "address": "הצדף, חיפה"
+    },
+    {
+        "name": "חומוס BAR",
+        "type": "מסעדה טבעונית",
+        "kosher": false,
+        "address": "נתנזון 22, חיפה"
+    },
+    {
+        "name": "בארקי - BARki",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "דרך העצמאות 84, חיפה"
+    },
+    {
+        "name": "אצל אפי",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "שד' אבא חושי 199, חיפה"
+    },
+    {
+        "name": "הבולגרי מיפו",
+        "type": "מסעדה בולגרית",
+        "kosher": true,
+        "address": "שד' ההסתדרות 248, ביג קריות"
+    },
+    {
+        "name": "תלפיות",
+        "type": "מסעדה ים תיכונית",
+        "kosher": false,
+        "address": "סירקין 28, חיפה"
+    },
+    {
+        "name": "קרמרי דה ל'אקלר -חיפה",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "דרך העצמאות 49, חיפה"
+    },
+    {
+        "name": "אומאמי Umami חיפה - Umami",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "הנמל 15, חיפה"
+    },
+    {
+        "name": "אגאדיר - AGADIR",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "דוד פינסקי 6, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "חמרמורת",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "סירקין 27, חיפה"
+    },
+    {
+        "name": "מנצ'ס חיפה - MENCHES",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "שד' בן גוריון 6, קניון סיטי סנטר, חיפה"
+    },
+    {
+        "name": "פאפוס שקשוקה בפיתה",
+        "type": "כשר",
+        "kosher": true,
+        "address": "הרצל 42, חיפה"
+    },
+    {
+        "name": "ציקן גריל",
+        "type": "מסעדת בשרים",
+        "kosher": true,
+        "address": "שד' ההסתדרות 55, קניון סינמול, חיפה"
+    },
+    {
+        "name": "טורטה",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "שבתאי לוי 13, ואדי ניסנאס, חיפה"
+    },
+    {
+        "name": "Fast food - lewaa shakour",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "דודא לפיצה",
+        "type": "פיצריות",
+        "kosher": true,
+        "address": "הרצל 46, חיפה"
+    },
+    {
+        "name": "כשר וטעים",
+        "type": "מטבח ביתי",
+        "kosher": true,
+        "address": "הרצל 40, חיפה"
+    },
+    {
+        "name": "בורגראנץ' חוף הכרמל חיפה",
+        "type": "מסעדת המבורגרים",
+        "kosher": true,
+        "address": "חיפה"
+    },
+    {
+        "name": "בי בי בי - BBB קריית חיים - BBB",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "אח\"י אילת 12, קריית חיים, חיפה"
+    },
+    {
+        "name": "טאבון וגריל התקווה",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "דרך יפו 139, חיפה"
+    },
+    {
+        "name": "אבו שאקר",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "שד' המגינים 29, ואדי ניסנאס, חיפה"
+    },
+    {
+        "name": "קייטרינג שפירא 6",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "שפירא 6, חיפה"
+    },
+    {
+        "name": "זמן קפה",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "הרצל 18, חיפה"
+    },
+    {
+        "name": "piano piano",
+        "type": "מסעדה איטלקית, שף",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "קפאין",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "חורב 13, חיפה"
+    },
+    {
+        "name": "מידנייט פיצה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "השיש 21, חיפה"
+    },
+    {
+        "name": "קפה עלית-אספרסו בר",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "חיל הים 10, בת גלים, חיפה"
+    },
+    {
+        "name": "ראסטיק פיצה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "הנמל 63, חיפה"
+    },
+    {
+        "name": "אל סגרטו",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "הנמל 25, חיפה"
+    },
+    {
+        "name": "המקסיקנית",
+        "type": "מסעדה מקסיקנית",
+        "kosher": true,
+        "address": "אח\"י אילת 59, חיפה"
+    },
+    {
+        "name": "פרג'",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "שד' המגינים 29, חיפה"
+    },
+    {
+        "name": "גוטה יוגורט",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "אח\"י אילת 15, חיפה"
+    },
+    {
+        "name": "ארומה - אספרסו בר",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' ההסתדרות 248, ביג קריות"
+    },
+    {
+        "name": "הסירים של KATI קאטי",
+        "type": "מסעדה ים תיכונית",
+        "kosher": true,
+        "address": "קיבוץ גלויות 34, חיפה"
+    },
+    {
+        "name": "קפה גרג",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' הנשיא 138, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "TAILS",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "בלפור 2, חיפה"
+    },
+    {
+        "name": "meat man",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "אח\"י אילת 21, חיפה"
+    },
+    {
+        "name": "אלנבי",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "דרך אלנבי 43, חיפה"
+    },
+    {
+        "name": "מאפיית המפגש",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": true,
+        "address": "שד' ההסתדרות 82, חיפה"
+    },
+    {
+        "name": "גלטו",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "מוהליבר 14, חיפה"
+    },
+    {
+        "name": "\"המעגן\"",
+        "type": "מסעדת דגים",
+        "kosher": false,
+        "address": "נתנזון 16, חיפה"
+    },
+    {
+        "name": "פאט ויני Fat Vinny - עזריאלי חיפה",
+        "type": "מסעדה איטלקית",
+        "kosher": false,
+        "address": "פלימן משה 4, חיפה"
+    },
+    {
+        "name": "פיצה לזינו",
+        "type": "פיצריות",
+        "kosher": true,
+        "address": "התיכון 86, חיפה"
+    },
+    {
+        "name": "sezom erotsgurd",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "TWEETY בגט",
+        "type": "סנדוויץ' בר",
+        "kosher": false,
+        "address": "הרצליה 10, ואדי ניסנאס, חיפה"
+    },
+    {
+        "name": "ארליך - Tasty choice",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "אצל יאיר",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "בעלי מלאכה 26, חיפה"
+    },
+    {
+        "name": "פיצה FIX",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "פייבל בר",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "מחניים 4, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "עד העצם אקספרס",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "שד' ההסתדרות 248, חיפה"
+    },
+    {
+        "name": "מומו -MOMO",
+        "type": "ביסטרו",
+        "kosher": false,
+        "address": "אח\"י אילת 7, קריית חיים, חיפה"
+    },
+    {
+        "name": "Moonshiners",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "קהילת סלוניקי 1, חיפה"
+    },
+    {
+        "name": "סנדוויץ' טוב",
+        "type": "סנדוויץ' בר",
+        "kosher": true,
+        "address": "החלוץ 15, חיפה"
+    },
+    {
+        "name": "סושי בר",
+        "type": "מסעדה אסייאתית",
+        "kosher": true,
+        "address": "אח\"י אילת 55, קריית חיים, חיפה"
+    },
+    {
+        "name": "שווארמה התאומים",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "שד' טרומפלדור 56, חיפה"
+    },
+    {
+        "name": "טמפל בר - Temple bar",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "שד' ההסתדרות 55, קניון סינמול, חיפה"
+    },
+    {
+        "name": "HFA",
+        "type": "מסעדה צרפתית, שף",
+        "kosher": false,
+        "address": "הבנקים 5, חיפה"
+    },
+    {
+        "name": "קיוסקפה",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שלום עליכם 3, חיפה"
+    },
+    {
+        "name": "חומוס הבוטקה",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "חלוצי התעשייה 94, חיפה"
+    },
+    {
+        "name": "סושי מן",
+        "type": "מסעדה אסייאתית",
+        "kosher": true,
+        "address": "פלימן משה 4, קניון חיפה"
+    },
+    {
+        "name": "שווארמלה",
+        "type": "אוכל רחוב",
+        "kosher": true,
+        "address": "חניתה 40, חיפה"
+    },
+    {
+        "name": "איטליאנו דלי קפה",
+        "type": "מסעדה איטלקית",
+        "kosher": false,
+        "address": "שדרות הנשיא טרומן 109, חיפה"
+    },
+    {
+        "name": "ASIATICO - אוכל רחוב אסייתי חיפה",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "שלום עליכם 3, חיפה"
+    },
+    {
+        "name": "SUSHI HOUSE - SUSHI HOUSE",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "כיאט 1, חיפה"
+    },
+    {
+        "name": "דיינו",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "דרך העצמאות 72, חיפה"
+    },
+    {
+        "name": "קפה קפה - cafe cafe",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' ההסתדרות 55, קניון סינמול, חיפה"
+    },
+    {
+        "name": "פאב העוגן",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "שער פלמר 3, נמל חיפה"
+    },
+    {
+        "name": "קייטרינג מאכלי השף",
+        "type": "קייטרינג",
+        "kosher": true,
+        "address": "התיכון 19, חיפה"
+    },
+    {
+        "name": "בורגר סאלון",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "פנחס ואברהם רוטנברג 2, חיפה"
+    },
+    {
+        "name": "סינטה בר אקספרס",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "אלברט איינשטיין 139, חיפה"
+    },
+    {
+        "name": "פרשפוינט",
+        "type": "גלידריות",
+        "kosher": true,
+        "address": "פלימן משה 4, קניון חיפה"
+    },
+    {
+        "name": "פאב אמבסדור",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "יונה 4, חיפה"
+    },
+    {
+        "name": "שוואטינא",
+        "type": "מסעדה ים תיכונית",
+        "kosher": false,
+        "address": "העליה השניה 96, חיפה"
+    },
+    {
+        "name": "פיצה טורינו",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "אח\"י אילת 11, קריית חיים, חיפה"
+    },
+    {
+        "name": "Yaffa",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "דרך יפו 30, חיפה"
+    },
+    {
+        "name": "אושי אושי",
+        "type": "מסעדה אסייאתית",
+        "kosher": true,
+        "address": "פלימן משה 4, קניון חיפה"
+    },
+    {
+        "name": "שרה אוכל ביתי",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "הדגן 10, חיפה"
+    },
+    {
+        "name": "סדנת בשר של בנצי",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "הטבח הנייד",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "ואדי, חיפה"
+    },
+    {
+        "name": "כאמל",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "דוד אלעזר 5, חיפה"
+    },
+    {
+        "name": "מריאנו קייטרינג",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "בית לחם 19, חיפה"
+    },
+    {
+        "name": "דומינו'ס פיצה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "שלום עליכם 1, חיפה"
+    },
+    {
+        "name": "קפה גרג",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "הרב משאש 1, חיפה"
+    },
+    {
+        "name": "פיצה פדאל חיפה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "חורב 16, חיפה"
+    },
+    {
+        "name": "cofix",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "אח\"י אילת 21, קריית חיים, חיפה"
+    },
+    {
+        "name": "נגיסה סושי בר - NAGISA הפתיחה בקרוב",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "הגליל 100, חיפה"
+    },
+    {
+        "name": "Cofizz",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "הרצל 20, חיפה"
+    },
+    {
+        "name": "קיבוץ גלויות קפה גלריה",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "קיבוץ גלויות 91, חיפה"
+    },
+    {
+        "name": "אבו יוסף הטורעאני",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "שד' ההסתדרות 8, חיפה"
+    },
+    {
+        "name": "קפה מנחם",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "סורוקה משה 35, רמת בגין, חיפה"
+    },
+    {
+        "name": "ביגה",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "חורב 12, חיפה"
+    },
+    {
+        "name": "פיצה טו גו פרפקטו י",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "הרצל 80, חיפה"
+    },
+    {
+        "name": "בית השווארמה והגריל של משה",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "דרך יפו 138, חיפה"
+    },
+    {
+        "name": "קפה עלית-אספרסו בר",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "דרך העצמאות 67, חיפה"
+    },
+    {
+        "name": "ארומה - אספרסו בר",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' ההסתדרות 55, קניון סינמול, חיפה"
+    },
+    {
+        "name": "סלטי שרון",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "לחזא - Lahza",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "נתנזון 17, חיפה"
+    },
+    {
+        "name": "מסעדת כוכב המזרח",
+        "type": "מסעדת בשרים",
+        "kosher": true,
+        "address": "חלוצי התעשייה 100, חיפה"
+    },
+    {
+        "name": "ג'וטי",
+        "type": "מסעדה הודית",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "tentai sushi delivery",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "קפה גרג",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "חורב 15, מרכז חורב, חיפה"
+    },
+    {
+        "name": "The Baguette",
+        "type": "אוכל רחוב",
+        "kosher": false,
+        "address": "שד' הציונות 30, חיפה"
+    },
+    {
+        "name": "קפטן בורגר",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "שד' טרומפלדור 53, חיפה"
+    },
+    {
+        "name": "מאפיית המוציא לחם מן הארץ",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": true,
+        "address": "שער פלמר 1, נמל חיפה"
+    },
+    {
+        "name": "טוקטוקי",
+        "type": "סנדוויץ' בר",
+        "kosher": false,
+        "address": "חורב 18, חיפה"
+    },
+    {
+        "name": "הו בר - hu-bar",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "שד' אבא חושי 199, חיפה"
+    },
+    {
+        "name": "חומוס דובנוב 26",
+        "type": "חומוסייה",
+        "kosher": true,
+        "address": "פלימן משה 8, קניון קסטרא, חיפה"
+    },
+    {
+        "name": "דליקטו - ג'לאטו",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "פלימן משה 8, קניון קסטרא, חיפה"
+    },
+    {
+        "name": "אקספרסו בר קפה",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "חיפה"
+    },
+    {
+        "name": "אחים לוסקי",
+        "type": "מסעדה מזרחית",
+        "kosher": true,
+        "address": "דרך העצמאות 31, חיפה"
+    },
+    {
+        "name": "סורקיס",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "אח\"י אילת 55, חיפה"
+    },
+    {
+        "name": "גלרי קורנר",
+        "type": "סנדוויץ' בר",
+        "kosher": false,
+        "address": "הרצל 61, חיפה"
+    },
+    {
+        "name": "פיצריית ג'ראיסי",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "דרך אלנבי 18, ואדי ניסנאס, חיפה"
+    },
+    {
+        "name": "קפה זום",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "מסדה 22, חיפה"
+    },
+    {
+        "name": "המסעדה של אמא",
+        "type": "מסעדה אתיופית",
+        "kosher": false,
+        "address": "הנביאים 20, ואדי ניסנאס, חיפה"
+    },
+    {
+        "name": "פירור זהב",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "סירקין 21, חיפה"
+    },
+    {
+        "name": "ממתקי זיתונה",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "דרך רופין, חיפה"
+    },
+    {
+        "name": "פומפיי חיפה",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "החלוץ 68, חיפה"
+    },
+    {
+        "name": "רוקו סושי בר",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "הנמל 10, נמל חיפה"
+    },
+    {
+        "name": "Bakery & more",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "נתנזון, חיפה"
+    },
+    {
+        "name": "מסעדת פורמנס",
+        "type": "אוכל רחוב, שף",
+        "kosher": false,
+        "address": "יהודה איתין 5, חיפה"
+    },
+    {
+        "name": "כפיתו - Capito",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "שד' ההסתדרות 55, קניון סינמול, חיפה"
+    },
+    {
+        "name": "הפינה של אריק",
+        "type": "אוכל רחוב",
+        "kosher": true,
+        "address": "הרצל 29, חיפה"
+    },
+    {
+        "name": "פיצה האט",
+        "type": "פיצריות",
+        "kosher": true,
+        "address": "חיפה"
+    },
+    {
+        "name": "פיטרס פאב - Peter's Pub",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "הבנקים 10, חיפה"
+    },
+    {
+        "name": "מזנון רות",
+        "type": "מטבח ביתי",
+        "kosher": true,
+        "address": "שד' המגינים 100, חיפה"
+    },
+    {
+        "name": "קרנאפו - Karnafo",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "שד' המגינים 95, חיפה"
+    },
+    {
+        "name": "אושי אושי - סושי בר",
+        "type": "מסעדה אסייאתית",
+        "kosher": true,
+        "address": "פלימן משה 4, קניון חיפה"
+    },
+    {
+        "name": "לילי'ס",
+        "type": "מסעדה רומנית",
+        "kosher": false,
+        "address": "שד' ההסתדרות 25, חיפה"
+    },
+    {
+        "name": "cofix",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "חלוצי התעשייה 92, חיפה"
+    },
+    {
+        "name": "מאיה בשרים",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "דרור 24, חיפה"
+    },
+    {
+        "name": "המאמות",
+        "type": "קייטרינג",
+        "kosher": true,
+        "address": "חיפה"
+    },
+    {
+        "name": "טוק-טוקי",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "חורב 18, חיפה"
+    },
+    {
+        "name": "cafe lorees",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "נימר מלך השווארמה",
+        "type": "אוכל רחוב",
+        "kosher": false,
+        "address": "דרך יפו 44, חיפה"
+    },
+    {
+        "name": "אוג'ו - OJO",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "דרך שמחה גולן 54, גרנד קניון חיפה"
+    },
+    {
+        "name": "מסביב להימור",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "לה גופרה חיפה",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "אח\"י אילת 9, קריית חיים, חיפה"
+    },
+    {
+        "name": "גאורגיה",
+        "type": "מסעדה גרוזינית",
+        "kosher": false,
+        "address": "יפה נוף 99, חיפה"
+    },
+    {
+        "name": "טוקה פיצה בר",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "הנמל 32, חיפה"
+    },
+    {
+        "name": "Pizzeria Talpiot",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "סירקין 30, חיפה"
+    },
+    {
+        "name": "מזנון הפינה",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "דרך העצמאות 102, חיפה"
+    },
+    {
+        "name": "מאפיית המפגש קריית חיים",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": true,
+        "address": "אח\"י אילת 32, קריית חיים, חיפה"
+    },
+    {
+        "name": "הסלטייה חיפה",
+        "type": "בר סלט",
+        "kosher": false,
+        "address": "נתנזון 22, חיפה"
+    },
+    {
+        "name": "דודו אוטמזגין",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "שד' ההסתדרות 271, קריית חיים, חיפה"
+    },
+    {
+        "name": "שווארמה התאומים",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "הקובה של מומו - momo",
+        "type": "אוכל רחוב",
+        "kosher": true,
+        "address": "פלימן משה 8, קניון קסטרא, חיפה"
+    },
+    {
+        "name": "בי בי בי - BBB",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "שד' מוריה 133, חיפה"
+    },
+    {
+        "name": "צ'יקן האוס Chicken house",
+        "type": "אוכל רחוב",
+        "kosher": false,
+        "address": "שבתאי לוי 9, ואדי ניסנאס, חיפה"
+    },
+    {
+        "name": "אליטה",
+        "type": "מסעדה רוסית",
+        "kosher": false,
+        "address": "חלוצי התעשייה 19, חיפה"
+    },
+    {
+        "name": "אחעלמלא - חומוס ועוד",
+        "type": "חומוסייה",
+        "kosher": true,
+        "address": "השיש 48, חיפה"
+    },
+    {
+        "name": "הנמל 24 - Hanamal 24",
+        "type": "מסעדה צרפתית, שף",
+        "kosher": false,
+        "address": "הנמל 24, נמל חיפה"
+    },
+    {
+        "name": "קפאין",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "הגליל 74, חיפה"
+    },
+    {
+        "name": "פאב-פיל או סוף",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "חלוצי התעשייה 114, חיפה"
+    },
+    {
+        "name": "ריף קפה חיפה",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "שד' ההגנה 32, בת גלים, חיפה"
+    },
+    {
+        "name": "פיצה מאנצ'",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "אח\"י אילת 55, קריית חיים, חיפה"
+    },
+    {
+        "name": "פלאפל ארמון",
+        "type": "אוכל רחוב",
+        "kosher": true,
+        "address": "הנביאים 13, חיפה"
+    },
+    {
+        "name": "שווארמה סבאח",
+        "type": "אוכל רחוב",
+        "kosher": false,
+        "address": "דרך אלנבי 37, חיפה"
+    },
+    {
+        "name": "גאגא",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "דוד אלעזר 10, חיפה"
+    },
+    {
+        "name": "מקסיקניז",
+        "type": "מסעדת המבורגרים",
+        "kosher": true,
+        "address": "אח\"י אילת 15, קריית חיים, חיפה"
+    },
+    {
+        "name": "קראנצ' פיצה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "דרך צרפת 63, חיפה"
+    },
+    {
+        "name": "59 בשדרה",
+        "type": "כשר",
+        "kosher": true,
+        "address": "שד' בן גוריון 59, חיפה"
+    },
+    {
+        "name": "פאצ'ה מאמא - pachamama",
+        "type": "מסעדה דרום אמריקאית",
+        "kosher": false,
+        "address": "הנמל 27, נמל חיפה"
+    },
+    {
+        "name": "קלמנ'ס בר ומטבח יווני בנמל - kalmans",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "הנמל 3, נמל חיפה"
+    },
+    {
+        "name": "האם נבילה",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "תל אביב 1, חיפה"
+    },
+    {
+        "name": "משוואינה",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "עספור 19, חיפה"
+    },
+    {
+        "name": "פיצה לה בלה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "מאיר הזורע 1, חיפה"
+    },
+    {
+        "name": "הסושיה לב המפרץ",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "שד' ההסתדרות 55, חיפה"
+    },
+    {
+        "name": "שוואטינא סטלה מאריס - shawatina",
+        "type": "מסעדה ים תיכונית",
+        "kosher": false,
+        "address": "דרך סטלה מריס 100, חיפה"
+    },
+    {
+        "name": "ברסרי 107",
+        "type": "ביסטרו, שף",
+        "kosher": false,
+        "address": "יפה נוף 107, חיפה"
+    },
+    {
+        "name": "פלאפל אחלה",
+        "type": "חומוסייה",
+        "kosher": true,
+        "address": "האיצטדיון 4, חיפה"
+    },
+    {
+        "name": "סנק-בר",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "הרצל 61, חיפה"
+    },
+    {
+        "name": "עין הואדי",
+        "type": "מסעדה ערבית",
+        "kosher": false,
+        "address": "דרך העצמאות 140, חיפה"
+    },
+    {
+        "name": "Lucky Coffee - Lucky Coffee",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "ככר מאירהוף 6, חיפה"
+    },
+    {
+        "name": "פיצה טרמינל",
+        "type": "פיצריות",
+        "kosher": true,
+        "address": "אילנות 1, כרמל מערבי, חיפה"
+    },
+    {
+        "name": "בורקס העגלה",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "שד' מוריה 52, חיפה"
+    },
+    {
+        "name": "דודא",
+        "type": "סנדוויץ' בר",
+        "kosher": true,
+        "address": "דרך צרפת 63, חיפה"
+    },
+    {
+        "name": "זוהרית אוכל ביתי",
+        "type": "מטבח ביתי",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "ממליגה",
+        "type": "מסעדה רומנית",
+        "kosher": false,
+        "address": "הבנקים 1, חיפה"
+    },
+    {
+        "name": "מנדרין",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "פלימן משה 4, קניון חיפה"
+    },
+    {
+        "name": "אינסייד אאוט סושי בר - InsideOut",
+        "type": "מסעדה אסייאתית, שף",
+        "kosher": false,
+        "address": "מסדה 19, חיפה"
+    },
+    {
+        "name": "אצל קיזלר'ס",
+        "type": "מסעדת קונספט",
+        "kosher": true,
+        "address": "השומר 28, חיפה"
+    },
+    {
+        "name": "חומוס אבו סמיר",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "ארומה - אספרסו בר",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "אח\"י אילת 9, קריית חיים, חיפה"
+    },
+    {
+        "name": "שווארמה גנאם",
+        "type": "אוכל רחוב",
+        "kosher": false,
+        "address": "עספור 19, חיפה"
+    },
+    {
+        "name": "איגלו יוגורט בר",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "שד' בן גוריון 36, המושבה הגרמנית, חיפה"
+    },
+    {
+        "name": "בלאק - Black",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "שד' ההסתדרות 55, קניון סינמול, חיפה"
+    },
+    {
+        "name": "מנהטן דיינר אמריקאי חיפה",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "קדושי בגדד 34, נמל חיפה"
+    },
+    {
+        "name": "מקדונלד'ס",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "דרך שמחה גולן 54, גרנד קניון חיפה"
+    },
+    {
+        "name": "בורקס בכר",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "שלום עליכם 5, חיפה"
+    },
+    {
+        "name": "שווארמה חאזן חיפה -צומת קרית אתא",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "חלוצי התעשייה 2, חיפה"
+    },
+    {
+        "name": "קפה יערה",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "מסדה 1, חיפה"
+    },
+    {
+        "name": "בוקר",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "דוברין נחום, חיפה"
+    },
+    {
+        "name": "קפה קפה - cafe cafe",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "אח\"י אילת 55, קריית חיים, חיפה"
+    },
+    {
+        "name": "צ'ילו",
+        "type": "מסעדת קונספט",
+        "kosher": false,
+        "address": "נתנזון 7, חיפה"
+    },
+    {
+        "name": "פת שטינבך מאפיה חשמלית חיפה",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "דרך יפו 28, חיפה"
+    },
+    {
+        "name": "כוכב המזרח - אחים \"דיאב\"",
+        "type": "מסעדה מזרחית",
+        "kosher": false,
+        "address": "חלוצי התעשייה 100, חיפה"
+    },
+    {
+        "name": "סושי דניה",
+        "type": "מסעדה יפנית",
+        "kosher": false,
+        "address": "ליבריה 2, חיפה"
+    },
+    {
+        "name": "קניבר - Kanibar",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "שד' מוריה 110, חיפה"
+    },
+    {
+        "name": "לחם תושיה",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "שד' הנשיא 124, חיפה"
+    },
+    {
+        "name": "מאפית גדעון",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "אליהו 4, חיפה"
+    },
+    {
+        "name": "אלי'ז פאב - Eli's Pub",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "דרך יפו 35, חיפה"
+    },
+    {
+        "name": "קינגדום - KINGDOM",
+        "type": "מסעדת קונספט",
+        "kosher": false,
+        "address": "שד' בן גוריון 37, המושבה הגרמנית, חיפה"
+    },
+    {
+        "name": "קונדיטורית אייל",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": true,
+        "address": "חלוצי התעשייה 92, חיפה"
+    },
+    {
+        "name": "יר קפה - YerCafe",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "שד' צביה ויצחק 2, חיפה"
+    },
+    {
+        "name": "איל פרסקו - il fresco",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "דרך שמחה גולן 54, גרנד קניון חיפה"
+    },
+    {
+        "name": "תאיר שחאדה",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "Cofizz",
+        "type": "אוכל רחוב",
+        "kosher": true,
+        "address": "שד' הנשיא 133, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "ג'והרה הדרוזית בבת-גלים",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "העליה השניה 14, חיפה"
+    },
+    {
+        "name": "TOMOKA טומוקה",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "דרך שמחה גולן 54, חיפה"
+    },
+    {
+        "name": "מאפה זיו",
+        "type": "קונדיטוריה ומאפיות",
+        "kosher": false,
+        "address": "שלום עליכם 2, חיפה"
+    },
+    {
+        "name": "פיצה מאנצ' - חיפה",
+        "type": "פיצריות",
+        "kosher": false,
+        "address": "דרך הים 3, חיפה"
+    },
+    {
+        "name": "פלאפל בר גיורא",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "גיורא יוספטל 2, חיפה"
+    },
+    {
+        "name": "שווארמה פלאפל סאלח",
+        "type": "אוכל רחוב",
+        "kosher": false,
+        "address": "נתנזון 18, חיפה"
+    },
+    {
+        "name": "פייצוציית צאנס",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "הקובה של אפי",
+        "type": "מסעדה עירקית",
+        "kosher": true,
+        "address": "שער פלמר 2, נמל חיפה"
+    },
+    {
+        "name": "מסעדת רם",
+        "type": "מסעדת בשרים",
+        "kosher": true,
+        "address": "האיצטדיון 6, חיפה"
+    },
+    {
+        "name": "קייטרינג לורי - lori",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "cofix",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "דרך הים 3, מרכז הכרמל, חיפה"
+    },
+    {
+        "name": "קרמרי דה לאקלר",
+        "type": "גלידריות",
+        "kosher": false,
+        "address": "אח\"י אילת, חיפה"
+    },
+    {
+        "name": "מאזאט - Mazat",
+        "type": "מסעדה ים תיכונית",
+        "kosher": false,
+        "address": "דוד אלעזר 12, חיפה"
+    },
+    {
+        "name": "בדאלק",
+        "type": "מטבח ביתי",
+        "kosher": true,
+        "address": "האיצטדיון 6, חיפה"
+    },
+    {
+        "name": "סילבה בוילה",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "כיכר היינריך היינה 1, חיפה"
+    },
+    {
+        "name": "קניב ר",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "רובּין פוּד - Robin Food",
+        "type": "מסעדה טבעונית",
+        "kosher": true,
+        "address": "סירקין 24, חיפה"
+    },
+    {
+        "name": "ווק אנד רול - WOK N ROLL",
+        "type": "מסעדה אסייאתית",
+        "kosher": false,
+        "address": "הנמל 35, נמל חיפה"
+    },
+    {
+        "name": "טקסי פיצה",
+        "type": "פיצריות",
+        "kosher": true,
+        "address": "התיכון 37, חיפה"
+    },
+    {
+        "name": "סליק - sleek",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "שד' הנשיא 124, חיפה"
+    },
+    {
+        "name": "צ'יינה ביי",
+        "type": "מסעדה אסייאתית",
+        "kosher": true,
+        "address": "שד' הנשיא 101, חיפה"
+    },
+    {
+        "name": "פיצה פלוס",
+        "type": "פיצריות",
+        "kosher": true,
+        "address": "משה חיים שפירא 12, חיפה"
+    },
+    {
+        "name": "מנדרין",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "שד' ההסתדרות 55, קניון סינמול, חיפה"
+    },
+    {
+        "name": "מורל טאפס עולמי ויין",
+        "type": "מסעדת קונספט",
+        "kosher": false,
+        "address": "הנמל 33, נמל חיפה"
+    },
+    {
+        "name": "פלאפל חזן",
+        "type": "חומוסייה",
+        "kosher": false,
+        "address": "שד' ההסתדרות 58, חיפה"
+    },
+    {
+        "name": "פלפלת פנורמה",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "שדרות הנשיא טרומן 107, קריית חיים, חיפה"
+    },
+    {
+        "name": "סנדוויץ' בר הנמל",
+        "type": "סנדוויץ' בר",
+        "kosher": false,
+        "address": "נתנזון 9, חיפה"
+    },
+    {
+        "name": "ביסטרו וניה",
+        "type": "ביסטרו",
+        "kosher": false,
+        "address": "שער פלמר 1, נמל חיפה"
+    },
+    {
+        "name": "אליזבת מטבח ביתי",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "יוכבד, חיפה"
+    },
+    {
+        "name": "מסעדת אחים סאלח",
+        "type": "מסעדה ים תיכונית",
+        "kosher": false,
+        "address": "שד' המגינים 5, חיפה"
+    },
+    {
+        "name": "סאלוט - salute",
+        "type": "מסעדה ים תיכונית",
+        "kosher": false,
+        "address": "דרך יפו 78, חיפה"
+    },
+    {
+        "name": "יאפא 39 - yafa 39",
+        "type": "בתי קפה",
+        "kosher": false,
+        "address": "הבנקים 8, חיפה"
+    },
+    {
+        "name": "LA PATRON",
+        "type": "פאבים וברים",
+        "kosher": false,
+        "address": "נתנזון 7, חיפה"
+    },
+    {
+        "name": "מוזס - Moses",
+        "type": "מסעדת המבורגרים",
+        "kosher": false,
+        "address": "חלוצי התעשייה 96, חיפה"
+    },
+    {
+        "name": "Furman's",
+        "type": "קייטרינג",
+        "kosher": true,
+        "address": "יהודה איתין 5, חיפה"
+    },
+    {
+        "name": "ארומה - אספרסו בר",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "חיפה"
+    },
+    {
+        "name": "בשרלה",
+        "type": "מסעדת בשרים",
+        "kosher": false,
+        "address": "פלימן משה 8, קניון קסטרא, חיפה"
+    },
+    {
+        "name": "ורד ברוקמן - קייטרינג מוסקט",
+        "type": "קייטרינג",
+        "kosher": false,
+        "address": "חיפה"
+    },
+    {
+        "name": "ביגה - BiGA",
+        "type": "בתי קפה",
+        "kosher": true,
+        "address": "פלימן משה 4, קניון חיפה"
+    }
+]

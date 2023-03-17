@@ -1,6 +1,5 @@
 from googleplaces import GooglePlaces, types, lang
-import json
-import decimal
+from Server.DataBuilder.Utils import write_to_file
 
 # 32.836823, 35.056948 - T
 # 32.758325, 35.022616 - B
@@ -8,13 +7,6 @@ import decimal
 # 32.805663, 34.956011 - L
 
 # 32.797574, 35.015749 - C
-
-
-class DecimalEncoder(json.JSONEncoder):
-    def default(self, o):
-        if isinstance(o, decimal.Decimal):
-            return float(o)
-        return super(DecimalEncoder, self).default(o)
 
 
 def get_google_api_key():
@@ -42,12 +34,7 @@ def get_raw_data(google_api_key: str):
     return data
 
 
-def write_to_file(data, file_name):
-    with open(file_name, 'w', encoding='utf-8') as f:
-        json.dump(data, f, ensure_ascii=False, indent=4, cls=DecimalEncoder)
-
-
-def build_data():
+def google_build_data():
     key = get_google_api_key()
     if key is None:
         print("ERROR")
