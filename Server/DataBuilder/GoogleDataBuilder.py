@@ -1,42 +1,57 @@
-from googleplaces import GooglePlaces, types, lang
+from googleplaces import GooglePlaces, types, lang, ranking
 from Server.DataBuilder.Utils import write_to_file
-
-# 32.836823, 35.056948 - T
-# 32.758325, 35.022616 - B
-# 32.789790, 35.075487 - R
-# 32.805663, 34.956011 - L
-
-# 32.797574, 35.015749 - C
+import time
+import json
 
 
-def get_google_api_key():
-    try:
-        with open('google-api-key.txt', 'r', encoding='utf-8') as f:
-            return f.read()
-    except IOError:
-        return None
+def get_raw_data(google_api_key: str, locations: list):
+    data = []
+    place_ids = set()
+    for location in locations:
+        data += get_raw_data_by_latitude(google_api_key, place_ids, location)
+    return data
 
 
-def get_raw_data(google_api_key: str):
-    lat_lng = {
-        "lat": 32.797574,
-        "lng": 35.015749
-    }
+def get_raw_data_by_latitude(google_api_key: str, place_ids: set, location):
+    delta = 1 / 110.574     # One kilometer
+    lat = location["start_lat"]
+    data = []
+    while lat > location["end_lat"]:
+        lat_lng = {"lat": lat, "lng": location["lng"]}
+        data += get_raw_data_by_coordinates(google_api_key, place_ids, lat_lng)
+        lat -= delta
+    return data
+
+
+def get_raw_data_by_coordinates(google_api_key: str, place_ids: set, lat_lng):
     google_places = GooglePlaces(google_api_key)
     place_types = [types.TYPE_RESTAURANT, types.TYPE_CAFE]
-    qr = google_places.nearby_search(language=lang.HEBREW, lat_lng=lat_lng, radius=5820, types=place_types)
+    qr = google_places.nearby_search(language=lang.HEBREW, lat_lng=lat_lng, rankby=ranking.DISTANCE, types=place_types)
 
     data = []
-    for i in qr.places:
-        i.get_details()
-        data.append(i.details)
+    for place in qr.places:
+        if place.place_id not in place_ids:
+            place.get_details()
+            data.append(place.details)
+            place_ids.add(place.place_id)
+
+    while qr.has_next_page_token:
+        time.sleep(5)   # Waiting for the next page to be ready
+        qr = google_places.nearby_search(language=lang.HEBREW, lat_lng=lat_lng, rankby=ranking.DISTANCE,
+                                         types=place_types, pagetoken=qr.next_page_token)
+        for place in qr.places:
+            if place.place_id not in place_ids:
+                place.get_details()
+                data.append(place.details)
+                place_ids.add(place.place_id)
 
     return data
 
 
 def google_build_data():
-    key = get_google_api_key()
-    if key is None:
-        print("ERROR")
-    else:
-        write_to_file(get_raw_data(key), "./Dataset/google-data.json")
+    try:
+        with open('./DataBuilder/google-data-config.json', 'r', encoding='utf-8') as f:
+            config = json.load(f)
+            write_to_file(get_raw_data(config["api_key"], config["locations"]), "./Dataset/google-data.json")
+    except IOError:
+        print("Error")
