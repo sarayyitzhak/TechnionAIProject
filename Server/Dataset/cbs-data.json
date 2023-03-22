@@ -1,0 +1,1983 @@
+[
+    {
+        "city": "חיפה",
+        "street": "שד ורבורג",
+        "amount of people": 13268,
+        "amount of religious": 2199,
+        "percent of religious": 56.379999999999995
+    },
+    {
+        "city": "חיפה",
+        "street": "משה חיים שפירא",
+        "amount of people": 2453,
+        "amount of religious": 814,
+        "percent of religious": 33.18
+    },
+    {
+        "city": "חיפה",
+        "street": "לוין אריה הרב",
+        "amount of people": 2453,
+        "amount of religious": 814,
+        "percent of religious": 33.18
+    },
+    {
+        "city": "חיפה",
+        "street": "שטרן יוסף",
+        "amount of people": 2453,
+        "amount of religious": 814,
+        "percent of religious": 33.18
+    },
+    {
+        "city": "חיפה",
+        "street": "פרומר דב",
+        "amount of people": 8423,
+        "amount of religious": 2199,
+        "percent of religious": 56.379999999999995
+    },
+    {
+        "city": "חיפה",
+        "street": "הים התיכון",
+        "amount of people": 5970,
+        "amount of religious": 1385,
+        "percent of religious": 23.2
+    },
+    {
+        "city": "חיפה",
+        "street": "חב\"ד",
+        "amount of people": 5970,
+        "amount of religious": 1385,
+        "percent of religious": 23.2
+    },
+    {
+        "city": "חיפה",
+        "street": "בר אילן",
+        "amount of people": 5970,
+        "amount of religious": 1385,
+        "percent of religious": 23.2
+    },
+    {
+        "city": "חיפה",
+        "street": "ארן זלמן",
+        "amount of people": 4845,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שד דגניה",
+        "amount of people": 4845,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שד מח\"ל",
+        "amount of people": 4845,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "האצטדיון",
+        "amount of people": 4845,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "בן צבי יצחק",
+        "amount of people": 7928,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "אח\"י אילת",
+        "amount of people": 12704,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שרת משה",
+        "amount of people": 12704,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "הגדוד העברי",
+        "amount of people": 3210,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שנקר אריה",
+        "amount of people": 3210,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שד ההסתדרות",
+        "amount of people": 4776,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שבטי ישראל",
+        "amount of people": 4776,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "ציזלינג אהרון",
+        "amount of people": 4776,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "השיירה",
+        "amount of people": 4718,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "צייטלין אהרון",
+        "amount of people": 4718,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך צייזל ירוחם",
+        "amount of people": 1460,
+        "amount of religious": 53,
+        "percent of religious": 3.63
+    },
+    {
+        "city": "חיפה",
+        "street": "הגבורים",
+        "amount of people": 12955,
+        "amount of religious": 4435,
+        "percent of religious": 146.12
+    },
+    {
+        "city": "חיפה",
+        "street": "בר יהודה ישראל",
+        "amount of people": 6330,
+        "amount of religious": 53,
+        "percent of religious": 3.63
+    },
+    {
+        "city": "חיפה",
+        "street": "חטיבת גולני",
+        "amount of people": 1460,
+        "amount of religious": 53,
+        "percent of religious": 3.63
+    },
+    {
+        "city": "חיפה",
+        "street": "אבן גבירול",
+        "amount of people": 1460,
+        "amount of religious": 53,
+        "percent of religious": 3.63
+    },
+    {
+        "city": "חיפה",
+        "street": "שד המגינים",
+        "amount of people": 9993,
+        "amount of religious": 62,
+        "percent of religious": 1.8
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך אלנבי",
+        "amount of people": 9993,
+        "amount of religious": 62,
+        "percent of religious": 1.8
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך העצמאות",
+        "amount of people": 3535,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "הגפן",
+        "amount of people": 3535,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "מסילת הברזל",
+        "amount of people": 3535,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך יפו",
+        "amount of people": 3454,
+        "amount of religious": 62,
+        "percent of religious": 1.8
+    },
+    {
+        "city": "חיפה",
+        "street": "שד רוטשילד",
+        "amount of people": 6458,
+        "amount of religious": 62,
+        "percent of religious": 1.8
+    },
+    {
+        "city": "חיפה",
+        "street": "חיל הים",
+        "amount of people": 3454,
+        "amount of religious": 62,
+        "percent of religious": 1.8
+    },
+    {
+        "city": "חיפה",
+        "street": "צה\"ל",
+        "amount of people": 3004,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "המעפילים",
+        "amount of people": 3004,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שד ההגנה",
+        "amount of people": 5659,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "המפרי יוברט",
+        "amount of people": 2002,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "התורן",
+        "amount of people": 2002,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "העוגן",
+        "amount of people": 2002,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שטרן יאיר",
+        "amount of people": 2002,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שלמה המלך",
+        "amount of people": 3657,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "דוד המלך",
+        "amount of people": 3657,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שאול המלך",
+        "amount of people": 3657,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "אצ\"ל",
+        "amount of people": 3657,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "בלום לאון",
+        "amount of people": 5248,
+        "amount of religious": 950,
+        "percent of religious": 26.99
+    },
+    {
+        "city": "חיפה",
+        "street": "שד וינגיט",
+        "amount of people": 4860,
+        "amount of religious": 1074,
+        "percent of religious": 34.29
+    },
+    {
+        "city": "חיפה",
+        "street": "סנש חנה",
+        "amount of people": 5248,
+        "amount of religious": 950,
+        "percent of religious": 26.99
+    },
+    {
+        "city": "חיפה",
+        "street": "האר\"י",
+        "amount of people": 2546,
+        "amount of religious": 223,
+        "percent of religious": 27.26
+    },
+    {
+        "city": "חיפה",
+        "street": "קדימה",
+        "amount of people": 3795,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "רענן",
+        "amount of people": 3795,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "כבירים",
+        "amount of people": 3795,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך הים",
+        "amount of people": 7474,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שד הצבי",
+        "amount of people": 3795,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "התמר",
+        "amount of people": 3679,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "חרוב",
+        "amount of people": 3679,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "הרדוף",
+        "amount of people": 3679,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "הסנה",
+        "amount of people": 3679,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "טשרניחובסקי",
+        "amount of people": 8030,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך צרפת",
+        "amount of people": 4279,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "זולא אמיל",
+        "amount of people": 4279,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "קאודרס בן ציון ד\"ר",
+        "amount of people": 4279,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "ויקטור הוגו",
+        "amount of people": 4279,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שד הציונות",
+        "amount of people": 3751,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "יפה נוף",
+        "amount of people": 3751,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך סטלה מריס",
+        "amount of people": 3751,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שד הנשיא",
+        "amount of people": 3751,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "ארלוזורוב",
+        "amount of people": 16076,
+        "amount of religious": 7792,
+        "percent of religious": 189.32
+    },
+    {
+        "city": "חיפה",
+        "street": "גאולה",
+        "amount of people": 13683,
+        "amount of religious": 8074,
+        "percent of religious": 236.64999999999998
+    },
+    {
+        "city": "חיפה",
+        "street": "הפועל",
+        "amount of people": 7603,
+        "amount of religious": 4725,
+        "percent of religious": 115.94999999999999
+    },
+    {
+        "city": "חיפה",
+        "street": "המימוני",
+        "amount of people": 6652,
+        "amount of religious": 2024,
+        "percent of religious": 61.28
+    },
+    {
+        "city": "חיפה",
+        "street": "רבי עקיבא",
+        "amount of people": 3520,
+        "amount of religious": 950,
+        "percent of religious": 26.99
+    },
+    {
+        "city": "חיפה",
+        "street": "בלפור",
+        "amount of people": 5850,
+        "amount of religious": 1084,
+        "percent of religious": 24.59
+    },
+    {
+        "city": "חיפה",
+        "street": "יוסף (הגדם)",
+        "amount of people": 4408,
+        "amount of religious": 1084,
+        "percent of religious": 24.59
+    },
+    {
+        "city": "חיפה",
+        "street": "פבזנר",
+        "amount of people": 4408,
+        "amount of religious": 1084,
+        "percent of religious": 24.59
+    },
+    {
+        "city": "חיפה",
+        "street": "נורדאו",
+        "amount of people": 4408,
+        "amount of religious": 1084,
+        "percent of religious": 24.59
+    },
+    {
+        "city": "חיפה",
+        "street": "מרכוס הרב",
+        "amount of people": 1442,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "ביאליק",
+        "amount of people": 1442,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "מעלה השחרור",
+        "amount of people": 1442,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "חסן שוקרי",
+        "amount of people": 1442,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "הרצל",
+        "amount of people": 4065,
+        "amount of religious": 1983,
+        "percent of religious": 48.78
+    },
+    {
+        "city": "חיפה",
+        "street": "השומר",
+        "amount of people": 4065,
+        "amount of religious": 1983,
+        "percent of religious": 48.78
+    },
+    {
+        "city": "חיפה",
+        "street": "ברזילי",
+        "amount of people": 4065,
+        "amount of religious": 1983,
+        "percent of religious": 48.78
+    },
+    {
+        "city": "חיפה",
+        "street": "מיכאל",
+        "amount of people": 4471,
+        "amount of religious": 3651,
+        "percent of religious": 81.66
+    },
+    {
+        "city": "חיפה",
+        "street": "חרמון",
+        "amount of people": 4471,
+        "amount of religious": 3651,
+        "percent of religious": 81.66
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך נחל הגיבורים",
+        "amount of people": 5085,
+        "amount of religious": 2399,
+        "percent of religious": 93.71
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך רופין",
+        "amount of people": 3378,
+        "amount of religious": 2622,
+        "percent of religious": 120.97
+    },
+    {
+        "city": "חיפה",
+        "street": "מקור ברוך",
+        "amount of people": 2560,
+        "amount of religious": 2399,
+        "percent of religious": 93.71
+    },
+    {
+        "city": "חיפה",
+        "street": "קניאל יהושע הרב",
+        "amount of people": 818,
+        "amount of religious": 223,
+        "percent of religious": 27.26
+    },
+    {
+        "city": "חיפה",
+        "street": "משעול תורת חיים",
+        "amount of people": 818,
+        "amount of religious": 223,
+        "percent of religious": 27.26
+    },
+    {
+        "city": "חיפה",
+        "street": "החשמל",
+        "amount of people": 4870,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך יד לבנים",
+        "amount of people": 12284,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "דורי יעקב רא\"ל",
+        "amount of people": 12637,
+        "amount of religious": 1695,
+        "percent of religious": 43.78
+    },
+    {
+        "city": "חיפה",
+        "street": "דולצ'ין אריה",
+        "amount of people": 4889,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "תענך",
+        "amount of people": 4889,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "משאש הרב",
+        "amount of people": 4889,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "ערד",
+        "amount of people": 4889,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "הגליל",
+        "amount of people": 21338,
+        "amount of religious": 2866,
+        "percent of religious": 73.9
+    },
+    {
+        "city": "חיפה",
+        "street": "חניתה",
+        "amount of people": 13571,
+        "amount of religious": 1171,
+        "percent of religious": 30.119999999999997
+    },
+    {
+        "city": "חיפה",
+        "street": "שד טרומפלדור",
+        "amount of people": 22033,
+        "amount of religious": 3768,
+        "percent of religious": 100.3
+    },
+    {
+        "city": "חיפה",
+        "street": "שאול",
+        "amount of people": 8640,
+        "amount of religious": 999,
+        "percent of religious": 26.63
+    },
+    {
+        "city": "חיפה",
+        "street": "התיכון",
+        "amount of people": 13571,
+        "amount of religious": 1171,
+        "percent of religious": 30.119999999999997
+    },
+    {
+        "city": "חיפה",
+        "street": "לוחמי חרות ישראל",
+        "amount of people": 11233,
+        "amount of religious": 1695,
+        "percent of religious": 43.78
+    },
+    {
+        "city": "חיפה",
+        "street": "מימון הרב",
+        "amount of people": 7767,
+        "amount of religious": 1695,
+        "percent of religious": 43.78
+    },
+    {
+        "city": "חיפה",
+        "street": "נתיב חן",
+        "amount of people": 4931,
+        "amount of religious": 172,
+        "percent of religious": 3.49
+    },
+    {
+        "city": "חיפה",
+        "street": "טבנקין יצחק",
+        "amount of people": 7456,
+        "amount of religious": 172,
+        "percent of religious": 3.49
+    },
+    {
+        "city": "חיפה",
+        "street": "ניסנבוים",
+        "amount of people": 2525,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "סילבר אבא הלל",
+        "amount of people": 2525,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "פינסקר",
+        "amount of people": 3828,
+        "amount of religious": 1012,
+        "percent of religious": 26.44
+    },
+    {
+        "city": "חיפה",
+        "street": "גולן שמחה",
+        "amount of people": 3828,
+        "amount of religious": 1012,
+        "percent of religious": 26.44
+    },
+    {
+        "city": "חיפה",
+        "street": "אד\"ם הכהן",
+        "amount of people": 3828,
+        "amount of religious": 1012,
+        "percent of religious": 26.44
+    },
+    {
+        "city": "חיפה",
+        "street": "מל\"ל",
+        "amount of people": 3828,
+        "amount of religious": 1012,
+        "percent of religious": 26.44
+    },
+    {
+        "city": "חיפה",
+        "street": "שד רוז",
+        "amount of people": 3466,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שד שיקגו",
+        "amount of people": 3466,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "בירם ד\"ר",
+        "amount of people": 13925,
+        "amount of religious": 62,
+        "percent of religious": 3.45
+    },
+    {
+        "city": "חיפה",
+        "street": "שד אבא חושי",
+        "amount of people": 10678,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "בליטנטל משה",
+        "amount of people": 7025,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "אגוז",
+        "amount of people": 7025,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "חלמיש",
+        "amount of people": 7025,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "אינטרנשיונל",
+        "amount of people": 8698,
+        "amount of religious": 124,
+        "percent of religious": 6.9
+    },
+    {
+        "city": "חיפה",
+        "street": "יערי מאיר",
+        "amount of people": 8698,
+        "amount of religious": 124,
+        "percent of religious": 6.9
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך חנקין",
+        "amount of people": 8698,
+        "amount of religious": 124,
+        "percent of religious": 6.9
+    },
+    {
+        "city": "חיפה",
+        "street": "שניאור זלמן",
+        "amount of people": 6900,
+        "amount of religious": 62,
+        "percent of religious": 3.45
+    },
+    {
+        "city": "חיפה",
+        "street": "קומוי נתן",
+        "amount of people": 1798,
+        "amount of religious": 62,
+        "percent of religious": 3.45
+    },
+    {
+        "city": "חיפה",
+        "street": "ויינשל אברהם ד\"ר",
+        "amount of people": 3077,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "פרויד",
+        "amount of people": 3077,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שוויצר אלברט ד\"ר",
+        "amount of people": 3077,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "ולנברג ראול",
+        "amount of people": 3077,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שאגאל מארק",
+        "amount of people": 3077,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "חורב",
+        "amount of people": 6941,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "אינשטיין אלברט",
+        "amount of people": 3653,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "גבעת דאונס",
+        "amount of people": 3653,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "יערות",
+        "amount of people": 3653,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "פיק\"א",
+        "amount of people": 3288,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "הנטקה",
+        "amount of people": 3288,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "הדסה",
+        "amount of people": 3288,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "חיפה",
+        "street": "יקינתון",
+        "amount of people": 3288,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "נשר",
+        "street": "דרך בר יהודה",
+        "amount of people": 3461,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "נשר",
+        "street": "דרך השלום",
+        "amount of people": 3461,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "נשר",
+        "street": "צה\"ל",
+        "amount of people": 14267,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "נשר",
+        "street": "אורן",
+        "amount of people": 7164,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "נשר",
+        "street": "דרך משה",
+        "amount of people": 20981,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "נשר",
+        "street": "הזית",
+        "amount of people": 3703,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "נשר",
+        "street": "השיטה",
+        "amount of people": 17909,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "נשר",
+        "street": "החרוב",
+        "amount of people": 25012,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "נשר",
+        "street": "הכלניות",
+        "amount of people": 3314,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "נשר",
+        "street": "יפה נוף",
+        "amount of people": 3314,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "נשר",
+        "street": "העליה",
+        "amount of people": 3314,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "נשר",
+        "street": "המגינים",
+        "amount of people": 3314,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "נשר",
+        "street": "התמר",
+        "amount of people": 7103,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "נשר",
+        "street": "האשל",
+        "amount of people": 7103,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "נשר",
+        "street": "התאנה",
+        "amount of people": 7103,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "נשר",
+        "street": "דוכיפת",
+        "amount of people": 7103,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "נשר",
+        "street": "נחשון",
+        "amount of people": 7103,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית אתא",
+        "street": "דרך מנחם בגין",
+        "amount of people": 29342,
+        "amount of religious": 193,
+        "percent of religious": 4.95
+    },
+    {
+        "city": "קריית אתא",
+        "street": "שאגל",
+        "amount of people": 6479,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית אתא",
+        "street": "הרר צבי",
+        "amount of people": 6479,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית אתא",
+        "street": "לוטרק",
+        "amount of people": 12083,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית אתא",
+        "street": "מינץ",
+        "amount of people": 6479,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית אתא",
+        "street": "דוכיפת",
+        "amount of people": 5604,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית אתא",
+        "street": "שלדג",
+        "amount of people": 5604,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית אתא",
+        "street": "סלעית",
+        "amount of people": 5604,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית אתא",
+        "street": "אנפה",
+        "amount of people": 5604,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית אתא",
+        "street": "נץ",
+        "amount of people": 5604,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית אתא",
+        "street": "גוש עציון",
+        "amount of people": 9427,
+        "amount of religious": 57,
+        "percent of religious": 1.49
+    },
+    {
+        "city": "קריית אתא",
+        "street": "בן עמי",
+        "amount of people": 9427,
+        "amount of religious": 57,
+        "percent of religious": 1.49
+    },
+    {
+        "city": "קריית אתא",
+        "street": "ז'בוטינסקי",
+        "amount of people": 9427,
+        "amount of religious": 57,
+        "percent of religious": 1.49
+    },
+    {
+        "city": "קריית אתא",
+        "street": "אנילביץ",
+        "amount of people": 9427,
+        "amount of religious": 57,
+        "percent of religious": 1.49
+    },
+    {
+        "city": "קריית אתא",
+        "street": "דרך יצחק רבין",
+        "amount of people": 10214,
+        "amount of religious": 559,
+        "percent of religious": 9.71
+    },
+    {
+        "city": "קריית אתא",
+        "street": "יוספטל",
+        "amount of people": 14399,
+        "amount of religious": 136,
+        "percent of religious": 3.46
+    },
+    {
+        "city": "קריית אתא",
+        "street": "בן יוסף אהרון",
+        "amount of people": 4009,
+        "amount of religious": 79,
+        "percent of religious": 1.97
+    },
+    {
+        "city": "קריית אתא",
+        "street": "אינשטין",
+        "amount of people": 4009,
+        "amount of religious": 79,
+        "percent of religious": 1.97
+    },
+    {
+        "city": "קריית אתא",
+        "street": "עשת אביגדור",
+        "amount of people": 3823,
+        "amount of religious": 57,
+        "percent of religious": 1.49
+    },
+    {
+        "city": "קריית אתא",
+        "street": "שמחוני אסף",
+        "amount of people": 3823,
+        "amount of religious": 57,
+        "percent of religious": 1.49
+    },
+    {
+        "city": "קריית אתא",
+        "street": "שפריצר נתן",
+        "amount of people": 3823,
+        "amount of religious": 57,
+        "percent of religious": 1.49
+    },
+    {
+        "city": "קריית אתא",
+        "street": "חנקין",
+        "amount of people": 11621,
+        "amount of religious": 1000,
+        "percent of religious": 19.79
+    },
+    {
+        "city": "קריית אתא",
+        "street": "הרצל",
+        "amount of people": 11621,
+        "amount of religious": 1000,
+        "percent of religious": 19.79
+    },
+    {
+        "city": "קריית אתא",
+        "street": "שד בורוכוב",
+        "amount of people": 6567,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית אתא",
+        "street": "שד הציונות",
+        "amount of people": 17213,
+        "amount of religious": 2078,
+        "percent of religious": 39.07
+    },
+    {
+        "city": "קריית אתא",
+        "street": "שד כצנלסון",
+        "amount of people": 5592,
+        "amount of religious": 1078,
+        "percent of religious": 19.28
+    },
+    {
+        "city": "קריית אתא",
+        "street": "הנביאים",
+        "amount of people": 14510,
+        "amount of religious": 1569,
+        "percent of religious": 24.79
+    },
+    {
+        "city": "קריית אתא",
+        "street": "העצמאות",
+        "amount of people": 34687,
+        "amount of religious": 3540,
+        "percent of religious": 57.83
+    },
+    {
+        "city": "קריית אתא",
+        "street": "המיסדים",
+        "amount of people": 5592,
+        "amount of religious": 1078,
+        "percent of religious": 19.28
+    },
+    {
+        "city": "קריית אתא",
+        "street": "המגינים",
+        "amount of people": 5054,
+        "amount of religious": 1000,
+        "percent of religious": 19.79
+    },
+    {
+        "city": "קריית אתא",
+        "street": "זבולון",
+        "amount of people": 29963,
+        "amount of religious": 1187,
+        "percent of religious": 19.43
+    },
+    {
+        "city": "קריית אתא",
+        "street": "ביאליק",
+        "amount of people": 9699,
+        "amount of religious": 552,
+        "percent of religious": 9.8
+    },
+    {
+        "city": "קריית אתא",
+        "street": "פרישמן",
+        "amount of people": 6205,
+        "amount of religious": 480,
+        "percent of religious": 7.74
+    },
+    {
+        "city": "קריית אתא",
+        "street": "הגפן",
+        "amount of people": 8918,
+        "amount of religious": 491,
+        "percent of religious": 5.51
+    },
+    {
+        "city": "קריית אתא",
+        "street": "נוף הכרמל",
+        "amount of people": 8918,
+        "amount of religious": 491,
+        "percent of religious": 5.51
+    },
+    {
+        "city": "קריית אתא",
+        "street": "התאנים",
+        "amount of people": 8918,
+        "amount of religious": 491,
+        "percent of religious": 5.51
+    },
+    {
+        "city": "קריית אתא",
+        "street": "הדקלים",
+        "amount of people": 8918,
+        "amount of religious": 491,
+        "percent of religious": 5.51
+    },
+    {
+        "city": "קריית אתא",
+        "street": "מורדי הגטאות",
+        "amount of people": 8918,
+        "amount of religious": 491,
+        "percent of religious": 5.51
+    },
+    {
+        "city": "קריית אתא",
+        "street": "יהודה הלוי",
+        "amount of people": 8918,
+        "amount of religious": 491,
+        "percent of religious": 5.51
+    },
+    {
+        "city": "קריית אתא",
+        "street": "שרת משה",
+        "amount of people": 7852,
+        "amount of religious": 72,
+        "percent of religious": 2.06
+    },
+    {
+        "city": "קריית אתא",
+        "street": "בן צבי יצחק",
+        "amount of people": 4358,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית אתא",
+        "street": "לילינבלום",
+        "amount of people": 4358,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית אתא",
+        "street": "יל\"ג",
+        "amount of people": 4358,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית אתא",
+        "street": "שיבת ציון",
+        "amount of people": 3494,
+        "amount of religious": 72,
+        "percent of religious": 2.06
+    },
+    {
+        "city": "קריית אתא",
+        "street": "ביל\"ו",
+        "amount of people": 3494,
+        "amount of religious": 72,
+        "percent of religious": 2.06
+    },
+    {
+        "city": "קריית אתא",
+        "street": "הותיקים",
+        "amount of people": 3494,
+        "amount of religious": 72,
+        "percent of religious": 2.06
+    },
+    {
+        "city": "קריית אתא",
+        "street": "שפרינצק",
+        "amount of people": 3494,
+        "amount of religious": 72,
+        "percent of religious": 2.06
+    },
+    {
+        "city": "קריית אתא",
+        "street": "קארו יוסף",
+        "amount of people": 3494,
+        "amount of religious": 72,
+        "percent of religious": 2.06
+    },
+    {
+        "city": "קריית אתא",
+        "street": "שטנד",
+        "amount of people": 3494,
+        "amount of religious": 72,
+        "percent of religious": 2.06
+    },
+    {
+        "city": "קריית אתא",
+        "street": "דרך חיפה",
+        "amount of people": 3494,
+        "amount of religious": 72,
+        "percent of religious": 2.06
+    },
+    {
+        "city": "קריית אתא",
+        "street": "התעשיה",
+        "amount of people": 3494,
+        "amount of religious": 72,
+        "percent of religious": 2.06
+    },
+    {
+        "city": "קריית אתא",
+        "street": "הירדן",
+        "amount of people": 3494,
+        "amount of religious": 72,
+        "percent of religious": 2.06
+    },
+    {
+        "city": "קריית אתא",
+        "street": "בן יוסף שלמה",
+        "amount of people": 3494,
+        "amount of religious": 72,
+        "percent of religious": 2.06
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "שד ח\"ן",
+        "amount of people": 4920,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "יוספטל גיורא",
+        "amount of people": 4920,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "עגנון ש\"י",
+        "amount of people": 11199,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "ז'בוטינסקי",
+        "amount of people": 4920,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "חיים וייסבורג",
+        "amount of people": 11199,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "נעמי שמר",
+        "amount of people": 6279,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "אריק איינשטיין",
+        "amount of people": 6279,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "התל",
+        "amount of people": 12558,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "אהוד מנור",
+        "amount of people": 6279,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "הפקאן",
+        "amount of people": 6279,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "גוש חלב",
+        "amount of people": 6279,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "חוגלה",
+        "amount of people": 6279,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "הפלמ\"ח",
+        "amount of people": 8964,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "קרן היסוד",
+        "amount of people": 8964,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "שד רבין",
+        "amount of people": 4622,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "שבטי ישראל",
+        "amount of people": 4622,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "שמעון",
+        "amount of people": 4622,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "הגפן",
+        "amount of people": 4342,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "דרך עכו",
+        "amount of people": 10272,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "שד בן גוריון",
+        "amount of people": 4342,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "העמקים",
+        "amount of people": 5930,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "ההגנה",
+        "amount of people": 5930,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "הגליל",
+        "amount of people": 5930,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "חרמון",
+        "amount of people": 5930,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "כנען",
+        "amount of people": 5930,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "שד ויצמן",
+        "amount of people": 5930,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "סולד",
+        "amount of people": 5930,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "שד ירושלים",
+        "amount of people": 5930,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "קרן קיימת לישראל",
+        "amount of people": 5930,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ים",
+        "street": "שד ירושלים",
+        "amount of people": 7846,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ים",
+        "street": "שד אלון יגאל",
+        "amount of people": 4370,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ים",
+        "street": "כלנית",
+        "amount of people": 4370,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ים",
+        "street": "אביר יעקב",
+        "amount of people": 4370,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ים",
+        "street": "סביון",
+        "amount of people": 4370,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ים",
+        "street": "שד הפלמ\"ח",
+        "amount of people": 4211,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ים",
+        "street": "שד ויצמן",
+        "amount of people": 6001,
+        "amount of religious": 110,
+        "percent of religious": 6.15
+    },
+    {
+        "city": "קריית ים",
+        "street": "כצנלסון",
+        "amount of people": 2039,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ים",
+        "street": "השופטים",
+        "amount of people": 2039,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ים",
+        "street": "דוד המלך",
+        "amount of people": 2039,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ים",
+        "street": "להמן הרברט",
+        "amount of people": 1790,
+        "amount of religious": 110,
+        "percent of religious": 6.15
+    },
+    {
+        "city": "קריית ים",
+        "street": "צה\"ל",
+        "amount of people": 7438,
+        "amount of religious": 110,
+        "percent of religious": 6.15
+    },
+    {
+        "city": "קריית ים",
+        "street": "שפרינצק",
+        "amount of people": 1790,
+        "amount of religious": 110,
+        "percent of religious": 6.15
+    },
+    {
+        "city": "קריית ים",
+        "street": "מצדה",
+        "amount of people": 1790,
+        "amount of religious": 110,
+        "percent of religious": 6.15
+    },
+    {
+        "city": "קריית ים",
+        "street": "יוספטל",
+        "amount of people": 2172,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ים",
+        "street": "ספיר פנחס",
+        "amount of people": 5648,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ים",
+        "street": "שרת משה",
+        "amount of people": 3476,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית ים",
+        "street": "שד בן צבי",
+        "amount of people": 3476,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "עופרה חזה",
+        "amount of people": 17214,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "בנאי יוסי",
+        "amount of people": 25821,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "קדיש לוז",
+        "amount of people": 17214,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "צה\"ל",
+        "amount of people": 25821,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "דקר",
+        "amount of people": 25821,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "בגין מנחם",
+        "amount of people": 8607,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "ירושלים",
+        "amount of people": 8607,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "הברוש",
+        "amount of people": 8607,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "שז\"ר זלמן",
+        "amount of people": 8607,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "שושנה דמארי",
+        "amount of people": 8607,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "ש\"י עגנון",
+        "amount of people": 8607,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "החשמונאים",
+        "amount of people": 15727,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "שד בן גוריון",
+        "amount of people": 13668,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "ורד",
+        "amount of people": 13668,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "דרך עכו",
+        "amount of people": 13066,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "האלה",
+        "amount of people": 8607,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "צאלון",
+        "amount of people": 8607,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "שד ויצמן",
+        "amount of people": 7120,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "יוספטל",
+        "amount of people": 5061,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "ז'בוטינסקי",
+        "amount of people": 2059,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "יששכר",
+        "amount of people": 4301,
+        "amount of religious": 66,
+        "percent of religious": 2.94
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "בר אילן",
+        "amount of people": 2059,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "שד גושן משה",
+        "amount of people": 6701,
+        "amount of religious": 66,
+        "percent of religious": 2.94
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "אח\"י אילת",
+        "amount of people": 2242,
+        "amount of religious": 66,
+        "percent of religious": 2.94
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "שד קרן קימת",
+        "amount of people": 6701,
+        "amount of religious": 66,
+        "percent of religious": 2.94
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "גרושקביץ",
+        "amount of people": 2242,
+        "amount of religious": 66,
+        "percent of religious": 2.94
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "אהרון",
+        "amount of people": 4459,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    },
+    {
+        "city": "קריית מוצקין",
+        "street": "אוסישקין",
+        "amount of people": 4459,
+        "amount of religious": 0,
+        "percent of religious": 0.0
+    }
+]
