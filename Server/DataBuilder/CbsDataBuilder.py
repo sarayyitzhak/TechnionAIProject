@@ -52,7 +52,7 @@ def get_raw_data():
     religious_by_key = pd.read_excel("./CbsInfo/religious_population.xlsx", sheet_name="חרדים במחוזות, ביישובים ובאס",
                                      engine='openpyxl', skiprows=9, usecols='B:G')
     transition_key = pd.read_excel("./CbsInfo/transition_area_key.xlsx", engine='openpyxl',
-                                   usecols='B, C, E, G, H, J, K, M')
+                                    usecols='B, C, E, G, H, J, K, M')
     area_by_key = pd.read_excel("./CbsInfo/streets_by_area_key.xlsx", engine='openpyxl', usecols='A:F')
     religious_by_key.reset_index(drop=True)
     transition_key.iloc[:, 2] = str_col_to_int(transition_key.iloc[:, 2])
