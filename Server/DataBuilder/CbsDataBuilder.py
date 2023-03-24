@@ -22,6 +22,8 @@ def cbs_build_data():
         if religious_by_area.iloc[:, 0][row] in cities and isinstance(religious_by_area.iloc[:, 2][row], str):
             city = religious_by_area.iloc[:, 0][row]
             streets_list = religious_by_area.iloc[:, 2][row].split(', ')
+            for i in range(len(streets_list)):
+                streets_list[i] = streets_list[i].replace("שד", "שדרות")
             people_count = religious_by_area.iloc[:, 3][row]
             religions_count = religious_by_area.iloc[:, 4][row]
             if religions_count == '..':
