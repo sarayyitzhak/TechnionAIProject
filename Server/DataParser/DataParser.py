@@ -1,6 +1,7 @@
 import numbers
 import math
 import pandas as pd
+import textdistance
 
 cities_list = ['חיפה', 'טירת הכרמל', 'נשר', 'קריית אתא', 'קריית ביאליק', 'קריית ים', 'קריית מוצקין']
 
@@ -79,8 +80,15 @@ def parse_reviews(google_df):
     return reviews
 
 
+def distance(s1, s2):
+    if not s1 and not s2:
+        return 0
+    return textdistance.strcmp95.normalized_similarity(s1, s2)
+
+
 def parse_data():
     google_df = pd.read_json("./Dataset/google-data.json")
+    rest_df = pd.read_json("./Dataset/rest-data.json")
     cbs_df = pd.read_json("./Dataset/cbs-data.json")
     result = {}
 
@@ -120,6 +128,80 @@ def parse_data():
         for row in range(len(google_df)):
             values.append(google_df[col][row])
         result[col] = values
+
+    common_words = {}
+    for r_name in rest_df['name']:
+        for word in set(r_name.split(" ")):
+            if word not in common_words:
+                common_words[word.lower()] = 0
+            common_words[word.lower()] += 1
+
+    for row in range(len(google_df)):
+        g_name = google_df["name"][row]
+        for word in set(g_name.split(" ")):
+            if word not in common_words:
+                common_words[word.lower()] = 0
+            common_words[word.lower()] += 1
+
+    common_words_strong = [key for key, value in common_words.items() if value >= 15]
+    common_words_weak = [key for key, value in common_words.items() if value >= 5]
+
+    rest_values = rest_df.values.copy()
+
+    type_values = []
+    kosher_values = []
+    for row in range(len(google_df)):
+        g_name = google_df["name"][row]
+        g_address = google_df["vicinity"][row]
+        g_city = None
+        for address_component in google_df["address_components"][row]:
+            if "locality" in address_component["types"]:
+                g_city = address_component["long_name"]
+        g_name_strong = " ".join([item for item in g_name.split(" ") if item not in common_words_strong])
+        g_name_weak = " ".join([item for item in g_name.split(" ") if item not in common_words_weak])
+        first_best_dist = 0.9
+        second_best_dist = 0.8
+        third_best_dist = 0
+        first_best_value = None
+        second_best_value = None
+        third_best_value = None
+        for value in rest_values:
+            if g_city != value[4]:
+                continue
+            r_name_strong = " ".join([item for item in value[1].split(" ") if item not in common_words_strong])
+            name_dist = distance(g_name_strong, r_name_strong)
+            if name_dist > first_best_dist:
+                first_best_dist = name_dist
+                first_best_value = value
+
+            if first_best_value is None:
+                place_dist = distance(value[5], g_address.split(" ")[0])
+                if place_dist > 0.85 and name_dist > second_best_dist:
+                    second_best_dist = name_dist
+                    second_best_value = value
+
+                if second_best_value is None:
+                    r_name_weak = " ".join([item for item in value[1].split(" ") if item not in common_words_weak])
+                    common_words = len(list(set(g_name_weak.lower().split(" ")) & set(r_name_weak.lower().split(" "))))
+                    if distance(g_name_weak, r_name_weak) > 0.8 and common_words > third_best_dist:
+                        third_best_dist = common_words
+                        third_best_value = value
+
+        if first_best_value is not None:
+            type_values.append(first_best_value[2])
+            kosher_values.append(first_best_value[3])
+        elif second_best_value is not None:
+            type_values.append(second_best_value[2])
+            kosher_values.append(second_best_value[3])
+        elif third_best_value is not None:
+            type_values.append(third_best_value[2])
+            kosher_values.append(third_best_value[3])
+        else:
+            type_values.append(None)
+            kosher_values.append(None)
+
+    result["kosher"] = kosher_values
+    result["type"] = type_values
 
     frame = pd.DataFrame(result)
     frame.to_csv("./Dataset/data.csv")
