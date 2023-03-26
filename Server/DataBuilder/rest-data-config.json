@@ -1,0 +1,33 @@
+{
+    "chrome_driver_path": "chromedriver",
+    "web_paths": [
+        {
+            "path": "haifa",
+            "city": "חיפה"
+        },
+        {
+            "path": "kiryat-ata",
+            "city": "קרית אתא"
+        },
+        {
+            "path": "kiryat-motzkin",
+            "city": "קרית מוצקין"
+        },
+        {
+            "path": "kiryat-yam",
+            "city": "קרית ים"
+        },
+        {
+            "path": "kiryat-bialik",
+            "city": "קריית ביאליק"
+        },
+        {
+            "path": "nesher",
+            "city": "נשר"
+        },
+        {
+            "path": "tirat-carmel",
+            "city": "טירת כרמל"
+        }
+    ]
+}
