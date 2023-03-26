@@ -40,10 +40,51 @@ def parse_open_hours(row, col, df):
     return open_hours
 
 
+def parse_religious(col, google_df, cbs_df):
+    cities = []
+    streets = []
+    religious =[]
+    for row in range(len(google_df)):
+        if ',' in google_df[col][row]:
+            address = google_df[col][row].split(", ")
+            city = address.pop(len(address) - 1)
+            street = "".join(address) if len(address) == 1 else " ".join(address)
+            cities.append(city)
+            streets.append(street)
+            religious1 = -1
+            for row1 in range(len(cbs_df)):
+                if cbs_df.iloc[row1]['city'] in city and (cbs_df.iloc[row1]['street'] in street or cbs_df.iloc[row1]['street'] in " ".join(street.split(" ")[::-1])):
+                    religious1 = cbs_df.iloc[row1]['percent of religious']
+                    break
+            religious.append(religious1) if religious1 > -1 else religious.append(None)
+        else:
+            cities.append(google_df[col][row]) if google_df[col][row] in cities_list else cities.append(None)
+            streets.append(None)
+            religious.append(None)
+    return cities, streets, religious
+
+
+def parse_reviews(google_df):
+    reviews = []
+    for row in range(len(google_df)):
+        reviews_words = set()
+        if type(google_df['reviews'][row]) == float and math.isnan(google_df['reviews'][row]):
+            reviews_words = None
+        else:
+            for review in google_df['reviews'][row]:
+                r_text = review['text']
+                clean_r_text = r_text.replace('!', ' ').replace('.', ' ').replace(',', ' ').replace('\n', ' ').replace('?', ' ')
+                reviews_words.update(clean_r_text.split(' '))
+        reviews.append(reviews_words)
+    return reviews
+
+
 def parse_data():
     google_df = pd.read_json("./Dataset/google-data.json")
     cbs_df = pd.read_json("./Dataset/cbs-data.json")
     result = {}
+
+    google_df = google_df[google_df['rating'].notna()].reset_index(drop=True)
 
     for col in ['dine_in', 'delivery', 'reservable', 'serves_beer', 'serves_breakfast', 'serves_brunch', 'serves_dinner', 'serves_lunch', 'serves_vegetarian_food', 'serves_wine', 'takeout', 'wheelchair_accessible_entrance', 'curbside_pickup']:
         result[col] = parse_bool_col(col, google_df)
@@ -57,31 +98,7 @@ def parse_data():
         result[col] = values
 
     col = 'vicinity'
-    cities = []
-    streets = []
-    religious =[]
-
-    for row in range(len(google_df)):
-        if ',' in google_df[col][row]:
-            address = google_df[col][row].split(", ")
-            city = address.pop(len(address) - 1)
-            street = "".join(address) if len(address) == 1 else " ".join(address)
-            # streets.append(*address) if len(address) == 1 else streets.append(" ".join(address))
-            cities.append(city)
-            streets.append(street)
-            religious1 = -1
-            for row1 in range(len(cbs_df)):
-                if cbs_df.iloc[row1]['city'] in city and cbs_df.iloc[row1]['street'] in street:
-                    religious1 = cbs_df.iloc[row1]['percent of religious']
-                    break
-            religious.append(religious1) if religious1 > -1 else religious.append(None)
-        else:
-            cities.append(google_df[col][row]) if google_df[col][row] in cities_list else cities.append(None)
-            streets.append(None)
-            religious.append(None)
-    result['city'] = cities
-    result['street'] = streets
-    result['religious'] = religious
+    result['city'], result['street'], result['religious'] = parse_religious(col, google_df, cbs_df)
 
     for col in ['sunday_open_hours', 'monday_open_hours', 'tuesday_open_hours', 'wednesday_open_hours', 'thursday_open_hours', 'friday_open_hours', 'saturday_open_hours']:
         result[col] = []
@@ -96,18 +113,7 @@ def parse_data():
         result['friday_open_hours'].append(open_hours[5])
         result['saturday_open_hours'].append(open_hours[6])
 
-    reviews = []
-    for row in range(len(google_df)):
-        reviews_words = set()
-        if type(google_df['reviews'][row]) == float and math.isnan(google_df['reviews'][row]):
-            reviews_words = None
-        else:
-            for review in google_df['reviews'][row]:
-                r_text = review['text']
-                clean_r_text = r_text.replace('!', ' ').replace('.', ' ').replace(',', ' ').replace('\n', ' ').replace('?', ' ')
-                reviews_words.update(clean_r_text.split(' '))
-        reviews.append(reviews_words)
-    result['reviews_words'] = reviews
+    result['reviews_words'] = parse_reviews(google_df)
 
     for col in ['price_level', 'rating', 'user_ratings_total']:
         values = []
@@ -115,14 +121,8 @@ def parse_data():
             values.append(google_df[col][row])
         result[col] = values
 
-    for row in range(len(google_df)):
-        if row > len(result):
-            break
-        if math.isnan(google_df['rating'][row]):
-            for col in result:
-                result[col].pop(row)
-
-    pd.DataFrame(result).to_csv("./Dataset/data.csv")
+    frame = pd.DataFrame(result)
+    frame.to_csv("./Dataset/data.csv")
 
 
 

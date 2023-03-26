@@ -21,6 +21,9 @@ def cbs_build_data():
     for row in range(len(religious_by_area)):
         if religious_by_area.iloc[:, 0][row] in cities and isinstance(religious_by_area.iloc[:, 2][row], str):
             city = religious_by_area.iloc[:, 0][row]
+            city = city.replace("קריית אתא", "קרית אתא")
+            city = city.replace("קריית ים", "קרית ים")
+            city = city.replace("קריית מוצקין", "קרית מוצקין")
             streets_list = religious_by_area.iloc[:, 2][row].split(', ')
             for i in range(len(streets_list)):
                 streets_list[i] = streets_list[i].replace("שד", "שדרות")
@@ -36,7 +39,7 @@ def cbs_build_data():
                         exist = True
                         place["amount of people"] += people_count
                         place["amount of religious"] += religions_count
-                        place["percent of religious"] += round((religions_count / people_count) * 100, 2)
+                        place["percent of religious"] = round((place["amount of religious"] / place["amount of people"]) * 100, 2)
                         break
                 if not exist:
                     data.append({
