@@ -20,49 +20,69 @@ def parse_bool_col(col, df):
 
 def parse_open_hours(row, col, df):
     open_hours = {}
+    start_hour = "0000"
+    end_hour = "2400"
     for day in range(7):
         open_hours[day] = []
     if type(df[col][row]) is dict:
         periods = df[col][row]['periods']
         if 'close' not in periods[0]:
             for day in range(7):
-                time = {'open': '0000', 'close': '2400'}
+                time = {'open': start_hour, 'close': end_hour}
                 open_hours[day].append(time)
         else:
             for i in range(len(periods)):
                 if periods[i]['open']['time'] < periods[i]['close']['time']:
                     time = {'open': periods[i]['open']['time'], 'close': periods[i]['close']['time']}
                 else:
-                    time = {'open': periods[i]['open']['time'], 'close': '2400'}
-                    if periods[i]['close']['time'] != '0000':
-                        time_after_midnight = {'open': '0000', 'close': periods[i]['close']['time']}
+                    time = {'open': periods[i]['open']['time'], 'close': end_hour}
+                    if periods[i]['close']['time'] != start_hour:
+                        time_after_midnight = {'open': start_hour, 'close': periods[i]['close']['time']}
                         open_hours[(periods[i]['open']['day'] + 1) % 7].append(time_after_midnight)
                 open_hours[periods[i]['open']['day']].append(time)
     return open_hours
 
 
-def parse_religious(col, google_df, cbs_df):
-    cities = []
-    streets = []
-    religious =[]
-    for row in range(len(google_df)):
-        if ',' in google_df[col][row]:
-            address = google_df[col][row].split(", ")
-            city = address.pop(len(address) - 1)
-            street = "".join(address) if len(address) == 1 else " ".join(address)
-            cities.append(city)
-            streets.append(street)
-            religious1 = -1
-            for row1 in range(len(cbs_df)):
-                if cbs_df.iloc[row1]['city'] in city and (cbs_df.iloc[row1]['street'] in street or cbs_df.iloc[row1]['street'] in " ".join(street.split(" ")[::-1])):
-                    religious1 = cbs_df.iloc[row1]['percent of religious']
-                    break
-            religious.append(religious1) if religious1 > -1 else religious.append(None)
+def get_address(df, row):
+    col = "address_components"
+    name_type = "long_name"
+    city, street, street_reversed = None, None, None
+    for component in df[col][row]:
+        if "locality" in component["types"]:
+            city = component[name_type]
+        if "route" in component["types"]:
+            street = component[name_type]
+            street_reversed = " ".join(street.split(" ")[::-1])
+    return city, street, street_reversed
+
+
+def get_cbs_data(cbs_df, city, street, street_reversed):
+    people_count, rel_count, religious_percent, se_index, se_rank, se_cluster = None, None, None, None, None, None
+    if city is not None and street is not None:
+        key = ", ".join([street, city])
+        key_reversed_street_name = ", ".join([street_reversed, city])
+        if cbs_df.get(key) is not None:
+            data = cbs_df[key]
         else:
-            cities.append(google_df[col][row]) if google_df[col][row] in cities_list else cities.append(None)
-            streets.append(None)
-            religious.append(None)
-    return cities, streets, religious
+            data = cbs_df.get(key_reversed_street_name)
+        # cbs_df[key] if cbs_df.get(key) is not None else cbs_df.get(key_reversed_street_name)
+        if data is not None:
+            people_count, rel_count, religious_percent, se_index, se_rank, se_cluster = data
+    return people_count, rel_count, religious_percent, se_index, se_rank, se_cluster
+
+
+def parse_cbs(google_df, cbs_df):
+    cities, streets, religious, se_index_values, se_ranks, se_clusters = [], [], [], [], [], []
+    for row in range(len(google_df)):
+        city, street, street_reversed = get_address(google_df, row)
+        people_count, rel_count, religious_percent, se_index, se_rank, se_cluster = get_cbs_data(cbs_df, city, street, street_reversed)
+        religious.append(religious_percent)
+        se_index_values.append(se_index)
+        se_ranks.append(se_rank)
+        se_clusters.append(se_cluster)
+        cities.append(city)
+        streets.append(street)
+    return cities, streets, religious, se_index_values, se_ranks, se_clusters
 
 
 def parse_reviews(google_df):
@@ -86,6 +106,13 @@ def distance(s1, s2):
     return textdistance.strcmp95.normalized_similarity(s1, s2)
 
 
+def copy_column(col, df):
+    values = []
+    for row in range(len(df)):
+        values.append(df[col][row])
+    return values
+
+
 def parse_data():
     google_df = pd.read_json("./Dataset/google-data.json")
     rest_df = pd.read_json("./Dataset/rest-data.json")
@@ -100,13 +127,9 @@ def parse_data():
     result['website'] = [type(google_df['website'][row]) == str for row in range(len(google_df))]
 
     for col in ['name', 'vicinity']:
-        values = []
-        for row in range(len(google_df)):
-            values.append(google_df[col][row])
-        result[col] = values
+        result[col] = copy_column(col, google_df)
 
-    col = 'vicinity'
-    result['city'], result['street'], result['religious'] = parse_religious(col, google_df, cbs_df)
+    result['city'], result['street'], result['religious_percent'], result['socio-economic_index_value'], result['socio-economic_rank'], result['socio-economic_cluster'] = parse_cbs(google_df, cbs_df)
 
     for col in ['sunday_open_hours', 'monday_open_hours', 'tuesday_open_hours', 'wednesday_open_hours', 'thursday_open_hours', 'friday_open_hours', 'saturday_open_hours']:
         result[col] = []
@@ -124,10 +147,7 @@ def parse_data():
     result['reviews_words'] = parse_reviews(google_df)
 
     for col in ['price_level', 'rating', 'user_ratings_total']:
-        values = []
-        for row in range(len(google_df)):
-            values.append(google_df[col][row])
-        result[col] = values
+        result[col] = copy_column(col, google_df)
 
     common_words = {}
     for r_name in rest_df['name']:
