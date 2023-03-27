@@ -36,12 +36,10 @@ def init_street_dict(area_by_key, cities, dict):
 
 def cbs_build_data():
     cities = ['חיפה', 'טירת הכרמל', 'נשר', 'קריית אתא', 'קריית ביאליק', 'קריית ים', 'קריית מוצקין']
+    religious_by_street = []
     data = {}
     religious_by_area, ser_by_area, area_by_key = get_raw_data()
-
     data = init_street_dict(area_by_key, cities, data)
-
-    religious_by_street = []
     religious_by_area = religious_by_area[religious_by_area['רחובות עיקריים'].notna()].reset_index(drop=True)
     ser_by_area = ser_by_area[ser_by_area['רחובות עיקריים'].notna()].reset_index(drop=True)
 
@@ -102,9 +100,6 @@ def get_raw_data():
     for row in range(len(area_by_key)):
         area_by_key.iloc[:, 0] = area_by_key.iloc[:, 0].replace(['קריית מוצקין', 'קריית ים', 'קריית אתא'],
                                                       ['קרית מוצקין', 'קרית ים', 'קרית אתא'])
-        # if area_by_key.iloc[:, 0][row] in ["קריית אתא", "קריית ים", "קריית מוצקין"]:
-        #     area_by_key.iloc[:, 0][row] = area_by_key.iloc[:, 0][row].replace("קריית", "קרית")
-
 
     religious_by_area_raw = religious_by_key.merge(transition_key, how='left',
                                                    left_on=[religious_by_key.keys()[0], religious_by_key.keys()[2]],
@@ -117,7 +112,6 @@ def get_raw_data():
     ser_by_area_raw = ser_by_area_raw.merge(area_by_key, how='left',
                                                         left_on=ser_by_area_raw.keys()[12],
                                                         right_on=area_by_key.keys()[1])
-    x=12
     return religious_by_area_raw.iloc[:, [14, 19, 18, 3, 4, 12]].copy(), ser_by_area_raw.iloc[:, [14, 3, 4, 5, 18, 19, 12]].copy(), area_by_key.iloc[:, [0, 4]].copy()
 
 
