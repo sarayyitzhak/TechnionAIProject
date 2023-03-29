@@ -4,59 +4,68 @@ import time
 import json
 
 
-def get_raw_data(google_api_key: str, locations: list):
-    data = []
-    place_ids = set()
-    for location in locations:
-        data += get_raw_data_by_latitude(google_api_key, place_ids, location)
-    return data
+class GoogleDataBuilder:
 
+    def __init__(self, google_api_key: str, locations: list):
+        self.google_places = GooglePlaces(google_api_key)
+        self.locations = locations
+        self.data = []
+        self.places = []
+        self.place_ids = set()
+        self.rest_ids = set()
+        self.lat_delta = 1 / 110.574  # One kilometer
+        self.place_types = [types.TYPE_RESTAURANT, types.TYPE_CAFE, types.TYPE_STORE]
+        self.rest_types = [types.TYPE_RESTAURANT, types.TYPE_CAFE]
 
-def get_raw_data_by_latitude(google_api_key: str, place_ids: set, location):
-    delta = 1 / 110.574     # One kilometer
-    lat = location["start_lat"]
-    data = []
-    while lat > location["end_lat"]:
-        lat_lng = {"lat": lat, "lng": location["lng"]}
-        data += get_raw_data_by_coordinates(google_api_key, place_ids, lat_lng)
-        lat -= delta
-    return data
+    def build_data(self):
+        for location in self.locations:
+            self.get_raw_data_by_latitude(location)
 
+    def get_raw_data_by_latitude(self, location):
+        lat = location["start_lat"]
+        while lat > location["end_lat"]:
+            lat_lng = {"lat": lat, "lng": location["lng"]}
+            self.get_raw_data_by_coordinates(lat_lng)
+            lat -= self.lat_delta
 
-def get_raw_data_by_coordinates(google_api_key: str, place_ids: set, lat_lng):
-    data = []
-    google_places = GooglePlaces(google_api_key)
-    place_types = [types.TYPE_RESTAURANT, types.TYPE_CAFE]
-    for place_type in place_types:
-        qr = google_places.nearby_search(language=lang.HEBREW, lat_lng=lat_lng, rankby=ranking.DISTANCE, types=[place_type])
+    def get_raw_data_by_coordinates(self, lat_lng):
+        for place_type in self.place_types:
+            qr = self.create_query(lat_lng, place_type, None)
+            self.get_raw_data_by_query(qr)
 
+            while qr.has_next_page_token:
+                time.sleep(5)  # Waiting for the next page to be ready
+                qr = self.create_query(lat_lng, place_type, qr.next_page_token)
+                self.get_raw_data_by_query(qr)
+
+    def create_query(self, lat_lng, place_type, next_page_token):
+        return self.google_places.nearby_search(language=lang.HEBREW, lat_lng=lat_lng, rankby=ranking.DISTANCE,
+                                                types=[place_type], pagetoken=next_page_token)
+
+    def get_raw_data_by_query(self, qr):
         for place in qr.places:
-            if place.place_id not in place_ids:
-                if not place.rating:
-                    continue
-                place.get_details()
-                data.append(place.details)
-                place_ids.add(place.place_id)
-
-        while qr.has_next_page_token:
-            time.sleep(5)   # Waiting for the next page to be ready
-            qr = google_places.nearby_search(language=lang.HEBREW, lat_lng=lat_lng, rankby=ranking.DISTANCE,
-                                             types=place_types, pagetoken=qr.next_page_token)
-            for place in qr.places:
-                if place.place_id not in place_ids:
-                    if not place.rating:
-                        continue
+            if place.place_id not in self.place_ids:
+                for common_type in list(set(self.place_types) & set(place.types)):
+                    self.places.append({
+                        "place_id": place.place_id,
+                        "geo_location": place.geo_location,
+                        "type": common_type
+                    })
+                self.place_ids.add(place.place_id)
+            if place.place_id not in self.rest_ids:
+                if len(list(set(self.rest_types) & set(place.types))) > 0 and place._rating != '':
                     place.get_details()
-                    data.append(place.details)
-                    place_ids.add(place.place_id)
-
-    return data
+                    self.data.append(place.details)
+                self.rest_ids.add(place.place_id)
 
 
 def google_build_data():
     try:
         with open('./DataBuilder/google-data-config.json', 'r', encoding='utf-8') as f:
             config = json.load(f)
-            write_to_file(get_raw_data(config["api_key"], config["locations"]), "./Dataset/google-data.json")
+            builder = GoogleDataBuilder(config["api_key"], config["locations"])
+            builder.build_data()
+            write_to_file(builder.data, "./Dataset/google-data.json")
+            write_to_file(builder.places, "./Dataset/google-places-data.json")
     except IOError:
         print("Error")
