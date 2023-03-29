@@ -1,7 +1,9 @@
-import numbers
 import math
 import pandas as pd
+import numpy as np
 import textdistance
+import time
+import mpu
 
 cities_list = ['חיפה', 'טירת הכרמל', 'נשר', 'קריית אתא', 'קריית ביאליק', 'קריית ים', 'קריית מוצקין']
 
@@ -115,6 +117,7 @@ def copy_column(col, df):
 
 def parse_data():
     google_df = pd.read_json("./Dataset/google-data.json")
+    google_places_df = pd.read_json("./Dataset/google-places-data.json")
     rest_df = pd.read_json("./Dataset/rest-data.json")
     cbs_df = pd.read_json("./Dataset/cbs-data.json")
     result = {}
@@ -148,6 +151,42 @@ def parse_data():
 
     for col in ['price_level', 'rating', 'user_ratings_total']:
         result[col] = copy_column(col, google_df)
+
+    store_100_values = []
+    store_500_values = []
+    rest_100_values = []
+    rest_500_values = []
+    for row in range(len(google_df)):
+        store_100_count = 0
+        store_500_count = 0
+        rest_100_count = 0
+        rest_500_count = 0
+        g_point_lat_lng = google_df["geometry"][row]["location"]
+        g_point = (g_point_lat_lng["lat"], g_point_lat_lng["lng"])
+        for place_row in range(len(google_places_df)):
+            if google_places_df["place_id"][place_row] == google_df["place_id"][row]:
+                continue
+            place_point_lat_lng = google_places_df["geo_location"][place_row]
+            place_point = (place_point_lat_lng["lat"], place_point_lat_lng["lng"])
+            point_distance = mpu.haversine_distance(g_point, place_point)
+            if point_distance < 0.5:
+                if google_places_df["type"][place_row] == "store":
+                    store_500_count += 1
+                    if point_distance < 0.1:
+                        store_100_count += 1
+                else:
+                    rest_500_count += 1
+                    if point_distance < 0.1:
+                        rest_100_count += 1
+        store_100_values.append(store_100_count)
+        store_500_values.append(store_500_count)
+        rest_100_values.append(rest_100_count)
+        rest_500_values.append(rest_500_count)
+
+    result["store_100"] = store_100_values
+    result["store_500"] = store_500_values
+    result["rest_100"] = rest_100_values
+    result["rest_500"] = rest_500_values
 
     common_words = {}
     for r_name in rest_df['name']:
