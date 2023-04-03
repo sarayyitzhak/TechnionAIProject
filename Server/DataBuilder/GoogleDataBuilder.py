@@ -61,11 +61,11 @@ class GoogleDataBuilder:
 
 def google_build_data():
     try:
-        with open('./DataBuilder/google-data-config.json', 'r', encoding='utf-8') as f:
+        with open('./DataConfig/google-data-config.json', 'r', encoding='utf-8') as f:
             config = json.load(f)
             builder = GoogleDataBuilder(config["api_key"], config["locations"])
             builder.build_data()
-            write_to_file(builder.data, "./Dataset/google-data.json")
-            write_to_file(builder.places, "./Dataset/google-places-data.json")
+            write_to_file(builder.data, config["output_path"])
+            write_to_file(builder.places, config["output_places_path"])
     except IOError:
         print("Error")

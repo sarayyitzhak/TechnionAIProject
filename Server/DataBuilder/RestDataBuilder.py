@@ -70,8 +70,8 @@ def get_page_raw_data_by_city(driver, city):
 
 def rest_build_data():
     try:
-        with open('./DataBuilder/rest-data-config.json', 'r', encoding='utf-8') as f:
+        with open('./DataConfig/rest-data-config.json', 'r', encoding='utf-8') as f:
             config = json.load(f)
-            write_to_file(get_raw_data(config["chrome_driver_path"], config["web_paths"]), "./Dataset/rest-data.json")
+            write_to_file(get_raw_data(config["chrome_driver_path"], config["web_paths"]), config["output_path"])
     except IOError:
         print("Error")

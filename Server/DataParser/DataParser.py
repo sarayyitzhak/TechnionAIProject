@@ -120,6 +120,7 @@ def parse_data():
     google_places_df = pd.read_json("./Dataset/google-places-data.json")
     rest_df = pd.read_json("./Dataset/rest-data.json")
     cbs_df = pd.read_json("./Dataset/cbs-data.json")
+    gov_df = pd.read_json("./Dataset/gov-data.json")
     result = {}
 
     google_df = google_df[google_df['rating'].notna()].reset_index(drop=True)
@@ -187,6 +188,27 @@ def parse_data():
     result["store_500"] = store_500_values
     result["rest_100"] = rest_100_values
     result["rest_500"] = rest_500_values
+
+    bus_station_100_values = []
+    bus_station_500_values = []
+    for row in range(len(google_df)):
+        bus_station_100_count = 0
+        bus_station_500_count = 0
+        g_point_lat_lng = google_df["geometry"][row]["location"]
+        g_point = (g_point_lat_lng["lat"], g_point_lat_lng["lng"])
+        for place_row in range(len(gov_df)):
+            place_point_lat_lng = gov_df["geo_location"][place_row]
+            place_point = (place_point_lat_lng["lat"], place_point_lat_lng["lng"])
+            point_distance = mpu.haversine_distance(g_point, place_point)
+            if point_distance < 0.5:
+                bus_station_500_count += 1
+                if point_distance < 0.1:
+                    bus_station_100_count += 1
+        bus_station_100_values.append(bus_station_100_count)
+        bus_station_500_values.append(bus_station_500_count)
+
+    result["bus_station_100"] = bus_station_100_values
+    result["bus_station_500"] = bus_station_500_values
 
     common_words = {}
     for r_name in rest_df['name']:

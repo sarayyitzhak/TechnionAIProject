@@ -29,5 +29,6 @@
             "path": "tirat-carmel",
             "city": "טירת כרמל"
         }
-    ]
+    ],
+    "output_path": "./Dataset/rest-data.json"
 }

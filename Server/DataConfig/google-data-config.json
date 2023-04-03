@@ -91,5 +91,7 @@
             "end_lat": 32.79609551251578,
             "lng": 35.14285674877937
         }
-    ]
+    ],
+    "output_path": "./Dataset/google-data.json",
+    "output_places_path": "./Dataset/google-places-data.json"
 }

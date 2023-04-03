@@ -1,0 +1,7 @@
+{
+    "resource_id": "e873e6a2-66c1-494f-a677-f5e77348edb0",
+    "base_url": "https://data.gov.il",
+    "api_url": "/api/3/action/datastore_search",
+    "city_codes": [4000, 2500, 6800, 8200, 9600, 9500, 2100],
+    "output_path": "./Dataset/gov-data.json"
+}
