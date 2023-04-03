@@ -44,16 +44,16 @@ class GoogleDataBuilder:
 
     def get_raw_data_by_query(self, qr):
         for place in qr.places:
+            is_rest = len(list(set(self.rest_types) & set(place.types))) > 0
             if place.place_id not in self.place_ids:
-                for common_type in list(set(self.place_types) & set(place.types)):
-                    self.places.append({
-                        "place_id": place.place_id,
-                        "geo_location": place.geo_location,
-                        "type": common_type
-                    })
+                self.places.append({
+                    "place_id": place.place_id,
+                    "geo_location": place.geo_location,
+                    "type": types.TYPE_RESTAURANT if is_rest else types.TYPE_STORE
+                })
                 self.place_ids.add(place.place_id)
             if place.place_id not in self.rest_ids:
-                if len(list(set(self.rest_types) & set(place.types))) > 0 and place._rating != '':
+                if is_rest and place["_rating"] != '':
                     place.get_details()
                     self.data.append(place.details)
                 self.rest_ids.add(place.place_id)

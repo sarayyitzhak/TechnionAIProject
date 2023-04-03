@@ -112,14 +112,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJQd0n1rm7HRURKLtZhEwujfQ",
-        "geo_location": {
-            "lat": 32.8269322,
-            "lng": 34.9693839
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJc9tjTYK7HRURWYOcx3kS4sc",
         "geo_location": {
             "lat": 32.812696,
@@ -352,14 +344,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJIXLYWTG7HRURbl95nDfkwnE",
-        "geo_location": {
-            "lat": 32.8303184,
-            "lng": 34.9770355
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJ0Zt5SN67HRUR0n02jR8VUqs",
         "geo_location": {
             "lat": 32.8062029,
@@ -384,14 +368,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJ2fj89Hu7HRUR4ZFWL-ojO90",
-        "geo_location": {
-            "lat": 32.80593880000001,
-            "lng": 34.9566327
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJ-8Gk-Ve7HRURP5HAe94bC_M",
         "geo_location": {
             "lat": 32.8106981,
@@ -406,14 +382,6 @@
             "lng": 34.95652
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJfd5NFJ67HRURkH6GPZT-91Q",
-        "geo_location": {
-            "lat": 32.80552670000001,
-            "lng": 34.95652
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJf78ovHm7HRURZJ4OwIjPARY",
@@ -464,28 +432,12 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJmYr_XMO7HRURllKet14N15U",
-        "geo_location": {
-            "lat": 32.832304,
-            "lng": 34.977924
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJNUENQ3m7HRURAONwqn2THiE",
         "geo_location": {
             "lat": 32.8047811,
             "lng": 34.9564105
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJNUENQ3m7HRURAONwqn2THiE",
-        "geo_location": {
-            "lat": 32.8047811,
-            "lng": 34.9564105
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJMTinXsO7HRURN4DONv0Oi3A",
@@ -584,28 +536,12 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJ-RMgg2S7HRURnzDIyFJD2z0",
-        "geo_location": {
-            "lat": 32.79861429999999,
-            "lng": 34.9564911
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJEz3FCmS7HRURDqYZHAMnl50",
         "geo_location": {
             "lat": 32.79713810000001,
             "lng": 34.9564362
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJEz3FCmS7HRURDqYZHAMnl50",
-        "geo_location": {
-            "lat": 32.79713810000001,
-            "lng": 34.9564362
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJe-sX1gm7HRURLPX9MCB4xGg",
@@ -734,14 +670,6 @@
             "lng": 34.95603409999999
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJMx4kAmS7HRURZRlyl_3uiC4",
-        "geo_location": {
-            "lat": 32.7928845,
-            "lng": 34.95603409999999
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJy8-oeJu7HRURGgT3g5EhE08",
@@ -976,28 +904,12 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJwZtit2m7HRUReZVUPyxsX9o",
-        "geo_location": {
-            "lat": 32.789739,
-            "lng": 34.965082
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJsW2It2m7HRURSSHS-jo0jTQ",
         "geo_location": {
             "lat": 32.7895654,
             "lng": 34.96513309999999
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJsW2It2m7HRURSSHS-jo0jTQ",
-        "geo_location": {
-            "lat": 32.7895654,
-            "lng": 34.96513309999999
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJd2DHSRq7HRUR420TUkAsyfs",
@@ -1054,14 +966,6 @@
             "lng": 34.9644335
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJ22oGtQm7HRURtoGBheQc3Y8",
-        "geo_location": {
-            "lat": 32.7835344,
-            "lng": 34.9644335
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJVVV0gEO7HRURyQ0ggd4gaoc",
@@ -1424,14 +1328,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJsQABIUq7HRURxBnSSDTS1e4",
-        "geo_location": {
-            "lat": 32.7711958,
-            "lng": 34.9711476
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJbaK1dku7HRURKh8Y46xbpP8",
         "geo_location": {
             "lat": 32.7695413,
@@ -1776,14 +1672,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJGTimjrWkHRURZ5R4wmzKHFA",
-        "geo_location": {
-            "lat": 32.761987,
-            "lng": 34.9716558
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJa74N57WkHRUR37kvs8QBmcE",
         "geo_location": {
             "lat": 32.76179260000001,
@@ -1910,14 +1798,6 @@
             "lng": 34.97288709999999
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJ_yo6_smkHRUR5zF5Mkkv8o4",
-        "geo_location": {
-            "lat": 32.7611575,
-            "lng": 34.97288709999999
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJHWVgDzylHRURuuw0VYaPcOA",
@@ -2184,14 +2064,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJFWAU5rW7HRURg71pdiFbbHI",
-        "geo_location": {
-            "lat": 32.8193373,
-            "lng": 34.9899074
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJ3-2l77W7HRURwMadWNRuEx4",
         "geo_location": {
             "lat": 32.81893960000001,
@@ -2222,14 +2094,6 @@
             "lng": 34.9901618
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJh8K097W7HRURuPBrBB9MiF8",
-        "geo_location": {
-            "lat": 32.8195762,
-            "lng": 34.9901618
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJKSJo7LW7HRURPUOm9EJehbA",
@@ -2312,14 +2176,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJE126csq7HRURMR9EutQRt3Q",
-        "geo_location": {
-            "lat": 32.8201401,
-            "lng": 34.9908362
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJiTrw3xG7HRUR7Du4_-gzMaQ",
         "geo_location": {
             "lat": 32.8188677,
@@ -2342,14 +2198,6 @@
             "lng": 34.987423
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJD_c_xa67HRURXdu97vVUIjw",
-        "geo_location": {
-            "lat": 32.8062584,
-            "lng": 34.987423
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJY0cy1ua7HRURV2yX_MPWzsE",
@@ -2416,14 +2264,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJr0wH_Qe7HRURRu6qRLsjB4k",
-        "geo_location": {
-            "lat": 32.80174300000001,
-            "lng": 34.9840351
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJr0wH_Qe7HRURfkCE63Dw4aY",
         "geo_location": {
             "lat": 32.8017431,
@@ -2470,14 +2310,6 @@
             "lng": 34.98568840000001
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJRzF-RKi7HRURIY65zZEHQzc",
-        "geo_location": {
-            "lat": 32.803255899999996,
-            "lng": 34.98568840000001
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJEYuthny7HRUR0J-5hciiIAI",
@@ -2664,14 +2496,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJMQoLD4q7HRUR_IbtFMJaiqE",
-        "geo_location": {
-            "lat": 32.8041827,
-            "lng": 34.9871241
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJWWzIram7HRURKXYvxT8REyU",
         "geo_location": {
             "lat": 32.8030034,
@@ -2728,14 +2552,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJLePNq6m7HRURL6X8B6IecSE",
-        "geo_location": {
-            "lat": 32.8031044,
-            "lng": 34.9870605
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJQTmc9AO7HRURjwGWaE5PlSY",
         "geo_location": {
             "lat": 32.8055752,
@@ -2766,14 +2582,6 @@
             "lng": 34.9873123
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJPY4QB6m7HRURldgNlrxrtrg",
-        "geo_location": {
-            "lat": 32.8033599,
-            "lng": 34.9873123
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJV8atyAe7HRURvKN-FmWY5XI",
@@ -3008,14 +2816,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJW_JUlxm7HRURDdsXJboxBMc",
-        "geo_location": {
-            "lat": 32.785559,
-            "lng": 34.985782
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJR45HHhu7HRURXbGEVfHmA3c",
         "geo_location": {
             "lat": 32.789767,
@@ -3030,14 +2830,6 @@
             "lng": 34.98651239999999
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJyUfCqhu7HRURSXjTOeBjbvs",
-        "geo_location": {
-            "lat": 32.7886642,
-            "lng": 34.98651239999999
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJL4CnIBu7HRURQlX3rIihFeU",
@@ -3230,14 +3022,6 @@
             "lng": 34.9919587
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJTc7yCsu7HRURg00cQ5N54cQ",
-        "geo_location": {
-            "lat": 32.8227499,
-            "lng": 34.9919587
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJXWaxcMu7HRURzyeyhXGjhTw",
@@ -3632,14 +3416,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJkQChlrK7HRURZYKBLA4QmWE",
-        "geo_location": {
-            "lat": 32.8098542,
-            "lng": 34.9930835
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJx4AfUQG7HRUR6aqXtDTb3Yo",
         "geo_location": {
             "lat": 32.7957095,
@@ -3736,14 +3512,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJddJISW67HRURJDSZMSR9J-Q",
-        "geo_location": {
-            "lat": 32.7874399,
-            "lng": 34.9969985
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJJfv3ZtKwHRURgl-NwWJKwrQ",
         "geo_location": {
             "lat": 32.78741829999999,
@@ -3766,14 +3534,6 @@
             "lng": 34.9966651
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJA37V-SO7HRURzTSq6JLQyRo",
-        "geo_location": {
-            "lat": 32.7949934,
-            "lng": 34.9966651
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJE5vPOeO6HRURi_NUA7LY6J0",
@@ -3976,14 +3736,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJW4bAAjW6HRURlb1g0hRskGI",
-        "geo_location": {
-            "lat": 32.8200047,
-            "lng": 34.996931599999996
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJZdJ6AjW6HRURaoEU7QuEM7k",
         "geo_location": {
             "lat": 32.8199763,
@@ -4056,14 +3808,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJ1yWrBDW6HRURBjKXg6nNMRs",
-        "geo_location": {
-            "lat": 32.8198214,
-            "lng": 34.9967839
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJwZ4sGTW6HRURMz8VAaJAsng",
         "geo_location": {
             "lat": 32.8199691,
@@ -4094,14 +3838,6 @@
             "lng": 34.9964866
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJXZR7GTW6HRURGXQdgwcAynw",
-        "geo_location": {
-            "lat": 32.819805099999996,
-            "lng": 34.9964866
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJzzH_3z67HRURhrAjmWN1J0M",
@@ -4302,14 +4038,6 @@
             "lng": 35.0001669
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJKbtoJjS6HRURn0HmXtzsEvo",
-        "geo_location": {
-            "lat": 32.8196828,
-            "lng": 35.0001669
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJGSnmyXi7HRURgtTIZw20teU",
@@ -5008,14 +4736,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJc73uc066HRURZ5yurA37InQ",
-        "geo_location": {
-            "lat": 32.8080386,
-            "lng": 35.0008469
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJQdPO2U26HRURIHpaOVY_p6M",
         "geo_location": {
             "lat": 32.8085801,
@@ -5224,14 +4944,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJpS8NUEu7HRURe9lYgqli2fc",
-        "geo_location": {
-            "lat": 32.8097155,
-            "lng": 35.0002726
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJ45NyuMO7HRURX3GcaJQrNPI",
         "geo_location": {
             "lat": 32.8092647,
@@ -5416,14 +5128,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJh8rf50y7HRURwwT2ugsD3JE",
-        "geo_location": {
-            "lat": 32.7897693,
-            "lng": 35.0080075
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJXTIYB6m7HRUR_MbCFRgj5a4",
         "geo_location": {
             "lat": 32.7897693,
@@ -5494,14 +5198,6 @@
             "lng": 35.0084995
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJ2ZPJPMK7HRURxQoLQKUWs0s",
-        "geo_location": {
-            "lat": 32.7894923,
-            "lng": 35.0084995
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJUU5Xle66HRURzeptPxJ1gZI",
@@ -5688,28 +5384,12 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJNWK5w8a6HRURYnz97i4Jogo",
-        "geo_location": {
-            "lat": 32.7670425,
-            "lng": 35.0131622
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJbbS9w8a6HRURnvz1i14QHCQ",
         "geo_location": {
             "lat": 32.7668647,
             "lng": 35.013256
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJbbS9w8a6HRURnvz1i14QHCQ",
-        "geo_location": {
-            "lat": 32.7668647,
-            "lng": 35.013256
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJIfbbe_-7HRURJTF-l-TZrUw",
@@ -5768,28 +5448,12 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJ_8rCyLm6HRURBjryKeM3nf4",
-        "geo_location": {
-            "lat": 32.761297,
-            "lng": 35.020785
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJnzYrl_K6HRURFLa_pkwgLtw",
         "geo_location": {
             "lat": 32.7829214,
             "lng": 35.0153482
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJnzYrl_K6HRURFLa_pkwgLtw",
-        "geo_location": {
-            "lat": 32.7829214,
-            "lng": 35.0153482
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJGdr6UjO7HRURtemtd7UNGig",
@@ -6096,14 +5760,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJj_IZ48W7HRURSzVz7x5MaQI",
-        "geo_location": {
-            "lat": 32.8184404,
-            "lng": 35.00085019999999
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJvbctFly7HRURNHGjuj8Ild8",
         "geo_location": {
             "lat": 32.8184404,
@@ -6150,14 +5806,6 @@
             "lng": 35.0073834
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJueOyrsi7HRURir33npv2Kjk",
-        "geo_location": {
-            "lat": 32.8064894,
-            "lng": 35.0073834
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJsXn3Bza6HRURJyvXv5qQt8c",
@@ -6390,14 +6038,6 @@
             "lng": 35.0183219
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJfTA3lIq6HRURmRG2bH3TWDA",
-        "geo_location": {
-            "lat": 32.7898483,
-            "lng": 35.0183219
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJoTJpOWa6HRURMeU951csuGA",
@@ -6760,14 +6400,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJ1cxaj4e6HRUR0Z08x8RoTNw",
-        "geo_location": {
-            "lat": 32.7867676,
-            "lng": 35.03029249999999
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJjfdVJHy6HRURUTUbxFGzSes",
         "geo_location": {
             "lat": 32.7896077,
@@ -6952,14 +6584,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJN_X7Xni6HRURcDLFdqw7nVI",
-        "geo_location": {
-            "lat": 32.7933491,
-            "lng": 35.03736380000001
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJQXkkQXi6HRUR17dVCM9pUB4",
         "geo_location": {
             "lat": 32.79348570000001,
@@ -7038,14 +6662,6 @@
             "lng": 35.0372966
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJk7z6XXi6HRURcFyWq6Ux5IY",
-        "geo_location": {
-            "lat": 32.7927928,
-            "lng": 35.0372966
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJQTmc9AO7HRURGtb3NHKXDig",
@@ -8432,14 +8048,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJf84ggbmwHRUR1qecjHkPQx0",
-        "geo_location": {
-            "lat": 32.8074415,
-            "lng": 35.0565849
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJ5WORM6uxHRURCJodJgXHLNc",
         "geo_location": {
             "lat": 32.8081296,
@@ -8784,14 +8392,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJXy2KGRC3HRUR4aQ9LWLswLY",
-        "geo_location": {
-            "lat": 32.842966,
-            "lng": 35.0710359
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJhdh4ELq3HRUROj0Y8eOuDYE",
         "geo_location": {
             "lat": 32.8524703,
@@ -9006,14 +8606,6 @@
             "lng": 35.07028650000001
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJBZxCfZy3HRURFaVpRNe3CNc",
-        "geo_location": {
-            "lat": 32.821047899999996,
-            "lng": 35.07028650000001
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJgZFWTUa3HRURGm0iyxvqb-Q",
@@ -9352,14 +8944,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJzayEYc2wHRURY6zo-1wqsYk",
-        "geo_location": {
-            "lat": 32.811947,
-            "lng": 35.07171799999999
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJ-44fntKwHRUR_d3NkzWHHX4",
         "geo_location": {
             "lat": 32.8119651,
@@ -9678,14 +9262,6 @@
             "lng": 35.0793906
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJcTl-7ia3HRURYNFQYD-qKgQ",
-        "geo_location": {
-            "lat": 32.8242173,
-            "lng": 35.0793906
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJKcJMuSG3HRURvNC2mw-5NiM",
@@ -10176,14 +9752,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJi511Bjm2HRURsyJxgnqPehE",
-        "geo_location": {
-            "lat": 32.86771169999999,
-            "lng": 35.0969581
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJrY8KBjm2HRUR9m0kb7YMHlA",
         "geo_location": {
             "lat": 32.867712,
@@ -10336,14 +9904,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJAQVloPm2HRURuvElU76acsQ",
-        "geo_location": {
-            "lat": 32.843356,
-            "lng": 35.0898321
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJxePeX5K3HRUREiJ3WZZhX40",
         "geo_location": {
             "lat": 32.843522899999996,
@@ -10486,14 +10046,6 @@
             "lng": 35.09111560000001
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJtYZYnfm2HRUR8ITrsVdABpw",
-        "geo_location": {
-            "lat": 32.84252740000001,
-            "lng": 35.09111560000001
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJ3eQViZ63HRURCO4k7EtS01I",
@@ -10776,14 +10328,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJNeaDkt-2HRUR3TvMKHruspA",
-        "geo_location": {
-            "lat": 32.8280644,
-            "lng": 35.0834605
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJFTcxbTS3HRUR48M8mpd5Dvw",
         "geo_location": {
             "lat": 32.83581,
@@ -11064,14 +10608,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJaRnDAsq2HRURN7yFBcmcnB8",
-        "geo_location": {
-            "lat": 32.80777,
-            "lng": 35.1041546
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJswHgAcq2HRURZyRR9u-8R-w",
         "geo_location": {
             "lat": 32.8078878,
@@ -11134,14 +10670,6 @@
             "lng": 35.10385730000001
         },
         "type": "restaurant"
-    },
-    {
-        "place_id": "ChIJ___Pbsq2HRURewDzPcFfnPU",
-        "geo_location": {
-            "lat": 32.8065759,
-            "lng": 35.10385730000001
-        },
-        "type": "cafe"
     },
     {
         "place_id": "ChIJm6YJdMq2HRUR5xLpqrx_H0U",
@@ -11800,14 +11328,6 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJZ_5-EVm0HRUR91jRCHClSDM",
-        "geo_location": {
-            "lat": 32.8093129,
-            "lng": 35.1671059
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJPSXvnQ-1HRUReohABMcClGE",
         "geo_location": {
             "lat": 32.8030483,
@@ -12077,7 +11597,7 @@
             "lat": 32.8256161,
             "lng": 34.9577888
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJlWnyLXe7HRURDrquopQ9wzY",
@@ -12085,7 +11605,7 @@
             "lat": 32.8216218,
             "lng": 34.9639689
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJGzK4ppG7HRURhXlIaI_a-tk",
@@ -12093,7 +11613,7 @@
             "lat": 32.8216218,
             "lng": 34.9639689
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJqSs412-7HRUR2tZlKYpRaQk",
@@ -12101,7 +11621,7 @@
             "lat": 32.829328,
             "lng": 34.964169
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ4c3HMoK7HRUR5K0N_rHEK0E",
@@ -12109,15 +11629,15 @@
             "lat": 32.81286960000001,
             "lng": 34.9577046
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJMVi3YsK7HRURHsCELxvT69s",
         "geo_location": {
-            "lat": 32.8324672,
+            "lat": 32.832467199999996,
             "lng": 34.97336440000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJdfCc4b27HRURExZO52ZSkQg",
@@ -12125,7 +11645,7 @@
             "lat": 32.81992059999999,
             "lng": 34.9743882
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJeQLCyNq7HRURdBMbaUmmwAo",
@@ -12133,7 +11653,7 @@
             "lat": 32.8303674,
             "lng": 34.9768909
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ9cLzuXm7HRURs6B9N0-4l_8",
@@ -12141,7 +11661,7 @@
             "lat": 32.8063994,
             "lng": 34.95999159999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJs3qndLy7HRURWAn99EKROrg",
@@ -12149,7 +11669,7 @@
             "lat": 32.8172988,
             "lng": 34.9780273
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ-b2SsXu7HRURUisXO5sArAg",
@@ -12157,7 +11677,7 @@
             "lat": 32.8031947,
             "lng": 34.958534
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJYfWNlbu7HRURj_hFd7PKNIY",
@@ -12165,7 +11685,7 @@
             "lat": 32.8167552,
             "lng": 34.97955749999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJmVWP18S7HRURyOpsyGPeiUU",
@@ -12173,7 +11693,7 @@
             "lat": 32.8319262,
             "lng": 34.9808497
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJc-AsHdu7HRURFeEh3WjiaGg",
@@ -12181,7 +11701,7 @@
             "lat": 32.83444479999999,
             "lng": 34.9808355
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJY6al-mG7HRUR5oPTSq7oHMs",
@@ -12189,7 +11709,7 @@
             "lat": 32.82500890000001,
             "lng": 34.98299350000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJixya3_a7HRURzkCvTXl1Mns",
@@ -12197,7 +11717,7 @@
             "lat": 32.8274513,
             "lng": 34.984345
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJHeNzlU-7HRURF7_Nj_pXEGI",
@@ -12205,7 +11725,7 @@
             "lat": 32.8120411,
             "lng": 34.97985620000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJbz9baKG7HRUROudTVW7G49U",
@@ -12213,7 +11733,7 @@
             "lat": 32.8084559,
             "lng": 34.9767091
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJa6FpQqG7HRURoJpB1Np0xwo",
@@ -12221,7 +11741,7 @@
             "lat": 32.80845240000001,
             "lng": 34.9768506
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJkbzq27q7HRURzmEc4r6Euao",
@@ -12229,7 +11749,7 @@
             "lat": 32.813481,
             "lng": 34.981402
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJO0xk1rq7HRURHMvLm5CKbfM",
@@ -12237,7 +11757,7 @@
             "lat": 32.8130114,
             "lng": 34.98133869999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJh3ZBGNC7HRUR_u1LEU4U0dM",
@@ -12245,7 +11765,7 @@
             "lat": 32.8326995,
             "lng": 34.9846784
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJEVUXPNC7HRURw-P3wTrdZ_I",
@@ -12253,7 +11773,7 @@
             "lat": 32.832032,
             "lng": 34.9853879
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJbfn6TUq7HRURAbY2gjmeFk0",
@@ -12261,7 +11781,7 @@
             "lat": 32.83272789999999,
             "lng": 34.98559210000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ1S9eMsm7HRURwnpL4387BuQ",
@@ -12269,7 +11789,7 @@
             "lat": 32.8256552,
             "lng": 34.9869209
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJX31DR2a7HRUR8Kjgp1Pqc6I",
@@ -12277,7 +11797,7 @@
             "lat": 32.8066338,
             "lng": 34.9778623
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJZ2RnjEu7HRURc4axTcgDJyw",
@@ -12285,7 +11805,7 @@
             "lat": 32.8266415,
             "lng": 34.98781340000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJPY2f17W7HRURn-i0OTjtmUU",
@@ -12293,7 +11813,7 @@
             "lat": 32.8180394,
             "lng": 34.98940770000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJDYFGcJm7HRUR3LCZvgQ2iuA",
@@ -12301,7 +11821,7 @@
             "lat": 32.7953095,
             "lng": 34.9561385
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJs3BkbMq7HRURyNxW6YFHTec",
@@ -12309,7 +11829,7 @@
             "lat": 32.8205736,
             "lng": 34.9910778
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJJce3eqK7HRURVimQvCIdijI",
@@ -12317,7 +11837,7 @@
             "lat": 32.8231748,
             "lng": 34.99151409999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJYbuHk3e7HRURajYApo56LEY",
@@ -12325,7 +11845,7 @@
             "lat": 32.80921,
             "lng": 34.9861426
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ-a5Q8nO7HRURH9PIG3H-5NI",
@@ -12333,7 +11853,7 @@
             "lat": 32.808571,
             "lng": 34.985882
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJM2D352a7HRURRLoiiDRZW48",
@@ -12341,7 +11861,7 @@
             "lat": 32.7935893,
             "lng": 34.957569
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJjU_WVoa7HRURBr9S00Rj-Uw",
@@ -12349,7 +11869,7 @@
             "lat": 32.79359890000001,
             "lng": 34.959152
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJxQnk3W67HRURanbIU9pPb1Q",
@@ -12357,7 +11877,7 @@
             "lat": 32.7943565,
             "lng": 34.96480880000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ275lMqm7HRURm3FhTgcwKVk",
@@ -12365,7 +11885,7 @@
             "lat": 32.805635,
             "lng": 34.9872333
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJIbNzW7O7HRURqhDizEDZDYU",
@@ -12373,7 +11893,7 @@
             "lat": 32.7918254,
             "lng": 34.9575225
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJZ4IvGde7HRUR_lzKn08HM50",
@@ -12381,7 +11901,7 @@
             "lat": 32.8200884,
             "lng": 34.9944481
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJjyaPQgi7HRURMEnK1X2rbiA",
@@ -12389,7 +11909,7 @@
             "lat": 32.80064580000001,
             "lng": 34.9821391
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJj1lPOLW7HRUR3wNq8yQ-_xk",
@@ -12397,7 +11917,7 @@
             "lat": 32.8171673,
             "lng": 34.9939515
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJw6LfWqi7HRUR6iw5Hg-Mefg",
@@ -12405,7 +11925,7 @@
             "lat": 32.8033108,
             "lng": 34.98563100000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJY4tyQ2y7HRUR56lAjhTV_ao",
@@ -12413,7 +11933,7 @@
             "lat": 32.8170301,
             "lng": 34.9941622
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJk1sFB_a7HRURUu8g1QQgkLE",
@@ -12421,7 +11941,7 @@
             "lat": 32.8050843,
             "lng": 34.9875677
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJoWAZc2e7HRURjrG5s6LSH3w",
@@ -12429,7 +11949,7 @@
             "lat": 32.79001869999999,
             "lng": 34.958344
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJD0CgT2i7HRURoyRsELfmuNQ",
@@ -12437,7 +11957,7 @@
             "lat": 32.78971479999999,
             "lng": 34.9639473
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ19Brt2m7HRURx5ul5YUZr2g",
@@ -12445,7 +11965,7 @@
             "lat": 32.7896014,
             "lng": 34.96506550000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJb2nPl2m7HRURXsEIDhFOdSI",
@@ -12453,7 +11973,7 @@
             "lat": 32.7896232,
             "lng": 34.96585279999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJkXTMVai7HRUR5p_rwvdqcFo",
@@ -12461,7 +11981,7 @@
             "lat": 32.80353590000001,
             "lng": 34.98620520000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJxy0AuSW7HRUR8P9EUCac1_w",
@@ -12469,7 +11989,7 @@
             "lat": 32.7993491,
             "lng": 34.9834849
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ6Vhwqqm7HRURLiPmkvsEQoA",
@@ -12477,7 +11997,7 @@
             "lat": 32.80356890000001,
             "lng": 34.9866844
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ_b-TO4W7HRURUFw9mOM1w-E",
@@ -12485,7 +12005,7 @@
             "lat": 32.80463900000001,
             "lng": 34.98736649999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJu0nh6mm7HRURCPF7m-Dor0Q",
@@ -12493,7 +12013,7 @@
             "lat": 32.7881925,
             "lng": 34.9679958
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ3w2jRVu7HRURqyeOcOKcSV4",
@@ -12501,7 +12021,7 @@
             "lat": 32.7837174,
             "lng": 34.9608968
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ_x-5fm-7HRURF2jzHAEi-0s",
@@ -12509,7 +12029,7 @@
             "lat": 32.7992768,
             "lng": 34.9838785
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJB5CH3cm7HRURT0JwiJtcT0A",
@@ -12517,7 +12037,7 @@
             "lat": 32.797495,
             "lng": 34.98351299999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJl7cwote7HRURGwpSNIcIK4c",
@@ -12525,7 +12045,7 @@
             "lat": 32.7998447,
             "lng": 34.9847871
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJAU2qyAe7HRURuko9MYcDpbw",
@@ -12533,7 +12053,7 @@
             "lat": 32.7997604,
             "lng": 34.9848616
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJN6d0_wW7HRURWJD-27JKNBo",
@@ -12541,7 +12061,7 @@
             "lat": 32.7968968,
             "lng": 34.9837461
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJoVKqyAe7HRURIh-kKLHES0U",
@@ -12549,7 +12069,7 @@
             "lat": 32.7997076,
             "lng": 34.9850105
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJQTmc9AO7HRURANB19BgzaLQ",
@@ -12557,7 +12077,7 @@
             "lat": 32.7967937,
             "lng": 34.9838792
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ5fRpwNm7HRURCe5DrGz13-M",
@@ -12565,7 +12085,7 @@
             "lat": 32.7963392,
             "lng": 34.98400809999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJFepN5QW7HRURnFL_-_X58-M",
@@ -12573,7 +12093,7 @@
             "lat": 32.7960559,
             "lng": 34.9843151
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJBz_f4Bq7HRURIJmfxXs0dpI",
@@ -12581,7 +12101,7 @@
             "lat": 32.7896121,
             "lng": 34.98598589999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJzbFxsIC7HRURmCyF0NaAtPs",
@@ -12589,7 +12109,7 @@
             "lat": 32.7904449,
             "lng": 34.9866824
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ1TIJEam7HRURU5klVwOZn1A",
@@ -12597,7 +12117,7 @@
             "lat": 32.8039571,
             "lng": 34.9874606
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJq4G08Em7HRUReyGOBrv0kqc",
@@ -12605,7 +12125,7 @@
             "lat": 32.77163610000001,
             "lng": 34.9720312
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJGR4LgDW7HRUR-EsFrJ3P6Sc",
@@ -12613,7 +12133,7 @@
             "lat": 32.77163610000001,
             "lng": 34.9720312
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJq4G08Em7HRURqrU5jbYaHUk",
@@ -12621,7 +12141,7 @@
             "lat": 32.769419,
             "lng": 34.96953849999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJc9DSFEq7HRUR0rE1eefy8oA",
@@ -12629,7 +12149,7 @@
             "lat": 32.7700521,
             "lng": 34.9715181
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJC5XpNLClHRURLVMgj5rskT8",
@@ -12637,7 +12157,7 @@
             "lat": 32.7661011,
             "lng": 34.9640929
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJueFmaoWlHRURkJR-HT1Tqxw",
@@ -12645,7 +12165,7 @@
             "lat": 32.7660821,
             "lng": 34.9641217
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJF0fCqhu7HRURqFuzuR3tEn0",
@@ -12653,7 +12173,7 @@
             "lat": 32.7887077,
             "lng": 34.9864733
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJEwC7oRm7HRUR9ZOAoVlCflQ",
@@ -12661,7 +12181,7 @@
             "lat": 32.7853855,
             "lng": 34.9862011
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJwR3Foxm7HRURxInfcS6Y7ZY",
@@ -12669,7 +12189,7 @@
             "lat": 32.7847203,
             "lng": 34.98610409999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJZa-tqxu7HRUR056rPTj27lE",
@@ -12677,7 +12197,7 @@
             "lat": 32.788401,
             "lng": 34.98677499999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJN2xm61O7HRURUSBZ7JWemYw",
@@ -12685,7 +12205,7 @@
             "lat": 32.7849841,
             "lng": 34.98641569999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJo_NsTF27HRUR3HiIhS1ZNCc",
@@ -12693,7 +12213,7 @@
             "lat": 32.7845449,
             "lng": 34.9871528
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJweFuRem7HRURSl0hDWV6Aeo",
@@ -12701,7 +12221,7 @@
             "lat": 32.7830631,
             "lng": 34.9875015
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ4TGZuhy7HRURgmF4_YhslUE",
@@ -12709,7 +12229,7 @@
             "lat": 32.7894497,
             "lng": 34.99002949999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJQTmc9AO7HRURTCISUESniMs",
@@ -12717,7 +12237,7 @@
             "lat": 32.7940463,
             "lng": 34.989571
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJrYJDPQy7HRURX68Kg37ETJY",
@@ -12725,7 +12245,7 @@
             "lat": 32.8209104,
             "lng": 34.9955709
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ-wsGGDW6HRURaHl4l3Qvd14",
@@ -12733,7 +12253,7 @@
             "lat": 32.81982929999999,
             "lng": 34.9959872
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ37cZ8Te7HRURTEIsV2olA4E",
@@ -12741,7 +12261,7 @@
             "lat": 32.8209137,
             "lng": 34.9968034
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJS8ZJBrm7HRURhkVuy82dx3k",
@@ -12749,7 +12269,7 @@
             "lat": 32.8191641,
             "lng": 34.995913
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJvVG7e5C7HRURrQA2t_b9I60",
@@ -12757,7 +12277,7 @@
             "lat": 32.8201905,
             "lng": 34.9964979
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJycTW8TS6HRURFhQH-8ccrgM",
@@ -12765,7 +12285,7 @@
             "lat": 32.8208738,
             "lng": 34.9968349
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ-U70eIG7HRURDY6v-ggQGqI",
@@ -12773,7 +12293,7 @@
             "lat": 32.8185155,
             "lng": 34.99598450000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJkUN32rS7HRURig7nBZBlC6w",
@@ -12781,7 +12301,7 @@
             "lat": 32.815596,
             "lng": 34.994045
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ0WIvBcq2HRURLkX-ry3qfi8",
@@ -12789,7 +12309,7 @@
             "lat": 32.82065,
             "lng": 34.9976065
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJl9l2pLS7HRURngaRL-MmsgM",
@@ -12797,7 +12317,7 @@
             "lat": 32.8140094,
             "lng": 34.9937078
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJBaE9YkS7HRURxEZ0L2r7K_Y",
@@ -12805,7 +12325,7 @@
             "lat": 32.8207003,
             "lng": 34.9983417
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ_XjlKTa7HRURNp_31NSU1qQ",
@@ -12813,7 +12333,7 @@
             "lat": 32.8139124,
             "lng": 34.9940629
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJoaI3YbK7HRURpJ5OlAX24fw",
@@ -12821,15 +12341,15 @@
             "lat": 32.8103444,
             "lng": 34.9915941
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ1R_UOKm7HRURw_yuN8x_xPI",
         "geo_location": {
-            "lat": 32.8046878,
+            "lat": 32.804687799999996,
             "lng": 34.9876409
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJcweui2m7HRURTpMY6OR6WDg",
@@ -12837,7 +12357,7 @@
             "lat": 32.8046531,
             "lng": 34.98802179999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJQTmc9AO7HRURswuUucf2voc",
@@ -12845,7 +12365,7 @@
             "lat": 32.7940463,
             "lng": 34.989571
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJQTmc9AO7HRURCJgZuUu29qA",
@@ -12853,7 +12373,7 @@
             "lat": 32.7940463,
             "lng": 34.989571
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJQTmc9AO7HRUR4LscbAcrPKw",
@@ -12861,15 +12381,15 @@
             "lat": 32.7940463,
             "lng": 34.989571
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJg2bah7WkHRURLAjfqD3UYaI",
         "geo_location": {
             "lat": 32.7628873,
-            "lng": 34.9725845
+            "lng": 34.972584499999996
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJFX4iETqlHRURr-PVXvv3Cfc",
@@ -12877,7 +12397,7 @@
             "lat": 32.7627492,
             "lng": 34.974003
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJL1IlzSC7HRURIFJSen8XgOE",
@@ -12885,7 +12405,7 @@
             "lat": 32.7743978,
             "lng": 34.9928152
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJN3SetCm7HRURfO-NSjwHDFU",
@@ -12893,7 +12413,7 @@
             "lat": 32.76694630000001,
             "lng": 34.99260020000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ553IEdu6HRURpCO1sM_uKBM",
@@ -12901,7 +12421,7 @@
             "lat": 32.7689311,
             "lng": 35.003692
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJk7rvLGOkHRURXhjqryF42eI",
@@ -12909,7 +12429,7 @@
             "lat": 32.7268832,
             "lng": 34.96180109999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ7_qcesS6HRURdzyDx1DlmmE",
@@ -12917,7 +12437,7 @@
             "lat": 32.7686253,
             "lng": 35.0091995
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJa3RT4em7HRURDl6I07QF2tY",
@@ -12925,7 +12445,7 @@
             "lat": 32.767996,
             "lng": 35.01261420000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJOS1jk1K7HRURlkmGgktmsk0",
@@ -12933,7 +12453,7 @@
             "lat": 32.7651997,
             "lng": 35.0140962
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJe186cuq6HRURrLNapmU6a-g",
@@ -12941,7 +12461,7 @@
             "lat": 32.7732794,
             "lng": 35.0130904
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJC6_qWTS6HRURamAb9Z9A4Eo",
@@ -12949,7 +12469,7 @@
             "lat": 32.82025419999999,
             "lng": 34.998271
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJAQAAADW6HRUREMAfbVtzbQM",
@@ -12957,7 +12477,7 @@
             "lat": 32.8202076,
             "lng": 34.9984045
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJXzOpHWu7HRURA4V_qkVkC1o",
@@ -12965,7 +12485,7 @@
             "lat": 32.82009919999999,
             "lng": 34.9990954
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJTZQESzS6HRURZ-E7AAHMN9I",
@@ -12973,7 +12493,7 @@
             "lat": 32.819606,
             "lng": 34.9986849
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJRxJMujW6HRURiIipWcUDNPE",
@@ -12981,7 +12501,7 @@
             "lat": 32.81869990000001,
             "lng": 34.998317
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJI7L9hw27HRURH4loiTnTGUY",
@@ -12989,7 +12509,7 @@
             "lat": 32.816074,
             "lng": 34.99603889999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJv-nkwTW6HRURNlOOAkN8XFo",
@@ -12997,7 +12517,7 @@
             "lat": 32.8183488,
             "lng": 34.9989553
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ46tNCoq7HRUR5QgXcZc4J8A",
@@ -13005,7 +12525,7 @@
             "lat": 32.81751859999999,
             "lng": 34.9982752
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJiZ2H2Dy7HRURLuL8YOTN_hQ",
@@ -13013,7 +12533,7 @@
             "lat": 32.8184146,
             "lng": 34.9991808
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJHcuaI9G7HRUR4sAL0PX0FkA",
@@ -13021,7 +12541,7 @@
             "lat": 32.817599,
             "lng": 34.9985144
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJC3s5v2G7HRURInKO2nhDNDU",
@@ -13029,7 +12549,7 @@
             "lat": 32.8181599,
             "lng": 34.9992285
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJIZ0DOx27HRURlTKBf4nZWKQ",
@@ -13037,7 +12557,7 @@
             "lat": 32.8098733,
             "lng": 34.9925678
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJy_9rlrK7HRURyl6_j__KN68",
@@ -13045,7 +12565,7 @@
             "lat": 32.8097454,
             "lng": 34.99328940000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJF6_7lbK7HRURxsXuSctBxDw",
@@ -13053,7 +12573,7 @@
             "lat": 32.8097763,
             "lng": 34.993343
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJk6LdrSK7HRURRzuHCAsjnjI",
@@ -13061,14 +12581,6 @@
             "lat": 32.8097181,
             "lng": 34.9933641
         },
-        "type": "cafe"
-    },
-    {
-        "place_id": "ChIJSQqGvbK7HRURNS-VzQryEmU",
-        "geo_location": {
-            "lat": 32.809582,
-            "lng": 34.993365
-        },
         "type": "restaurant"
     },
     {
@@ -13077,7 +12589,7 @@
             "lat": 32.809582,
             "lng": 34.993365
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ51FJurK7HRURe0g8-0CMK8w",
@@ -13085,7 +12597,7 @@
             "lat": 32.8094721,
             "lng": 34.9939142
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJyZeDvLK7HRURl3MojdvPYQo",
@@ -13093,7 +12605,7 @@
             "lat": 32.8094721,
             "lng": 34.9939142
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJUbfnsUy6HRURvaFYfIsNt_c",
@@ -13101,7 +12613,7 @@
             "lat": 32.8125339,
             "lng": 34.99517319999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJXZRrDKW7HRURYdeUugNUALQ",
@@ -13109,7 +12621,7 @@
             "lat": 32.8091901,
             "lng": 34.9942718
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJq7v_V_S6HRURQhOSz00nV0s",
@@ -13117,7 +12629,7 @@
             "lat": 32.807852,
             "lng": 34.99519799999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJLcY3Vk26HRURQ5Lif8SEojY",
@@ -13125,7 +12637,7 @@
             "lat": 32.8082553,
             "lng": 34.9951807
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJleubdiG7HRURm5zosADmP0c",
@@ -13133,7 +12645,7 @@
             "lat": 32.7949934,
             "lng": 34.9966651
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ58PDKfC6HRUR4or8LMzvVyw",
@@ -13141,7 +12653,7 @@
             "lat": 32.7843442,
             "lng": 35.0082038
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJS4axN7i6HRURcGi539nHPdM",
@@ -13149,7 +12661,7 @@
             "lat": 32.7621909,
             "lng": 35.019002
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJe5KfBSC7HRURa9x_Z4vSq7Y",
@@ -13157,7 +12669,7 @@
             "lat": 32.7620624,
             "lng": 35.01984900000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJPxA-4Lm6HRURDZo7QlUHE_o",
@@ -13165,7 +12677,7 @@
             "lat": 32.7604837,
             "lng": 35.0210067
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJMSHeczO7HRUR3Ag96WTf42Y",
@@ -13173,7 +12685,7 @@
             "lat": 32.7796757,
             "lng": 35.01458019999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJUfI3ri-7HRURGb-8dRjY_pU",
@@ -13184,20 +12696,12 @@
         "type": "restaurant"
     },
     {
-        "place_id": "ChIJUfI3ri-7HRURGb-8dRjY_pU",
-        "geo_location": {
-            "lat": 32.8178167,
-            "lng": 34.9998031
-        },
-        "type": "cafe"
-    },
-    {
         "place_id": "ChIJl1WG4TW6HRUR6NTVuUr5ltY",
         "geo_location": {
             "lat": 32.81771260000001,
             "lng": 34.9996261
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJGZ0FHHS7HRURuoxc3nrG_Pc",
@@ -13205,7 +12709,7 @@
             "lat": 32.8183707,
             "lng": 35.0010076
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJYSGf3zW6HRURfCqfIFwzS1c",
@@ -13213,7 +12717,7 @@
             "lat": 32.81778970000001,
             "lng": 35.0000884
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJKWfO81u7HRURPeETKq5tKWE",
@@ -13221,7 +12725,7 @@
             "lat": 32.8169464,
             "lng": 34.99993380000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJp9byjoC7HRURVMKtuuHxhxs",
@@ -13229,7 +12733,7 @@
             "lat": 32.816315,
             "lng": 34.999206
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJiaUtHqq7HRUR0H1muHF2QYU",
@@ -13237,7 +12741,7 @@
             "lat": 32.814702,
             "lng": 34.9969127
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ_bvfo967HRURN-JfNOoJmm0",
@@ -13245,7 +12749,7 @@
             "lat": 32.8131189,
             "lng": 34.9952943
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJgzNgyoS7HRURZc6LrqbUTNs",
@@ -13253,7 +12757,7 @@
             "lat": 32.8131978,
             "lng": 34.9953838
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJiXNTpky6HRURy8SVe4U8E50",
@@ -13261,7 +12765,7 @@
             "lat": 32.8127728,
             "lng": 34.99544160000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ4-dLWUu6HRURYo-ycUv-2aY",
@@ -13269,7 +12773,7 @@
             "lat": 32.8132428,
             "lng": 34.99576510000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJY8L9pky6HRURNofsMoosqzw",
@@ -13277,7 +12781,7 @@
             "lat": 32.8129575,
             "lng": 34.9957654
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJi33_p8u7HRURy50LkcBWxcM",
@@ -13285,7 +12789,7 @@
             "lat": 32.8141406,
             "lng": 34.996921
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJqYsCDku6HRURPrKMyfnhGhU",
@@ -13293,7 +12797,7 @@
             "lat": 32.8141406,
             "lng": 34.996921
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJqRJnCla7HRURNYY0ltcpj_c",
@@ -13301,7 +12805,7 @@
             "lat": 32.8120403,
             "lng": 34.9967883
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJT50fhEy6HRURR-shYoGEJ9E",
@@ -13309,7 +12813,7 @@
             "lat": 32.81216999999999,
             "lng": 34.9972206
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ83c0NXW7HRURV4b7LE3Tg5A",
@@ -13317,7 +12821,7 @@
             "lat": 32.809988,
             "lng": 34.99727900000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJIzkbuE26HRURhGgVtvbr1-E",
@@ -13325,7 +12829,7 @@
             "lat": 32.8098248,
             "lng": 34.9982732
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ7zt_xTy7HRURYDhHT2CUs80",
@@ -13333,7 +12837,7 @@
             "lat": 32.8088992,
             "lng": 34.99870119999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJIfGtpCe7HRURnxXgI9jf6QE",
@@ -13341,7 +12845,7 @@
             "lat": 32.8108087,
             "lng": 34.99844940000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJn2qnyvC6HRURZLXpvjKZ35o",
@@ -13349,7 +12853,7 @@
             "lat": 32.7894556,
             "lng": 35.00712989999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJeRnfGsq7HRURJ_-ubArlkrE",
@@ -13357,7 +12861,7 @@
             "lat": 32.7898377,
             "lng": 35.0074511
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJMwmFMPe6HRURPvyBTyhulbk",
@@ -13365,7 +12869,7 @@
             "lat": 32.7899609,
             "lng": 35.0076223
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJV1UlNve6HRUR0-EXCWAZDzw",
@@ -13373,7 +12877,7 @@
             "lat": 32.7893224,
             "lng": 35.0081227
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJP6L3zDy7HRURGsEj20jZt_Y",
@@ -13381,7 +12885,7 @@
             "lat": 32.7894618,
             "lng": 35.0081854
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJpbRVJve6HRURjW0-smZ_EAo",
@@ -13389,7 +12893,7 @@
             "lat": 32.7898918,
             "lng": 35.00833340000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJBxB-tyu7HRURKvnlj4Z1UDc",
@@ -13397,7 +12901,7 @@
             "lat": 32.7897233,
             "lng": 35.0085019
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJjeyU0V-7HRURrQ6h9pWJx0o",
@@ -13405,7 +12909,7 @@
             "lat": 32.7823841,
             "lng": 35.0153867
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJxYZdl_K6HRURd70JtP-mu_Q",
@@ -13413,7 +12917,7 @@
             "lat": 32.7827026,
             "lng": 35.0155773
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJK1NTRja6HRURzYd_KQg9vYE",
@@ -13421,7 +12925,7 @@
             "lat": 32.8176433,
             "lng": 35.0017921
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJvzGL_DW6HRUR9NAPTqtOCmQ",
@@ -13429,7 +12933,7 @@
             "lat": 32.8167795,
             "lng": 35.00010919999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJlXqBjkW7HRURM-Ec8NGgUlQ",
@@ -13437,7 +12941,7 @@
             "lat": 32.81684240000001,
             "lng": 35.00069560000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJRdWpYrC7HRURRGJOFFxt7Uo",
@@ -13445,7 +12949,7 @@
             "lat": 32.8166217,
             "lng": 35.0017279
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ891DJDa6HRURxu-_cBVGaTU",
@@ -13453,7 +12957,7 @@
             "lat": 32.816335,
             "lng": 35.0018312
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJkVddLrC7HRURUmMbj_zrF5o",
@@ -13461,7 +12965,7 @@
             "lat": 32.8164488,
             "lng": 35.0026531
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJs3hnG_a7HRURfKbmNiifSeU",
@@ -13469,7 +12973,7 @@
             "lat": 32.8157023,
             "lng": 35.0012655
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJZZ4D1km6HRUR3wJrJerVOhw",
@@ -13477,7 +12981,7 @@
             "lat": 32.8154933,
             "lng": 35.0025468
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJw0uW9Uu6HRURXsaI-iCxT-w",
@@ -13485,7 +12989,7 @@
             "lat": 32.8120012,
             "lng": 34.9991102
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ-d9Ncky6HRUR7d8SDjq7zR0",
@@ -13493,7 +12997,7 @@
             "lat": 32.8116169,
             "lng": 34.9987843
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJq8F-DFa7HRURXo_VymhWEJM",
@@ -13501,7 +13005,7 @@
             "lat": 32.81112729999999,
             "lng": 34.99972729999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJQfwaOzW6HRURYnZYiQ0Y7oU",
@@ -13509,7 +13013,7 @@
             "lat": 32.81098430000001,
             "lng": 34.9998012
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJAZmGMUy6HRURM2c29DJLtb4",
@@ -13517,7 +13021,7 @@
             "lat": 32.8096611,
             "lng": 34.9995806
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJdVW0SdS7HRURpdNiWWmpIPE",
@@ -13525,7 +13029,7 @@
             "lat": 32.8097928,
             "lng": 35.0005659
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJs31K70q7HRUROqW2x2tUb_s",
@@ -13533,7 +13037,7 @@
             "lat": 32.8098678,
             "lng": 35.00076670000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJU0wf8Ei6HRURohkfYephLik",
@@ -13541,7 +13045,7 @@
             "lat": 32.81222030000001,
             "lng": 35.0038043
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJq5yHVxS7HRURa51KQSMCXm8",
@@ -13549,7 +13053,7 @@
             "lat": 32.8086084,
             "lng": 34.9996529
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJHZjuc066HRURbgIUUKG9LVQ",
@@ -13557,7 +13061,7 @@
             "lat": 32.8080372,
             "lng": 35.0008405
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJs9m_vHC7HRURPehzZq7J7Hc",
@@ -13565,7 +13069,7 @@
             "lat": 32.8080386,
             "lng": 35.0008469
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJWRMA8cO7HRURSRuhWwNGJC8",
@@ -13573,7 +13077,7 @@
             "lat": 32.8080676,
             "lng": 35.00157710000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJL0N96_K7HRURom53xfKmII8",
@@ -13581,7 +13085,7 @@
             "lat": 32.8108247,
             "lng": 35.0039671
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJX6vZzIW7HRUR0ke4F-FxIaU",
@@ -13589,7 +13093,7 @@
             "lat": 32.81106800000001,
             "lng": 35.0036958
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ7QI9hmm7HRURKVKAoEqwDxA",
@@ -13597,7 +13101,7 @@
             "lat": 32.81027809999999,
             "lng": 35.0058378
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJrcS2cxe7HRURH8KWDlPSyYk",
@@ -13605,7 +13109,7 @@
             "lat": 32.7935733,
             "lng": 35.0146134
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJZyLEzYy6HRUR6uUaercWxy4",
@@ -13613,7 +13117,7 @@
             "lat": 32.78452969999999,
             "lng": 35.0170817
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJwZwNk4q6HRURL80vfTlTEUI",
@@ -13621,7 +13125,7 @@
             "lat": 32.789754,
             "lng": 35.0186057
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJNbnwb5G6HRURIW-Q-__oiuY",
@@ -13629,7 +13133,7 @@
             "lat": 32.7765141,
             "lng": 35.0226502
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJeznzkpG6HRURXxpp4AzUugY",
@@ -13637,7 +13141,7 @@
             "lat": 32.7781876,
             "lng": 35.0230726
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJFwD-cl26HRUR_Yn0TugJlAs",
@@ -13645,7 +13149,7 @@
             "lat": 32.7997423,
             "lng": 35.0155728
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJIaoNEJ27HRUR7KQ8TV3WHh0",
@@ -13653,7 +13157,7 @@
             "lat": 32.79216220000001,
             "lng": 35.0226485
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJl0lkr326HRURtC5r9c-nRA0",
@@ -13661,7 +13165,7 @@
             "lat": 32.7887162,
             "lng": 35.0306237
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJYc1KmYe6HRURnCHR8RzPxMk",
@@ -13669,7 +13173,7 @@
             "lat": 32.7853717,
             "lng": 35.0308269
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ_djtq326HRURZR9WjxS-cMc",
@@ -13677,7 +13181,7 @@
             "lat": 32.7891879,
             "lng": 35.0308498
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJsYRjJH66HRURg8foGKwYq7U",
@@ -13685,7 +13189,7 @@
             "lat": 32.7861151,
             "lng": 35.0351428
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJWXw0u4G6HRURdUTn4VeC9mw",
@@ -13693,7 +13197,7 @@
             "lat": 32.78184529999999,
             "lng": 35.03613419999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ--65rAk0HBURYICJm91b-6k",
@@ -13701,7 +13205,7 @@
             "lat": 32.7782214,
             "lng": 35.03901889999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJAwAQRXi6HRURjAHTLgbJ7wI",
@@ -13709,7 +13213,7 @@
             "lat": 32.7931937,
             "lng": 35.0368803
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJQTmc9AO7HRURGRahSgd2d90",
@@ -13717,7 +13221,7 @@
             "lat": 32.79296119999999,
             "lng": 35.0366845
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJcTveaXi6HRURh-UoVB9jNl0",
@@ -13725,7 +13229,7 @@
             "lat": 32.79288999999999,
             "lng": 35.03677
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJM3TzP3i6HRURw5mDbs6Lw7Q",
@@ -13733,7 +13237,7 @@
             "lat": 32.7934932,
             "lng": 35.0377411
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJVceYFHi6HRURMbxPhCImXf4",
@@ -13741,7 +13245,7 @@
             "lat": 32.7934978,
             "lng": 35.03775840000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJfatg7Di7HRUR5OnDxxh9VFw",
@@ -13749,7 +13253,7 @@
             "lat": 32.791909,
             "lng": 35.03770649999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJeyUOd3i6HRURFfU7N1pbemw",
@@ -13757,7 +13261,7 @@
             "lat": 32.79263139999999,
             "lng": 35.0386035
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJcX0yeoKwHRUR5A2bBthzRYU",
@@ -13765,7 +13269,7 @@
             "lat": 32.7910086,
             "lng": 35.0395717
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJQTmc9AO7HRURiiE7wCI3rMU",
@@ -13773,7 +13277,7 @@
             "lat": 32.7958235,
             "lng": 35.0435077
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJiyr2R4KwHRURS23dch9fD2Q",
@@ -13781,7 +13285,7 @@
             "lat": 32.7894389,
             "lng": 35.0406172
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ22DBAHqwHRURjU-7vM6EsZc",
@@ -13789,7 +13293,7 @@
             "lat": 32.7727806,
             "lng": 35.0445967
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJjSbgQ3qwHRURg-MFIXHg5IU",
@@ -13797,7 +13301,7 @@
             "lat": 32.7736977,
             "lng": 35.0460448
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJczvqgHCwHRURyxflbRPQAsU",
@@ -13805,7 +13309,7 @@
             "lat": 32.77145,
             "lng": 35.0466308
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJFXWNgHCwHRURoC3pSJIdyH0",
@@ -13813,7 +13317,7 @@
             "lat": 32.771729,
             "lng": 35.0470005
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJxfshoc2wHRURdjstcfnEI1E",
@@ -13821,7 +13325,7 @@
             "lat": 32.7719596,
             "lng": 35.0470777
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJk7nRZXCwHRUR0dRllKjE7aU",
@@ -13829,7 +13333,7 @@
             "lat": 32.7707867,
             "lng": 35.0475776
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJWXeSUHCwHRURXHM8V3ie2L0",
@@ -13837,7 +13341,7 @@
             "lat": 32.7698227,
             "lng": 35.0475482
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJf0TpKlGxHRURFIaJ4KAvLjc",
@@ -13845,7 +13349,7 @@
             "lat": 32.7702878,
             "lng": 35.0518066
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJq6p6SbewHRURq96ZRlIEelk",
@@ -13853,7 +13357,7 @@
             "lat": 32.8069094,
             "lng": 35.05447229999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJwU7grLCwHRURV4sPee_mBmU",
@@ -13861,7 +13365,7 @@
             "lat": 32.8093058,
             "lng": 35.05524
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJDYVZLLqwHRURNPlcpZrwfMQ",
@@ -13869,7 +13373,7 @@
             "lat": 32.80921849999999,
             "lng": 35.0557838
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJKTbZ5k6xHRURrnXfOLHLb2Y",
@@ -13877,7 +13381,7 @@
             "lat": 32.817291,
             "lng": 35.0479038
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ2wmY5QWxHRURlpBsVgjazqg",
@@ -13885,7 +13389,7 @@
             "lat": 32.81074239999999,
             "lng": 35.0581341
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ2ZPJPMK7HRURplQGzrwHnXE",
@@ -13893,7 +13397,7 @@
             "lat": 32.81125499999999,
             "lng": 35.058002
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJySysrAOxHRURq8SnloIn3ao",
@@ -13901,7 +13405,7 @@
             "lat": 32.8112516,
             "lng": 35.05800869999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJi9S-Jf6xHRURP43FMw2TnYg",
@@ -13909,7 +13413,7 @@
             "lat": 32.8108745,
             "lng": 35.0583051
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ98CtHMiwHRURMT9GxITGoSA",
@@ -13917,7 +13421,7 @@
             "lat": 32.8075936,
             "lng": 35.06114770000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJU6T04wqxHRURulsHuHaTri8",
@@ -13925,7 +13429,7 @@
             "lat": 32.8088039,
             "lng": 35.0619
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJW3rBZ7OwHRURNWcerwCrCbw",
@@ -13933,7 +13437,7 @@
             "lat": 32.81758049999999,
             "lng": 35.0547136
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJCyZIRsywHRURGjQRnKnyTXo",
@@ -13941,7 +13445,7 @@
             "lat": 32.8110369,
             "lng": 35.0697383
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJkdITv82wHRURatRg9l619r0",
@@ -13949,7 +13453,7 @@
             "lat": 32.810326,
             "lng": 35.070248
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJja8cKqWxHRURzkABeywKgdQ",
@@ -13957,7 +13461,7 @@
             "lat": 32.8084908,
             "lng": 35.0752065
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJJSBX6tOwHRUR03xurj9F0_g",
@@ -13965,7 +13469,7 @@
             "lat": 32.8085064,
             "lng": 35.0755531
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJs-bJi5GxHRURTeDwFbLH_cA",
@@ -13973,7 +13477,7 @@
             "lat": 32.8082291,
             "lng": 35.0758049
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ8VTmtx6xHRURwcgm7mNPll0",
@@ -13981,7 +13485,7 @@
             "lat": 32.7448412,
             "lng": 35.0736707
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ01sk2TyvHRURW0YDrYMfv_A",
@@ -13989,7 +13493,7 @@
             "lat": 32.7275077,
             "lng": 35.05513080000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJfxB0FumvHRURK6Iqcm_OAjI",
@@ -13997,7 +13501,7 @@
             "lat": 32.7263603,
             "lng": 35.0559196
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJma3uMOmvHRURPYQxSSOj4wE",
@@ -14005,7 +13509,7 @@
             "lat": 32.7262023,
             "lng": 35.055937
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJdZFwO-mvHRURd2xnP7flS8c",
@@ -14013,7 +13517,7 @@
             "lat": 32.7262107,
             "lng": 35.0565801
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJT6YP4PevHRURvX-ycMDLExA",
@@ -14021,7 +13525,7 @@
             "lat": 32.7260565,
             "lng": 35.056558
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ13LjhkO3HRURxoUp-QbMJSk",
@@ -14029,7 +13533,7 @@
             "lat": 32.8345508,
             "lng": 35.0535092
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJV6maeeK3HRURtRvo9M0fT1Q",
@@ -14037,7 +13541,7 @@
             "lat": 32.83278319999999,
             "lng": 35.0525811
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ4z29xhO3HRURKvKjrhB8BXY",
@@ -14045,7 +13549,7 @@
             "lat": 32.8295177,
             "lng": 35.0579378
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ7e3R5z-3HRURsFpYA78bY4U",
@@ -14053,7 +13557,7 @@
             "lat": 32.8357441,
             "lng": 35.0620692
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ5zIQ9BW3HRURek5YvwKXp8U",
@@ -14061,7 +13565,7 @@
             "lat": 32.8355743,
             "lng": 35.0652601
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJX8uw2ui3HRURSDAkEoBAtls",
@@ -14069,7 +13573,7 @@
             "lat": 32.8368033,
             "lng": 35.0657778
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJN3DXlD23HRURGT6P65IwNGE",
@@ -14077,7 +13581,7 @@
             "lat": 32.8336156,
             "lng": 35.06776169999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJFctm0Ra3HRUR2sAqunUVqzw",
@@ -14085,7 +13589,7 @@
             "lat": 32.8389106,
             "lng": 35.0686317
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ_U_EIAa3HRURmLeIOw-9aY8",
@@ -14093,7 +13597,7 @@
             "lat": 32.8329265,
             "lng": 35.06997740000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJv8oAlhG3HRURE0fvQMFcuGI",
@@ -14101,7 +13605,7 @@
             "lat": 32.8431317,
             "lng": 35.06778300000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJw7tr2TC3HRURMGtkVX8ZJHA",
@@ -14109,7 +13613,7 @@
             "lat": 32.8226623,
             "lng": 35.0671653
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJW3QqmzC3HRURalaUZBha9CY",
@@ -14117,7 +13621,7 @@
             "lat": 32.824015,
             "lng": 35.06864789999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ2wLVyD23HRURiYS3EZ4E1Ss",
@@ -14125,7 +13629,7 @@
             "lat": 32.8321723,
             "lng": 35.0735893
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ4Vj-ihi3HRURlYzlY7lkY6c",
@@ -14133,7 +13637,7 @@
             "lat": 32.832991,
             "lng": 35.0744629
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJUd7Vmpq3HRURZuVMxo0OkAs",
@@ -14141,7 +13645,7 @@
             "lat": 32.82196139999999,
             "lng": 35.0689716
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJvWw1qzG3HRURy6_c-9jFv0o",
@@ -14149,7 +13653,7 @@
             "lat": 32.82176580000001,
             "lng": 35.06885140000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ-Y_76gK3HRURPS2Ebl1kEm0",
@@ -14157,7 +13661,7 @@
             "lat": 32.8216688,
             "lng": 35.0690718
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJqc35kxK3HRURwdhl65hU1SM",
@@ -14165,7 +13669,7 @@
             "lat": 32.82912820000001,
             "lng": 35.07438270000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJbWxqH2S3HRURlIPgZ-uApcI",
@@ -14173,7 +13677,7 @@
             "lat": 32.82153339999999,
             "lng": 35.06921729999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJu4aAIRm3HRURma13tgiCO04",
@@ -14181,7 +13685,7 @@
             "lat": 32.83439740000001,
             "lng": 35.0760381
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJUbXqmCO3HRURN7K38AtsdYY",
@@ -14189,7 +13693,7 @@
             "lat": 32.8283953,
             "lng": 35.0750379
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJITuAKQm3HRURV3YELClCsqk",
@@ -14197,7 +13701,7 @@
             "lat": 32.849276,
             "lng": 35.068929
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJITuAKQm3HRURwzcEHJKX1cw",
@@ -14205,7 +13709,7 @@
             "lat": 32.849276,
             "lng": 35.068929
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJoRattTG3HRURQpCAugLN2dM",
@@ -14213,7 +13717,7 @@
             "lat": 32.8212664,
             "lng": 35.0703496
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJAWJBtTG3HRURpSrDJAN-PS8",
@@ -14221,7 +13725,7 @@
             "lat": 32.82123869999999,
             "lng": 35.0704097
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJk-2HaSS3HRURxWfQzgxL0Sw",
@@ -14229,7 +13733,7 @@
             "lat": 32.8260205,
             "lng": 35.0753445
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJT9D2Uu63HRURKpUU40jMS3I",
@@ -14237,7 +13741,7 @@
             "lat": 32.8507609,
             "lng": 35.070636
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJnyZHmuu3HRURzZZTUCVV_LI",
@@ -14245,7 +13749,7 @@
             "lat": 32.8301684,
             "lng": 35.07852159999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJgehxMNq3HRURc_X33AZ1M7I",
@@ -14253,7 +13757,7 @@
             "lat": 32.8508946,
             "lng": 35.0711374
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ19_I7TK3HRURKKOc2sJheo0",
@@ -14261,7 +13765,7 @@
             "lat": 32.8217336,
             "lng": 35.074375
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJlxjeyvy3HRUR3KXQ6HBJZL8",
@@ -14269,7 +13773,7 @@
             "lat": 32.8249659,
             "lng": 35.0770564
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJE-bult23HRURe9iP0ov6ylM",
@@ -14277,7 +13781,7 @@
             "lat": 32.8381215,
             "lng": 35.07952929999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ-cJt-By3HRUR-J_cJ60ckbg",
@@ -14285,7 +13789,7 @@
             "lat": 32.838202,
             "lng": 35.079523
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJB95t-By3HRURtvs-m5Ww1VA",
@@ -14293,7 +13797,7 @@
             "lat": 32.838202,
             "lng": 35.079523
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJLV8NRiS3HRUR_ac7U_nJS78",
@@ -14301,7 +13805,7 @@
             "lat": 32.8302206,
             "lng": 35.0793884
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJaYvJKSS3HRURSL8c0phsSco",
@@ -14309,7 +13813,7 @@
             "lat": 32.8243638,
             "lng": 35.0773297
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJRY67nCa3HRURUhQTF9J9nwU",
@@ -14317,7 +13821,7 @@
             "lat": 32.82467880000001,
             "lng": 35.0778866
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJUcnRoxe3HRUR2xTFkt8NcUU",
@@ -14325,7 +13829,7 @@
             "lat": 32.8246563,
             "lng": 35.0778758
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJk-qYjya3HRURWxxN0Rg0U1E",
@@ -14333,7 +13837,7 @@
             "lat": 32.8241636,
             "lng": 35.07804240000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJYcsn6QK3HRURan_kv8_YE5U",
@@ -14341,7 +13845,7 @@
             "lat": 32.84014999999999,
             "lng": 35.0809765
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ6-FajSa3HRUR6Pg_8VIaUAA",
@@ -14349,7 +13853,7 @@
             "lat": 32.8240192,
             "lng": 35.0793261
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJGRii7S63HRURR_0OnJknSoQ",
@@ -14357,7 +13861,7 @@
             "lat": 32.8185157,
             "lng": 35.0750961
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJTcgYyAK3HRURyJq3Cejec3s",
@@ -14365,7 +13869,7 @@
             "lat": 32.84055530000001,
             "lng": 35.0814593
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJoblDwbK3HRUR7aPYZ6JBjJ0",
@@ -14373,7 +13877,7 @@
             "lat": 32.8241053,
             "lng": 35.0795665
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJP3hRBz63HRURh7uIiZ0sbPw",
@@ -14381,7 +13885,7 @@
             "lat": 32.8184451,
             "lng": 35.075938
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJT_dcvC23HRURr57rsIjV2xs",
@@ -14389,7 +13893,7 @@
             "lat": 32.816183,
             "lng": 35.0734709
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJp8X4uC63HRURiwfdhZ2O-Fk",
@@ -14397,7 +13901,7 @@
             "lat": 32.8182031,
             "lng": 35.076366
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ37ALheK2HRURjR9hKaregtM",
@@ -14405,7 +13909,7 @@
             "lat": 32.8373775,
             "lng": 35.0834463
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJO_onrie3HRURsYG1d4stA90",
@@ -14413,7 +13917,7 @@
             "lat": 32.8226732,
             "lng": 35.08045239999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJadIPty63HRURPRJy5_NJ3VU",
@@ -14421,7 +13925,7 @@
             "lat": 32.8180137,
             "lng": 35.076922
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJvUUdrye3HRURRIdpEPxyabg",
@@ -14429,7 +13933,7 @@
             "lat": 32.8225911,
             "lng": 35.0805225
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJRXgStCm3HRURJrQUsjztnZ0",
@@ -14437,7 +13941,7 @@
             "lat": 32.817621,
             "lng": 35.0813518
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJJ6HiqS-xHRUR6Kq4FL4gjJI",
@@ -14445,7 +13949,7 @@
             "lat": 32.7994824,
             "lng": 35.0911189
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJmQZxIq-vHRURdRdXqEEY-9Y",
@@ -14453,7 +13957,7 @@
             "lat": 32.7212465,
             "lng": 35.0597701
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJa8Fi0W-vHRUReC47c1ySMX4",
@@ -14461,7 +13965,7 @@
             "lat": 32.721449,
             "lng": 35.061367
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJnZ5H4qq3HRURznrcL04IsCQ",
@@ -14469,7 +13973,7 @@
             "lat": 32.8527532,
             "lng": 35.0804065
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJO-F_0aq3HRURLZStN2AnyAY",
@@ -14477,7 +13981,7 @@
             "lat": 32.8524866,
             "lng": 35.08296789999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJgcFTPb23HRUR8oqafUbAsqY",
@@ -14485,7 +13989,7 @@
             "lat": 32.8599244,
             "lng": 35.0831161
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJLfIViPy2HRUR_IeKnpRo84s",
@@ -14493,7 +13997,7 @@
             "lat": 32.8404565,
             "lng": 35.0875906
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ2QYy-eK2HRURoeJhZO9-zig",
@@ -14501,7 +14005,7 @@
             "lat": 32.8365202,
             "lng": 35.0852468
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ0Rm4sua2HRUReizAP7gGHiI",
@@ -14509,7 +14013,7 @@
             "lat": 32.8438788,
             "lng": 35.0901588
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJF6oi6fu2HRURYwTlcevdCqU",
@@ -14517,7 +14021,7 @@
             "lat": 32.8415762,
             "lng": 35.0894763
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJlQAY6fu2HRUREekCX7W4iQ0",
@@ -14525,7 +14029,7 @@
             "lat": 32.8415762,
             "lng": 35.0894763
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ85_H_Pu2HRURbxkpvPh2hJc",
@@ -14533,7 +14037,7 @@
             "lat": 32.8430632,
             "lng": 35.0902832
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ_fWeC_m2HRURSFrwmRbkCqM",
@@ -14541,7 +14045,7 @@
             "lat": 32.8433479,
             "lng": 35.0908414
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJy9WkYIK3HRURvjgh8z0x0s8",
@@ -14549,7 +14053,7 @@
             "lat": 32.842515,
             "lng": 35.0908574
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJffTP4uK2HRURVj_KoeEvAuI",
@@ -14557,7 +14061,7 @@
             "lat": 32.8425,
             "lng": 35.09111109999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJw0D-Ffm2HRURvRUXDp7P1N4",
@@ -14565,7 +14069,7 @@
             "lat": 32.8433113,
             "lng": 35.0918678
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ_e2labW2HRUR3Tq5wIQqeIA",
@@ -14573,7 +14077,7 @@
             "lat": 32.8589577,
             "lng": 35.0926671
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJYQDJh-O2HRURN_ytgSupskI",
@@ -14581,7 +14085,7 @@
             "lat": 32.83458779999999,
             "lng": 35.0883439
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJicsIiOS2HRURawn-XGGFkC0",
@@ -14589,7 +14093,7 @@
             "lat": 32.835081,
             "lng": 35.0890309
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJE1hsLSW3HRURV77JkXG4grM",
@@ -14597,7 +14101,7 @@
             "lat": 32.8350137,
             "lng": 35.0890308
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ8Yiv59-2HRURtb4xbqp8k_4",
@@ -14605,7 +14109,7 @@
             "lat": 32.8287836,
             "lng": 35.08410500000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJQ5or5t-2HRURVenXadsD3q8",
@@ -14613,7 +14117,7 @@
             "lat": 32.82866339999999,
             "lng": 35.0841328
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJP3dXk9-2HRURP7-zVfUX3m8",
@@ -14621,7 +14125,7 @@
             "lat": 32.8280796,
             "lng": 35.083879
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJG0OVQka2HRURUQfzjpkSZQs",
@@ -14629,7 +14133,7 @@
             "lat": 32.8612835,
             "lng": 35.0959051
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ6ULAQEe2HRURTyg5AfViLZ8",
@@ -14637,7 +14141,7 @@
             "lat": 32.86312460000001,
             "lng": 35.0982587
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJBU5cEjWxHRURT5gMVS0y5MM",
@@ -14645,7 +14149,7 @@
             "lat": 32.8016023,
             "lng": 35.1032943
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJA2sSRDWxHRURlVOmBoZYfFY",
@@ -14653,7 +14157,7 @@
             "lat": 32.8002996,
             "lng": 35.10349230000001
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJX-UmtMq2HRUR0PRj3eyrOpo",
@@ -14661,7 +14165,7 @@
             "lat": 32.8034939,
             "lng": 35.1037338
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJI6wsKum3HRURxdccfzyKJOk",
@@ -14669,7 +14173,7 @@
             "lat": 32.8047897,
             "lng": 35.1037739
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJTXr1Dcq2HRURcKJSzukyi5M",
@@ -14677,7 +14181,7 @@
             "lat": 32.8061731,
             "lng": 35.10351719999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJUeDhq_y2HRURVQwXn3-J6sk",
@@ -14685,7 +14189,7 @@
             "lat": 32.8058926,
             "lng": 35.103688
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJLxhtGP63HRURsvyvmWBPksE",
@@ -14693,7 +14197,7 @@
             "lat": 32.8047925,
             "lng": 35.103948
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ___-Ysq2HRURYv_C20EUllU",
@@ -14701,7 +14205,7 @@
             "lat": 32.8054683,
             "lng": 35.1039067
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJL-6iYsq2HRUR5mJI9UlAxtU",
@@ -14709,7 +14213,7 @@
             "lat": 32.8056012,
             "lng": 35.104233
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ0bvIIgG3HRURFNQs2nTCq9o",
@@ -14717,7 +14221,7 @@
             "lat": 32.8058535,
             "lng": 35.1044153
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJV7kE58m2HRURS3b8R2Uyy7k",
@@ -14725,7 +14229,7 @@
             "lat": 32.8092061,
             "lng": 35.10436809999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJxd2LzPnJHRURZJ-q5bGRxfc",
@@ -14733,7 +14237,7 @@
             "lat": 32.8889703,
             "lng": 35.0990535
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJj3Y2nNvJHRURQ3BFf9-INCk",
@@ -14741,7 +14245,7 @@
             "lat": 32.8911499,
             "lng": 35.09839729999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJg-VJ2F7JHRURjiaTvRrKVk0",
@@ -14749,7 +14253,7 @@
             "lat": 32.8913757,
             "lng": 35.0988246
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJPeF-nba2HRURuar-bAfKDQE",
@@ -14757,7 +14261,7 @@
             "lat": 32.80664959999999,
             "lng": 35.10859
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJJVkaj8jJHRURlGrQslZVA50",
@@ -14765,7 +14269,7 @@
             "lat": 32.900974,
             "lng": 35.0922807
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJLZvaWd3JHRUR9CmorlNpOaQ",
@@ -14773,7 +14277,7 @@
             "lat": 32.916691,
             "lng": 35.082296
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ17DiPK_JHRURwHjcNXtq2Uc",
@@ -14781,7 +14285,7 @@
             "lat": 32.91955799999999,
             "lng": 35.091929
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ17DiPK_JHRURfnSYuPDfm1M",
@@ -14789,7 +14293,7 @@
             "lat": 32.91955799999999,
             "lng": 35.091929
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJuWVz-TnJHRURg55Hy3zW91o",
@@ -14797,7 +14301,7 @@
             "lat": 32.92034259999999,
             "lng": 35.0927423
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJVVV59qjJHRUR3AacjCgLq3k",
@@ -14805,7 +14309,7 @@
             "lat": 32.924368,
             "lng": 35.095609
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJHQ8JXrq2HRURskRVBUPuRzQ",
@@ -14813,7 +14317,7 @@
             "lat": 32.811498,
             "lng": 35.1127932
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJV40PR963HRUR-nhQe9X6BNc",
@@ -14821,7 +14325,7 @@
             "lat": 32.8091439,
             "lng": 35.1197729
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJC0AiTFq3HRURgFtmF_jS8hg",
@@ -14829,7 +14333,7 @@
             "lat": 32.8103899,
             "lng": 35.1253739
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJq8O5GBW1HRUR5984LsJj59g",
@@ -14837,7 +14341,7 @@
             "lat": 32.8230427,
             "lng": 35.1500958
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJGS8QP0W1HRURhoZKQNp8uiA",
@@ -14845,7 +14349,7 @@
             "lat": 32.807701,
             "lng": 35.1570413
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJb5wPfPu1HRURzlMA0dUjhRo",
@@ -14853,7 +14357,7 @@
             "lat": 32.8066938,
             "lng": 35.1602067
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJKcmXjV21HRURz3NsQgBePKY",
@@ -14861,7 +14365,7 @@
             "lat": 32.8088451,
             "lng": 35.1677726
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJiTGLQzC1HRUREmVjH5kaCoQ",
@@ -14869,7 +14373,7 @@
             "lat": 32.80576500000001,
             "lng": 35.169971
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJXZ-IQ1-0HRURf8dEWkGMO5c",
@@ -14877,7 +14381,7 @@
             "lat": 32.80576500000001,
             "lng": 35.169971
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJcVk3bl-0HRURnpsE-rbvp6U",
@@ -14885,7 +14389,7 @@
             "lat": 32.8049134,
             "lng": 35.1699732
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJJcpEwHqzHRURrh2TqvPSMSk",
@@ -14893,7 +14397,7 @@
             "lat": 32.7708903,
             "lng": 35.1524704
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJP-INwOGzHRURbifGHdrJQx4",
@@ -14901,7 +14405,7 @@
             "lat": 32.7697429,
             "lng": 35.1520533
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJM4sbSda1HRURbgS52i0VDQY",
@@ -14909,7 +14413,7 @@
             "lat": 32.8061592,
             "lng": 35.1701369
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ6Sf_kNy1HRURybIcB1Dr-XQ",
@@ -14917,7 +14421,7 @@
             "lat": 32.8040494,
             "lng": 35.1719265
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJebg0z_W0HRURMs9uyWnJ0Ig",
@@ -14925,7 +14429,7 @@
             "lat": 32.8047981,
             "lng": 35.1730379
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJZ8hXzfq1HRURoOP9FgrJIyg",
@@ -14933,7 +14437,7 @@
             "lat": 32.8032879,
             "lng": 35.1734872
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJQ1RHRMq1HRURuJSFtuSn8kk",
@@ -14941,7 +14445,7 @@
             "lat": 32.7927959,
             "lng": 35.1751456
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJfbIODDy1HRUR2MU1xr7Terc",
@@ -14949,7 +14453,7 @@
             "lat": 32.8093122,
             "lng": 35.1815658
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJXTlBOWy1HRURVZDtNVGw1-k",
@@ -14957,7 +14461,7 @@
             "lat": 32.8085937,
             "lng": 35.1822853
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJP4C02KC1HRURGIFmq2Nf5K4",
@@ -14965,7 +14469,7 @@
             "lat": 32.811043,
             "lng": 35.18569929999999
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJTx2zUy21HRURuUrGpxeArAE",
@@ -14973,7 +14477,7 @@
             "lat": 32.8240756,
             "lng": 35.186919
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJl6Sn4hi1HRUR5GPefGYHSCM",
@@ -14981,7 +14485,7 @@
             "lat": 32.821799,
             "lng": 35.19012
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJgc8xPeu1HRUR8TL1jB5QIpE",
@@ -14989,7 +14493,7 @@
             "lat": 32.825615,
             "lng": 35.190139
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJm1SJbz-1HRURuddX5v48gJc",
@@ -14997,7 +14501,7 @@
             "lat": 32.8303603,
             "lng": 35.1876929
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJOQt0yKezHRURdRh5BWhGYls",
@@ -15005,7 +14509,7 @@
             "lat": 32.7640342,
             "lng": 35.1718139
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJAZZ1Tnq1HRURnUHqpAQ2VAs",
@@ -15013,7 +14517,7 @@
             "lat": 32.8506259,
             "lng": 35.178333
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJdXuV6mS1HRURVhZ87LNss8I",
@@ -15021,7 +14525,7 @@
             "lat": 32.8499766,
             "lng": 35.1829068
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJ-41-jvS1HRURxyg1YdU4Z_I",
@@ -15029,7 +14533,7 @@
             "lat": 32.8574239,
             "lng": 35.1709824
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJwwh9Zp2zHRURdPN_6C_Q_hc",
@@ -15037,7 +14541,7 @@
             "lat": 32.7516228,
             "lng": 35.1786186
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJyf1p_PCzHRURedEPui9TtW4",
@@ -15045,7 +14549,7 @@
             "lat": 32.754054,
             "lng": 35.1890792
         },
-        "type": "cafe"
+        "type": "restaurant"
     },
     {
         "place_id": "ChIJUdKNUI67HRURZNDBxfJ6-as",
@@ -15914,7 +15418,7 @@
     {
         "place_id": "ChIJWeVEXba7HRURDkclSyMIR-w",
         "geo_location": {
-            "lat": 32.7935409,
+            "lat": 32.793540899999996,
             "lng": 34.959402
         },
         "type": "store"
@@ -16155,14 +15659,14 @@
         "place_id": "ChIJOTEESGi7HRUR4hVZl_W5Ef4",
         "geo_location": {
             "lat": 32.7897121,
-            "lng": 34.9639311
+            "lng": 34.963931099999996
         },
         "type": "store"
     },
     {
         "place_id": "ChIJKW3vSWi7HRURS7UmV1RZU18",
         "geo_location": {
-            "lat": 32.7897675,
+            "lat": 32.789767499999996,
             "lng": 34.9640335
         },
         "type": "store"
@@ -16258,7 +15762,7 @@
     {
         "place_id": "ChIJ_WdKclu7HRUR8M2IpNgGR4U",
         "geo_location": {
-            "lat": 32.7841299,
+            "lat": 32.784129899999996,
             "lng": 34.9594904
         },
         "type": "store"
@@ -16675,7 +16179,7 @@
         "place_id": "ChIJY9Ybxlm7HRURW1UCWDLp45k",
         "geo_location": {
             "lat": 32.81940019999999,
-            "lng": 34.9653022
+            "lng": 34.965302199999996
         },
         "type": "store"
     },
@@ -17579,7 +17083,7 @@
         "place_id": "ChIJkYKhvWm7HRURY4nEFq851U4",
         "geo_location": {
             "lat": 32.78947609999999,
-            "lng": 34.9660452
+            "lng": 34.966045199999996
         },
         "type": "store"
     },
@@ -18202,7 +17706,7 @@
     {
         "place_id": "ChIJhdxF0fGlHRURWRpM-J-Jq8Q",
         "geo_location": {
-            "lat": 32.7673454,
+            "lat": 32.767345399999996,
             "lng": 34.96721259999999
         },
         "type": "store"
@@ -18210,7 +17714,7 @@
     {
         "place_id": "ChIJMwtNqrSkHRURXYcKZVtSdLw",
         "geo_location": {
-            "lat": 32.7673454,
+            "lat": 32.767345399999996,
             "lng": 34.96721259999999
         },
         "type": "store"
@@ -18938,7 +18442,7 @@
     {
         "place_id": "ChIJKWqn4Z6lHRURPn-SUjTVYeI",
         "geo_location": {
-            "lat": 32.7620106,
+            "lat": 32.762010599999996,
             "lng": 34.9716045
         },
         "type": "store"
@@ -19762,7 +19266,7 @@
     {
         "place_id": "ChIJ5xXuqK27HRURSfV_QJWuo1k",
         "geo_location": {
-            "lat": 32.81601250000001,
+            "lat": 32.816012500000014,
             "lng": 34.9778335
         },
         "type": "store"
@@ -20011,7 +19515,7 @@
         "place_id": "ChIJJ3ygbKG7HRURTrrsKfrB0Ys",
         "geo_location": {
             "lat": 32.8080159,
-            "lng": 34.97657349999999
+            "lng": 34.976573499999986
         },
         "type": "store"
     },
@@ -20138,7 +19642,7 @@
     {
         "place_id": "ChIJkYRIA9S7HRURd2-X7ySkF98",
         "geo_location": {
-            "lat": 32.80614559999999,
+            "lat": 32.806145599999994,
             "lng": 34.982151
         },
         "type": "store"
@@ -20330,7 +19834,7 @@
     {
         "place_id": "ChIJlct_15q7HRUR6M4Qo3YCfF4",
         "geo_location": {
-            "lat": 32.7970948,
+            "lat": 32.797094799999996,
             "lng": 34.9837925
         },
         "type": "store"
@@ -20547,7 +20051,7 @@
         "place_id": "ChIJKxGvxAe7HRUR2O2DLbpRGI0",
         "geo_location": {
             "lat": 32.800288,
-            "lng": 34.9843528
+            "lng": 34.984352799999996
         },
         "type": "store"
     },
@@ -20722,7 +20226,7 @@
     {
         "place_id": "ChIJCS_xW6q7HRUR-uwx6h06Ueg",
         "geo_location": {
-            "lat": 32.7880474,
+            "lat": 32.788047399999996,
             "lng": 34.9859807
         },
         "type": "store"
@@ -20730,7 +20234,7 @@
     {
         "place_id": "ChIJWRyvFdQLHRURJpGZL9N5rrM",
         "geo_location": {
-            "lat": 32.7880474,
+            "lat": 32.788047399999996,
             "lng": 34.9859807
         },
         "type": "store"
@@ -20979,7 +20483,7 @@
         "place_id": "ChIJ6b5L2QG7HRURNg7PqxIGXIY",
         "geo_location": {
             "lat": 32.78510170000001,
-            "lng": 34.98593270000001
+            "lng": 34.985932700000006
         },
         "type": "store"
     },
@@ -20987,7 +20491,7 @@
         "place_id": "ChIJcUnwohm7HRURBgkhegTe5h8",
         "geo_location": {
             "lat": 32.78510170000001,
-            "lng": 34.98593270000001
+            "lng": 34.985932700000006
         },
         "type": "store"
     },
@@ -20995,7 +20499,7 @@
         "place_id": "ChIJcUnwohm7HRURyA68_7KJ8PM",
         "geo_location": {
             "lat": 32.78510170000001,
-            "lng": 34.98593270000001
+            "lng": 34.985932700000006
         },
         "type": "store"
     },
@@ -21003,7 +20507,7 @@
         "place_id": "ChIJVVVVVRi7HRURqyB2cSaeZsQ",
         "geo_location": {
             "lat": 32.78510170000001,
-            "lng": 34.98593270000001
+            "lng": 34.985932700000006
         },
         "type": "store"
     },
@@ -21011,7 +20515,7 @@
         "place_id": "ChIJLwZjohm7HRURMGmMU6XEQDY",
         "geo_location": {
             "lat": 32.78510170000001,
-            "lng": 34.98593270000001
+            "lng": 34.985932700000006
         },
         "type": "store"
     },
@@ -21299,7 +20803,7 @@
         "place_id": "ChIJDXiwKkalHRURzGDczn9zsOM",
         "geo_location": {
             "lat": 32.76173130000001,
-            "lng": 34.9738273
+            "lng": 34.973827299999996
         },
         "type": "store"
     },
@@ -21467,7 +20971,7 @@
         "place_id": "ChIJv-bh9U6lHRURCRwThHhnvZE",
         "geo_location": {
             "lat": 32.7604914,
-            "lng": 34.9733421
+            "lng": 34.973342099999996
         },
         "type": "store"
     },
@@ -21915,7 +21419,7 @@
         "place_id": "ChIJ5_81as-7HRURCVuiB1jU6dE",
         "geo_location": {
             "lat": 32.827542,
-            "lng": 34.9847389
+            "lng": 34.984738899999996
         },
         "type": "store"
     },
@@ -22362,7 +21866,7 @@
     {
         "place_id": "ChIJg0PIPMa7HRURak_4wbyWvDA",
         "geo_location": {
-            "lat": 32.82531719999999,
+            "lat": 32.825317199999986,
             "lng": 34.9834028
         },
         "type": "store"
@@ -23179,7 +22683,7 @@
         "place_id": "ChIJ1T5q6D67HRUR2vE0nDLbbh0",
         "geo_location": {
             "lat": 32.804688,
-            "lng": 34.987641
+            "lng": 34.987640999999996
         },
         "type": "store"
     },
@@ -23659,7 +23163,7 @@
         "place_id": "ChIJM_lfrBy7HRURZi4EP8ogspg",
         "geo_location": {
             "lat": 32.7899984,
-            "lng": 34.9896572
+            "lng": 34.989657199999996
         },
         "type": "store"
     },
@@ -24203,7 +23707,7 @@
         "place_id": "ChIJH7UVsvm7HRUROaa3RyuBX6s",
         "geo_location": {
             "lat": 32.7815177,
-            "lng": 34.9947038
+            "lng": 34.994703799999996
         },
         "type": "store"
     },
@@ -24211,7 +23715,7 @@
         "place_id": "ChIJhRhJ0eG6HRURcbT9fzt29vY",
         "geo_location": {
             "lat": 32.7815177,
-            "lng": 34.9947038
+            "lng": 34.994703799999996
         },
         "type": "store"
     },
@@ -24219,7 +23723,7 @@
         "place_id": "ChIJhRhJ0eG6HRURQUEBzcdlJVI",
         "geo_location": {
             "lat": 32.7815177,
-            "lng": 34.9947038
+            "lng": 34.994703799999996
         },
         "type": "store"
     },
@@ -24227,7 +23731,7 @@
         "place_id": "ChIJvV61BvW6HRURoLeK91SRpWk",
         "geo_location": {
             "lat": 32.7815177,
-            "lng": 34.9947038
+            "lng": 34.994703799999996
         },
         "type": "store"
     },
@@ -24930,7 +24434,7 @@
     {
         "place_id": "ChIJd6rJXPy7HRURdDyoEEg1QUQ",
         "geo_location": {
-            "lat": 32.8125532,
+            "lat": 32.812553199999996,
             "lng": 34.9974384
         },
         "type": "store"
@@ -24938,7 +24442,7 @@
     {
         "place_id": "ChIJAW6Uf0u6HRUR4FBCN-1_oIg",
         "geo_location": {
-            "lat": 32.8125532,
+            "lat": 32.812553199999996,
             "lng": 34.9974384
         },
         "type": "store"
@@ -24946,7 +24450,7 @@
     {
         "place_id": "ChIJFxMcBEu6HRURMa6HwlevJeA",
         "geo_location": {
-            "lat": 32.8146673,
+            "lat": 32.814667299999996,
             "lng": 34.9971434
         },
         "type": "store"
@@ -25315,7 +24819,7 @@
         "place_id": "ChIJxYyxcR-7HRUR1a5LKdFFVxE",
         "geo_location": {
             "lat": 32.8057291,
-            "lng": 34.9989849
+            "lng": 34.998984899999996
         },
         "type": "store"
     },
@@ -26722,7 +26226,7 @@
     {
         "place_id": "ChIJ6zxXjUC6HRURXbh5Ne7Y5Ig",
         "geo_location": {
-            "lat": 32.8110301,
+            "lat": 32.811030099999996,
             "lng": 35.0133742
         },
         "type": "store"
@@ -29274,7 +28778,7 @@
     {
         "place_id": "ChIJP0sKsMa7HRURmJwZC63hLes",
         "geo_location": {
-            "lat": 32.7963451,
+            "lat": 32.796345099999996,
             "lng": 35.0215715
         },
         "type": "store"
@@ -30690,7 +30194,7 @@
     {
         "place_id": "ChIJW48RoNG7HRURXxBAeWYDSqo",
         "geo_location": {
-            "lat": 32.7935409,
+            "lat": 32.793540899999996,
             "lng": 35.03741839999999
         },
         "type": "store"
@@ -30714,7 +30218,7 @@
     {
         "place_id": "ChIJPaR9U3m6HRURjH-X7dWDGxI",
         "geo_location": {
-            "lat": 32.7911544,
+            "lat": 32.791154399999996,
             "lng": 35.0336879
         },
         "type": "store"
@@ -32570,7 +32074,7 @@
     {
         "place_id": "ChIJ7_pS14OwHRUR2hhULB3f4vE",
         "geo_location": {
-            "lat": 32.7879945,
+            "lat": 32.787994499999996,
             "lng": 35.0418654
         },
         "type": "store"
@@ -32642,8 +32146,8 @@
     {
         "place_id": "ChIJsRfVAKm7HRURsjXNRy20Ji4",
         "geo_location": {
-            "lat": 32.7908437,
-            "lng": 35.03976299999999
+            "lat": 32.790843699999996,
+            "lng": 35.039762999999994
         },
         "type": "store"
     },
@@ -33402,7 +32906,7 @@
     {
         "place_id": "ChIJT9WPvXmwHRURG3l4ry4L4nU",
         "geo_location": {
-            "lat": 32.7748776,
+            "lat": 32.774877599999996,
             "lng": 35.0429036
         },
         "type": "store"
@@ -33690,7 +33194,7 @@
     {
         "place_id": "ChIJq6qaU3CwHRUR2VrtSQ2C3RU",
         "geo_location": {
-            "lat": 32.7694899,
+            "lat": 32.769489899999996,
             "lng": 35.0474633
         },
         "type": "store"
@@ -33698,7 +33202,7 @@
     {
         "place_id": "ChIJ65f5UnCwHRURVqes5uSg18A",
         "geo_location": {
-            "lat": 32.7694899,
+            "lat": 32.769489899999996,
             "lng": 35.0474633
         },
         "type": "store"
@@ -33706,7 +33210,7 @@
     {
         "place_id": "ChIJ65f5UnCwHRURKWC_Ah9UFGI",
         "geo_location": {
-            "lat": 32.7694899,
+            "lat": 32.769489899999996,
             "lng": 35.0474633
         },
         "type": "store"
@@ -34018,7 +33522,7 @@
     {
         "place_id": "ChIJfe4juWq3HRURzQ3UMLs7YUM",
         "geo_location": {
-            "lat": 32.8383097,
+            "lat": 32.838309699999996,
             "lng": 35.0597549
         },
         "type": "store"
@@ -34683,7 +34187,7 @@
         "place_id": "ChIJTZq3xgm3HRURwSbySqsNbmU",
         "geo_location": {
             "lat": 32.8211634,
-            "lng": 35.0580368
+            "lng": 35.058036799999996
         },
         "type": "store"
     },
@@ -37346,7 +36850,7 @@
     {
         "place_id": "ChIJG_VdqMuwHRURnnkx0RRDxT8",
         "geo_location": {
-            "lat": 32.8131442,
+            "lat": 32.813144199999996,
             "lng": 35.0641728
         },
         "type": "store"
@@ -37538,7 +37042,7 @@
     {
         "place_id": "ChIJlcrcj8uwHRURf5hnhoqJG3w",
         "geo_location": {
-            "lat": 32.8122121,
+            "lat": 32.812212099999996,
             "lng": 35.0657001
         },
         "type": "store"
@@ -37546,7 +37050,7 @@
     {
         "place_id": "ChIJ0U6DhcuwHRUR0Xz4hPJRQr4",
         "geo_location": {
-            "lat": 32.8122121,
+            "lat": 32.812212099999996,
             "lng": 35.0657001
         },
         "type": "store"
@@ -39538,7 +39042,7 @@
     {
         "place_id": "ChIJWzgtpqi3HRURRQ2CbqE_wKE",
         "geo_location": {
-            "lat": 32.8210479,
+            "lat": 32.821047899999996,
             "lng": 35.07028650000001
         },
         "type": "store"
@@ -39722,7 +39226,7 @@
     {
         "place_id": "ChIJvdLpaNKwHRUR3hR8iFoAThQ",
         "geo_location": {
-            "lat": 32.810644,
+            "lat": 32.810643999999996,
             "lng": 35.0738415
         },
         "type": "store"
@@ -39882,7 +39386,7 @@
     {
         "place_id": "ChIJw6Z4xbCxHRURDApHmlEEzH4",
         "geo_location": {
-            "lat": 32.8112654,
+            "lat": 32.811265399999996,
             "lng": 35.0729342
         },
         "type": "store"
@@ -40250,7 +39754,7 @@
     {
         "place_id": "ChIJMezQ49CwHRURbuGHeAByXSY",
         "geo_location": {
-            "lat": 32.8044677,
+            "lat": 32.804467700000004,
             "lng": 35.0756675
         },
         "type": "store"
@@ -41082,7 +40586,7 @@
     {
         "place_id": "ChIJL3x5-tO3HRURjaCOKmxX07w",
         "geo_location": {
-            "lat": 32.84612610000001,
+            "lat": 32.846126100000006,
             "lng": 35.0866903
         },
         "type": "store"
@@ -42826,7 +42330,7 @@
     {
         "place_id": "ChIJb2IDRV_PHRURpKCdj9JOcbk",
         "geo_location": {
-            "lat": 32.8035812,
+            "lat": 32.803581199999996,
             "lng": 35.0788536
         },
         "type": "store"
@@ -42962,7 +42466,7 @@
     {
         "place_id": "ChIJGV289dOwHRURqgp_7WpPs8M",
         "geo_location": {
-            "lat": 32.8077869,
+            "lat": 32.807786899999996,
             "lng": 35.07725320000001
         },
         "type": "store"
@@ -44858,7 +44362,7 @@
     {
         "place_id": "ChIJX5jd3YK3HRURU-pve-5rfPM",
         "geo_location": {
-            "lat": 32.8375521,
+            "lat": 32.837552099999996,
             "lng": 35.0898411
         },
         "type": "store"
@@ -44866,7 +44370,7 @@
     {
         "place_id": "ChIJB5Hg7S-3HRURrIOrK6nIZuQ",
         "geo_location": {
-            "lat": 32.83744909999999,
+            "lat": 32.837449099999986,
             "lng": 35.0898479
         },
         "type": "store"
@@ -45058,7 +44562,7 @@
     {
         "place_id": "ChIJS5_ZtuS2HRURyVRKcvMbZXw",
         "geo_location": {
-            "lat": 32.8367787,
+            "lat": 32.836778699999996,
             "lng": 35.08946900000001
         },
         "type": "store"
@@ -46898,7 +46402,7 @@
     {
         "place_id": "ChIJM-RQKHCxHRURDj-Z-mE2e74",
         "geo_location": {
-            "lat": 32.8005654,
+            "lat": 32.800565399999996,
             "lng": 35.1062896
         },
         "type": "store"
@@ -48026,7 +47530,7 @@
     {
         "place_id": "ChIJraZJ4AC3HRUR3ec067WdxbQ",
         "geo_location": {
-            "lat": 32.8078252,
+            "lat": 32.807825199999996,
             "lng": 35.1138039
         },
         "type": "store"
