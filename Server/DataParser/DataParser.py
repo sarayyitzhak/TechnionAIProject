@@ -58,26 +58,44 @@ def get_address(df, row):
     return city, street, street_reversed
 
 
-def get_cbs_data(cbs_df, city, street, street_reversed):
-    people_count, rel_count, religious_percent, se_index, se_rank, se_cluster = None, None, None, None, None, None
+def get_cbs_data(cbs_data: dict, city, street, street_reversed):
+    religious_percent, se_index, se_rank, se_cluster = None, None, None, None
     if city is not None and street is not None:
-        key = ", ".join([street, city])
-        key_reversed_street_name = ", ".join([street_reversed, city])
-        if cbs_df.get(key) is not None:
-            data = cbs_df[key]
-        else:
-            data = cbs_df.get(key_reversed_street_name)
-        # cbs_df[key] if cbs_df.get(key) is not None else cbs_df.get(key_reversed_street_name)
+        key = (street, city)
+        reversed_key = (street_reversed, city)
+        data = cbs_data.get(key)
+        if data is None:
+            data = cbs_data.get(reversed_key)
+            if data is None:
+                for cbs_key in cbs_data.keys():
+                    if cbs_key[1] == city:
+                        if max(textdistance.strcmp95(cbs_key[0], street), textdistance.strcmp95(cbs_key[0], street_reversed)) > 0.9:
+                            data = cbs_data[cbs_key]
+
         if data is not None:
-            people_count, rel_count, religious_percent, se_index, se_rank, se_cluster = data
-    return people_count, rel_count, religious_percent, se_index, se_rank, se_cluster
+            religious_percent = data["percent of religious"]
+            se_index = data["socio-economic index value"]
+            se_rank = data["socio-economic rank"]
+            se_cluster = data["socio-economic cluster"]
+    return religious_percent, se_index, se_rank, se_cluster
 
 
 def parse_cbs(google_df, cbs_df):
     cities, streets, religious, se_index_values, se_ranks, se_clusters = [], [], [], [], [], []
+    cbs_data = {}
+
+    for row in range(len(cbs_df)):
+        key = (cbs_df["street"][row], cbs_df["city"][row])
+        cbs_data[key] = {
+            "percent of religious": cbs_df["percent of religious"][row],
+            "socio-economic index value": cbs_df["socio-economic index value"][row],
+            "socio-economic rank": cbs_df["socio-economic rank"][row],
+            "socio-economic cluster": cbs_df["socio-economic cluster"][row]
+        }
+
     for row in range(len(google_df)):
         city, street, street_reversed = get_address(google_df, row)
-        people_count, rel_count, religious_percent, se_index, se_rank, se_cluster = get_cbs_data(cbs_df, city, street, street_reversed)
+        religious_percent, se_index, se_rank, se_cluster = get_cbs_data(cbs_data, city, street, street_reversed)
         religious.append(religious_percent)
         se_index_values.append(se_index)
         se_ranks.append(se_rank)
