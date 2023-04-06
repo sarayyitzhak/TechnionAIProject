@@ -1,0 +1,38 @@
+{
+  "religious": {
+    "file": "./CbsInfo/religious_population.xlsx",
+    "sheet_name": "חרדים במחוזות, ביישובים ובאס",
+    "columns": "B:G",
+    "rows_to_skip": 9,
+    "columns_idxes_to_use": [14, 19, 18, 3, 4, 12]
+  },
+  "transition": {
+    "file": "./CbsInfo/transition_area_key.xlsx",
+    "sheet_name": 0,
+    "columns": "B, C, E, G, H, J, K, M",
+    "rows_to_skip": null
+  },
+  "streets": {
+    "file": "./CbsInfo/streets_by_area_key.xlsx",
+    "sheet_name": 0,
+    "columns": "A:F",
+    "rows_to_skip": null
+  },
+  "ser": {
+    "file": "./CbsInfo/socio_economic_rank_2015.xls",
+    "sheet_name": 0,
+    "columns": "A:C, E:G",
+    "columns_names": ["סמל יישוב", "שם יישוב", "סמל אס", "ערך מדד", "דירוג", "אשכול"],
+    "rows_to_skip": null,
+    "columns_idxes_to_use": [14, 3, 4, 5, 18, 19, 12]
+  },
+  "cities": {
+    "city_names": ["חיפה", "טירת הכרמל", "נשר", "קריית אתא", "קריית ביאליק", "קריית ים", "קריית מוצקין"],
+    "city_names_to_replace": {
+    "old": ["קריית מוצקין", "קריית ים", "קריית אתא"],
+    "new": ["קרית מוצקין", "קרית ים", "קרית אתא"]
+  }
+  },
+
+  "output_path": "./Dataset/cbs-data.json"
+}

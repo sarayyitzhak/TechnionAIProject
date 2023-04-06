@@ -1,2882 +1,2882 @@
-{
-    "שדרות ורבורג, חיפה": {
-        "amount of people": 13268,
-        "amount of religious": 2199,
+[
+    {
+        "city": "חיפה",
+        "street": "שדרות ורבורג",
         "percent of religious": 16.57,
-        "socio-economic index value": -0.268,
-        "socio-economic rank": 492.5,
-        "socio-economic cluster": 4.25
+        "socio-economic index value": -0.051,
+        "socio-economic rank": 154.375,
+        "socio-economic cluster": 1.333
     },
-    "משה חיים שפירא, חיפה": {
-        "amount of people": 2453,
-        "amount of religious": 814,
+    {
+        "city": "חיפה",
+        "street": "משה חיים שפירא",
         "percent of religious": 33.18,
-        "socio-economic index value": -0.922,
-        "socio-economic rank": 235,
-        "socio-economic cluster": 2
+        "socio-economic index value": -0.461,
+        "socio-economic rank": 117.5,
+        "socio-economic cluster": 1.0
     },
-    "לוין אריה הרב, חיפה": {
-        "amount of people": 2453,
-        "amount of religious": 814,
+    {
+        "city": "חיפה",
+        "street": "לוין אריה הרב",
         "percent of religious": 33.18,
-        "socio-economic index value": -0.922,
-        "socio-economic rank": 235,
-        "socio-economic cluster": 2
+        "socio-economic index value": -0.461,
+        "socio-economic rank": 117.5,
+        "socio-economic cluster": 1.0
     },
-    "שטרן יוסף, חיפה": {
-        "amount of people": 2453,
-        "amount of religious": 814,
+    {
+        "city": "חיפה",
+        "street": "שטרן יוסף",
         "percent of religious": 33.18,
-        "socio-economic index value": -0.922,
-        "socio-economic rank": 235,
-        "socio-economic cluster": 2
+        "socio-economic index value": -0.461,
+        "socio-economic rank": 117.5,
+        "socio-economic cluster": 1.0
     },
-    "פרומר דב, חיפה": {
-        "amount of people": 8423,
-        "amount of religious": 2199,
+    {
+        "city": "חיפה",
+        "street": "פרומר דב",
         "percent of religious": 26.11,
-        "socio-economic index value": -0.484,
-        "socio-economic rank": 408.0,
-        "socio-economic cluster": 3.5
+        "socio-economic index value": -0.127,
+        "socio-economic rank": 174.625,
+        "socio-economic cluster": 1.5
     },
-    "הים התיכון, חיפה": {
-        "amount of people": 5970,
-        "amount of religious": 1385,
+    {
+        "city": "חיפה",
+        "street": "הים התיכון",
         "percent of religious": 23.2,
-        "socio-economic index value": -0.046,
-        "socio-economic rank": 581,
-        "socio-economic cluster": 5
+        "socio-economic index value": -0.023,
+        "socio-economic rank": 290.5,
+        "socio-economic cluster": 2.5
     },
-    "חב\"ד, חיפה": {
-        "amount of people": 5970,
-        "amount of religious": 1385,
+    {
+        "city": "חיפה",
+        "street": "חב\"ד",
         "percent of religious": 23.2,
-        "socio-economic index value": -0.046,
-        "socio-economic rank": 581,
-        "socio-economic cluster": 5
+        "socio-economic index value": -0.023,
+        "socio-economic rank": 290.5,
+        "socio-economic cluster": 2.5
     },
-    "בר אילן, חיפה": {
-        "amount of people": 5970,
-        "amount of religious": 1385,
+    {
+        "city": "חיפה",
+        "street": "בר אילן",
         "percent of religious": 23.2,
-        "socio-economic index value": -0.046,
-        "socio-economic rank": 581,
-        "socio-economic cluster": 5
+        "socio-economic index value": -0.023,
+        "socio-economic rank": 290.5,
+        "socio-economic cluster": 2.5
     },
-    "ארן זלמן, חיפה": {
-        "amount of people": 4845,
-        "amount of religious": 0,
+    {
+        "city": "חיפה",
+        "street": "ארן זלמן",
         "percent of religious": 0.0,
-        "socio-economic index value": -0.139,
-        "socio-economic rank": 535.0,
-        "socio-economic cluster": 4.5
+        "socio-economic index value": -0.063,
+        "socio-economic rank": 195.375,
+        "socio-economic cluster": 1.625
     },
-    "שדרות דגניה, חיפה": {
-        "amount of people": 4845,
-        "amount of religious": 0,
+    {
+        "city": "חיפה",
+        "street": "שדרות דגניה",
         "percent of religious": 0.0,
-        "socio-economic index value": -0.139,
-        "socio-economic rank": 535.0,
-        "socio-economic cluster": 4.5
+        "socio-economic index value": -0.063,
+        "socio-economic rank": 195.375,
+        "socio-economic cluster": 1.625
     },
-    "שדרות מח\"ל, חיפה": {
-        "amount of people": 4845,
-        "amount of religious": 0,
+    {
+        "city": "חיפה",
+        "street": "שדרות מח\"ל",
         "percent of religious": 0.0,
-        "socio-economic index value": -0.139,
-        "socio-economic rank": 535.0,
-        "socio-economic cluster": 4.5
+        "socio-economic index value": -0.063,
+        "socio-economic rank": 195.375,
+        "socio-economic cluster": 1.625
     },
-    "האצטדיון, חיפה": {
-        "amount of people": 4845,
-        "amount of religious": 0,
+    {
+        "city": "חיפה",
+        "street": "האצטדיון",
         "percent of religious": 0.0,
-        "socio-economic index value": -0.052,
-        "socio-economic rank": 577,
-        "socio-economic cluster": 5
+        "socio-economic index value": -0.026,
+        "socio-economic rank": 288.5,
+        "socio-economic cluster": 2.5
     },
-    "בית אלפא, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "בית אלפא",
         "percent of religious": null,
-        "socio-economic index value": -0.227,
-        "socio-economic rank": 493,
-        "socio-economic cluster": 4
-    },
-    "טרומן, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.227,
-        "socio-economic rank": 493,
-        "socio-economic cluster": 4
-    },
-    "שנקר אריה, חיפה": {
-        "amount of people": 3210,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.985,
-        "socio-economic rank": 1205,
-        "socio-economic cluster": 8
-    },
-    "אח\"י אילת, חיפה": {
-        "amount of people": 12704,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.67,
-        "socio-economic rank": 1030.0,
-        "socio-economic cluster": 7.0
-    },
-    "ברודסקי זאב, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "בן צבי יצחק, חיפה": {
-        "amount of people": 7928,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.656,
-        "socio-economic rank": 1022.0,
-        "socio-economic cluster": 7.0
-    },
-    "שרת משה, חיפה": {
-        "amount of people": 12704,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.653,
-        "socio-economic rank": 1022.0,
-        "socio-economic cluster": 6.875
-    },
-    "הגדוד העברי, חיפה": {
-        "amount of people": 3210,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.002,
-        "socio-economic rank": 1214.0,
-        "socio-economic cluster": 8.0
-    },
-    "שיטרית בכור, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.942,
-        "socio-economic rank": 1186.5,
-        "socio-economic cluster": 7.5
-    },
-    "הראשונים, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.019,
-        "socio-economic rank": 1223,
-        "socio-economic cluster": 8
-    },
-    "קרן קיימת לישראל, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.865,
-        "socio-economic rank": 1150,
-        "socio-economic cluster": 7
-    },
-    "הפלוגות, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.865,
-        "socio-economic rank": 1150,
-        "socio-economic cluster": 7
-    },
-    "זייד אלכסנדר, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.865,
-        "socio-economic rank": 1150,
-        "socio-economic cluster": 7
-    },
-    "שדרות ההסתדרות, חיפה": {
-        "amount of people": 4776,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.025,
-        "socio-economic rank": 1228,
-        "socio-economic cluster": 8
-    },
-    "שבטי ישראל, חיפה": {
-        "amount of people": 4776,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.025,
-        "socio-economic rank": 1228,
-        "socio-economic cluster": 8
-    },
-    "ציזלינג אהרון, חיפה": {
-        "amount of people": 4776,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.025,
-        "socio-economic rank": 1228,
-        "socio-economic cluster": 8
-    },
-    "השיירה, חיפה": {
-        "amount of people": 4718,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.327,
-        "socio-economic rank": 839,
-        "socio-economic cluster": 6
-    },
-    "צייטלין אהרון, חיפה": {
-        "amount of people": 4718,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.327,
-        "socio-economic rank": 839,
-        "socio-economic cluster": 6
-    },
-    "חלוצי התעשיה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "הדשנים, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "דרך ידין יגאל, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "יוליוס סימון, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "נתיבי המפרץ, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "דרך דיין משה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "החרושת, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "האשלג, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "דרך העמקים, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "החרמש, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "בעלי מלאכה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "בר יהודה ישראל, חיפה": {
-        "amount of people": 6330,
-        "amount of religious": 53,
-        "percent of religious": 0.84,
-        "socio-economic index value": -1.204,
-        "socio-economic rank": 172.5,
+        "socio-economic index value": -0.113,
+        "socio-economic rank": 246.5,
         "socio-economic cluster": 2.0
     },
-    "הנפח, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "טרומן",
         "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "מנהרות הכרמל, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.165,
-        "socio-economic rank": 737,
-        "socio-economic cluster": 6
-    },
-    "המלאכה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "אופיר, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "דרך צייזל ירוחם, חיפה": {
-        "amount of people": 1460,
-        "amount of religious": 53,
-        "percent of religious": 3.63,
-        "socio-economic index value": -1.41,
-        "socio-economic rank": 134.0,
+        "socio-economic index value": -0.113,
+        "socio-economic rank": 246.5,
         "socio-economic cluster": 2.0
     },
-    "סלמאן, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "דרך העצמאות, חיפה": {
-        "amount of people": 3535,
-        "amount of religious": 0,
+    {
+        "city": "חיפה",
+        "street": "שנקר אריה",
         "percent of religious": 0.0,
-        "socio-economic index value": -0.529,
-        "socio-economic rank": 359.5,
-        "socio-economic cluster": 3.5
-    },
-    "חירם, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "וילבוש נחום, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "שדרות בן גוריון, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "ארליך דוד פרופ', חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.473,
-        "socio-economic rank": 381,
-        "socio-economic cluster": 3
-    },
-    "הגבורים, חיפה": {
-        "amount of people": 12955,
-        "amount of religious": 4435,
-        "percent of religious": 34.23,
-        "socio-economic index value": -0.933,
-        "socio-economic rank": 243.3125,
-        "socio-economic cluster": 2.4375
-    },
-    "חטיבת גולני, חיפה": {
-        "amount of people": 1460,
-        "amount of religious": 53,
-        "percent of religious": 3.63,
-        "socio-economic index value": -1.41,
-        "socio-economic rank": 134.0,
-        "socio-economic cluster": 2.0
-    },
-    "אבן גבירול, חיפה": {
-        "amount of people": 1460,
-        "amount of religious": 53,
-        "percent of religious": 3.63,
-        "socio-economic index value": -1.41,
-        "socio-economic rank": 134.0,
-        "socio-economic cluster": 2.0
-    },
-    "פלי\"ם, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "דרך רודיק שמעון, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "שיבת ציון, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.584,
-        "socio-economic rank": 338.5,
-        "socio-economic cluster": 3.0
-    },
-    "נתנזון, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "שדרות המגינים, חיפה": {
-        "amount of people": 9993,
-        "amount of religious": 62,
-        "percent of religious": 0.62,
-        "socio-economic index value": -0.339,
-        "socio-economic rank": 440.84375,
-        "socio-economic cluster": 3.9375
-    },
-    "דרך אלנבי, חיפה": {
-        "amount of people": 9993,
-        "amount of religious": 62,
-        "percent of religious": 0.62,
-        "socio-economic index value": -0.234,
-        "socio-economic rank": 502.5625,
-        "socio-economic cluster": 4.484375
-    },
-    "שער פלמר, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.656,
-        "socio-economic rank": 313,
-        "socio-economic cluster": 3
-    },
-    "כורי, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.502,
-        "socio-economic rank": 369.5,
-        "socio-economic cluster": 3.0
-    },
-    "שדרות הציונות, חיפה": {
-        "amount of people": 3751,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": -0.371,
-        "socio-economic rank": 468.58203125,
-        "socio-economic cluster": 4.2109375
-    },
-    "התשעים ושלוש, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.512,
-        "socio-economic rank": 364,
-        "socio-economic cluster": 3
-    },
-    "שבתאי לוי, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.639,
-        "socio-economic rank": 323.0,
-        "socio-economic cluster": 3.0
-    },
-    "הואדי, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.492,
-        "socio-economic rank": 375,
-        "socio-economic cluster": 3
-    },
-    "פרץ י. ל., חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.492,
-        "socio-economic rank": 375,
-        "socio-economic cluster": 3
-    },
-    "הגפן, חיפה": {
-        "amount of people": 3535,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.163,
-        "socio-economic rank": 733.6875,
-        "socio-economic cluster": 5.5
-    },
-    "מאיר (רוטברג), חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.307,
-        "socio-economic rank": 451,
-        "socio-economic cluster": 4
-    },
-    "מסילת הברזל, חיפה": {
-        "amount of people": 3535,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": -0.438,
-        "socio-economic rank": 393.5,
-        "socio-economic cluster": 3.5
-    },
-    "דרך יפו, חיפה": {
-        "amount of people": 3454,
-        "amount of religious": 62,
-        "percent of religious": 1.8,
-        "socio-economic index value": -0.441,
-        "socio-economic rank": 392.0,
-        "socio-economic cluster": 3.5
-    },
-    "שדרות רוטשילד, חיפה": {
-        "amount of people": 6458,
-        "amount of religious": 62,
-        "percent of religious": 0.96,
-        "socio-economic index value": -0.367,
-        "socio-economic rank": 424.25,
+        "socio-economic index value": 0.493,
+        "socio-economic rank": 602.5,
         "socio-economic cluster": 4.0
     },
-    "חיל הים, חיפה": {
-        "amount of people": 3454,
-        "amount of religious": 62,
-        "percent of religious": 1.8,
-        "socio-economic index value": -0.457,
-        "socio-economic rank": 386.5,
-        "socio-economic cluster": 3.25
-    },
-    "צה\"ל, חיפה": {
-        "amount of people": 3004,
-        "amount of religious": 0,
+    {
+        "city": "חיפה",
+        "street": "אח\"י אילת",
         "percent of religious": 0.0,
-        "socio-economic index value": -0.261,
-        "socio-economic rank": 480,
-        "socio-economic cluster": 4
+        "socio-economic index value": 0.152,
+        "socio-economic rank": 238.672,
+        "socio-economic cluster": 1.625
     },
-    "המעפילים, חיפה": {
-        "amount of people": 3004,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": -0.261,
-        "socio-economic rank": 480,
-        "socio-economic cluster": 4
-    },
-    "דרך סטלה מריס, חיפה": {
-        "amount of people": 3751,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.653,
-        "socio-economic rank": 1020.0,
-        "socio-economic cluster": 7.0
-    },
-    "ברון הירש, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.204,
-        "socio-economic rank": 757,
-        "socio-economic cluster": 6
-    },
-    "שדרות ההגנה, חיפה": {
-        "amount of people": 5659,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.27,
-        "socio-economic rank": 806.40625,
-        "socio-economic cluster": 5.5546875
-    },
-    "אבנר, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.398,
-        "socio-economic rank": 407,
-        "socio-economic cluster": 4
-    },
-    "סלוודור, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.398,
-        "socio-economic rank": 407,
-        "socio-economic cluster": 4
-    },
-    "המכס, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.473,
-        "socio-economic rank": 381,
-        "socio-economic cluster": 3
-    },
-    "זיסו א ל, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.473,
-        "socio-economic rank": 381,
-        "socio-economic cluster": 3
-    },
-    "העליה השניה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.395,
-        "socio-economic rank": 412.5,
-        "socio-economic cluster": 3.5
-    },
-    "לוץ שרל, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.473,
-        "socio-economic rank": 381,
-        "socio-economic cluster": 3
-    },
-    "אהרון (רוזנפלד), חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.316,
-        "socio-economic rank": 444,
-        "socio-economic cluster": 4
-    },
-    "שדרות בת גלים, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.316,
-        "socio-economic rank": 444,
-        "socio-economic cluster": 4
-    },
-    "מרגולין פנחס, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.316,
-        "socio-economic rank": 444,
-        "socio-economic cluster": 4
-    },
-    "המפרי יוברט, חיפה": {
-        "amount of people": 2002,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.325,
-        "socio-economic rank": 836,
-        "socio-economic cluster": 6
-    },
-    "התורן, חיפה": {
-        "amount of people": 2002,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.325,
-        "socio-economic rank": 836,
-        "socio-economic cluster": 6
-    },
-    "העוגן, חיפה": {
-        "amount of people": 2002,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.325,
-        "socio-economic rank": 836,
-        "socio-economic cluster": 6
-    },
-    "שטרן יאיר, חיפה": {
-        "amount of people": 2002,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.325,
-        "socio-economic rank": 836,
-        "socio-economic cluster": 6
-    },
-    "דרך צרפת, חיפה": {
-        "amount of people": 4279,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.596,
-        "socio-economic rank": 963.125,
-        "socio-economic cluster": 6.625
-    },
-    "ז'ורס, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.177,
-        "socio-economic rank": 743,
-        "socio-economic cluster": 6
-    },
-    "קניג פייר גנרל, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.177,
-        "socio-economic rank": 743,
-        "socio-economic cluster": 6
-    },
-    "יציאת אירופה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.015,
-        "socio-economic rank": 630.25,
-        "socio-economic cluster": 5.25
-    },
-    "הרב רפאל אנקאווא, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.014,
-        "socio-economic rank": 608.5,
-        "socio-economic cluster": 5.0
-    },
-    "אצ\"ל, חיפה": {
-        "amount of people": 3657,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.077,
-        "socio-economic rank": 686.0,
-        "socio-economic cluster": 4.75
-    },
-    "בר רב האי דוד, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.059,
-        "socio-economic rank": 656,
-        "socio-economic cluster": 5
-    },
-    "פז סעדיה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.088,
-        "socio-economic rank": 561,
-        "socio-economic cluster": 5
-    },
-    "שלמה המלך, חיפה": {
-        "amount of people": 3657,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.429,
-        "socio-economic rank": 879.5,
-        "socio-economic cluster": 5.5
-    },
-    "דרך הים, חיפה": {
-        "amount of people": 7474,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.311,
-        "socio-economic rank": 1356.75,
-        "socio-economic cluster": 8.0
-    },
-    "שונית, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.468,
-        "socio-economic rank": 1430,
-        "socio-economic cluster": 8
-    },
-    "אסתר המלכה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.468,
-        "socio-economic rank": 1430,
-        "socio-economic cluster": 8
-    },
-    "דוד המלך, חיפה": {
-        "amount of people": 3657,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": -0.61,
-        "socio-economic rank": 329,
-        "socio-economic cluster": 3
-    },
-    "שאול המלך, חיפה": {
-        "amount of people": 3657,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": -0.61,
-        "socio-economic rank": 329,
-        "socio-economic cluster": 3
-    },
-    "אלעזר דוד רא\"ל, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.846,
-        "socio-economic rank": 1135,
-        "socio-economic cluster": 7
-    },
-    "זורע מאיר (זרו), חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.846,
-        "socio-economic rank": 1135,
-        "socio-economic cluster": 7
-    },
-    "יוחאי בן-נון, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.846,
-        "socio-economic rank": 1135,
-        "socio-economic cluster": 7
-    },
-    "סחרוב אנדרה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "ברודסקי זאב",
         "percent of religious": null,
         "socio-economic index value": null,
         "socio-economic rank": null,
         "socio-economic cluster": null
     },
-    "חת נחום, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "פלימן משה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.793,
-        "socio-economic rank": 1535.0,
-        "socio-economic cluster": 9.0
-    },
-    "רוטנברג פנחס ואברהם, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "מבוא חיפה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "מגורשי ספרד, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "קדושי יאסי, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "צביה ויצחק, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "ויינשל אברהם ד\"ר, חיפה": {
-        "amount of people": 3077,
-        "amount of religious": 0,
+    {
+        "city": "חיפה",
+        "street": "בן צבי יצחק",
         "percent of religious": 0.0,
-        "socio-economic index value": 1.984,
-        "socio-economic rank": 1566.5,
-        "socio-economic cluster": 9.0
-    },
-    "י\"א הספורטאים, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.793,
-        "socio-economic rank": 1535,
-        "socio-economic cluster": 9
-    },
-    "לאה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.933,
-        "socio-economic rank": 1561,
-        "socio-economic cluster": 9
-    },
-    "רחל, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.952,
-        "socio-economic rank": 1566.5,
-        "socio-economic cluster": 9.0
-    },
-    "צפרירים, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.673,
-        "socio-economic rank": 1483.0,
-        "socio-economic cluster": 8.5
-    },
-    "אלכסנדר ינאי, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.933,
-        "socio-economic rank": 1561,
-        "socio-economic cluster": 9
-    },
-    "רות, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.933,
-        "socio-economic rank": 1561,
-        "socio-economic cluster": 9
-    },
-    "שדרות מוריה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.677,
-        "socio-economic rank": 1492.125,
-        "socio-economic cluster": 8.625
-    },
-    "שמשון, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.67,
-        "socio-economic rank": 1483.25,
-        "socio-economic cluster": 8.5
-    },
-    "מרגלית, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.971,
-        "socio-economic rank": 1572,
-        "socio-economic cluster": 9
-    },
-    "הירקון, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.971,
-        "socio-economic rank": 1572,
-        "socio-economic cluster": 9
-    },
-    "האסיף, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.352,
-        "socio-economic rank": 1360.75,
-        "socio-economic cluster": 8.25
-    },
-    "ביכורים, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.648,
-        "socio-economic rank": 1478.0,
-        "socio-economic cluster": 8.5
-    },
-    "יותם, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.883,
-        "socio-economic rank": 1551,
-        "socio-economic cluster": 9
-    },
-    "מבצע יונתן, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.536,
-        "socio-economic rank": 1443.25,
-        "socio-economic cluster": 8.25
-    },
-    "ראש מיה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.746,
-        "socio-economic rank": 1496.0,
-        "socio-economic cluster": 8.5
-    },
-    "דרך רופין, חיפה": {
-        "amount of people": 3378,
-        "amount of religious": 2622,
-        "percent of religious": 77.62,
-        "socio-economic index value": 1.073,
-        "socio-economic rank": 1227.8125,
-        "socio-economic cluster": 7.25
-    },
-    "ורדיה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 2.092,
-        "socio-economic rank": 1590,
-        "socio-economic cluster": 9
-    },
-    "נורית, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 2.092,
-        "socio-economic rank": 1590,
-        "socio-economic cluster": 9
-    },
-    "צבעוני, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 2.092,
-        "socio-economic rank": 1590,
-        "socio-economic cluster": 9
-    },
-    "בלום לאון, חיפה": {
-        "amount of people": 5248,
-        "amount of religious": 950,
-        "percent of religious": 18.1,
-        "socio-economic index value": 0.5,
-        "socio-economic rank": 949.0,
-        "socio-economic cluster": 6.5
-    },
-    "שדרות וינגיט, חיפה": {
-        "amount of people": 4860,
-        "amount of religious": 1074,
-        "percent of religious": 22.1,
-        "socio-economic index value": 0.038,
-        "socio-economic rank": 667.75,
-        "socio-economic cluster": 4.875
-    },
-    "סנש חנה, חיפה": {
-        "amount of people": 5248,
-        "amount of religious": 950,
-        "percent of religious": 18.1,
-        "socio-economic index value": 0.5,
-        "socio-economic rank": 949.0,
-        "socio-economic cluster": 6.5
-    },
-    "האר\"י, חיפה": {
-        "amount of people": 2546,
-        "amount of religious": 223,
-        "percent of religious": 8.76,
-        "socio-economic index value": 0.246,
-        "socio-economic rank": 781.5,
-        "socio-economic cluster": 6.0
-    },
-    "שדרות קיש, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.396,
-        "socio-economic rank": 1400,
-        "socio-economic cluster": 8
-    },
-    "יפה נוף, חיפה": {
-        "amount of people": 3751,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.708,
-        "socio-economic rank": 1023.0,
-        "socio-economic cluster": 6.5
-    },
-    "סולד הנרייטה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.396,
-        "socio-economic rank": 1400,
-        "socio-economic cluster": 8
-    },
-    "שדרות הנשיא, חיפה": {
-        "amount of people": 3751,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.298,
-        "socio-economic rank": 1352.75,
-        "socio-economic cluster": 8.0
-    },
-    "וודג'ווד, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.063,
-        "socio-economic rank": 1246,
-        "socio-economic cluster": 8
-    },
-    "וולפסון, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.412,
-        "socio-economic rank": 1405,
-        "socio-economic cluster": 8
-    },
-    "קדימה, חיפה": {
-        "amount of people": 3795,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.576,
-        "socio-economic rank": 1468,
-        "socio-economic cluster": 8
-    },
-    "רענן, חיפה": {
-        "amount of people": 3795,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.067,
-        "socio-economic rank": 1224.5,
-        "socio-economic cluster": 7.5
-    },
-    "כבירים, חיפה": {
-        "amount of people": 3795,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.067,
-        "socio-economic rank": 1224.5,
-        "socio-economic cluster": 7.5
-    },
-    "שדרות הצבי, חיפה": {
-        "amount of people": 3795,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.576,
-        "socio-economic rank": 1468,
-        "socio-economic cluster": 8
-    },
-    "אילנות, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.478,
-        "socio-economic rank": 1434,
-        "socio-economic cluster": 8
-    },
-    "שושנת הכרמל, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.478,
-        "socio-economic rank": 1434,
-        "socio-economic cluster": 8
-    },
-    "הרקפות, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.478,
-        "socio-economic rank": 1434,
-        "socio-economic cluster": 8
-    },
-    "ככר הרקפות, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.478,
-        "socio-economic rank": 1434,
-        "socio-economic cluster": 8
-    },
-    "לבונה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.559,
-        "socio-economic rank": 981,
-        "socio-economic cluster": 7
-    },
-    "מור, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.559,
-        "socio-economic rank": 981,
-        "socio-economic cluster": 7
-    },
-    "אל מוהדי, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.559,
-        "socio-economic rank": 981,
-        "socio-economic cluster": 7
-    },
-    "התמר, חיפה": {
-        "amount of people": 3679,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.174,
-        "socio-economic rank": 1295,
-        "socio-economic cluster": 8
-    },
-    "חרוב, חיפה": {
-        "amount of people": 3679,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.174,
-        "socio-economic rank": 1295,
-        "socio-economic cluster": 8
-    },
-    "הרדוף, חיפה": {
-        "amount of people": 3679,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.174,
-        "socio-economic rank": 1295,
-        "socio-economic cluster": 8
-    },
-    "הסנה, חיפה": {
-        "amount of people": 3679,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.174,
-        "socio-economic rank": 1295,
-        "socio-economic cluster": 8
-    },
-    "טשרניחובסקי, חיפה": {
-        "amount of people": 8030,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.327,
-        "socio-economic rank": 1365.25,
-        "socio-economic cluster": 8.0
-    },
-    "זולא אמיל, חיפה": {
-        "amount of people": 4279,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.176,
-        "socio-economic rank": 1296,
-        "socio-economic cluster": 8
-    },
-    "קאודרס בן ציון ד\"ר, חיפה": {
-        "amount of people": 4279,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.176,
-        "socio-economic rank": 1296,
-        "socio-economic cluster": 8
-    },
-    "ויקטור הוגו, חיפה": {
-        "amount of people": 4279,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.176,
-        "socio-economic rank": 1296,
-        "socio-economic cluster": 8
-    },
-    "התשבי, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.437,
-        "socio-economic rank": 1415,
-        "socio-economic cluster": 8
-    },
-    "עובדיה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.437,
-        "socio-economic rank": 1415,
-        "socio-economic cluster": 8
-    },
-    "עבאס, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.326,
-        "socio-economic rank": 834.0,
-        "socio-economic cluster": 6.0
-    },
-    "הבישוף חג'אר, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.576,
-        "socio-economic rank": 994,
-        "socio-economic cluster": 7
-    },
-    "שפרה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.076,
-        "socio-economic rank": 674,
-        "socio-economic cluster": 5
-    },
-    "הלל, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.42,
-        "socio-economic rank": 401,
-        "socio-economic cluster": 4
-    },
-    "מסדה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.42,
-        "socio-economic rank": 401,
-        "socio-economic cluster": 4
-    },
-    "בן יהודה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.603,
-        "socio-economic rank": 336.0,
-        "socio-economic cluster": 3.5
-    },
-    "טבריה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.42,
-        "socio-economic rank": 401,
-        "socio-economic cluster": 4
-    },
-    "שדרות גולומב אליהו, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.155,
-        "socio-economic rank": 730,
-        "socio-economic cluster": 6
-    },
-    "ארלוזורוב, חיפה": {
-        "amount of people": 16076,
-        "amount of religious": 7792,
-        "percent of religious": 48.47,
-        "socio-economic index value": -1.22,
-        "socio-economic rank": 191.3125,
-        "socio-economic cluster": 2.3125
-    },
-    "בלפור, חיפה": {
-        "amount of people": 5850,
-        "amount of religious": 1084,
-        "percent of religious": 18.53,
-        "socio-economic index value": -0.826,
-        "socio-economic rank": 326.0,
-        "socio-economic cluster": 3.0
-    },
-    "גאולה, חיפה": {
-        "amount of people": 13683,
-        "amount of religious": 8074,
-        "percent of religious": 59.01,
-        "socio-economic index value": -1.182,
-        "socio-economic rank": 233.375,
-        "socio-economic cluster": 2.125
-    },
-    "הפועל, חיפה": {
-        "amount of people": 7603,
-        "amount of religious": 4725,
-        "percent of religious": 62.15,
-        "socio-economic index value": -0.96,
-        "socio-economic rank": 248.5,
+        "socio-economic index value": 0.205,
+        "socio-economic rank": 360.375,
         "socio-economic cluster": 2.5
     },
-    "המימוני, חיפה": {
-        "amount of people": 6652,
-        "amount of religious": 2024,
-        "percent of religious": 30.43,
+    {
+        "city": "חיפה",
+        "street": "שרת משה",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.124,
+        "socio-economic rank": 196.869,
+        "socio-economic cluster": 1.325
+    },
+    {
+        "city": "חיפה",
+        "street": "הגדוד העברי",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.378,
+        "socio-economic rank": 456.375,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שיטרית בכור",
+        "percent of religious": null,
+        "socio-economic index value": 0.344,
+        "socio-economic rank": 440.375,
+        "socio-economic cluster": 2.75
+    },
+    {
+        "city": "חיפה",
+        "street": "הראשונים",
+        "percent of religious": null,
+        "socio-economic index value": 0.509,
+        "socio-economic rank": 611.5,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "קרן קיימת לישראל",
+        "percent of religious": null,
+        "socio-economic index value": 0.433,
+        "socio-economic rank": 575.0,
+        "socio-economic cluster": 3.5
+    },
+    {
+        "city": "חיפה",
+        "street": "הפלוגות",
+        "percent of religious": null,
+        "socio-economic index value": 0.433,
+        "socio-economic rank": 575.0,
+        "socio-economic cluster": 3.5
+    },
+    {
+        "city": "חיפה",
+        "street": "זייד אלכסנדר",
+        "percent of religious": null,
+        "socio-economic index value": 0.433,
+        "socio-economic rank": 575.0,
+        "socio-economic cluster": 3.5
+    },
+    {
+        "city": "חיפה",
+        "street": "שדרות ההסתדרות",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.513,
+        "socio-economic rank": 614.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שבטי ישראל",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.513,
+        "socio-economic rank": 614.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "ציזלינג אהרון",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.513,
+        "socio-economic rank": 614.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "השיירה",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.163,
+        "socio-economic rank": 419.5,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "חיפה",
+        "street": "צייטלין אהרון",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.163,
+        "socio-economic rank": 419.5,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "חיפה",
+        "street": "חלוצי התעשיה",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "הדשנים",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך ידין יגאל",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "יוליוס סימון",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "נתיבי המפרץ",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך דיין משה",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "החרושת",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "האשלג",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך העמקים",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "החרמש",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "בעלי מלאכה",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "בר יהודה ישראל",
+        "percent of religious": 0.84,
+        "socio-economic index value": -0.345,
+        "socio-economic rank": 51.417,
+        "socio-economic cluster": 0.583
+    },
+    {
+        "city": "חיפה",
+        "street": "הנפח",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "מנהרות הכרמל",
+        "percent of religious": null,
+        "socio-economic index value": 0.082,
+        "socio-economic rank": 368.5,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "חיפה",
+        "street": "המלאכה",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "אופיר",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך צייזל ירוחם",
+        "percent of religious": 3.63,
+        "socio-economic index value": -0.535,
+        "socio-economic rank": 48.75,
+        "socio-economic cluster": 0.75
+    },
+    {
+        "city": "חיפה",
+        "street": "סלמאן",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך העצמאות",
+        "percent of religious": 0.0,
+        "socio-economic index value": -0.182,
+        "socio-economic rank": 140.625,
+        "socio-economic cluster": 1.375
+    },
+    {
+        "city": "חיפה",
+        "street": "חירם",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "וילבוש נחום",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "שדרות בן גוריון",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "ארליך דוד פרופ'",
+        "percent of religious": null,
+        "socio-economic index value": -0.237,
+        "socio-economic rank": 190.5,
+        "socio-economic cluster": 1.5
+    },
+    {
+        "city": "חיפה",
+        "street": "הגבורים",
+        "percent of religious": 34.23,
+        "socio-economic index value": -0.132,
+        "socio-economic rank": 34.596,
+        "socio-economic cluster": 0.346
+    },
+    {
+        "city": "חיפה",
+        "street": "חטיבת גולני",
+        "percent of religious": 3.63,
+        "socio-economic index value": -0.535,
+        "socio-economic rank": 48.75,
+        "socio-economic cluster": 0.75
+    },
+    {
+        "city": "חיפה",
+        "street": "אבן גבירול",
+        "percent of religious": 3.63,
+        "socio-economic index value": -0.535,
+        "socio-economic rank": 48.75,
+        "socio-economic cluster": 0.75
+    },
+    {
+        "city": "חיפה",
+        "street": "פלי\"ם",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך רודיק שמעון",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "שיבת ציון",
+        "percent of religious": null,
+        "socio-economic index value": -0.21,
+        "socio-economic rank": 130.125,
+        "socio-economic cluster": 1.125
+    },
+    {
+        "city": "חיפה",
+        "street": "נתנזון",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "שדרות המגינים",
+        "percent of religious": 0.62,
         "socio-economic index value": -0.055,
-        "socio-economic rank": 625.5,
+        "socio-economic rank": 72.659,
+        "socio-economic cluster": 0.648
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך אלנבי",
+        "percent of religious": 0.62,
+        "socio-economic index value": -0.033,
+        "socio-economic rank": 71.445,
+        "socio-economic cluster": 0.637
+    },
+    {
+        "city": "חיפה",
+        "street": "שער פלמר",
+        "percent of religious": null,
+        "socio-economic index value": -0.328,
+        "socio-economic rank": 156.5,
+        "socio-economic cluster": 1.5
+    },
+    {
+        "city": "חיפה",
+        "street": "כורי",
+        "percent of religious": null,
+        "socio-economic index value": -0.187,
+        "socio-economic rank": 139.25,
+        "socio-economic cluster": 1.125
+    },
+    {
+        "city": "חיפה",
+        "street": "שדרות הציונות",
+        "percent of religious": 0.0,
+        "socio-economic index value": -0.041,
+        "socio-economic rank": 51.986,
+        "socio-economic cluster": 0.467
+    },
+    {
+        "city": "חיפה",
+        "street": "התשעים ושלוש",
+        "percent of religious": null,
+        "socio-economic index value": -0.256,
+        "socio-economic rank": 182.0,
+        "socio-economic cluster": 1.5
+    },
+    {
+        "city": "חיפה",
+        "street": "שבתאי לוי",
+        "percent of religious": null,
+        "socio-economic index value": -0.258,
+        "socio-economic rank": 114.625,
+        "socio-economic cluster": 1.125
+    },
+    {
+        "city": "חיפה",
+        "street": "הואדי",
+        "percent of religious": null,
+        "socio-economic index value": -0.246,
+        "socio-economic rank": 187.5,
+        "socio-economic cluster": 1.5
+    },
+    {
+        "city": "חיפה",
+        "street": "פרץ י. ל.",
+        "percent of religious": null,
+        "socio-economic index value": -0.246,
+        "socio-economic rank": 187.5,
+        "socio-economic cluster": 1.5
+    },
+    {
+        "city": "חיפה",
+        "street": "הגפן",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.035,
+        "socio-economic rank": 143.919,
+        "socio-economic cluster": 1.075
+    },
+    {
+        "city": "חיפה",
+        "street": "מאיר (רוטברג)",
+        "percent of religious": null,
+        "socio-economic index value": -0.153,
+        "socio-economic rank": 225.5,
+        "socio-economic cluster": 2.0
+    },
+    {
+        "city": "חיפה",
+        "street": "מסילת הברזל",
+        "percent of religious": 0.0,
+        "socio-economic index value": -0.169,
+        "socio-economic rank": 146.0,
+        "socio-economic cluster": 1.25
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך יפו",
+        "percent of religious": 1.8,
+        "socio-economic index value": -0.17,
+        "socio-economic rank": 145.625,
+        "socio-economic cluster": 1.25
+    },
+    {
+        "city": "חיפה",
+        "street": "שדרות רוטשילד",
+        "percent of religious": 0.96,
+        "socio-economic index value": -0.105,
+        "socio-economic rank": 124.625,
+        "socio-economic cluster": 1.167
+    },
+    {
+        "city": "חיפה",
+        "street": "חיל הים",
+        "percent of religious": 1.8,
+        "socio-economic index value": -0.135,
+        "socio-economic rank": 112.042,
+        "socio-economic cluster": 0.917
+    },
+    {
+        "city": "חיפה",
+        "street": "צה\"ל",
+        "percent of religious": 0.0,
+        "socio-economic index value": -0.131,
+        "socio-economic rank": 240.0,
+        "socio-economic cluster": 2.0
+    },
+    {
+        "city": "חיפה",
+        "street": "המעפילים",
+        "percent of religious": 0.0,
+        "socio-economic index value": -0.131,
+        "socio-economic rank": 240.0,
+        "socio-economic cluster": 2.0
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך סטלה מריס",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.209,
+        "socio-economic rank": 308.458,
+        "socio-economic cluster": 2.083
+    },
+    {
+        "city": "חיפה",
+        "street": "ברון הירש",
+        "percent of religious": null,
+        "socio-economic index value": 0.102,
+        "socio-economic rank": 378.5,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שדרות ההגנה",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.03,
+        "socio-economic rank": 89.436,
+        "socio-economic cluster": 0.616
+    },
+    {
+        "city": "חיפה",
+        "street": "אבנר",
+        "percent of religious": null,
+        "socio-economic index value": -0.199,
+        "socio-economic rank": 203.5,
+        "socio-economic cluster": 2.0
+    },
+    {
+        "city": "חיפה",
+        "street": "סלוודור",
+        "percent of religious": null,
+        "socio-economic index value": -0.199,
+        "socio-economic rank": 203.5,
+        "socio-economic cluster": 2.0
+    },
+    {
+        "city": "חיפה",
+        "street": "המכס",
+        "percent of religious": null,
+        "socio-economic index value": -0.237,
+        "socio-economic rank": 190.5,
+        "socio-economic cluster": 1.5
+    },
+    {
+        "city": "חיפה",
+        "street": "זיסו א ל",
+        "percent of religious": null,
+        "socio-economic index value": -0.237,
+        "socio-economic rank": 190.5,
+        "socio-economic cluster": 1.5
+    },
+    {
+        "city": "חיפה",
+        "street": "העליה השניה",
+        "percent of religious": null,
+        "socio-economic index value": -0.158,
+        "socio-economic rank": 150.75,
+        "socio-economic cluster": 1.25
+    },
+    {
+        "city": "חיפה",
+        "street": "לוץ שרל",
+        "percent of religious": null,
+        "socio-economic index value": -0.237,
+        "socio-economic rank": 190.5,
+        "socio-economic cluster": 1.5
+    },
+    {
+        "city": "חיפה",
+        "street": "אהרון (רוזנפלד)",
+        "percent of religious": null,
+        "socio-economic index value": -0.158,
+        "socio-economic rank": 222.0,
+        "socio-economic cluster": 2.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שדרות בת גלים",
+        "percent of religious": null,
+        "socio-economic index value": -0.158,
+        "socio-economic rank": 222.0,
+        "socio-economic cluster": 2.0
+    },
+    {
+        "city": "חיפה",
+        "street": "מרגולין פנחס",
+        "percent of religious": null,
+        "socio-economic index value": -0.158,
+        "socio-economic rank": 222.0,
+        "socio-economic cluster": 2.0
+    },
+    {
+        "city": "חיפה",
+        "street": "המפרי יוברט",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.162,
+        "socio-economic rank": 418.0,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "חיפה",
+        "street": "התורן",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.162,
+        "socio-economic rank": 418.0,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "חיפה",
+        "street": "העוגן",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.162,
+        "socio-economic rank": 418.0,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שטרן יאיר",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.162,
+        "socio-economic rank": 418.0,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך צרפת",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.146,
+        "socio-economic rank": 229.172,
+        "socio-economic cluster": 1.562
+    },
+    {
+        "city": "חיפה",
+        "street": "ז'ורס",
+        "percent of religious": null,
+        "socio-economic index value": 0.089,
+        "socio-economic rank": 371.5,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "חיפה",
+        "street": "קניג פייר גנרל",
+        "percent of religious": null,
+        "socio-economic index value": 0.089,
+        "socio-economic rank": 371.5,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "חיפה",
+        "street": "יציאת אירופה",
+        "percent of religious": null,
+        "socio-economic index value": -0.002,
+        "socio-economic rank": 179.125,
+        "socio-economic cluster": 1.5
+    },
+    {
+        "city": "חיפה",
+        "street": "הרב רפאל אנקאווא",
+        "percent of religious": null,
+        "socio-economic index value": -0.015,
+        "socio-economic rank": 222.25,
+        "socio-economic cluster": 1.875
+    },
+    {
+        "city": "חיפה",
+        "street": "אצ\"ל",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.023,
+        "socio-economic rank": 201.333,
+        "socio-economic cluster": 1.375
+    },
+    {
+        "city": "חיפה",
+        "street": "בר רב האי דוד",
+        "percent of religious": null,
+        "socio-economic index value": 0.03,
+        "socio-economic rank": 328.0,
+        "socio-economic cluster": 2.5
+    },
+    {
+        "city": "חיפה",
+        "street": "פז סעדיה",
+        "percent of religious": null,
+        "socio-economic index value": -0.044,
+        "socio-economic rank": 280.5,
+        "socio-economic cluster": 2.5
+    },
+    {
+        "city": "חיפה",
+        "street": "שלמה המלך",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.031,
+        "socio-economic rank": 261.0,
+        "socio-economic cluster": 1.75
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך הים",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.253,
+        "socio-economic rank": 262.413,
+        "socio-economic cluster": 1.55
+    },
+    {
+        "city": "חיפה",
+        "street": "שונית",
+        "percent of religious": null,
+        "socio-economic index value": 0.734,
+        "socio-economic rank": 715.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "אסתר המלכה",
+        "percent of religious": null,
+        "socio-economic index value": 0.734,
+        "socio-economic rank": 715.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "דוד המלך",
+        "percent of religious": 0.0,
+        "socio-economic index value": -0.305,
+        "socio-economic rank": 164.5,
+        "socio-economic cluster": 1.5
+    },
+    {
+        "city": "חיפה",
+        "street": "שאול המלך",
+        "percent of religious": 0.0,
+        "socio-economic index value": -0.305,
+        "socio-economic rank": 164.5,
+        "socio-economic cluster": 1.5
+    },
+    {
+        "city": "חיפה",
+        "street": "אלעזר דוד רא\"ל",
+        "percent of religious": null,
+        "socio-economic index value": 0.423,
+        "socio-economic rank": 567.5,
+        "socio-economic cluster": 3.5
+    },
+    {
+        "city": "חיפה",
+        "street": "זורע מאיר (זרו)",
+        "percent of religious": null,
+        "socio-economic index value": 0.423,
+        "socio-economic rank": 567.5,
+        "socio-economic cluster": 3.5
+    },
+    {
+        "city": "חיפה",
+        "street": "יוחאי בן-נון",
+        "percent of religious": null,
+        "socio-economic index value": 0.423,
+        "socio-economic rank": 567.5,
+        "socio-economic cluster": 3.5
+    },
+    {
+        "city": "חיפה",
+        "street": "סחרוב אנדרה",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "חת נחום",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "פלימן משה",
+        "percent of religious": null,
+        "socio-economic index value": 0.672,
+        "socio-economic rank": 575.625,
+        "socio-economic cluster": 3.375
+    },
+    {
+        "city": "חיפה",
+        "street": "רוטנברג פנחס ואברהם",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "מבוא חיפה",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "מגורשי ספרד",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "קדושי יאסי",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "צביה ויצחק",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
+    },
+    {
+        "city": "חיפה",
+        "street": "ויינשל אברהם ד\"ר",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.587,
+        "socio-economic rank": 458.208,
+        "socio-economic cluster": 2.625
+    },
+    {
+        "city": "חיפה",
+        "street": "י\"א הספורטאים",
+        "percent of religious": null,
+        "socio-economic index value": 0.897,
+        "socio-economic rank": 767.5,
         "socio-economic cluster": 4.5
     },
-    "רבי עקיבא, חיפה": {
-        "amount of people": 3520,
-        "amount of religious": 950,
-        "percent of religious": 26.99,
-        "socio-economic index value": 0.393,
-        "socio-economic rank": 884,
-        "socio-economic cluster": 6
-    },
-    "יוסף (הגדם), חיפה": {
-        "amount of people": 4408,
-        "amount of religious": 1084,
-        "percent of religious": 24.59,
-        "socio-economic index value": -0.877,
-        "socio-economic rank": 250,
-        "socio-economic cluster": 2
-    },
-    "פבזנר, חיפה": {
-        "amount of people": 4408,
-        "amount of religious": 1084,
-        "percent of religious": 24.59,
-        "socio-economic index value": -0.877,
-        "socio-economic rank": 250,
-        "socio-economic cluster": 2
-    },
-    "נורדאו, חיפה": {
-        "amount of people": 4408,
-        "amount of religious": 1084,
-        "percent of religious": 24.59,
-        "socio-economic index value": -0.877,
-        "socio-economic rank": 250,
-        "socio-economic cluster": 2
-    },
-    "הרצליה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "לאה",
         "percent of religious": null,
-        "socio-economic index value": -0.786,
-        "socio-economic rank": 271,
-        "socio-economic cluster": 3
+        "socio-economic index value": 0.966,
+        "socio-economic rank": 780.5,
+        "socio-economic cluster": 4.5
     },
-    "הנביאים, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "רחל",
         "percent of religious": null,
-        "socio-economic index value": -1.093,
-        "socio-economic rank": 203.0,
-        "socio-economic cluster": 2.5
+        "socio-economic index value": 0.735,
+        "socio-economic rank": 588.125,
+        "socio-economic cluster": 3.375
     },
-    "שמריהו לוין, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "צפרירים",
         "percent of religious": null,
-        "socio-economic index value": -1.4,
-        "socio-economic rank": 135,
-        "socio-economic cluster": 2
+        "socio-economic index value": 0.595,
+        "socio-economic rank": 546.375,
+        "socio-economic cluster": 3.125
     },
-    "הרצל, חיפה": {
-        "amount of people": 4065,
-        "amount of religious": 1983,
-        "percent of religious": 48.78,
-        "socio-economic index value": -1.46,
-        "socio-economic rank": 120.5,
-        "socio-economic cluster": 2.0
-    },
-    "החלוץ, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "אלכסנדר ינאי",
         "percent of religious": null,
-        "socio-economic index value": -1.4,
-        "socio-economic rank": 135,
-        "socio-economic cluster": 2
+        "socio-economic index value": 0.966,
+        "socio-economic rank": 780.5,
+        "socio-economic cluster": 4.5
     },
-    "חסן שוקרי, חיפה": {
-        "amount of people": 1442,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": -1.345,
-        "socio-economic rank": 148.5,
-        "socio-economic cluster": 2.0
-    },
-    "מרכוס הרב, חיפה": {
-        "amount of people": 1442,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": -1.29,
-        "socio-economic rank": 162,
-        "socio-economic cluster": 2
-    },
-    "ביאליק, חיפה": {
-        "amount of people": 1442,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": -1.29,
-        "socio-economic rank": 162,
-        "socio-economic cluster": 2
-    },
-    "מעלה השחרור, חיפה": {
-        "amount of people": 1442,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": -1.29,
-        "socio-economic rank": 162,
-        "socio-economic cluster": 2
-    },
-    "השומר, חיפה": {
-        "amount of people": 4065,
-        "amount of religious": 1983,
-        "percent of religious": 48.78,
-        "socio-economic index value": -1.52,
-        "socio-economic rank": 106,
-        "socio-economic cluster": 2
-    },
-    "ברזילי, חיפה": {
-        "amount of people": 4065,
-        "amount of religious": 1983,
-        "percent of religious": 48.78,
-        "socio-economic index value": -1.52,
-        "socio-economic rank": 106,
-        "socio-economic cluster": 2
-    },
-    "מיכאל, חיפה": {
-        "amount of people": 4471,
-        "amount of religious": 3651,
-        "percent of religious": 81.66,
-        "socio-economic index value": -1.417,
-        "socio-economic rank": 130,
-        "socio-economic cluster": 2
-    },
-    "חרמון, חיפה": {
-        "amount of people": 4471,
-        "amount of religious": 3651,
-        "percent of religious": 81.66,
-        "socio-economic index value": -1.417,
-        "socio-economic rank": 130,
-        "socio-economic cluster": 2
-    },
-    "דרך נחל הגיבורים, חיפה": {
-        "amount of people": 5085,
-        "amount of religious": 2399,
-        "percent of religious": 47.18,
-        "socio-economic index value": 0.627,
-        "socio-economic rank": 1012.4375,
-        "socio-economic cluster": 6.4375
-    },
-    "מקור ברוך, חיפה": {
-        "amount of people": 2560,
-        "amount of religious": 2399,
-        "percent of religious": 93.71,
-        "socio-economic index value": -1.627,
-        "socio-economic rank": 89,
-        "socio-economic cluster": 1
-    },
-    "קניאל יהושע הרב, חיפה": {
-        "amount of people": 818,
-        "amount of religious": 223,
-        "percent of religious": 27.26,
-        "socio-economic index value": -0.115,
-        "socio-economic rank": 549,
-        "socio-economic cluster": 5
-    },
-    "משעול תורת חיים, חיפה": {
-        "amount of people": 818,
-        "amount of religious": 223,
-        "percent of religious": 27.26,
-        "socio-economic index value": -0.115,
-        "socio-economic rank": 549,
-        "socio-economic cluster": 5
-    },
-    "דרך יד לבנים, חיפה": {
-        "amount of people": 12284,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": -0.039,
-        "socio-economic rank": 648.4375,
-        "socio-economic cluster": 4.875
-    },
-    "גוש עציון, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "רות",
         "percent of religious": null,
-        "socio-economic index value": -1.119,
-        "socio-economic rank": 188,
-        "socio-economic cluster": 2
+        "socio-economic index value": 0.966,
+        "socio-economic rank": 780.5,
+        "socio-economic cluster": 4.5
     },
-    "רזיאל דוד, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "שדרות מוריה",
         "percent of religious": null,
-        "socio-economic index value": -0.761,
-        "socio-economic rank": 296.5,
-        "socio-economic cluster": 3.0
+        "socio-economic index value": 0.389,
+        "socio-economic rank": 348.469,
+        "socio-economic cluster": 2.016
     },
-    "פאר, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "שמשון",
         "percent of religious": null,
-        "socio-economic index value": -0.403,
-        "socio-economic rank": 405,
-        "socio-economic cluster": 4
+        "socio-economic index value": 0.475,
+        "socio-economic rank": 428.917,
+        "socio-economic cluster": 2.458
     },
-    "הירדן, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "מרגלית",
         "percent of religious": null,
-        "socio-economic index value": -0.403,
-        "socio-economic rank": 405,
-        "socio-economic cluster": 4
+        "socio-economic index value": 0.986,
+        "socio-economic rank": 786.0,
+        "socio-economic cluster": 4.5
     },
-    "החשמל, חיפה": {
-        "amount of people": 4870,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": -0.998,
-        "socio-economic rank": 211,
-        "socio-economic cluster": 2
-    },
-    "דורי יעקב רא\"ל, חיפה": {
-        "amount of people": 12637,
-        "amount of religious": 1695,
-        "percent of religious": 13.41,
-        "socio-economic index value": 0.149,
-        "socio-economic rank": 745.0,
-        "socio-economic cluster": 5.375
-    },
-    "דולצ'ין אריה, חיפה": {
-        "amount of people": 4889,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.074,
-        "socio-economic rank": 670,
-        "socio-economic cluster": 5
-    },
-    "תענך, חיפה": {
-        "amount of people": 4889,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.074,
-        "socio-economic rank": 670,
-        "socio-economic cluster": 5
-    },
-    "משאש הרב, חיפה": {
-        "amount of people": 4889,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.446,
-        "socio-economic rank": 892.5,
-        "socio-economic cluster": 6.0
-    },
-    "ערד, חיפה": {
-        "amount of people": 4889,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.074,
-        "socio-economic rank": 670,
-        "socio-economic cluster": 5
-    },
-    "סלומון יעקב, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "הירקון",
         "percent of religious": null,
-        "socio-economic index value": 0.818,
-        "socio-economic rank": 1115,
-        "socio-economic cluster": 7
+        "socio-economic index value": 0.986,
+        "socio-economic rank": 786.0,
+        "socio-economic cluster": 4.5
     },
-    "חזן יעקב, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "האסיף",
         "percent of religious": null,
-        "socio-economic index value": 0.818,
-        "socio-economic rank": 1115,
-        "socio-economic cluster": 7
+        "socio-economic index value": 0.372,
+        "socio-economic rank": 388.958,
+        "socio-economic cluster": 2.375
     },
-    "שדרות טרומפלדור, חיפה": {
-        "amount of people": 22033,
-        "amount of religious": 3768,
-        "percent of religious": 17.1,
-        "socio-economic index value": 0.793,
-        "socio-economic rank": 1080.65625,
-        "socio-economic cluster": 6.9375
-    },
-    "לוחמי חרות ישראל, חיפה": {
-        "amount of people": 11233,
-        "amount of religious": 1695,
-        "percent of religious": 15.09,
-        "socio-economic index value": 0.025,
-        "socio-economic rank": 642.25,
-        "socio-economic cluster": 5.25
-    },
-    "הגליל, חיפה": {
-        "amount of people": 21338,
-        "amount of religious": 2866,
-        "percent of religious": 13.43,
-        "socio-economic index value": 0.33,
-        "socio-economic rank": 838.0625,
-        "socio-economic cluster": 6.125
-    },
-    "מימון הרב, חיפה": {
-        "amount of people": 7767,
-        "amount of religious": 1695,
-        "percent of religious": 21.82,
-        "socio-economic index value": 0.189,
-        "socio-economic rank": 746.5,
-        "socio-economic cluster": 5.5
-    },
-    "חניתה, חיפה": {
-        "amount of people": 13571,
-        "amount of religious": 1171,
-        "percent of religious": 8.63,
-        "socio-economic index value": 0.267,
-        "socio-economic rank": 800.8125,
-        "socio-economic cluster": 6.0625
-    },
-    "שאול, חיפה": {
-        "amount of people": 8640,
-        "amount of religious": 999,
-        "percent of religious": 11.56,
-        "socio-economic index value": 0.117,
-        "socio-economic rank": 701.5,
-        "socio-economic cluster": 5.5
-    },
-    "התיכון, חיפה": {
-        "amount of people": 13571,
-        "amount of religious": 1171,
-        "percent of religious": 8.63,
-        "socio-economic index value": 0.354,
-        "socio-economic rank": 852.25,
-        "socio-economic cluster": 6.25
-    },
-    "נתיב חן, חיפה": {
-        "amount of people": 4931,
-        "amount of religious": 172,
-        "percent of religious": 3.49,
-        "socio-economic index value": 0.592,
-        "socio-economic rank": 1003,
-        "socio-economic cluster": 7
-    },
-    "טבנקין יצחק, חיפה": {
-        "amount of people": 7456,
-        "amount of religious": 172,
-        "percent of religious": 2.31,
-        "socio-economic index value": 0.458,
-        "socio-economic rank": 919.0,
-        "socio-economic cluster": 6.5
-    },
-    "ניסנבוים, חיפה": {
-        "amount of people": 2525,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.354,
-        "socio-economic rank": 856.0,
-        "socio-economic cluster": 6.0
-    },
-    "סילבר אבא הלל, חיפה": {
-        "amount of people": 2525,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.259,
-        "socio-economic rank": 796.5,
-        "socio-economic cluster": 6.0
-    },
-    "קליבנוב, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "ביכורים",
         "percent of religious": null,
-        "socio-economic index value": 0.384,
-        "socio-economic rank": 877,
-        "socio-economic cluster": 6
+        "socio-economic index value": 0.589,
+        "socio-economic rank": 545.125,
+        "socio-economic cluster": 3.125
     },
-    "צ'רניאבסקי אהרון, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "יותם",
         "percent of religious": null,
-        "socio-economic index value": 0.384,
-        "socio-economic rank": 877,
-        "socio-economic cluster": 6
+        "socio-economic index value": 0.942,
+        "socio-economic rank": 775.5,
+        "socio-economic cluster": 4.5
     },
-    "גולן שמחה, חיפה": {
-        "amount of people": 3828,
-        "amount of religious": 1012,
-        "percent of religious": 26.44,
-        "socio-economic index value": 1.198,
-        "socio-economic rank": 1277.375,
-        "socio-economic cluster": 7.75
-    },
-    "פינסקר, חיפה": {
-        "amount of people": 3828,
-        "amount of religious": 1012,
-        "percent of religious": 26.44,
-        "socio-economic index value": 0.305,
-        "socio-economic rank": 824,
-        "socio-economic cluster": 6
-    },
-    "אד\"ם הכהן, חיפה": {
-        "amount of people": 3828,
-        "amount of religious": 1012,
-        "percent of religious": 26.44,
-        "socio-economic index value": 0.305,
-        "socio-economic rank": 824,
-        "socio-economic cluster": 6
-    },
-    "מל\"ל, חיפה": {
-        "amount of people": 3828,
-        "amount of religious": 1012,
-        "percent of religious": 26.44,
-        "socio-economic index value": 1.013,
-        "socio-economic rank": 1167.0,
-        "socio-economic cluster": 7.5
-    },
-    "שדרות רוז, חיפה": {
-        "amount of people": 3466,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.791,
-        "socio-economic rank": 1024.0,
-        "socio-economic cluster": 7.0
-    },
-    "שדרות שיקגו, חיפה": {
-        "amount of people": 3466,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": -0.138,
-        "socio-economic rank": 538,
-        "socio-economic cluster": 5
-    },
-    "בירם ד\"ר, חיפה": {
-        "amount of people": 13925,
-        "amount of religious": 62,
-        "percent of religious": 0.45,
-        "socio-economic index value": 1.848,
-        "socio-economic rank": 1506.5625,
-        "socio-economic cluster": 8.6875
-    },
-    "יערי מאיר, חיפה": {
-        "amount of people": 8698,
-        "amount of religious": 124,
-        "percent of religious": 1.43,
-        "socio-economic index value": 1.299,
-        "socio-economic rank": 1347.25,
-        "socio-economic cluster": 8.0
-    },
-    "יגאל אלון, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "מבצע יונתן",
         "percent of religious": null,
-        "socio-economic index value": 1.72,
-        "socio-economic rank": 1510,
-        "socio-economic cluster": 9
+        "socio-economic index value": 0.434,
+        "socio-economic rank": 416.458,
+        "socio-economic cluster": 2.375
     },
-    "אינטרנשיונל, חיפה": {
-        "amount of people": 8698,
-        "amount of religious": 124,
-        "percent of religious": 1.43,
-        "socio-economic index value": 1.171,
-        "socio-economic rank": 1291.0,
-        "socio-economic cluster": 7.75
-    },
-    "דרך חנקין, חיפה": {
-        "amount of people": 8698,
-        "amount of religious": 124,
-        "percent of religious": 1.43,
-        "socio-economic index value": 1.285,
-        "socio-economic rank": 1342.5,
-        "socio-economic cluster": 8.09375
-    },
-    "שניאור זלמן, חיפה": {
-        "amount of people": 6900,
-        "amount of religious": 62,
-        "percent of religious": 0.9,
-        "socio-economic index value": 1.013,
-        "socio-economic rank": 1214.0,
-        "socio-economic cluster": 7.5
-    },
-    "קומוי נתן, חיפה": {
-        "amount of people": 1798,
-        "amount of religious": 62,
-        "percent of religious": 3.45,
-        "socio-economic index value": 1.328,
-        "socio-economic rank": 1368,
-        "socio-economic cluster": 8
-    },
-    "בת חן, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "ראש מיה",
         "percent of religious": null,
-        "socio-economic index value": 1.687,
-        "socio-economic rank": 1503,
-        "socio-economic cluster": 9
+        "socio-economic index value": 0.612,
+        "socio-economic rank": 549.25,
+        "socio-economic cluster": 3.125
     },
-    "דוכיפת, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.687,
-        "socio-economic rank": 1503,
-        "socio-economic cluster": 9
+    {
+        "city": "חיפה",
+        "street": "דרך רופין",
+        "percent of religious": 77.62,
+        "socio-economic index value": 0.202,
+        "socio-economic rank": 235.625,
+        "socio-economic cluster": 1.394
     },
-    "חוחית, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.687,
-        "socio-economic rank": 1503,
-        "socio-economic cluster": 9
-    },
-    "לוין גוטל, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.434,
-        "socio-economic rank": 1413,
-        "socio-economic cluster": 8
-    },
-    "נעמי שמר, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "הדודאים, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "יהודה עמיחי, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "הגבעטרון, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": null,
-        "socio-economic rank": null,
-        "socio-economic cluster": null
-    },
-    "פיק\"א, חיפה": {
-        "amount of people": 3288,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.65,
-        "socio-economic rank": 1463.0,
-        "socio-economic cluster": 8.5
-    },
-    "אורן, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.138,
-        "socio-economic rank": 1280,
-        "socio-economic cluster": 8
-    },
-    "הצוללת דקר, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.138,
-        "socio-economic rank": 1280,
-        "socio-economic cluster": 8
-    },
-    "הפרחים, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.138,
-        "socio-economic rank": 1280,
-        "socio-economic cluster": 8
-    },
-    "פלמ\"ח, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.4,
-        "socio-economic rank": 1402,
-        "socio-economic cluster": 8
-    },
-    "קרן היסוד, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.4,
-        "socio-economic rank": 1402,
-        "socio-economic cluster": 8
-    },
-    "חורב, חיפה": {
-        "amount of people": 6941,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.863,
-        "socio-economic rank": 1542.3125,
-        "socio-economic cluster": 8.9375
-    },
-    "הראל, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.43,
-        "socio-economic rank": 1410,
-        "socio-economic cluster": 8
-    },
-    "פרויד, חיפה": {
-        "amount of people": 3077,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.961,
-        "socio-economic rank": 1564.25,
-        "socio-economic cluster": 9.0
-    },
-    "שוויצר אלברט ד\"ר, חיפה": {
-        "amount of people": 3077,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 2.175,
-        "socio-economic rank": 1598,
-        "socio-economic cluster": 9
-    },
-    "ולנברג ראול, חיפה": {
-        "amount of people": 3077,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 2.175,
-        "socio-economic rank": 1598,
-        "socio-economic cluster": 9
-    },
-    "שאגאל מארק, חיפה": {
-        "amount of people": 3077,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 2.175,
-        "socio-economic rank": 1598,
-        "socio-economic cluster": 9
-    },
-    "שדרות אבא חושי, חיפה": {
-        "amount of people": 10678,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.171,
-        "socio-economic rank": 1083.796875,
-        "socio-economic cluster": 7.234375
-    },
-    "אידר, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.938,
-        "socio-economic rank": 1562,
-        "socio-economic cluster": 9
-    },
-    "סורוקה משה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.938,
-        "socio-economic rank": 1562,
-        "socio-economic cluster": 9
-    },
-    "אינשטיין אלברט, חיפה": {
-        "amount of people": 3653,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.645,
-        "socio-economic rank": 1490,
-        "socio-economic cluster": 9
-    },
-    "גבעת דאונס, חיפה": {
-        "amount of people": 3653,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.645,
-        "socio-economic rank": 1490,
-        "socio-economic cluster": 9
-    },
-    "יערות, חיפה": {
-        "amount of people": 3653,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.645,
-        "socio-economic rank": 1490,
-        "socio-economic cluster": 9
-    },
-    "הנטקה, חיפה": {
-        "amount of people": 3288,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 2.016,
-        "socio-economic rank": 1581,
-        "socio-economic cluster": 9
-    },
-    "הדסה, חיפה": {
-        "amount of people": 3288,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 2.016,
-        "socio-economic rank": 1581,
-        "socio-economic cluster": 9
-    },
-    "יקינתון, חיפה": {
-        "amount of people": 3288,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 2.016,
-        "socio-economic rank": 1581,
-        "socio-economic cluster": 9
-    },
-    "מאיר גולדה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 2.34,
-        "socio-economic rank": 1609,
-        "socio-economic cluster": 9
-    },
-    "קויפמן יחזקאל פרופ', חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 2.34,
-        "socio-economic rank": 1609,
-        "socio-economic cluster": 9
-    },
-    "לסקוב חיים רא\"ל, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 2.34,
-        "socio-economic rank": 1609,
-        "socio-economic cluster": 9
-    },
-    "טהון יעקב, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 2.34,
-        "socio-economic rank": 1609,
-        "socio-economic cluster": 9
-    },
-    "בליטנטל משה, חיפה": {
-        "amount of people": 7025,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.323,
-        "socio-economic rank": 1312.0,
-        "socio-economic cluster": 8.0
-    },
-    "אגוז, חיפה": {
-        "amount of people": 7025,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.323,
-        "socio-economic rank": 1312.0,
-        "socio-economic cluster": 8.0
-    },
-    "חלמיש, חיפה": {
-        "amount of people": 7025,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.323,
-        "socio-economic rank": 1312.0,
-        "socio-economic cluster": 8.0
-    },
-    "שינדלר אוסקר, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "ורדיה",
         "percent of religious": null,
         "socio-economic index value": 1.046,
-        "socio-economic rank": 1085.0,
-        "socio-economic cluster": 7.0
+        "socio-economic rank": 795.0,
+        "socio-economic cluster": 4.5
     },
-    "אורלנד יעקב, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "נורית",
         "percent of religious": null,
-        "socio-economic index value": 2.151,
-        "socio-economic rank": 1596,
-        "socio-economic cluster": 9
+        "socio-economic index value": 1.046,
+        "socio-economic rank": 795.0,
+        "socio-economic cluster": 4.5
     },
-    "זינגר מנדל, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "צבעוני",
         "percent of religious": null,
-        "socio-economic index value": 2.151,
-        "socio-economic rank": 1596,
-        "socio-economic cluster": 9
+        "socio-economic index value": 1.046,
+        "socio-economic rank": 795.0,
+        "socio-economic cluster": 4.5
     },
-    "שבדיה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "בלום לאון",
+        "percent of religious": 18.1,
+        "socio-economic index value": 0.174,
+        "socio-economic rank": 347.75,
+        "socio-economic cluster": 2.375
+    },
+    {
+        "city": "חיפה",
+        "street": "שדרות וינגיט",
+        "percent of religious": 22.1,
+        "socio-economic index value": 0.0,
+        "socio-economic rank": 151.094,
+        "socio-economic cluster": 1.109
+    },
+    {
+        "city": "חיפה",
+        "street": "סנש חנה",
+        "percent of religious": 18.1,
+        "socio-economic index value": 0.174,
+        "socio-economic rank": 347.75,
+        "socio-economic cluster": 2.375
+    },
+    {
+        "city": "חיפה",
+        "street": "האר\"י",
+        "percent of religious": 8.76,
+        "socio-economic index value": 0.047,
+        "socio-economic rank": 264.0,
+        "socio-economic cluster": 2.125
+    },
+    {
+        "city": "חיפה",
+        "street": "שדרות קיש",
         "percent of religious": null,
-        "socio-economic index value": 2.759,
-        "socio-economic rank": 1622,
-        "socio-economic cluster": 10
+        "socio-economic index value": 0.698,
+        "socio-economic rank": 700.0,
+        "socio-economic cluster": 4.0
     },
-    "דניה, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 2.759,
-        "socio-economic rank": 1622,
-        "socio-economic cluster": 10
-    },
-    "שלונסקי, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 2.759,
-        "socio-economic rank": 1622,
-        "socio-economic cluster": 10
-    },
-    "אנטוורפן, חיפה": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 2.759,
-        "socio-economic rank": 1622,
-        "socio-economic cluster": 10
-    },
-    "דרך בר יהודה, נשר": {
-        "amount of people": 3461,
-        "amount of religious": 0,
+    {
+        "city": "חיפה",
+        "street": "יפה נוף",
         "percent of religious": 0.0,
-        "socio-economic index value": -0.613,
-        "socio-economic rank": 327,
-        "socio-economic cluster": 3
+        "socio-economic index value": 0.133,
+        "socio-economic rank": 195.85,
+        "socio-economic cluster": 1.25
     },
-    "הקישון, נשר": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "סולד הנרייטה",
+        "percent of religious": null,
+        "socio-economic index value": 0.698,
+        "socio-economic rank": 700.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שדרות הנשיא",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.389,
+        "socio-economic rank": 399.0,
+        "socio-economic cluster": 2.333
+    },
+    {
+        "city": "חיפה",
+        "street": "וודג'ווד",
+        "percent of religious": null,
+        "socio-economic index value": 0.532,
+        "socio-economic rank": 623.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "וולפסון",
+        "percent of religious": null,
+        "socio-economic index value": 0.706,
+        "socio-economic rank": 702.5,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "קדימה",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.788,
+        "socio-economic rank": 734.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "רענן",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.337,
+        "socio-economic rank": 428.75,
+        "socio-economic cluster": 2.75
+    },
+    {
+        "city": "חיפה",
+        "street": "כבירים",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.337,
+        "socio-economic rank": 428.75,
+        "socio-economic cluster": 2.75
+    },
+    {
+        "city": "חיפה",
+        "street": "שדרות הצבי",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.788,
+        "socio-economic rank": 734.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "אילנות",
+        "percent of religious": null,
+        "socio-economic index value": 0.739,
+        "socio-economic rank": 717.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שושנת הכרמל",
+        "percent of religious": null,
+        "socio-economic index value": 0.739,
+        "socio-economic rank": 717.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "הרקפות",
+        "percent of religious": null,
+        "socio-economic index value": 0.739,
+        "socio-economic rank": 717.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "ככר הרקפות",
+        "percent of religious": null,
+        "socio-economic index value": 0.739,
+        "socio-economic rank": 717.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "לבונה",
+        "percent of religious": null,
+        "socio-economic index value": 0.279,
+        "socio-economic rank": 490.5,
+        "socio-economic cluster": 3.5
+    },
+    {
+        "city": "חיפה",
+        "street": "מור",
+        "percent of religious": null,
+        "socio-economic index value": 0.279,
+        "socio-economic rank": 490.5,
+        "socio-economic cluster": 3.5
+    },
+    {
+        "city": "חיפה",
+        "street": "אל מוהדי",
+        "percent of religious": null,
+        "socio-economic index value": 0.279,
+        "socio-economic rank": 490.5,
+        "socio-economic cluster": 3.5
+    },
+    {
+        "city": "חיפה",
+        "street": "התמר",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.587,
+        "socio-economic rank": 647.5,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "חרוב",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.587,
+        "socio-economic rank": 647.5,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "הרדוף",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.587,
+        "socio-economic rank": 647.5,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "הסנה",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.587,
+        "socio-economic rank": 647.5,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "טשרניחובסקי",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.393,
+        "socio-economic rank": 401.083,
+        "socio-economic cluster": 2.333
+    },
+    {
+        "city": "חיפה",
+        "street": "זולא אמיל",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.588,
+        "socio-economic rank": 648.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "קאודרס בן ציון ד\"ר",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.588,
+        "socio-economic rank": 648.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "ויקטור הוגו",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.588,
+        "socio-economic rank": 648.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "התשבי",
+        "percent of religious": null,
+        "socio-economic index value": 0.719,
+        "socio-economic rank": 707.5,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "עובדיה",
+        "percent of religious": null,
+        "socio-economic index value": 0.719,
+        "socio-economic rank": 707.5,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "עבאס",
+        "percent of religious": null,
+        "socio-economic index value": 0.091,
+        "socio-economic rank": 292.75,
+        "socio-economic cluster": 2.125
+    },
+    {
+        "city": "חיפה",
+        "street": "הבישוף חג'אר",
+        "percent of religious": null,
+        "socio-economic index value": 0.288,
+        "socio-economic rank": 497.0,
+        "socio-economic cluster": 3.5
+    },
+    {
+        "city": "חיפה",
+        "street": "שפרה",
+        "percent of religious": null,
+        "socio-economic index value": 0.038,
+        "socio-economic rank": 337.0,
+        "socio-economic cluster": 2.5
+    },
+    {
+        "city": "חיפה",
+        "street": "הלל",
+        "percent of religious": null,
+        "socio-economic index value": -0.21,
+        "socio-economic rank": 200.5,
+        "socio-economic cluster": 2.0
+    },
+    {
+        "city": "חיפה",
+        "street": "מסדה",
+        "percent of religious": null,
+        "socio-economic index value": -0.21,
+        "socio-economic rank": 200.5,
+        "socio-economic cluster": 2.0
+    },
+    {
+        "city": "חיפה",
+        "street": "בן יהודה",
+        "percent of religious": null,
+        "socio-economic index value": -0.249,
+        "socio-economic rank": 117.875,
+        "socio-economic cluster": 1.25
+    },
+    {
+        "city": "חיפה",
+        "street": "טבריה",
+        "percent of religious": null,
+        "socio-economic index value": -0.21,
+        "socio-economic rank": 200.5,
+        "socio-economic cluster": 2.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שדרות גולומב אליהו",
+        "percent of religious": null,
+        "socio-economic index value": 0.078,
+        "socio-economic rank": 365.0,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "חיפה",
+        "street": "ארלוזורוב",
+        "percent of religious": 48.47,
+        "socio-economic index value": -0.245,
+        "socio-economic rank": 33.7,
+        "socio-economic cluster": 0.425
+    },
+    {
+        "city": "חיפה",
+        "street": "בלפור",
+        "percent of religious": 18.53,
+        "socio-economic index value": -0.282,
+        "socio-economic rank": 78.25,
+        "socio-economic cluster": 0.75
+    },
+    {
+        "city": "חיפה",
+        "street": "גאולה",
+        "percent of religious": 59.01,
+        "socio-economic index value": -0.287,
+        "socio-economic rank": 52.609,
+        "socio-economic cluster": 0.484
+    },
+    {
+        "city": "חיפה",
+        "street": "הפועל",
+        "percent of religious": 62.15,
+        "socio-economic index value": -0.417,
+        "socio-economic rank": 78.375,
+        "socio-economic cluster": 0.875
+    },
+    {
+        "city": "חיפה",
+        "street": "המימוני",
+        "percent of religious": 30.43,
+        "socio-economic index value": 0.035,
+        "socio-economic rank": 266.875,
+        "socio-economic cluster": 1.875
+    },
+    {
+        "city": "חיפה",
+        "street": "רבי עקיבא",
+        "percent of religious": 26.99,
+        "socio-economic index value": 0.196,
+        "socio-economic rank": 442.0,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "חיפה",
+        "street": "יוסף (הגדם)",
+        "percent of religious": 24.59,
+        "socio-economic index value": -0.438,
+        "socio-economic rank": 125.0,
+        "socio-economic cluster": 1.0
+    },
+    {
+        "city": "חיפה",
+        "street": "פבזנר",
+        "percent of religious": 24.59,
+        "socio-economic index value": -0.438,
+        "socio-economic rank": 125.0,
+        "socio-economic cluster": 1.0
+    },
+    {
+        "city": "חיפה",
+        "street": "נורדאו",
+        "percent of religious": 24.59,
+        "socio-economic index value": -0.438,
+        "socio-economic rank": 125.0,
+        "socio-economic cluster": 1.0
+    },
+    {
+        "city": "חיפה",
+        "street": "הרצליה",
+        "percent of religious": null,
+        "socio-economic index value": -0.393,
+        "socio-economic rank": 135.5,
+        "socio-economic cluster": 1.5
+    },
+    {
+        "city": "חיפה",
+        "street": "הנביאים",
+        "percent of religious": null,
+        "socio-economic index value": -0.448,
+        "socio-economic rank": 67.625,
+        "socio-economic cluster": 0.875
+    },
+    {
+        "city": "חיפה",
+        "street": "שמריהו לוין",
+        "percent of religious": null,
+        "socio-economic index value": -0.7,
+        "socio-economic rank": 67.5,
+        "socio-economic cluster": 1.0
+    },
+    {
+        "city": "חיפה",
+        "street": "הרצל",
+        "percent of religious": 48.78,
+        "socio-economic index value": -0.555,
+        "socio-economic rank": 43.375,
+        "socio-economic cluster": 0.75
+    },
+    {
+        "city": "חיפה",
+        "street": "החלוץ",
+        "percent of religious": null,
+        "socio-economic index value": -0.7,
+        "socio-economic rank": 67.5,
+        "socio-economic cluster": 1.0
+    },
+    {
+        "city": "חיפה",
+        "street": "חסן שוקרי",
+        "percent of religious": 0.0,
+        "socio-economic index value": -0.497,
+        "socio-economic rank": 57.375,
+        "socio-economic cluster": 0.75
+    },
+    {
+        "city": "חיפה",
+        "street": "מרכוס הרב",
+        "percent of religious": 0.0,
+        "socio-economic index value": -0.645,
+        "socio-economic rank": 81.0,
+        "socio-economic cluster": 1.0
+    },
+    {
+        "city": "חיפה",
+        "street": "ביאליק",
+        "percent of religious": 0.0,
+        "socio-economic index value": -0.645,
+        "socio-economic rank": 81.0,
+        "socio-economic cluster": 1.0
+    },
+    {
+        "city": "חיפה",
+        "street": "מעלה השחרור",
+        "percent of religious": 0.0,
+        "socio-economic index value": -0.645,
+        "socio-economic rank": 81.0,
+        "socio-economic cluster": 1.0
+    },
+    {
+        "city": "חיפה",
+        "street": "השומר",
+        "percent of religious": 48.78,
+        "socio-economic index value": -0.76,
+        "socio-economic rank": 53.0,
+        "socio-economic cluster": 1.0
+    },
+    {
+        "city": "חיפה",
+        "street": "ברזילי",
+        "percent of religious": 48.78,
+        "socio-economic index value": -0.76,
+        "socio-economic rank": 53.0,
+        "socio-economic cluster": 1.0
+    },
+    {
+        "city": "חיפה",
+        "street": "מיכאל",
+        "percent of religious": 81.66,
+        "socio-economic index value": -0.709,
+        "socio-economic rank": 65.0,
+        "socio-economic cluster": 1.0
+    },
+    {
+        "city": "חיפה",
+        "street": "חרמון",
+        "percent of religious": 81.66,
+        "socio-economic index value": -0.709,
+        "socio-economic rank": 65.0,
+        "socio-economic cluster": 1.0
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך נחל הגיבורים",
+        "percent of religious": 47.18,
+        "socio-economic index value": 0.136,
+        "socio-economic rank": 201.931,
+        "socio-economic cluster": 1.281
+    },
+    {
+        "city": "חיפה",
+        "street": "מקור ברוך",
+        "percent of religious": 93.71,
+        "socio-economic index value": -0.814,
+        "socio-economic rank": 44.5,
+        "socio-economic cluster": 0.5
+    },
+    {
+        "city": "חיפה",
+        "street": "קניאל יהושע הרב",
+        "percent of religious": 27.26,
+        "socio-economic index value": -0.058,
+        "socio-economic rank": 274.5,
+        "socio-economic cluster": 2.5
+    },
+    {
+        "city": "חיפה",
+        "street": "משעול תורת חיים",
+        "percent of religious": 27.26,
+        "socio-economic index value": -0.058,
+        "socio-economic rank": 274.5,
+        "socio-economic cluster": 2.5
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך יד לבנים",
+        "percent of religious": 0.0,
+        "socio-economic index value": -0.001,
+        "socio-economic rank": 128.512,
+        "socio-economic cluster": 0.963
+    },
+    {
+        "city": "חיפה",
+        "street": "גוש עציון",
+        "percent of religious": null,
+        "socio-economic index value": -0.56,
+        "socio-economic rank": 94.0,
+        "socio-economic cluster": 1.0
+    },
+    {
+        "city": "חיפה",
+        "street": "רזיאל דוד",
+        "percent of religious": null,
+        "socio-economic index value": -0.241,
+        "socio-economic rank": 124.75,
+        "socio-economic cluster": 1.25
+    },
+    {
+        "city": "חיפה",
+        "street": "פאר",
+        "percent of religious": null,
+        "socio-economic index value": -0.202,
+        "socio-economic rank": 202.5,
+        "socio-economic cluster": 2.0
+    },
+    {
+        "city": "חיפה",
+        "street": "הירדן",
+        "percent of religious": null,
+        "socio-economic index value": -0.202,
+        "socio-economic rank": 202.5,
+        "socio-economic cluster": 2.0
+    },
+    {
+        "city": "חיפה",
+        "street": "החשמל",
+        "percent of religious": 0.0,
+        "socio-economic index value": -0.499,
+        "socio-economic rank": 105.5,
+        "socio-economic cluster": 1.0
+    },
+    {
+        "city": "חיפה",
+        "street": "דורי יעקב רא\"ל",
+        "percent of religious": 13.41,
+        "socio-economic index value": 0.053,
+        "socio-economic rank": 182.953,
+        "socio-economic cluster": 1.312
+    },
+    {
+        "city": "חיפה",
+        "street": "דולצ'ין אריה",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.037,
+        "socio-economic rank": 335.0,
+        "socio-economic cluster": 2.5
+    },
+    {
+        "city": "חיפה",
+        "street": "תענך",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.037,
+        "socio-economic rank": 335.0,
+        "socio-economic cluster": 2.5
+    },
+    {
+        "city": "חיפה",
+        "street": "משאש הרב",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.213,
+        "socio-economic rank": 362.5,
+        "socio-economic cluster": 2.375
+    },
+    {
+        "city": "חיפה",
+        "street": "ערד",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.037,
+        "socio-economic rank": 335.0,
+        "socio-economic cluster": 2.5
+    },
+    {
+        "city": "חיפה",
+        "street": "סלומון יעקב",
+        "percent of religious": null,
+        "socio-economic index value": 0.409,
+        "socio-economic rank": 557.5,
+        "socio-economic cluster": 3.5
+    },
+    {
+        "city": "חיפה",
+        "street": "חזן יעקב",
+        "percent of religious": null,
+        "socio-economic index value": 0.409,
+        "socio-economic rank": 557.5,
+        "socio-economic cluster": 3.5
+    },
+    {
+        "city": "חיפה",
+        "street": "שדרות טרומפלדור",
+        "percent of religious": 17.1,
+        "socio-economic index value": 0.132,
+        "socio-economic rank": 178.365,
+        "socio-economic cluster": 1.143
+    },
+    {
+        "city": "חיפה",
+        "street": "לוחמי חרות ישראל",
+        "percent of religious": 15.09,
+        "socio-economic index value": 0.005,
+        "socio-economic rank": 186.208,
+        "socio-economic cluster": 1.542
+    },
+    {
+        "city": "חיפה",
+        "street": "הגליל",
+        "percent of religious": 13.43,
+        "socio-economic index value": 0.066,
+        "socio-economic rank": 163.425,
+        "socio-economic cluster": 1.194
+    },
+    {
+        "city": "חיפה",
+        "street": "מימון הרב",
+        "percent of religious": 21.82,
+        "socio-economic index value": 0.086,
+        "socio-economic rank": 289.625,
+        "socio-economic cluster": 2.125
+    },
+    {
+        "city": "חיפה",
+        "street": "חניתה",
+        "percent of religious": 8.63,
+        "socio-economic index value": 0.053,
+        "socio-economic rank": 155.975,
+        "socio-economic cluster": 1.181
+    },
+    {
+        "city": "חיפה",
+        "street": "שאול",
+        "percent of religious": 11.56,
+        "socio-economic index value": 0.05,
+        "socio-economic rank": 267.0,
+        "socio-economic cluster": 2.125
+    },
+    {
+        "city": "חיפה",
+        "street": "התיכון",
+        "percent of religious": 8.63,
+        "socio-economic index value": 0.115,
+        "socio-economic rank": 256.167,
+        "socio-economic cluster": 1.875
+    },
+    {
+        "city": "חיפה",
+        "street": "נתיב חן",
+        "percent of religious": 3.49,
+        "socio-economic index value": 0.296,
+        "socio-economic rank": 501.5,
+        "socio-economic cluster": 3.5
+    },
+    {
+        "city": "חיפה",
+        "street": "טבנקין יצחק",
+        "percent of religious": 2.31,
+        "socio-economic index value": 0.155,
+        "socio-economic rank": 334.125,
+        "socio-economic cluster": 2.375
+    },
+    {
+        "city": "חיפה",
+        "street": "ניסנבוים",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.137,
+        "socio-economic rank": 323.625,
+        "socio-economic cluster": 2.25
+    },
+    {
+        "city": "חיפה",
+        "street": "סילבר אבא הלל",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.073,
+        "socio-economic rank": 230.708,
+        "socio-economic cluster": 1.75
+    },
+    {
+        "city": "חיפה",
+        "street": "קליבנוב",
+        "percent of religious": null,
+        "socio-economic index value": 0.192,
+        "socio-economic rank": 438.5,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "חיפה",
+        "street": "צ'רניאבסקי אהרון",
+        "percent of religious": null,
+        "socio-economic index value": 0.192,
+        "socio-economic rank": 438.5,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "חיפה",
+        "street": "גולן שמחה",
+        "percent of religious": 26.44,
+        "socio-economic index value": 0.297,
+        "socio-economic rank": 307.828,
+        "socio-economic cluster": 1.844
+    },
+    {
+        "city": "חיפה",
+        "street": "פינסקר",
+        "percent of religious": 26.44,
+        "socio-economic index value": 0.153,
+        "socio-economic rank": 412.0,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "חיפה",
+        "street": "אד\"ם הכהן",
+        "percent of religious": 26.44,
+        "socio-economic index value": 0.153,
+        "socio-economic rank": 412.0,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "חיפה",
+        "street": "מל\"ל",
+        "percent of religious": 26.44,
+        "socio-economic index value": 0.469,
+        "socio-economic rank": 480.5,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "חיפה",
+        "street": "שדרות רוז",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.413,
+        "socio-economic rank": 444.75,
+        "socio-economic cluster": 2.875
+    },
+    {
+        "city": "חיפה",
+        "street": "שדרות שיקגו",
+        "percent of religious": 0.0,
+        "socio-economic index value": -0.069,
+        "socio-economic rank": 269.0,
+        "socio-economic cluster": 2.5
+    },
+    {
+        "city": "חיפה",
+        "street": "בירם ד\"ר",
+        "percent of religious": 0.45,
+        "socio-economic index value": 0.303,
+        "socio-economic rank": 247.161,
+        "socio-economic cluster": 1.424
+    },
+    {
+        "city": "חיפה",
+        "street": "יערי מאיר",
+        "percent of religious": 1.43,
+        "socio-economic index value": 0.298,
+        "socio-economic rank": 313.219,
+        "socio-economic cluster": 1.859
+    },
+    {
+        "city": "חיפה",
+        "street": "יגאל אלון",
+        "percent of religious": null,
+        "socio-economic index value": 0.86,
+        "socio-economic rank": 755.0,
+        "socio-economic cluster": 4.5
+    },
+    {
+        "city": "חיפה",
+        "street": "אינטרנשיונל",
+        "percent of religious": 1.43,
+        "socio-economic index value": 0.361,
+        "socio-economic rank": 386.167,
+        "socio-economic cluster": 2.292
+    },
+    {
+        "city": "חיפה",
+        "street": "דרך חנקין",
+        "percent of religious": 1.43,
+        "socio-economic index value": 0.212,
+        "socio-economic rank": 220.99,
+        "socio-economic cluster": 1.331
+    },
+    {
+        "city": "חיפה",
+        "street": "שניאור זלמן",
+        "percent of religious": 0.9,
+        "socio-economic index value": 0.419,
+        "socio-economic rank": 474.5,
+        "socio-economic cluster": 2.875
+    },
+    {
+        "city": "חיפה",
+        "street": "קומוי נתן",
+        "percent of religious": 3.45,
+        "socio-economic index value": 0.664,
+        "socio-economic rank": 684.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "בת חן",
+        "percent of religious": null,
+        "socio-economic index value": 0.844,
+        "socio-economic rank": 751.5,
+        "socio-economic cluster": 4.5
+    },
+    {
+        "city": "חיפה",
+        "street": "דוכיפת",
+        "percent of religious": null,
+        "socio-economic index value": 0.844,
+        "socio-economic rank": 751.5,
+        "socio-economic cluster": 4.5
+    },
+    {
+        "city": "חיפה",
+        "street": "חוחית",
+        "percent of religious": null,
+        "socio-economic index value": 0.844,
+        "socio-economic rank": 751.5,
+        "socio-economic cluster": 4.5
+    },
+    {
+        "city": "חיפה",
+        "street": "לוין גוטל",
+        "percent of religious": null,
+        "socio-economic index value": 0.717,
+        "socio-economic rank": 706.5,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "נעמי שמר",
         "percent of religious": null,
         "socio-economic index value": null,
         "socio-economic rank": null,
         "socio-economic cluster": null
     },
-    "הבטחון, נשר": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "הדודאים",
         "percent of religious": null,
         "socio-economic index value": null,
         "socio-economic rank": null,
         "socio-economic cluster": null
     },
-    "המסילה, נשר": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "יהודה עמיחי",
         "percent of religious": null,
         "socio-economic index value": null,
         "socio-economic rank": null,
         "socio-economic cluster": null
     },
-    "הפלדה, נשר": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "הגבעטרון",
         "percent of religious": null,
         "socio-economic index value": null,
         "socio-economic rank": null,
         "socio-economic cluster": null
     },
-    "דרך השלום, נשר": {
-        "amount of people": 3461,
-        "amount of religious": 0,
+    {
+        "city": "חיפה",
+        "street": "פיק\"א",
         "percent of religious": 0.0,
-        "socio-economic index value": -0.613,
-        "socio-economic rank": 327,
-        "socio-economic cluster": 3
+        "socio-economic index value": 0.503,
+        "socio-economic rank": 434.333,
+        "socio-economic cluster": 2.5
     },
-    "צה\"ל, נשר": {
-        "amount of people": 14267,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.889,
-        "socio-economic rank": 1125.0,
-        "socio-economic cluster": 6.75
+    {
+        "city": "חיפה",
+        "street": "אורן",
+        "percent of religious": null,
+        "socio-economic index value": 0.569,
+        "socio-economic rank": 640.0,
+        "socio-economic cluster": 4.0
     },
-    "אורן, נשר": {
-        "amount of people": 7164,
-        "amount of religious": 0,
+    {
+        "city": "חיפה",
+        "street": "הצוללת דקר",
+        "percent of religious": null,
+        "socio-economic index value": 0.569,
+        "socio-economic rank": 640.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "הפרחים",
+        "percent of religious": null,
+        "socio-economic index value": 0.569,
+        "socio-economic rank": 640.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "פלמ\"ח",
+        "percent of religious": null,
+        "socio-economic index value": 0.7,
+        "socio-economic rank": 701.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "קרן היסוד",
+        "percent of religious": null,
+        "socio-economic index value": 0.7,
+        "socio-economic rank": 701.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "חורב",
         "percent of religious": 0.0,
-        "socio-economic index value": 0.171,
-        "socio-economic rank": 756.0,
+        "socio-economic index value": 0.364,
+        "socio-economic rank": 299.65,
+        "socio-economic cluster": 1.738
+    },
+    {
+        "city": "חיפה",
+        "street": "הראל",
+        "percent of religious": null,
+        "socio-economic index value": 0.715,
+        "socio-economic rank": 705.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "חיפה",
+        "street": "פרויד",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.579,
+        "socio-economic rank": 457.458,
+        "socio-economic cluster": 2.625
+    },
+    {
+        "city": "חיפה",
+        "street": "שוויצר אלברט ד\"ר",
+        "percent of religious": 0.0,
+        "socio-economic index value": 1.087,
+        "socio-economic rank": 799.0,
+        "socio-economic cluster": 4.5
+    },
+    {
+        "city": "חיפה",
+        "street": "ולנברג ראול",
+        "percent of religious": 0.0,
+        "socio-economic index value": 1.087,
+        "socio-economic rank": 799.0,
+        "socio-economic cluster": 4.5
+    },
+    {
+        "city": "חיפה",
+        "street": "שאגאל מארק",
+        "percent of religious": 0.0,
+        "socio-economic index value": 1.087,
+        "socio-economic rank": 799.0,
+        "socio-economic cluster": 4.5
+    },
+    {
+        "city": "חיפה",
+        "street": "שדרות אבא חושי",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.146,
+        "socio-economic rank": 134.957,
+        "socio-economic cluster": 0.901
+    },
+    {
+        "city": "חיפה",
+        "street": "אידר",
+        "percent of religious": null,
+        "socio-economic index value": 0.969,
+        "socio-economic rank": 781.0,
+        "socio-economic cluster": 4.5
+    },
+    {
+        "city": "חיפה",
+        "street": "סורוקה משה",
+        "percent of religious": null,
+        "socio-economic index value": 0.969,
+        "socio-economic rank": 781.0,
+        "socio-economic cluster": 4.5
+    },
+    {
+        "city": "חיפה",
+        "street": "אינשטיין אלברט",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.822,
+        "socio-economic rank": 745.0,
+        "socio-economic cluster": 4.5
+    },
+    {
+        "city": "חיפה",
+        "street": "גבעת דאונס",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.822,
+        "socio-economic rank": 745.0,
+        "socio-economic cluster": 4.5
+    },
+    {
+        "city": "חיפה",
+        "street": "יערות",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.822,
+        "socio-economic rank": 745.0,
+        "socio-economic cluster": 4.5
+    },
+    {
+        "city": "חיפה",
+        "street": "הנטקה",
+        "percent of religious": 0.0,
+        "socio-economic index value": 1.008,
+        "socio-economic rank": 790.5,
+        "socio-economic cluster": 4.5
+    },
+    {
+        "city": "חיפה",
+        "street": "הדסה",
+        "percent of religious": 0.0,
+        "socio-economic index value": 1.008,
+        "socio-economic rank": 790.5,
+        "socio-economic cluster": 4.5
+    },
+    {
+        "city": "חיפה",
+        "street": "יקינתון",
+        "percent of religious": 0.0,
+        "socio-economic index value": 1.008,
+        "socio-economic rank": 790.5,
+        "socio-economic cluster": 4.5
+    },
+    {
+        "city": "חיפה",
+        "street": "מאיר גולדה",
+        "percent of religious": null,
+        "socio-economic index value": 1.17,
+        "socio-economic rank": 804.5,
+        "socio-economic cluster": 4.5
+    },
+    {
+        "city": "חיפה",
+        "street": "קויפמן יחזקאל פרופ'",
+        "percent of religious": null,
+        "socio-economic index value": 1.17,
+        "socio-economic rank": 804.5,
+        "socio-economic cluster": 4.5
+    },
+    {
+        "city": "חיפה",
+        "street": "לסקוב חיים רא\"ל",
+        "percent of religious": null,
+        "socio-economic index value": 1.17,
+        "socio-economic rank": 804.5,
+        "socio-economic cluster": 4.5
+    },
+    {
+        "city": "חיפה",
+        "street": "טהון יעקב",
+        "percent of religious": null,
+        "socio-economic index value": 1.17,
+        "socio-economic rank": 804.5,
+        "socio-economic cluster": 4.5
+    },
+    {
+        "city": "חיפה",
+        "street": "בליטנטל משה",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.575,
+        "socio-economic rank": 523.5,
+        "socio-economic cluster": 3.125
+    },
+    {
+        "city": "חיפה",
+        "street": "אגוז",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.575,
+        "socio-economic rank": 523.5,
+        "socio-economic cluster": 3.125
+    },
+    {
+        "city": "חיפה",
+        "street": "חלמיש",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.575,
+        "socio-economic rank": 523.5,
+        "socio-economic cluster": 3.125
+    },
+    {
+        "city": "חיפה",
+        "street": "שינדלר אוסקר",
+        "percent of religious": null,
+        "socio-economic index value": 0.255,
+        "socio-economic rank": 343.0,
+        "socio-economic cluster": 2.375
+    },
+    {
+        "city": "חיפה",
+        "street": "אורלנד יעקב",
+        "percent of religious": null,
+        "socio-economic index value": 1.076,
+        "socio-economic rank": 798.0,
+        "socio-economic cluster": 4.5
+    },
+    {
+        "city": "חיפה",
+        "street": "זינגר מנדל",
+        "percent of religious": null,
+        "socio-economic index value": 1.076,
+        "socio-economic rank": 798.0,
+        "socio-economic cluster": 4.5
+    },
+    {
+        "city": "חיפה",
+        "street": "שבדיה",
+        "percent of religious": null,
+        "socio-economic index value": 1.38,
+        "socio-economic rank": 811.0,
         "socio-economic cluster": 5.0
     },
-    "דרך משה, נשר": {
-        "amount of people": 20981,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.175,
-        "socio-economic rank": 1280.1875,
-        "socio-economic cluster": 7.375
-    },
-    "דרך הטכניון, נשר": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "דניה",
         "percent of religious": null,
-        "socio-economic index value": -0.028,
-        "socio-economic rank": 599,
-        "socio-economic cluster": 5
+        "socio-economic index value": 1.38,
+        "socio-economic rank": 811.0,
+        "socio-economic cluster": 5.0
     },
-    "מעלה הגבורים, נשר": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "שלונסקי",
         "percent of religious": null,
-        "socio-economic index value": -0.028,
-        "socio-economic rank": 599,
-        "socio-economic cluster": 5
+        "socio-economic index value": 1.38,
+        "socio-economic rank": 811.0,
+        "socio-economic cluster": 5.0
     },
-    "ציון, נשר": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "חיפה",
+        "street": "אנטוורפן",
         "percent of religious": null,
-        "socio-economic index value": -0.028,
-        "socio-economic rank": 599,
-        "socio-economic cluster": 5
+        "socio-economic index value": 1.38,
+        "socio-economic rank": 811.0,
+        "socio-economic cluster": 5.0
     },
-    "ההסתדרות, נשר": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": -0.028,
-        "socio-economic rank": 599,
-        "socio-economic cluster": 5
-    },
-    "הזית, נשר": {
-        "amount of people": 3703,
-        "amount of religious": 0,
+    {
+        "city": "נשר",
+        "street": "דרך בר יהודה",
         "percent of religious": 0.0,
-        "socio-economic index value": 0.955,
-        "socio-economic rank": 1185,
-        "socio-economic cluster": 7
+        "socio-economic index value": -0.307,
+        "socio-economic rank": 163.5,
+        "socio-economic cluster": 1.5
     },
-    "השיטה, נשר": {
-        "amount of people": 17909,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.335,
-        "socio-economic rank": 1365.75,
-        "socio-economic cluster": 7.75
-    },
-    "החרוב, נשר": {
-        "amount of people": 25012,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.398,
-        "socio-economic rank": 1396.0625,
-        "socio-economic cluster": 7.875
-    },
-    "ששת הימים, נשר": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.958,
-        "socio-economic rank": 1188,
-        "socio-economic cluster": 7
-    },
-    "החצב, נשר": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.958,
-        "socio-economic rank": 1188,
-        "socio-economic cluster": 7
-    },
-    "הלוטם, נשר": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 0.958,
-        "socio-economic rank": 1188,
-        "socio-economic cluster": 7
-    },
-    "הכלניות, נשר": {
-        "amount of people": 3314,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.455,
-        "socio-economic rank": 928,
-        "socio-economic cluster": 6
-    },
-    "יפה נוף, נשר": {
-        "amount of people": 3314,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.455,
-        "socio-economic rank": 928,
-        "socio-economic cluster": 6
-    },
-    "העליה, נשר": {
-        "amount of people": 3314,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.455,
-        "socio-economic rank": 928,
-        "socio-economic cluster": 6
-    },
-    "המגינים, נשר": {
-        "amount of people": 3314,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.455,
-        "socio-economic rank": 928,
-        "socio-economic cluster": 6
-    },
-    "דוכיפת, נשר": {
-        "amount of people": 7103,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.461,
-        "socio-economic rank": 1426,
-        "socio-economic cluster": 8
-    },
-    "נחשון, נשר": {
-        "amount of people": 7103,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.461,
-        "socio-economic rank": 1426,
-        "socio-economic cluster": 8
-    },
-    "התמר, נשר": {
-        "amount of people": 7103,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.461,
-        "socio-economic rank": 1426,
-        "socio-economic cluster": 8
-    },
-    "האשל, נשר": {
-        "amount of people": 7103,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.461,
-        "socio-economic rank": 1426,
-        "socio-economic cluster": 8
-    },
-    "התאנה, נשר": {
-        "amount of people": 7103,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.461,
-        "socio-economic rank": 1426,
-        "socio-economic cluster": 8
-    },
-    "לוי יוסף, קריית ביאליק": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "נשר",
+        "street": "הקישון",
         "percent of religious": null,
         "socio-economic index value": null,
         "socio-economic rank": null,
         "socio-economic cluster": null
     },
-    "חרושת, קריית ביאליק": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "נשר",
+        "street": "הבטחון",
         "percent of religious": null,
         "socio-economic index value": null,
         "socio-economic rank": null,
         "socio-economic cluster": null
     },
-    "מולר הנס, קריית ביאליק": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "נשר",
+        "street": "המסילה",
         "percent of religious": null,
         "socio-economic index value": null,
         "socio-economic rank": null,
         "socio-economic cluster": null
     },
-    "שדרות ח\"ן, קריית ביאליק": {
-        "amount of people": 4920,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": -0.66,
-        "socio-economic rank": 309,
-        "socio-economic cluster": 3
-    },
-    "בעלי המלאכה, קריית ביאליק": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "נשר",
+        "street": "הפלדה",
         "percent of religious": null,
         "socio-economic index value": null,
         "socio-economic rank": null,
         "socio-economic cluster": null
     },
-    "יוספטל גיורא, קריית ביאליק": {
-        "amount of people": 4920,
-        "amount of religious": 0,
+    {
+        "city": "נשר",
+        "street": "דרך השלום",
         "percent of religious": 0.0,
-        "socio-economic index value": -0.66,
-        "socio-economic rank": 309,
-        "socio-economic cluster": 3
+        "socio-economic index value": -0.307,
+        "socio-economic rank": 163.5,
+        "socio-economic cluster": 1.5
     },
-    "עגנון ש\"י, קריית ביאליק": {
-        "amount of people": 11199,
-        "amount of religious": 0,
+    {
+        "city": "נשר",
+        "street": "צה\"ל",
         "percent of religious": 0.0,
-        "socio-economic index value": -0.1,
-        "socio-economic rank": 621.0,
-        "socio-economic cluster": 4.5
+        "socio-economic index value": 0.232,
+        "socio-economic rank": 276.141,
+        "socio-economic cluster": 1.641
     },
-    "ז'בוטינסקי, קריית ביאליק": {
-        "amount of people": 4920,
-        "amount of religious": 0,
+    {
+        "city": "נשר",
+        "street": "אורן",
         "percent of religious": 0.0,
-        "socio-economic index value": -0.66,
-        "socio-economic rank": 309,
-        "socio-economic cluster": 3
+        "socio-economic index value": 0.162,
+        "socio-economic rank": 337.125,
+        "socio-economic cluster": 2.125
     },
-    "חיים וייסבורג, קריית ביאליק": {
-        "amount of people": 11199,
-        "amount of religious": 0,
+    {
+        "city": "נשר",
+        "street": "דרך משה",
         "percent of religious": 0.0,
-        "socio-economic index value": -0.1,
-        "socio-economic rank": 621.0,
-        "socio-economic cluster": 4.5
+        "socio-economic index value": 0.239,
+        "socio-economic rank": 253.994,
+        "socio-economic cluster": 1.456
     },
-    "הפקאן, קריית ביאליק": {
-        "amount of people": 6279,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.461,
-        "socio-economic rank": 933,
-        "socio-economic cluster": 6
-    },
-    "גוש חלב, קריית ביאליק": {
-        "amount of people": 6279,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.461,
-        "socio-economic rank": 933,
-        "socio-economic cluster": 6
-    },
-    "התל, קריית ביאליק": {
-        "amount of people": 12558,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.461,
-        "socio-economic rank": 933.0,
-        "socio-economic cluster": 6.0
-    },
-    "חוגלה, קריית ביאליק": {
-        "amount of people": 6279,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.963,
-        "socio-economic rank": 1180.0,
-        "socio-economic cluster": 7.0
-    },
-    "נעמי שמר, קריית ביאליק": {
-        "amount of people": 6279,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.461,
-        "socio-economic rank": 933,
-        "socio-economic cluster": 6
-    },
-    "אריק איינשטיין, קריית ביאליק": {
-        "amount of people": 6279,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.461,
-        "socio-economic rank": 933,
-        "socio-economic cluster": 6
-    },
-    "אהוד מנור, קריית ביאליק": {
-        "amount of people": 6279,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.461,
-        "socio-economic rank": 933,
-        "socio-economic cluster": 6
-    },
-    "שדרות רבין, קריית ביאליק": {
-        "amount of people": 4622,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 1.092,
-        "socio-economic rank": 1246.53125,
-        "socio-economic cluster": 7.375
-    },
-    "אצ\"ל, קריית ביאליק": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "נשר",
+        "street": "דרך הטכניון",
         "percent of religious": null,
-        "socio-economic index value": 1.464,
-        "socio-economic rank": 1427,
-        "socio-economic cluster": 8
+        "socio-economic index value": -0.014,
+        "socio-economic rank": 299.5,
+        "socio-economic cluster": 2.5
     },
-    "שדרות המייסדים, קריית ביאליק": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "נשר",
+        "street": "מעלה הגבורים",
         "percent of religious": null,
-        "socio-economic index value": 1.464,
-        "socio-economic rank": 1427,
-        "socio-economic cluster": 8
+        "socio-economic index value": -0.014,
+        "socio-economic rank": 299.5,
+        "socio-economic cluster": 2.5
     },
-    "שדרות הבנים, קריית ביאליק": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "נשר",
+        "street": "ציון",
         "percent of religious": null,
-        "socio-economic index value": 1.464,
-        "socio-economic rank": 1427,
-        "socio-economic cluster": 8
+        "socio-economic index value": -0.014,
+        "socio-economic rank": 299.5,
+        "socio-economic cluster": 2.5
     },
-    "דרך בגין, קריית ביאליק": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "נשר",
+        "street": "ההסתדרות",
         "percent of religious": null,
-        "socio-economic index value": 1.527,
-        "socio-economic rank": 1450,
-        "socio-economic cluster": 8
+        "socio-economic index value": -0.014,
+        "socio-economic rank": 299.5,
+        "socio-economic cluster": 2.5
     },
-    "יקינתון, קריית ביאליק": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.527,
-        "socio-economic rank": 1450,
-        "socio-economic cluster": 8
-    },
-    "שביל הפרדס, קריית ביאליק": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.527,
-        "socio-economic rank": 1450,
-        "socio-economic cluster": 8
-    },
-    "חיננית, קריית ביאליק": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.527,
-        "socio-economic rank": 1450,
-        "socio-economic cluster": 8
-    },
-    "הערמונים, קריית ביאליק": {
-        "amount of people": null,
-        "amount of religious": null,
-        "percent of religious": null,
-        "socio-economic index value": 1.069,
-        "socio-economic rank": 1237.5,
-        "socio-economic cluster": 7.375
-    },
-    "שבטי ישראל, קריית ביאליק": {
-        "amount of people": 4622,
-        "amount of religious": 0,
+    {
+        "city": "נשר",
+        "street": "הזית",
         "percent of religious": 0.0,
         "socio-economic index value": 0.477,
-        "socio-economic rank": 928.5,
-        "socio-economic cluster": 6.5
+        "socio-economic rank": 592.5,
+        "socio-economic cluster": 3.5
     },
-    "העצמאות, קריית ביאליק": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "נשר",
+        "street": "השיטה",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.405,
+        "socio-economic rank": 405.875,
+        "socio-economic cluster": 2.292
+    },
+    {
+        "city": "נשר",
+        "street": "החרוב",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.274,
+        "socio-economic rank": 271.806,
+        "socio-economic cluster": 1.531
+    },
+    {
+        "city": "נשר",
+        "street": "ששת הימים",
         "percent of religious": null,
-        "socio-economic index value": 0.642,
-        "socio-economic rank": 1029,
-        "socio-economic cluster": 7
+        "socio-economic index value": 0.479,
+        "socio-economic rank": 594.0,
+        "socio-economic cluster": 3.5
     },
-    "מנשה, קריית ביאליק": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "נשר",
+        "street": "החצב",
         "percent of religious": null,
-        "socio-economic index value": 0.623,
-        "socio-economic rank": 1020.5,
-        "socio-economic cluster": 7.0
+        "socio-economic index value": 0.479,
+        "socio-economic rank": 594.0,
+        "socio-economic cluster": 3.5
     },
-    "קרן היסוד, קריית ביאליק": {
-        "amount of people": 8964,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.675,
-        "socio-economic rank": 1043.0,
-        "socio-economic cluster": 6.875
-    },
-    "דפנה, קריית ביאליק": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "נשר",
+        "street": "הלוטם",
         "percent of religious": null,
-        "socio-economic index value": 0.726,
-        "socio-economic rank": 1074.0,
-        "socio-economic cluster": 7.0
+        "socio-economic index value": 0.479,
+        "socio-economic rank": 594.0,
+        "socio-economic cluster": 3.5
     },
-    "התאנים, קריית ביאליק": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "נשר",
+        "street": "הכלניות",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.228,
+        "socio-economic rank": 464.0,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "נשר",
+        "street": "יפה נוף",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.228,
+        "socio-economic rank": 464.0,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "נשר",
+        "street": "העליה",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.228,
+        "socio-economic rank": 464.0,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "נשר",
+        "street": "המגינים",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.228,
+        "socio-economic rank": 464.0,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "נשר",
+        "street": "דוכיפת",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.731,
+        "socio-economic rank": 713.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "נשר",
+        "street": "נחשון",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.731,
+        "socio-economic rank": 713.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "נשר",
+        "street": "התמר",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.731,
+        "socio-economic rank": 713.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "נשר",
+        "street": "האשל",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.731,
+        "socio-economic rank": 713.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "נשר",
+        "street": "התאנה",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.731,
+        "socio-economic rank": 713.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "לוי יוסף",
         "percent of religious": null,
-        "socio-economic index value": 0.605,
-        "socio-economic rank": 1012,
-        "socio-economic cluster": 7
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
     },
-    "דן, קריית ביאליק": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "קריית ביאליק",
+        "street": "חרושת",
         "percent of religious": null,
-        "socio-economic index value": 0.605,
-        "socio-economic rank": 1012,
-        "socio-economic cluster": 7
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
     },
-    "הפלמ\"ח, קריית ביאליק": {
-        "amount of people": 8964,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.505,
-        "socio-economic rank": 943.0,
-        "socio-economic cluster": 6.5
-    },
-    "שמעון, קריית ביאליק": {
-        "amount of people": 4622,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.312,
-        "socio-economic rank": 828,
-        "socio-economic cluster": 6
-    },
-    "הגפן, קריית ביאליק": {
-        "amount of people": 4342,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.697,
-        "socio-economic rank": 1058,
-        "socio-economic cluster": 7
-    },
-    "דרך עכו, קריית ביאליק": {
-        "amount of people": 10272,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.48,
-        "socio-economic rank": 928.5,
-        "socio-economic cluster": 6.5
-    },
-    "שדרות בן גוריון, קריית ביאליק": {
-        "amount of people": 4342,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.772,
-        "socio-economic rank": 1097.0,
-        "socio-economic cluster": 7.0
-    },
-    "סולד, קריית ביאליק": {
-        "amount of people": 5930,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.555,
-        "socio-economic rank": 967.5,
-        "socio-economic cluster": 6.5
-    },
-    "אפרים, קריית ביאליק": {
-        "amount of people": null,
-        "amount of religious": null,
+    {
+        "city": "קריית ביאליק",
+        "street": "מולר הנס",
         "percent of religious": null,
-        "socio-economic index value": 0.847,
-        "socio-economic rank": 1136,
-        "socio-economic cluster": 7
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
     },
-    "שדרות ויצמן, קריית ביאליק": {
-        "amount of people": 5930,
-        "amount of religious": 0,
+    {
+        "city": "קריית ביאליק",
+        "street": "שדרות ח\"ן",
         "percent of religious": 0.0,
-        "socio-economic index value": 0.264,
-        "socio-economic rank": 799,
-        "socio-economic cluster": 6
+        "socio-economic index value": -0.33,
+        "socio-economic rank": 154.5,
+        "socio-economic cluster": 1.5
     },
-    "שדרות ירושלים, קריית ביאליק": {
-        "amount of people": 5930,
-        "amount of religious": 0,
-        "percent of religious": 0.0,
-        "socio-economic index value": 0.264,
-        "socio-economic rank": 799,
-        "socio-economic cluster": 6
+    {
+        "city": "קריית ביאליק",
+        "street": "בעלי המלאכה",
+        "percent of religious": null,
+        "socio-economic index value": null,
+        "socio-economic rank": null,
+        "socio-economic cluster": null
     },
-    "קרן קיימת לישראל, קריית ביאליק": {
-        "amount of people": 5930,
-        "amount of religious": 0,
+    {
+        "city": "קריית ביאליק",
+        "street": "יוספטל גיורא",
         "percent of religious": 0.0,
-        "socio-economic index value": 0.264,
-        "socio-economic rank": 799,
-        "socio-economic cluster": 6
+        "socio-economic index value": -0.33,
+        "socio-economic rank": 154.5,
+        "socio-economic cluster": 1.5
     },
-    "העמקים, קריית ביאליק": {
-        "amount of people": 5930,
-        "amount of religious": 0,
+    {
+        "city": "קריית ביאליק",
+        "street": "עגנון ש\"י",
         "percent of religious": 0.0,
-        "socio-economic index value": 0.264,
-        "socio-economic rank": 799,
-        "socio-economic cluster": 6
+        "socio-economic index value": 0.033,
+        "socio-economic rank": 271.875,
+        "socio-economic cluster": 1.875
     },
-    "ההגנה, קריית ביאליק": {
-        "amount of people": 5930,
-        "amount of religious": 0,
+    {
+        "city": "קריית ביאליק",
+        "street": "ז'בוטינסקי",
         "percent of religious": 0.0,
-        "socio-economic index value": 0.264,
-        "socio-economic rank": 799,
-        "socio-economic cluster": 6
+        "socio-economic index value": -0.33,
+        "socio-economic rank": 154.5,
+        "socio-economic cluster": 1.5
     },
-    "הגליל, קריית ביאליק": {
-        "amount of people": 5930,
-        "amount of religious": 0,
+    {
+        "city": "קריית ביאליק",
+        "street": "חיים וייסבורג",
         "percent of religious": 0.0,
-        "socio-economic index value": 0.264,
-        "socio-economic rank": 799,
-        "socio-economic cluster": 6
+        "socio-economic index value": 0.033,
+        "socio-economic rank": 271.875,
+        "socio-economic cluster": 1.875
     },
-    "חרמון, קריית ביאליק": {
-        "amount of people": 5930,
-        "amount of religious": 0,
+    {
+        "city": "קריית ביאליק",
+        "street": "הפקאן",
         "percent of religious": 0.0,
-        "socio-economic index value": 0.264,
-        "socio-economic rank": 799,
-        "socio-economic cluster": 6
+        "socio-economic index value": 0.23,
+        "socio-economic rank": 466.5,
+        "socio-economic cluster": 3.0
     },
-    "כנען, קריית ביאליק": {
-        "amount of people": 5930,
-        "amount of religious": 0,
+    {
+        "city": "קריית ביאליק",
+        "street": "גוש חלב",
         "percent of religious": 0.0,
-        "socio-economic index value": 0.264,
-        "socio-economic rank": 799,
-        "socio-economic cluster": 6
+        "socio-economic index value": 0.23,
+        "socio-economic rank": 466.5,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "התל",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.172,
+        "socio-economic rank": 349.875,
+        "socio-economic cluster": 2.25
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "חוגלה",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.423,
+        "socio-economic rank": 473.375,
+        "socio-economic cluster": 2.75
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "נעמי שמר",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.23,
+        "socio-economic rank": 466.5,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "אריק איינשטיין",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.23,
+        "socio-economic rank": 466.5,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "אהוד מנור",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.23,
+        "socio-economic rank": 466.5,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "שדרות רבין",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.136,
+        "socio-economic rank": 155.12,
+        "socio-economic cluster": 0.918
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "אצ\"ל",
+        "percent of religious": null,
+        "socio-economic index value": 0.732,
+        "socio-economic rank": 713.5,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "שדרות המייסדים",
+        "percent of religious": null,
+        "socio-economic index value": 0.732,
+        "socio-economic rank": 713.5,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "שדרות הבנים",
+        "percent of religious": null,
+        "socio-economic index value": 0.732,
+        "socio-economic rank": 713.5,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "דרך בגין",
+        "percent of religious": null,
+        "socio-economic index value": 0.763,
+        "socio-economic rank": 725.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "יקינתון",
+        "percent of religious": null,
+        "socio-economic index value": 0.763,
+        "socio-economic rank": 725.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "שביל הפרדס",
+        "percent of religious": null,
+        "socio-economic index value": 0.763,
+        "socio-economic rank": 725.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "חיננית",
+        "percent of religious": null,
+        "socio-economic index value": 0.763,
+        "socio-economic rank": 725.0,
+        "socio-economic cluster": 4.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "הערמונים",
+        "percent of religious": null,
+        "socio-economic index value": 0.244,
+        "socio-economic rank": 287.078,
+        "socio-economic cluster": 1.719
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "שבטי ישראל",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.2,
+        "socio-economic rank": 360.75,
+        "socio-economic cluster": 2.5
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "העצמאות",
+        "percent of religious": null,
+        "socio-economic index value": 0.321,
+        "socio-economic rank": 514.5,
+        "socio-economic cluster": 3.5
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "מנשה",
+        "percent of religious": null,
+        "socio-economic index value": 0.236,
+        "socio-economic rank": 383.75,
+        "socio-economic cluster": 2.625
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "קרן היסוד",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.164,
+        "socio-economic rank": 247.812,
+        "socio-economic cluster": 1.625
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "דפנה",
+        "percent of religious": null,
+        "socio-economic index value": 0.287,
+        "socio-economic rank": 410.5,
+        "socio-economic cluster": 2.625
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "התאנים",
+        "percent of religious": null,
+        "socio-economic index value": 0.303,
+        "socio-economic rank": 506.0,
+        "socio-economic cluster": 3.5
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "דן",
+        "percent of religious": null,
+        "socio-economic index value": 0.303,
+        "socio-economic rank": 506.0,
+        "socio-economic cluster": 3.5
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "הפלמ\"ח",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.213,
+        "socio-economic rank": 368.0,
+        "socio-economic cluster": 2.5
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "שמעון",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.156,
+        "socio-economic rank": 414.0,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "הגפן",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.349,
+        "socio-economic rank": 529.0,
+        "socio-economic cluster": 3.5
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "דרך עכו",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.153,
+        "socio-economic rank": 332.0,
+        "socio-economic cluster": 2.375
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "שדרות בן גוריון",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.281,
+        "socio-economic rank": 406.5,
+        "socio-economic cluster": 2.625
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "סולד",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.172,
+        "socio-economic rank": 341.75,
+        "socio-economic cluster": 2.375
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "אפרים",
+        "percent of religious": null,
+        "socio-economic index value": 0.424,
+        "socio-economic rank": 568.0,
+        "socio-economic cluster": 3.5
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "שדרות ויצמן",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.132,
+        "socio-economic rank": 399.5,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "שדרות ירושלים",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.132,
+        "socio-economic rank": 399.5,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "קרן קיימת לישראל",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.132,
+        "socio-economic rank": 399.5,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "העמקים",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.132,
+        "socio-economic rank": 399.5,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "ההגנה",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.132,
+        "socio-economic rank": 399.5,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "הגליל",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.132,
+        "socio-economic rank": 399.5,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "חרמון",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.132,
+        "socio-economic rank": 399.5,
+        "socio-economic cluster": 3.0
+    },
+    {
+        "city": "קריית ביאליק",
+        "street": "כנען",
+        "percent of religious": 0.0,
+        "socio-economic index value": 0.132,
+        "socio-economic rank": 399.5,
+        "socio-economic cluster": 3.0
     }
-}
+]

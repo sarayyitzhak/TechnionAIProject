@@ -1,4 +1,5 @@
 import math
+import json
 import pandas as pd
 from Server.DataBuilder.Utils import write_to_file, write_dict_to_file
 
@@ -6,112 +7,182 @@ from Server.DataBuilder.Utils import write_to_file, write_dict_to_file
 # pip install openpyxl
 
 
-def str_col_to_int(col):
-    for i in range(len(col)):
-        if col[i].isnumeric():
-            col[i] = int(col[i])
-    return col
+class CbsDataBuilder:
+    def __init__(self, religious_config, transition_key_config, streets_config, ser_config, cities_config):
+        self.religious_config = religious_config
+        self.transition_key_config = transition_key_config
+        self.streets_config = streets_config
+        self.ser_config = ser_config
+        self.cities_config = cities_config
+        self.religious_df = None
+        self.transition_key_df = None
+        self.streets_df = None
+        self.ser_df = None
+        self.rel_by_street_df = None
+        self.ser_by_street_df = None
+        self.streets_dict = {}
+        self.data = []
+
+    def build_data(self):
+        self.get_data_frames()
+        self.prepare_data()
+        self.rel_by_street_df = self.join_data_frames(self.religious_df, self.religious_config)
+        self.ser_by_street_df = self.join_data_frames(self.ser_df, self.ser_config)
+        self.streets_df = self.streets_df.iloc[:, [0, 4]].copy()
+        self.init_street_dict()
+        self.add_religious_to_dict()
+        self.add_ser_to_dict()
+        self.data_dict_to_list()
+
+    def get_data_frames(self):
+        self.religious_df = self.get_data_frame(self.religious_config)
+        self.transition_key_df = self.get_data_frame(self.transition_key_config)
+        self.streets_df = self.get_data_frame(self.streets_config)
+        self.ser_df = self.get_data_frame(self.ser_config)
+
+    @staticmethod
+    def get_data_frame(config):
+        return pd.read_excel(config["file"], sheet_name=config["sheet_name"], skiprows=config["rows_to_skip"],
+                             usecols=config["columns"])
+
+    @staticmethod
+    def str_col_to_int(col):
+        for i in range(len(col)):
+            if col[i].isnumeric():
+                col[i] = int(col[i])
+        return col
+
+    def prepare_data(self):
+        self.ser_df.columns = self.ser_config["columns_names"]
+        self.religious_df.reset_index(drop=True)
+        for idx in [0, 2]:
+            self.transition_key_df.iloc[:, idx] = self.str_col_to_int(self.transition_key_df.iloc[:, idx])
+        for row in range(len(self.streets_df)):
+            self.streets_df.iloc[:, 0] = self.streets_df.iloc[:, 0].replace(self.cities_config["city_names_to_replace"]["old"],
+                                                                            self.cities_config["city_names_to_replace"]["new"])
+
+    def join_data_frames(self, df, df_config):
+        df_by_street_raw = df.merge(self.transition_key_df, how='left',
+                                           left_on=[df.keys()[0], df.keys()[2]],
+                                           right_on=[self.transition_key_df.keys()[0], self.transition_key_df.keys()[2]])
+        df_by_street_raw = df_by_street_raw.merge(self.streets_df, how='left',
+                                                        left_on=df_by_street_raw.keys()[12],
+                                                        right_on=self.streets_df.keys()[1])
+        df_by_street = df_by_street_raw.iloc[:, df_config["columns_idxes_to_use"]].copy()
+        x = df_by_street[df_by_street['רחובות עיקריים'].notna()].reset_index(drop=True)
+        return x
+
+    def init_street_dict(self, ):
+        for row in range(len(self.streets_df)):
+            city = self.streets_df.iloc[:, 0][row]
+            if city in self.cities_config["city_names"] and isinstance(self.streets_df.iloc[:, 1][row], str):
+                streets_list = self.get_streets(row)
+                for street in streets_list:
+                    key_in_dict = self.streets_dict.get((street, city))
+                    if key_in_dict is None:
+                        self.add_to_dict(street, city)
+
+    def get_streets(self, row):
+        streets_list = self.streets_df.iloc[:, 1][row].split(', ')
+        return [street.replace("שד", "שדרות") for street in streets_list]
+
+    def add_to_dict(self, street, city):
+        self.streets_dict[(street, city)] = {
+            "amount of people": None,
+            "amount of religious": None,
+            "socio-economic index value": None,
+            "socio-economic rank": None,
+            "socio-economic cluster": None,
+            "socio-economic counter": None
+        }
+
+    def add_religious_to_dict(self):
+        for row in range(len(self.rel_by_street_df)):
+            city = self.rel_by_street_df.iloc[:, 0][row]
+            streets = self.rel_by_street_df.iloc[:, 2][row]
+            if city in self.cities_config["city_names"] and isinstance(streets, str):
+                streets_list = self.get_streets_list(streets)
+                people_count = self.rel_by_street_df.iloc[:, 3][row]
+                religions_count = self.rel_by_street_df.iloc[:, 4][row]
+                if religions_count == '..':
+                    religions_count = 0
+                for street in streets_list:
+                    if self.streets_dict[(street, city)]["amount of people"] is None:
+                        self.init_rel_by_street(street, city)
+                    self.update_rel_by_street(street, city, people_count, religions_count)
+
+    def add_ser_to_dict(self):
+        for row in range(len(self.ser_by_street_df)):
+            city = self.ser_by_street_df.iloc[:, 0][row]
+            streets = self.ser_by_street_df.iloc[:, 4][row]
+            if city in self.cities_config["city_names"] and isinstance(streets, str):
+                streets_list = self.get_streets_list(streets)
+                index_value = self.ser_by_street_df.iloc[:, 1][row]
+                rank = self.ser_by_street_df.iloc[:, 2][row]
+                cluster = self.ser_by_street_df.iloc[:, 3][row]
+                for street in streets_list:
+                    if self.streets_dict[(street, city)]["socio-economic index value"] is None:
+                        self.init_ser_by_street(street, city)
+                    self.update_ser_by_street(street, city, index_value, rank, cluster)
+
+    def data_dict_to_list(self):
+        for street, city in self.streets_dict.keys():
+            value = self.streets_dict[(street, city)]
+            socio_economic_counter = value["socio-economic counter"]
+            percent_of_religious = None if value["amount of religious"] is None else round(
+                (value["amount of religious"] / value["amount of people"]) * 100, 2)
+            index_value_avg, rank_avg, cluster_avg = None, None, None
+            if socio_economic_counter is not None:
+                index_value_avg = round(value["socio-economic index value"] / socio_economic_counter, 3)
+                rank_avg = round(value["socio-economic rank"] / socio_economic_counter, 3)
+                cluster_avg = round(value["socio-economic cluster"] / socio_economic_counter, 3)
+
+            self.data.append({
+                "city": city,
+                "street": street,
+                "percent of religious": percent_of_religious,
+                "socio-economic index value": index_value_avg,
+                "socio-economic rank": rank_avg,
+                "socio-economic cluster": cluster_avg
+            })
+
+    @staticmethod
+    def get_streets_list(streets):
+        streets_list = streets.split(', ')
+        return [street.replace("שד", "שדרות") for street in streets_list]
+
+    def init_ser_by_street(self, street, city):
+        self.streets_dict[(street, city)]["socio-economic index value"] = 0
+        self.streets_dict[(street, city)]["socio-economic rank"] = 0
+        self.streets_dict[(street, city)]["socio-economic cluster"] = 0
+        self.streets_dict[(street, city)]["socio-economic counter"] = 0
+
+    def update_ser_by_street(self, street, city, index_value, rank, cluster):
+        previous_data = self.streets_dict[(street, city)]
+        self.streets_dict[(street, city)]["socio-economic index value"] = round(
+            (previous_data["socio-economic index value"] + index_value) / 2, 3)
+        self.streets_dict[(street, city)]["socio-economic rank"] = (previous_data["socio-economic rank"] + rank) / 2
+        self.streets_dict[(street, city)]["socio-economic cluster"] = (previous_data[
+                                                                           "socio-economic cluster"] + cluster) / 2
+        self.streets_dict[(street, city)]["socio-economic counter"] = previous_data["socio-economic counter"] + 1
+
+    def init_rel_by_street(self, street, city):
+        self.streets_dict[(street, city)]["amount of people"] = 0
+        self.streets_dict[(street, city)]["amount of religious"] = 0
+
+    def update_rel_by_street(self, street, city, people_count, religions_count):
+        previous_data = self.streets_dict[(street, city)]
+        self.streets_dict[(street, city)]["amount of people"] = previous_data["amount of people"] + people_count
+        self.streets_dict[(street, city)]["amount of religious"] = previous_data[
+                                                                       "amount of religious"] + religions_count
 
 
-def init_street_dict(area_by_key, cities, dict):
-    for row in range(len(area_by_key)):
-        if area_by_key.iloc[:, 0][row] in cities and isinstance(area_by_key.iloc[:, 1][row], str):
-            city = area_by_key.iloc[:, 0][row]
-            streets_list = area_by_key.iloc[:, 1][row].split(', ')
-            streets_list = [street.replace("שד", "שדרות") for street in streets_list]
-            for street in streets_list:
-                # key_in_dict = (street, city) in dict
-                key_in_dict = dict.get((street, city))
-                if key_in_dict is None:
-                    dict[(street, city)] = {
-                        "amount of people": None,
-                        "amount of religious": None,
-                        "percent of religious": None,
-                        "socio-economic index value": None,
-                        "socio-economic rank": None,
-                        "socio-economic cluster": None
-                    }
-    return dict
-
-
-def cbs_build_data():
-    cities = ['חיפה', 'טירת הכרמל', 'נשר', 'קריית אתא', 'קריית ביאליק', 'קריית ים', 'קריית מוצקין']
-    religious_by_street = []
-    data = {}
-    religious_by_area, ser_by_area, area_by_key = get_raw_data()
-    data = init_street_dict(area_by_key, cities, data)
-    religious_by_area = religious_by_area[religious_by_area['רחובות עיקריים'].notna()].reset_index(drop=True)
-    ser_by_area = ser_by_area[ser_by_area['רחובות עיקריים'].notna()].reset_index(drop=True)
-
-    for row in range(len(religious_by_area)):
-        if religious_by_area.iloc[:, 0][row] in cities and isinstance(religious_by_area.iloc[:, 2][row], str):
-            city = religious_by_area.iloc[:, 0][row]
-            streets_list = religious_by_area.iloc[:, 2][row].split(', ')
-            streets_list = [street.replace("שד", "שדרות") for street in streets_list]
-            people_count = religious_by_area.iloc[:, 3][row]
-            religions_count = religious_by_area.iloc[:, 4][row]
-            if religions_count == '..':
-                religions_count = 0
-            for street in streets_list:
-                if data[(street, city)]["amount of people"] is None:
-                    data[(street, city)]["amount of people"] = people_count
-                    data[(street, city)]["amount of religious"] = religions_count
-                    data[(street, city)]["percent of religious"] = round((religions_count / people_count) * 100, 2)
-                else:
-                    previous_data = data[(street, city)]
-                    data[(street, city)]["amount of people"] = previous_data["amount of people"] + people_count
-                    data[(street, city)]["amount of religious"] = previous_data["amount of religious"] + religions_count
-                    data[(street, city)]["percent of religious"] = round((data[(street, city)]["amount of religious"] / data[(street, city)]["amount of people"]) * 100, 2)
-
-    for row in range(len(ser_by_area)):
-        if ser_by_area.iloc[:, 0][row] in cities and isinstance(ser_by_area.iloc[:, 4][row], str):
-            city = ser_by_area.iloc[:, 0][row]
-            streets_list = ser_by_area.iloc[:, 4][row].split(', ')
-            streets_list = [street.replace("שד", "שדרות") for street in streets_list]
-            index_value = ser_by_area.iloc[:, 1][row]
-            rank = ser_by_area.iloc[:, 2][row]
-            cluster = ser_by_area.iloc[:, 3][row]
-            for street in streets_list:
-                if data[(street, city)]["socio-economic index value"] is None:
-                    data[(street, city)]["socio-economic index value"] = round(index_value, 3)
-                    data[(street, city)]["socio-economic rank"] = rank
-                    data[(street, city)]["socio-economic cluster"] = cluster
-                else:
-                    previous_data = data[(street, city)]
-                    data[(street, city)]["socio-economic index value"] = round((previous_data["socio-economic index value"] + index_value) / 2, 3)
-                    data[(street, city)]["socio-economic rank"] = (previous_data["socio-economic rank"] + rank) / 2
-                    data[(street, city)]["socio-economic cluster"] = (previous_data["socio-economic cluster"] + cluster) / 2
-
-    write_dict_to_file(data, "./Dataset/cbs-data.json")
-
-
-def get_raw_data():
-    religious_by_key = pd.read_excel("./CbsInfo/religious_population.xlsx", sheet_name="חרדים במחוזות, ביישובים ובאס",
-                                     engine='openpyxl', skiprows=9, usecols='B:G')
-    transition_key = pd.read_excel("./CbsInfo/transition_area_key.xlsx", engine='openpyxl',
-                                    usecols='B, C, E, G, H, J, K, M')
-    area_by_key = pd.read_excel("./CbsInfo/streets_by_area_key.xlsx", engine='openpyxl', usecols='A:F')
-    ser_by_key = pd.read_excel("./CbsInfo/socio_economic_rank_2015.xls", usecols='A:C, E:G')
-
-    ser_by_key.columns = ['סמל יישוב', 'שם יישוב', 'סמל א"ס', 'ערך מדד', 'דירוג', 'אשכול']
-    religious_by_key.reset_index(drop=True)
-    transition_key.iloc[:, 2] = str_col_to_int(transition_key.iloc[:, 2])
-    transition_key.iloc[:, 0] = str_col_to_int(transition_key.iloc[:, 0])
-    for row in range(len(area_by_key)):
-        area_by_key.iloc[:, 0] = area_by_key.iloc[:, 0].replace(['קריית מוצקין', 'קריית ים', 'קריית אתא'],
-                                                      ['קרית מוצקין', 'קרית ים', 'קרית אתא'])
-
-    religious_by_area_raw = religious_by_key.merge(transition_key, how='left',
-                                                   left_on=[religious_by_key.keys()[0], religious_by_key.keys()[2]],
-                                                   right_on=[transition_key.keys()[0], transition_key.keys()[2]])
-    religious_by_area_raw = religious_by_area_raw.merge(area_by_key, how='left',
-                                                        left_on=religious_by_area_raw.keys()[12],
-                                                        right_on=area_by_key.keys()[1])
-
-    ser_by_area_raw = ser_by_key.merge(transition_key, how='left', left_on= [ser_by_key.keys()[0], ser_by_key.keys()[2]], right_on=[transition_key.keys()[0], transition_key.keys()[2]])
-    ser_by_area_raw = ser_by_area_raw.merge(area_by_key, how='left',
-                                                        left_on=ser_by_area_raw.keys()[12],
-                                                        right_on=area_by_key.keys()[1])
-    return religious_by_area_raw.iloc[:, [14, 19, 18, 3, 4, 12]].copy(), ser_by_area_raw.iloc[:, [14, 3, 4, 5, 18, 19, 12]].copy(), area_by_key.iloc[:, [0, 4]].copy()
-
-
+def build_data_3():
+    try:
+        with open('./DataConfig/cbs-data-config.json', 'r', encoding='utf-8') as f:
+            config = json.load(f)
+            builder = CbsDataBuilder(config["religious"], config["transition"], config["streets"], config["ser"], config["cities"])
+            builder.build_data()
+            write_to_file(builder.data, config["output_path"])
+    except IOError:
+        print("Error")

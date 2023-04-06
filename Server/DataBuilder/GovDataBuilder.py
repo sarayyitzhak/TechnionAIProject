@@ -3,13 +3,6 @@ import urllib.request
 import json
 import math
 
-# "place_id": "ChIJNwkAq1i6HRURQ5cbulHEMR8",
-# "geo_location": {
-#     "lat": 32.7934217,
-#     "lng": 35.01110729999999
-# },
-# "type": "store"
-
 
 class GovDataBuilder:
 
