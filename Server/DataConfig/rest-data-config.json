@@ -1,5 +1,6 @@
 {
     "chrome_driver_path": "chromedriver",
+    "api_url": "https://www.rest.co.il/restaurants/",
     "web_paths": [
         {
             "path": "haifa",
