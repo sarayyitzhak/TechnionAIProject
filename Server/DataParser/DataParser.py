@@ -127,7 +127,7 @@ def parse_data():
 
     result['reviews_words'] = parse_reviews(google_df)
 
-    # result['city'], result['street'], result['religious_percent'], result['socio-economic_index_value'], result['socio-economic_rank'], result['socio-economic_cluster'] = parse_cbs(google_df, cbs_df)
+    result['city'], result['street'], result['religious_percent'], result['socio-economic_index_value'], result['socio-economic_rank'], result['socio-economic_cluster'] = parse_cbs(google_df, cbs_df)
 
     rest_places_df = google_places_df.loc[google_places_df['type'] == "restaurant"].reset_index(drop=True)
     store_places_df = google_places_df.loc[google_places_df['type'] == "store"].reset_index(drop=True)

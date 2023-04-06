@@ -2,6 +2,7 @@ from Server.DataParser.DataParser import *
 from Server.DataBuilder.CbsDataBuilder import *
 from Server.DataBuilder.GovDataBuilder import *
 from Server.Algo.ID3 import *
+from Server.Algo.ID3Experiments import *
 import pandas as pd
 import urllib.request
 import json
@@ -19,10 +20,13 @@ def main():
     # y_train = np.array(train_set['rating'].copy())
     # id3 = ID3(attributes_names, 500)
     # id3.fit(x_train, y_train)
-    x=0
+    id_experiments = ID3Experiments()
+    id_experiments.basic_experiment()
+    # cbs_build_data()
     # parse_data()
-    build_data_3()
 
 
 if __name__ == '__main__':
+    start = time.time()
     main()
+    print("TOTAL TIME: " + str(time.time() - start) + " seconds")

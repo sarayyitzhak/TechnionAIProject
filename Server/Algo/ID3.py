@@ -33,7 +33,7 @@ class ID3:
             var_sum += (mean_of_right_child - label) ** 2
         var_right = var_sum
 
-        var = ((len_left / total_len) * var_left) + ((len_right / total_len) * var_right)
+        var = ((1 / total_len) * var_left) + ((1 / total_len) * var_right)
         return var
 
     def partition(self, rows, labels, question: Question):
@@ -41,7 +41,7 @@ class ID3:
         assert len(rows) == len(labels), 'Rows size should be equal to labels size.'
 
         for idx, row in enumerate(rows):
-            if type(row[question.column_idx]) == float and math.isnan(row[question.column_idx]):
+            if row[question.column_idx] is None:
                 true_rows.append(row)
                 true_labels.append(float(labels[idx]))
                 false_rows.append(row)
@@ -69,7 +69,7 @@ class ID3:
 
         for idx, label_name in enumerate([name for name in self.label_names if name != self.target_attribute]):
             for val in unique_vals(rows, idx):
-                if type(val) == float and math.isnan(val):
+                if val is None:
                     continue
                 question = Question(label_name, idx, val)
                 variance, true_rows, true_labels, false_rows, false_labels = self.partition(rows, labels, question)
