@@ -1,5 +1,6 @@
 import math
 import numpy as np
+import matplotlib.pyplot as plt
 
 from Server.Algo.DecisonTree import *
 
@@ -11,11 +12,10 @@ class ID3:
         self.tree_root = None
         self.used_features = set()
         self.min_for_pruning = min_for_pruning
+        self.depth = 0
 
     @staticmethod
-    def variance_reduction(left, left_labels, right, right_labels):
-        assert (len(left) == len(left_labels)) and (len(right) == len(right_labels)), \
-            'The split of current node is not right, rows size should be equal to labels size.'
+    def variance_reduction(left_labels, right_labels):
         len_left = len(left_labels)
         len_right = len(right_labels)
         total_len = len_right + len_left
@@ -23,22 +23,15 @@ class ID3:
             return math.inf
         mean_of_left_child = sum(left_labels) / len_left
         mean_of_right_child = sum(right_labels) / len_right
-        var_sum = 0
 
-        for label in left_labels:
-            var_sum += (mean_of_left_child - label) ** 2
-        var_left = var_sum
-        var_sum = 0
-        for label in right_labels:
-            var_sum += (mean_of_right_child - label) ** 2
-        var_right = var_sum
+        var_left = sum([(mean_of_left_child - label) ** 2 for label in left_labels])
+        var_right = sum([(mean_of_right_child - label) ** 2 for label in right_labels])
 
-        var = ((1 / total_len) * var_left) + ((1 / total_len) * var_right)
-        return var
+        return ((len_left / total_len) * var_left) + ((len_right / total_len) * var_right)
 
     def partition(self, rows, labels, question: Question):
         variance, true_rows, true_labels, false_rows, false_labels = None, [], [], [], []
-        assert len(rows) == len(labels), 'Rows size should be equal to labels size.'
+        left_labels, right_labels = [], []
 
         for idx, row in enumerate(rows):
             if row[question.column_idx] is None:
@@ -49,15 +42,17 @@ class ID3:
             elif question.match(row):
                 true_rows.append(row)
                 true_labels.append(float(labels[idx]))
+                left_labels.append(float(labels[idx]))
             else:
                 false_rows.append(row)
                 false_labels.append(float(labels[idx]))
+                right_labels.append(float(labels[idx]))
 
         true_rows = np.array(true_rows)
         true_labels = np.array(true_labels)
         false_rows = np.array(false_rows)
         false_labels = np.array(false_labels)
-        variance = self.variance_reduction(true_rows, true_labels, false_rows, false_labels)
+        variance = self.variance_reduction(true_labels, false_labels)
 
         return variance, true_rows, true_labels, false_rows, false_labels
 
@@ -101,28 +96,13 @@ class ID3:
         self.tree_root = self.build_tree(x_train, y_train)
 
     def predict_sample(self, row, node: DecisionNode or Leaf = None):
-        """
-        Predict the most likely class for single sample in subtree of the given node.
-        :param row: vector of shape (1,D).
-        :return: The row prediction.
-        """
-        # TODO: Implement ID3 class prediction for set of data.
-        #   - Decide whether to follow the true-branch or the false-branch.
-        #   - Compare the feature / value stored in the node, to the example we're considering.
-
         if node is None:
             node = self.tree_root
 
         if isinstance(node, Leaf):
-            if len(node.predictions) == 1:
-                return list(node.predictions.keys())[0]
-            else: # avg of all results
-                avg = 0
-                sum_k = 0
-                for key, value in node.predictions.items():
-                    avg += float(key) * value
-                    sum_k += value
-                return avg / sum_k
+            avg = sum([float(key) * value for key, value in node.predictions.items()])
+            sum_k = sum(node.predictions.values())
+            return avg / sum_k
 
         if isinstance(node, DecisionNode):
             branch = node.true_branch if node.question.match(row) else node.false_branch

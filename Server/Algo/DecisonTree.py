@@ -70,7 +70,7 @@ class Question:
         if is_numeric(self.value):
             condition = ">="
             val_str = '{:.2f}'.format(self.value)
-        return "%s \n %s" % (self.column, val_str)
+        return "%s  %s" % (self.column, val_str)
 
 
 class Leaf:
