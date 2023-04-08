@@ -32,13 +32,13 @@ def get_cbs_data(cbs_data: dict, city, street, street_reversed):
                 for cbs_key in cbs_data.keys():
                     if cbs_key[1] == city:
                         if max(textdistance.strcmp95(cbs_key[0], street), textdistance.strcmp95(cbs_key[0], street_reversed)) > 0.9:
-                            data = cbs_data[cbs_key]
+                            data = cbs_data.get(cbs_key)
 
         if data is not None:
-            religious_percent = data["percent of religious"]
-            se_index = data["socio-economic index value"]
-            se_rank = data["socio-economic rank"]
-            se_cluster = data["socio-economic cluster"]
+            religious_percent = None if math.isnan(data["percent of religious"]) else data["percent of religious"]
+            se_index = None if math.isnan(data["socio-economic index value"]) else data["socio-economic index value"]
+            se_rank = None if math.isnan(data["socio-economic rank"]) else data["socio-economic rank"]
+            se_cluster = None if math.isnan(data["socio-economic cluster"]) else data["socio-economic cluster"]
     return religious_percent, se_index, se_rank, se_cluster
 
 
@@ -92,6 +92,50 @@ def get_near_by_places(point, df):
             if point_distance < 0.1:
                 place_100_count += 1
     return place_500_count, place_100_count
+
+
+def fill_missing_data_by_nearby_streets(result, col_name):
+    blank_rows, full_rows = {}, {}
+    blank, idx_blank, full, place_lng_blank = [], [], [], []
+    place_lat_blank, place_lng_full, place_lat_full = [], [], []
+    for idx, val in enumerate(result[col_name]):
+        if val is None:
+            blank.append(val)
+            idx_blank.append(idx)
+            place_lng_blank.append(result["lng"][idx])
+            place_lat_blank.append(result["lat"][idx])
+        else:
+            full.append(val)
+            place_lng_full.append(result["lng"][idx])
+            place_lat_full.append(result["lat"][idx])
+
+    blank_rows["value"] = blank
+    blank_rows["idx"] = idx_blank
+    blank_rows["sum"] = [None] * len(blank_rows["value"])
+    blank_rows["num"] = [None] * len(blank_rows["value"])
+    blank_rows["lng"] = place_lng_blank
+    blank_rows["lat"] = place_lat_blank
+    full_rows["value"] = full
+    full_rows["lng"] = place_lng_full
+    full_rows["lat"] = place_lat_full
+    for blank_row in range(len(blank_rows["value"])):
+        blank_point = (blank_rows["lat"][blank_row], blank_rows["lng"][blank_row])
+        for full_row in range(len(full_rows["value"])):
+            full_point = (full_rows["lat"][full_row], full_rows["lng"][full_row])
+            point_distance = mpu.haversine_distance(blank_point, full_point)
+            if point_distance < 0.5:
+                if blank_rows["sum"][blank_row] is None:
+                    blank_rows["sum"][blank_row] = 0
+                    blank_rows["num"][blank_row] = 0
+                blank_rows["sum"][blank_row] += full_rows["value"][full_row]
+                blank_rows["num"][blank_row] += 1
+        if blank_rows["sum"][blank_row] is not None:
+            result[col_name][blank_rows["idx"][blank_row]] = round(blank_rows["sum"][blank_row] / blank_rows["num"][blank_row], 3)
+
+
+def cbs_fill_missing_data(result):
+    for col in ["religious_percent", "socio-economic_index_value", "socio-economic_rank", "socio-economic_cluster"]:
+        fill_missing_data_by_nearby_streets(result, col)
 
 
 def distance(s1, s2):
@@ -150,6 +194,16 @@ def parse_data():
         result["rest_100"].append(rest_100_count)
         result["bus_station_500"].append(bus_station_500_count)
         result["bus_station_100"].append(bus_station_100_count)
+
+
+    result["lat"] = []
+    result["lng"] = []
+    for row in range(len(google_df)):
+        g_point_lat_lng = google_df["address"][row]["geo_location"]
+        result["lat"].append(g_point_lat_lng["lat"])
+        result["lng"].append(g_point_lat_lng["lng"])
+
+    cbs_fill_missing_data(result)
 
     common_words = {}
     for r_name in rest_df['name']:
