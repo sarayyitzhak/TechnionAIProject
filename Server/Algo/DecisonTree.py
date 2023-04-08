@@ -1,6 +1,28 @@
 import numbers
 
 
+def common_activity_hours(value1, value2):
+    interval_count = len(value1) + len(value2)
+    if interval_count == 0 or (-1, -1) in value1 or (-1, -1) in value2:
+        return True
+    elif len(value1) == interval_count or len(value2) == interval_count:
+        return False
+    else:
+        total_minutes = sum([val[1] - val[0] for val in (value1 + value2)])
+        interval1 = [[val[0], val[1]] for val in value1]
+        interval2 = [[val[0], val[1]] for val in value2]
+        interval_intersection = [x for x in (get_intersection(y, z) for y in interval1 for z in interval2) if x is not None]
+        common_sum = sum([x[1] - x[0] for x in interval_intersection])
+        common = (common_sum * 2) / total_minutes
+        return common > 0.8
+
+
+def get_intersection(interval1, interval2):
+    new_min = max(interval1[0], interval2[0])
+    new_max = min(interval1[1], interval2[1])
+    return [new_min, new_max] if new_min <= new_max else None
+
+
 def are_hours_contained(value1, value2):
     # check if value2 is contained in value1
     is_contained = False
@@ -53,10 +75,9 @@ class Question:
         # Compare the feature value in an example to the
         # feature value in this question.
         val = example[self.column_idx]
-        if type(val) == list:
-            if self.column_idx in range(16, 23):
-                # case of open hours
-                return are_hours_contained(self.value, val)
+        if type(val) == tuple:
+            # case of open hours
+            return common_activity_hours(self.value, val)
         elif is_numeric(val):
             return val >= self.value
         else:
