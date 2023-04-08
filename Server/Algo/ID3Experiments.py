@@ -30,8 +30,6 @@ class ID3Experiments:
         train_set.drop(unneeded_labels, axis='columns', inplace=True)
         # for col in bool_cols:
         #     train_set[col] = train_set[col].apply(lambda x: False if np.isnan(x) else x)
-        for col in activity_hours_cols:
-            train_set[col] = train_set[col].apply(lambda x: tuple([(val["open"], val["close"]) for val in ast.literal_eval(x)]))
         train_set = train_set.replace({np.nan: None})
         msk = np.random.rand(len(train_set)) < 0.9
         train = train_set[msk]

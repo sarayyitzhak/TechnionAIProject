@@ -69,11 +69,11 @@ class GoogleDataBuilder:
         str_keys = ['place_id', 'website', 'name']
         num_keys = ['rating', 'price_level', 'user_ratings_total']
         for key in bool_keys:
-            data[key] = None if math.isnan(details[key]) else bool(details[key])
+            data[key] = None if key not in details or math.isnan(details[key]) else bool(details[key])
         for key in str_keys:
-            data[key] = None if type(details[key]) is not str else details[key]
+            data[key] = None if key not in details or type(details[key]) is not str else details[key]
         for key in num_keys:
-            data[key] = None if math.isnan(details[key]) else details[key]
+            data[key] = None if key not in details or math.isnan(details[key]) else details[key]
 
         data["address"] = self.get_address(details)
 
@@ -111,23 +111,27 @@ class GoogleDataBuilder:
     @staticmethod
     def get_activity_hours(details):
         activity_hours = {key: [] for key in range(7)}
-        if type(details["opening_hours"]) is dict:
+        if "opening_hours" in details and type(details["opening_hours"]) is dict:
             periods = details["opening_hours"]["periods"]
             if "close" not in periods[0]:
                 for day in range(7):
-                    activity_hours[day].append({'open': -1, 'close': -1})
+                    activity_hours[day] = (-1, -1)
             else:
                 for period in periods:
                     day = period["open"]["day"]
                     open_total_minutes = Time(period["open"]["time"]).get_total_minutes()
                     close_total_minutes = Time(period["close"]["time"]).get_total_minutes()
                     close_total_minutes += 0 if open_total_minutes < close_total_minutes else Time.ONE_DAY
-                    activity_hours[day].append({"open": open_total_minutes, "close": close_total_minutes})
+                    current_activity_hours = [math.inf, -math.inf] if activity_hours[day] == () else activity_hours[day]
+                    open_hours = min(open_total_minutes, current_activity_hours[0])
+                    close_hours = max(close_total_minutes, current_activity_hours[1])
+                    activity_hours[day] = [open_hours, close_hours]
+
         return activity_hours
 
     @staticmethod
     def get_reviews(details):
-        return None if type(details["reviews"]) is not list else [review["text"] for review in details["reviews"]]
+        return None if "reviews" not in details or type(details["reviews"]) is not list else [review["text"] for review in details["reviews"]]
 
 
 def google_build_data():
