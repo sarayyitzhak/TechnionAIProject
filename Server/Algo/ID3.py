@@ -1,18 +1,17 @@
 import math
 import numpy as np
-import matplotlib.pyplot as plt
 
 from Server.Algo.DecisonTree import *
 
 
 class ID3:
-    def __init__(self, label_names: list, min_for_pruning=0, target_attribute='rating'):
+    def __init__(self, label_names: list, min_for_pruning=0, max_depth=10, target_attribute='rating'):
         self.label_names = label_names
         self.target_attribute = target_attribute
         self.tree_root = None
         self.used_features = set()
         self.min_for_pruning = min_for_pruning
-        self.depth = 0
+        self.max_depth = max_depth
 
     @staticmethod
     def variance_reduction(left_labels, right_labels):
@@ -21,17 +20,19 @@ class ID3:
         total_len = len_right + len_left
         if len_right == 0 or len_left == 0:
             return math.inf
-        mean_of_left_child = sum(left_labels) / len_left
-        mean_of_right_child = sum(right_labels) / len_right
+        mean_of_left_child = np.mean(left_labels)
+        mean_of_right_child = np.mean(right_labels)
 
-        var_left = sum([(mean_of_left_child - label) ** 2 for label in left_labels])
-        var_right = sum([(mean_of_right_child - label) ** 2 for label in right_labels])
+        var_left = np.mean((left_labels - mean_of_left_child) ** 2)
+        var_right = np.mean((right_labels - mean_of_right_child) ** 2)
+        #
+        # var_left = sum([(mean_of_left_child - label) ** 2 for label in left_labels])
+        # var_right = sum([(mean_of_right_child - label) ** 2 for label in right_labels])
 
         return ((len_left / total_len) * var_left) + ((len_right / total_len) * var_right)
 
     def partition(self, rows, labels, question: Question):
         variance, true_rows, true_labels, false_rows, false_labels = None, [], [], [], []
-        left_labels, right_labels = [], []
 
         for idx, row in enumerate(rows):
             if row[question.column_idx] is None:
@@ -42,11 +43,9 @@ class ID3:
             elif question.match(row):
                 true_rows.append(row)
                 true_labels.append(float(labels[idx]))
-                left_labels.append(float(labels[idx]))
             else:
                 false_rows.append(row)
                 false_labels.append(float(labels[idx]))
-                right_labels.append(float(labels[idx]))
 
         true_rows = np.array(true_rows)
         true_labels = np.array(true_labels)
@@ -79,16 +78,16 @@ class ID3:
 
         return best_var, best_question, best_true_rows, best_true_labels, best_false_rows, best_false_labels
 
-    def build_tree(self, rows, labels):
-        leaf = Leaf(rows, labels)
+    def build_tree(self, rows, labels, depth=0):
+        leaf = Leaf(labels)
 
-        if len(rows) <= self.min_for_pruning or max(leaf.predictions) - min(leaf.predictions) <= 0.3:
+        if len(rows) <= self.min_for_pruning or depth >= self.max_depth or leaf.mse < 0.1:
             return leaf
 
         best_partition = self.find_best_split(rows, labels)
         best_question = best_partition[1]
-        true_branch = self.build_tree(best_partition[2], best_partition[3])
-        false_branch = self.build_tree(best_partition[4], best_partition[5])
+        true_branch = self.build_tree(best_partition[2], best_partition[3], depth + 1)
+        false_branch = self.build_tree(best_partition[4], best_partition[5], depth + 1)
 
         return DecisionNode(best_question, true_branch, false_branch)
 
@@ -100,9 +99,7 @@ class ID3:
             node = self.tree_root
 
         if isinstance(node, Leaf):
-            avg = sum([float(key) * value for key, value in node.predictions.items()])
-            sum_k = sum(node.predictions.values())
-            return avg / sum_k
+            return node.mean
 
         if isinstance(node, DecisionNode):
             branch = node.true_branch if node.question.match(row) else node.false_branch

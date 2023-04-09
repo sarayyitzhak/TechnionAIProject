@@ -1,4 +1,5 @@
 import numbers
+import numpy as np
 
 
 def common_activity_hours(value1, value2):
@@ -28,15 +29,6 @@ def common_reviews(review1, review2):
             common += 1
             words.append(word)
     return common, words
-
-
-def class_counts(rows, labels):
-    counts = {cls: 0 for cls in set(labels)}  # a dictionary of label -> count.
-    for idx, x in enumerate(rows):
-        # in our dataset format, the label is always the last column
-        label = labels[idx]
-        counts[label] += 1
-    return counts
 
 
 def is_numeric(value):
@@ -74,21 +66,23 @@ class Question:
         # the question in a readable format.
         condition = "=="
         val_str = str(self.value)
+        if type(self.value) == tuple:
+            condition = "∩"
         if is_numeric(self.value):
             condition = ">="
             val_str = '{:.2f}'.format(self.value)
-        return "%s  %s" % (self.column, val_str)
+        return "%s %s %s" % (self.column, condition, val_str)
 
 
 class Leaf:
 
-    def __init__(self, rows, labels):
-        self.predictions = class_counts(rows, labels)
+    def __init__(self, labels):
+        self.size = len(labels)
+        self.mean = np.mean(labels)
+        self.mse = np.mean((labels - self.mean) ** 2)
 
     def __str__(self) -> str:
-        pred = self.predictions
-        pred_str = ''.join(f'{c} : {pred[c]} \n' for c in pred.keys())
-        return pred_str
+        return "{:.2f} [{}] ({:.2f})".format(self.mean, self.size, self.mse)
 
 
 class DecisionNode:

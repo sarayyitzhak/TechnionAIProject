@@ -10,7 +10,7 @@ class ID3Experiments:
         pass
 
     def basic_experiment(self):
-        unneeded_labels = ["name", "user_ratings_total", "reviews_words", "city", "street"]
+        unneeded_labels = ["name", "user_ratings_total", "reviews_words", "city", "street", "lat", "lng"]
         attributes_names = list(pd.read_csv("./Dataset/data.csv", delimiter=",", dtype=str, nrows=1).keys())
 
         bool_cols = ['dine_in', 'delivery', 'reservable', 'serves_beer', 'serves_breakfast', 'serves_brunch',
@@ -27,11 +27,12 @@ class ID3Experiments:
         #     f = len([x for x in (train_set[col] == False) if x == True])
         #     print(col + " TRUE: " + str(t) + " FALSE: " + str(f) + " BLANK: " + str(1414 - t - f))
 
+        # train_set = train_set[train_set['user_ratings_total'] > 2].reset_index(drop=True)
         train_set.drop(unneeded_labels, axis='columns', inplace=True)
         # for col in bool_cols:
         #     train_set[col] = train_set[col].apply(lambda x: False if np.isnan(x) else x)
         for col in activity_hours_cols:
-            train_set[col] = train_set[col].apply(lambda x: () if len(eval(x)) == 0 else (eval(x)[0], eval(x)[1]))
+            train_set[col] = train_set[col].apply(lambda x: None if len(eval(x)) == 0 else (eval(x)[0], eval(x)[1]))
 
         train_set = train_set.replace({np.nan: None})
         msk = np.random.rand(len(train_set)) < 0.9
@@ -41,21 +42,19 @@ class ID3Experiments:
         y_train = np.array(train['rating'].copy())
         x_test = np.array(test.drop('rating', axis=1).copy())
         y_test = np.array(test['rating'].copy())
-        id3 = ID3(attributes_names, 10)
+        id3 = ID3(attributes_names, 3, 8)
         id3.fit(x_train, y_train)
         self.print_tree(id3.tree_root)
         preds = id3.predict(x_test)
 
         print("\n\nPreds: " + str([(y_test[idx], preds[idx]) for idx in range(len(preds))]))
-        print("Acc: " + str(100 * sum([math.fabs(y_test[idx] - preds[idx]) for idx in range(len(preds))]) / len(preds)))
+        print("Acc: {:.2f}%".format(100 * (1 - (np.mean(np.abs(y_test - preds)) / 5))))
 
     def print_tree(self, node, level=0):
         if isinstance(node, Leaf):
-            avg = sum([float(key) * value for key, value in node.predictions.items()])
-            sum_k = sum(node.predictions.values())
-            print(' ' * 4 * level + '-> ' + str(avg / sum_k))
+            print(' ' * 4 * level + str(level) + '-> ' + str(node))
 
         if isinstance(node, DecisionNode):
             self.print_tree(node.true_branch, level + 1)
-            print(' ' * 4 * level + '-> ' + str(node))
+            print(' ' * 4 * level + str(level) + '-> ' + str(node))
             self.print_tree(node.false_branch, level + 1)
