@@ -5,6 +5,7 @@ from Server.DataBuilder.Utils import write_to_file
 import time
 import json
 import math
+import pandas as pd
 
 
 class GoogleDataBuilder:
@@ -66,16 +67,19 @@ class GoogleDataBuilder:
         bool_keys = ['dine_in', 'delivery', 'reservable', 'serves_beer', 'serves_breakfast', 'serves_brunch',
                    'serves_dinner', 'serves_lunch', 'serves_vegetarian_food', 'serves_wine', 'takeout',
                    'wheelchair_accessible_entrance', 'curbside_pickup']
-        str_keys = ['place_id', 'website', 'name']
+        str_keys = ['place_id', 'name']
         num_keys = ['rating', 'price_level', 'user_ratings_total']
+        not_none_keys = ['website']
         for key in bool_keys:
-            data[key] = None if key not in details or math.isnan(details[key]) else bool(details[key])
+            data[key] = self.get_bool_value(details, key)
         for key in str_keys:
-            data[key] = None if key not in details or type(details[key]) is not str else details[key]
+            data[key] = self.get_str_value(details, key)
         for key in num_keys:
-            data[key] = None if key not in details or math.isnan(details[key]) else details[key]
+            data[key] = self.get_num_value(details, key)
+        for key in not_none_keys:
+            data[key] = self.get_not_none_value(details, key)
 
-        data["address"] = self.get_address(details)
+        data.update(self.get_address(details))
 
         activity_hours = self.get_activity_hours(details)
         data['sunday_activity_hours'] = activity_hours[0]
@@ -89,6 +93,22 @@ class GoogleDataBuilder:
         data["reviews"] = self.get_reviews(details)
 
         return data
+
+    @staticmethod
+    def get_bool_value(details, key):
+        return None if key not in details or math.isnan(details[key]) else bool(details[key])
+
+    @staticmethod
+    def get_str_value(details, key):
+        return None if key not in details or type(details[key]) is not str else details[key]
+
+    @staticmethod
+    def get_num_value(details, key):
+        return None if key not in details or math.isnan(details[key]) else details[key]
+
+    @staticmethod
+    def get_not_none_value(details, key):
+        return key in details and type(details[key]) is str
 
     @staticmethod
     def get_address(details):
@@ -115,14 +135,14 @@ class GoogleDataBuilder:
             periods = details["opening_hours"]["periods"]
             if "close" not in periods[0]:
                 for day in range(7):
-                    activity_hours[day] = (-1, -1)
+                    activity_hours[day] = [-1, -1]
             else:
                 for period in periods:
                     day = period["open"]["day"]
                     open_total_minutes = Time(period["open"]["time"]).get_total_minutes()
                     close_total_minutes = Time(period["close"]["time"]).get_total_minutes()
                     close_total_minutes += 0 if open_total_minutes < close_total_minutes else Time.ONE_DAY
-                    current_activity_hours = [math.inf, -math.inf] if activity_hours[day] == () else activity_hours[day]
+                    current_activity_hours = [math.inf, -math.inf] if len(activity_hours[day]) == 0 else activity_hours[day]
                     open_hours = min(open_total_minutes, current_activity_hours[0])
                     close_hours = max(close_total_minutes, current_activity_hours[1])
                     activity_hours[day] = [open_hours, close_hours]
@@ -139,8 +159,14 @@ def google_build_data():
         with open('./DataConfig/google-data-config.json', 'r', encoding='utf-8') as f:
             config = json.load(f)
             builder = GoogleDataBuilder(config["api_key"], config["locations"])
-            builder.build_data()
-            write_to_file(builder.data, config["output_path"])
-            write_to_file(builder.places, config["output_places_path"])
+            # builder.build_data()
+            # write_to_file(builder.data, config["output_path"])
+            # write_to_file(builder.places, config["output_places_path"])
+            d = json.load(open('./Dataset/full-google-data.json', 'r', encoding='utf-8'))
+            data = []
+            for d1 in d:
+                if "rating" in d1:
+                    data.append(builder.get_data_details(d1))
+            write_to_file(data, config["output_path"])
     except IOError:
         print("Error")

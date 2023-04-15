@@ -25,9 +25,6 @@ class ID3:
 
         var_left = np.mean((left_labels - mean_of_left_child) ** 2)
         var_right = np.mean((right_labels - mean_of_right_child) ** 2)
-        #
-        # var_left = sum([(mean_of_left_child - label) ** 2 for label in left_labels])
-        # var_right = sum([(mean_of_right_child - label) ** 2 for label in right_labels])
 
         return ((len_left / total_len) * var_left) + ((len_right / total_len) * var_right)
 

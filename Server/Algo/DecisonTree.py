@@ -1,5 +1,10 @@
 import numbers
 import numpy as np
+import mpu
+
+
+def is_closes_places(value1, value2):
+    return location_distance(value1, value2) < 0.3
 
 
 def common_activity_hours(value1, value2):
@@ -31,6 +36,10 @@ def common_reviews(review1, review2):
     return common, words
 
 
+def location_distance(p1, p2):
+    return mpu.haversine_distance(p1, p2)
+
+
 def is_numeric(value):
     if type(value) is bool:
         return False
@@ -53,7 +62,9 @@ class Question:
         # Compare the feature value in an example to the
         # feature value in this question.
         val = example[self.column_idx]
-        if type(val) == tuple:
+        if self.column == "geo_location":
+            return is_closes_places(self.value, val)
+        elif type(val) == tuple:
             # case of open hours
             return common_activity_hours(self.value, val)
         elif is_numeric(val):

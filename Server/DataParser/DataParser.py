@@ -3,285 +3,272 @@ import pandas as pd
 import numpy as np
 import textdistance
 import time
+import json
 import mpu
 
-cities_list = ['חיפה', 'טירת הכרמל', 'נשר', 'קריית אתא', 'קריית ביאליק', 'קריית ים', 'קריית מוצקין']
+RESTAURANT = "restaurant"
+STORE = "store"
+BUS_STATION = "bus_station"
+PLACE_KEYS = [RESTAURANT, STORE, BUS_STATION]
 
 
-def parse_bool_col(df, col):
-    return [None if math.isnan(df[col][row]) else bool(df[col][row]) for row in range(len(df))]
+class DataParser:
 
+    def __init__(self, config):
+        self.data_set_paths = config["data_set_paths"]
+        self.global_fields = {field["type"]: field["name"] for field in config["global_fields"]}
+        self.google_config = config["google_config"]
+        self.cbs_config = config["cbs_config"]
+        self.places_config = config["places_config"]
+        self.rest_config = config["rest_config"]
+        self.output_path = config["output_path"]
+        self.google_df = None
+        self.rest_data = {}
+        self.cbs_data = {}
+        self.places_data = {place_key: [] for place_key in PLACE_KEYS}
+        self.common_words_strong = None
+        self.common_words_weak = None
+        self.data = {}
 
-def parse_not_none_col(df, col):
-    return [df[col][row] is not None for row in range(len(df))]
+    def parse_data(self):
+        self.get_raw_data()
+        self.get_helper_data()
+        self.prepare_data()
+        self.fill_data()
 
+    def fill_missing_data(self):
+        self.fill_cbs_missing_data()
 
-def copy_column(df, col):
-    return [df[col][row] for row in range(len(df))]
+    def save_data(self):
+        pd.DataFrame(self.data).to_csv(self.output_path, index=False, encoding='utf-8-sig')
 
+    def get_raw_data(self):
+        self.get_google_data()
+        self.get_rest_data()
+        self.get_cbs_data()
+        self.get_places_data()
 
-def get_cbs_data(cbs_data: dict, city, street, street_reversed):
-    religious_percent, se_index, se_rank, se_cluster = None, None, None, None
-    if city is not None and street is not None:
+    def get_google_data(self):
+        self.google_df = pd.read_json(self.data_set_paths["google"]).replace({np.nan: None})
+        for field in self.google_config["fields"]:
+            field_name = field["name"]
+            field_type = field["type"]
+            if field_type == "BOOL":
+                self.google_df[field_name] = self.google_df[field_name].apply(self.parse_bool_field)
+            elif field_type == "REVIEWS":
+                self.google_df[field_name] = self.google_df[field_name].apply(self.parse_reviews_field)
+            elif field_type == "GEO_LOCATION":
+                self.google_df[field_name] = self.google_df[field_name].apply(self.parse_geo_location_field)
+
+    def get_rest_data(self):
+        rest_df = pd.read_json(self.data_set_paths["rest"])
+
+        for row in range(len(rest_df)):
+            city = rest_df[self.global_fields["CITY"]][row]
+            if city not in self.rest_data:
+                self.rest_data[city] = []
+            self.rest_data[city].append(rest_df.iloc[row].to_dict())
+
+    def get_cbs_data(self):
+        cbs_df = pd.read_json(self.data_set_paths["cbs"]).replace({np.nan: None})
+
+        for row in range(len(cbs_df)):
+            key = (cbs_df[self.global_fields["STREET"]][row], cbs_df[self.global_fields["CITY"]][row])
+            self.cbs_data[key] = {field["name"]: cbs_df[field["name"]][row] for field in self.cbs_config["fields"]}
+
+    def get_places_data(self):
+        google_places_df = pd.read_json(self.data_set_paths["google_places"])
+        gov_df = pd.read_json(self.data_set_paths["gov"])
+
+        geo_location_field = self.global_fields["GEO_LOCATION"]
+        google_places_df[geo_location_field] = google_places_df[geo_location_field].apply(self.parse_geo_location_field)
+        gov_df[geo_location_field] = gov_df[geo_location_field].apply(self.parse_geo_location_field)
+
+        for row in range(len(google_places_df)):
+            if google_places_df["type"][row] == RESTAURANT:
+                self.places_data[RESTAURANT].append(google_places_df.iloc[row, [0, 1]].to_dict())
+            elif google_places_df["type"][row] == STORE:
+                self.places_data[STORE].append(google_places_df.iloc[row, [1]].to_dict())
+
+        for row in range(len(gov_df)):
+            self.places_data[BUS_STATION].append(gov_df.iloc[row, [1]].to_dict())
+
+    def get_helper_data(self):
+        common_words = self.get_common_words()
+        self.common_words_strong = [key for key, value in common_words.items() if value >= 15]
+        self.common_words_weak = [key for key, value in common_words.items() if value >= 5]
+
+    def get_common_words(self):
+        common_words = {}
+        name_field = self.global_fields["NAME"]
+        names = [value[name_field] for value in sum(self.rest_data.values(), [])] + self.google_df[name_field].tolist()
+        for name in names:
+            for word in set(name.split(" ")):
+                if word not in common_words:
+                    common_words[word.lower()] = 0
+                common_words[word.lower()] += 1
+        return common_words
+
+    def prepare_data(self):
+        fields = self.google_config["fields"] + self.cbs_config["fields"] + self.places_config["fields"] + self.rest_config["fields"]
+        for field in fields:
+            self.data[field["name"]] = []
+
+    def fill_data(self):
+        for row in range(len(self.google_df)):
+            place_id = self.google_df[self.global_fields["PLACE_ID"]][row]
+            name = self.google_df[self.global_fields["NAME"]][row]
+            city = self.google_df[self.global_fields["CITY"]][row]
+            street = self.google_df[self.global_fields["STREET"]][row]
+            street_number = self.google_df[self.global_fields["STREET_NUMBER"]][row]
+            geo_location = self.google_df[self.global_fields["GEO_LOCATION"]][row]
+            address = (street or '') + " " + (street_number or '')
+            self.fill_google_data(row)
+            self.fill_cbs_data(city, street)
+            self.fill_places_data(geo_location, place_id)
+            self.fill_rest_data(name, address, city)
+
+    def fill_google_data(self, row):
+        self.add_data(self.google_config, self.google_df.iloc[row].to_dict())
+
+    def fill_cbs_data(self, city, street):
+        self.add_data(self.cbs_config, self.get_cbs_data_by_address(city, street))
+
+    def get_cbs_data_by_address(self, city, street):
+        if city is None or street is None:
+            return None
+        reversed_street = " ".join(street.split(" ")[::-1])
         key = (street, city)
-        reversed_key = (street_reversed, city)
-        data = cbs_data.get(key)
-        if data is None:
-            data = cbs_data.get(reversed_key)
-            if data is None:
-                for cbs_key in cbs_data.keys():
-                    if cbs_key[1] == city:
-                        if max(textdistance.strcmp95(cbs_key[0], street), textdistance.strcmp95(cbs_key[0], street_reversed)) > 0.9:
-                            data = cbs_data.get(cbs_key)
+        reversed_key = (reversed_street, city)
+        if key in self.cbs_data:
+            return self.cbs_data.get(key)
+        if reversed_key in self.cbs_data:
+            return self.cbs_data.get(reversed_key)
+        for cbs_key in self.cbs_data.keys():
+            if cbs_key[1] == city and self.get_street_distance(cbs_key[0], street, reversed_street) > 0.9:
+                return self.cbs_data.get(cbs_key)
+        return None
 
-        if data is not None:
-            religious_percent = None if math.isnan(data["percent of religious"]) else data["percent of religious"]
-            se_index = None if math.isnan(data["socio-economic index value"]) else data["socio-economic index value"]
-            se_rank = None if math.isnan(data["socio-economic rank"]) else data["socio-economic rank"]
-            se_cluster = None if math.isnan(data["socio-economic cluster"]) else data["socio-economic cluster"]
-    return religious_percent, se_index, se_rank, se_cluster
+    def get_street_distance(self, cbs_street, g_street, g_reversed_street):
+        return max(self.text_distance(cbs_street, g_street), self.text_distance(cbs_street, g_reversed_street))
 
+    def fill_places_data(self, geo_location, place_id):
+        self.add_data(self.places_config, self.get_places_data_by_point(tuple(geo_location), place_id))
 
-def parse_cbs(google_df, cbs_df):
-    cities, streets, religious, se_index_values, se_ranks, se_clusters = [], [], [], [], [], []
-    cbs_data = {}
+    def get_places_data_by_point(self, point, place_id):
+        data = {}
+        for place_key in PLACE_KEYS:
+            place_data = self.places_data[place_key]
+            place_fields = [field for field in self.places_config["fields"] if field["type"].lower() == place_key]
+            excluded_place_id = place_id if place_key == RESTAURANT else None
+            data.update(self.get_near_by_places(place_data, place_fields, point, excluded_place_id))
+        return data
 
-    for row in range(len(cbs_df)):
-        key = (cbs_df["street"][row], cbs_df["city"][row])
-        cbs_data[key] = {
-            "percent of religious": cbs_df["percent of religious"][row],
-            "socio-economic index value": cbs_df["socio-economic index value"][row],
-            "socio-economic rank": cbs_df["socio-economic rank"][row],
-            "socio-economic cluster": cbs_df["socio-economic cluster"][row]
-        }
+    def get_near_by_places(self, data, fields, point, excluded_place_id):
+        res = {field["name"]: 0 for field in fields}
+        for value in data:
+            if excluded_place_id is not None and value[self.global_fields["PLACE_ID"]] == excluded_place_id:
+                continue
+            point_distance = self.location_distance(point, tuple(value[self.global_fields["GEO_LOCATION"]]))
+            for field in fields:
+                distance_value = field["distance_value"] / 1000
+                if point_distance <= distance_value:
+                    res[field["name"]] += 1
+        return res
 
-    for row in range(len(google_df)):
-        city = google_df["address"][row]["city"]
-        street = google_df["address"][row]["street"]
-        street_reversed = None if street is None else " ".join(street.split(" ")[::-1])
-        religious_percent, se_index, se_rank, se_cluster = get_cbs_data(cbs_data, city, street, street_reversed)
-        religious.append(religious_percent)
-        se_index_values.append(se_index)
-        se_ranks.append(se_rank)
-        se_clusters.append(se_cluster)
-        cities.append(city)
-        streets.append(street)
-    return cities, streets, religious, se_index_values, se_ranks, se_clusters
+    def fill_rest_data(self, name, address, city):
+        name_field = self.global_fields["NAME"]
+        address_field = self.global_fields["ADDRESS"]
+        g_name_strong = self.get_filtered_name(name, self.common_words_strong)
+        g_name_weak = self.get_filtered_name(name, self.common_words_weak)
+        first_best = (0.9, None)
+        second_best = (0.8, None)
+        third_best = (0, None)
+        for value in self.rest_data.get(city) or []:
+            r_name_strong = self.get_filtered_name(value[name_field], self.common_words_strong)
+            name_dist = self.text_distance(g_name_strong, r_name_strong)
+            if name_dist > first_best[0]:
+                first_best = (name_dist, value)
 
+            if first_best[1] is None:
+                place_dist = self.text_distance(value[address_field], address)
+                if place_dist > 0.85 and name_dist > second_best[0]:
+                    second_best = (name_dist, value)
 
-def parse_reviews(google_df):
-    reviews = []
-    for row in range(len(google_df)):
+            if first_best[1] is None and second_best[1] is None:
+                r_name_weak = self.get_filtered_name(value[name_field], self.common_words_weak)
+                common_words = self.get_common_words_size(g_name_weak, r_name_weak)
+                if self.text_distance(g_name_weak, r_name_weak) > 0.8 and common_words > third_best[0]:
+                    third_best = (common_words, value)
+
+        self.add_data(self.rest_config, first_best[1] or second_best[1] or third_best[1])
+
+    def add_data(self, config, data):
+        for field in config["fields"]:
+            field_name = field["name"]
+            self.data[field_name].append(None if data is None else data[field_name])
+
+    def fill_cbs_missing_data(self):
+        for field in self.cbs_config["fields"]:
+            self.fill_cbs_missing_data_by_col_name(field["name"])
+
+    def fill_cbs_missing_data_by_col_name(self, col_name):
+        blank_indexes = [idx for idx, val in enumerate(self.data[col_name]) if val is None]
+        full_indexes = [idx for idx, val in enumerate(self.data[col_name]) if val is not None]
+        for blank_idx in blank_indexes:
+            values = [self.data[col_name][full_idx] for full_idx in full_indexes if self.is_places_close_by_indexes(blank_idx, full_idx)]
+            if len(values) > 0:
+                self.data[col_name][blank_idx] = round(np.mean(values), 3)
+
+    def is_places_close_by_indexes(self, blank_idx, full_idx):
+        blank_point = tuple(self.data[self.global_fields["GEO_LOCATION"]][blank_idx])
+        full_point = tuple(self.data[self.global_fields["GEO_LOCATION"]][full_idx])
+        return self.location_distance(blank_point, full_point) < 0.5
+
+    @staticmethod
+    def parse_bool_field(value):
+        return None if value is None else bool(value)
+
+    @staticmethod
+    def parse_reviews_field(value):
+        if value is None:
+            return None
         reviews_words = set()
-        for review in google_df['reviews'][row]:
+        for review in value:
             clean_r_text = review.replace('!', ' ').replace('.', ' ').replace(',', ' ').replace('\n', ' ').replace('?', ' ')
             reviews_words.update(clean_r_text.split(' '))
-        reviews.append(reviews_words)
-    return reviews
+        return reviews_words
 
+    @staticmethod
+    def parse_geo_location_field(value):
+        return None if value is None else [round(value["lat"], 7), round(value["lng"], 7)]
 
-def get_near_by_places(point, df):
-    place_500_count = 0
-    place_100_count = 0
-    for row in range(len(df)):
-        place_point_lat_lng = df["geo_location"][row]
-        place_point = (place_point_lat_lng["lat"], place_point_lat_lng["lng"])
-        point_distance = mpu.haversine_distance(point, place_point)
-        if point_distance < 0.5:
-            place_500_count += 1
-            if point_distance < 0.1:
-                place_100_count += 1
-    return place_500_count, place_100_count
+    @staticmethod
+    def text_distance(s1, s2):
+        if not s1 and not s2:
+            return 0
+        return textdistance.strcmp95.normalized_similarity(s1, s2)
 
+    @staticmethod
+    def location_distance(p1, p2):
+        return mpu.haversine_distance(p1, p2)
 
-def fill_missing_data_by_nearby_streets(result, col_name):
-    blank_rows, full_rows = {}, {}
-    blank, idx_blank, full, place_lng_blank = [], [], [], []
-    place_lat_blank, place_lng_full, place_lat_full = [], [], []
-    for idx, val in enumerate(result[col_name]):
-        if val is None:
-            blank.append(val)
-            idx_blank.append(idx)
-            place_lng_blank.append(result["lng"][idx])
-            place_lat_blank.append(result["lat"][idx])
-        else:
-            full.append(val)
-            place_lng_full.append(result["lng"][idx])
-            place_lat_full.append(result["lat"][idx])
+    @staticmethod
+    def get_filtered_name(name, filter_list):
+        return " ".join([item for item in name.split(" ") if item not in filter_list])
 
-    blank_rows["value"] = blank
-    blank_rows["idx"] = idx_blank
-    blank_rows["sum"] = [None] * len(blank_rows["value"])
-    blank_rows["num"] = [None] * len(blank_rows["value"])
-    blank_rows["lng"] = place_lng_blank
-    blank_rows["lat"] = place_lat_blank
-    full_rows["value"] = full
-    full_rows["lng"] = place_lng_full
-    full_rows["lat"] = place_lat_full
-    for blank_row in range(len(blank_rows["value"])):
-        blank_point = (blank_rows["lat"][blank_row], blank_rows["lng"][blank_row])
-        for full_row in range(len(full_rows["value"])):
-            full_point = (full_rows["lat"][full_row], full_rows["lng"][full_row])
-            point_distance = mpu.haversine_distance(blank_point, full_point)
-            if point_distance < 0.5:
-                if blank_rows["sum"][blank_row] is None:
-                    blank_rows["sum"][blank_row] = 0
-                    blank_rows["num"][blank_row] = 0
-                blank_rows["sum"][blank_row] += full_rows["value"][full_row]
-                blank_rows["num"][blank_row] += 1
-        if blank_rows["sum"][blank_row] is not None:
-            result[col_name][blank_rows["idx"][blank_row]] = round(blank_rows["sum"][blank_row] / blank_rows["num"][blank_row], 3)
-
-
-def cbs_fill_missing_data(result):
-    for col in ["religious_percent", "socio-economic_index_value", "socio-economic_rank", "socio-economic_cluster"]:
-        fill_missing_data_by_nearby_streets(result, col)
-
-
-def distance(s1, s2):
-    if not s1 and not s2:
-        return 0
-    return textdistance.strcmp95.normalized_similarity(s1, s2)
+    @staticmethod
+    def get_common_words_size(name1, name2):
+        return len(list(set(name1.lower().split(" ")) & set(name2.lower().split(" "))))
 
 
 def parse_data():
-    google_df = pd.read_json("./Dataset/google-data.json")
-    google_places_df = pd.read_json("./Dataset/google-places-data.json")
-    rest_df = pd.read_json("./Dataset/rest-data.json")
-    cbs_df = pd.read_json("./Dataset/cbs-data.json")
-    gov_df = pd.read_json("./Dataset/gov-data.json")
-    result = {}
-
-    google_df = google_df[google_df['rating'].notna()].reset_index(drop=True)
-
-    bool_cols = ['dine_in', 'delivery', 'reservable', 'serves_beer', 'serves_breakfast', 'serves_brunch',
-                 'serves_dinner', 'serves_lunch', 'serves_vegetarian_food', 'serves_wine', 'takeout',
-                 'wheelchair_accessible_entrance', 'curbside_pickup']
-    copy_cols = ["name", 'price_level', 'rating', 'user_ratings_total', "sunday_activity_hours", "monday_activity_hours", "tuesday_activity_hours",
-                 "wednesday_activity_hours", "thursday_activity_hours", "friday_activity_hours",
-                 "saturday_activity_hours"]
-
-    for col in bool_cols:
-        result[col] = parse_bool_col(google_df, col)
-
-    result["website"] = parse_not_none_col(google_df, "website")
-
-    for col in copy_cols:
-        result[col] = copy_column(google_df, col)
-
-    result['reviews_words'] = parse_reviews(google_df)
-
-    result['city'], result['street'], result['religious_percent'], result['socio-economic_index_value'], result['socio-economic_rank'], result['socio-economic_cluster'] = parse_cbs(google_df, cbs_df)
-
-    rest_places_df = google_places_df.loc[google_places_df['type'] == "restaurant"].reset_index(drop=True)
-    store_places_df = google_places_df.loc[google_places_df['type'] == "store"].reset_index(drop=True)
-    result["store_100"] = []
-    result["store_500"] = []
-    result["rest_100"] = []
-    result["rest_500"] = []
-    result["bus_station_100"] = []
-    result["bus_station_500"] = []
-    for row in range(len(google_df)):
-        g_point_lat_lng = google_df["address"][row]["geo_location"]
-        g_point = (g_point_lat_lng["lat"], g_point_lat_lng["lng"])
-        rest_places_except_this_df = rest_places_df.loc[rest_places_df['place_id'] != google_df["place_id"][row]].reset_index(drop=True)
-        rest_500_count, rest_100_count = get_near_by_places(g_point, rest_places_except_this_df)
-        store_500_count, store_100_count = get_near_by_places(g_point, store_places_df)
-        bus_station_500_count, bus_station_100_count = get_near_by_places(g_point, gov_df)
-        result["store_500"].append(store_500_count)
-        result["store_100"].append(store_100_count)
-        result["rest_500"].append(rest_500_count)
-        result["rest_100"].append(rest_100_count)
-        result["bus_station_500"].append(bus_station_500_count)
-        result["bus_station_100"].append(bus_station_100_count)
-
-
-    result["lat"] = []
-    result["lng"] = []
-    for row in range(len(google_df)):
-        g_point_lat_lng = google_df["address"][row]["geo_location"]
-        result["lat"].append(g_point_lat_lng["lat"])
-        result["lng"].append(g_point_lat_lng["lng"])
-
-    cbs_fill_missing_data(result)
-
-    common_words = {}
-    for r_name in rest_df['name']:
-        for word in set(r_name.split(" ")):
-            if word not in common_words:
-                common_words[word.lower()] = 0
-            common_words[word.lower()] += 1
-
-    for row in range(len(google_df)):
-        g_name = google_df["name"][row]
-        for word in set(g_name.split(" ")):
-            if word not in common_words:
-                common_words[word.lower()] = 0
-            common_words[word.lower()] += 1
-
-    common_words_strong = [key for key, value in common_words.items() if value >= 15]
-    common_words_weak = [key for key, value in common_words.items() if value >= 5]
-
-    rest_by_city = {}
-    for value in rest_df.values:
-        if value[4] not in rest_by_city:
-            rest_by_city[value[4]] = []
-        rest_by_city[value[4]].append(value)
-
-    type_values = []
-    kosher_values = []
-    for row in range(len(google_df)):
-        g_name = google_df["name"][row]
-        g_address = google_df["address"][row]
-        g_vicinity = (g_address["street"] or '') + " " + (g_address["street_number"] or '')
-        g_city = g_address["city"]
-        g_name_strong = " ".join([item for item in g_name.split(" ") if item not in common_words_strong])
-        g_name_weak = " ".join([item for item in g_name.split(" ") if item not in common_words_weak])
-        first_best_dist = 0.9
-        second_best_dist = 0.8
-        third_best_dist = 0
-        first_best_value = None
-        second_best_value = None
-        third_best_value = None
-        if g_city in rest_by_city:
-            for value in rest_by_city[g_city]:
-                r_name_strong = " ".join([item for item in value[1].split(" ") if item not in common_words_strong])
-                name_dist = distance(g_name_strong, r_name_strong)
-                if name_dist > first_best_dist:
-                    first_best_dist = name_dist
-                    first_best_value = value
-
-                if first_best_value is None:
-                    place_dist = distance(value[5], g_vicinity)
-                    if place_dist > 0.85 and name_dist > second_best_dist:
-                        second_best_dist = name_dist
-                        second_best_value = value
-
-                    if second_best_value is None:
-                        r_name_weak = " ".join([item for item in value[1].split(" ") if item not in common_words_weak])
-                        common_words = len(list(set(g_name_weak.lower().split(" ")) & set(r_name_weak.lower().split(" "))))
-                        if distance(g_name_weak, r_name_weak) > 0.8 and common_words > third_best_dist:
-                            third_best_dist = common_words
-                            third_best_value = value
-
-        if first_best_value is not None:
-            type_values.append(first_best_value[2])
-            kosher_values.append(first_best_value[3])
-        elif second_best_value is not None:
-            type_values.append(second_best_value[2])
-            kosher_values.append(second_best_value[3])
-        elif third_best_value is not None:
-            type_values.append(third_best_value[2])
-            kosher_values.append(third_best_value[3])
-        else:
-            type_values.append(None)
-            kosher_values.append(None)
-
-    result["kosher"] = kosher_values
-    result["type"] = type_values
-
-    frame = pd.DataFrame(result)
-    frame.to_csv("./Dataset/data.csv", index=False, encoding='utf-8-sig')
-
-
-
+    try:
+        with open('./DataConfig/data-parser-config.json', 'r', encoding='utf-8') as f:
+            config = json.load(f)
+            parser = DataParser(config)
+            parser.parse_data()
+            parser.fill_missing_data()
+            parser.save_data()
+    except IOError:
+        print("Error")
