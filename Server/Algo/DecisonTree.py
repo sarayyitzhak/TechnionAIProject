@@ -8,10 +8,8 @@ def is_closes_places(value1, value2):
 
 
 def common_activity_hours(value1, value2):
-    if len(value1) == len(value2) == 0 or value1 == (-1, -1) or value2 == (-1, -1):
+    if value1 == (-1, -1) or value2 == (-1, -1):
         return True
-    elif len(value1) != len(value2):
-        return False
     else:
         total_minutes = (value1[1] - value1[0]) + (value2[1] - value2[0])
         intersection_total_minutes = get_intersection_total_minutes(value1, value2)

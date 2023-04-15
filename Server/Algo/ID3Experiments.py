@@ -11,7 +11,6 @@ class ID3Experiments:
 
     def basic_experiment(self):
         unneeded_labels = ["name", "user_ratings_total", "reviews"]
-        attributes_names = list(pd.read_csv("./Dataset/data.csv", delimiter=",", dtype=str, nrows=1).keys())
 
         bool_cols = ['dine_in', 'delivery', 'reservable', 'serves_beer', 'serves_breakfast', 'serves_brunch',
                      'serves_dinner', 'serves_lunch', 'serves_vegetarian_food', 'serves_wine', 'takeout',
@@ -19,8 +18,6 @@ class ID3Experiments:
         activity_hours_cols = ["sunday_activity_hours", "monday_activity_hours", "tuesday_activity_hours",
                                "wednesday_activity_hours", "thursday_activity_hours", "friday_activity_hours",
                                "saturday_activity_hours", "geo_location"]
-        for label in unneeded_labels:
-            attributes_names.remove(label)
         train_set = pd.read_csv("./Dataset/data.csv")
         # for col in bool_cols:
         #     t = len([x for x in (train_set[col] == True) if x == True])
@@ -29,12 +26,13 @@ class ID3Experiments:
 
         # train_set = train_set[train_set['user_ratings_total'] > 2].reset_index(drop=True)
         train_set.drop(unneeded_labels, axis='columns', inplace=True)
+        train_set = train_set.replace({np.nan: None})
+        attributes_names = list(train_set.keys())
         # for col in bool_cols:
         #     train_set[col] = train_set[col].apply(lambda x: False if np.isnan(x) else x)
         for col in activity_hours_cols:
-            train_set[col] = train_set[col].apply(lambda x: None if len(eval(x)) == 0 else tuple(eval(x)))
+            train_set[col] = train_set[col].apply(lambda x: None if x is None else tuple(eval(x)))
 
-        train_set = train_set.replace({np.nan: None})
         msk = np.random.rand(len(train_set)) < 0.9
         train = train_set[msk]
         test = train_set[~msk]

@@ -130,7 +130,7 @@ class GoogleDataBuilder:
 
     @staticmethod
     def get_activity_hours(details):
-        activity_hours = {key: [] for key in range(7)}
+        activity_hours = {key: None for key in range(7)}
         if "opening_hours" in details and type(details["opening_hours"]) is dict:
             periods = details["opening_hours"]["periods"]
             if "close" not in periods[0]:
@@ -142,7 +142,7 @@ class GoogleDataBuilder:
                     open_total_minutes = Time(period["open"]["time"]).get_total_minutes()
                     close_total_minutes = Time(period["close"]["time"]).get_total_minutes()
                     close_total_minutes += 0 if open_total_minutes < close_total_minutes else Time.ONE_DAY
-                    current_activity_hours = [math.inf, -math.inf] if len(activity_hours[day]) == 0 else activity_hours[day]
+                    current_activity_hours = [math.inf, -math.inf] if activity_hours[day] is None else activity_hours[day]
                     open_hours = min(open_total_minutes, current_activity_hours[0])
                     close_hours = max(close_total_minutes, current_activity_hours[1])
                     activity_hours[day] = [open_hours, close_hours]
@@ -159,14 +159,14 @@ def google_build_data():
         with open('./DataConfig/google-data-config.json', 'r', encoding='utf-8') as f:
             config = json.load(f)
             builder = GoogleDataBuilder(config["api_key"], config["locations"])
-            # builder.build_data()
-            # write_to_file(builder.data, config["output_path"])
-            # write_to_file(builder.places, config["output_places_path"])
-            d = json.load(open('./Dataset/full-google-data.json', 'r', encoding='utf-8'))
-            data = []
-            for d1 in d:
-                if "rating" in d1:
-                    data.append(builder.get_data_details(d1))
-            write_to_file(data, config["output_path"])
+            builder.build_data()
+            write_to_file(builder.data, config["output_path"])
+            write_to_file(builder.places, config["output_places_path"])
+            # d = json.load(open('./Dataset/full-google-data.json', 'r', encoding='utf-8'))
+            # data = []
+            # for d1 in d:
+            #     if "rating" in d1:
+            #         data.append(builder.get_data_details(d1))
+            # write_to_file(data, config["output_path"])
     except IOError:
         print("Error")
