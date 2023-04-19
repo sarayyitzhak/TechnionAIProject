@@ -1,10 +1,10 @@
 {
     "data_set_paths": {
-        "google": "./Dataset/google-data.json",
-        "google_places": "./Dataset/google-places-data.json",
-        "rest": "./Dataset/rest-data.json",
-        "cbs": "./Dataset/cbs-data.json",
-        "gov": "./Dataset/gov-data.json"
+        "google": "./Server/Dataset/google-data.json",
+        "google_places": "./Server/Dataset/google-places-data.json",
+        "rest": "./Server/Dataset/rest-data.json",
+        "cbs": "./Server/Dataset/cbs-data.json",
+        "gov": "./Server/Dataset/gov-data.json"
     },
     "global_fields": [
         {

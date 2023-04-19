@@ -177,9 +177,9 @@ class CbsDataBuilder:
                                                                        "amount of religious"] + religions_count
 
 
-def build_data_3():
+def cbs_build_data():
     try:
-        with open('./DataConfig/cbs-data-config.json', 'r', encoding='utf-8') as f:
+        with open('./Server/DataConfig/cbs-data-config.json', 'r', encoding='utf-8') as f:
             config = json.load(f)
             builder = CbsDataBuilder(config["religious"], config["transition"], config["streets"], config["ser"], config["cities"])
             builder.build_data()

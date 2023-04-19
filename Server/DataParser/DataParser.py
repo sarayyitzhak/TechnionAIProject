@@ -264,7 +264,7 @@ class DataParser:
 
 def parse_data():
     try:
-        with open('./DataConfig/data-parser-config.json', 'r', encoding='utf-8') as f:
+        with open('./Server/DataConfig/data-parser-config.json', 'r', encoding='utf-8') as f:
             config = json.load(f)
             parser = DataParser(config)
             parser.parse_data()

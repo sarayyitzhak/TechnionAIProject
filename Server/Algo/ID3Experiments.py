@@ -18,7 +18,7 @@ class ID3Experiments:
         activity_hours_cols = ["sunday_activity_hours", "monday_activity_hours", "tuesday_activity_hours",
                                "wednesday_activity_hours", "thursday_activity_hours", "friday_activity_hours",
                                "saturday_activity_hours", "geo_location"]
-        train_set = pd.read_csv("./Dataset/data.csv")
+        train_set = pd.read_csv("./Server/Dataset/data.csv")
         # for col in bool_cols:
         #     t = len([x for x in (train_set[col] == True) if x == True])
         #     f = len([x for x in (train_set[col] == False) if x == True])

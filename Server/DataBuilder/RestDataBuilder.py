@@ -68,10 +68,11 @@ class RestDataBuilder:
 
 def rest_build_data():
     try:
-        with open('./DataConfig/rest-data-config.json', 'r', encoding='utf-8') as f:
+        with open('./Server/DataConfig/rest-data-config.json', 'r', encoding='utf-8') as f:
             config = json.load(f)
             builder = RestDataBuilder(config["chrome_driver_path"], config['api_url'], config['web_paths'])
             builder.build_data()
             write_to_file(builder.data, config["output_path"])
+            print("success")
     except IOError:
         print("Error")

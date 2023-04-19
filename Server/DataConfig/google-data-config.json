@@ -92,6 +92,6 @@
             "lng": 35.14285674877937
         }
     ],
-    "output_path": "./Dataset/google-data.json",
-    "output_places_path": "./Dataset/google-places-data.json"
+    "output_path": "./Server/Dataset/google-data.json",
+    "output_places_path": "./Server/Dataset/google-places-data.json"
 }

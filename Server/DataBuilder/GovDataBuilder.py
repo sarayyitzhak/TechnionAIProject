@@ -41,7 +41,7 @@ class GovDataBuilder:
 
 def gov_build_data():
     try:
-        with open('./DataConfig/gov-data-config.json', 'r', encoding='utf-8') as f:
+        with open('./Server/DataConfig/gov-data-config.json', 'r', encoding='utf-8') as f:
             config = json.load(f)
             builder = GovDataBuilder(config["resource_id"], config['base_url'], config['api_url'], config['city_codes'])
             builder.build_data()

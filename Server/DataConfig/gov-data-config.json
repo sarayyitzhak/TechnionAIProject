@@ -3,5 +3,5 @@
     "base_url": "https://data.gov.il",
     "api_url": "/api/3/action/datastore_search",
     "city_codes": [4000, 2500, 6800, 8200, 9600, 9500, 2100],
-    "output_path": "./Dataset/gov-data.json"
+    "output_path": "./Server/Dataset/gov-data.json"
 }
