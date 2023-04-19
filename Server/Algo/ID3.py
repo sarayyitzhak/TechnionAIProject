@@ -91,7 +91,7 @@ class ID3:
     def fit(self, x_train, y_train):
         self.tree_root = self.build_tree(x_train, y_train)
 
-    def predict_sample(self, row, node: DecisionNode or Leaf = None):
+    def predict_sample(self, row, return_none_values, node: DecisionNode or Leaf = None):
         if node is None:
             node = self.tree_root
 
@@ -99,8 +99,10 @@ class ID3:
             return node.mean
 
         if isinstance(node, DecisionNode):
+            if return_none_values and row[node.question.column_idx] is None:
+                return None
             branch = node.true_branch if node.question.match(row) else node.false_branch
-            return self.predict_sample(row, branch)
+            return self.predict_sample(row, return_none_values, branch)
 
-    def predict(self, rows):
-        return np.array([self.predict_sample(row) for row in rows])
+    def predict(self, rows, return_none_values=False):
+        return np.array([self.predict_sample(row, return_none_values) for row in rows])

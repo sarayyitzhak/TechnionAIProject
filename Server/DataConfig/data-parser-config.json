@@ -52,23 +52,28 @@
             },
             {
                 "name": "serves_beer",
-                "type": "BOOL"
+                "type": "BOOL",
+                "fill_by": "close_activity_hour"
             },
             {
                 "name": "serves_breakfast",
-                "type": "BOOL"
+                "type": "BOOL",
+                "fill_by": "open_activity_hour"
             },
             {
                 "name": "serves_brunch",
-                "type": "BOOL"
+                "type": "BOOL",
+                "fill_by": "open_activity_hour"
             },
             {
                 "name": "serves_dinner",
-                "type": "BOOL"
+                "type": "BOOL",
+                "fill_by": "close_activity_hour"
             },
             {
                 "name": "serves_lunch",
-                "type": "BOOL"
+                "type": "BOOL",
+                "fill_by": "open_activity_hour"
             },
             {
                 "name": "serves_vegetarian_food",
@@ -76,7 +81,8 @@
             },
             {
                 "name": "serves_wine",
-                "type": "BOOL"
+                "type": "BOOL",
+                "fill_by": "close_activity_hour"
             },
             {
                 "name": "takeout",
@@ -133,6 +139,14 @@
             {
                 "name": "saturday_activity_hours",
                 "type": "ACTIVITY_HOURS"
+            },
+            {
+                "name": "open_activity_hour",
+                "type": "NUMBER"
+            },
+            {
+                "name": "close_activity_hour",
+                "type": "NUMBER"
             },
             {
                 "name": "reviews",

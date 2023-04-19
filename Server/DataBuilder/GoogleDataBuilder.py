@@ -6,6 +6,7 @@ import time
 import json
 import math
 import pandas as pd
+import numpy as np
 
 
 class GoogleDataBuilder:
@@ -90,6 +91,9 @@ class GoogleDataBuilder:
         data['friday_activity_hours'] = activity_hours[5]
         data['saturday_activity_hours'] = activity_hours[6]
 
+        data["open_activity_hour"] = self.get_mean_activity_hour(activity_hours, True)
+        data["close_activity_hour"] = self.get_mean_activity_hour(activity_hours, False)
+
         data["reviews"] = self.get_reviews(details)
 
         return data
@@ -148,6 +152,12 @@ class GoogleDataBuilder:
                     activity_hours[day] = [open_hours, close_hours]
 
         return activity_hours
+
+    @staticmethod
+    def get_mean_activity_hour(activity_hours, is_open):
+        idx = 0 if is_open else 1
+        activity_hours_by_index = [activity_hours[day][idx] for day in range(5) if activity_hours[day] is not None]
+        return None if len(activity_hours_by_index) == 0 else np.mean(activity_hours_by_index)
 
     @staticmethod
     def get_reviews(details):

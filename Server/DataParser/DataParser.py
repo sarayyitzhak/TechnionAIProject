@@ -6,6 +6,8 @@ import time
 import json
 import mpu
 
+from Server.Algo.ID3 import *
+
 RESTAURANT = "restaurant"
 STORE = "store"
 BUS_STATION = "bus_station"
@@ -37,6 +39,7 @@ class DataParser:
         self.fill_data()
 
     def fill_missing_data(self):
+        self.fill_google_missing_data()
         self.fill_cbs_missing_data()
 
     def save_data(self):
@@ -208,6 +211,15 @@ class DataParser:
             field_name = field["name"]
             self.data[field_name].append(None if data is None else data[field_name])
 
+    def fill_google_missing_data(self):
+        df = pd.DataFrame(self.data)
+        df = df.replace({np.nan: None})
+
+        for field in self.google_config["fields"]:
+            if "fill_by" in field:
+                df.loc[df[field["name"]].isnull(), field["name"]] = self.predict_missing_data_by_field(df, field)
+                self.data[field["name"]] = df[field["name"]].to_list()
+
     def fill_cbs_missing_data(self):
         for field in self.cbs_config["fields"]:
             self.fill_cbs_missing_data_by_col_name(field["name"])
@@ -260,6 +272,24 @@ class DataParser:
     @staticmethod
     def get_common_words_size(name1, name2):
         return len(list(set(name1.lower().split(" ")) & set(name2.lower().split(" "))))
+
+    @staticmethod
+    def predict_missing_data_by_field(df, field):
+        id3 = ID3([field["fill_by"]], max_depth=1, target_attribute=field["name"])
+        train_set = df[df[field["name"]].notnull()].reset_index(drop=True)
+        x_train = np.array(train_set[[field["fill_by"]]].copy())
+        y_train = np.array(train_set[field["name"]].copy())
+        id3.fit(x_train, y_train)
+        test_set = df[df[field["name"]].isnull()].reset_index(drop=True)
+        x_test = np.array(test_set[[field["fill_by"]]].copy())
+        predict = id3.predict(x_test, True)
+        predict_min = np.nanmin(np.array(predict, dtype=float))
+        predict_max = np.nanmax(np.array(predict, dtype=float))
+        if predict_min != predict_max:
+            return np.array([None if p is None else (p == predict_max) for p in predict])
+        else:
+            values, counts = np.unique(y_train, return_counts=True)
+            return np.array([values[np.argmax(counts)]] * len(x_test))
 
 
 def parse_data():
