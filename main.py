@@ -6,68 +6,14 @@ from PyQt5.QtGui import QPalette
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
-import pandas as pd
 from Server.DataBuilder import RestDataBuilder, CbsDataBuilder, GovDataBuilder, GoogleDataBuilder
 from Server.DataParser import DataParser
 from Server.Algo import RunAlgorithm
 
 
-
-#
-# def advance_progress_bar(progress_bar):
-#     cur_val = progress_bar.value()
-#     max_val = progress_bar.maximum()
-#     progress_bar.setValue(cur_val + (max_val - cur_val) / 100)
-#
-#
-# def create_progress_bar(progress_bar):
-#     progress_bar.setRange(0, 10000)
-#     progress_bar.setValue(0)
-#
-#     timer = QTimer()
-#     timer.timeout.connect(lambda: advance_progress_bar(progress_bar))
-#     timer.start(1000)
-#
-#
-# def on_build_google_button_clicked():
-#     GoogleDataBuilder.google_build_data()
-#
-#
-# def on_build_rest_button_clicked():
-#     RestDataBuilder.rest_build_data()
-#
-#
-# def on_build_cbs_button_clicked():
-#     CbsDataBuilder.cbs_build_data()
-#
-#
-# def on_build_gov_button_clicked():
-#     GovDataBuilder.gov_build_data()
-#
-#
-# def on_build_all_button_clicked():
-#     GoogleDataBuilder.google_build_data()
-#     RestDataBuilder.rest_build_data()
-#     CbsDataBuilder.cbs_build_data()
-#     GovDataBuilder.gov_build_data()
-#
-#
-# def on_parse_data_button_clicked(progress_bar):
-#     create_progress_bar(progress_bar)
-#     DataParser.parse_data()
-#
-#
-# def on_run_alg_button_clicked():
-#     RunAlgorithm.run_alg()
-#
-#
-# def on_run_alg_button_clicked():
-#     RunAlgorithm.run_alg()
-
-
 class ClientDev:
     def __init__(self):
-        super().__init__()        # QWidget.__init__(self)
+        super().__init__()
         app = QApplication([])
         app.setStyle('Fusion')
         palette = QPalette()
@@ -176,72 +122,6 @@ class ClientDev:
     def on_run_alg_button_clicked(self):
         self.build_progress_bar()
         RunAlgorithm.run_alg()
-
-
-
-# def main():
-#     app = QApplication([])
-#     app.setStyle('Fusion')
-#     palette = QPalette()
-#     palette.setColor(QPalette.ButtonText, Qt.darkBlue)
-#
-#     app.setStyleSheet("QPushButton { margin: 1ex; }")
-#     app.setStyleSheet("QPushButton { padding: 2ex; }")
-#
-#     app.setPalette(palette)
-#     window = QWidget()
-#
-#     progress_bar = QProgressBar()
-#
-#     window.setWindowTitle("Regression tree Builder ")
-#
-#     layout = QGridLayout()
-#     build_google_button = QPushButton("Build Google data")
-#     layout.addWidget(build_google_button, 0, 0)
-#     build_google_button.clicked.connect(on_build_google_button_clicked)
-#
-#     build_rest_button = QPushButton("Build Rest data")
-#     layout.addWidget(build_rest_button, 0, 1)
-#     build_rest_button.clicked.connect(on_build_rest_button_clicked)
-#
-#     build_cbs_button = QPushButton("Build CBS data")
-#     layout.addWidget(build_cbs_button, 0, 2)
-#     build_cbs_button.clicked.connect(on_build_cbs_button_clicked)
-#
-#     build_gov_button = QPushButton("Build Gov data")
-#     layout.addWidget(build_gov_button, 0, 3)
-#     build_gov_button.clicked.connect(on_build_gov_button_clicked)
-#
-#     build_all_button = QPushButton("Build all data")
-#     layout.addWidget(build_all_button, 1, 0, 1, 4)
-#     build_all_button.clicked.connect(on_build_all_button_clicked)
-#
-#     parse_data_button = QPushButton("Parse data")
-#     layout.addWidget(parse_data_button, 2, 0, 1, 4)
-#     parse_data_button.clicked.connect(lambda: on_parse_data_button_clicked(progress_bar))
-#
-#     run_alg_button = QPushButton("Run algorithm")
-#     layout.addWidget(run_alg_button, 3, 0, 1, 4)
-#     run_alg_button.clicked.connect(on_run_alg_button_clicked)
-#
-#
-#     layout.addWidget(progress_bar, 3, 0, 1, 2)
-#
-#
-#
-#     layout.setContentsMargins(50, 50, 50, 50)
-#
-#     progressBar = QProgressBar()
-#     progressBar.setRange(0, 10000)
-#     progressBar.setValue(0)
-#
-#     # timer = QTimer(self)
-#     # timer.timeout.connect(self.advanceProgressBar)
-#     # timer.start(1000)
-#     window.setLayout(layout)
-#     window.show()
-#
-#     app.exec()
 
 
 if __name__ == '__main__':
