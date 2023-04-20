@@ -94,6 +94,8 @@ class GoogleDataBuilder:
         data["open_activity_hour"] = self.get_mean_activity_hour(activity_hours, True)
         data["close_activity_hour"] = self.get_mean_activity_hour(activity_hours, False)
 
+        data["open_on_saturday"] = self.get_open_on_saturday(activity_hours)
+
         data["reviews"] = self.get_reviews(details)
 
         return data
@@ -139,7 +141,7 @@ class GoogleDataBuilder:
             periods = details["opening_hours"]["periods"]
             if "close" not in periods[0]:
                 for day in range(7):
-                    activity_hours[day] = [-1, -1]
+                    activity_hours[day] = [0, 2 * Time.ONE_DAY]
             else:
                 for period in periods:
                     day = period["open"]["day"]
@@ -150,6 +152,9 @@ class GoogleDataBuilder:
                     open_hours = min(open_total_minutes, current_activity_hours[0])
                     close_hours = max(close_total_minutes, current_activity_hours[1])
                     activity_hours[day] = [open_hours, close_hours]
+                for day in range(7):
+                    if activity_hours[day] is None:
+                        activity_hours[day] = [-1, -1]
 
         return activity_hours
 
@@ -163,6 +168,16 @@ class GoogleDataBuilder:
     def get_reviews(details):
         return None if "reviews" not in details or type(details["reviews"]) is not list else [review["text"] for review in details["reviews"]]
 
+    @staticmethod
+    def get_open_on_saturday(activity_hours):
+        if activity_hours[5] is None:
+            return None
+        latest_closing_time_friday = Time(hours=17, minutes=0)
+        earliest_opening_time_saturday = Time(hours=19, minutes=0)
+        open_on_friday = Time(total_minutes=activity_hours[5][1]).is_later_than(latest_closing_time_friday)
+        open_on_saturday = Time(total_minutes=activity_hours[6][0]).is_earlier_than(earliest_opening_time_saturday) and activity_hours[6][0] != -1
+        return open_on_friday or open_on_saturday
+
 
 def google_build_data():
     try:
@@ -172,7 +187,7 @@ def google_build_data():
             builder.build_data()
             write_to_file(builder.data, config["output_path"])
             write_to_file(builder.places, config["output_places_path"])
-            # d = json.load(open('./Dataset/full-google-data.json', 'r', encoding='utf-8'))
+            # d = json.load(open('./Server/Dataset/full-google-data.json', 'r', encoding='utf-8'))
             # data = []
             # for d1 in d:
             #     if "rating" in d1:

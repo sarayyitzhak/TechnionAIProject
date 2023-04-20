@@ -16,7 +16,7 @@ PLACE_KEYS = [RESTAURANT, STORE, BUS_STATION]
 
 class DataParser:
 
-    def __init__(self, config):
+    def __init__(self, config, progress_func):
         self.data_set_paths = config["data_set_paths"]
         self.global_fields = {field["type"]: field["name"] for field in config["global_fields"]}
         self.google_config = config["google_config"]
@@ -24,6 +24,7 @@ class DataParser:
         self.places_config = config["places_config"]
         self.rest_config = config["rest_config"]
         self.output_path = config["output_path"]
+        self.progress_func = progress_func
         self.google_df = None
         self.rest_data = {}
         self.cbs_data = {}
@@ -126,6 +127,7 @@ class DataParser:
             street_number = self.google_df[self.global_fields["STREET_NUMBER"]][row]
             geo_location = self.google_df[self.global_fields["GEO_LOCATION"]][row]
             address = (street or '') + " " + (street_number or '')
+            self.progress_func(name, row + 1, len(self.google_df))
             self.fill_google_data(row)
             self.fill_cbs_data(city, street)
             self.fill_places_data(geo_location, place_id)
@@ -292,11 +294,11 @@ class DataParser:
             return np.array([values[np.argmax(counts)]] * len(x_test))
 
 
-def parse_data():
+def parse_data(progress_func):
     try:
         with open('./Server/DataConfig/data-parser-config.json', 'r', encoding='utf-8') as f:
             config = json.load(f)
-            parser = DataParser(config)
+            parser = DataParser(config, progress_func)
             parser.parse_data()
             parser.fill_missing_data()
             parser.save_data()

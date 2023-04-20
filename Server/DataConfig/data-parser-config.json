@@ -149,6 +149,10 @@
                 "type": "NUMBER"
             },
             {
+                "name": "open_on_saturday",
+                "type": "BOOL"
+            },
+            {
                 "name": "reviews",
                 "type": "REVIEWS"
             },
@@ -224,5 +228,5 @@
             }
         ]
     },
-    "output_path": "./Dataset/data.csv"
+    "output_path": "./Server/Dataset/data.csv"
 }
