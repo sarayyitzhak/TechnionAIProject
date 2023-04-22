@@ -2,6 +2,7 @@ import ast
 
 from Server.Algo.ID3 import *
 import pandas as pd
+import json
 
 
 class ID3Experiments:
@@ -10,43 +11,33 @@ class ID3Experiments:
         pass
 
     def basic_experiment(self):
-        unneeded_labels = ["name", "user_ratings_total", "reviews"]
+        try:
+            with open('./Server/DataConfig/algo-config.json', 'r', encoding='utf-8') as f:
+                config = json.load(f)
+                train_set = pd.read_csv(config["data_set_path"])
+                field_names = [field["name"] for field in config["fields"]] + [config["target_field"]]
+                train_set = train_set[field_names]
 
-        bool_cols = ['dine_in', 'delivery', 'reservable', 'serves_beer', 'serves_breakfast', 'serves_brunch',
-                     'serves_dinner', 'serves_lunch', 'serves_vegetarian_food', 'serves_wine', 'takeout',
-                     'wheelchair_accessible_entrance', 'curbside_pickup']
-        activity_hours_cols = ["sunday_activity_hours", "monday_activity_hours", "tuesday_activity_hours",
-                               "wednesday_activity_hours", "thursday_activity_hours", "friday_activity_hours",
-                               "saturday_activity_hours", "geo_location"]
-        train_set = pd.read_csv("./Server/Dataset/data.csv")
-        # for col in bool_cols:
-        #     t = len([x for x in (train_set[col] == True) if x == True])
-        #     f = len([x for x in (train_set[col] == False) if x == True])
-        #     print(col + " TRUE: " + str(t) + " FALSE: " + str(f) + " BLANK: " + str(1414 - t - f))
+                for col in [field["name"] for field in config["fields"] if field["type"] in ["ACTIVITY_HOURS", "GEO_LOCATION"]]:
+                    train_set[col] = train_set[col].apply(lambda x: np.nan if pd.isnull(x) else tuple(eval(x)))
 
-        # train_set = train_set[train_set['user_ratings_total'] > 2].reset_index(drop=True)
-        train_set.drop(unneeded_labels, axis='columns', inplace=True)
-        train_set = train_set.replace({np.nan: None})
-        attributes_names = list(train_set.keys())
-        # for col in bool_cols:
-        #     train_set[col] = train_set[col].apply(lambda x: False if np.isnan(x) else x)
-        for col in activity_hours_cols:
-            train_set[col] = train_set[col].apply(lambda x: None if x is None else tuple(eval(x)))
+                msk = np.random.rand(len(train_set)) < 0.9
+                train = train_set[msk]
+                test = train_set[~msk]
+                x_train = np.array(train.drop(config["target_field"], axis=1).copy())
+                y_train = np.array(train[config["target_field"]].copy())
+                x_test = np.array(test.drop(config["target_field"], axis=1).copy())
+                y_test = np.array(test[config["target_field"]].copy())
+                id3 = ID3(config["fields"], config["min_for_pruning"], config["max_depth"])
+                id3.fit(x_train, y_train)
+                self.print_tree(id3.tree_root)
+                preds = id3.predict(x_test)
 
-        msk = np.random.rand(len(train_set)) < 0.9
-        train = train_set[msk]
-        test = train_set[~msk]
-        x_train = np.array(train.drop('rating', axis=1).copy())
-        y_train = np.array(train['rating'].copy())
-        x_test = np.array(test.drop('rating', axis=1).copy())
-        y_test = np.array(test['rating'].copy())
-        id3 = ID3(attributes_names, 3, 8)
-        id3.fit(x_train, y_train)
-        self.print_tree(id3.tree_root)
-        preds = id3.predict(x_test)
+                print("\n\nPreds: " + str([(y_test[idx], preds[idx]) for idx in range(len(preds))]))
+                print("Acc: {:.2f}%".format(100 * (1 - (np.mean(np.abs(y_test - preds)) / 5))))
 
-        print("\n\nPreds: " + str([(y_test[idx], preds[idx]) for idx in range(len(preds))]))
-        print("Acc: {:.2f}%".format(100 * (1 - (np.mean(np.abs(y_test - preds)) / 5))))
+        except IOError:
+            print("Error")
 
     def print_tree(self, node, level=0):
         if isinstance(node, Leaf):

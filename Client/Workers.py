@@ -48,6 +48,6 @@ class Worker(QRunnable):
         else:
             self.signals.result.emit(f"Parsing Data...\n({index}/{total}) {name}")
 
-        if int((index / total) * 100) > self.completed:
-            self.completed += 1
+        if int((index / total) * 100) >= self.completed:
             self.signals.progress.emit(self.completed)
+            self.completed += 1

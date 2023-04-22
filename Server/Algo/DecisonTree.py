@@ -1,4 +1,3 @@
-import numbers
 import numpy as np
 import mpu
 
@@ -38,34 +37,26 @@ def location_distance(p1, p2):
     return mpu.haversine_distance(p1, p2)
 
 
-def is_numeric(value):
-    if type(value) is bool:
-        return False
-    return isinstance(value, numbers.Number)
-
-
 def unique_vals(rows, col):
     return set([row[col] for row in rows])
 
 
 class Question:
 
-    def __init__(self, column, column_idx, value, var = 0):
+    def __init__(self, column, field_type, column_idx, value, var=0):
         self.column = column
+        self.field_type = field_type
         self.column_idx = column_idx
         self.value = value
         self.var = var
 
     def match(self, example):
-        # Compare the feature value in an example to the
-        # feature value in this question.
         val = example[self.column_idx]
-        if self.column == "geo_location":
+        if self.field_type == "GEO_LOCATION":
             return is_closes_places(self.value, val)
-        elif type(val) == tuple:
-            # case of open hours
+        elif self.field_type == "ACTIVITY_HOURS":
             return common_activity_hours(self.value, val)
-        elif is_numeric(val):
+        elif self.field_type == "NUMBER":
             return val >= self.value
         else:
             return val == self.value
@@ -75,9 +66,9 @@ class Question:
         # the question in a readable format.
         condition = "=="
         val_str = str(self.value)
-        if type(self.value) == tuple:
+        if self.field_type in ["GEO_LOCATION", "ACTIVITY_HOURS"]:
             condition = "∩"
-        if is_numeric(self.value):
+        if self.field_type == "NUMBER":
             condition = ">="
             val_str = '{:.2f}'.format(self.value)
         return "%s %s %s" % (self.column, condition, val_str)

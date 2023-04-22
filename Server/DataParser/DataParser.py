@@ -127,7 +127,8 @@ class DataParser:
             street_number = self.google_df[self.global_fields["STREET_NUMBER"]][row]
             geo_location = self.google_df[self.global_fields["GEO_LOCATION"]][row]
             address = (street or '') + " " + (street_number or '')
-            self.progress_func(name, row + 1, len(self.google_df))
+            if self.progress_func is not None:
+                self.progress_func(name, row + 1, len(self.google_df))
             self.fill_google_data(row)
             self.fill_cbs_data(city, street)
             self.fill_places_data(geo_location, place_id)
@@ -215,12 +216,29 @@ class DataParser:
 
     def fill_google_missing_data(self):
         df = pd.DataFrame(self.data)
-        df = df.replace({np.nan: None})
 
         for field in self.google_config["fields"]:
             if "fill_by" in field:
                 df.loc[df[field["name"]].isnull(), field["name"]] = self.predict_missing_data_by_field(df, field)
                 self.data[field["name"]] = df[field["name"]].to_list()
+
+    def predict_missing_data_by_field(self, df, field):
+        fields = [f for f in self.google_config["fields"] if f["name"] == field["fill_by"]]
+        id3 = ID3(fields, max_depth=1)
+        train_set = df[df[field["name"]].notnull()].reset_index(drop=True)
+        x_train = np.array(train_set[[field["fill_by"]]].copy())
+        y_train = np.array(train_set[field["name"]].copy())
+        id3.fit(x_train, y_train)
+        test_set = df[df[field["name"]].isnull()].reset_index(drop=True)
+        x_test = np.array(test_set[[field["fill_by"]]].copy())
+        predict = id3.predict(x_test, True)
+        predict_min = np.nanmin(np.array(predict, dtype=float))
+        predict_max = np.nanmax(np.array(predict, dtype=float))
+        if predict_min != predict_max:
+            return np.array([None if p is None else (p == predict_max) for p in predict])
+        else:
+            values, counts = np.unique(y_train, return_counts=True)
+            return np.array([values[np.argmax(counts)]] * len(x_test))
 
     def fill_cbs_missing_data(self):
         for field in self.cbs_config["fields"]:
@@ -275,26 +293,8 @@ class DataParser:
     def get_common_words_size(name1, name2):
         return len(list(set(name1.lower().split(" ")) & set(name2.lower().split(" "))))
 
-    @staticmethod
-    def predict_missing_data_by_field(df, field):
-        id3 = ID3([field["fill_by"]], max_depth=1, target_attribute=field["name"])
-        train_set = df[df[field["name"]].notnull()].reset_index(drop=True)
-        x_train = np.array(train_set[[field["fill_by"]]].copy())
-        y_train = np.array(train_set[field["name"]].copy())
-        id3.fit(x_train, y_train)
-        test_set = df[df[field["name"]].isnull()].reset_index(drop=True)
-        x_test = np.array(test_set[[field["fill_by"]]].copy())
-        predict = id3.predict(x_test, True)
-        predict_min = np.nanmin(np.array(predict, dtype=float))
-        predict_max = np.nanmax(np.array(predict, dtype=float))
-        if predict_min != predict_max:
-            return np.array([None if p is None else (p == predict_max) for p in predict])
-        else:
-            values, counts = np.unique(y_train, return_counts=True)
-            return np.array([values[np.argmax(counts)]] * len(x_test))
 
-
-def parse_data(progress_func):
+def parse_data(progress_func=None):
     try:
         with open('./Server/DataConfig/data-parser-config.json', 'r', encoding='utf-8') as f:
             config = json.load(f)
