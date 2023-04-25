@@ -18,6 +18,7 @@ class DataParser:
 
     def __init__(self, config, progress_func):
         self.data_set_paths = config["data_set_paths"]
+        self.target_field = config["target_field"]
         self.global_fields = {field["type"]: field["name"] for field in config["global_fields"]}
         self.google_config = config["google_config"]
         self.cbs_config = config["cbs_config"]
@@ -31,6 +32,8 @@ class DataParser:
         self.places_data = {place_key: [] for place_key in PLACE_KEYS}
         self.common_words_strong = None
         self.common_words_weak = None
+        self.max_rating = None
+        self.max_votes = None
         self.data = {}
 
     def parse_data(self):
@@ -98,6 +101,10 @@ class DataParser:
             self.places_data[BUS_STATION].append(gov_df.iloc[row, [1]].to_dict())
 
     def get_helper_data(self):
+        self.get_common_words_data()
+        self.get_max_data()
+
+    def get_common_words_data(self):
         common_words = self.get_common_words()
         self.common_words_strong = [key for key, value in common_words.items() if value >= 15]
         self.common_words_weak = [key for key, value in common_words.items() if value >= 5]
@@ -113,8 +120,17 @@ class DataParser:
                 common_words[word.lower()] += 1
         return common_words
 
+    def get_max_data(self):
+        self.max_rating = np.max(self.google_df[self.target_field["rating_field"]])
+        self.max_votes = self.parse_votes(np.max(self.google_df[self.target_field["votes_field"]]))
+
     def prepare_data(self):
-        fields = self.google_config["fields"] + self.cbs_config["fields"] + self.places_config["fields"] + self.rest_config["fields"]
+        fields = []
+        fields += self.google_config["fields"]
+        fields += self.cbs_config["fields"]
+        fields += self.places_config["fields"]
+        fields += self.rest_config["fields"]
+        fields.append(self.target_field)
         for field in fields:
             self.data[field["name"]] = []
 
@@ -133,6 +149,7 @@ class DataParser:
             self.fill_cbs_data(city, street)
             self.fill_places_data(geo_location, place_id)
             self.fill_rest_data(name, address, city)
+            self.fill_target_data(row)
 
     def fill_google_data(self, row):
         self.add_data(self.google_config, self.google_df.iloc[row].to_dict())
@@ -208,6 +225,15 @@ class DataParser:
                     third_best = (common_words, value)
 
         self.add_data(self.rest_config, first_best[1] or second_best[1] or third_best[1])
+
+    def fill_target_data(self, row):
+        rating_data = self.google_df.iloc[row][self.target_field["rating_field"]]
+        votes_data = self.google_df.iloc[row][self.target_field["votes_field"]]
+        rating_rate = self.target_field["rating_rate"]
+        votes = self.parse_votes(votes_data) / self.max_votes
+        rating = rating_data / self.max_rating
+        value = ((rating_rate * rating) + ((1 - rating_rate) * votes)) * 100
+        self.data[self.target_field["name"]].append(round(value, 3))
 
     def add_data(self, config, data):
         for field in config["fields"]:
@@ -292,6 +318,10 @@ class DataParser:
     @staticmethod
     def get_common_words_size(name1, name2):
         return len(list(set(name1.lower().split(" ")) & set(name2.lower().split(" "))))
+
+    @staticmethod
+    def parse_votes(votes):
+        return np.sqrt(np.log(2 * votes))
 
 
 def parse_data(progress_func=None):

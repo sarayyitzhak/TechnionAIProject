@@ -13,22 +13,22 @@ class ID3:
         self.max_depth = max_depth
 
     def fit(self, x_train, y_train):
-        self.tree_root = self.build_tree(x_train, y_train)
+        self.tree_root = self.build_tree(x_train, y_train, list())
 
-    def build_tree(self, rows, labels, depth=0):
+    def build_tree(self, rows, labels, used_questions, depth=0):
         leaf = Leaf(labels)
 
         if len(rows) <= self.min_for_pruning or depth >= self.max_depth or leaf.mse < 0.1:
             return leaf
 
-        best_partition = self.find_best_split(rows, labels)
+        best_partition = self.find_best_split(rows, labels, used_questions)
         best_question = best_partition[1]
-        true_branch = self.build_tree(best_partition[2], best_partition[3], depth + 1)
-        false_branch = self.build_tree(best_partition[4], best_partition[5], depth + 1)
+        true_branch = self.build_tree(best_partition[2], best_partition[3], used_questions + [best_question], depth + 1)
+        false_branch = self.build_tree(best_partition[4], best_partition[5], used_questions + [best_question], depth + 1)
 
         return DecisionNode(best_question, true_branch, false_branch)
 
-    def find_best_split(self, rows, labels):
+    def find_best_split(self, rows, labels, used_questions):
         best_var = math.inf  # keep track of the best information gain
         best_question = None  # keep train of the feature / value that produced it
         best_false_rows, best_false_labels = None, None
@@ -39,6 +39,8 @@ class ID3:
                 if pd.isnull(val):
                     continue
                 question = Question(field["name"], field["type"], idx, val)
+                if question in used_questions:
+                    continue
                 variance, true_rows, true_labels, false_rows, false_labels = self.partition(rows, labels, question)
                 question.var = variance
                 if variance < best_var:

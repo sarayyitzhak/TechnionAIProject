@@ -1,9 +1,6 @@
-import ast
-
 from Server.Algo.ID3 import *
 import pandas as pd
 import json
-
 
 class ID3Experiments:
 
@@ -34,7 +31,7 @@ class ID3Experiments:
                 preds = id3.predict(x_test)
 
                 print("\n\nPreds: " + str([(y_test[idx], preds[idx]) for idx in range(len(preds))]))
-                print("Acc: {:.2f}%".format(100 * (1 - (np.mean(np.abs(y_test - preds)) / 5))))
+                print("Acc: {:.2f}%".format(100 - (np.mean(np.abs(y_test - preds)))))
 
         except IOError:
             print("Error")

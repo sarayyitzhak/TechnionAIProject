@@ -1,6 +1,6 @@
 {
     "data_set_path": "./Server/Dataset/data.csv",
-    "target_field": "rating",
+    "target_field": "grade",
     "min_for_pruning": 3,
     "max_depth": 8,
     "fields": [

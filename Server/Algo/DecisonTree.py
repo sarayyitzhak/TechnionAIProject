@@ -1,5 +1,6 @@
 import numpy as np
 import mpu
+import pandas as pd
 
 
 def is_closes_places(value1, value2):
@@ -52,6 +53,8 @@ class Question:
 
     def match(self, example):
         val = example[self.column_idx]
+        if pd.isnull(val):
+            return False
         if self.field_type == "GEO_LOCATION":
             return is_closes_places(self.value, val)
         elif self.field_type == "ACTIVITY_HOURS":
@@ -60,6 +63,10 @@ class Question:
             return val >= self.value
         else:
             return val == self.value
+
+    def __eq__(self, other):
+        if isinstance(other, Question):
+            return self.column_idx == other.column_idx and self.value == other.value
 
     def __repr__(self):
         # This is just a helper method to print
