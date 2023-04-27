@@ -71,7 +71,7 @@ class DataParser:
                 self.google_df[field_name] = self.google_df[field_name].apply(self.parse_geo_location_field)
 
     def get_rest_data(self):
-        rest_df = pd.read_json(self.data_set_paths["rest"])
+        rest_df = pd.read_csv(self.data_set_paths["rest"])
 
         for row in range(len(rest_df)):
             city = rest_df[self.global_fields["CITY"]][row]

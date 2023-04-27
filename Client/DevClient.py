@@ -1,15 +1,14 @@
 from PyQt5.QtWidgets import QApplication, QLabel, QWidget, QPushButton, QVBoxLayout, QMessageBox, QGridLayout
 from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QPalette
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 
 from Server.DataBuilder import RestDataBuilder, CbsDataBuilder, GovDataBuilder, GoogleDataBuilder
-from Server.DataParser import DataParser
 from Server.Algo import RunAlgorithm
 from Client.Workers import *
 from Client.DataParserWorker import *
+from Client.RestDataBuilderWorker import *
 
 
 class DevClientMainWindow(QDialog):
@@ -90,9 +89,17 @@ class DevClientMainWindow(QDialog):
     def on_build_google_button_clicked():
         GoogleDataBuilder.google_build_data()
 
-    @staticmethod
-    def on_build_rest_button_clicked():
-        RestDataBuilder.rest_build_data()
+    def on_build_rest_button_clicked(self):
+        self.show_progress_bar()
+
+        worker = RestDataBuilderWorker()
+        worker.signals.progress.connect(self.set_progress)
+        worker.signals.title.connect(self.set_title)
+        worker.signals.subtitle.connect(self.set_subtitle)
+        worker.signals.estimated_time.connect(self.set_estimated_time)
+        worker.signals.finished.connect(self.hide_progress_bar)
+
+        self.thread_pool.start(worker)
 
     @staticmethod
     def on_build_cbs_button_clicked():

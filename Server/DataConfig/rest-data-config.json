@@ -31,5 +31,5 @@
             "city": "טירת כרמל"
         }
     ],
-    "output_path": "./Server/Dataset/rest-data.json"
+    "output_path": "./Server/Dataset/rest-data.csv"
 }

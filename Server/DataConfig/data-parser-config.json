@@ -2,7 +2,7 @@
     "data_set_paths": {
         "google": "./Server/Dataset/google-data.json",
         "google_places": "./Server/Dataset/google-places-data.json",
-        "rest": "./Server/Dataset/rest-data.json",
+        "rest": "./Server/Dataset/rest-data.csv",
         "cbs": "./Server/Dataset/cbs-data.json",
         "gov": "./Server/Dataset/gov-data.json"
     },
