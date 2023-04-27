@@ -36,11 +36,14 @@ class DataParser:
         self.max_votes = None
         self.data = {}
 
-    def parse_data(self):
+    def pre_parse_data(self):
         self.get_raw_data()
         self.get_helper_data()
         self.prepare_data()
-        self.fill_data()
+
+    def parse_data(self):
+        for row in range(len(self.google_df)):
+            self.fill_data(row)
 
     def fill_missing_data(self):
         self.fill_google_missing_data()
@@ -134,22 +137,21 @@ class DataParser:
         for field in fields:
             self.data[field["name"]] = []
 
-    def fill_data(self):
-        for row in range(len(self.google_df)):
-            place_id = self.google_df[self.global_fields["PLACE_ID"]][row]
-            name = self.google_df[self.global_fields["NAME"]][row]
-            city = self.google_df[self.global_fields["CITY"]][row]
-            street = self.google_df[self.global_fields["STREET"]][row]
-            street_number = self.google_df[self.global_fields["STREET_NUMBER"]][row]
-            geo_location = self.google_df[self.global_fields["GEO_LOCATION"]][row]
-            address = (street or '') + " " + (street_number or '')
-            if self.progress_func is not None:
-                self.progress_func(name, row + 1, len(self.google_df))
-            self.fill_google_data(row)
-            self.fill_cbs_data(city, street)
-            self.fill_places_data(geo_location, place_id)
-            self.fill_rest_data(name, address, city)
-            self.fill_target_data(row)
+    def fill_data(self, row):
+        place_id = self.google_df[self.global_fields["PLACE_ID"]][row]
+        name = self.google_df[self.global_fields["NAME"]][row]
+        city = self.google_df[self.global_fields["CITY"]][row]
+        street = self.google_df[self.global_fields["STREET"]][row]
+        street_number = self.google_df[self.global_fields["STREET_NUMBER"]][row]
+        geo_location = self.google_df[self.global_fields["GEO_LOCATION"]][row]
+        address = (street or '') + " " + (street_number or '')
+        if self.progress_func is not None:
+            self.progress_func(name, row + 1, len(self.google_df))
+        self.fill_google_data(row)
+        self.fill_cbs_data(city, street)
+        self.fill_places_data(geo_location, place_id)
+        self.fill_rest_data(name, address, city)
+        self.fill_target_data(row)
 
     def fill_google_data(self, row):
         self.add_data(self.google_config, self.google_df.iloc[row].to_dict())
@@ -329,6 +331,7 @@ def parse_data(progress_func=None):
         with open('./Server/DataConfig/data-parser-config.json', 'r', encoding='utf-8') as f:
             config = json.load(f)
             parser = DataParser(config, progress_func)
+            parser.pre_parse_data()
             parser.parse_data()
             parser.fill_missing_data()
             parser.save_data()

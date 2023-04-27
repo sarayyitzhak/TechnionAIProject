@@ -9,6 +9,7 @@ from Server.DataBuilder import RestDataBuilder, CbsDataBuilder, GovDataBuilder, 
 from Server.DataParser import DataParser
 from Server.Algo import RunAlgorithm
 from Client.Workers import *
+from Client.DataParserWorker import *
 
 
 class DevClientMainWindow(QDialog):
@@ -19,15 +20,18 @@ class DevClientMainWindow(QDialog):
 
         self.setWindowTitle("Restaurant Rating Predictor")
 
-        self.threadpool = QThreadPool()
+        self.thread_pool = QThreadPool()
 
         self.layout = QGridLayout()
 
-        self.build_buttons()
+        self.progress_bar = None
+        self.title = None
+        self.subtitle = None
+        self.estimated_time = None
 
-        self.progress_bar = QProgressBar()
-        self.progress_bar.setRange(0, 100)
-        self.progress_label = None
+        self.build_buttons()
+        self.build_progress_bar()
+        self.hide_progress_bar()
 
         self.setLayout(self.layout)
         self.layout.setContentsMargins(50, 50, 50, 50)
@@ -47,10 +51,40 @@ class DevClientMainWindow(QDialog):
         button.clicked.connect(function)
 
     def build_progress_bar(self):
-        self.layout.addWidget(self.progress_label, 4, 0, 1, 4)
-        self.progress_label.show()
-        self.layout.addWidget(self.progress_bar, 5, 0, 1, 4)
+        self.progress_bar = QProgressBar()
+        self.progress_bar.setRange(0, 100)
+        self.title = QLabel()
+        self.subtitle = QLabel()
+        self.estimated_time = QLabel()
+
+        self.layout.addWidget(self.title, 4, 0, 1, 4)
+        self.layout.addWidget(self.subtitle, 5, 0, 1, 4)
+        self.layout.addWidget(self.progress_bar, 6, 0, 1, 4)
+        self.layout.addWidget(self.estimated_time, 7, 0, 1, 4)
+
+    def show_progress_bar(self):
         self.progress_bar.show()
+        self.title.show()
+        self.subtitle.show()
+        self.estimated_time.show()
+
+    def hide_progress_bar(self):
+        self.progress_bar.hide()
+        self.title.hide()
+        self.subtitle.hide()
+        self.estimated_time.hide()
+
+    def set_progress(self, p):
+        self.progress_bar.setValue(int(p))
+
+    def set_title(self, value):
+        self.title.setText(value)
+
+    def set_subtitle(self, value):
+        self.subtitle.setText(value)
+
+    def set_estimated_time(self, value):
+        self.estimated_time.setText(value)
 
     @staticmethod
     def on_build_google_button_clicked():
@@ -75,27 +109,18 @@ class DevClientMainWindow(QDialog):
         CbsDataBuilder.cbs_build_data()
         GovDataBuilder.gov_build_data()
 
-    # @staticmethod
     def on_parse_data_button_clicked(self):
-        self.progress_label = QLabel("Parsing Data...")
-        self.build_progress_bar()
+        self.show_progress_bar()
 
-        worker = Worker(DataParser.parse_data)
-        worker.signals.progress.connect(self.progress_fn)
-        worker.signals.result.connect(self.print_output)
+        worker = DataParserWorker()
+        worker.signals.progress.connect(self.set_progress)
+        worker.signals.title.connect(self.set_title)
+        worker.signals.subtitle.connect(self.set_subtitle)
+        worker.signals.estimated_time.connect(self.set_estimated_time)
+        worker.signals.finished.connect(self.hide_progress_bar)
 
-        self.threadpool.start(worker)
-
-    def progress_fn(self, p):
-        self.progress_bar.setValue(int(p))
-        if self.progress_bar.value() == 100:
-            time.sleep(2)
-            self.progress_bar.hide()
-            self.progress_label.hide()
-
-    def print_output(self, value):
-        self.progress_label.setText(value)
+        self.thread_pool.start(worker)
 
     def on_run_alg_button_clicked(self):
-        self.build_progress_bar()
+        self.show_progress_bar()
         RunAlgorithm.run_alg()
