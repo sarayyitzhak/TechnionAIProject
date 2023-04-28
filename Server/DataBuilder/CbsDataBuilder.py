@@ -8,31 +8,46 @@ from Server.DataBuilder.Utils import write_to_file, write_dict_to_file
 
 
 class CbsDataBuilder:
-    def __init__(self, religious_config, transition_key_config, streets_config, ser_config, cities_config):
-        self.religious_config = religious_config
-        self.transition_key_config = transition_key_config
-        self.streets_config = streets_config
-        self.ser_config = ser_config
-        self.cities_config = cities_config
+    def __init__(self, config, progress_func):
+        self.religious_config = config["religious"]
+        self.transition_key_config = config["transition"]
+        self.streets_config = config["streets"]
+        self.ser_config = config["ser"]
+        self.cities_config = config["cities"]
+        self.output_path = config["output_path"]
+        self.progress_func = progress_func
         self.religious_df = None
+        self.ser_df = None
         self.transition_key_df = None
         self.streets_df = None
-        self.ser_df = None
         self.rel_by_street_df = None
+        self.rel_by_street_count = None
         self.ser_by_street_df = None
+        self.ser_by_street_count = None
         self.streets_dict = {}
         self.data = []
 
-    def build_data(self):
+    def pre_build_data(self):
         self.get_data_frames()
         self.prepare_data()
         self.rel_by_street_df = self.join_data_frames(self.religious_df, self.religious_config)
         self.ser_by_street_df = self.join_data_frames(self.ser_df, self.ser_config)
+        self.rel_by_street_count = self.get_street_count(self.rel_by_street_df, 0, 2)
+        self.ser_by_street_count = self.get_street_count(self.ser_by_street_df, 0, 4)
         self.streets_df = self.streets_df.iloc[:, [0, 4]].copy()
         self.init_street_dict()
+
+    def build_religious_data(self):
         self.add_religious_to_dict()
+
+    def build_socio_economic_data(self):
         self.add_ser_to_dict()
+
+    def build_data(self):
         self.data_dict_to_list()
+
+    def save_data(self):
+        pd.DataFrame(self.data).to_csv(self.output_path, index=False, encoding='utf-8-sig')
 
     def get_data_frames(self):
         self.religious_df = self.get_data_frame(self.religious_config)
@@ -69,8 +84,7 @@ class CbsDataBuilder:
                                                         left_on=df_by_street_raw.keys()[12],
                                                         right_on=self.streets_df.keys()[1])
         df_by_street = df_by_street_raw.iloc[:, df_config["columns_idxes_to_use"]].copy()
-        x = df_by_street[df_by_street['רחובות עיקריים'].notna()].reset_index(drop=True)
-        return x
+        return df_by_street[df_by_street['רחובות עיקריים'].notna()].reset_index(drop=True)
 
     def init_street_dict(self, ):
         for row in range(len(self.streets_df)):
@@ -98,40 +112,36 @@ class CbsDataBuilder:
 
     def add_religious_to_dict(self):
         for row in range(len(self.rel_by_street_df)):
-            city = self.rel_by_street_df.iloc[:, 0][row]
-            streets = self.rel_by_street_df.iloc[:, 2][row]
-            if city in self.cities_config["city_names"] and isinstance(streets, str):
-                streets_list = self.get_streets_list(streets)
+            for city, street in self.get_city_street_list(self.rel_by_street_df, row, 0, 2):
                 people_count = self.rel_by_street_df.iloc[:, 3][row]
                 religions_count = self.rel_by_street_df.iloc[:, 4][row]
                 if religions_count == '..':
                     religions_count = 0
-                for street in streets_list:
-                    if self.streets_dict[(street, city)]["amount of people"] is None:
-                        self.init_rel_by_street(street, city)
-                    self.update_rel_by_street(street, city, people_count, religions_count)
+                if self.streets_dict[(street, city)]["amount of people"] is None:
+                    self.init_rel_by_street(street, city)
+                self.update_rel_by_street(street, city, people_count, religions_count)
+                if self.progress_func is not None:
+                    self.progress_func(f"{street}, {city}", self.rel_by_street_count)
 
     def add_ser_to_dict(self):
         for row in range(len(self.ser_by_street_df)):
-            city = self.ser_by_street_df.iloc[:, 0][row]
-            streets = self.ser_by_street_df.iloc[:, 4][row]
-            if city in self.cities_config["city_names"] and isinstance(streets, str):
-                streets_list = self.get_streets_list(streets)
+            for city, street in self.get_city_street_list(self.ser_by_street_df, row, 0, 4):
                 index_value = self.ser_by_street_df.iloc[:, 1][row]
                 rank = self.ser_by_street_df.iloc[:, 2][row]
                 cluster = self.ser_by_street_df.iloc[:, 3][row]
-                for street in streets_list:
-                    if self.streets_dict[(street, city)]["socio-economic index value"] is None:
-                        self.init_ser_by_street(street, city)
-                    self.update_ser_by_street(street, city, index_value, rank, cluster)
+                if self.streets_dict[(street, city)]["socio-economic index value"] is None:
+                    self.init_ser_by_street(street, city)
+                self.update_ser_by_street(street, city, index_value, rank, cluster)
+                if self.progress_func is not None:
+                    self.progress_func(f"{street}, {city}", self.ser_by_street_count)
 
     def data_dict_to_list(self):
         for street, city in self.streets_dict.keys():
             value = self.streets_dict[(street, city)]
+            percent_of_religious, index_value_avg, rank_avg, cluster_avg = None, None, None, None
+            if value["amount of religious"] is not None:
+                percent_of_religious = round((value["amount of religious"] / value["amount of people"]) * 100, 2)
             socio_economic_counter = value["socio-economic counter"]
-            percent_of_religious = None if value["amount of religious"] is None else round(
-                (value["amount of religious"] / value["amount of people"]) * 100, 2)
-            index_value_avg, rank_avg, cluster_avg = None, None, None
             if socio_economic_counter is not None:
                 index_value_avg = round(value["socio-economic index value"] / socio_economic_counter, 3)
                 rank_avg = round(value["socio-economic rank"] / socio_economic_counter, 3)
@@ -145,6 +155,18 @@ class CbsDataBuilder:
                 "socio-economic rank": rank_avg,
                 "socio-economic cluster": cluster_avg
             })
+            if self.progress_func is not None:
+                self.progress_func(f"{street}, {city}", len(self.streets_dict))
+
+    def get_street_count(self, df, city_col, street_col):
+        return sum([len(self.get_city_street_list(df, row, city_col, street_col)) for row in range(len(df))])
+
+    def get_city_street_list(self, df, row, city_col, street_col):
+        city = df.iloc[:, city_col][row]
+        streets = df.iloc[:, street_col][row]
+        if city in self.cities_config["city_names"] and isinstance(streets, str):
+            return [(city, street.replace("שד", "שדרות")) for street in streets.split(', ')]
+        return []
 
     @staticmethod
     def get_streets_list(streets):
@@ -158,31 +180,28 @@ class CbsDataBuilder:
         self.streets_dict[(street, city)]["socio-economic counter"] = 0
 
     def update_ser_by_street(self, street, city, index_value, rank, cluster):
-        previous_data = self.streets_dict[(street, city)]
-        self.streets_dict[(street, city)]["socio-economic index value"] = round(
-            (previous_data["socio-economic index value"] + index_value) / 2, 3)
-        self.streets_dict[(street, city)]["socio-economic rank"] = (previous_data["socio-economic rank"] + rank) / 2
-        self.streets_dict[(street, city)]["socio-economic cluster"] = (previous_data[
-                                                                           "socio-economic cluster"] + cluster) / 2
-        self.streets_dict[(street, city)]["socio-economic counter"] = previous_data["socio-economic counter"] + 1
+        self.streets_dict[(street, city)]["socio-economic index value"] += index_value
+        self.streets_dict[(street, city)]["socio-economic rank"] += rank
+        self.streets_dict[(street, city)]["socio-economic cluster"] += cluster
+        self.streets_dict[(street, city)]["socio-economic counter"] += 1
 
     def init_rel_by_street(self, street, city):
         self.streets_dict[(street, city)]["amount of people"] = 0
         self.streets_dict[(street, city)]["amount of religious"] = 0
 
     def update_rel_by_street(self, street, city, people_count, religions_count):
-        previous_data = self.streets_dict[(street, city)]
-        self.streets_dict[(street, city)]["amount of people"] = previous_data["amount of people"] + people_count
-        self.streets_dict[(street, city)]["amount of religious"] = previous_data[
-                                                                       "amount of religious"] + religions_count
+        self.streets_dict[(street, city)]["amount of people"] += people_count
+        self.streets_dict[(street, city)]["amount of religious"] += religions_count
 
 
 def cbs_build_data():
     try:
         with open('./Server/DataConfig/cbs-data-config.json', 'r', encoding='utf-8') as f:
-            config = json.load(f)
-            builder = CbsDataBuilder(config["religious"], config["transition"], config["streets"], config["ser"], config["cities"])
+            builder = CbsDataBuilder(json.load(f), None)
+            builder.pre_build_data()
+            builder.build_religious_data()
+            builder.build_socio_economic_data()
             builder.build_data()
-            write_to_file(builder.data, config["output_path"])
+            builder.save_data()
     except IOError:
         print("Error")

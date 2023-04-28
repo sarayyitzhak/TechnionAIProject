@@ -34,5 +34,5 @@
   }
   },
 
-  "output_path": "./Server/Dataset/cbs-data.json"
+  "output_path": "./Server/Dataset/cbs-data.csv"
 }

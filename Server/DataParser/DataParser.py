@@ -80,7 +80,7 @@ class DataParser:
             self.rest_data[city].append(rest_df.iloc[row].to_dict())
 
     def get_cbs_data(self):
-        cbs_df = pd.read_json(self.data_set_paths["cbs"]).replace({np.nan: None})
+        cbs_df = pd.read_csv(self.data_set_paths["cbs"]).replace({np.nan: None})
 
         for row in range(len(cbs_df)):
             key = (cbs_df[self.global_fields["STREET"]][row], cbs_df[self.global_fields["CITY"]][row])
@@ -146,7 +146,7 @@ class DataParser:
         geo_location = self.google_df[self.global_fields["GEO_LOCATION"]][row]
         address = (street or '') + " " + (street_number or '')
         if self.progress_func is not None:
-            self.progress_func(name, row + 1, len(self.google_df))
+            self.progress_func(name, len(self.google_df))
         self.fill_google_data(row)
         self.fill_cbs_data(city, street)
         self.fill_places_data(geo_location, place_id)

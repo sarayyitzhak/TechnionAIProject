@@ -6,9 +6,9 @@ from PyQt5.QtCore import *
 
 from Server.DataBuilder import RestDataBuilder, CbsDataBuilder, GovDataBuilder, GoogleDataBuilder
 from Server.Algo import RunAlgorithm
-from Client.Workers import *
 from Client.DataParserWorker import *
 from Client.RestDataBuilderWorker import *
+from Client.CbsDataBuilderWorker import *
 
 
 class DevClientMainWindow(QDialog):
@@ -90,20 +90,10 @@ class DevClientMainWindow(QDialog):
         GoogleDataBuilder.google_build_data()
 
     def on_build_rest_button_clicked(self):
-        self.show_progress_bar()
+        self.on_button_clicked(RestDataBuilderWorker('./Server/DataConfig/rest-data-config.json'))
 
-        worker = RestDataBuilderWorker()
-        worker.signals.progress.connect(self.set_progress)
-        worker.signals.title.connect(self.set_title)
-        worker.signals.subtitle.connect(self.set_subtitle)
-        worker.signals.estimated_time.connect(self.set_estimated_time)
-        worker.signals.finished.connect(self.hide_progress_bar)
-
-        self.thread_pool.start(worker)
-
-    @staticmethod
-    def on_build_cbs_button_clicked():
-        CbsDataBuilder.cbs_build_data()
+    def on_build_cbs_button_clicked(self):
+        self.on_button_clicked(CbsDataBuilderWorker('./Server/DataConfig/cbs-data-config.json'))
 
     @staticmethod
     def on_build_gov_button_clicked():
@@ -117,9 +107,15 @@ class DevClientMainWindow(QDialog):
         GovDataBuilder.gov_build_data()
 
     def on_parse_data_button_clicked(self):
+        self.on_button_clicked(DataParserWorker('./Server/DataConfig/data-parser-config.json'))
+
+    def on_run_alg_button_clicked(self):
+        self.show_progress_bar()
+        RunAlgorithm.run_alg()
+
+    def on_button_clicked(self, worker):
         self.show_progress_bar()
 
-        worker = DataParserWorker()
         worker.signals.progress.connect(self.set_progress)
         worker.signals.title.connect(self.set_title)
         worker.signals.subtitle.connect(self.set_subtitle)
@@ -127,7 +123,3 @@ class DevClientMainWindow(QDialog):
         worker.signals.finished.connect(self.hide_progress_bar)
 
         self.thread_pool.start(worker)
-
-    def on_run_alg_button_clicked(self):
-        self.show_progress_bar()
-        RunAlgorithm.run_alg()

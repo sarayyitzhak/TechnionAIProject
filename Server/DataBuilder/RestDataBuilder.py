@@ -18,7 +18,6 @@ class RestDataBuilder:
         self.output_path = config["output_path"]
         self.progress_func = progress_func
         self.rest_to_pages_count = {}
-        self.restaurant_counter = 0
         self.num_of_restaurants = 0
         self.data = []
 
@@ -70,9 +69,8 @@ class RestDataBuilder:
                     "city": city,
                     "address": address
                 })
-            self.restaurant_counter += 1
             if self.progress_func is not None:
-                self.progress_func(name, self.restaurant_counter, self.num_of_restaurants)
+                self.progress_func(name, self.num_of_restaurants)
 
 
 def rest_build_data():
