@@ -120,6 +120,16 @@ class DevClientMainWindow(QDialog):
         worker.signals.title.connect(self.set_title)
         worker.signals.subtitle.connect(self.set_subtitle)
         worker.signals.estimated_time.connect(self.set_estimated_time)
+        worker.signals.error.connect(self.show_error_message_box)
         worker.signals.finished.connect(self.hide_progress_bar)
 
         self.thread_pool.start(worker)
+
+    @staticmethod
+    def show_error_message_box(value):
+        msg = QMessageBox()
+        msg.setIcon(QMessageBox.Critical)
+        msg.setText(f"{value[1]}\n\n{value[2]}")
+        msg.setWindowTitle(value[0])
+        msg.setStandardButtons(QMessageBox.Ok)
+        msg.exec()

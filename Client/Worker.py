@@ -33,12 +33,12 @@ class Worker(QRunnable):
         try:
             with open(self.config_path, 'r', encoding='utf-8') as f:
                 self.inner_run(json.load(f))
+                time.sleep(2)
         except:
             print(traceback.format_exc())
             exctype, value = sys.exc_info()[:2]
             self.signals.error.emit((str(exctype), str(value), str(traceback.format_exc())))
         finally:
-            time.sleep(2)
             self.signals.finished.emit()
 
     def inner_run(self, config):
