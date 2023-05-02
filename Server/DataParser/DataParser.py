@@ -88,11 +88,11 @@ class DataParser:
 
     def get_places_data(self):
         google_places_df = pd.read_json(self.data_set_paths["google_places"])
-        gov_df = pd.read_json(self.data_set_paths["gov"])
+        gov_df = pd.read_csv(self.data_set_paths["gov"])
 
         geo_location_field = self.global_fields["GEO_LOCATION"]
         google_places_df[geo_location_field] = google_places_df[geo_location_field].apply(self.parse_geo_location_field)
-        gov_df[geo_location_field] = gov_df[geo_location_field].apply(self.parse_geo_location_field)
+        gov_df[geo_location_field] = gov_df[geo_location_field].apply(eval).apply(self.parse_geo_location_field)
 
         for row in range(len(google_places_df)):
             if google_places_df["type"][row] == RESTAURANT:

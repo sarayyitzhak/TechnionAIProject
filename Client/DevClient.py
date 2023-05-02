@@ -9,6 +9,7 @@ from Server.Algo import RunAlgorithm
 from Client.DataParserWorker import *
 from Client.RestDataBuilderWorker import *
 from Client.CbsDataBuilderWorker import *
+from Client.GovDataBuilderWorker import *
 
 
 class DevClientMainWindow(QDialog):
@@ -95,9 +96,8 @@ class DevClientMainWindow(QDialog):
     def on_build_cbs_button_clicked(self):
         self.on_button_clicked(CbsDataBuilderWorker('./Server/DataConfig/cbs-data-config.json'))
 
-    @staticmethod
-    def on_build_gov_button_clicked():
-        GovDataBuilder.gov_build_data()
+    def on_build_gov_button_clicked(self):
+        self.on_button_clicked(GovDataBuilderWorker('./Server/DataConfig/gov-data-config.json'))
 
     @staticmethod
     def on_build_all_button_clicked():
