@@ -33,6 +33,7 @@ class Worker(QRunnable):
         try:
             with open(self.config_path, 'r', encoding='utf-8') as f:
                 self.inner_run(json.load(f))
+                self.post_inner_run()
                 time.sleep(2)
         except:
             print(traceback.format_exc())
@@ -44,6 +45,10 @@ class Worker(QRunnable):
     def inner_run(self, config):
         pass
 
+    def post_inner_run(self):
+        self.signals.subtitle.emit("")
+        self.signals.progress.emit(100)
+
     def emit_pre_build(self, title):
         self.signals.title.emit(title)
         self.completed_percentage = 0
@@ -53,6 +58,7 @@ class Worker(QRunnable):
 
     def progress(self, name, total):
         self.completed_index += 1
+        total = max(total, self.completed_index)
         self.calculate_estimated_time(total)
         self.signals.subtitle.emit(f"Name: ({self.completed_index}/{total}) {name}")
         if int((self.completed_index / total) * 100) >= self.completed_percentage:

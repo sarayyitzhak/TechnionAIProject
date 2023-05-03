@@ -59,7 +59,7 @@ class DataParser:
         self.get_places_data()
 
     def get_google_data(self):
-        self.google_df = pd.read_json(self.data_set_paths["google"]).replace({np.nan: None})
+        self.google_df = pd.read_csv(self.data_set_paths["google"]).replace({np.nan: None})
         for field in self.google_config["fields"]:
             field_name = field["name"]
             field_type = field["type"]
@@ -87,12 +87,12 @@ class DataParser:
             self.cbs_data[key] = {field["name"]: cbs_df[field["name"]][row] for field in self.cbs_config["fields"]}
 
     def get_places_data(self):
-        google_places_df = pd.read_json(self.data_set_paths["google_places"])
+        google_places_df = pd.read_csv(self.data_set_paths["google_places"])
         gov_df = pd.read_csv(self.data_set_paths["gov"])
 
         geo_location_field = self.global_fields["GEO_LOCATION"]
         google_places_df[geo_location_field] = google_places_df[geo_location_field].apply(self.parse_geo_location_field)
-        gov_df[geo_location_field] = gov_df[geo_location_field].apply(eval).apply(self.parse_geo_location_field)
+        gov_df[geo_location_field] = gov_df[geo_location_field].apply(self.parse_geo_location_field)
 
         for row in range(len(google_places_df)):
             if google_places_df["type"][row] == RESTAURANT:
@@ -301,7 +301,10 @@ class DataParser:
 
     @staticmethod
     def parse_geo_location_field(value):
-        return None if value is None else [round(value["lat"], 7), round(value["lng"], 7)]
+        if value is None:
+            return None
+        value = eval(value)
+        return [round(value["lat"], 7), round(value["lng"], 7)]
 
     @staticmethod
     def text_distance(s1, s2):

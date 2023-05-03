@@ -7,6 +7,7 @@ from PyQt5.QtCore import *
 from Server.DataBuilder import RestDataBuilder, CbsDataBuilder, GovDataBuilder, GoogleDataBuilder
 from Server.Algo import RunAlgorithm
 from Client.DataParserWorker import *
+from Client.GoogleDataBuilderWorker import *
 from Client.RestDataBuilderWorker import *
 from Client.CbsDataBuilderWorker import *
 from Client.GovDataBuilderWorker import *
@@ -86,9 +87,8 @@ class DevClientMainWindow(QDialog):
     def set_estimated_time(self, value):
         self.estimated_time.setText(value)
 
-    @staticmethod
-    def on_build_google_button_clicked():
-        GoogleDataBuilder.google_build_data()
+    def on_build_google_button_clicked(self):
+        self.on_button_clicked(GoogleDataBuilderWorker('./Server/DataConfig/google-data-config.json'))
 
     def on_build_rest_button_clicked(self):
         self.on_button_clicked(RestDataBuilderWorker('./Server/DataConfig/rest-data-config.json'))

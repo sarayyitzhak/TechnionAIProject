@@ -11,9 +11,15 @@ import numpy as np
 
 class GoogleDataBuilder:
 
-    def __init__(self, google_api_key: str, locations: list):
-        self.google_places = GooglePlaces(google_api_key)
-        self.locations = locations
+    def __init__(self, config, progress_func):
+        self.debug_mode = config["DEBUG"]
+        self.full_data_path = config["DEBUG_full_data_path"]
+        self.google_places = GooglePlaces(config["api_key"])
+        self.locations = config["locations"]
+        self.estimated_restaurants_total = config["estimated_restaurants_total"]
+        self.output_path = config["output_path"]
+        self.output_places_path = config["output_places_path"]
+        self.progress_func = progress_func
         self.data = []
         self.places = []
         self.place_ids = set()
@@ -23,8 +29,22 @@ class GoogleDataBuilder:
         self.rest_types = [types.TYPE_RESTAURANT, types.TYPE_CAFE]
 
     def build_data(self):
-        for location in self.locations:
-            self.get_raw_data_by_latitude(location)
+        if self.debug_mode:
+            self.build_data_debug()
+        else:
+            for location in self.locations:
+                self.get_raw_data_by_latitude(location)
+
+    def save_data(self):
+        pd.DataFrame(self.data).to_csv(self.output_path, index=False, encoding='utf-8-sig')
+        if not self.debug_mode:
+            pd.DataFrame(self.places).to_csv(self.output_places_path, index=False, encoding='utf-8-sig')
+
+    def build_data_debug(self):
+        with open(self.full_data_path, 'r', encoding='utf-8') as f:
+            for details in json.load(f):
+                if "rating" in details:
+                    self.add_place_details(details)
 
     def get_raw_data_by_latitude(self, location):
         lat = location["start_lat"]
@@ -60,8 +80,15 @@ class GoogleDataBuilder:
             if place.place_id not in self.rest_ids:
                 if is_rest and place["_rating"] != '':
                     place.get_details()
-                    self.data.append(self.get_data_details(place.details))
+                    self.add_place_details(place.details)
                 self.rest_ids.add(place.place_id)
+
+    def add_place_details(self, place_details):
+        details = self.get_data_details(place_details)
+        self.data.append(details)
+        if self.progress_func is not None:
+            self.progress_func(details['name'], self.estimated_restaurants_total)
+        time.sleep(0.01)
 
     def get_data_details(self, details):
         data = {}
@@ -182,16 +209,8 @@ class GoogleDataBuilder:
 def google_build_data():
     try:
         with open('./Server/DataConfig/google-data-config.json', 'r', encoding='utf-8') as f:
-            config = json.load(f)
-            builder = GoogleDataBuilder(config["api_key"], config["locations"])
+            builder = GoogleDataBuilder(json.load(f), None)
             builder.build_data()
-            write_to_file(builder.data, config["output_path"])
-            write_to_file(builder.places, config["output_places_path"])
-            # d = json.load(open('./Server/Dataset/full-google-data.json', 'r', encoding='utf-8'))
-            # data = []
-            # for d1 in d:
-            #     if "rating" in d1:
-            #         data.append(builder.get_data_details(d1))
-            # write_to_file(data, config["output_path"])
+            builder.save_data()
     except IOError:
         print("Error")
