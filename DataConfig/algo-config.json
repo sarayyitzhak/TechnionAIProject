@@ -1,49 +1,9 @@
 {
-    "data_set_paths": {
-        "google": "./Server/Dataset/google-data.csv",
-        "google_places": "./Server/Dataset/google-places-data.csv",
-        "rest": "./Server/Dataset/rest-data.csv",
-        "cbs": "./Server/Dataset/cbs-data.csv",
-        "gov": "./Server/Dataset/gov-data.csv"
-    },
-    "target_field": {
-        "rating_rate": 0.8,
-        "rating_field": "rating",
-        "votes_field": "user_ratings_total",
-        "name": "grade"
-    },
-    "global_fields": [
-        {
-            "name": "place_id",
-            "type": "PLACE_ID"
-        },
-        {
-            "name": "city",
-            "type": "CITY"
-        },
-        {
-            "name": "street_number",
-            "type": "STREET_NUMBER"
-        },
-        {
-            "name": "street",
-            "type": "STREET"
-        },
-        {
-            "name": "geo_location",
-            "type": "GEO_LOCATION"
-        },
-        {
-            "name": "name",
-            "type": "NAME"
-        },
-        {
-            "name": "address",
-            "type": "ADDRESS"
-        }
-    ],
-    "google_config": {
-        "fields": [
+    "data_set_path": "./DataOutput/data.csv",
+    "target_field": "grade",
+    "min_for_pruning": 3,
+    "max_depth": 8,
+    "fields": [
             {
                 "name": "dine_in",
                 "type": "BOOL"
@@ -58,28 +18,23 @@
             },
             {
                 "name": "serves_beer",
-                "type": "BOOL",
-                "fill_by": "close_activity_hour"
+                "type": "BOOL"
             },
             {
                 "name": "serves_breakfast",
-                "type": "BOOL",
-                "fill_by": "open_activity_hour"
+                "type": "BOOL"
             },
             {
                 "name": "serves_brunch",
-                "type": "BOOL",
-                "fill_by": "open_activity_hour"
+                "type": "BOOL"
             },
             {
                 "name": "serves_dinner",
-                "type": "BOOL",
-                "fill_by": "close_activity_hour"
+                "type": "BOOL"
             },
             {
                 "name": "serves_lunch",
-                "type": "BOOL",
-                "fill_by": "open_activity_hour"
+                "type": "BOOL"
             },
             {
                 "name": "serves_vegetarian_food",
@@ -87,8 +42,7 @@
             },
             {
                 "name": "serves_wine",
-                "type": "BOOL",
-                "fill_by": "close_activity_hour"
+                "type": "BOOL"
             },
             {
                 "name": "takeout",
@@ -101,10 +55,6 @@
             {
                 "name": "curbside_pickup",
                 "type": "BOOL"
-            },
-            {
-                "name": "name",
-                "type": "STRING"
             },
             {
                 "name": "price_level",
@@ -151,17 +101,9 @@
                 "type": "BOOL"
             },
             {
-                "name": "reviews",
-                "type": "REVIEWS"
-            },
-            {
                 "name": "geo_location",
                 "type": "GEO_LOCATION"
-            }
-        ]
-    },
-    "cbs_config": {
-        "fields": [
+            },
             {
                 "name": "percent of religious",
                 "type": "NUMBER"
@@ -177,45 +119,31 @@
             {
                 "name": "socio-economic cluster",
                 "type": "NUMBER"
-            }
-        ]
-    },
-    "places_config": {
-        "fields": [
+            },
             {
                 "name": "store_100",
-                "type": "STORE",
-                "distance_value": 100
+                "type": "NUMBER"
             },
             {
                 "name": "store_500",
-                "type": "STORE",
-                "distance_value": 500
+                "type": "NUMBER"
             },
             {
                 "name": "rest_100",
-                "type": "RESTAURANT",
-                "distance_value": 100
+                "type": "NUMBER"
             },
             {
                 "name": "rest_500",
-                "type": "RESTAURANT",
-                "distance_value": 500
+                "type": "NUMBER"
             },
             {
                 "name": "bus_station_100",
-                "type": "BUS_STATION",
-                "distance_value": 100
+                "type": "NUMBER"
             },
             {
                 "name": "bus_station_500",
-                "type": "BUS_STATION",
-                "distance_value": 500
-            }
-        ]
-    },
-    "rest_config": {
-        "fields": [
+                "type": "NUMBER"
+            },
             {
                 "name": "type",
                 "type": "STRING"
@@ -224,7 +152,5 @@
                 "name": "kosher",
                 "type": "BOOL"
             }
-        ]
-    },
-    "output_path": "./Server/Dataset/data.csv"
+    ]
 }

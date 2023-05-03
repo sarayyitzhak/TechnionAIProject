@@ -327,16 +327,3 @@ class DataParser:
     @staticmethod
     def parse_votes(votes):
         return np.sqrt(np.log(2 * votes))
-
-
-def parse_data(progress_func=None):
-    try:
-        with open('./Server/DataConfig/data-parser-config.json', 'r', encoding='utf-8') as f:
-            config = json.load(f)
-            parser = DataParser(config, progress_func)
-            parser.pre_parse_data()
-            parser.parse_data()
-            parser.fill_missing_data()
-            parser.save_data()
-    except IOError:
-        print("Error")

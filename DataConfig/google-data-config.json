@@ -1,6 +1,6 @@
 {
     "DEBUG": true,
-    "DEBUG_full_data_path": "./Server/Dataset/full-google-data.json",
+    "DEBUG_full_data_path": "./DataFiles/GoogleFiles/full-google-data.json",
     "api_key": "AIzaSyDdg_SlaMOYd6zZC_kVduo-_y9LDWsO8vA",
     "locations": [
         {
@@ -95,6 +95,6 @@
         }
     ],
     "estimated_restaurants_total": 1420,
-    "output_path": "./Server/Dataset/google-data.csv",
-    "output_places_path": "./Server/Dataset/google-places-data.csv"
+    "output_path": "./DataOutput/google-data.csv",
+    "output_places_path": "./DataOutput/google-places-data.csv"
 }

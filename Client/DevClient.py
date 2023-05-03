@@ -88,26 +88,23 @@ class DevClientMainWindow(QDialog):
         self.estimated_time.setText(value)
 
     def on_build_google_button_clicked(self):
-        self.on_button_clicked(GoogleDataBuilderWorker('./Server/DataConfig/google-data-config.json'))
+        self.on_button_clicked(GoogleDataBuilderWorker('./DataConfig/google-data-config.json'))
 
     def on_build_rest_button_clicked(self):
-        self.on_button_clicked(RestDataBuilderWorker('./Server/DataConfig/rest-data-config.json'))
+        self.on_button_clicked(RestDataBuilderWorker('./DataConfig/rest-data-config.json'))
 
     def on_build_cbs_button_clicked(self):
-        self.on_button_clicked(CbsDataBuilderWorker('./Server/DataConfig/cbs-data-config.json'))
+        self.on_button_clicked(CbsDataBuilderWorker('./DataConfig/cbs-data-config.json'))
 
     def on_build_gov_button_clicked(self):
-        self.on_button_clicked(GovDataBuilderWorker('./Server/DataConfig/gov-data-config.json'))
+        self.on_button_clicked(GovDataBuilderWorker('./DataConfig/gov-data-config.json'))
 
     @staticmethod
     def on_build_all_button_clicked():
-        GoogleDataBuilder.google_build_data()
-        RestDataBuilder.rest_build_data()
-        CbsDataBuilder.cbs_build_data()
-        GovDataBuilder.gov_build_data()
+        pass
 
     def on_parse_data_button_clicked(self):
-        self.on_button_clicked(DataParserWorker('./Server/DataConfig/data-parser-config.json'))
+        self.on_button_clicked(DataParserWorker('./DataConfig/data-parser-config.json'))
 
     def on_run_alg_button_clicked(self):
         self.show_progress_bar()

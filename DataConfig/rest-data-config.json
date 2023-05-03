@@ -1,5 +1,5 @@
 {
-    "chrome_driver_path": "chromedriver",
+    "chrome_driver_path": "./DataFiles/RestFiles/chromedriver.exe",
     "api_url": "https://www.rest.co.il/restaurants/",
     "web_paths": [
         {
@@ -31,5 +31,5 @@
             "city": "טירת כרמל"
         }
     ],
-    "output_path": "./Server/Dataset/rest-data.csv"
+    "output_path": "./DataOutput/rest-data.csv"
 }

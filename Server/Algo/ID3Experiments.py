@@ -9,7 +9,7 @@ class ID3Experiments:
 
     def basic_experiment(self):
         try:
-            with open('./Server/DataConfig/algo-config.json', 'r', encoding='utf-8') as f:
+            with open('./DataConfig/algo-config.json', 'r', encoding='utf-8') as f:
                 config = json.load(f)
                 train_set = pd.read_csv(config["data_set_path"])
                 field_names = [field["name"] for field in config["fields"]] + [config["target_field"]]

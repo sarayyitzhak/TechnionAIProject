@@ -71,14 +71,3 @@ class RestDataBuilder:
                 })
             if self.progress_func is not None:
                 self.progress_func(name, self.num_of_restaurants)
-
-
-def rest_build_data():
-    try:
-        with open('./Server/DataConfig/rest-data-config.json', 'r', encoding='utf-8') as f:
-            builder = RestDataBuilder(json.load(f), None)
-            builder.pre_build_data()
-            builder.build_data()
-            builder.save_data()
-    except IOError:
-        print("Error")

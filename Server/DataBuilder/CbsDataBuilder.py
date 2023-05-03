@@ -192,16 +192,3 @@ class CbsDataBuilder:
     def update_rel_by_street(self, street, city, people_count, religions_count):
         self.streets_dict[(street, city)]["amount of people"] += people_count
         self.streets_dict[(street, city)]["amount of religious"] += religions_count
-
-
-def cbs_build_data():
-    try:
-        with open('./Server/DataConfig/cbs-data-config.json', 'r', encoding='utf-8') as f:
-            builder = CbsDataBuilder(json.load(f), None)
-            builder.pre_build_data()
-            builder.build_religious_data()
-            builder.build_socio_economic_data()
-            builder.build_data()
-            builder.save_data()
-    except IOError:
-        print("Error")

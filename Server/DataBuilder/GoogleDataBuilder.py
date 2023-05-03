@@ -45,6 +45,7 @@ class GoogleDataBuilder:
             for details in json.load(f):
                 if "rating" in details:
                     self.add_place_details(details)
+                    time.sleep(0.01)    # Illustrate waiting
 
     def get_raw_data_by_latitude(self, location):
         lat = location["start_lat"]
@@ -59,7 +60,7 @@ class GoogleDataBuilder:
             self.get_raw_data_by_query(qr)
 
             while qr.has_next_page_token:
-                time.sleep(5)  # Waiting for the next page to be ready
+                time.sleep(5)   # Waiting for the next page to be ready
                 qr = self.create_query(lat_lng, place_type, qr.next_page_token)
                 self.get_raw_data_by_query(qr)
 
@@ -88,7 +89,6 @@ class GoogleDataBuilder:
         self.data.append(details)
         if self.progress_func is not None:
             self.progress_func(details['name'], self.estimated_restaurants_total)
-        time.sleep(0.01)
 
     def get_data_details(self, details):
         data = {}
@@ -204,13 +204,3 @@ class GoogleDataBuilder:
         open_on_friday = Time(total_minutes=activity_hours[5][1]).is_later_than(latest_closing_time_friday)
         open_on_saturday = Time(total_minutes=activity_hours[6][0]).is_earlier_than(earliest_opening_time_saturday) and activity_hours[6][0] != -1
         return open_on_friday or open_on_saturday
-
-
-def google_build_data():
-    try:
-        with open('./Server/DataConfig/google-data-config.json', 'r', encoding='utf-8') as f:
-            builder = GoogleDataBuilder(json.load(f), None)
-            builder.build_data()
-            builder.save_data()
-    except IOError:
-        print("Error")

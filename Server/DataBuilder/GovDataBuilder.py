@@ -60,15 +60,3 @@ class GovDataBuilder:
     def get_request_result(self, next_url: str):
         request = urllib.request.urlopen(self.base_url + next_url).read()
         return json.loads(request)["result"]
-
-
-def gov_build_data():
-    try:
-        with open('./Server/DataConfig/gov-data-config.json', 'r', encoding='utf-8') as f:
-            config = json.load(f)
-            builder = GovDataBuilder(config, None)
-            builder.pre_build_data()
-            builder.build_data()
-            builder.save_data()
-    except IOError:
-        print("Error")
