@@ -2,7 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from Server.DataBuilder.Utils import write_to_file
 import re
 import math
 import json
@@ -13,6 +12,7 @@ class RestDataBuilder:
 
     def __init__(self, config, progress_func):
         self.driver = webdriver.Chrome(executable_path=config["chrome_driver_path"])
+        self.driver.minimize_window()
         self.api_url = config['api_url']
         self.web_paths = config['web_paths']
         self.output_path = config["output_path"]

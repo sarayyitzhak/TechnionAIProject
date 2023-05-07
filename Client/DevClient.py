@@ -4,7 +4,6 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 
-from Server.DataBuilder import RestDataBuilder, CbsDataBuilder, GovDataBuilder, GoogleDataBuilder
 from Server.Algo import RunAlgorithm
 from Client.DataParserWorker import *
 from Client.GoogleDataBuilderWorker import *
@@ -16,26 +15,24 @@ from Client.GovDataBuilderWorker import *
 class DevClientMainWindow(QDialog):
     def __init__(self):
         super().__init__()
-        self.setStyle(QStyleFactory.create("Fusion"))
-        self.setStyleSheet('QPushButton {padding: 5ex; margin: 2ex;}')
-
-        self.setWindowTitle("Restaurant Rating Predictor")
+        self.layout: QGridLayout = None
+        self.scroll: QScrollArea = None
+        self.scroll_layout: QVBoxLayout = None
 
         self.thread_pool = QThreadPool()
+        self.init_ui()
+
+    def init_ui(self):
+        self.setStyle(QStyleFactory.create("Fusion"))
+        self.setStyleSheet('QPushButton {padding: 5ex; margin: 2ex;}')
+        self.setWindowTitle("Restaurant Rating Predictor")
 
         self.layout = QGridLayout()
-
-        self.progress_bar = None
-        self.title = None
-        self.subtitle = None
-        self.estimated_time = None
-
         self.build_buttons()
-        self.build_progress_bar()
-        self.hide_progress_bar()
+        self.build_scroll_bar()
 
-        self.setLayout(self.layout)
         self.layout.setContentsMargins(50, 50, 50, 50)
+        self.setLayout(self.layout)
 
     def build_buttons(self):
         self.build_button(0, 0, 1, "Build Google data", self.on_build_google_button_clicked)
@@ -51,41 +48,19 @@ class DevClientMainWindow(QDialog):
         self.layout.addWidget(button, i, j, 1, width)
         button.clicked.connect(function)
 
-    def build_progress_bar(self):
-        self.progress_bar = QProgressBar()
-        self.progress_bar.setRange(0, 100)
-        self.title = QLabel()
-        self.subtitle = QLabel()
-        self.estimated_time = QLabel()
+    def build_scroll_bar(self):
+        self.scroll = QScrollArea()
+        widget = QWidget()
+        self.scroll_layout = QVBoxLayout(widget)
+        self.scroll.setWidget(widget)
 
-        self.layout.addWidget(self.title, 4, 0, 1, 4)
-        self.layout.addWidget(self.subtitle, 5, 0, 1, 4)
-        self.layout.addWidget(self.progress_bar, 6, 0, 1, 4)
-        self.layout.addWidget(self.estimated_time, 7, 0, 1, 4)
+        self.scroll.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
+        self.scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        self.scroll.setWidgetResizable(True)
+        self.scroll.setFixedHeight(150)
 
-    def show_progress_bar(self):
-        self.progress_bar.show()
-        self.title.show()
-        self.subtitle.show()
-        self.estimated_time.show()
-
-    def hide_progress_bar(self):
-        self.progress_bar.hide()
-        self.title.hide()
-        self.subtitle.hide()
-        self.estimated_time.hide()
-
-    def set_progress(self, p):
-        self.progress_bar.setValue(int(p))
-
-    def set_title(self, value):
-        self.title.setText(value)
-
-    def set_subtitle(self, value):
-        self.subtitle.setText(value)
-
-    def set_estimated_time(self, value):
-        self.estimated_time.setText(value)
+        self.layout.addWidget(self.scroll, 4, 0, 1, 4)
+        self.scroll.hide()
 
     def on_build_google_button_clicked(self):
         self.on_button_clicked(GoogleDataBuilderWorker('./DataConfig/google-data-config.json'))
@@ -99,28 +74,49 @@ class DevClientMainWindow(QDialog):
     def on_build_gov_button_clicked(self):
         self.on_button_clicked(GovDataBuilderWorker('./DataConfig/gov-data-config.json'))
 
-    @staticmethod
-    def on_build_all_button_clicked():
-        pass
+    def on_build_all_button_clicked(self):
+        self.on_build_google_button_clicked()
+        self.on_build_rest_button_clicked()
+        self.on_build_cbs_button_clicked()
+        self.on_build_gov_button_clicked()
 
     def on_parse_data_button_clicked(self):
         self.on_button_clicked(DataParserWorker('./DataConfig/data-parser-config.json'))
 
     def on_run_alg_button_clicked(self):
-        self.show_progress_bar()
         RunAlgorithm.run_alg()
 
     def on_button_clicked(self, worker):
-        self.show_progress_bar()
+        group_box = QGroupBox()
+        progress_bar = QProgressBar()
+        progress_bar.setRange(0, 100)
+        title = QLabel()
+        subtitle = QLabel()
+        estimated_time = QLabel()
 
-        worker.signals.progress.connect(self.set_progress)
-        worker.signals.title.connect(self.set_title)
-        worker.signals.subtitle.connect(self.set_subtitle)
-        worker.signals.estimated_time.connect(self.set_estimated_time)
+        layout = QVBoxLayout()
+        layout.addWidget(title)
+        layout.addWidget(subtitle)
+        layout.addWidget(progress_bar)
+        layout.addWidget(estimated_time)
+        group_box.setLayout(layout)
+
+        self.scroll_layout.addWidget(group_box)
+        self.scroll.show()
+
+        worker.signals.progress.connect(progress_bar.setValue)
+        worker.signals.title.connect(title.setText)
+        worker.signals.subtitle.connect(subtitle.setText)
+        worker.signals.estimated_time.connect(estimated_time.setText)
         worker.signals.error.connect(self.show_error_message_box)
-        worker.signals.finished.connect(self.hide_progress_bar)
+        worker.signals.finished.connect(lambda: self.on_worker_finished(group_box))
 
         self.thread_pool.start(worker)
+
+    def on_worker_finished(self, widget):
+        self.scroll_layout.removeWidget(widget)
+        if self.thread_pool.activeThreadCount() == 0:
+            self.scroll.hide()
 
     @staticmethod
     def show_error_message_box(value):

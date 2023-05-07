@@ -1,7 +1,6 @@
 from googleplaces import GooglePlaces, types, lang, ranking
 
 from Server.Components.Time import Time
-from Server.DataBuilder.Utils import write_to_file
 import time
 import json
 import math
