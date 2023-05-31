@@ -4,12 +4,12 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 
-from Server.Algo import RunAlgorithm
 from Client.DataParserWorker import *
 from Client.GoogleDataBuilderWorker import *
 from Client.RestDataBuilderWorker import *
 from Client.CbsDataBuilderWorker import *
 from Client.GovDataBuilderWorker import *
+from Client.RunAlgorithmWorker import *
 
 
 class DevClientMainWindow(QDialog):
@@ -84,7 +84,7 @@ class DevClientMainWindow(QDialog):
         self.on_button_clicked(DataParserWorker('./DataConfig/data-parser-config.json'))
 
     def on_run_alg_button_clicked(self):
-        RunAlgorithm.run_alg()
+        self.on_button_clicked(RunAlgorithmWorker('./DataConfig/algo-config.json'))
 
     def on_button_clicked(self, worker):
         group_box = QGroupBox()

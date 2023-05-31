@@ -39,17 +39,47 @@ def location_distance(p1, p2):
 
 
 def unique_vals(rows, col):
-    return set([row[col] for row in rows])
+    return set([row[col] for row in rows if not pd.isnull(row[col])])
+
+
+def node_to_dict(node):
+    if isinstance(node, Leaf):
+        return {
+            "value": node.value,
+            "size": node.size,
+            "mae": node.mae
+        }
+
+    if isinstance(node, DecisionNode):
+        return {
+            "question": {
+                "column": node.question.column,
+                "field_type": node.question.field_type,
+                "column_idx": node.question.column_idx,
+                "value": node.question.value
+            },
+            "false": node_to_dict(node.false_branch),
+            "true": node_to_dict(node.true_branch)
+        }
+
+
+def dict_to_node(node):
+    if "question" in node:
+        q = node["question"]
+        value = tuple(q["value"]) if q["field_type"] in ["ACTIVITY_HOURS", "GEO_LOCATION"] else q["value"]
+        question = Question(q["column"], q["field_type"], q["column_idx"], value)
+        return DecisionNode(question, dict_to_node(node["true"]), dict_to_node(node["false"]))
+    else:
+        return Leaf(node["value"], node["size"], node["mae"])
 
 
 class Question:
 
-    def __init__(self, column, field_type, column_idx, value, var=0):
+    def __init__(self, column, field_type, column_idx, value):
         self.column = column
         self.field_type = field_type
         self.column_idx = column_idx
         self.value = value
-        self.var = var
 
     def match(self, example):
         val = example[self.column_idx]
@@ -83,21 +113,18 @@ class Question:
 
 class Leaf:
 
-    def __init__(self, labels):
-        self.size = len(labels)
-        self.mean = np.mean(labels)
-        self.mse = np.mean((labels - self.mean) ** 2)
+    def __init__(self, value, size, mae):
+        self.value = value
+        self.size = size
+        self.mae = mae
 
     def __str__(self) -> str:
-        return "{:.2f} [{}] ({:.2f})".format(self.mean, self.size, self.mse)
+        return "{:.2f} [{}] ({:.2f})".format(self.value, self.size, self.mae)
 
 
 class DecisionNode:
 
-    def __init__(self,
-                 question,
-                 true_branch,
-                 false_branch):
+    def __init__(self, question, true_branch, false_branch):
         self.question = question
         self.true_branch = true_branch
         self.false_branch = false_branch

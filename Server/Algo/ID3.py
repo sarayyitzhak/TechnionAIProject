@@ -6,22 +6,32 @@ from Server.Algo.DecisonTree import *
 
 
 class ID3:
-    def __init__(self, fields, min_for_pruning=0, max_depth=10):
+    def __init__(self, fields, min_for_pruning=0, max_depth=10, progress_func=None):
         self.fields = fields
         self.tree_root = None
         self.min_for_pruning = min_for_pruning
         self.max_depth = max_depth
+        self.progress_func = progress_func
+        self.total_size = 0
 
     def fit(self, x_train, y_train):
+        for idx, field in enumerate(self.fields):
+            self.total_size += len(unique_vals(x_train, idx))
+        self.total_size *= self.max_depth
         self.tree_root = self.build_tree(x_train, y_train, list())
 
     def build_tree(self, rows, labels, used_questions, depth=0):
-        leaf = Leaf(labels)
+        mean = np.mean(labels)
+        size = len(labels)
+        mae = np.mean(np.abs(labels - mean)) / 100
 
-        if len(rows) <= self.min_for_pruning or depth >= self.max_depth or leaf.mse < 0.1:
-            return leaf
+        if size <= self.min_for_pruning or depth >= self.max_depth or mae < 0.01:
+            if depth < self.max_depth:
+                self.total_size -= size
+            return Leaf(mean, size, mae)
 
         best_partition = self.find_best_split(rows, labels, used_questions)
+        self.total_size += (len(best_partition[2]) + len(best_partition[4])) - size
         best_question = best_partition[1]
         true_branch = self.build_tree(best_partition[2], best_partition[3], used_questions + [best_question], depth + 1)
         false_branch = self.build_tree(best_partition[4], best_partition[5], used_questions + [best_question], depth + 1)
@@ -36,13 +46,10 @@ class ID3:
 
         for idx, field in enumerate(self.fields):
             for val in unique_vals(rows, idx):
-                if pd.isnull(val):
-                    continue
                 question = Question(field["name"], field["type"], idx, val)
                 if question in used_questions:
                     continue
                 variance, true_rows, true_labels, false_rows, false_labels = self.partition(rows, labels, question)
-                question.var = variance
                 if variance < best_var:
                     best_var = variance
                     best_question = question
@@ -50,6 +57,8 @@ class ID3:
                     best_true_labels = true_labels
                     best_false_rows = false_rows
                     best_false_labels = false_labels
+                if self.progress_func is not None:
+                    self.progress_func(f"{field['name']}: {str(val)}", self.total_size)
 
         return best_var, best_question, best_true_rows, best_true_labels, best_false_rows, best_false_labels
 
@@ -100,7 +109,7 @@ class ID3:
             node = self.tree_root
 
         if isinstance(node, Leaf):
-            return node.mean
+            return node.value
 
         if isinstance(node, DecisionNode):
             if return_none_values and pd.isnull(row[node.question.column_idx]):

@@ -152,5 +152,6 @@
                 "name": "kosher",
                 "type": "BOOL"
             }
-    ]
+    ],
+    "output_path": "./DataOutput/algo-tree.json"
 }

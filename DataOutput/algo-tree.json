@@ -1,0 +1,801 @@
+{
+    "question": {
+        "column": "store_100",
+        "field_type": "NUMBER",
+        "column_idx": 29,
+        "value": 32
+    },
+    "false": {
+        "question": {
+            "column": "rest_500",
+            "field_type": "NUMBER",
+            "column_idx": 32,
+            "value": 55
+        },
+        "false": {
+            "question": {
+                "column": "geo_location",
+                "field_type": "GEO_LOCATION",
+                "column_idx": 24,
+                "value": [
+                    32.8330713,
+                    35.0585041
+                ]
+            },
+            "false": {
+                "question": {
+                    "column": "geo_location",
+                    "field_type": "GEO_LOCATION",
+                    "column_idx": 24,
+                    "value": [
+                        32.7685575,
+                        35.0093167
+                    ]
+                },
+                "false": {
+                    "question": {
+                        "column": "geo_location",
+                        "field_type": "GEO_LOCATION",
+                        "column_idx": 24,
+                        "value": [
+                            32.8094059,
+                            35.0481074
+                        ]
+                    },
+                    "false": {
+                        "question": {
+                            "column": "geo_location",
+                            "field_type": "GEO_LOCATION",
+                            "column_idx": 24,
+                            "value": [
+                                32.8514182,
+                                35.081212
+                            ]
+                        },
+                        "false": {
+                            "question": {
+                                "column": "geo_location",
+                                "field_type": "GEO_LOCATION",
+                                "column_idx": 24,
+                                "value": [
+                                    32.8132407,
+                                    35.1156444
+                                ]
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "geo_location",
+                                    "field_type": "GEO_LOCATION",
+                                    "column_idx": 24,
+                                    "value": [
+                                        32.7736977,
+                                        35.0460448
+                                    ]
+                                },
+                                "false": {
+                                    "value": 80.90012579281183,
+                                    "size": 946,
+                                    "mae": 0.08166474348430469
+                                },
+                                "true": {
+                                    "value": 69.60972727272727,
+                                    "size": 11,
+                                    "mae": 0.11706347107438018
+                                }
+                            },
+                            "true": {
+                                "value": 37.285,
+                                "size": 1,
+                                "mae": 0.0
+                            }
+                        },
+                        "true": {
+                            "question": {
+                                "column": "store_100",
+                                "field_type": "NUMBER",
+                                "column_idx": 29,
+                                "value": 6
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "store_100",
+                                    "field_type": "NUMBER",
+                                    "column_idx": 29,
+                                    "value": 5
+                                },
+                                "false": {
+                                    "value": 74.30225,
+                                    "size": 4,
+                                    "mae": 0.1192275
+                                },
+                                "true": {
+                                    "value": 53.285,
+                                    "size": 1,
+                                    "mae": 0.0
+                                }
+                            },
+                            "true": {
+                                "value": 23.474,
+                                "size": 1,
+                                "mae": 0.0
+                            }
+                        }
+                    },
+                    "true": {
+                        "value": 35.233,
+                        "size": 1,
+                        "mae": 0.0
+                    }
+                },
+                "true": {
+                    "value": 45.859,
+                    "size": 2,
+                    "mae": 0.24574000000000004
+                }
+            },
+            "true": {
+                "value": 23.474,
+                "size": 1,
+                "mae": 0.0
+            }
+        },
+        "true": {
+            "question": {
+                "column": "percent of religious",
+                "field_type": "NUMBER",
+                "column_idx": 25,
+                "value": 0.12
+            },
+            "false": {
+                "question": {
+                    "column": "rest_500",
+                    "field_type": "NUMBER",
+                    "column_idx": 32,
+                    "value": 149
+                },
+                "false": {
+                    "question": {
+                        "column": "rest_100",
+                        "field_type": "NUMBER",
+                        "column_idx": 31,
+                        "value": 1
+                    },
+                    "false": {
+                        "value": 65.263,
+                        "size": 2,
+                        "mae": 0.17789000000000005
+                    },
+                    "true": {
+                        "question": {
+                            "column": "store_500",
+                            "field_type": "NUMBER",
+                            "column_idx": 30,
+                            "value": 27
+                        },
+                        "false": {
+                            "value": 61.307,
+                            "size": 1,
+                            "mae": 0.0
+                        },
+                        "true": {
+                            "question": {
+                                "column": "store_500",
+                                "field_type": "NUMBER",
+                                "column_idx": 30,
+                                "value": 135
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "socio-economic index value",
+                                    "field_type": "NUMBER",
+                                    "column_idx": 26,
+                                    "value": 0.373
+                                },
+                                "false": {
+                                    "value": 84.87348717948717,
+                                    "size": 78,
+                                    "mae": 0.044698113083497734
+                                },
+                                "true": {
+                                    "value": 83.46370731707317,
+                                    "size": 82,
+                                    "mae": 0.04790876264128494
+                                }
+                            },
+                            "true": {
+                                "question": {
+                                    "column": "bus_station_500",
+                                    "field_type": "NUMBER",
+                                    "column_idx": 34,
+                                    "value": 17
+                                },
+                                "false": {
+                                    "value": 82.39066666666668,
+                                    "size": 3,
+                                    "mae": 0.013751111111111101
+                                },
+                                "true": {
+                                    "value": 65.246,
+                                    "size": 2,
+                                    "mae": 0.11960999999999998
+                                }
+                            }
+                        }
+                    }
+                },
+                "true": {
+                    "value": 54.4705,
+                    "size": 2,
+                    "mae": 0.33185500000000007
+                }
+            },
+            "true": {
+                "question": {
+                    "column": "rest_500",
+                    "field_type": "NUMBER",
+                    "column_idx": 32,
+                    "value": 175
+                },
+                "false": {
+                    "question": {
+                        "column": "rest_100",
+                        "field_type": "NUMBER",
+                        "column_idx": 31,
+                        "value": 27
+                    },
+                    "false": {
+                        "question": {
+                            "column": "store_500",
+                            "field_type": "NUMBER",
+                            "column_idx": 30,
+                            "value": 135
+                        },
+                        "false": {
+                            "question": {
+                                "column": "socio-economic rank",
+                                "field_type": "NUMBER",
+                                "column_idx": 27,
+                                "value": 138.2
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "socio-economic cluster",
+                                    "field_type": "NUMBER",
+                                    "column_idx": 28,
+                                    "value": 0.908
+                                },
+                                "false": {
+                                    "value": 85.59259130434783,
+                                    "size": 115,
+                                    "mae": 0.044468793950850655
+                                },
+                                "true": {
+                                    "value": 83.56282352941176,
+                                    "size": 102,
+                                    "mae": 0.052050749711649386
+                                }
+                            },
+                            "true": {
+                                "question": {
+                                    "column": "store_500",
+                                    "field_type": "NUMBER",
+                                    "column_idx": 30,
+                                    "value": 65
+                                },
+                                "false": {
+                                    "value": 87.49431249999999,
+                                    "size": 48,
+                                    "mae": 0.032992734375000006
+                                },
+                                "true": {
+                                    "value": 84.7824406779661,
+                                    "size": 59,
+                                    "mae": 0.04004814133869578
+                                }
+                            }
+                        },
+                        "true": {
+                            "question": {
+                                "column": "bus_station_500",
+                                "field_type": "NUMBER",
+                                "column_idx": 34,
+                                "value": 17
+                            },
+                            "false": {
+                                "value": 82.39066666666668,
+                                "size": 3,
+                                "mae": 0.013751111111111101
+                            },
+                            "true": {
+                                "value": 65.246,
+                                "size": 2,
+                                "mae": 0.11960999999999998
+                            }
+                        }
+                    },
+                    "true": {
+                        "value": 70.38799999999999,
+                        "size": 3,
+                        "mae": 0.15276000000000003
+                    }
+                },
+                "true": {
+                    "value": 63.465,
+                    "size": 2,
+                    "mae": 0.06968000000000003
+                }
+            }
+        }
+    },
+    "true": {
+        "question": {
+            "column": "rest_500",
+            "field_type": "NUMBER",
+            "column_idx": 32,
+            "value": 116
+        },
+        "false": {
+            "question": {
+                "column": "percent of religious",
+                "field_type": "NUMBER",
+                "column_idx": 25,
+                "value": 28.572
+            },
+            "false": {
+                "question": {
+                    "column": "percent of religious",
+                    "field_type": "NUMBER",
+                    "column_idx": 25,
+                    "value": 0.0
+                },
+                "false": {
+                    "question": {
+                        "column": "rest_100",
+                        "field_type": "NUMBER",
+                        "column_idx": 31,
+                        "value": 10
+                    },
+                    "false": {
+                        "question": {
+                            "column": "friday_activity_hours",
+                            "field_type": "ACTIVITY_HOURS",
+                            "column_idx": 19,
+                            "value": [
+                                480,
+                                900
+                            ]
+                        },
+                        "false": {
+                            "question": {
+                                "column": "store_100",
+                                "field_type": "NUMBER",
+                                "column_idx": 29,
+                                "value": 75
+                            },
+                            "false": {
+                                "value": 89.44,
+                                "size": 3,
+                                "mae": 0.013106666666666626
+                            },
+                            "true": {
+                                "value": 79.474,
+                                "size": 1,
+                                "mae": 0.0
+                            }
+                        },
+                        "true": {
+                            "question": {
+                                "column": "store_100",
+                                "field_type": "NUMBER",
+                                "column_idx": 29,
+                                "value": 75
+                            },
+                            "false": {
+                                "value": 75.32749999999999,
+                                "size": 2,
+                                "mae": 0.026144999999999995
+                            },
+                            "true": {
+                                "value": 79.885,
+                                "size": 2,
+                                "mae": 0.004110000000000014
+                            }
+                        }
+                    },
+                    "true": {
+                        "question": {
+                            "column": "open_activity_hour",
+                            "field_type": "NUMBER",
+                            "column_idx": 21,
+                            "value": 690.0
+                        },
+                        "false": {
+                            "question": {
+                                "column": "store_100",
+                                "field_type": "NUMBER",
+                                "column_idx": 29,
+                                "value": 48
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "friday_activity_hours",
+                                    "field_type": "ACTIVITY_HOURS",
+                                    "column_idx": 19,
+                                    "value": [
+                                        480,
+                                        900
+                                    ]
+                                },
+                                "false": {
+                                    "value": 70.027,
+                                    "size": 3,
+                                    "mae": 0.010626666666666675
+                                },
+                                "true": {
+                                    "value": 75.14750000000001,
+                                    "size": 2,
+                                    "mae": 0.00013500000000000512
+                                }
+                            },
+                            "true": {
+                                "question": {
+                                    "column": "serves_breakfast",
+                                    "field_type": "BOOL",
+                                    "column_idx": 4,
+                                    "value": false
+                                },
+                                "false": {
+                                    "value": 74.373,
+                                    "size": 4,
+                                    "mae": 0.02592499999999994
+                                },
+                                "true": {
+                                    "value": 84.651,
+                                    "size": 2,
+                                    "mae": 0.006340000000000004
+                                }
+                            }
+                        },
+                        "true": {
+                            "value": 57.907,
+                            "size": 2,
+                            "mae": 0.17409999999999998
+                        }
+                    }
+                },
+                "true": {
+                    "question": {
+                        "column": "percent of religious",
+                        "field_type": "NUMBER",
+                        "column_idx": 25,
+                        "value": 24.385
+                    },
+                    "false": {
+                        "question": {
+                            "column": "store_500",
+                            "field_type": "NUMBER",
+                            "column_idx": 30,
+                            "value": 91
+                        },
+                        "false": {
+                            "value": 21.285,
+                            "size": 2,
+                            "mae": 0.0
+                        },
+                        "true": {
+                            "question": {
+                                "column": "rest_100",
+                                "field_type": "NUMBER",
+                                "column_idx": 31,
+                                "value": 8
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "saturday_activity_hours",
+                                    "field_type": "ACTIVITY_HOURS",
+                                    "column_idx": 20,
+                                    "value": [
+                                        1110,
+                                        1410
+                                    ]
+                                },
+                                "false": {
+                                    "value": 84.9820909090909,
+                                    "size": 11,
+                                    "mae": 0.04936793388429754
+                                },
+                                "true": {
+                                    "value": 77.72540000000001,
+                                    "size": 5,
+                                    "mae": 0.05382719999999997
+                                }
+                            },
+                            "true": {
+                                "question": {
+                                    "column": "sunday_activity_hours",
+                                    "field_type": "ACTIVITY_HOURS",
+                                    "column_idx": 14,
+                                    "value": [
+                                        540,
+                                        1290
+                                    ]
+                                },
+                                "false": {
+                                    "value": 56.92557142857142,
+                                    "size": 7,
+                                    "mae": 0.0995734693877551
+                                },
+                                "true": {
+                                    "value": 72.37115151515152,
+                                    "size": 33,
+                                    "mae": 0.0774307988980716
+                                }
+                            }
+                        }
+                    },
+                    "true": {
+                        "question": {
+                            "column": "friday_activity_hours",
+                            "field_type": "ACTIVITY_HOURS",
+                            "column_idx": 19,
+                            "value": [
+                                720,
+                                870
+                            ]
+                        },
+                        "false": {
+                            "question": {
+                                "column": "bus_station_500",
+                                "field_type": "NUMBER",
+                                "column_idx": 34,
+                                "value": 27
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "sunday_activity_hours",
+                                    "field_type": "ACTIVITY_HOURS",
+                                    "column_idx": 14,
+                                    "value": [
+                                        0,
+                                        2880
+                                    ]
+                                },
+                                "false": {
+                                    "value": 77.19305555555556,
+                                    "size": 36,
+                                    "mae": 0.04997666666666668
+                                },
+                                "true": {
+                                    "value": 62.24325,
+                                    "size": 4,
+                                    "mae": 0.1213625
+                                }
+                            },
+                            "true": {
+                                "value": 45.949,
+                                "size": 1,
+                                "mae": 0.0
+                            }
+                        },
+                        "true": {
+                            "question": {
+                                "column": "store_100",
+                                "field_type": "NUMBER",
+                                "column_idx": 29,
+                                "value": 57
+                            },
+                            "false": {
+                                "value": 40.497,
+                                "size": 1,
+                                "mae": 0.0
+                            },
+                            "true": {
+                                "question": {
+                                    "column": "rest_100",
+                                    "field_type": "NUMBER",
+                                    "column_idx": 31,
+                                    "value": 25
+                                },
+                                "false": {
+                                    "value": 69.81925000000001,
+                                    "size": 4,
+                                    "mae": 0.048273750000000074
+                                },
+                                "true": {
+                                    "value": 54.6495,
+                                    "size": 2,
+                                    "mae": 0.08257499999999997
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "true": {
+                "question": {
+                    "column": "geo_location",
+                    "field_type": "GEO_LOCATION",
+                    "column_idx": 24,
+                    "value": [
+                        32.789528,
+                        34.9638183
+                    ]
+                },
+                "false": {
+                    "question": {
+                        "column": "serves_beer",
+                        "field_type": "BOOL",
+                        "column_idx": 3,
+                        "value": false
+                    },
+                    "false": {
+                        "value": 88.0505,
+                        "size": 2,
+                        "mae": 0.011034999999999968
+                    },
+                    "true": {
+                        "question": {
+                            "column": "geo_location",
+                            "field_type": "GEO_LOCATION",
+                            "column_idx": 24,
+                            "value": [
+                                32.812774,
+                                34.996858
+                            ]
+                        },
+                        "false": {
+                            "value": 90.911,
+                            "size": 2,
+                            "mae": 0.0006700000000000018
+                        },
+                        "true": {
+                            "value": 88.314,
+                            "size": 2,
+                            "mae": 0.008399999999999963
+                        }
+                    }
+                },
+                "true": {
+                    "question": {
+                        "column": "store_100",
+                        "field_type": "NUMBER",
+                        "column_idx": 29,
+                        "value": 46
+                    },
+                    "false": {
+                        "question": {
+                            "column": "kosher",
+                            "field_type": "BOOL",
+                            "column_idx": 36,
+                            "value": false
+                        },
+                        "false": {
+                            "question": {
+                                "column": "rest_100",
+                                "field_type": "NUMBER",
+                                "column_idx": 31,
+                                "value": 15
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "close_activity_hour",
+                                    "field_type": "NUMBER",
+                                    "column_idx": 22,
+                                    "value": 1374.0
+                                },
+                                "false": {
+                                    "value": 75.20400000000001,
+                                    "size": 3,
+                                    "mae": 0.0007533333333333302
+                                },
+                                "true": {
+                                    "value": 69.85,
+                                    "size": 1,
+                                    "mae": 0.0
+                                }
+                            },
+                            "true": {
+                                "value": 68.61,
+                                "size": 1,
+                                "mae": 0.0
+                            }
+                        },
+                        "true": {
+                            "question": {
+                                "column": "open_activity_hour",
+                                "field_type": "NUMBER",
+                                "column_idx": 21,
+                                "value": 690.0
+                            },
+                            "false": {
+                                "value": 72.20166666666667,
+                                "size": 3,
+                                "mae": 0.019548888888888928
+                            },
+                            "true": {
+                                "value": 40.497,
+                                "size": 1,
+                                "mae": 0.0
+                            }
+                        }
+                    },
+                    "true": {
+                        "question": {
+                            "column": "serves_breakfast",
+                            "field_type": "BOOL",
+                            "column_idx": 4,
+                            "value": false
+                        },
+                        "false": {
+                            "question": {
+                                "column": "open_on_saturday",
+                                "field_type": "BOOL",
+                                "column_idx": 23,
+                                "value": false
+                            },
+                            "false": {
+                                "value": 79.23733333333332,
+                                "size": 3,
+                                "mae": 0.008635555555555641
+                            },
+                            "true": {
+                                "question": {
+                                    "column": "store_100",
+                                    "field_type": "NUMBER",
+                                    "column_idx": 29,
+                                    "value": 75
+                                },
+                                "false": {
+                                    "value": 72.72466666666666,
+                                    "size": 3,
+                                    "mae": 0.023655555555555544
+                                },
+                                "true": {
+                                    "value": 77.16833333333334,
+                                    "size": 3,
+                                    "mae": 0.015371111111111162
+                                }
+                            }
+                        },
+                        "true": {
+                            "question": {
+                                "column": "store_100",
+                                "field_type": "NUMBER",
+                                "column_idx": 29,
+                                "value": 75
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "rest_100",
+                                    "field_type": "NUMBER",
+                                    "column_idx": 31,
+                                    "value": 17
+                                },
+                                "false": {
+                                    "value": 88.67099999999999,
+                                    "size": 2,
+                                    "mae": 0.011969999999999956
+                                },
+                                "true": {
+                                    "value": 84.651,
+                                    "size": 2,
+                                    "mae": 0.006340000000000004
+                                }
+                            },
+                            "true": {
+                                "value": 79.474,
+                                "size": 1,
+                                "mae": 0.0
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "true": {
+            "value": 21.285,
+            "size": 1,
+            "mae": 0.0
+        }
+    }
+}
