@@ -32,8 +32,6 @@ class DataParser:
         self.places_data = {place_key: [] for place_key in PLACE_KEYS}
         self.common_words_strong = None
         self.common_words_weak = None
-        self.max_rating = None
-        self.max_votes = None
         self.data = {}
 
     def pre_parse_data(self):
@@ -105,7 +103,6 @@ class DataParser:
 
     def get_helper_data(self):
         self.get_common_words_data()
-        self.get_max_data()
 
     def get_common_words_data(self):
         common_words = self.get_common_words()
@@ -122,10 +119,6 @@ class DataParser:
                     common_words[word.lower()] = 0
                 common_words[word.lower()] += 1
         return common_words
-
-    def get_max_data(self):
-        self.max_rating = np.max(self.google_df[self.target_field["rating_field"]])
-        self.max_votes = self.parse_votes(np.max(self.google_df[self.target_field["votes_field"]]))
 
     def prepare_data(self):
         fields = []
@@ -231,10 +224,7 @@ class DataParser:
     def fill_target_data(self, row):
         rating_data = self.google_df.iloc[row][self.target_field["rating_field"]]
         votes_data = self.google_df.iloc[row][self.target_field["votes_field"]]
-        rating_rate = self.target_field["rating_rate"]
-        votes = self.parse_votes(votes_data) / self.max_votes
-        rating = rating_data / self.max_rating
-        value = ((rating_rate * rating) + ((1 - rating_rate) * votes)) * 100
+        value = self.normalize_votes(votes_data) * rating_data * 20
         self.data[self.target_field["name"]].append(round(value, 3))
 
     def add_data(self, config, data):
@@ -325,5 +315,5 @@ class DataParser:
         return len(list(set(name1.lower().split(" ")) & set(name2.lower().split(" "))))
 
     @staticmethod
-    def parse_votes(votes):
-        return np.sqrt(np.log(2 * votes))
+    def normalize_votes(votes):
+        return 1/(1 + np.exp(-0.05 * votes))

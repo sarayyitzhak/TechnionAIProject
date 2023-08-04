@@ -5,6 +5,7 @@
       <option name="ignoredPackages">
         <list>
           <option value="pandas" />
+          <option value="matplotlib" />
         </list>
       </option>
     </inspection_tool>

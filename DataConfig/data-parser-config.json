@@ -7,7 +7,6 @@
         "gov": "./DataOutput/gov-data.csv"
     },
     "target_field": {
-        "rating_rate": 0.8,
         "rating_field": "rating",
         "votes_field": "user_ratings_total",
         "name": "grade"

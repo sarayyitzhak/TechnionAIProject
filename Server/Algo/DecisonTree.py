@@ -1,13 +1,14 @@
 import numpy as np
 import mpu
 import pandas as pd
+import math
 
 
-def is_closes_places(value1, value2):
-    return location_distance(value1, value2) < 0.3
+def is_closes_places(value1, value2, max_distance_km=0.3):
+    return location_distance(value1, value2) < max_distance_km
 
 
-def common_activity_hours(value1, value2):
+def common_activity_hours(value1, value2, min_common_percentage=0.8):
     if value1 == (-1, -1) or value2 == (-1, -1):
         return False
     else:
@@ -15,7 +16,7 @@ def common_activity_hours(value1, value2):
         intersection_total_minutes = get_intersection_total_minutes(value1, value2)
 
         common = (intersection_total_minutes * 2) / total_minutes
-        return common > 0.8
+        return common > min_common_percentage
 
 
 def get_intersection_total_minutes(interval1, interval2):
@@ -39,7 +40,12 @@ def location_distance(p1, p2):
 
 
 def unique_vals(rows, col):
-    return set([row[col] for row in rows if not pd.isnull(row[col])])
+    vals = set([row[col] for row in rows if not pd.isnull(row[col])])
+    if len(vals) <= 100:
+        return vals
+    else:
+        ceil = math.ceil(len(vals) / 100)
+        return [val for idx, val in enumerate(sorted(vals)) if idx % ceil == 0]
 
 
 def node_to_dict(node):
@@ -96,7 +102,16 @@ class Question:
 
     def __eq__(self, other):
         if isinstance(other, Question):
-            return self.column_idx == other.column_idx and self.value == other.value
+            if self.column_idx != other.column_idx:
+                return False
+            if self.field_type == "BOOL":
+                return True
+            elif self.field_type == "GEO_LOCATION":
+                return is_closes_places(self.value, other.value, 0.1)
+            elif self.field_type == "ACTIVITY_HOURS":
+                return common_activity_hours(self.value, other.value, 0.9)
+            else:
+                return self.value == other.value
 
     def __repr__(self):
         # This is just a helper method to print
