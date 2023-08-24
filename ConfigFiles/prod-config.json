@@ -1,0 +1,155 @@
+{
+    "fields": [
+            {
+                "string": "Dine in",
+                "name": "dine_in",
+                "type": "BOOL"
+            },
+            {
+                "string": "Delivery",
+                "name": "delivery",
+                "type": "BOOL"
+            },
+            {
+                "string": "Reservable",
+                "name": "reservable",
+                "type": "BOOL"
+            },
+            {
+                "string": "Serves beer",
+                "name": "serves_beer",
+                "type": "BOOL"
+            },
+            {
+                "string": "Serves breakfast",
+                "name": "serves_breakfast",
+                "type": "BOOL"
+            },
+            {
+                "string": "Serves brunch",
+                "name": "serves_brunch",
+                "type": "BOOL"
+            },
+            {
+                "string": "Serves dinner",
+                "name": "serves_dinner",
+                "type": "BOOL"
+            },
+            {
+                "string": "Serves lunch",
+                "name": "serves_lunch",
+                "type": "BOOL"
+            },
+            {
+                "string": "Serves vegeterian food",
+                "name": "serves_vegetarian_food",
+                "type": "BOOL"
+            },
+            {
+                "string": "Serves wine",
+                "name": "serves_wine",
+                "type": "BOOL"
+            },
+            {
+                "string": "Takeout",
+                "name": "takeout",
+                "type": "BOOL"
+            },
+            {
+                "string": "Wheelchair Accessible Entrance",
+                "name": "wheelchair_accessible_entrance",
+                "type": "BOOL"
+            },
+            {
+                "string": "Curbside Pickup",
+                "name": "curbside_pickup",
+                "type": "BOOL"
+            },
+            {
+                "string": "Kosher",
+                "name": "kosher",
+                "type": "BOOL"
+            },
+            {
+                "name": "name",
+                "type": "STRING"
+            },
+            {
+                "string": "Select price level",
+                "name": "price_level",
+                "type": "SELECTION"
+            },
+            {
+                "string": "Select restaurant type",
+                "name": "type",
+                "type": "SELECTION"
+            },
+            {
+                "name": "city",
+                "type": "LOCATION"
+            },
+            {
+                "name": "street",
+                "type": "LOCATION"
+            },
+            {
+                "name": "geo_location",
+                "type": "LOCATION"
+            },
+            {
+                "name": "sunday_activity_hours",
+                "type": "ACTIVITY_HOURS"
+            },
+            {
+                "name": "monday_activity_hours",
+                "type": "ACTIVITY_HOURS"
+            },
+            {
+                "name": "tuesday_activity_hours",
+                "type": "ACTIVITY_HOURS"
+            },
+            {
+                "name": "wednesday_activity_hours",
+                "type": "ACTIVITY_HOURS"
+            },
+            {
+                "name": "thursday_activity_hours",
+                "type": "ACTIVITY_HOURS"
+            },
+            {
+                "name": "friday_activity_hours",
+                "type": "ACTIVITY_HOURS"
+            },
+            {
+                "name": "saturday_activity_hours",
+                "type": "ACTIVITY_HOURS"
+            },
+            {
+                "name": "open_activity_hour",
+                "type": "MEAN"
+            },
+            {
+                "name": "close_activity_hour",
+                "type": "MEAN"
+            },
+            {
+                "name": "open_on_saturday",
+                "type": "SATURDAY"
+            }
+        ],
+
+    "days": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+    ],
+
+    "default_location": {
+        "lat": 32.793137,
+        "lng": 35.017856
+    }
+}

@@ -1,6 +1,8 @@
 from googleplaces import GooglePlaces, types, lang, ranking
 
 from Server.Components.Time import Time
+from Server.DataFiller import *
+from Server.DataBuilder.Utils import write_to_file
 import time
 import json
 import math
@@ -120,7 +122,10 @@ class GoogleDataBuilder:
         data["open_activity_hour"] = self.get_mean_activity_hour(activity_hours, True)
         data["close_activity_hour"] = self.get_mean_activity_hour(activity_hours, False)
 
-        data["open_on_saturday"] = self.get_open_on_saturday(activity_hours)
+        data["open_activity_hour"] = get_mean_activity_hour(activity_hours, True)
+        data["close_activity_hour"] = get_mean_activity_hour(activity_hours, False)
+
+        data["open_on_saturday"] = is_open_on_saturday(activity_hours)
 
         data["reviews"] = self.get_reviews(details)
 

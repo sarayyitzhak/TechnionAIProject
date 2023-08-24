@@ -1,15 +1,18 @@
-from PyQt5.QtWidgets import QApplication, QLabel, QWidget, QPushButton, QVBoxLayout, QMessageBox, QGridLayout
+from PyQt5.QtWidgets import QLabel, QWidget, QPushButton, QVBoxLayout, QMessageBox, QGridLayout
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
-from PyQt5.QtCore import *
 
-from Client.DataParserWorker import *
-from Client.GoogleDataBuilderWorker import *
-from Client.RestDataBuilderWorker import *
-from Client.CbsDataBuilderWorker import *
-from Client.GovDataBuilderWorker import *
-from Client.RunAlgorithmWorker import *
+from Client.Workers.DataParserWorker import *
+from Client.Workers.GoogleDataBuilderWorker import *
+from Client.Workers.RestDataBuilderWorker import *
+from Client.Workers.CbsDataBuilderWorker import *
+from Client.Workers.GovDataBuilderWorker import *
+from Client.Workers.RunAlgorithmWorker import *
+from Client.Workers.Worker import *
+from Server.DataBuilder.Utils import write_to_file
+
+import pandas as pd
+
 
 
 class DevClientMainWindow(QDialog):
@@ -35,13 +38,14 @@ class DevClientMainWindow(QDialog):
         self.setLayout(self.layout)
 
     def build_buttons(self):
-        self.build_button(0, 0, 1, "Build Google data", self.on_build_google_button_clicked)
-        self.build_button(0, 1, 1, "Build Rest data", self.on_build_rest_button_clicked)
-        self.build_button(0, 2, 1, "Build CBS data", self.on_build_cbs_button_clicked)
-        self.build_button(0, 3, 1, "Build Gov data", self.on_build_gov_button_clicked)
-        self.build_button(1, 0, 4, "Build all data", self.on_build_all_button_clicked)
-        self.build_button(2, 0, 4, "Parse data", self.on_parse_data_button_clicked)
-        self.build_button(3, 0, 4, "Run algorithm", self.on_run_alg_button_clicked)
+        self.build_button(0, 0, 1, "Build Google Data", self.on_build_google_button_clicked)
+        self.build_button(0, 1, 1, "Build Rest Data", self.on_build_rest_button_clicked)
+        self.build_button(0, 2, 1, "Build CBS Data", self.on_build_cbs_button_clicked)
+        self.build_button(0, 3, 1, "Build Gov Data", self.on_build_gov_button_clicked)
+        self.build_button(1, 0, 4, "Build All Data", self.on_build_all_button_clicked)
+        self.build_button(2, 0, 4, "Get Data Config", self.on_data_config_button_clicked)
+        self.build_button(3, 0, 4, "Parse Data", self.on_parse_data_button_clicked)
+        self.build_button(4, 0, 4, "Run Algorithm", self.on_run_alg_button_clicked)
 
     def build_button(self, i, j, width, label, function):
         button = QPushButton(label)
@@ -63,16 +67,16 @@ class DevClientMainWindow(QDialog):
         self.scroll.hide()
 
     def on_build_google_button_clicked(self):
-        self.on_button_clicked(GoogleDataBuilderWorker('./DataConfig/google-data-config.json'))
+        self.on_button_clicked(GoogleDataBuilderWorker('./ConfigFiles/google-data-config.json'))
 
     def on_build_rest_button_clicked(self):
-        self.on_button_clicked(RestDataBuilderWorker('./DataConfig/rest-data-config.json'))
+        self.on_button_clicked(RestDataBuilderWorker('./ConfigFiles/rest-data-config.json'))
 
     def on_build_cbs_button_clicked(self):
-        self.on_button_clicked(CbsDataBuilderWorker('./DataConfig/cbs-data-config.json'))
+        self.on_button_clicked(CbsDataBuilderWorker('./ConfigFiles/cbs-data-config.json'))
 
     def on_build_gov_button_clicked(self):
-        self.on_button_clicked(GovDataBuilderWorker('./DataConfig/gov-data-config.json'))
+        self.on_button_clicked(GovDataBuilderWorker('./ConfigFiles/gov-data-config.json'))
 
     def on_build_all_button_clicked(self):
         self.on_build_google_button_clicked()
@@ -80,11 +84,28 @@ class DevClientMainWindow(QDialog):
         self.on_build_cbs_button_clicked()
         self.on_build_gov_button_clicked()
 
+    @staticmethod
+    def on_data_config_button_clicked():
+        try:
+            data = pd.read_csv("./Server/Dataset/data.csv")
+            price_level_as_num = data["price_level"].dropna().unique()
+            price_level_as_num.sort()
+            types = data["type"].dropna().unique().tolist()
+            types.remove("כשר") #TODO: Remove
+            config = {
+                "type": types,
+                "price_level": ['$' * int(num) for num in price_level_as_num]
+                }
+            write_to_file(config, "./ConfigFiles/prod-data-config.json")
+        except IOError:
+            print("Error")
+
+    # @staticmethod
     def on_parse_data_button_clicked(self):
-        self.on_button_clicked(DataParserWorker('./DataConfig/data-parser-config.json'))
+        self.on_button_clicked(DataParserWorker('./ConfigFiles/data-parser-config.json'))
 
     def on_run_alg_button_clicked(self):
-        self.on_button_clicked(RunAlgorithmWorker('./DataConfig/algo-config.json'))
+        self.on_button_clicked(RunAlgorithmWorker('./ConfigFiles/algo-config.json'))
 
     def on_button_clicked(self, worker):
         group_box = QGroupBox()

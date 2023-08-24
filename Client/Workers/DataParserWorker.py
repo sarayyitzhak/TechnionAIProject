@@ -1,4 +1,4 @@
-from Client.Worker import Worker
+from Client.Workers.Worker import Worker
 from Server.DataParser.DataParser import *
 
 

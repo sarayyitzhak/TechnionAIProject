@@ -46,3 +46,7 @@ urllib3==1.26.15
 wsproto==1.2.0
 xlrd==2.0.1
 zipp==3.15.0
+
+folium~=0.14.0
+pyperclip~=1.8.2
+streamlit~=1.22.0
