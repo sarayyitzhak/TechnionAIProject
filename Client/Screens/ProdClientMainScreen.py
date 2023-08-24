@@ -42,6 +42,7 @@ class ProdClientMainScreen(QDialog):
         self.city_text_box = None
         self.street_text_box = None
         self.geo_loc_text_box = None
+        self.data_filler = None
 
         self.data_fields = [field for field in self.config["fields"]]
         self.bool_fields = [field for field in self.config["fields"] if field["type"] == "BOOL"]
@@ -75,13 +76,11 @@ class ProdClientMainScreen(QDialog):
         self.final_res = [self.res[field["name"]] for field in self.data_fields if field["name"] in self.res]
 
     def set_info(self):
-        # percent of relig, ser idx, ser rank, ser cluster, store100, store 500, rest100, rest500, bus100, bus500 //TODO: complete
-        # TODO: add fields
         self.res.update(self.res_bool)
         self.res.update(self.res_multi_choice)
-        self.res.update(self.res_calc_features_by_activity())
-        # self.res.extend(self.res_calc_features_by_loc())
         self.res.update(self.res_location)
+        self.res.update(self.res_calc_features_by_activity())
+        self.res.update(self.res_calc_features_by_loc())
 
     def res_calc_features_by_activity(self):
         data = {}
@@ -92,14 +91,20 @@ class ProdClientMainScreen(QDialog):
         for idx, day in enumerate(self.activity_fields):
             data[day["name"]] = activity_hours[idx]
         for is_open, mean in enumerate([field for field in self.data_fields if field["type"] == "MEAN"]):
-            data[mean["name"]] = get_mean_activity_hour(activity_hours, 1 - is_open)
+            data[mean["name"]] = ActivityTimeFiller.get_mean_activity_hour(activity_hours, 1 - is_open)
         saturday = [field for field in self.data_fields if field["type"] == "SATURDAY"].pop()
-        data[saturday["name"]] = is_open_on_saturday(activity_hours)
+        data[saturday["name"]] = ActivityTimeFiller.is_open_on_saturday(activity_hours)
         return data
 
     def res_calc_features_by_loc(self):
         data = {}
-        self.location #TODO: complete
+        config_file = open('./ConfigFiles/data-parser-config.json', 'r', encoding='utf-8')
+        self.data_filler = DataFiller(json.load(config_file))
+        self.data_filler.get_places_data()
+        data.update(self.data_filler.get_places_data_by_point(tuple(self.res_location["geo_location"]), None))
+        self.data_filler.get_cbs_data()
+        data.update(self.data_filler.get_cbs_data_by_address(self.res_location["city"], self.res_location["street"]))
+        return data
 
     def update_location_data(self):
         self.res_location["city"] = self.city_text_box.text()

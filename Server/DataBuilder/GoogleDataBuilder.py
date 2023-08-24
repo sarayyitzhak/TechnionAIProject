@@ -119,13 +119,13 @@ class GoogleDataBuilder:
         data['friday_activity_hours'] = activity_hours[5]
         data['saturday_activity_hours'] = activity_hours[6]
 
-        data["open_activity_hour"] = self.get_mean_activity_hour(activity_hours, True)
-        data["close_activity_hour"] = self.get_mean_activity_hour(activity_hours, False)
+        data["open_activity_hour"] = ActivityTimeFiller.get_mean_activity_hour(activity_hours, True)
+        data["close_activity_hour"] = ActivityTimeFiller.get_mean_activity_hour(activity_hours, False)
 
-        data["open_activity_hour"] = get_mean_activity_hour(activity_hours, True)
-        data["close_activity_hour"] = get_mean_activity_hour(activity_hours, False)
+        data["open_activity_hour"] = ActivityTimeFiller.get_mean_activity_hour(activity_hours, True)
+        data["close_activity_hour"] = ActivityTimeFiller.get_mean_activity_hour(activity_hours, False)
 
-        data["open_on_saturday"] = is_open_on_saturday(activity_hours)
+        data["open_on_saturday"] = ActivityTimeFiller.is_open_on_saturday(activity_hours)
 
         data["reviews"] = self.get_reviews(details)
 
@@ -190,21 +190,7 @@ class GoogleDataBuilder:
         return activity_hours
 
     @staticmethod
-    def get_mean_activity_hour(activity_hours, is_open):
-        idx = 0 if is_open else 1
-        activity_hours_by_index = [activity_hours[day][idx] for day in range(5) if activity_hours[day] is not None]
-        return None if len(activity_hours_by_index) == 0 else np.mean(activity_hours_by_index)
-
-    @staticmethod
     def get_reviews(details):
         return None if "reviews" not in details or type(details["reviews"]) is not list else [review["text"] for review in details["reviews"]]
 
-    @staticmethod
-    def get_open_on_saturday(activity_hours):
-        if activity_hours[5] is None:
-            return None
-        latest_closing_time_friday = Time(hours=17, minutes=0)
-        earliest_opening_time_saturday = Time(hours=19, minutes=0)
-        open_on_friday = Time(total_minutes=activity_hours[5][1]).is_later_than(latest_closing_time_friday)
-        open_on_saturday = Time(total_minutes=activity_hours[6][0]).is_earlier_than(earliest_opening_time_saturday) and activity_hours[6][0] != -1
-        return open_on_friday or open_on_saturday
+

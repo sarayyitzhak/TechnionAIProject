@@ -31,7 +31,7 @@ class ProdClientResultScreen(QDialog):
         label.setAlignment(Qt.AlignCenter)
         self.layout.addWidget(label)
 
-        rate = '50'
+        rate = '0'
         rate_label = QLabel(str(rate))
         rate_label.setFont(QFont('Ariel', 30))
         rate_label.setAlignment(Qt.AlignCenter)
