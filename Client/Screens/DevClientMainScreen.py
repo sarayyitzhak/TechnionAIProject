@@ -91,7 +91,6 @@ class DevClientMainWindow(QDialog):
             price_level_as_num = data["price_level"].dropna().unique()
             price_level_as_num.sort()
             types = data["type"].dropna().unique().tolist()
-            types.remove("כשר") #TODO: Remove
             config = {
                 "type": types,
                 "price_level": ['$' * int(num) for num in price_level_as_num]
