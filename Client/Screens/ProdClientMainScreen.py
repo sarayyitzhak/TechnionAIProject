@@ -45,9 +45,9 @@ class ProdClientMainScreen(QDialog):
 
         self.data_fields = [field for field in self.config["fields"]]
         self.bool_fields = [field for field in self.config["fields"] if field["type"] == "BOOL"]
-        self.selection_fields = [field for field in self.config["fields"] if field["type"] == "SELECTION"]
-        self.location_fields = [field for field in self.config["fields"] if field["type"] == "LOCATION"]
-        self.activity_fields = [field for field in self.config["fields"] if field["type"] == "ACTIVITY_HOURS"]
+        self.selection_fields = [field for field in self.data_fields if field["type"] == "SELECTION"]
+        self.location_fields = [field for field in self.data_fields if field["type"] == "LOCATION"]
+        self.activity_fields = [field for field in self.data_fields if field["type"] == "ACTIVITY_HOURS"]
         self.location = (self.config["default_location"]["lat"], self.config["default_location"]["lng"])
 
         self.init_selection()

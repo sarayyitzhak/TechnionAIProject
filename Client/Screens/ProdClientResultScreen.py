@@ -6,6 +6,19 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtGui import QPixmap
 
 
+def choose_chef_image(rate):
+    if float(rate) >= 80:
+        return './Client/Assets/happy_chef.png'
+    elif float(rate) >= 60:
+        return './Client/Assets/ok_chef.png'
+    elif float(rate) >= 40:
+        return './Client/Assets/eat_chef.png'
+    elif float(rate) >= 20:
+        return './Client/Assets/sad_chef.png'
+    else:
+        return './Client/Assets/angry_chef.png'
+
+
 class ProdClientResultScreen(QDialog):
     def __init__(self):
         super().__init__()
@@ -18,14 +31,15 @@ class ProdClientResultScreen(QDialog):
         label.setAlignment(Qt.AlignCenter)
         self.layout.addWidget(label)
 
-        rate = '0'
+        rate = '50'
         rate_label = QLabel(str(rate))
         rate_label.setFont(QFont('Ariel', 30))
         rate_label.setAlignment(Qt.AlignCenter)
         self.layout.addWidget(rate_label)
 
         self.pixmap_label = QLabel(self)
-        self.pixmap = QPixmap('./Client/Assets/happy_chef.png')
+
+        self.pixmap = QPixmap(choose_chef_image(rate))
         scaled_pixmap = self.pixmap.scaled(300, 300)
         self.pixmap_label.setPixmap(scaled_pixmap)
         self.layout.addWidget(self.pixmap_label, 2, 0, Qt.AlignCenter)
@@ -37,4 +51,3 @@ class ProdClientResultScreen(QDialog):
         self.layout.setContentsMargins(200, 200, 200, 200)
 
         self.setLayout(self.layout)
-
