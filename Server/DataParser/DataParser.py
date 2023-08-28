@@ -1,14 +1,4 @@
-import math
-import pandas as pd
-import numpy as np
-import textdistance
-import time
-import json
-import mpu
-
-from Server.Algo.ID3 import *
 from Server.DataFiller import *
-
 
 RESTAURANT = "restaurant"
 STORE = "store"
@@ -30,8 +20,7 @@ class DataParser:
         self.progress_func = progress_func
         self.google_df = None
         self.rest_data = {}
-        self.common_words_strong = None
-        self.common_words_weak = None
+        self.common_words = None
         self.data = {}
         self.data_filler = DataFiller(config)
 
@@ -82,9 +71,7 @@ class DataParser:
         self.get_common_words_data()
 
     def get_common_words_data(self):
-        common_words = self.get_common_words()
-        self.common_words_strong = [key for key, value in common_words.items() if value >= 15]
-        self.common_words_weak = [key for key, value in common_words.items() if value >= 5]
+        self.common_words = [key for key, value in self.get_common_words().items() if value >= 15]
 
     def get_common_words(self):
         common_words = {}
@@ -114,7 +101,7 @@ class DataParser:
         street = self.google_df[self.global_fields["STREET"]][row]
         street_number = self.google_df[self.global_fields["STREET_NUMBER"]][row]
         geo_location = self.google_df[self.global_fields["GEO_LOCATION"]][row]
-        address = (street or '') + " " + (street_number or '')
+        address = None if street is None else street + " " + (street_number or '')
         if self.progress_func is not None:
             self.progress_func(name, len(self.google_df))
         self.fill_google_data(row)
@@ -135,29 +122,37 @@ class DataParser:
     def fill_rest_data(self, name, address, city):
         name_field = self.global_fields["NAME"]
         address_field = self.global_fields["ADDRESS"]
-        g_name_strong = self.get_filtered_name(name, self.common_words_strong)
-        g_name_weak = self.get_filtered_name(name, self.common_words_weak)
-        first_best = (0.9, None)
-        second_best = (0.8, None)
-        third_best = (0, None)
+        g_name_without_common = self.remove_common_words(name)
+        first_best = (0.75, None)
+        second_best = (0.9, None)
+        third_best = (0.6, None)
+        forth_best = (2, 0, None)
         for value in self.rest_data.get(city) or []:
-            r_name_strong = self.get_filtered_name(value[name_field], self.common_words_strong)
-            name_dist = self.data_filler.text_distance(g_name_strong, r_name_strong)
-            if name_dist > first_best[0]:
-                first_best = (name_dist, value)
+            if address is not None and self.data_filler.text_distance(address, value[address_field]) > 0.9:
+                name_dist = self.data_filler.text_distance(name, value[name_field])
+                if name_dist > first_best[0]:
+                    first_best = (name_dist, value)
+                elif second_best[1] is None and name_dist > third_best[0]:
+                    third_best = (name_dist, value)
 
-            if first_best[1] is None:
-                place_dist = self.data_filler.text_distance(value[address_field], address)
-                if place_dist > 0.85 and name_dist > second_best[0]:
-                    second_best = (name_dist, value)
+            if first_best[1] is not None:
+                continue
 
-            if first_best[1] is None and second_best[1] is None:
-                r_name_weak = self.get_filtered_name(value[name_field], self.common_words_weak)
-                common_words = self.get_common_words_size(g_name_weak, r_name_weak)
-                if self.data_filler.text_distance(g_name_weak, r_name_weak) > 0.8 and common_words > third_best[0]:
-                    third_best = (common_words, value)
+            r_name_without_common = self.remove_common_words(value[name_field])
+            name_dist_without_common = self.data_filler.text_distance(g_name_without_common, r_name_without_common)
+            if name_dist_without_common > second_best[0]:
+                second_best = (name_dist_without_common, value)
 
-        self.add_data(self.rest_config, first_best[1] or second_best[1] or third_best[1])
+            if second_best[1] is not None or third_best[1] is not None:
+                continue
+
+            common_words = self.get_common_words_size(g_name_without_common, r_name_without_common)
+            if (len(name.split()) == 1 or len(value[name_field].split()) == 1) and common_words == 1:
+                forth_best = (common_words, name_dist_without_common, value)
+            elif common_words > forth_best[0] or (common_words == forth_best[0] and name_dist_without_common > forth_best[1]):
+                forth_best = (common_words, name_dist_without_common, value)
+
+        self.add_data(self.rest_config, first_best[1] or second_best[1] or third_best[1] or forth_best[2])
 
     def fill_target_data(self, row):
         rating_data = self.google_df.iloc[row][self.target_field["rating_field"]]
@@ -213,6 +208,9 @@ class DataParser:
         full_point = tuple(self.data[self.global_fields["GEO_LOCATION"]][full_idx])
         return self.data_filler.location_distance(blank_point, full_point) < 0.5
 
+    def remove_common_words(self, name):
+        return " ".join([item for item in name.split(" ") if item not in self.common_words])
+
     @staticmethod
     def parse_bool_field(value):
         return None if value is None else bool(value)
@@ -226,10 +224,6 @@ class DataParser:
             clean_r_text = review.replace('!', ' ').replace('.', ' ').replace(',', ' ').replace('\n', ' ').replace('?', ' ')
             reviews_words.update(clean_r_text.split(' '))
         return reviews_words
-
-    @staticmethod
-    def get_filtered_name(name, filter_list):
-        return " ".join([item for item in name.split(" ") if item not in filter_list])
 
     @staticmethod
     def get_common_words_size(name1, name2):
