@@ -122,12 +122,7 @@ class GoogleDataBuilder:
         data["open_activity_hour"] = ActivityTimeFiller.get_mean_activity_hour(activity_hours, True)
         data["close_activity_hour"] = ActivityTimeFiller.get_mean_activity_hour(activity_hours, False)
 
-        data["open_activity_hour"] = ActivityTimeFiller.get_mean_activity_hour(activity_hours, True)
-        data["close_activity_hour"] = ActivityTimeFiller.get_mean_activity_hour(activity_hours, False)
-
         data["open_on_saturday"] = ActivityTimeFiller.is_open_on_saturday(activity_hours)
-
-        data["reviews"] = self.get_reviews(details)
 
         return data
 
@@ -188,9 +183,3 @@ class GoogleDataBuilder:
                         activity_hours[day] = [-1, -1]
 
         return activity_hours
-
-    @staticmethod
-    def get_reviews(details):
-        return None if "reviews" not in details or type(details["reviews"]) is not list else [review["text"] for review in details["reviews"]]
-
-

@@ -57,28 +57,23 @@
             },
             {
                 "name": "serves_beer",
-                "type": "BOOL",
-                "fill_by": "close_activity_hour"
+                "type": "BOOL"
             },
             {
                 "name": "serves_breakfast",
-                "type": "BOOL",
-                "fill_by": "open_activity_hour"
+                "type": "BOOL"
             },
             {
                 "name": "serves_brunch",
-                "type": "BOOL",
-                "fill_by": "open_activity_hour"
+                "type": "BOOL"
             },
             {
                 "name": "serves_dinner",
-                "type": "BOOL",
-                "fill_by": "close_activity_hour"
+                "type": "BOOL"
             },
             {
                 "name": "serves_lunch",
-                "type": "BOOL",
-                "fill_by": "open_activity_hour"
+                "type": "BOOL"
             },
             {
                 "name": "serves_vegetarian_food",
@@ -86,8 +81,7 @@
             },
             {
                 "name": "serves_wine",
-                "type": "BOOL",
-                "fill_by": "close_activity_hour"
+                "type": "BOOL"
             },
             {
                 "name": "takeout",
@@ -148,10 +142,6 @@
             {
                 "name": "open_on_saturday",
                 "type": "BOOL"
-            },
-            {
-                "name": "reviews",
-                "type": "REVIEWS"
             },
             {
                 "name": "geo_location",
@@ -223,7 +213,32 @@
                 "name": "kosher",
                 "type": "BOOL"
             }
-        ]
+        ],
+        "missing_kosher_data": {
+            "field_name": "kosher",
+            "fill_by": "open_on_saturday"
+        },
+        "missing_type_data": {
+            "field_name": "type",
+            "values": [
+                {
+                    "contains": "בורגר",
+                    "fill": "מסעדת המבורגרים"
+                },
+                {
+                    "contains": "פיצה",
+                    "fill": "פיצריות"
+                },
+                {
+                    "contains": "קפה",
+                    "fill": "בתי קפה"
+                },
+                {
+                    "contains": "חומוס",
+                    "fill": "חומוסייה"
+                }
+            ]
+        }
     },
     "output_path": "./DataOutput/data.csv"
 }

@@ -82,7 +82,6 @@ class DataFiller:
     def get_street_distance(self, cbs_street, g_street, g_reversed_street):
         return max(self.text_distance(cbs_street, g_street), self.text_distance(cbs_street, g_reversed_street))
 
-
     @staticmethod
     def parse_geo_location_field(value):
         if value is None:
@@ -111,7 +110,7 @@ class ActivityTimeFiller:
 
     @staticmethod
     def is_open_on_saturday(activity_hours):
-        if activity_hours[5] is None:
+        if activity_hours[5] is None or activity_hours[6] is None:
             return None
         latest_closing_time_friday = Time(hours=17, minutes=0)
         earliest_opening_time_saturday = Time(hours=19, minutes=0)

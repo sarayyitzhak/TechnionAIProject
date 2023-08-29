@@ -34,8 +34,8 @@ class DataParser:
             self.fill_data(row)
 
     def fill_missing_data(self):
-        self.fill_google_missing_data()
         self.fill_cbs_missing_data()
+        self.fill_rest_missing_data()
 
     def save_data(self):
         pd.DataFrame(self.data).to_csv(self.output_path, index=False, encoding='utf-8-sig')
@@ -165,32 +165,6 @@ class DataParser:
             field_name = field["name"]
             self.data[field_name].append(None if data is None else data[field_name])
 
-    def fill_google_missing_data(self):
-        df = pd.DataFrame(self.data)
-
-        for field in self.google_config["fields"]:
-            if "fill_by" in field:
-                df.loc[df[field["name"]].isnull(), field["name"]] = self.predict_missing_data_by_field(df, field)
-                self.data[field["name"]] = df[field["name"]].to_list()
-
-    def predict_missing_data_by_field(self, df, field):
-        fields = [f for f in self.google_config["fields"] if f["name"] == field["fill_by"]]
-        id3 = ID3(fields, max_depth=1)
-        train_set = df[df[field["name"]].notnull()].reset_index(drop=True)
-        x_train = np.array(train_set[[field["fill_by"]]].copy())
-        y_train = np.array(train_set[field["name"]].copy())
-        id3.fit(x_train, y_train)
-        test_set = df[df[field["name"]].isnull()].reset_index(drop=True)
-        x_test = np.array(test_set[[field["fill_by"]]].copy())
-        predict = id3.predict(x_test, True)
-        predict_min = np.nanmin(np.array(predict, dtype=float))
-        predict_max = np.nanmax(np.array(predict, dtype=float))
-        if predict_min != predict_max:
-            return np.array([None if p is None else (p == predict_max) for p in predict])
-        else:
-            values, counts = np.unique(y_train, return_counts=True)
-            return np.array([values[np.argmax(counts)]] * len(x_test))
-
     def fill_cbs_missing_data(self):
         for field in self.cbs_config["fields"]:
             self.fill_cbs_missing_data_by_col_name(field["name"])
@@ -207,6 +181,29 @@ class DataParser:
         blank_point = tuple(self.data[self.global_fields["GEO_LOCATION"]][blank_idx])
         full_point = tuple(self.data[self.global_fields["GEO_LOCATION"]][full_idx])
         return self.data_filler.location_distance(blank_point, full_point) < 0.5
+
+    def fill_rest_missing_data(self):
+        self.fill_rest_missing_kosher_data()
+        self.fill_rest_missing_type_data()
+
+    def fill_rest_missing_kosher_data(self):
+        missing_kosher_data = self.rest_config["missing_kosher_data"]
+        kosher_field = missing_kosher_data["field_name"]
+        fill_by_field = missing_kosher_data["fill_by"]
+        blank_indexes = [idx for idx, val in enumerate(self.data[kosher_field]) if val is None]
+        for blank_idx in blank_indexes:
+            if self.data[fill_by_field][blank_idx]:
+                self.data[kosher_field][blank_idx] = False
+
+    def fill_rest_missing_type_data(self):
+        missing_type_data = self.rest_config["missing_type_data"]
+        name_field = self.global_fields["NAME"]
+        type_field = missing_type_data["field_name"]
+        blank_indexes = [idx for idx, val in enumerate(self.data[type_field]) if val is None]
+        for blank_idx in blank_indexes:
+            for missing_type_value in missing_type_data["values"]:
+                if missing_type_value["contains"] in self.data[name_field][blank_idx]:
+                    self.data[type_field][blank_idx] = missing_type_value["fill"]
 
     def remove_common_words(self, name):
         return " ".join([item for item in name.split(" ") if item not in self.common_words])
