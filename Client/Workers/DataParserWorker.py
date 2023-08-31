@@ -13,6 +13,8 @@ class DataParserWorker(Worker):
         parser.parse_data()
         self.signals.title.emit("Fill Missing Data...")
         parser.fill_missing_data()
+        self.signals.title.emit("Clean Data...")
+        parser.clean_data()
         self.signals.title.emit("Save Data...")
         parser.save_data()
         self.signals.title.emit("Parse Data Completed!")

@@ -42,6 +42,10 @@
         }
     ],
     "google_config": {
+        "missing_price_level_data": {
+            "field_name": "price_level",
+            "fill_by": "rest_price_level"
+        },
         "fields": [
             {
                 "name": "dine_in",
@@ -212,6 +216,10 @@
             {
                 "name": "kosher",
                 "type": "BOOL"
+            },
+            {
+                "name": "rest_price_level",
+                "type": "NUMBER"
             }
         ],
         "missing_kosher_data": {

@@ -1,10 +1,10 @@
 from selenium import webdriver
+from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import re
 import math
-import json
 import pandas as pd
 
 
@@ -51,9 +51,16 @@ class RestDataBuilder:
             r_id = element.get_attribute("data-customer")
             info_element = element.find_element(By.CLASS_NAME, 'feature-info-bottom')
             values = info_element.text.split("\n")
-            name = None
+            rest_name = None
+            rest_type = None
+            rest_price_level = None
+            try:
+                price_element = info_element.find_element(By.CLASS_NAME, 'nis-color')
+                rest_price_level = len(price_element.find_element(By.TAG_NAME, 'small').text)
+            except NoSuchElementException:
+                pass
             if len(values) >= 3:
-                name = values[0]
+                rest_name = values[0]
                 if "חוות דעת" in values[1]:
                     tags = values[2].split(" | ")
                     address = values[3].split(" | ")[0].split(", ")[0]
@@ -61,13 +68,19 @@ class RestDataBuilder:
                     tags = values[1].split(" | ")
                     address = values[2].split(" | ")[0].split(", ")[0]
 
+                if tags[0]:
+                    rest_type = tags[0].split(", ")[0]
+                    if "כשר" in rest_type or "מחיר" in rest_type or "שף" in rest_type:
+                        rest_type = None
+
                 self.data.append({
                     "id": r_id,
-                    "name": name,
-                    "type": tags[0].split(", ")[0] if tags[0] else None,
+                    "name": rest_name,
+                    "type": rest_type,
                     "kosher": "כשר" in tags,
+                    "rest_price_level": rest_price_level,
                     "city": city,
                     "address": address
                 })
             if self.progress_func is not None:
-                self.progress_func(name, self.num_of_restaurants)
+                self.progress_func(rest_name, self.num_of_restaurants)

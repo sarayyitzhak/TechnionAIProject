@@ -34,8 +34,12 @@ class DataParser:
             self.fill_data(row)
 
     def fill_missing_data(self):
+        self.fill_google_missing_data()
         self.fill_cbs_missing_data()
         self.fill_rest_missing_data()
+
+    def clean_data(self):
+        pass
 
     def save_data(self):
         pd.DataFrame(self.data).to_csv(self.output_path, index=False, encoding='utf-8-sig')
@@ -164,6 +168,14 @@ class DataParser:
         for field in config["fields"]:
             field_name = field["name"]
             self.data[field_name].append(None if data is None else data[field_name])
+
+    def fill_google_missing_data(self):
+        missing_price_level_data = self.google_config["missing_price_level_data"]
+        price_level_field = missing_price_level_data["field_name"]
+        fill_by_field = missing_price_level_data["fill_by"]
+        blank_indexes = [idx for idx, val in enumerate(self.data[price_level_field]) if val is None]
+        for blank_idx in blank_indexes:
+            self.data[price_level_field][blank_idx] = self.data[fill_by_field][blank_idx]
 
     def fill_cbs_missing_data(self):
         for field in self.cbs_config["fields"]:

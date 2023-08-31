@@ -1,6 +1,5 @@
 from PyQt5.QtCore import *
 
-from Server.DataBuilder.CbsDataBuilder import CbsDataBuilder
 import json
 import traceback
 import sys
