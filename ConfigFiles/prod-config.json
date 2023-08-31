@@ -126,11 +126,11 @@
             },
             {
                 "name": "open_activity_hour",
-                "type": "MEAN"
+                "type": "MOST_COMMON"
             },
             {
                 "name": "close_activity_hour",
-                "type": "MEAN"
+                "type": "MOST_COMMON"
             },
             {
                 "name": "open_on_saturday",

@@ -90,8 +90,8 @@ class ProdClientMainScreen(QDialog):
 
         for idx, day in enumerate(self.activity_fields):
             data[day["name"]] = activity_hours[idx]
-        for is_open, mean in enumerate([field for field in self.data_fields if field["type"] == "MEAN"]):
-            data[mean["name"]] = ActivityTimeFiller.get_mean_activity_hour(activity_hours, 1 - is_open)
+        for is_open, mean in enumerate([field for field in self.data_fields if field["type"] == "MOST_COMMON"]):
+            data[mean["name"]] = ActivityTimeFiller.get_most_common_activity_hour(activity_hours, 1 - is_open)
         saturday = [field for field in self.data_fields if field["type"] == "SATURDAY"].pop()
         data[saturday["name"]] = ActivityTimeFiller.is_open_on_saturday(activity_hours)
         return data

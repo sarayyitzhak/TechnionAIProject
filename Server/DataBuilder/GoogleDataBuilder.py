@@ -119,8 +119,8 @@ class GoogleDataBuilder:
         data['friday_activity_hours'] = activity_hours[5]
         data['saturday_activity_hours'] = activity_hours[6]
 
-        data["open_activity_hour"] = ActivityTimeFiller.get_mean_activity_hour(activity_hours, True)
-        data["close_activity_hour"] = ActivityTimeFiller.get_mean_activity_hour(activity_hours, False)
+        data["open_activity_hour"] = ActivityTimeFiller.get_most_common_activity_hour(activity_hours, True)
+        data["close_activity_hour"] = ActivityTimeFiller.get_most_common_activity_hour(activity_hours, False)
 
         data["open_on_saturday"] = ActivityTimeFiller.is_open_on_saturday(activity_hours)
 

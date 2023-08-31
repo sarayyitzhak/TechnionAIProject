@@ -1,4 +1,5 @@
 import textdistance
+from collections import Counter
 
 from Server.Algo.ID3 import *
 from Server.Components.Time import Time
@@ -103,10 +104,10 @@ class DataFiller:
 class ActivityTimeFiller:
 
     @staticmethod
-    def get_mean_activity_hour(activity_hours, is_open):
+    def get_most_common_activity_hour(activity_hours, is_open):
         idx = 0 if is_open else 1
-        activity_hours_by_index = [activity_hours[day][idx] for day in range(5) if activity_hours[day] is not None]
-        return None if len(activity_hours_by_index) == 0 else np.mean(activity_hours_by_index)
+        activity_hours_by_index = Counter([activity_hours[day][idx] for day in range(7) if activity_hours[day] is not None])
+        return None if len(activity_hours_by_index) == 0 else activity_hours_by_index.most_common()[0][0]
 
     @staticmethod
     def is_open_on_saturday(activity_hours):
