@@ -31,15 +31,15 @@ class ProdClientResultScreen(QDialog):
         label.setAlignment(Qt.AlignCenter)
         self.layout.addWidget(label)
 
-        rate = '0'
-        rate_label = QLabel(str(rate))
-        rate_label.setFont(QFont('Ariel', 30))
-        rate_label.setAlignment(Qt.AlignCenter)
-        self.layout.addWidget(rate_label)
+        self.rate = '0'
+        self.rate_label = QLabel(str(self.rate))
+        self.rate_label.setFont(QFont('Ariel', 30))
+        self.rate_label.setAlignment(Qt.AlignCenter)
+        self.layout.addWidget(self.rate_label)
 
         self.pixmap_label = QLabel(self)
 
-        self.pixmap = QPixmap(choose_chef_image(rate))
+        self.pixmap = QPixmap(choose_chef_image(self.rate))
         scaled_pixmap = self.pixmap.scaled(300, 300)
         self.pixmap_label.setPixmap(scaled_pixmap)
         self.layout.addWidget(self.pixmap_label, 2, 0, Qt.AlignCenter)
@@ -51,3 +51,10 @@ class ProdClientResultScreen(QDialog):
         self.layout.setContentsMargins(200, 200, 200, 200)
 
         self.setLayout(self.layout)
+
+    def set_rate(self, rate):
+        self.rate = rate
+        self.rate_label.setText(self.rate)
+        self.pixmap = QPixmap(choose_chef_image(self.rate))
+        self.pixmap_label.setPixmap(self.pixmap.scaled(300, 300))
+

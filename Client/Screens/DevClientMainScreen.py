@@ -15,12 +15,13 @@ import pandas as pd
 
 
 
-class DevClientMainWindow(QDialog):
+class DevClientMainScreen(QDialog):
     def __init__(self):
         super().__init__()
         self.layout: QGridLayout = None
         self.scroll: QScrollArea = None
         self.scroll_layout: QVBoxLayout = None
+        self.return_button: QPushButton = None
 
         self.thread_pool = QThreadPool()
         self.init_ui()
@@ -46,11 +47,13 @@ class DevClientMainWindow(QDialog):
         self.build_button(2, 0, 4, "Get Data Config", self.on_data_config_button_clicked)
         self.build_button(3, 0, 4, "Parse Data", self.on_parse_data_button_clicked)
         self.build_button(4, 0, 4, "Run Algorithm", self.on_run_alg_button_clicked)
+        self.return_button = self.build_button(6, 1, 2, "Go Back To Main Screen", self.null_function)
 
     def build_button(self, i, j, width, label, function):
         button = QPushButton(label)
         self.layout.addWidget(button, i, j, 1, width)
         button.clicked.connect(function)
+        return button
 
     def build_scroll_bar(self):
         self.scroll = QScrollArea()
@@ -63,7 +66,7 @@ class DevClientMainWindow(QDialog):
         self.scroll.setWidgetResizable(True)
         self.scroll.setFixedHeight(150)
 
-        self.layout.addWidget(self.scroll, 4, 0, 1, 4)
+        self.layout.addWidget(self.scroll, 5, 0, 1, 4)
         self.scroll.hide()
 
     def on_build_google_button_clicked(self):
@@ -146,3 +149,6 @@ class DevClientMainWindow(QDialog):
         msg.setWindowTitle(value[0])
         msg.setStandardButtons(QMessageBox.Ok)
         msg.exec()
+
+    def null_function(self):
+        pass

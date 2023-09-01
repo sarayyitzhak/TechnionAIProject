@@ -1,4 +1,12 @@
+import math
+import pandas as pd
+import numpy as np
+import time
+import json
+
+from Server.Algo.ID3 import *
 from Server.DataFiller import *
+from Server.utils import *
 
 RESTAURANT = "restaurant"
 STORE = "store"
@@ -133,7 +141,7 @@ class DataParser:
         forth_best = (2, 0, None)
         for value in self.rest_data.get(city) or []:
             if address is not None and self.data_filler.text_distance(address, value[address_field]) > 0.9:
-                name_dist = self.data_filler.text_distance(name, value[name_field])
+                name_dist = text_distance(name, value[name_field])
                 if name_dist > first_best[0]:
                     first_best = (name_dist, value)
                 elif second_best[1] is None and name_dist > third_best[0]:
@@ -143,7 +151,7 @@ class DataParser:
                 continue
 
             r_name_without_common = self.remove_common_words(value[name_field])
-            name_dist_without_common = self.data_filler.text_distance(g_name_without_common, r_name_without_common)
+            name_dist_without_common = text_distance(g_name_without_common, r_name_without_common)
             if name_dist_without_common > second_best[0]:
                 second_best = (name_dist_without_common, value)
 
@@ -192,7 +200,7 @@ class DataParser:
     def is_places_close_by_indexes(self, blank_idx, full_idx):
         blank_point = tuple(self.data[self.global_fields["GEO_LOCATION"]][blank_idx])
         full_point = tuple(self.data[self.global_fields["GEO_LOCATION"]][full_idx])
-        return self.data_filler.location_distance(blank_point, full_point) < 0.5
+        return location_distance(blank_point, full_point) < 0.5
 
     def fill_rest_missing_data(self):
         self.fill_rest_missing_kosher_data()

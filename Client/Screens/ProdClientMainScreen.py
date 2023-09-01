@@ -1,11 +1,13 @@
 import io
 import json
 import folium
+from PyQt5 import QtGui
 from PyQt5.QtCore import QTime
 from PyQt5.QtWebEngineWidgets import QWebEngineView
-from Server.DataFiller import *
 from Client.Screens.ProdClientResultScreen import *
 from PyQt5.QtWidgets import *
+
+from Server.Components.Time import Time
 
 
 class ProdClientMainScreen(QDialog):
@@ -31,7 +33,6 @@ class ProdClientMainScreen(QDialog):
         self.address_layout = None
         self.address_text_box = None
         self.web_view = None
-        self.final_res = None
         self.activity_hours_group = None
         self.activity_hours_layout = None
         self.res_activity_hours = None
@@ -57,6 +58,10 @@ class ProdClientMainScreen(QDialog):
         self.build_widgets()
 
         self.calculate_button = self.build_button(4, 0, "Calculate", self.on_calculate_button_clicked, self.layout)
+        self.calculate_button.setFixedSize(500, 80)
+
+        self.return_button = self.build_button(5, 0, "Go Back To Main Screen", self.null_function, self.layout, 2)
+        self.return_button.setFixedSize(400, 80)
 
         self.add_layouts()
         self.setLayout(self.layout)
@@ -73,37 +78,21 @@ class ProdClientMainScreen(QDialog):
     def on_calculate_button_clicked(self):
         self.update_location_data()
         self.set_info()
-        self.final_res = [self.res[field["name"]] for field in self.data_fields if field["name"] in self.res]
 
     def set_info(self):
         self.res.update(self.res_bool)
         self.res.update(self.res_multi_choice)
         self.res.update(self.res_location)
-        self.res.update(self.res_calc_features_by_activity())
-        self.res.update(self.res_calc_features_by_loc())
+        self.res.update(self.res_get_activity_time())
 
-    def res_calc_features_by_activity(self):
+    def res_get_activity_time(self):
         data = {}
         activity_hours = []
         for day in range(7):
             activity_hours.append([self.res_activity_hours[day * 2], self.res_activity_hours[(day * 2) + 1]])
-
+        data["activity_time_as_list"] = activity_hours
         for idx, day in enumerate(self.activity_fields):
             data[day["name"]] = activity_hours[idx]
-        for is_open, mean in enumerate([field for field in self.data_fields if field["type"] == "MOST_COMMON"]):
-            data[mean["name"]] = ActivityTimeFiller.get_most_common_activity_hour(activity_hours, 1 - is_open)
-        saturday = [field for field in self.data_fields if field["type"] == "SATURDAY"].pop()
-        data[saturday["name"]] = ActivityTimeFiller.is_open_on_saturday(activity_hours)
-        return data
-
-    def res_calc_features_by_loc(self):
-        data = {}
-        config_file = open('./ConfigFiles/data-parser-config.json', 'r', encoding='utf-8')
-        self.data_filler = DataFiller(json.load(config_file))
-        self.data_filler.get_places_data()
-        data.update(self.data_filler.get_places_data_by_point(tuple(self.res_location["geo_location"]), None))
-        self.data_filler.get_cbs_data()
-        data.update(self.data_filler.get_cbs_data_by_address(self.res_location["city"], self.res_location["street"]))
         return data
 
     def update_location_data(self):
@@ -226,7 +215,7 @@ class ProdClientMainScreen(QDialog):
     def build_button(i, j, label, function, layout, width=1):
         button = QPushButton(label)
         button.clicked.connect(function)
-        layout.addWidget(button, i, j, 1, width)
+        layout.addWidget(button, i, j, 1, width, alignment=Qt.AlignCenter)
         return button
 
     def update_activity_hours(self, activity_time, day, is_opening):
@@ -238,4 +227,7 @@ class ProdClientMainScreen(QDialog):
     def create_text_label(text, layout, i, j):
         label = QLabel(text)
         layout.addWidget(label, i, j)
+
+    def null_function(self):
+        pass
 

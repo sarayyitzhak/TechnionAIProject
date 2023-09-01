@@ -3,6 +3,7 @@ from collections import Counter
 
 from Server.Algo.ID3 import *
 from Server.Components.Time import Time
+from Server.utils import *
 
 RESTAURANT = "restaurant"
 STORE = "store"
@@ -52,7 +53,7 @@ class DataFiller:
         for value in data:
             if excluded_place_id is not None and value[self.global_fields["PLACE_ID"]] == excluded_place_id:
                 continue
-            point_distance = self.location_distance(point, tuple(value[self.global_fields["GEO_LOCATION"]]))
+            point_distance = location_distance(point, tuple(value[self.global_fields["GEO_LOCATION"]]))
             for field in fields:
                 distance_value = field["distance_value"] / 1000
                 if point_distance <= distance_value:
@@ -76,12 +77,9 @@ class DataFiller:
         if reversed_key in self.cbs_data:
             return self.cbs_data.get(reversed_key)
         for cbs_key in self.cbs_data.keys():
-            if cbs_key[1] == city and self.get_street_distance(cbs_key[0], street, reversed_street) > 0.9:
+            if cbs_key[1] == city and get_street_distance(cbs_key[0], street, reversed_street) > 0.9:
                 return self.cbs_data.get(cbs_key)
         return None
-
-    def get_street_distance(self, cbs_street, g_street, g_reversed_street):
-        return max(self.text_distance(cbs_street, g_street), self.text_distance(cbs_street, g_reversed_street))
 
     @staticmethod
     def parse_geo_location_field(value):
@@ -89,16 +87,6 @@ class DataFiller:
             return None
         value = eval(value)
         return [round(value["lat"], 7), round(value["lng"], 7)]
-
-    @staticmethod
-    def text_distance(s1, s2):
-        if not s1 and not s2:
-            return 0
-        return textdistance.strcmp95.normalized_similarity(s1, s2)
-
-    @staticmethod
-    def location_distance(p1, p2):
-        return mpu.haversine_distance(p1, p2)
 
 
 class ActivityTimeFiller:
@@ -116,7 +104,6 @@ class ActivityTimeFiller:
         latest_closing_time_friday = Time(hours=17, minutes=0)
         earliest_opening_time_saturday = Time(hours=19, minutes=0)
         open_on_friday = Time(total_minutes=activity_hours[5][1]).is_later_than(latest_closing_time_friday)
-        open_on_saturday = Time(total_minutes=activity_hours[6][0]).is_earlier_than(earliest_opening_time_saturday) and activity_hours[6][0] != -1
+        open_on_saturday = Time(total_minutes=activity_hours[6][0]).is_earlier_than(earliest_opening_time_saturday) and \
+                           activity_hours[6][0] != -1
         return open_on_friday or open_on_saturday
-
-
