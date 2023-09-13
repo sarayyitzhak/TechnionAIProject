@@ -1,5 +1,5 @@
 from SourceCode.Server.Algo.ID3Experiments import *
-from SourceCode.Server.DataBuilder.Utils import *
+from SourceCode.Server.Utils.FileUtils import write_to_file
 
 
 class RunAlgorithm:

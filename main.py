@@ -1,6 +1,5 @@
-from PyQt5.QtWidgets import QApplication
 from SourceCode.Client.Screens.DevClientMainScreen import *
-from SourceCode.Client.ProdClientMainWindow import ProdClientMainWindow
+from SourceCode.Client.Windows.ProdClientMainWindow import ProdClientMainWindow
 
 
 def main():

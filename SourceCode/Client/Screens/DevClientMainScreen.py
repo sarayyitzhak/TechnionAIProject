@@ -1,5 +1,3 @@
-from PyQt5.QtWidgets import QLabel, QWidget, QPushButton, QVBoxLayout, QMessageBox, QGridLayout
-from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import *
 
 from SourceCode.Client.Workers.DataParserWorker import *
@@ -9,7 +7,7 @@ from SourceCode.Client.Workers.CbsDataBuilderWorker import *
 from SourceCode.Client.Workers.GovDataBuilderWorker import *
 from SourceCode.Client.Workers.RunAlgorithmWorker import *
 from SourceCode.Client.Workers.Worker import *
-from SourceCode.Server.DataBuilder.Utils import write_to_file
+from SourceCode.Server.Utils.FileUtils import write_to_file
 
 import pandas as pd
 

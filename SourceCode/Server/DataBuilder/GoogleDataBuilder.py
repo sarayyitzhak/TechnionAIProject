@@ -1,13 +1,10 @@
 from googleplaces import GooglePlaces, types, lang, ranking
 
-from SourceCode.Server.Components.Time import Time
-from SourceCode.Server.DataFiller import *
-from SourceCode.Server.DataBuilder.Utils import write_to_file
+from SourceCode.Server.DataParser.DataFiller import *
 import time
 import json
 import math
 import pandas as pd
-import numpy as np
 
 
 class GoogleDataBuilder:
