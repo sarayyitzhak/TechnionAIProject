@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.common import NoSuchElementException
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -11,7 +12,9 @@ import pandas as pd
 class RestDataBuilder:
 
     def __init__(self, config, progress_func):
-        self.driver = webdriver.Chrome(executable_path=config["chrome_driver_path"])
+        service = Service(executable_path=config["chrome_driver_path"])
+        options = webdriver.ChromeOptions()
+        self.driver = webdriver.Chrome(service=service, options=options)
         self.driver.minimize_window()
         self.api_url = config['api_url']
         self.web_paths = config['web_paths']

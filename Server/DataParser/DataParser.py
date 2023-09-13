@@ -140,7 +140,7 @@ class DataParser:
         third_best = (0.6, None)
         forth_best = (2, 0, None)
         for value in self.rest_data.get(city) or []:
-            if address is not None and self.data_filler.text_distance(address, value[address_field]) > 0.9:
+            if address is not None and text_distance(address, value[address_field]) > 0.9:
                 name_dist = text_distance(name, value[name_field])
                 if name_dist > first_best[0]:
                     first_best = (name_dist, value)
