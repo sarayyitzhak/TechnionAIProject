@@ -1,5 +1,5 @@
-from Client.Workers.Worker import Worker
-from Server.DataBuilder.GoogleDataBuilder import GoogleDataBuilder
+from SourceCode.Client.Workers.Worker import Worker
+from SourceCode.Server.DataBuilder.GoogleDataBuilder import GoogleDataBuilder
 
 
 class GoogleDataBuilderWorker(Worker):

@@ -1,12 +1,12 @@
 from PyQt5 import QtCore
 
-from Client.Screens.ProdClientLoadingScreen import *
-from Server.Algo.ID3Experiments import *
+from SourceCode.Client.Screens.ProdClientLoadingScreen import *
+from SourceCode.Server.Algo.ID3Experiments import *
 import time
 from PyQt5.QtCore import pyqtSignal, QObject
 
-from Server.Algo.Prediction import Prediction
-from Server.DataFiller import *
+from SourceCode.Server.Algo.Prediction import Prediction
+from SourceCode.Server.DataFiller import *
 
 
 class PredictionWorker(QThread):

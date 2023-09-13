@@ -1,5 +1,5 @@
-from Client.Workers.Worker import Worker
-from Server.Algo.RunAlgorithm import RunAlgorithm
+from SourceCode.Client.Workers.Worker import Worker
+from SourceCode.Server.Algo.RunAlgorithm import RunAlgorithm
 
 
 class RunAlgorithmWorker(Worker):

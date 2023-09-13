@@ -2,7 +2,7 @@ import math
 import numpy as np
 import pandas as pd
 
-from Server.Algo.DecisonTree import *
+from SourceCode.Server.Algo.DecisonTree import *
 
 
 class ID3:

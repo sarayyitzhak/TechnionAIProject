@@ -1,5 +1,5 @@
-from Client.Workers.Worker import Worker
-from Server.DataBuilder.GovDataBuilder import GovDataBuilder
+from SourceCode.Client.Workers.Worker import Worker
+from SourceCode.Server.DataBuilder.GovDataBuilder import GovDataBuilder
 
 
 class GovDataBuilderWorker(Worker):

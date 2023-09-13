@@ -1,5 +1,5 @@
-from Server.Algo.ID3Experiments import *
-from Server.DataBuilder.Utils import *
+from SourceCode.Server.Algo.ID3Experiments import *
+from SourceCode.Server.DataBuilder.Utils import *
 
 
 class RunAlgorithm:

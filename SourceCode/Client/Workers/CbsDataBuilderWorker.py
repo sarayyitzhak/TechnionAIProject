@@ -1,5 +1,5 @@
-from Client.Workers.Worker import Worker
-from Server.DataBuilder.CbsDataBuilder import CbsDataBuilder
+from SourceCode.Client.Workers.Worker import Worker
+from SourceCode.Server.DataBuilder.CbsDataBuilder import CbsDataBuilder
 
 
 class CbsDataBuilderWorker(Worker):

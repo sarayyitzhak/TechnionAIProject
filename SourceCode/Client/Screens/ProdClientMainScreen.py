@@ -4,10 +4,10 @@ import folium
 from PyQt5 import QtGui
 from PyQt5.QtCore import QTime
 from PyQt5.QtWebEngineWidgets import QWebEngineView
-from Client.Screens.ProdClientResultScreen import *
+from SourceCode.Client.Screens.ProdClientResultScreen import *
 from PyQt5.QtWidgets import *
 
-from Server.Components.Time import Time
+from SourceCode.Server.Components.Time import Time
 
 
 class ProdClientMainScreen(QDialog):

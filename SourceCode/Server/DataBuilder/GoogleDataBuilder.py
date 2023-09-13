@@ -1,8 +1,8 @@
 from googleplaces import GooglePlaces, types, lang, ranking
 
-from Server.Components.Time import Time
-from Server.DataFiller import *
-from Server.DataBuilder.Utils import write_to_file
+from SourceCode.Server.Components.Time import Time
+from SourceCode.Server.DataFiller import *
+from SourceCode.Server.DataBuilder.Utils import write_to_file
 import time
 import json
 import math

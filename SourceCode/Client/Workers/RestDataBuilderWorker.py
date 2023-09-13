@@ -1,5 +1,5 @@
-from Client.Workers.Worker import Worker
-from Server.DataBuilder.RestDataBuilder import RestDataBuilder
+from SourceCode.Client.Workers.Worker import Worker
+from SourceCode.Server.DataBuilder.RestDataBuilder import RestDataBuilder
 
 
 class RestDataBuilderWorker(Worker):

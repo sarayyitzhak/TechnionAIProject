@@ -1,5 +1,5 @@
-from Client.Workers.Worker import Worker
-from Server.DataParser.DataParser import *
+from SourceCode.Client.Workers.Worker import Worker
+from SourceCode.Server.DataParser.DataParser import *
 
 
 class DataParserWorker(Worker):

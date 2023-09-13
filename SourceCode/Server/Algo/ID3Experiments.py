@@ -1,4 +1,4 @@
-from Server.Algo.ID3 import *
+from SourceCode.Server.Algo.ID3 import *
 import pandas as pd
 import json
 import matplotlib.pyplot as plt

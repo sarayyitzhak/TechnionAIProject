@@ -2,14 +2,14 @@ from PyQt5.QtWidgets import QLabel, QWidget, QPushButton, QVBoxLayout, QMessageB
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import *
 
-from Client.Workers.DataParserWorker import *
-from Client.Workers.GoogleDataBuilderWorker import *
-from Client.Workers.RestDataBuilderWorker import *
-from Client.Workers.CbsDataBuilderWorker import *
-from Client.Workers.GovDataBuilderWorker import *
-from Client.Workers.RunAlgorithmWorker import *
-from Client.Workers.Worker import *
-from Server.DataBuilder.Utils import write_to_file
+from SourceCode.Client.Workers.DataParserWorker import *
+from SourceCode.Client.Workers.GoogleDataBuilderWorker import *
+from SourceCode.Client.Workers.RestDataBuilderWorker import *
+from SourceCode.Client.Workers.CbsDataBuilderWorker import *
+from SourceCode.Client.Workers.GovDataBuilderWorker import *
+from SourceCode.Client.Workers.RunAlgorithmWorker import *
+from SourceCode.Client.Workers.Worker import *
+from SourceCode.Server.DataBuilder.Utils import write_to_file
 
 import pandas as pd
 

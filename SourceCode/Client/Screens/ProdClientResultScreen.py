@@ -8,15 +8,15 @@ from PyQt5.QtGui import QPixmap
 
 def choose_chef_image(rate):
     if float(rate) >= 80:
-        return './Client/Assets/happy_chef.png'
+        return './Assets/happy_chef.png'
     elif float(rate) >= 60:
-        return './Client/Assets/ok_chef.png'
+        return './Assets/ok_chef.png'
     elif float(rate) >= 40:
-        return './Client/Assets/eat_chef.png'
+        return './Assets/eat_chef.png'
     elif float(rate) >= 20:
-        return './Client/Assets/sad_chef.png'
+        return './Assets/sad_chef.png'
     else:
-        return './Client/Assets/angry_chef.png'
+        return './Assets/angry_chef.png'
 
 
 class ProdClientResultScreen(QDialog):

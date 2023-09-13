@@ -1,12 +1,12 @@
-from Client.Screens.ProdClientMainScreen import *
-from Client.Screens.ProdClientLoadingScreen import *
-from Client.Screens.ProdClientResultScreen import *
-from Client.Screens.DevClientMainScreen import *
-from Client.Screens.WelcomeMainScreen import *
+from SourceCode.Client.Screens.ProdClientMainScreen import *
+from SourceCode.Client.Screens.ProdClientLoadingScreen import *
+from SourceCode.Client.Screens.ProdClientResultScreen import *
+from SourceCode.Client.Screens.DevClientMainScreen import *
+from SourceCode.Client.Screens.WelcomeMainScreen import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import QThread
 from PyQt5.QtWidgets import QMainWindow
-from Client.Workers.PredictionWorker import PredictionWorker
+from SourceCode.Client.Workers.PredictionWorker import PredictionWorker
 
 
 class ProdClientMainWindow(QMainWindow):

@@ -4,9 +4,9 @@ import numpy as np
 import time
 import json
 
-from Server.Algo.ID3 import *
-from Server.DataFiller import *
-from Server.utils import *
+from SourceCode.Server.Algo.ID3 import *
+from SourceCode.Server.DataFiller import *
+from SourceCode.Server.utils import *
 
 RESTAURANT = "restaurant"
 STORE = "store"

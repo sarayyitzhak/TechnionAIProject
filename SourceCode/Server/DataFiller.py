@@ -1,9 +1,9 @@
 import textdistance
 from collections import Counter
 
-from Server.Algo.ID3 import *
-from Server.Components.Time import Time
-from Server.utils import *
+from SourceCode.Server.Algo.ID3 import *
+from SourceCode.Server.Components.Time import Time
+from SourceCode.Server.utils import *
 
 RESTAURANT = "restaurant"
 STORE = "store"
