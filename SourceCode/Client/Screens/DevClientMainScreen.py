@@ -6,11 +6,8 @@ from SourceCode.Client.Workers.RestDataBuilderWorker import *
 from SourceCode.Client.Workers.CbsDataBuilderWorker import *
 from SourceCode.Client.Workers.GovDataBuilderWorker import *
 from SourceCode.Client.Workers.RunAlgorithmWorker import *
+from SourceCode.Client.Workers.ProdConfigDataCreatorWorker import *
 from SourceCode.Client.Workers.Worker import *
-from SourceCode.Server.Utils.FileUtils import write_to_file
-
-import pandas as pd
-
 
 
 class DevClientMainScreen(QDialog):
@@ -42,7 +39,7 @@ class DevClientMainScreen(QDialog):
         self.build_button(0, 2, 1, "Build CBS Data", self.on_build_cbs_button_clicked)
         self.build_button(0, 3, 1, "Build Gov Data", self.on_build_gov_button_clicked)
         self.build_button(1, 0, 4, "Build All Data", self.on_build_all_button_clicked)
-        self.build_button(2, 0, 4, "Get Data Config", self.on_data_config_button_clicked)
+        self.build_button(2, 0, 4, "Create Production Data Config", self.on_data_config_button_clicked)
         self.build_button(3, 0, 4, "Parse Data", self.on_parse_data_button_clicked)
         self.build_button(4, 0, 4, "Run Algorithm", self.on_run_alg_button_clicked)
         self.return_button = self.build_button(6, 1, 2, "Go Back To Main Screen", self.null_function)
@@ -85,22 +82,9 @@ class DevClientMainScreen(QDialog):
         self.on_build_cbs_button_clicked()
         self.on_build_gov_button_clicked()
 
-    @staticmethod
-    def on_data_config_button_clicked():
-        try:
-            data = pd.read_csv("./Server/Dataset/data.csv")
-            price_level_as_num = data["price_level"].dropna().unique()
-            price_level_as_num.sort()
-            types = data["type"].dropna().unique().tolist()
-            config = {
-                "type": types,
-                "price_level": ['$' * int(num) for num in price_level_as_num]
-                }
-            write_to_file(config, "./ConfigFiles/prod-data-config.json")
-        except IOError:
-            print("Error")
+    def on_data_config_button_clicked(self):
+        self.on_button_clicked(ProdConfigDataCreatorWorker('./ConfigFiles/prod-data-creator-config.json'))
 
-    # @staticmethod
     def on_parse_data_button_clicked(self):
         self.on_button_clicked(DataParserWorker('./ConfigFiles/data-parser-config.json'))
 

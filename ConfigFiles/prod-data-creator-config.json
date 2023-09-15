@@ -1,0 +1,4 @@
+{
+    "data_set_path": "./DataOutput/data.csv",
+    "output_path": "./ConfigFiles/prod-data-config.json"
+}
