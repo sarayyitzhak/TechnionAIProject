@@ -3,17 +3,18 @@ import json
 import folium
 from PyQt5.QtCore import QTime
 from PyQt5.QtWebEngineWidgets import QWebEngineView
-from SourceCode.Client.Screens.ProdClientResultScreen import *
+from SourceCode.Client.Screens.Screen import Screen
 from PyQt5.QtWidgets import *
 
 from SourceCode.Server.Utils.Time import Time
 
 
-class ProdClientMainScreen(QDialog):
-    def __init__(self):
+class ProdClientMainScreen(Screen):
+    def __init__(self, on_calc_clicked, on_return_clicked):
         super().__init__()
-        self.setStyle(QStyleFactory.create("Fusion"))
-        self.setStyleSheet('QPushButton {padding: 5ex; margin: 2ex;}')
+
+        self.on_calc_clicked = on_calc_clicked
+        self.on_return_clicked = on_return_clicked
 
         try:
             with open('./ConfigFiles/prod-config.json', 'r', encoding='utf-8') as f:
@@ -28,9 +29,6 @@ class ProdClientMainScreen(QDialog):
         self.res_multi_choice = None
         self.res_location = None
 
-        self.calculate_button = None
-        self.return_button = None
-
         self.city_text_box = None
         self.street_text_box = None
         self.geo_loc_text_box = None
@@ -43,12 +41,8 @@ class ProdClientMainScreen(QDialog):
 
         self.init_selection()
 
-        self.layout = QGridLayout()
         self.build_layouts()
         self.build_buttons()
-
-        self.setLayout(self.layout)
-        self.layout.setContentsMargins(100, 100, 100, 100)
 
     def init_selection(self):
         open_total_minutes = Time(hours=8, minutes=0).get_total_minutes()
@@ -114,9 +108,9 @@ class ProdClientMainScreen(QDialog):
         coor_layout.setContentsMargins(0, 50, 50, 50)
         self.create_text_label(coor_layout, "Please enter your city and street below", 0, 0)
         self.city_text_box = self.create_address_text_box(coor_layout, "Enter city", 1, 0)
-        self.street_text_box = self.create_address_text_box(coor_layout, "Enter street", 1, 1)
-        self.create_text_label(coor_layout, "Then find your coordinates in the map and enter them below", 2, 0)
-        self.geo_loc_text_box = self.create_address_text_box(coor_layout, "Enter coordinates", 3, 0, 2)
+        self.street_text_box = self.create_address_text_box(coor_layout, "Enter street", 2, 0)
+        self.create_text_label(coor_layout, "Then find your coordinates in the map and enter them below", 3, 0)
+        self.geo_loc_text_box = self.create_address_text_box(coor_layout, "Enter coordinates", 4, 0)
         address_layout.addLayout(coor_layout, 0, 0)
 
     def create_map(self, address_layout):
@@ -165,10 +159,6 @@ class ProdClientMainScreen(QDialog):
         idx = 0 if is_opening else 1
         self.res_activity_hours[2 * day + idx] = Time(hours=value.hour, minutes=value.minute).get_total_minutes()
 
-    def on_calculate_button_clicked(self):
-        self.update_location_data()
-        self.set_info()
-
     def update_location_data(self):
         self.res_location["city"] = self.city_text_box.text()
         self.res_location["street"] = self.street_text_box.text()
@@ -191,18 +181,16 @@ class ProdClientMainScreen(QDialog):
         return data
 
     def build_buttons(self):
-        self.calculate_button = self.build_button(4, 0, "Calculate", self.on_calculate_button_clicked, self.layout)
-        self.calculate_button.setFixedSize(500, 80)
+        calculate_button = self.build_button("Calculate", self.on_calculate_button_clicked, 4, align_center=True)
+        calculate_button.setFixedSize(500, 80)
 
-        self.return_button = self.build_button(5, 0, "Go Back To Main Screen", self.null_function, self.layout, 2)
-        self.return_button.setFixedSize(400, 80)
+        return_button = self.build_button("Go Back To Main Screen", self.on_return_clicked, 5, align_center=True)
+        return_button.setFixedSize(400, 80)
 
-    @staticmethod
-    def build_button(i, j, label, function, layout, width=1):
-        button = QPushButton(label)
-        button.clicked.connect(function)
-        layout.addWidget(button, i, j, 1, width, alignment=Qt.AlignCenter)
-        return button
+    def on_calculate_button_clicked(self):
+        self.update_location_data()
+        self.set_info()
+        self.on_calc_clicked()
 
     @staticmethod
     def create_text_label(layout, text, i, j):
@@ -215,7 +203,3 @@ class ProdClientMainScreen(QDialog):
         text_box.setPlaceholderText(text)
         layout.addWidget(text_box, i, j, 1, width)
         return text_box
-
-    def null_function(self):
-        pass
-

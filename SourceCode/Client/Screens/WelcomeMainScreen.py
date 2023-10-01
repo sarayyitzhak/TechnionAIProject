@@ -1,33 +1,14 @@
-from PyQt5.QtWidgets import QLabel, QWidget, QPushButton, QVBoxLayout, QMessageBox, QGridLayout
-from PyQt5.QtWidgets import *
+from SourceCode.Client.Screens.Screen import Screen
 
 
-class WelcomeMainScreen(QDialog):
-    def __init__(self):
+class WelcomeMainScreen(Screen):
+    def __init__(self, on_dev_clicked, on_prod_clicked):
         super().__init__()
-        self.layout: QGridLayout = None
-        self.dev_button: QPushButton = None
-        self.prod_button: QPushButton = None
+
+        self.on_dev_clicked = on_dev_clicked
+        self.on_prod_clicked = on_prod_clicked
         self.init_ui()
 
     def init_ui(self):
-        self.setStyle(QStyleFactory.create("Fusion"))
-        self.setStyleSheet('QPushButton {padding: 5ex; margin: 2ex;}')
-        # self.setWindowTitle("Restaurant Rating Predictor")
-
-        self.layout = QGridLayout()
-        self.build_buttons()
-
-        self.layout.setContentsMargins(50, 50, 50, 50)
-        self.setLayout(self.layout)
-
-    def build_buttons(self):
-        self.dev_button = self.build_button(0, 0, "Development")
-        self.prod_button = self.build_button(1, 0, "Production")
-
-    def build_button(self, i, j, label):
-        button = QPushButton(label)
-        self.layout.addWidget(button, i, j)
-        return button
-
-
+        self.build_button("Development", self.on_dev_clicked, 0)
+        self.build_button("Production", self.on_prod_clicked, 1)

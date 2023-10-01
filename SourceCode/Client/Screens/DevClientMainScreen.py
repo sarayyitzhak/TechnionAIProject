@@ -1,5 +1,6 @@
 from PyQt5.QtWidgets import *
 
+from SourceCode.Client.Screens.Screen import Screen
 from SourceCode.Client.Workers.DataParserWorker import *
 from SourceCode.Client.Workers.GoogleDataBuilderWorker import *
 from SourceCode.Client.Workers.RestDataBuilderWorker import *
@@ -10,45 +11,32 @@ from SourceCode.Client.Workers.ProdConfigDataCreatorWorker import *
 from SourceCode.Client.Workers.Worker import *
 
 
-class DevClientMainScreen(QDialog):
-    def __init__(self):
+class DevClientMainScreen(Screen):
+    def __init__(self, on_return_clicked):
         super().__init__()
-        self.layout: QGridLayout = None
+
+        self.on_return_clicked = on_return_clicked
+
         self.scroll: QScrollArea = None
         self.scroll_layout: QVBoxLayout = None
-        self.return_button: QPushButton = None
 
         self.thread_pool = QThreadPool()
         self.init_ui()
 
     def init_ui(self):
-        self.setStyle(QStyleFactory.create("Fusion"))
-        self.setStyleSheet('QPushButton {padding: 5ex; margin: 2ex;}')
-        self.setWindowTitle("Restaurant Rating Predictor")
-
-        self.layout = QGridLayout()
         self.build_buttons()
         self.build_scroll_bar()
 
-        self.layout.setContentsMargins(50, 50, 50, 50)
-        self.setLayout(self.layout)
-
     def build_buttons(self):
-        self.build_button(0, 0, 1, "Build Google Data", self.on_build_google_button_clicked)
-        self.build_button(0, 1, 1, "Build Rest Data", self.on_build_rest_button_clicked)
-        self.build_button(0, 2, 1, "Build CBS Data", self.on_build_cbs_button_clicked)
-        self.build_button(0, 3, 1, "Build Gov Data", self.on_build_gov_button_clicked)
-        self.build_button(1, 0, 4, "Build All Data", self.on_build_all_button_clicked)
-        self.build_button(2, 0, 4, "Create Production Data Config", self.on_data_config_button_clicked)
-        self.build_button(3, 0, 4, "Parse Data", self.on_parse_data_button_clicked)
-        self.build_button(4, 0, 4, "Run Algorithm", self.on_run_alg_button_clicked)
-        self.return_button = self.build_button(6, 1, 2, "Go Back To Main Screen", self.null_function)
-
-    def build_button(self, i, j, width, label, function):
-        button = QPushButton(label)
-        self.layout.addWidget(button, i, j, 1, width)
-        button.clicked.connect(function)
-        return button
+        self.build_button("Build Google Data", self.on_build_google_button_clicked, 0, 0, 1)
+        self.build_button("Build Rest Data", self.on_build_rest_button_clicked, 0, 1, 1)
+        self.build_button("Build CBS Data", self.on_build_cbs_button_clicked, 0, 2, 1)
+        self.build_button("Build Gov Data", self.on_build_gov_button_clicked, 0, 3, 1)
+        self.build_button("Build All Data", self.on_build_all_button_clicked, 1, 0, 4)
+        self.build_button("Create Production Data Config", self.on_data_config_button_clicked, 2, 0, 4)
+        self.build_button("Parse Data", self.on_parse_data_button_clicked, 3, 0, 4)
+        self.build_button("Run Algorithm", self.on_run_alg_button_clicked, 4, 0, 4)
+        self.build_button("Go Back To Main Screen", self.on_return_clicked, 6, 0, 4)
 
     def build_scroll_bar(self):
         self.scroll = QScrollArea()
@@ -131,6 +119,3 @@ class DevClientMainScreen(QDialog):
         msg.setWindowTitle(value[0])
         msg.setStandardButtons(QMessageBox.Ok)
         msg.exec()
-
-    def null_function(self):
-        pass

@@ -1,13 +1,14 @@
 from SourceCode.Client.Screens.ProdClientLoadingScreen import *
 from SourceCode.Server.Algo.ID3Experiments import *
-
 from SourceCode.Server.Algo.Prediction import Prediction
 from SourceCode.Server.DataParser.DataFiller import *
+
+from PyQt5 import QtCore
 
 
 class PredictionWorker(QThread):
 
-    finished = QtCore.pyqtSignal(str)
+    finished = QtCore.pyqtSignal(float)
 
     def __init__(self, user_selection):
         super().__init__()
@@ -46,13 +47,6 @@ class PredictionWorker(QThread):
         data.update(cbs_data if cbs_data is not None else {})
         return data
 
-    def run_alg(self):
-        self.pre_run_algo()
-        self.pred = Prediction()
-        self.pred.create_decision_tree(self.formatted_tree)
-        self.rate = self.pred.predict_sample(self.algo_input, False)
-        self.finished.emit(str(self.rate))
-
     def pre_run_algo(self):
         result_as_arr = []
         for field in self.fields:
@@ -62,4 +56,11 @@ class PredictionWorker(QThread):
                 else:
                     result_as_arr.append(self.user_selection[field["name"]])
         self.algo_input = np.array(result_as_arr.copy(), dtype=object)
+
+    def run_alg(self):
+        self.pre_run_algo()
+        self.pred = Prediction()
+        self.pred.create_decision_tree(self.formatted_tree)
+        self.rate = self.pred.predict_sample(self.algo_input, False)
+        self.finished.emit(self.rate)
 
