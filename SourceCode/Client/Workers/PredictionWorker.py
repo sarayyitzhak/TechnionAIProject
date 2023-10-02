@@ -48,16 +48,17 @@ class PredictionWorker(QThread):
     def pre_run_algo(self):
         result_as_arr = []
         for field in self.fields:
-            if field["name"] in self.user_selection:
-                if isinstance(self.user_selection[field["name"]], list):
-                    result_as_arr.append(tuple(self.user_selection[field["name"]]))
-                else:
-                    result_as_arr.append(self.user_selection[field["name"]])
+            if field["type"] == "NUMBER" and isinstance(self.user_selection[field["name"]], str):
+                result_as_arr.append(float(self.user_selection[field["name"]]))
+            elif isinstance(self.user_selection[field["name"]], list):
+                result_as_arr.append(tuple(self.user_selection[field["name"]]))
+            else:
+                result_as_arr.append(self.user_selection[field["name"]])
         self.algo_input = np.array(result_as_arr.copy(), dtype=object)
 
     def run_alg(self):
         self.pre_run_algo()
         prediction = Prediction()
         prediction.create_decision_tree(self.formatted_tree)
-        rate = prediction.predict_sample(self.algo_input, False)
+        rate = prediction.predict_sample(self.algo_input)
         self.finished.emit(rate)

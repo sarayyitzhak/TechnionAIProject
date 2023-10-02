@@ -9,10 +9,10 @@ class Prediction:
     def create_decision_tree(self, formatted_decision_tree):
         self.tree_root = dict_to_node(formatted_decision_tree)
 
-    def predict(self, rows, return_none_values=False):
-        return np.array([self.predict_sample(row, return_none_values) for row in rows])
+    def predict(self, rows):
+        return np.array([self.predict_sample(row) for row in rows])
 
-    def predict_sample(self, row, return_none_values, node: DecisionNode or Leaf = None):
+    def predict_sample(self, row, node: DecisionNode or Leaf = None):
         if node is None:
             node = self.tree_root
 
@@ -20,7 +20,8 @@ class Prediction:
             return node.value
 
         if isinstance(node, DecisionNode):
-            if return_none_values and pd.isnull(row[node.question.column_idx]):
-                return None
-            branch = node.true_branch if node.question.match(row) else node.false_branch
-            return self.predict_sample(row, return_none_values, branch)
+            if pd.isnull(row[node.question.column_idx]):
+                return (self.predict_sample(row, node.true_branch) + self.predict_sample(row, node.false_branch)) / 2
+            else:
+                branch = node.true_branch if node.question.match(row) else node.false_branch
+                return self.predict_sample(row, branch)
