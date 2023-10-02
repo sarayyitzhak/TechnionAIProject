@@ -37,10 +37,6 @@
       "type": "BOOL"
     },
     {
-      "name": "serves_wine",
-      "type": "BOOL"
-    },
-    {
       "name": "takeout",
       "type": "BOOL"
     },
@@ -61,19 +57,7 @@
       "type": "ACTIVITY_HOURS"
     },
     {
-      "name": "monday_activity_hours",
-      "type": "ACTIVITY_HOURS"
-    },
-    {
-      "name": "tuesday_activity_hours",
-      "type": "ACTIVITY_HOURS"
-    },
-    {
       "name": "wednesday_activity_hours",
-      "type": "ACTIVITY_HOURS"
-    },
-    {
-      "name": "thursday_activity_hours",
       "type": "ACTIVITY_HOURS"
     },
     {
@@ -105,15 +89,7 @@
       "type": "NUMBER"
     },
     {
-      "name": "socio-economic index value",
-      "type": "NUMBER"
-    },
-    {
       "name": "socio-economic rank",
-      "type": "NUMBER"
-    },
-    {
-      "name": "socio-economic cluster",
       "type": "NUMBER"
     },
     {

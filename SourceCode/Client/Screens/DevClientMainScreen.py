@@ -44,8 +44,6 @@ class DevClientMainScreen(Screen):
         self.scroll_layout = QVBoxLayout(widget)
         self.scroll.setWidget(widget)
 
-        self.scroll.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
-        self.scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
         self.scroll.setWidgetResizable(True)
         self.scroll.setFixedHeight(150)
 

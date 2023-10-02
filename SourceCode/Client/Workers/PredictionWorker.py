@@ -15,8 +15,6 @@ class PredictionWorker(QThread):
         self.user_selection = user_selection
         self.algo_input = None
         self.data_filler = None
-        self.pred = None
-        self.rate = 0
         config_file = open('./ConfigFiles/prediction-config.json', 'r', encoding='utf-8')
         self.config = json.load(config_file)
         self.fields = self.config["fields"]
@@ -59,8 +57,7 @@ class PredictionWorker(QThread):
 
     def run_alg(self):
         self.pre_run_algo()
-        self.pred = Prediction()
-        self.pred.create_decision_tree(self.formatted_tree)
-        self.rate = self.pred.predict_sample(self.algo_input, False)
-        self.finished.emit(self.rate)
-
+        prediction = Prediction()
+        prediction.create_decision_tree(self.formatted_tree)
+        rate = prediction.predict_sample(self.algo_input, False)
+        self.finished.emit(rate)

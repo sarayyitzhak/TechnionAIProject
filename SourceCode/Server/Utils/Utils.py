@@ -17,6 +17,8 @@ def is_closes_places(value1, value2, max_distance_km=0.3):
 
 
 def common_activity_hours(value1, value2, min_common_percentage=0.8):
+    if value1 == value2:
+        return True
     if value1 == (-1, -1) or value2 == (-1, -1):
         return False
     else:
@@ -30,7 +32,7 @@ def common_activity_hours(value1, value2, min_common_percentage=0.8):
 def get_intersection_total_minutes(interval1, interval2):
     new_min = max(interval1[0], interval2[0])
     new_max = min(interval1[1], interval2[1])
-    return new_max - new_min if new_min <= new_max else 0
+    return max(0, new_max - new_min)
 
 
 def get_street_distance(cbs_street, g_street, g_reversed_street):

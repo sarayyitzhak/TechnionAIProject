@@ -41,6 +41,8 @@
             "type": "ADDRESS"
         }
     ],
+    "fields_to_remove": ["name", "rest_price_level", "monday_activity_hours", "tuesday_activity_hours",
+        "thursday_activity_hours", "serves_wine", "socio-economic index value", "socio-economic cluster"],
     "google_config": {
         "missing_price_level_data": {
             "field_name": "price_level",

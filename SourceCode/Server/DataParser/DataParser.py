@@ -13,6 +13,7 @@ class DataParser:
         self.data_set_paths = config["data_set_paths"]
         self.target_field = config["target_field"]
         self.global_fields = {field["type"]: field["name"] for field in config["global_fields"]}
+        self.fields_to_remove = config["fields_to_remove"]
         self.google_config = config["google_config"]
         self.cbs_config = config["cbs_config"]
         self.places_config = config["places_config"]
@@ -40,7 +41,8 @@ class DataParser:
         self.fill_rest_missing_data()
 
     def clean_data(self):
-        pass
+        for field_name in self.fields_to_remove:
+            del self.data[field_name]
 
     def save_data(self):
         pd.DataFrame(self.data).to_csv(self.output_path, index=False, encoding='utf-8-sig')
