@@ -42,7 +42,7 @@ class PredictionWorker(QThread):
         data.update(self.data_filler.get_places_data_by_point(tuple(self.user_selection["geo_location"]), None))
         self.data_filler.get_cbs_data()
         cbs_data = self.data_filler.get_cbs_data_by_address(self.user_selection["city"], self.user_selection["street"])
-        data.update(cbs_data if cbs_data is not None else {})
+        data.update(cbs_data if cbs_data is not None else {"percent of religious": None, "socio-economic rank": None})
         return data
 
     def pre_run_algo(self):
