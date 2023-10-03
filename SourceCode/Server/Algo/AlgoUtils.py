@@ -7,7 +7,7 @@ def get_data(data_set_path, fields, target_field):
     field_names = [field["name"] for field in fields] + [target_field]
     data = data[field_names]
 
-    for col in [field["name"] for field in fields if field["type"] in ["ACTIVITY_HOURS", "GEO_LOCATION"]]:
+    for col in [field["name"] for field in fields if field["type"] == "GEO_LOCATION"]:
         data[col] = data[col].apply(lambda x: np.nan if pd.isnull(x) else tuple(eval(x)))
 
     return data

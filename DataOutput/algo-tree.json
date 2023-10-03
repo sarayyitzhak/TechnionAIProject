@@ -1,171 +1,107 @@
 {
     "question": {
-        "column": "close_activity_hour",
-        "field_type": "NUMBER",
+        "column": "friday_close",
+        "field_type": "ACTIVITY_HOURS",
         "column_idx": 18,
-        "value": 1920.0
+        "value": 1830.0
     },
     "false": {
         "question": {
-            "column": "friday_activity_hours",
+            "column": "sunday_close",
             "field_type": "ACTIVITY_HOURS",
-            "column_idx": 15,
-            "value": [
-                750,
-                900
-            ]
+            "column_idx": 14,
+            "value": 1920.0
         },
         "false": {
             "question": {
-                "column": "sunday_activity_hours",
+                "column": "saturday_close",
                 "field_type": "ACTIVITY_HOURS",
-                "column_idx": 13,
-                "value": [
-                    630,
-                    631
-                ]
+                "column_idx": 20,
+                "value": 2370.0
             },
             "false": {
                 "question": {
-                    "column": "saturday_activity_hours",
+                    "column": "sunday_open",
                     "field_type": "ACTIVITY_HOURS",
-                    "column_idx": 16,
-                    "value": [
-                        1260,
-                        1380
-                    ]
+                    "column_idx": 13,
+                    "value": 1200.0
                 },
                 "false": {
                     "question": {
-                        "column": "open_activity_hour",
-                        "field_type": "NUMBER",
-                        "column_idx": 17,
-                        "value": -1.0
+                        "column": "saturday_open",
+                        "field_type": "ACTIVITY_HOURS",
+                        "column_idx": 19,
+                        "value": 1320.0
                     },
                     "false": {
                         "question": {
-                            "column": "type",
-                            "field_type": "STRING",
-                            "column_idx": 29,
-                            "value": "אוכל רחוב"
+                            "column": "saturday_open",
+                            "field_type": "ACTIVITY_HOURS",
+                            "column_idx": 19,
+                            "value": 1290.0
                         },
                         "false": {
                             "question": {
-                                "column": "type",
-                                "field_type": "STRING",
-                                "column_idx": 29,
-                                "value": "פיצריות"
+                                "column": "saturday_open",
+                                "field_type": "ACTIVITY_HOURS",
+                                "column_idx": 19,
+                                "value": 1260.0
                             },
                             "false": {
                                 "question": {
-                                    "column": "type",
-                                    "field_type": "STRING",
-                                    "column_idx": 29,
-                                    "value": "מסעדה אסייאתית"
+                                    "column": "wednesday_open",
+                                    "field_type": "ACTIVITY_HOURS",
+                                    "column_idx": 15,
+                                    "value": 1230.0
                                 },
                                 "false": {
-                                    "value": 57.12174285714286,
-                                    "size": 218,
-                                    "mae": 0.13291292660550463
+                                    "value": 72.06934476843911,
+                                    "size": 1393,
+                                    "mae": 0.17441380278013444
                                 },
                                 "true": {
-                                    "value": 30.875,
-                                    "size": 150,
-                                    "mae": 0.2134387333333333
+                                    "value": 83.279,
+                                    "size": 228,
+                                    "mae": 0.3222743421052631
                                 }
                             },
                             "true": {
                                 "question": {
-                                    "column": "serves_dinner",
-                                    "field_type": "BOOL",
-                                    "column_idx": 6,
-                                    "value": false
+                                    "column": "type",
+                                    "field_type": "STRING",
+                                    "column_idx": 31,
+                                    "value": "מסעדה אסייאתית"
                                 },
                                 "false": {
-                                    "value": 49.10574074074074,
-                                    "size": 151,
-                                    "mae": 0.10621379200392445
+                                    "value": 60.70053658536585,
+                                    "size": 236,
+                                    "mae": 0.15480480777180655
                                 },
                                 "true": {
-                                    "value": 41.55333333333333,
-                                    "size": 133,
-                                    "mae": 0.12869431077694238
+                                    "value": 33.667352941176475,
+                                    "size": 152,
+                                    "mae": 0.1926677360681114
                                 }
                             }
                         },
                         "true": {
                             "question": {
-                                "column": "store_100",
-                                "field_type": "NUMBER",
-                                "column_idx": 23,
-                                "value": 28
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "serves_dinner",
-                                    "field_type": "BOOL",
-                                    "column_idx": 6,
-                                    "value": false
-                                },
-                                "false": {
-                                    "value": 51.49730769230769,
-                                    "size": 139,
-                                    "mae": 0.09013718317653568
-                                },
-                                "true": {
-                                    "value": 50.08915625,
-                                    "size": 125,
-                                    "mae": 0.07928112749999999
-                                }
-                            },
-                            "true": {
-                                "question": {
-                                    "column": "geo_location",
-                                    "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
-                                    "value": [
-                                        32.835081,
-                                        35.0890309
-                                    ]
-                                },
-                                "false": {
-                                    "value": 34.65578947368421,
-                                    "size": 9,
-                                    "mae": 0.10855070175438597
-                                },
-                                "true": {
-                                    "value": 10.25,
-                                    "size": 2,
-                                    "mae": 0.0
-                                }
-                            }
-                        }
-                    },
-                    "true": {
-                        "question": {
-                            "column": "close_activity_hour",
-                            "field_type": "NUMBER",
-                            "column_idx": 18,
-                            "value": -1.0
-                        },
-                        "false": {
-                            "question": {
                                 "column": "type",
                                 "field_type": "STRING",
-                                "column_idx": 29,
+                                "column_idx": 31,
                                 "value": "אוכל רחוב"
                             },
                             "false": {
                                 "question": {
                                     "column": "type",
                                     "field_type": "STRING",
-                                    "column_idx": 29,
+                                    "column_idx": 31,
                                     "value": "פיצריות"
                                 },
                                 "false": {
-                                    "value": 56.39266666666667,
-                                    "size": 220,
-                                    "mae": 0.13083846969696972
+                                    "value": 57.106421052631575,
+                                    "size": 221,
+                                    "mae": 0.13399595856156224
                                 },
                                 "true": {
                                     "value": 38.820750000000004,
@@ -177,7 +113,7 @@
                                 "question": {
                                     "column": "store_100",
                                     "field_type": "NUMBER",
-                                    "column_idx": 23,
+                                    "column_idx": 25,
                                     "value": 28
                                 },
                                 "false": {
@@ -191,54 +127,103 @@
                                     "mae": 0.13781068181818182
                                 }
                             }
+                        }
+                    },
+                    "true": {
+                        "question": {
+                            "column": "type",
+                            "field_type": "STRING",
+                            "column_idx": 31,
+                            "value": "אוכל רחוב"
                         },
-                        "true": {
+                        "false": {
                             "question": {
-                                "column": "saturday_activity_hours",
-                                "field_type": "ACTIVITY_HOURS",
-                                "column_idx": 16,
-                                "value": [
-                                    1170,
-                                    2370
-                                ]
+                                "column": "type",
+                                "field_type": "STRING",
+                                "column_idx": 31,
+                                "value": "פיצריות"
                             },
                             "false": {
                                 "question": {
-                                    "column": "saturday_activity_hours",
-                                    "field_type": "ACTIVITY_HOURS",
-                                    "column_idx": 16,
-                                    "value": [
-                                        1200,
-                                        1320
-                                    ]
+                                    "column": "price_level",
+                                    "field_type": "NUMBER",
+                                    "column_idx": 12,
+                                    "value": 1.0
                                 },
                                 "false": {
-                                    "value": 72.74866548358473,
-                                    "size": 1354,
-                                    "mae": 0.17165344223104434
+                                    "value": 54.70234693877551,
+                                    "size": 190,
+                                    "mae": 0.11164951772287862
                                 },
                                 "true": {
-                                    "value": 56.196000000000005,
-                                    "size": 234,
-                                    "mae": 0.13514760683760685
+                                    "value": 58.229400000000005,
+                                    "size": 221,
+                                    "mae": 0.1398291221719457
                                 }
                             },
                             "true": {
                                 "question": {
-                                    "column": "type",
-                                    "field_type": "STRING",
-                                    "column_idx": 29,
-                                    "value": "אוכל רחוב"
+                                    "column": "serves_dinner",
+                                    "field_type": "BOOL",
+                                    "column_idx": 6,
+                                    "value": false
                                 },
                                 "false": {
-                                    "value": 57.03908333333334,
-                                    "size": 225,
-                                    "mae": 0.13511152222222222
+                                    "value": 54.24546875,
+                                    "size": 152,
+                                    "mae": 0.10912129934210527
                                 },
                                 "true": {
-                                    "value": 33.72533333333333,
-                                    "size": 151,
-                                    "mae": 0.1919737969094923
+                                    "value": 55.998571428571424,
+                                    "size": 134,
+                                    "mae": 0.10480453091684433
+                                }
+                            }
+                        },
+                        "true": {
+                            "question": {
+                                "column": "serves_dinner",
+                                "field_type": "BOOL",
+                                "column_idx": 6,
+                                "value": false
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "serves_lunch",
+                                    "field_type": "BOOL",
+                                    "column_idx": 7,
+                                    "value": false
+                                },
+                                "false": {
+                                    "value": 55.13571186440677,
+                                    "size": 150,
+                                    "mae": 0.11287869152542368
+                                },
+                                "true": {
+                                    "value": 43.48457142857143,
+                                    "size": 119,
+                                    "mae": 0.11850575030012003
+                                }
+                            },
+                            "true": {
+                                "question": {
+                                    "column": "geo_location",
+                                    "field_type": "GEO_LOCATION",
+                                    "column_idx": 22,
+                                    "value": [
+                                        32.835081,
+                                        35.0890309
+                                    ]
+                                },
+                                "false": {
+                                    "value": 50.69268571428571,
+                                    "size": 131,
+                                    "mae": 0.0816365190839695
+                                },
+                                "true": {
+                                    "value": 10.25,
+                                    "size": 2,
+                                    "mae": 0.0
                                 }
                             }
                         }
@@ -248,57 +233,57 @@
                     "question": {
                         "column": "type",
                         "field_type": "STRING",
-                        "column_idx": 29,
-                        "value": "מסעדה אסייאתית"
+                        "column_idx": 31,
+                        "value": "אוכל רחוב"
                     },
                     "false": {
                         "question": {
                             "column": "type",
                             "field_type": "STRING",
-                            "column_idx": 29,
-                            "value": "אוכל רחוב"
+                            "column_idx": 31,
+                            "value": "פיצריות"
                         },
                         "false": {
                             "question": {
-                                "column": "serves_dinner",
-                                "field_type": "BOOL",
-                                "column_idx": 6,
-                                "value": false
+                                "column": "type",
+                                "field_type": "STRING",
+                                "column_idx": 31,
+                                "value": "מסעדה אסייאתית"
                             },
                             "false": {
                                 "question": {
-                                    "column": "type",
-                                    "field_type": "STRING",
-                                    "column_idx": 29,
-                                    "value": "קייטרינג"
+                                    "column": "serves_dinner",
+                                    "field_type": "BOOL",
+                                    "column_idx": 6,
+                                    "value": false
                                 },
                                 "false": {
-                                    "value": 58.302060240963854,
-                                    "size": 232,
-                                    "mae": 0.13996395461154962
+                                    "value": 57.60842,
+                                    "size": 218,
+                                    "mae": 0.13582089541284403
                                 },
                                 "true": {
-                                    "value": 56.253680851063834,
-                                    "size": 154,
-                                    "mae": 0.11825086211660685
+                                    "value": 56.802566666666664,
+                                    "size": 188,
+                                    "mae": 0.11941325886524823
                                 }
                             },
                             "true": {
                                 "question": {
-                                    "column": "type",
-                                    "field_type": "STRING",
-                                    "column_idx": 29,
-                                    "value": "פיצריות"
+                                    "column": "serves_dinner",
+                                    "field_type": "BOOL",
+                                    "column_idx": 6,
+                                    "value": false
                                 },
                                 "false": {
-                                    "value": 56.538305825242716,
-                                    "size": 193,
-                                    "mae": 0.11719352608280095
+                                    "value": 48.72603333333333,
+                                    "size": 150,
+                                    "mae": 0.10683820444444445
                                 },
                                 "true": {
-                                    "value": 45.86953488372093,
-                                    "size": 139,
-                                    "mae": 0.10520094194411911
+                                    "value": 38.11325,
+                                    "size": 131,
+                                    "mae": 0.15383540076335878
                                 }
                             }
                         },
@@ -311,36 +296,36 @@
                             },
                             "false": {
                                 "question": {
-                                    "column": "store_100",
-                                    "field_type": "NUMBER",
-                                    "column_idx": 23,
-                                    "value": 28
+                                    "column": "serves_lunch",
+                                    "field_type": "BOOL",
+                                    "column_idx": 7,
+                                    "value": false
                                 },
                                 "false": {
-                                    "value": 52.380173184357545,
-                                    "size": 143,
-                                    "mae": 0.09114298159940615
+                                    "value": 51.31772580645161,
+                                    "size": 151,
+                                    "mae": 0.09785507263405253
                                 },
                                 "true": {
-                                    "value": 36.4639090909091,
-                                    "size": 12,
-                                    "mae": 0.13958098484848486
+                                    "value": 45.37846666666667,
+                                    "size": 121,
+                                    "mae": 0.10978052341597794
                                 }
                             },
                             "true": {
                                 "question": {
                                     "column": "geo_location",
                                     "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
+                                    "column_idx": 22,
                                     "value": [
-                                        32.8350137,
-                                        35.0890308
+                                        32.835081,
+                                        35.0890309
                                     ]
                                 },
                                 "false": {
-                                    "value": 49.59240127388534,
-                                    "size": 134,
-                                    "mae": 0.08325932265424474
+                                    "value": 49.1790551724138,
+                                    "size": 132,
+                                    "mae": 0.08665286363636363
                                 },
                                 "true": {
                                     "value": 10.25,
@@ -352,40 +337,19 @@
                     },
                     "true": {
                         "question": {
-                            "column": "serves_dinner",
-                            "field_type": "BOOL",
-                            "column_idx": 6,
-                            "value": false
+                            "column": "store_100",
+                            "field_type": "NUMBER",
+                            "column_idx": 25,
+                            "value": 28
                         },
                         "false": {
                             "question": {
-                                "column": "wheelchair_accessible_entrance",
+                                "column": "serves_dinner",
                                 "field_type": "BOOL",
-                                "column_idx": 10,
-                                "value": true
+                                "column_idx": 6,
+                                "value": false
                             },
                             "false": {
-                                "question": {
-                                    "column": "geo_location",
-                                    "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
-                                    "value": [
-                                        32.8350137,
-                                        35.0890308
-                                    ]
-                                },
-                                "false": {
-                                    "value": 48.71855063291139,
-                                    "size": 131,
-                                    "mae": 0.09182882549038557
-                                },
-                                "true": {
-                                    "value": 10.25,
-                                    "size": 2,
-                                    "mae": 0.0
-                                }
-                            },
-                            "true": {
                                 "question": {
                                     "column": "serves_lunch",
                                     "field_type": "BOOL",
@@ -393,14 +357,35 @@
                                     "value": false
                                 },
                                 "false": {
-                                    "value": 53.09091428571429,
-                                    "size": 154,
-                                    "mae": 0.10279449350649353
+                                    "value": 51.96889361702128,
+                                    "size": 139,
+                                    "mae": 0.08951034287463648
                                 },
                                 "true": {
-                                    "value": 50.140653846153846,
-                                    "size": 120,
-                                    "mae": 0.09129457051282051
+                                    "value": 49.90939669421488,
+                                    "size": 112,
+                                    "mae": 0.08317363857733176
+                                }
+                            },
+                            "true": {
+                                "question": {
+                                    "column": "geo_location",
+                                    "field_type": "GEO_LOCATION",
+                                    "column_idx": 22,
+                                    "value": [
+                                        32.8521559,
+                                        35.0826756
+                                    ]
+                                },
+                                "false": {
+                                    "value": 50.59204705882353,
+                                    "size": 124,
+                                    "mae": 0.07299915749525615
+                                },
+                                "true": {
+                                    "value": 20.625,
+                                    "size": 2,
+                                    "mae": 0.10125
                                 }
                             }
                         },
@@ -408,7 +393,7 @@
                             "question": {
                                 "column": "geo_location",
                                 "field_type": "GEO_LOCATION",
-                                "column_idx": 20,
+                                "column_idx": 22,
                                 "value": [
                                     32.835081,
                                     35.0890309
@@ -416,20 +401,20 @@
                             },
                             "false": {
                                 "question": {
-                                    "column": "kosher",
-                                    "field_type": "BOOL",
-                                    "column_idx": 30,
-                                    "value": false
+                                    "column": "rest_500",
+                                    "field_type": "NUMBER",
+                                    "column_idx": 28,
+                                    "value": 116
                                 },
                                 "false": {
-                                    "value": 49.388507462686576,
-                                    "size": 120,
-                                    "mae": 0.07819704975124375
+                                    "value": 39.231875,
+                                    "size": 8,
+                                    "mae": 0.08103625
                                 },
                                 "true": {
-                                    "value": 50.56739130434782,
-                                    "size": 131,
-                                    "mae": 0.07697246266179888
+                                    "value": 10.25,
+                                    "size": 1,
+                                    "mae": 0.0
                                 }
                             },
                             "true": {
@@ -445,108 +430,111 @@
                 "question": {
                     "column": "type",
                     "field_type": "STRING",
-                    "column_idx": 29,
+                    "column_idx": 31,
                     "value": "אוכל רחוב"
                 },
                 "false": {
                     "question": {
                         "column": "type",
                         "field_type": "STRING",
-                        "column_idx": 29,
+                        "column_idx": 31,
                         "value": "פיצריות"
                     },
                     "false": {
                         "question": {
-                            "column": "price_level",
-                            "field_type": "NUMBER",
-                            "column_idx": 12,
-                            "value": 1.0
+                            "column": "type",
+                            "field_type": "STRING",
+                            "column_idx": 31,
+                            "value": "מסעדה אסייאתית"
                         },
                         "false": {
                             "question": {
-                                "column": "serves_lunch",
-                                "field_type": "BOOL",
-                                "column_idx": 7,
-                                "value": false
+                                "column": "type",
+                                "field_type": "STRING",
+                                "column_idx": 31,
+                                "value": "מסעדת המבורגרים"
                             },
                             "false": {
                                 "question": {
-                                    "column": "kosher",
-                                    "field_type": "BOOL",
-                                    "column_idx": 30,
-                                    "value": false
+                                    "column": "type",
+                                    "field_type": "STRING",
+                                    "column_idx": 31,
+                                    "value": "קייטרינג"
                                 },
                                 "false": {
-                                    "value": 52.85446268656716,
-                                    "size": 144,
-                                    "mae": 0.09991162935323382
+                                    "value": 58.780179566563476,
+                                    "size": 212,
+                                    "mae": 0.13852218835796487
                                 },
                                 "true": {
-                                    "value": 54.03914124293786,
-                                    "size": 182,
-                                    "mae": 0.10197390916992616
+                                    "value": 48.125,
+                                    "size": 150,
+                                    "mae": 0.11222326666666664
                                 }
                             },
                             "true": {
                                 "question": {
-                                    "column": "kosher",
+                                    "column": "serves_dinner",
                                     "field_type": "BOOL",
-                                    "column_idx": 30,
+                                    "column_idx": 6,
                                     "value": false
                                 },
                                 "false": {
-                                    "value": 49.099093749999994,
-                                    "size": 120,
-                                    "mae": 0.09017503645833334
+                                    "value": 48.619512820512824,
+                                    "size": 152,
+                                    "mae": 0.10610008265856948
                                 },
                                 "true": {
-                                    "value": 53.84823287671232,
-                                    "size": 140,
-                                    "mae": 0.09779898825831701
+                                    "value": 44.96600000000001,
+                                    "size": 134,
+                                    "mae": 0.10917597014925366
                                 }
                             }
                         },
                         "true": {
                             "question": {
-                                "column": "type",
-                                "field_type": "STRING",
-                                "column_idx": 29,
-                                "value": "מסעדה אסייאתית"
+                                "column": "serves_dinner",
+                                "field_type": "BOOL",
+                                "column_idx": 6,
+                                "value": false
                             },
                             "false": {
                                 "question": {
-                                    "column": "serves_dinner",
+                                    "column": "wheelchair_accessible_entrance",
                                     "field_type": "BOOL",
-                                    "column_idx": 6,
-                                    "value": false
+                                    "column_idx": 10,
+                                    "value": true
                                 },
                                 "false": {
-                                    "value": 57.47168613138686,
-                                    "size": 217,
-                                    "mae": 0.13434969659255272
+                                    "value": 45.490117647058824,
+                                    "size": 130,
+                                    "mae": 0.11065057013574658
                                 },
                                 "true": {
-                                    "value": 57.90310256410257,
-                                    "size": 187,
-                                    "mae": 0.12549119566707806
+                                    "value": 52.89222222222222,
+                                    "size": 149,
+                                    "mae": 0.101893504847129
                                 }
                             },
                             "true": {
                                 "question": {
-                                    "column": "serves_dinner",
-                                    "field_type": "BOOL",
-                                    "column_idx": 6,
-                                    "value": false
+                                    "column": "geo_location",
+                                    "field_type": "GEO_LOCATION",
+                                    "column_idx": 22,
+                                    "value": [
+                                        32.835081,
+                                        35.0890309
+                                    ]
                                 },
                                 "false": {
-                                    "value": 51.505294117647054,
-                                    "size": 149,
-                                    "mae": 0.09865019739439397
+                                    "value": 48.8229090909091,
+                                    "size": 128,
+                                    "mae": 0.08845838068181815
                                 },
                                 "true": {
-                                    "value": 42.578375,
-                                    "size": 130,
-                                    "mae": 0.12395638461538461
+                                    "value": 10.25,
+                                    "size": 2,
+                                    "mae": 0.0
                                 }
                             }
                         }
@@ -569,7 +557,7 @@
                                 "question": {
                                     "column": "geo_location",
                                     "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
+                                    "column_idx": 22,
                                     "value": [
                                         32.8350137,
                                         35.0890308
@@ -590,7 +578,7 @@
                                 "question": {
                                     "column": "geo_location",
                                     "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
+                                    "column_idx": 22,
                                     "value": [
                                         32.835081,
                                         35.0890309
@@ -612,7 +600,7 @@
                             "question": {
                                 "column": "geo_location",
                                 "field_type": "GEO_LOCATION",
-                                "column_idx": 20,
+                                "column_idx": 22,
                                 "value": [
                                     32.8350137,
                                     35.0890308
@@ -622,7 +610,7 @@
                                 "question": {
                                     "column": "geo_location",
                                     "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
+                                    "column_idx": 22,
                                     "value": [
                                         32.8514182,
                                         35.081212
@@ -651,7 +639,7 @@
                     "question": {
                         "column": "store_100",
                         "field_type": "NUMBER",
-                        "column_idx": 23,
+                        "column_idx": 25,
                         "value": 28
                     },
                     "false": {
@@ -690,7 +678,7 @@
                                 "question": {
                                     "column": "geo_location",
                                     "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
+                                    "column_idx": 22,
                                     "value": [
                                         32.8521559,
                                         35.0826756
@@ -712,7 +700,7 @@
                             "question": {
                                 "column": "geo_location",
                                 "field_type": "GEO_LOCATION",
-                                "column_idx": 20,
+                                "column_idx": 22,
                                 "value": [
                                     32.8514182,
                                     35.081212
@@ -722,7 +710,7 @@
                                 "question": {
                                     "column": "geo_location",
                                     "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
+                                    "column_idx": 22,
                                     "value": [
                                         32.8093538,
                                         35.1243323
@@ -750,7 +738,7 @@
                         "question": {
                             "column": "geo_location",
                             "field_type": "GEO_LOCATION",
-                            "column_idx": 20,
+                            "column_idx": 22,
                             "value": [
                                 32.835081,
                                 35.0890309
@@ -760,14 +748,14 @@
                             "question": {
                                 "column": "rest_500",
                                 "field_type": "NUMBER",
-                                "column_idx": 26,
+                                "column_idx": 28,
                                 "value": 116
                             },
                             "false": {
                                 "question": {
                                     "column": "geo_location",
                                     "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
+                                    "column_idx": 22,
                                     "value": [
                                         32.812774,
                                         34.996858
@@ -801,602 +789,120 @@
         },
         "true": {
             "question": {
-                "column": "kosher",
-                "field_type": "BOOL",
-                "column_idx": 30,
-                "value": false
+                "column": "type",
+                "field_type": "STRING",
+                "column_idx": 31,
+                "value": "אוכל רחוב"
             },
             "false": {
                 "question": {
-                    "column": "serves_lunch",
-                    "field_type": "BOOL",
-                    "column_idx": 7,
-                    "value": false
+                    "column": "type",
+                    "field_type": "STRING",
+                    "column_idx": 31,
+                    "value": "פיצריות"
                 },
                 "false": {
                     "question": {
-                        "column": "serves_dinner",
-                        "field_type": "BOOL",
-                        "column_idx": 6,
-                        "value": false
+                        "column": "type",
+                        "field_type": "STRING",
+                        "column_idx": 31,
+                        "value": "מסעדה אסייאתית"
                     },
                     "false": {
                         "question": {
-                            "column": "serves_beer",
+                            "column": "serves_dinner",
                             "field_type": "BOOL",
-                            "column_idx": 3,
+                            "column_idx": 6,
                             "value": false
-                        },
-                        "false": {
-                            "question": {
-                                "column": "wheelchair_accessible_entrance",
-                                "field_type": "BOOL",
-                                "column_idx": 10,
-                                "value": true
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "geo_location",
-                                    "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
-                                    "value": [
-                                        32.8350137,
-                                        35.0890308
-                                    ]
-                                },
-                                "false": {
-                                    "value": 48.121950738916254,
-                                    "size": 137,
-                                    "mae": 0.10098373844881521
-                                },
-                                "true": {
-                                    "value": 10.25,
-                                    "size": 2,
-                                    "mae": 0.0
-                                }
-                            },
-                            "true": {
-                                "question": {
-                                    "column": "reservable",
-                                    "field_type": "BOOL",
-                                    "column_idx": 2,
-                                    "value": false
-                                },
-                                "false": {
-                                    "value": 55.66363076923078,
-                                    "size": 156,
-                                    "mae": 0.12649309566074957
-                                },
-                                "true": {
-                                    "value": 54.76437142857142,
-                                    "size": 139,
-                                    "mae": 0.11326128263103799
-                                }
-                            }
-                        },
-                        "true": {
-                            "question": {
-                                "column": "type",
-                                "field_type": "STRING",
-                                "column_idx": 29,
-                                "value": "מסעדת בשרים"
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "geo_location",
-                                    "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
-                                    "value": [
-                                        32.8350137,
-                                        35.0890308
-                                    ]
-                                },
-                                "false": {
-                                    "value": 51.03922813688213,
-                                    "size": 154,
-                                    "mae": 0.09203960792059653
-                                },
-                                "true": {
-                                    "value": 10.25,
-                                    "size": 2,
-                                    "mae": 0.0
-                                }
-                            },
-                            "true": {
-                                "question": {
-                                    "column": "geo_location",
-                                    "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
-                                    "value": [
-                                        32.8350137,
-                                        35.0890308
-                                    ]
-                                },
-                                "false": {
-                                    "value": 47.15410404624277,
-                                    "size": 125,
-                                    "mae": 0.09656203884393065
-                                },
-                                "true": {
-                                    "value": 10.25,
-                                    "size": 2,
-                                    "mae": 0.0
-                                }
-                            }
-                        }
-                    },
-                    "true": {
-                        "question": {
-                            "column": "geo_location",
-                            "field_type": "GEO_LOCATION",
-                            "column_idx": 20,
-                            "value": [
-                                32.8350137,
-                                35.0890308
-                            ]
                         },
                         "false": {
                             "question": {
                                 "column": "type",
                                 "field_type": "STRING",
-                                "column_idx": 29,
-                                "value": "בתי קפה"
+                                "column_idx": 31,
+                                "value": "מסעדת המבורגרים"
                             },
                             "false": {
                                 "question": {
                                     "column": "type",
                                     "field_type": "STRING",
-                                    "column_idx": 29,
-                                    "value": "מסעדת המבורגרים"
-                                },
-                                "false": {
-                                    "value": 52.67557142857143,
-                                    "size": 134,
-                                    "mae": 0.08356617270788912
-                                },
-                                "true": {
-                                    "value": 48.04288888888889,
-                                    "size": 120,
-                                    "mae": 0.08473512962962965
-                                }
-                            },
-                            "true": {
-                                "question": {
-                                    "column": "price_level",
-                                    "field_type": "NUMBER",
-                                    "column_idx": 12,
-                                    "value": 1.0
-                                },
-                                "false": {
-                                    "value": 47.46261073825503,
-                                    "size": 123,
-                                    "mae": 0.08255313144540845
-                                },
-                                "true": {
-                                    "value": 49.0268630952381,
-                                    "size": 129,
-                                    "mae": 0.08363631275378366
-                                }
-                            }
-                        },
-                        "true": {
-                            "value": 10.25,
-                            "size": 2,
-                            "mae": 0.0
-                        }
-                    }
-                },
-                "true": {
-                    "question": {
-                        "column": "geo_location",
-                        "field_type": "GEO_LOCATION",
-                        "column_idx": 20,
-                        "value": [
-                            32.8350137,
-                            35.0890308
-                        ]
-                    },
-                    "false": {
-                        "question": {
-                            "column": "serves_breakfast",
-                            "field_type": "BOOL",
-                            "column_idx": 4,
-                            "value": false
-                        },
-                        "false": {
-                            "question": {
-                                "column": "price_level",
-                                "field_type": "NUMBER",
-                                "column_idx": 12,
-                                "value": 1.0
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "store_500",
-                                    "field_type": "NUMBER",
-                                    "column_idx": 24,
-                                    "value": 50
-                                },
-                                "false": {
-                                    "value": 43.28239316239316,
-                                    "size": 58,
-                                    "mae": 0.11693091069849693
-                                },
-                                "true": {
-                                    "value": 52.11229496402878,
-                                    "size": 64,
-                                    "mae": 0.05857748426258993
-                                }
-                            },
-                            "true": {
-                                "question": {
-                                    "column": "price_level",
-                                    "field_type": "NUMBER",
-                                    "column_idx": 12,
-                                    "value": 2.0
-                                },
-                                "false": {
-                                    "value": 50.30102614379085,
-                                    "size": 127,
-                                    "mae": 0.08658306520508466
-                                },
-                                "true": {
-                                    "value": 49.83292253521127,
-                                    "size": 124,
-                                    "mae": 0.08626105633802818
-                                }
-                            }
-                        },
-                        "true": {
-                            "question": {
-                                "column": "store_500",
-                                "field_type": "NUMBER",
-                                "column_idx": 24,
-                                "value": 50
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "store_100",
-                                    "field_type": "NUMBER",
-                                    "column_idx": 23,
-                                    "value": 2
-                                },
-                                "false": {
-                                    "value": 49.01751886792453,
-                                    "size": 35,
-                                    "mae": 0.08253233692722374
-                                },
-                                "true": {
-                                    "value": 37.93572368421053,
-                                    "size": 25,
-                                    "mae": 0.13938233157894736
-                                }
-                            },
-                            "true": {
-                                "question": {
-                                    "column": "geo_location",
-                                    "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
-                                    "value": [
-                                        32.7906971,
-                                        35.0328267
-                                    ]
-                                },
-                                "false": {
-                                    "value": 51.18863636363637,
-                                    "size": 65,
-                                    "mae": 0.05221724475524474
-                                },
-                                "true": {
-                                    "value": 77.416,
-                                    "size": 1,
-                                    "mae": 0.0
-                                }
-                            }
-                        }
-                    },
-                    "true": {
-                        "value": 10.25,
-                        "size": 2,
-                        "mae": 0.0
-                    }
-                }
-            },
-            "true": {
-                "question": {
-                    "column": "price_level",
-                    "field_type": "NUMBER",
-                    "column_idx": 12,
-                    "value": 1.0
-                },
-                "false": {
-                    "question": {
-                        "column": "socio-economic rank",
-                        "field_type": "NUMBER",
-                        "column_idx": 22,
-                        "value": 963.815
-                    },
-                    "false": {
-                        "question": {
-                            "column": "serves_lunch",
-                            "field_type": "BOOL",
-                            "column_idx": 7,
-                            "value": false
-                        },
-                        "false": {
-                            "question": {
-                                "column": "serves_dinner",
-                                "field_type": "BOOL",
-                                "column_idx": 6,
-                                "value": true
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "type",
-                                    "field_type": "STRING",
-                                    "column_idx": 29,
+                                    "column_idx": 31,
                                     "value": "קייטרינג"
                                 },
                                 "false": {
-                                    "value": 54.1129477124183,
-                                    "size": 125,
-                                    "mae": 0.08239279320261436
+                                    "value": 57.88488011695906,
+                                    "size": 210,
+                                    "mae": 0.13415545391255915
                                 },
                                 "true": {
-                                    "value": 50.26492105263158,
-                                    "size": 98,
-                                    "mae": 0.07019070891514502
+                                    "value": 52.73546875,
+                                    "size": 150,
+                                    "mae": 0.10280996666666667
                                 }
                             },
                             "true": {
                                 "question": {
-                                    "column": "geo_location",
-                                    "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
-                                    "value": [
-                                        32.8521559,
-                                        35.0826756
-                                    ]
+                                    "column": "serves_lunch",
+                                    "field_type": "BOOL",
+                                    "column_idx": 7,
+                                    "value": false
                                 },
                                 "false": {
-                                    "value": 53.30357798165137,
-                                    "size": 141,
-                                    "mae": 0.086342919513306
+                                    "value": 50.77777464788733,
+                                    "size": 152,
+                                    "mae": 0.09695087286879168
                                 },
                                 "true": {
-                                    "value": 20.625,
-                                    "size": 2,
-                                    "mae": 0.10125
+                                    "value": 45.53929629629629,
+                                    "size": 123,
+                                    "mae": 0.10688786208973201
                                 }
                             }
                         },
                         "true": {
                             "question": {
-                                "column": "geo_location",
-                                "field_type": "GEO_LOCATION",
-                                "column_idx": 20,
-                                "value": [
-                                    32.8521559,
-                                    35.0826756
-                                ]
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "type",
-                                    "field_type": "STRING",
-                                    "column_idx": 29,
-                                    "value": "מסעדה רומנית"
-                                },
-                                "false": {
-                                    "value": 52.30367980295566,
-                                    "size": 106,
-                                    "mae": 0.07470729389348453
-                                },
-                                "true": {
-                                    "value": 50.8387935483871,
-                                    "size": 91,
-                                    "mae": 0.06829325700106342
-                                }
-                            },
-                            "true": {
-                                "value": 20.625,
-                                "size": 2,
-                                "mae": 0.10125
-                            }
-                        }
-                    },
-                    "true": {
-                        "question": {
-                            "column": "percent of religious",
-                            "field_type": "NUMBER",
-                            "column_idx": 21,
-                            "value": 26.44
-                        },
-                        "false": {
-                            "question": {
-                                "column": "percent of religious",
-                                "field_type": "NUMBER",
-                                "column_idx": 21,
-                                "value": 0.0
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "geo_location",
-                                    "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
-                                    "value": [
-                                        32.8514182,
-                                        35.081212
-                                    ]
-                                },
-                                "false": {
-                                    "value": 46.08790425531915,
-                                    "size": 65,
-                                    "mae": 0.08917877086743044
-                                },
-                                "true": {
-                                    "value": 24.0,
-                                    "size": 3,
-                                    "mae": 0.09
-                                }
-                            },
-                            "true": {
-                                "question": {
-                                    "column": "socio-economic rank",
-                                    "field_type": "NUMBER",
-                                    "column_idx": 22,
-                                    "value": 1188.0
-                                },
-                                "false": {
-                                    "value": 40.91885915492958,
-                                    "size": 73,
-                                    "mae": 0.12055709241751879
-                                },
-                                "true": {
-                                    "value": 49.33673076923077,
-                                    "size": 94,
-                                    "mae": 0.1036996153846154
-                                }
-                            }
-                        },
-                        "true": {
-                            "question": {
-                                "column": "geo_location",
-                                "field_type": "GEO_LOCATION",
-                                "column_idx": 20,
-                                "value": [
-                                    32.8514182,
-                                    35.081212
-                                ]
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "store_100",
-                                    "field_type": "NUMBER",
-                                    "column_idx": 23,
-                                    "value": 28
-                                },
-                                "false": {
-                                    "value": 47.835193548387096,
-                                    "size": 64,
-                                    "mae": 0.07754814516129033
-                                },
-                                "true": {
-                                    "value": 31.928874999999998,
-                                    "size": 4,
-                                    "mae": 0.092225
-                                }
-                            },
-                            "true": {
-                                "value": 24.0,
-                                "size": 3,
-                                "mae": 0.09
-                            }
-                        }
-                    }
-                },
-                "true": {
-                    "question": {
-                        "column": "price_level",
-                        "field_type": "NUMBER",
-                        "column_idx": 12,
-                        "value": 2.0
-                    },
-                    "false": {
-                        "question": {
-                            "column": "store_100",
-                            "field_type": "NUMBER",
-                            "column_idx": 23,
-                            "value": 28
-                        },
-                        "false": {
-                            "question": {
-                                "column": "serves_dinner",
+                                "column": "kosher",
                                 "field_type": "BOOL",
-                                "column_idx": 6,
+                                "column_idx": 32,
                                 "value": false
                             },
                             "false": {
                                 "question": {
-                                    "column": "type",
-                                    "field_type": "STRING",
-                                    "column_idx": 29,
-                                    "value": "פיצריות"
-                                },
-                                "false": {
-                                    "value": 53.9875,
-                                    "size": 190,
-                                    "mae": 0.10290521052631578
-                                },
-                                "true": {
-                                    "value": 52.117306878306884,
-                                    "size": 139,
-                                    "mae": 0.08956410490655095
-                                }
-                            },
-                            "true": {
-                                "question": {
-                                    "column": "type",
-                                    "field_type": "STRING",
-                                    "column_idx": 29,
-                                    "value": "פיצריות"
-                                },
-                                "false": {
-                                    "value": 53.571247422680415,
-                                    "size": 169,
-                                    "mae": 0.09326970963216008
-                                },
-                                "true": {
-                                    "value": 50.031647435897455,
-                                    "size": 127,
-                                    "mae": 0.07920152685241262
-                                }
-                            }
-                        },
-                        "true": {
-                            "question": {
-                                "column": "store_100",
-                                "field_type": "NUMBER",
-                                "column_idx": 23,
-                                "value": 33
-                            },
-                            "false": {
-                                "question": {
                                     "column": "geo_location",
                                     "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
+                                    "column_idx": 22,
                                     "value": [
-                                        32.7782509,
-                                        35.0389684
+                                        32.8350137,
+                                        35.0890308
                                     ]
                                 },
                                 "false": {
-                                    "value": 13.144400000000001,
-                                    "size": 4,
-                                    "mae": 0.05065200000000001
+                                    "value": 51.21999559471365,
+                                    "size": 141,
+                                    "mae": 0.08366405723747931
                                 },
                                 "true": {
-                                    "value": 51.25,
-                                    "size": 1,
+                                    "value": 10.25,
+                                    "size": 2,
                                     "mae": 0.0
                                 }
                             },
                             "true": {
                                 "question": {
-                                    "column": "store_100",
-                                    "field_type": "NUMBER",
-                                    "column_idx": 23,
-                                    "value": 39
+                                    "column": "type",
+                                    "field_type": "STRING",
+                                    "column_idx": 31,
+                                    "value": "קייטרינג"
                                 },
                                 "false": {
-                                    "value": 58.900454545454544,
-                                    "size": 3,
-                                    "mae": 0.10739484848484848
+                                    "value": 58.193069264069266,
+                                    "size": 175,
+                                    "mae": 0.12065359183673469
                                 },
                                 "true": {
-                                    "value": 32.476136363636364,
-                                    "size": 6,
-                                    "mae": 0.07325454545454545
+                                    "value": 44.76405263157895,
+                                    "size": 130,
+                                    "mae": 0.11018263967611334
                                 }
                             }
                         }
@@ -1410,10 +916,690 @@
                         },
                         "false": {
                             "question": {
+                                "column": "wheelchair_accessible_entrance",
+                                "field_type": "BOOL",
+                                "column_idx": 10,
+                                "value": true
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "geo_location",
+                                    "field_type": "GEO_LOCATION",
+                                    "column_idx": 22,
+                                    "value": [
+                                        32.835081,
+                                        35.0890309
+                                    ]
+                                },
+                                "false": {
+                                    "value": 48.34662162162162,
+                                    "size": 129,
+                                    "mae": 0.09402355122564425
+                                },
+                                "true": {
+                                    "value": 10.25,
+                                    "size": 2,
+                                    "mae": 0.0
+                                }
+                            },
+                            "true": {
+                                "question": {
+                                    "column": "geo_location",
+                                    "field_type": "GEO_LOCATION",
+                                    "column_idx": 22,
+                                    "value": [
+                                        32.8350137,
+                                        35.0890308
+                                    ]
+                                },
+                                "false": {
+                                    "value": 50.72040512820513,
+                                    "size": 148,
+                                    "mae": 0.09525553603603604
+                                },
+                                "true": {
+                                    "value": 10.25,
+                                    "size": 2,
+                                    "mae": 0.0
+                                }
+                            }
+                        },
+                        "true": {
+                            "question": {
+                                "column": "geo_location",
+                                "field_type": "GEO_LOCATION",
+                                "column_idx": 22,
+                                "value": [
+                                    32.8350137,
+                                    35.0890308
+                                ]
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "geo_location",
+                                    "field_type": "GEO_LOCATION",
+                                    "column_idx": 22,
+                                    "value": [
+                                        32.8514182,
+                                        35.081212
+                                    ]
+                                },
+                                "false": {
+                                    "value": 49.84622480620156,
+                                    "size": 126,
+                                    "mae": 0.07926591362126242
+                                },
+                                "true": {
+                                    "value": 24.0,
+                                    "size": 3,
+                                    "mae": 0.09
+                                }
+                            },
+                            "true": {
+                                "value": 10.25,
+                                "size": 2,
+                                "mae": 0.0
+                            }
+                        }
+                    }
+                },
+                "true": {
+                    "question": {
+                        "column": "serves_dinner",
+                        "field_type": "BOOL",
+                        "column_idx": 6,
+                        "value": false
+                    },
+                    "false": {
+                        "question": {
+                            "column": "serves_lunch",
+                            "field_type": "BOOL",
+                            "column_idx": 7,
+                            "value": false
+                        },
+                        "false": {
+                            "question": {
+                                "column": "geo_location",
+                                "field_type": "GEO_LOCATION",
+                                "column_idx": 22,
+                                "value": [
+                                    32.835081,
+                                    35.0890309
+                                ]
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "wheelchair_accessible_entrance",
+                                    "field_type": "BOOL",
+                                    "column_idx": 10,
+                                    "value": true
+                                },
+                                "false": {
+                                    "value": 47.45851396648045,
+                                    "size": 132,
+                                    "mae": 0.10015789952598611
+                                },
+                                "true": {
+                                    "value": 51.115451327433625,
+                                    "size": 149,
+                                    "mae": 0.09398495872186258
+                                }
+                            },
+                            "true": {
+                                "value": 10.25,
+                                "size": 2,
+                                "mae": 0.0
+                            }
+                        },
+                        "true": {
+                            "question": {
+                                "column": "geo_location",
+                                "field_type": "GEO_LOCATION",
+                                "column_idx": 22,
+                                "value": [
+                                    32.8350137,
+                                    35.0890308
+                                ]
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "store_500",
+                                    "field_type": "NUMBER",
+                                    "column_idx": 26,
+                                    "value": 50
+                                },
+                                "false": {
+                                    "value": 44.03101818181817,
+                                    "size": 53,
+                                    "mae": 0.12115976672384225
+                                },
+                                "true": {
+                                    "value": 52.7538794326241,
+                                    "size": 66,
+                                    "mae": 0.06724573178594452
+                                }
+                            },
+                            "true": {
+                                "value": 10.25,
+                                "size": 2,
+                                "mae": 0.0
+                            }
+                        }
+                    },
+                    "true": {
+                        "question": {
+                            "column": "geo_location",
+                            "field_type": "GEO_LOCATION",
+                            "column_idx": 22,
+                            "value": [
+                                32.835081,
+                                35.0890309
+                            ]
+                        },
+                        "false": {
+                            "question": {
+                                "column": "geo_location",
+                                "field_type": "GEO_LOCATION",
+                                "column_idx": 22,
+                                "value": [
+                                    32.8521559,
+                                    35.0826756
+                                ]
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "geo_location",
+                                    "field_type": "GEO_LOCATION",
+                                    "column_idx": 22,
+                                    "value": [
+                                        32.8093538,
+                                        35.1243323
+                                    ]
+                                },
+                                "false": {
+                                    "value": 50.16444472361809,
+                                    "size": 129,
+                                    "mae": 0.07666905126407231
+                                },
+                                "true": {
+                                    "value": 10.25,
+                                    "size": 1,
+                                    "mae": 0.0
+                                }
+                            },
+                            "true": {
+                                "value": 20.625,
+                                "size": 2,
+                                "mae": 0.10125
+                            }
+                        },
+                        "true": {
+                            "value": 10.25,
+                            "size": 2,
+                            "mae": 0.0
+                        }
+                    }
+                }
+            },
+            "true": {
+                "question": {
+                    "column": "store_100",
+                    "field_type": "NUMBER",
+                    "column_idx": 25,
+                    "value": 28
+                },
+                "false": {
+                    "question": {
+                        "column": "serves_dinner",
+                        "field_type": "BOOL",
+                        "column_idx": 6,
+                        "value": false
+                    },
+                    "false": {
+                        "question": {
+                            "column": "serves_lunch",
+                            "field_type": "BOOL",
+                            "column_idx": 7,
+                            "value": false
+                        },
+                        "false": {
+                            "question": {
+                                "column": "wheelchair_accessible_entrance",
+                                "field_type": "BOOL",
+                                "column_idx": 10,
+                                "value": true
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "rest_100",
+                                    "field_type": "NUMBER",
+                                    "column_idx": 27,
+                                    "value": 6
+                                },
+                                "false": {
+                                    "value": 46.074090909090906,
+                                    "size": 83,
+                                    "mae": 0.10672546549835707
+                                },
+                                "true": {
+                                    "value": 54.30284848484848,
+                                    "size": 42,
+                                    "mae": 0.061041089466089465
+                                }
+                            },
+                            "true": {
+                                "question": {
+                                    "column": "geo_location",
+                                    "field_type": "GEO_LOCATION",
+                                    "column_idx": 22,
+                                    "value": [
+                                        32.8514182,
+                                        35.081212
+                                    ]
+                                },
+                                "false": {
+                                    "value": 52.517192192192184,
+                                    "size": 136,
+                                    "mae": 0.08607196232997703
+                                },
+                                "true": {
+                                    "value": 24.0,
+                                    "size": 3,
+                                    "mae": 0.09
+                                }
+                            }
+                        },
+                        "true": {
+                            "question": {
+                                "column": "geo_location",
+                                "field_type": "GEO_LOCATION",
+                                "column_idx": 22,
+                                "value": [
+                                    32.8514182,
+                                    35.081212
+                                ]
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "geo_location",
+                                    "field_type": "GEO_LOCATION",
+                                    "column_idx": 22,
+                                    "value": [
+                                        32.721449,
+                                        35.061367
+                                    ]
+                                },
+                                "false": {
+                                    "value": 50.18238066465256,
+                                    "size": 108,
+                                    "mae": 0.07445645630524786
+                                },
+                                "true": {
+                                    "value": 86.493,
+                                    "size": 1,
+                                    "mae": 0.0
+                                }
+                            },
+                            "true": {
+                                "value": 24.0,
+                                "size": 3,
+                                "mae": 0.09
+                            }
+                        }
+                    },
+                    "true": {
+                        "question": {
+                            "column": "geo_location",
+                            "field_type": "GEO_LOCATION",
+                            "column_idx": 22,
+                            "value": [
+                                32.8521559,
+                                35.0826756
+                            ]
+                        },
+                        "false": {
+                            "question": {
+                                "column": "geo_location",
+                                "field_type": "GEO_LOCATION",
+                                "column_idx": 22,
+                                "value": [
+                                    32.721449,
+                                    35.061367
+                                ]
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "geo_location",
+                                    "field_type": "GEO_LOCATION",
+                                    "column_idx": 22,
+                                    "value": [
+                                        32.8093538,
+                                        35.1243323
+                                    ]
+                                },
+                                "false": {
+                                    "value": 50.59968356997972,
+                                    "size": 122,
+                                    "mae": 0.0679138897017258
+                                },
+                                "true": {
+                                    "value": 10.25,
+                                    "size": 1,
+                                    "mae": 0.0
+                                }
+                            },
+                            "true": {
+                                "value": 86.493,
+                                "size": 1,
+                                "mae": 0.0
+                            }
+                        },
+                        "true": {
+                            "value": 20.625,
+                            "size": 2,
+                            "mae": 0.10125
+                        }
+                    }
+                },
+                "true": {
+                    "question": {
+                        "column": "geo_location",
+                        "field_type": "GEO_LOCATION",
+                        "column_idx": 22,
+                        "value": [
+                            32.835081,
+                            35.0890309
+                        ]
+                    },
+                    "false": {
+                        "question": {
+                            "column": "rest_500",
+                            "field_type": "NUMBER",
+                            "column_idx": 28,
+                            "value": 116
+                        },
+                        "false": {
+                            "question": {
+                                "column": "geo_location",
+                                "field_type": "GEO_LOCATION",
+                                "column_idx": 22,
+                                "value": [
+                                    32.812774,
+                                    34.996858
+                                ]
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "geo_location",
+                                    "field_type": "GEO_LOCATION",
+                                    "column_idx": 22,
+                                    "value": [
+                                        32.7782509,
+                                        35.0389684
+                                    ]
+                                },
+                                "false": {
+                                    "value": 34.60366666666667,
+                                    "size": 6,
+                                    "mae": 0.06078777777777778
+                                },
+                                "true": {
+                                    "value": 51.25,
+                                    "size": 1,
+                                    "mae": 0.0
+                                }
+                            },
+                            "true": {
+                                "value": 54.983,
+                                "size": 1,
+                                "mae": 0.0
+                            }
+                        },
+                        "true": {
+                            "value": 10.25,
+                            "size": 1,
+                            "mae": 0.0
+                        }
+                    },
+                    "true": {
+                        "value": 10.25,
+                        "size": 2,
+                        "mae": 0.0
+                    }
+                }
+            }
+        }
+    },
+    "true": {
+        "question": {
+            "column": "type",
+            "field_type": "STRING",
+            "column_idx": 31,
+            "value": "אוכל רחוב"
+        },
+        "false": {
+            "question": {
+                "column": "type",
+                "field_type": "STRING",
+                "column_idx": 31,
+                "value": "פיצריות"
+            },
+            "false": {
+                "question": {
+                    "column": "price_level",
+                    "field_type": "NUMBER",
+                    "column_idx": 12,
+                    "value": 1.0
+                },
+                "false": {
+                    "question": {
+                        "column": "serves_lunch",
+                        "field_type": "BOOL",
+                        "column_idx": 7,
+                        "value": false
+                    },
+                    "false": {
+                        "question": {
+                            "column": "kosher",
+                            "field_type": "BOOL",
+                            "column_idx": 32,
+                            "value": false
+                        },
+                        "false": {
+                            "question": {
+                                "column": "serves_dinner",
+                                "field_type": "BOOL",
+                                "column_idx": 6,
+                                "value": false
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "geo_location",
+                                    "field_type": "GEO_LOCATION",
+                                    "column_idx": 22,
+                                    "value": [
+                                        32.8350137,
+                                        35.0890308
+                                    ]
+                                },
+                                "false": {
+                                    "value": 50.46971818181818,
+                                    "size": 141,
+                                    "mae": 0.09245986653771761
+                                },
+                                "true": {
+                                    "value": 10.25,
+                                    "size": 2,
+                                    "mae": 0.0
+                                }
+                            },
+                            "true": {
+                                "question": {
+                                    "column": "geo_location",
+                                    "field_type": "GEO_LOCATION",
+                                    "column_idx": 22,
+                                    "value": [
+                                        32.8350137,
+                                        35.0890308
+                                    ]
+                                },
+                                "false": {
+                                    "value": 49.07686559139785,
+                                    "size": 130,
+                                    "mae": 0.08264149627791564
+                                },
+                                "true": {
+                                    "value": 10.25,
+                                    "size": 2,
+                                    "mae": 0.0
+                                }
+                            }
+                        },
+                        "true": {
+                            "question": {
                                 "column": "socio-economic rank",
                                 "field_type": "NUMBER",
-                                "column_idx": 22,
+                                "column_idx": 24,
                                 "value": 963.815
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "geo_location",
+                                    "field_type": "GEO_LOCATION",
+                                    "column_idx": 22,
+                                    "value": [
+                                        32.8514182,
+                                        35.081212
+                                    ]
+                                },
+                                "false": {
+                                    "value": 53.226967647058814,
+                                    "size": 133,
+                                    "mae": 0.08225327399380802
+                                },
+                                "true": {
+                                    "value": 24.0,
+                                    "size": 3,
+                                    "mae": 0.09
+                                }
+                            },
+                            "true": {
+                                "question": {
+                                    "column": "percent of religious",
+                                    "field_type": "NUMBER",
+                                    "column_idx": 23,
+                                    "value": 26.44
+                                },
+                                "false": {
+                                    "value": 49.76143312101911,
+                                    "size": 99,
+                                    "mae": 0.10295068390915522
+                                },
+                                "true": {
+                                    "value": 47.84471153846154,
+                                    "size": 66,
+                                    "mae": 0.08409864219114217
+                                }
+                            }
+                        }
+                    },
+                    "true": {
+                        "question": {
+                            "column": "kosher",
+                            "field_type": "BOOL",
+                            "column_idx": 32,
+                            "value": false
+                        },
+                        "false": {
+                            "question": {
+                                "column": "geo_location",
+                                "field_type": "GEO_LOCATION",
+                                "column_idx": 22,
+                                "value": [
+                                    32.835081,
+                                    35.0890309
+                                ]
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "store_500",
+                                    "field_type": "NUMBER",
+                                    "column_idx": 26,
+                                    "value": 50
+                                },
+                                "false": {
+                                    "value": 43.25525581395349,
+                                    "size": 57,
+                                    "mae": 0.11324906568747449
+                                },
+                                "true": {
+                                    "value": 53.010179856115116,
+                                    "size": 61,
+                                    "mae": 0.06380237645948818
+                                }
+                            },
+                            "true": {
+                                "value": 10.25,
+                                "size": 2,
+                                "mae": 0.0
+                            }
+                        },
+                        "true": {
+                            "question": {
+                                "column": "geo_location",
+                                "field_type": "GEO_LOCATION",
+                                "column_idx": 22,
+                                "value": [
+                                    32.8348261,
+                                    35.0889577
+                                ]
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "store_500",
+                                    "field_type": "NUMBER",
+                                    "column_idx": 26,
+                                    "value": 50
+                                },
+                                "false": {
+                                    "value": 46.309673333333315,
+                                    "size": 62,
+                                    "mae": 0.10726982580645164
+                                },
+                                "true": {
+                                    "value": 53.69395360824743,
+                                    "size": 75,
+                                    "mae": 0.07888171202749145
+                                }
+                            },
+                            "true": {
+                                "value": 34.22933333333334,
+                                "size": 3,
+                                "mae": 0.1998277777777778
+                            }
+                        }
+                    }
+                },
+                "true": {
+                    "question": {
+                        "column": "type",
+                        "field_type": "STRING",
+                        "column_idx": 31,
+                        "value": "מסעדה אסייאתית"
+                    },
+                    "false": {
+                        "question": {
+                            "column": "serves_dinner",
+                            "field_type": "BOOL",
+                            "column_idx": 6,
+                            "value": false
+                        },
+                        "false": {
+                            "question": {
+                                "column": "kosher",
+                                "field_type": "BOOL",
+                                "column_idx": 32,
+                                "value": false
                             },
                             "false": {
                                 "question": {
@@ -1423,384 +1609,132 @@
                                     "value": false
                                 },
                                 "false": {
-                                    "value": 57.36190582959641,
-                                    "size": 151,
-                                    "mae": 0.11712077807145188
+                                    "value": 55.13932335329342,
+                                    "size": 159,
+                                    "mae": 0.12078493616540507
                                 },
                                 "true": {
-                                    "value": 53.12366304347826,
-                                    "size": 111,
-                                    "mae": 0.08731956423815118
+                                    "value": 51.67607936507937,
+                                    "size": 124,
+                                    "mae": 0.09177121095750129
                                 }
                             },
                             "true": {
                                 "question": {
-                                    "column": "socio-economic rank",
+                                    "column": "price_level",
                                     "field_type": "NUMBER",
-                                    "column_idx": 22,
-                                    "value": 1214.0
+                                    "column_idx": 12,
+                                    "value": 2.0
                                 },
                                 "false": {
-                                    "value": 43.29228378378379,
-                                    "size": 80,
-                                    "mae": 0.11367814864864863
+                                    "value": 56.02934901960785,
+                                    "size": 193,
+                                    "mae": 0.11662416885096011
                                 },
                                 "true": {
-                                    "value": 50.129823129251704,
-                                    "size": 101,
-                                    "mae": 0.11069647134101165
+                                    "value": 57.2852987012987,
+                                    "size": 190,
+                                    "mae": 0.12525963499658233
                                 }
                             }
                         },
                         "true": {
                             "question": {
-                                "column": "type",
-                                "field_type": "STRING",
-                                "column_idx": 29,
-                                "value": "פיצריות"
+                                "column": "kosher",
+                                "field_type": "BOOL",
+                                "column_idx": 32,
+                                "value": false
                             },
                             "false": {
                                 "question": {
-                                    "column": "type",
-                                    "field_type": "STRING",
-                                    "column_idx": 29,
-                                    "value": "קייטרינג"
-                                },
-                                "false": {
-                                    "value": 54.751459259259256,
-                                    "size": 168,
-                                    "mae": 0.101803610670194
-                                },
-                                "true": {
-                                    "value": 49.91068421052631,
-                                    "size": 129,
-                                    "mae": 0.08254238270093842
-                                }
-                            },
-                            "true": {
-                                "question": {
                                     "column": "geo_location",
                                     "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
+                                    "column_idx": 22,
                                     "value": [
                                         32.8350137,
                                         35.0890308
                                     ]
                                 },
                                 "false": {
-                                    "value": 49.228891025641026,
-                                    "size": 130,
-                                    "mae": 0.0819021617357002
+                                    "value": 51.74824576271186,
+                                    "size": 141,
+                                    "mae": 0.08466348299074405
                                 },
                                 "true": {
                                     "value": 10.25,
                                     "size": 2,
                                     "mae": 0.0
                                 }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    },
-    "true": {
-        "question": {
-            "column": "price_level",
-            "field_type": "NUMBER",
-            "column_idx": 12,
-            "value": 1.0
-        },
-        "false": {
-            "question": {
-                "column": "serves_lunch",
-                "field_type": "BOOL",
-                "column_idx": 7,
-                "value": false
-            },
-            "false": {
-                "question": {
-                    "column": "kosher",
-                    "field_type": "BOOL",
-                    "column_idx": 30,
-                    "value": false
-                },
-                "false": {
-                    "question": {
-                        "column": "serves_dinner",
-                        "field_type": "BOOL",
-                        "column_idx": 6,
-                        "value": false
-                    },
-                    "false": {
-                        "question": {
-                            "column": "geo_location",
-                            "field_type": "GEO_LOCATION",
-                            "column_idx": 20,
-                            "value": [
-                                32.835081,
-                                35.0890309
-                            ]
-                        },
-                        "false": {
-                            "question": {
-                                "column": "reservable",
-                                "field_type": "BOOL",
-                                "column_idx": 2,
-                                "value": false
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "type",
-                                    "field_type": "STRING",
-                                    "column_idx": 29,
-                                    "value": "בתי קפה"
-                                },
-                                "false": {
-                                    "value": 51.2504854368932,
-                                    "size": 135,
-                                    "mae": 0.09126000143833152
-                                },
-                                "true": {
-                                    "value": 48.58648387096774,
-                                    "size": 131,
-                                    "mae": 0.09167360256094557
-                                }
                             },
                             "true": {
                                 "question": {
-                                    "column": "store_500",
-                                    "field_type": "NUMBER",
-                                    "column_idx": 24,
-                                    "value": 50
+                                    "column": "type",
+                                    "field_type": "STRING",
+                                    "column_idx": 31,
+                                    "value": "קייטרינג"
                                 },
                                 "false": {
-                                    "value": 44.766459259259264,
-                                    "size": 61,
-                                    "mae": 0.12599358469945354
+                                    "value": 58.929427419354845,
+                                    "size": 175,
+                                    "mae": 0.1248958216589862
                                 },
                                 "true": {
-                                    "value": 51.72481645569621,
-                                    "size": 69,
-                                    "mae": 0.054883064575307304
+                                    "value": 48.85452631578947,
+                                    "size": 129,
+                                    "mae": 0.09064248062015505
                                 }
                             }
-                        },
-                        "true": {
-                            "value": 10.25,
-                            "size": 2,
-                            "mae": 0.0
                         }
                     },
                     "true": {
                         "question": {
-                            "column": "geo_location",
-                            "field_type": "GEO_LOCATION",
-                            "column_idx": 20,
-                            "value": [
-                                32.835081,
-                                35.0890309
-                            ]
+                            "column": "serves_dinner",
+                            "field_type": "BOOL",
+                            "column_idx": 6,
+                            "value": false
                         },
                         "false": {
                             "question": {
-                                "column": "type",
-                                "field_type": "STRING",
-                                "column_idx": 29,
-                                "value": "בתי קפה"
+                                "column": "wheelchair_accessible_entrance",
+                                "field_type": "BOOL",
+                                "column_idx": 10,
+                                "value": true
                             },
                             "false": {
                                 "question": {
-                                    "column": "type",
-                                    "field_type": "STRING",
-                                    "column_idx": 29,
-                                    "value": "מסעדת המבורגרים"
-                                },
-                                "false": {
-                                    "value": 50.46366463414634,
-                                    "size": 123,
-                                    "mae": 0.07724526521911562
-                                },
-                                "true": {
-                                    "value": 47.60980147058823,
-                                    "size": 116,
-                                    "mae": 0.08249590770791076
-                                }
-                            },
-                            "true": {
-                                "question": {
                                     "column": "geo_location",
                                     "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
+                                    "column_idx": 22,
                                     "value": [
-                                        32.8521559,
-                                        35.0826756
+                                        32.8350137,
+                                        35.0890308
                                     ]
                                 },
                                 "false": {
-                                    "value": 48.214871698113214,
-                                    "size": 120,
-                                    "mae": 0.07670184654088047
+                                    "value": 48.83205369127516,
+                                    "size": 128,
+                                    "mae": 0.09238586723993292
                                 },
                                 "true": {
-                                    "value": 20.625,
+                                    "value": 10.25,
                                     "size": 2,
-                                    "mae": 0.10125
-                                }
-                            }
-                        },
-                        "true": {
-                            "value": 10.25,
-                            "size": 2,
-                            "mae": 0.0
-                        }
-                    }
-                },
-                "true": {
-                    "question": {
-                        "column": "serves_dinner",
-                        "field_type": "BOOL",
-                        "column_idx": 6,
-                        "value": false
-                    },
-                    "false": {
-                        "question": {
-                            "column": "socio-economic rank",
-                            "field_type": "NUMBER",
-                            "column_idx": 22,
-                            "value": 963.815
-                        },
-                        "false": {
-                            "question": {
-                                "column": "geo_location",
-                                "field_type": "GEO_LOCATION",
-                                "column_idx": 20,
-                                "value": [
-                                    32.8514182,
-                                    35.081212
-                                ]
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "takeout",
-                                    "field_type": "BOOL",
-                                    "column_idx": 9,
-                                    "value": true
-                                },
-                                "false": {
-                                    "value": 52.75533766233765,
-                                    "size": 45,
-                                    "mae": 0.06790164790764787
-                                },
-                                "true": {
-                                    "value": 51.87231880733945,
-                                    "size": 145,
-                                    "mae": 0.08213989101550143
-                                }
-                            },
-                            "true": {
-                                "value": 24.0,
-                                "size": 3,
-                                "mae": 0.09
-                            }
-                        },
-                        "true": {
-                            "question": {
-                                "column": "percent of religious",
-                                "field_type": "NUMBER",
-                                "column_idx": 21,
-                                "value": 26.44
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "percent of religious",
-                                    "field_type": "NUMBER",
-                                    "column_idx": 21,
-                                    "value": 0.0
-                                },
-                                "false": {
-                                    "value": 47.10365306122449,
-                                    "size": 71,
-                                    "mae": 0.0944452515090543
-                                },
-                                "true": {
-                                    "value": 49.27143005181347,
-                                    "size": 109,
-                                    "mae": 0.11037441365213672
-                                }
-                            },
-                            "true": {
-                                "question": {
-                                    "column": "geo_location",
-                                    "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
-                                    "value": [
-                                        32.7516228,
-                                        35.1786186
-                                    ]
-                                },
-                                "false": {
-                                    "value": 45.106211678832125,
-                                    "size": 75,
-                                    "mae": 0.09398201751824814
-                                },
-                                "true": {
-                                    "value": 91.32,
-                                    "size": 1,
                                     "mae": 0.0
                                 }
-                            }
-                        }
-                    },
-                    "true": {
-                        "question": {
-                            "column": "type",
-                            "field_type": "STRING",
-                            "column_idx": 29,
-                            "value": "קייטרינג"
-                        },
-                        "false": {
-                            "question": {
-                                "column": "type",
-                                "field_type": "STRING",
-                                "column_idx": 29,
-                                "value": "פיצריות"
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "geo_location",
-                                    "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
-                                    "value": [
-                                        32.8348261,
-                                        35.0889577
-                                    ]
-                                },
-                                "false": {
-                                    "value": 52.94644409937888,
-                                    "size": 169,
-                                    "mae": 0.08409271399169391
-                                },
-                                "true": {
-                                    "value": 34.22933333333334,
-                                    "size": 3,
-                                    "mae": 0.1998277777777778
-                                }
                             },
                             "true": {
                                 "question": {
                                     "column": "geo_location",
                                     "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
+                                    "column_idx": 22,
                                     "value": [
                                         32.835081,
                                         35.0890309
                                     ]
                                 },
                                 "false": {
-                                    "value": 50.24573796791444,
-                                    "size": 136,
-                                    "mae": 0.07637100896508336
+                                    "value": 51.16188,
+                                    "size": 147,
+                                    "mae": 0.09425096054421768
                                 },
                                 "true": {
                                     "value": 10.25,
@@ -1813,31 +1747,28 @@
                             "question": {
                                 "column": "geo_location",
                                 "field_type": "GEO_LOCATION",
-                                "column_idx": 20,
+                                "column_idx": 22,
                                 "value": [
-                                    32.8350137,
-                                    35.0890308
+                                    32.835081,
+                                    35.0890309
                                 ]
                             },
                             "false": {
                                 "question": {
-                                    "column": "geo_location",
-                                    "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
-                                    "value": [
-                                        32.8514182,
-                                        35.081212
-                                    ]
+                                    "column": "kosher",
+                                    "field_type": "BOOL",
+                                    "column_idx": 32,
+                                    "value": false
                                 },
                                 "false": {
-                                    "value": 50.13363375796179,
-                                    "size": 132,
-                                    "mae": 0.07233778083381584
+                                    "value": 49.59510743801652,
+                                    "size": 117,
+                                    "mae": 0.078590148336512
                                 },
                                 "true": {
-                                    "value": 24.0,
-                                    "size": 3,
-                                    "mae": 0.09
+                                    "value": 49.78730136986301,
+                                    "size": 127,
+                                    "mae": 0.08168502534785894
                                 }
                             },
                             "true": {
@@ -1851,315 +1782,23 @@
             },
             "true": {
                 "question": {
-                    "column": "kosher",
+                    "column": "serves_dinner",
                     "field_type": "BOOL",
-                    "column_idx": 30,
+                    "column_idx": 6,
                     "value": false
                 },
                 "false": {
                     "question": {
-                        "column": "geo_location",
-                        "field_type": "GEO_LOCATION",
-                        "column_idx": 20,
-                        "value": [
-                            32.8350137,
-                            35.0890308
-                        ]
-                    },
-                    "false": {
-                        "question": {
-                            "column": "store_500",
-                            "field_type": "NUMBER",
-                            "column_idx": 24,
-                            "value": 50
-                        },
-                        "false": {
-                            "question": {
-                                "column": "store_100",
-                                "field_type": "NUMBER",
-                                "column_idx": 23,
-                                "value": 2
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "geo_location",
-                                    "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
-                                    "value": [
-                                        32.8094059,
-                                        35.0481074
-                                    ]
-                                },
-                                "false": {
-                                    "value": 49.08354545454545,
-                                    "size": 33,
-                                    "mae": 0.07123537190082646
-                                },
-                                "true": {
-                                    "value": 17.99,
-                                    "size": 1,
-                                    "mae": 0.0
-                                }
-                            },
-                            "true": {
-                                "question": {
-                                    "column": "rest_500",
-                                    "field_type": "NUMBER",
-                                    "column_idx": 26,
-                                    "value": 14
-                                },
-                                "false": {
-                                    "value": 29.753756097560977,
-                                    "size": 10,
-                                    "mae": 0.13734348780487804
-                                },
-                                "true": {
-                                    "value": 41.726571428571425,
-                                    "size": 14,
-                                    "mae": 0.09552142857142856
-                                }
-                            }
-                        },
-                        "true": {
-                            "question": {
-                                "column": "geo_location",
-                                "field_type": "GEO_LOCATION",
-                                "column_idx": 20,
-                                "value": [
-                                    32.7906971,
-                                    35.0328267
-                                ]
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "serves_brunch",
-                                    "field_type": "BOOL",
-                                    "column_idx": 5,
-                                    "value": false
-                                },
-                                "false": {
-                                    "value": 51.53908108108107,
-                                    "size": 60,
-                                    "mae": 0.05138057657657655
-                                },
-                                "true": {
-                                    "value": 51.90642408376963,
-                                    "size": 61,
-                                    "mae": 0.0532377392498498
-                                }
-                            },
-                            "true": {
-                                "value": 77.416,
-                                "size": 1,
-                                "mae": 0.0
-                            }
-                        }
-                    },
-                    "true": {
-                        "value": 10.25,
-                        "size": 2,
-                        "mae": 0.0
-                    }
-                },
-                "true": {
-                    "question": {
-                        "column": "geo_location",
-                        "field_type": "GEO_LOCATION",
-                        "column_idx": 20,
-                        "value": [
-                            32.8348261,
-                            35.0889577
-                        ]
-                    },
-                    "false": {
-                        "question": {
-                            "column": "type",
-                            "field_type": "STRING",
-                            "column_idx": 29,
-                            "value": "פיצריות"
-                        },
-                        "false": {
-                            "question": {
-                                "column": "geo_location",
-                                "field_type": "GEO_LOCATION",
-                                "column_idx": 20,
-                                "value": [
-                                    32.8514182,
-                                    35.081212
-                                ]
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "type",
-                                    "field_type": "STRING",
-                                    "column_idx": 29,
-                                    "value": "בתי קפה"
-                                },
-                                "false": {
-                                    "value": 51.63699125364431,
-                                    "size": 136,
-                                    "mae": 0.07496755680843764
-                                },
-                                "true": {
-                                    "value": 50.484145896656536,
-                                    "size": 134,
-                                    "mae": 0.08455440275824522
-                                }
-                            },
-                            "true": {
-                                "value": 24.0,
-                                "size": 3,
-                                "mae": 0.09
-                            }
-                        },
-                        "true": {
-                            "question": {
-                                "column": "geo_location",
-                                "field_type": "GEO_LOCATION",
-                                "column_idx": 20,
-                                "value": [
-                                    32.8514182,
-                                    35.081212
-                                ]
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "geo_location",
-                                    "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
-                                    "value": [
-                                        32.7685575,
-                                        35.0093167
-                                    ]
-                                },
-                                "false": {
-                                    "value": 50.41942260442261,
-                                    "size": 124,
-                                    "mae": 0.07691040520726003
-                                },
-                                "true": {
-                                    "value": 10.25,
-                                    "size": 1,
-                                    "mae": 0.0
-                                }
-                            },
-                            "true": {
-                                "value": 24.0,
-                                "size": 3,
-                                "mae": 0.09
-                            }
-                        }
-                    },
-                    "true": {
-                        "value": 28.2345,
-                        "size": 3,
-                        "mae": 0.179845
-                    }
-                }
-            }
-        },
-        "true": {
-            "question": {
-                "column": "price_level",
-                "field_type": "NUMBER",
-                "column_idx": 12,
-                "value": 2.0
-            },
-            "false": {
-                "question": {
-                    "column": "kosher",
-                    "field_type": "BOOL",
-                    "column_idx": 30,
-                    "value": false
-                },
-                "false": {
-                    "question": {
-                        "column": "serves_dinner",
+                        "column": "serves_lunch",
                         "field_type": "BOOL",
-                        "column_idx": 6,
+                        "column_idx": 7,
                         "value": false
                     },
                     "false": {
                         "question": {
-                            "column": "serves_lunch",
-                            "field_type": "BOOL",
-                            "column_idx": 7,
-                            "value": false
-                        },
-                        "false": {
-                            "question": {
-                                "column": "geo_location",
-                                "field_type": "GEO_LOCATION",
-                                "column_idx": 20,
-                                "value": [
-                                    32.835081,
-                                    35.0890309
-                                ]
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "serves_breakfast",
-                                    "field_type": "BOOL",
-                                    "column_idx": 4,
-                                    "value": true
-                                },
-                                "false": {
-                                    "value": 49.616380487804875,
-                                    "size": 146,
-                                    "mae": 0.09363825325760108
-                                },
-                                "true": {
-                                    "value": 52.10165022421525,
-                                    "size": 151,
-                                    "mae": 0.09714834823152083
-                                }
-                            },
-                            "true": {
-                                "value": 10.25,
-                                "size": 2,
-                                "mae": 0.0
-                            }
-                        },
-                        "true": {
-                            "question": {
-                                "column": "geo_location",
-                                "field_type": "GEO_LOCATION",
-                                "column_idx": 20,
-                                "value": [
-                                    32.8350137,
-                                    35.0890308
-                                ]
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "type",
-                                    "field_type": "STRING",
-                                    "column_idx": 29,
-                                    "value": "מטבח ביתי"
-                                },
-                                "false": {
-                                    "value": 48.76895652173913,
-                                    "size": 123,
-                                    "mae": 0.09020250265111347
-                                },
-                                "true": {
-                                    "value": 50.191315789473684,
-                                    "size": 106,
-                                    "mae": 0.0802048113207547
-                                }
-                            },
-                            "true": {
-                                "value": 10.25,
-                                "size": 2,
-                                "mae": 0.0
-                            }
-                        }
-                    },
-                    "true": {
-                        "question": {
                             "column": "geo_location",
                             "field_type": "GEO_LOCATION",
-                            "column_idx": 20,
+                            "column_idx": 22,
                             "value": [
                                 32.835081,
                                 35.0890309
@@ -2167,48 +1806,117 @@
                         },
                         "false": {
                             "question": {
-                                "column": "type",
-                                "field_type": "STRING",
-                                "column_idx": 29,
-                                "value": "מסעדת המבורגרים"
+                                "column": "wheelchair_accessible_entrance",
+                                "field_type": "BOOL",
+                                "column_idx": 10,
+                                "value": true
                             },
                             "false": {
                                 "question": {
-                                    "column": "type",
-                                    "field_type": "STRING",
-                                    "column_idx": 29,
-                                    "value": "פיצריות"
+                                    "column": "geo_location",
+                                    "field_type": "GEO_LOCATION",
+                                    "column_idx": 22,
+                                    "value": [
+                                        32.8514182,
+                                        35.081212
+                                    ]
                                 },
                                 "false": {
-                                    "value": 51.93353333333333,
-                                    "size": 138,
-                                    "mae": 0.0810395700483092
+                                    "value": 48.4258990228013,
+                                    "size": 129,
+                                    "mae": 0.09329058556169986
                                 },
                                 "true": {
-                                    "value": 48.76975396825397,
-                                    "size": 118,
-                                    "mae": 0.08323248318536453
+                                    "value": 24.0,
+                                    "size": 3,
+                                    "mae": 0.09
                                 }
                             },
                             "true": {
                                 "question": {
                                     "column": "geo_location",
                                     "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
+                                    "column_idx": 22,
                                     "value": [
-                                        32.8521559,
-                                        35.0826756
+                                        32.8514182,
+                                        35.081212
                                     ]
                                 },
                                 "false": {
-                                    "value": 49.21172384937238,
-                                    "size": 116,
-                                    "mae": 0.07600218619246864
+                                    "value": 51.134665768194075,
+                                    "size": 146,
+                                    "mae": 0.09061482055163754
                                 },
                                 "true": {
-                                    "value": 20.625,
-                                    "size": 2,
-                                    "mae": 0.10125
+                                    "value": 24.0,
+                                    "size": 3,
+                                    "mae": 0.09
+                                }
+                            }
+                        },
+                        "true": {
+                            "value": 10.25,
+                            "size": 2,
+                            "mae": 0.0
+                        }
+                    },
+                    "true": {
+                        "question": {
+                            "column": "geo_location",
+                            "field_type": "GEO_LOCATION",
+                            "column_idx": 22,
+                            "value": [
+                                32.8350137,
+                                35.0890308
+                            ]
+                        },
+                        "false": {
+                            "question": {
+                                "column": "store_500",
+                                "field_type": "NUMBER",
+                                "column_idx": 26,
+                                "value": 50
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "geo_location",
+                                    "field_type": "GEO_LOCATION",
+                                    "column_idx": 22,
+                                    "value": [
+                                        32.721449,
+                                        35.061367
+                                    ]
+                                },
+                                "false": {
+                                    "value": 43.52899375,
+                                    "size": 52,
+                                    "mae": 0.11665867067307695
+                                },
+                                "true": {
+                                    "value": 86.493,
+                                    "size": 1,
+                                    "mae": 0.0
+                                }
+                            },
+                            "true": {
+                                "question": {
+                                    "column": "geo_location",
+                                    "field_type": "GEO_LOCATION",
+                                    "column_idx": 22,
+                                    "value": [
+                                        32.8241636,
+                                        35.0780424
+                                    ]
+                                },
+                                "false": {
+                                    "value": 52.476810679611646,
+                                    "size": 65,
+                                    "mae": 0.06405915982076175
+                                },
+                                "true": {
+                                    "value": 80.0,
+                                    "size": 1,
+                                    "mae": 0.0
                                 }
                             }
                         },
@@ -2221,10 +1929,95 @@
                 },
                 "true": {
                     "question": {
-                        "column": "store_100",
-                        "field_type": "NUMBER",
-                        "column_idx": 23,
-                        "value": 28
+                        "column": "geo_location",
+                        "field_type": "GEO_LOCATION",
+                        "column_idx": 22,
+                        "value": [
+                            32.8350137,
+                            35.0890308
+                        ]
+                    },
+                    "false": {
+                        "question": {
+                            "column": "geo_location",
+                            "field_type": "GEO_LOCATION",
+                            "column_idx": 22,
+                            "value": [
+                                32.8514182,
+                                35.081212
+                            ]
+                        },
+                        "false": {
+                            "question": {
+                                "column": "geo_location",
+                                "field_type": "GEO_LOCATION",
+                                "column_idx": 22,
+                                "value": [
+                                    32.721449,
+                                    35.061367
+                                ]
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "geo_location",
+                                    "field_type": "GEO_LOCATION",
+                                    "column_idx": 22,
+                                    "value": [
+                                        32.8093538,
+                                        35.1243323
+                                    ]
+                                },
+                                "false": {
+                                    "value": 50.05259259259259,
+                                    "size": 126,
+                                    "mae": 0.0744001293356849
+                                },
+                                "true": {
+                                    "value": 10.25,
+                                    "size": 1,
+                                    "mae": 0.0
+                                }
+                            },
+                            "true": {
+                                "value": 86.493,
+                                "size": 1,
+                                "mae": 0.0
+                            }
+                        },
+                        "true": {
+                            "value": 24.0,
+                            "size": 3,
+                            "mae": 0.09
+                        }
+                    },
+                    "true": {
+                        "value": 10.25,
+                        "size": 2,
+                        "mae": 0.0
+                    }
+                }
+            }
+        },
+        "true": {
+            "question": {
+                "column": "store_100",
+                "field_type": "NUMBER",
+                "column_idx": 25,
+                "value": 28
+            },
+            "false": {
+                "question": {
+                    "column": "serves_dinner",
+                    "field_type": "BOOL",
+                    "column_idx": 6,
+                    "value": false
+                },
+                "false": {
+                    "question": {
+                        "column": "serves_lunch",
+                        "field_type": "BOOL",
+                        "column_idx": 7,
+                        "value": false
                     },
                     "false": {
                         "question": {
@@ -2235,105 +2028,236 @@
                         },
                         "false": {
                             "question": {
-                                "column": "type",
-                                "field_type": "STRING",
-                                "column_idx": 29,
-                                "value": "קייטרינג"
+                                "column": "geo_location",
+                                "field_type": "GEO_LOCATION",
+                                "column_idx": 22,
+                                "value": [
+                                    32.8514182,
+                                    35.081212
+                                ]
                             },
                             "false": {
                                 "question": {
-                                    "column": "type",
-                                    "field_type": "STRING",
-                                    "column_idx": 29,
-                                    "value": "פיצריות"
+                                    "column": "rest_100",
+                                    "field_type": "NUMBER",
+                                    "column_idx": 27,
+                                    "value": 6
                                 },
                                 "false": {
-                                    "value": 52.56133933933934,
-                                    "size": 170,
-                                    "mae": 0.08837127327327328
+                                    "value": 46.921061302681984,
+                                    "size": 80,
+                                    "mae": 0.09923752011494255
                                 },
                                 "true": {
-                                    "value": 49.24594285714286,
-                                    "size": 132,
-                                    "mae": 0.08547822294372294
+                                    "value": 54.41066911764706,
+                                    "size": 41,
+                                    "mae": 0.06248415530846486
                                 }
                             },
                             "true": {
-                                "question": {
-                                    "column": "bus_station_500",
-                                    "field_type": "NUMBER",
-                                    "column_idx": 28,
-                                    "value": 22
-                                },
-                                "false": {
-                                    "value": 45.78610179640717,
-                                    "size": 75,
-                                    "mae": 0.110165554491018
-                                },
-                                "true": {
-                                    "value": 53.360720930232546,
-                                    "size": 55,
-                                    "mae": 0.04862117970401691
-                                }
+                                "value": 24.0,
+                                "size": 3,
+                                "mae": 0.09
                             }
                         },
                         "true": {
                             "question": {
-                                "column": "serves_breakfast",
+                                "column": "serves_beer",
                                 "field_type": "BOOL",
-                                "column_idx": 4,
-                                "value": true
+                                "column_idx": 3,
+                                "value": false
                             },
                             "false": {
                                 "question": {
-                                    "column": "type",
-                                    "field_type": "STRING",
-                                    "column_idx": 29,
-                                    "value": "קייטרינג"
+                                    "column": "price_level",
+                                    "field_type": "NUMBER",
+                                    "column_idx": 12,
+                                    "value": 1.0
                                 },
                                 "false": {
-                                    "value": 54.20643213296399,
-                                    "size": 191,
-                                    "mae": 0.09855667067917796
+                                    "value": 51.72107738095238,
+                                    "size": 123,
+                                    "mae": 0.08302340931087882
                                 },
                                 "true": {
-                                    "value": 51.5751608040201,
-                                    "size": 142,
-                                    "mae": 0.08267292766650153
+                                    "value": 53.99482412060301,
+                                    "size": 131,
+                                    "mae": 0.09852281828992288
                                 }
                             },
                             "true": {
                                 "question": {
-                                    "column": "type",
-                                    "field_type": "STRING",
-                                    "column_idx": 29,
-                                    "value": "קייטרינג"
+                                    "column": "geo_location",
+                                    "field_type": "GEO_LOCATION",
+                                    "column_idx": 22,
+                                    "value": [
+                                        32.8521559,
+                                        35.0826756
+                                    ]
                                 },
                                 "false": {
-                                    "value": 56.23267307692308,
-                                    "size": 202,
-                                    "mae": 0.11358268659558267
+                                    "value": 50.643541401273886,
+                                    "size": 129,
+                                    "mae": 0.07815212314225053
                                 },
                                 "true": {
-                                    "value": 54.581475555555556,
-                                    "size": 148,
-                                    "mae": 0.09853023213213215
+                                    "value": 20.625,
+                                    "size": 2,
+                                    "mae": 0.10125
                                 }
                             }
                         }
                     },
                     "true": {
                         "question": {
-                            "column": "store_100",
-                            "field_type": "NUMBER",
-                            "column_idx": 23,
-                            "value": 33
+                            "column": "geo_location",
+                            "field_type": "GEO_LOCATION",
+                            "column_idx": 22,
+                            "value": [
+                                32.8521559,
+                                35.0826756
+                            ]
                         },
                         "false": {
                             "question": {
                                 "column": "geo_location",
                                 "field_type": "GEO_LOCATION",
-                                "column_idx": 20,
+                                "column_idx": 22,
+                                "value": [
+                                    32.721449,
+                                    35.061367
+                                ]
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "store_500",
+                                    "field_type": "NUMBER",
+                                    "column_idx": 26,
+                                    "value": 40
+                                },
+                                "false": {
+                                    "value": 45.57188505747126,
+                                    "size": 43,
+                                    "mae": 0.10302308473670141
+                                },
+                                "true": {
+                                    "value": 52.8755969581749,
+                                    "size": 65,
+                                    "mae": 0.0639611594033343
+                                }
+                            },
+                            "true": {
+                                "value": 86.493,
+                                "size": 1,
+                                "mae": 0.0
+                            }
+                        },
+                        "true": {
+                            "value": 20.625,
+                            "size": 2,
+                            "mae": 0.10125
+                        }
+                    }
+                },
+                "true": {
+                    "question": {
+                        "column": "geo_location",
+                        "field_type": "GEO_LOCATION",
+                        "column_idx": 22,
+                        "value": [
+                            32.8514182,
+                            35.081212
+                        ]
+                    },
+                    "false": {
+                        "question": {
+                            "column": "geo_location",
+                            "field_type": "GEO_LOCATION",
+                            "column_idx": 22,
+                            "value": [
+                                32.8093538,
+                                35.1243323
+                            ]
+                        },
+                        "false": {
+                            "question": {
+                                "column": "geo_location",
+                                "field_type": "GEO_LOCATION",
+                                "column_idx": 22,
+                                "value": [
+                                    32.721449,
+                                    35.061367
+                                ]
+                            },
+                            "false": {
+                                "question": {
+                                    "column": "percent of religious",
+                                    "field_type": "NUMBER",
+                                    "column_idx": 23,
+                                    "value": 0.0
+                                },
+                                "false": {
+                                    "value": 49.352456521739114,
+                                    "size": 46,
+                                    "mae": 0.0609343572778829
+                                },
+                                "true": {
+                                    "value": 50.854168761220826,
+                                    "size": 120,
+                                    "mae": 0.06613068536804309
+                                }
+                            },
+                            "true": {
+                                "value": 86.493,
+                                "size": 1,
+                                "mae": 0.0
+                            }
+                        },
+                        "true": {
+                            "value": 10.25,
+                            "size": 1,
+                            "mae": 0.0
+                        }
+                    },
+                    "true": {
+                        "value": 24.0,
+                        "size": 3,
+                        "mae": 0.09
+                    }
+                }
+            },
+            "true": {
+                "question": {
+                    "column": "geo_location",
+                    "field_type": "GEO_LOCATION",
+                    "column_idx": 22,
+                    "value": [
+                        32.835081,
+                        35.0890309
+                    ]
+                },
+                "false": {
+                    "question": {
+                        "column": "rest_500",
+                        "field_type": "NUMBER",
+                        "column_idx": 28,
+                        "value": 116
+                    },
+                    "false": {
+                        "question": {
+                            "column": "geo_location",
+                            "field_type": "GEO_LOCATION",
+                            "column_idx": 22,
+                            "value": [
+                                32.812774,
+                                34.996858
+                            ]
+                        },
+                        "false": {
+                            "question": {
+                                "column": "geo_location",
+                                "field_type": "GEO_LOCATION",
+                                "column_idx": 22,
                                 "value": [
                                     32.7782509,
                                     35.0389684
@@ -2341,23 +2265,20 @@
                             },
                             "false": {
                                 "question": {
-                                    "column": "geo_location",
-                                    "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
-                                    "value": [
-                                        32.84015,
-                                        35.0809765
-                                    ]
+                                    "column": "rest_500",
+                                    "field_type": "NUMBER",
+                                    "column_idx": 28,
+                                    "value": 29
                                 },
                                 "false": {
-                                    "value": 10.25,
-                                    "size": 3,
-                                    "mae": 0.0
+                                    "value": 25.4855,
+                                    "size": 2,
+                                    "mae": 0.007634999999999987
                                 },
                                 "true": {
-                                    "value": 24.722,
-                                    "size": 1,
-                                    "mae": 0.0
+                                    "value": 39.16275,
+                                    "size": 4,
+                                    "mae": 0.0239175
                                 }
                             },
                             "true": {
@@ -2367,414 +2288,21 @@
                             }
                         },
                         "true": {
-                            "question": {
-                                "column": "store_100",
-                                "field_type": "NUMBER",
-                                "column_idx": 23,
-                                "value": 39
-                            },
-                            "false": {
-                                "value": 58.900454545454544,
-                                "size": 3,
-                                "mae": 0.10739484848484848
-                            },
-                            "true": {
-                                "question": {
-                                    "column": "rest_100",
-                                    "field_type": "NUMBER",
-                                    "column_idx": 25,
-                                    "value": 25
-                                },
-                                "false": {
-                                    "value": 37.07122222222222,
-                                    "size": 6,
-                                    "mae": 0.03678833333333334
-                                },
-                                "true": {
-                                    "value": 23.092,
-                                    "size": 1,
-                                    "mae": 0.0
-                                }
-                            }
-                        }
-                    }
-                }
-            },
-            "true": {
-                "question": {
-                    "column": "type",
-                    "field_type": "STRING",
-                    "column_idx": 29,
-                    "value": "מסעדה אסייאתית"
-                },
-                "false": {
-                    "question": {
-                        "column": "serves_dinner",
-                        "field_type": "BOOL",
-                        "column_idx": 6,
-                        "value": false
-                    },
-                    "false": {
-                        "question": {
-                            "column": "serves_lunch",
-                            "field_type": "BOOL",
-                            "column_idx": 7,
-                            "value": false
-                        },
-                        "false": {
-                            "question": {
-                                "column": "type",
-                                "field_type": "STRING",
-                                "column_idx": 29,
-                                "value": "פיצריות"
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "kosher",
-                                    "field_type": "BOOL",
-                                    "column_idx": 30,
-                                    "value": false
-                                },
-                                "false": {
-                                    "value": 55.06093984962406,
-                                    "size": 154,
-                                    "mae": 0.11784017576408555
-                                },
-                                "true": {
-                                    "value": 56.69359057971015,
-                                    "size": 205,
-                                    "mae": 0.12361562796041005
-                                }
-                            },
-                            "true": {
-                                "question": {
-                                    "column": "store_100",
-                                    "field_type": "NUMBER",
-                                    "column_idx": 23,
-                                    "value": 28
-                                },
-                                "false": {
-                                    "value": 51.25504385964912,
-                                    "size": 150,
-                                    "mae": 0.09039131929824562
-                                },
-                                "true": {
-                                    "value": 33.26814285714286,
-                                    "size": 12,
-                                    "mae": 0.11711642857142855
-                                }
-                            }
-                        },
-                        "true": {
-                            "question": {
-                                "column": "kosher",
-                                "field_type": "BOOL",
-                                "column_idx": 30,
-                                "value": false
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "geo_location",
-                                    "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
-                                    "value": [
-                                        32.8350137,
-                                        35.0890308
-                                    ]
-                                },
-                                "false": {
-                                    "value": 48.94229801324503,
-                                    "size": 121,
-                                    "mae": 0.08949510590553338
-                                },
-                                "true": {
-                                    "value": 10.25,
-                                    "size": 2,
-                                    "mae": 0.0
-                                }
-                            },
-                            "true": {
-                                "question": {
-                                    "column": "type",
-                                    "field_type": "STRING",
-                                    "column_idx": 29,
-                                    "value": "פיצריות"
-                                },
-                                "false": {
-                                    "value": 57.1261623931624,
-                                    "size": 155,
-                                    "mae": 0.11967591949269375
-                                },
-                                "true": {
-                                    "value": 51.4165306122449,
-                                    "size": 131,
-                                    "mae": 0.08789651814924443
-                                }
-                            }
+                            "value": 54.983,
+                            "size": 1,
+                            "mae": 0.0
                         }
                     },
                     "true": {
-                        "question": {
-                            "column": "kosher",
-                            "field_type": "BOOL",
-                            "column_idx": 30,
-                            "value": false
-                        },
-                        "false": {
-                            "question": {
-                                "column": "geo_location",
-                                "field_type": "GEO_LOCATION",
-                                "column_idx": 20,
-                                "value": [
-                                    32.8350137,
-                                    35.0890308
-                                ]
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "type",
-                                    "field_type": "STRING",
-                                    "column_idx": 29,
-                                    "value": "בתי קפה"
-                                },
-                                "false": {
-                                    "value": 51.51718343195267,
-                                    "size": 129,
-                                    "mae": 0.08069503509013348
-                                },
-                                "true": {
-                                    "value": 47.947888157894745,
-                                    "size": 125,
-                                    "mae": 0.08346850052631576
-                                }
-                            },
-                            "true": {
-                                "value": 10.25,
-                                "size": 2,
-                                "mae": 0.0
-                            }
-                        },
-                        "true": {
-                            "question": {
-                                "column": "type",
-                                "field_type": "STRING",
-                                "column_idx": 29,
-                                "value": "קייטרינג"
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "type",
-                                    "field_type": "STRING",
-                                    "column_idx": 29,
-                                    "value": "פיצריות"
-                                },
-                                "false": {
-                                    "value": 57.393472527472525,
-                                    "size": 176,
-                                    "mae": 0.11365517857142855
-                                },
-                                "true": {
-                                    "value": 51.3099375,
-                                    "size": 141,
-                                    "mae": 0.0797672030141844
-                                }
-                            },
-                            "true": {
-                                "question": {
-                                    "column": "geo_location",
-                                    "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
-                                    "value": [
-                                        32.8350137,
-                                        35.0890308
-                                    ]
-                                },
-                                "false": {
-                                    "value": 50.26877272727273,
-                                    "size": 137,
-                                    "mae": 0.0784976542800265
-                                },
-                                "true": {
-                                    "value": 10.25,
-                                    "size": 2,
-                                    "mae": 0.0
-                                }
-                            }
-                        }
+                        "value": 10.25,
+                        "size": 1,
+                        "mae": 0.0
                     }
                 },
                 "true": {
-                    "question": {
-                        "column": "serves_dinner",
-                        "field_type": "BOOL",
-                        "column_idx": 6,
-                        "value": false
-                    },
-                    "false": {
-                        "question": {
-                            "column": "wheelchair_accessible_entrance",
-                            "field_type": "BOOL",
-                            "column_idx": 10,
-                            "value": true
-                        },
-                        "false": {
-                            "question": {
-                                "column": "store_100",
-                                "field_type": "NUMBER",
-                                "column_idx": 23,
-                                "value": 28
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "rest_100",
-                                    "field_type": "NUMBER",
-                                    "column_idx": 25,
-                                    "value": 6
-                                },
-                                "false": {
-                                    "value": 45.3842741935484,
-                                    "size": 86,
-                                    "mae": 0.107354392348087
-                                },
-                                "true": {
-                                    "value": 54.93699074074075,
-                                    "size": 46,
-                                    "mae": 0.061416054750402606
-                                }
-                            },
-                            "true": {
-                                "question": {
-                                    "column": "rest_100",
-                                    "field_type": "NUMBER",
-                                    "column_idx": 25,
-                                    "value": 17
-                                },
-                                "false": {
-                                    "value": 18.799,
-                                    "size": 4,
-                                    "mae": 0.0761775
-                                },
-                                "true": {
-                                    "value": 37.510999999999996,
-                                    "size": 4,
-                                    "mae": 0.09024499999999999
-                                }
-                            }
-                        },
-                        "true": {
-                            "question": {
-                                "column": "serves_lunch",
-                                "field_type": "BOOL",
-                                "column_idx": 7,
-                                "value": false
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "store_100",
-                                    "field_type": "NUMBER",
-                                    "column_idx": 23,
-                                    "value": 28
-                                },
-                                "false": {
-                                    "value": 51.86320247933884,
-                                    "size": 149,
-                                    "mae": 0.09035035248765876
-                                },
-                                "true": {
-                                    "value": 34.69975999999999,
-                                    "size": 12,
-                                    "mae": 0.11473040000000002
-                                }
-                            },
-                            "true": {
-                                "question": {
-                                    "column": "geo_location",
-                                    "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
-                                    "value": [
-                                        32.8350137,
-                                        35.0890308
-                                    ]
-                                },
-                                "false": {
-                                    "value": 49.38598780487805,
-                                    "size": 127,
-                                    "mae": 0.08869256673708469
-                                },
-                                "true": {
-                                    "value": 10.25,
-                                    "size": 2,
-                                    "mae": 0.0
-                                }
-                            }
-                        }
-                    },
-                    "true": {
-                        "question": {
-                            "column": "geo_location",
-                            "field_type": "GEO_LOCATION",
-                            "column_idx": 20,
-                            "value": [
-                                32.8350137,
-                                35.0890308
-                            ]
-                        },
-                        "false": {
-                            "question": {
-                                "column": "kosher",
-                                "field_type": "BOOL",
-                                "column_idx": 30,
-                                "value": false
-                            },
-                            "false": {
-                                "question": {
-                                    "column": "geo_location",
-                                    "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
-                                    "value": [
-                                        32.8521559,
-                                        35.0826756
-                                    ]
-                                },
-                                "false": {
-                                    "value": 49.568448275862075,
-                                    "size": 114,
-                                    "mae": 0.07245610405323653
-                                },
-                                "true": {
-                                    "value": 20.625,
-                                    "size": 2,
-                                    "mae": 0.10125
-                                }
-                            },
-                            "true": {
-                                "question": {
-                                    "column": "geo_location",
-                                    "field_type": "GEO_LOCATION",
-                                    "column_idx": 20,
-                                    "value": [
-                                        32.8514182,
-                                        35.081212
-                                    ]
-                                },
-                                "false": {
-                                    "value": 50.42928246753247,
-                                    "size": 134,
-                                    "mae": 0.07358872552820314
-                                },
-                                "true": {
-                                    "value": 24.0,
-                                    "size": 3,
-                                    "mae": 0.09
-                                }
-                            }
-                        },
-                        "true": {
-                            "value": 10.25,
-                            "size": 2,
-                            "mae": 0.0
-                        }
-                    }
+                    "value": 10.25,
+                    "size": 2,
+                    "mae": 0.0
                 }
             }
         }

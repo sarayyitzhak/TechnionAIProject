@@ -24,7 +24,7 @@ class ProdClientMainScreen(Screen):
 
         self.res = {}
 
-        self.res_activity_hours = None
+        self.res_activity = None
         self.res_bool = None
         self.res_multi_choice = None
         self.res_location = None
@@ -37,7 +37,8 @@ class ProdClientMainScreen(Screen):
         self.bool_fields = [field for field in self.config["fields"] if field["type"] == "BOOL"]
         self.selection_fields = [field for field in self.data_fields if field["type"] == "SELECTION"]
         self.location_fields = [field for field in self.data_fields if field["type"] == "LOCATION"]
-        self.activity_fields = [field for field in self.data_fields if field["type"] == "ACTIVITY_HOURS"]
+        self.open_fields = [field for field in self.data_fields if field["type"] == "OPEN"]
+        self.close_fields = [field for field in self.data_fields if field["type"] == "CLOSE"]
 
         self.init_selection()
 
@@ -47,7 +48,8 @@ class ProdClientMainScreen(Screen):
     def init_selection(self):
         open_total_minutes = Time(hours=8, minutes=0).get_total_minutes()
         close_total_minutes = Time(hours=23, minutes=0).get_total_minutes()
-        self.res_activity_hours = [open_total_minutes, close_total_minutes] * 14
+        self.res_activity = {field["name"]: open_total_minutes for field in self.open_fields}
+        self.res_activity.update({field["name"]: close_total_minutes for field in self.close_fields})
         self.res_bool = {field["name"]: False for field in self.bool_fields}
         self.res_multi_choice = {field["name"]: None for field in self.selection_fields}
         self.res_location = {field["name"]: None for field in self.location_fields}
@@ -129,13 +131,13 @@ class ProdClientMainScreen(Screen):
         activity_hours_layout.setSpacing(10)
         days = self.config["days"]
         for idx, day in enumerate(days):
-            self.create_activity_hours_per_day(activity_hours_layout, idx, days[idx])
-        return activity_hours_layout
+            self.create_activity_hours_labels(activity_hours_layout, idx, day)
+        for idx, field in enumerate(self.open_fields):
+            self.create_activity_widget(activity_hours_layout, 2, idx, self.res_activity[field["name"]], field)
+        for idx, field in enumerate(self.close_fields):
+            self.create_activity_widget(activity_hours_layout, 4, idx, self.res_activity[field["name"]], field)
 
-    def create_activity_hours_per_day(self, activity_hours_layout, day, label_day):
-        self.create_activity_hours_labels(activity_hours_layout, day, label_day)
-        self.create_activity_widget(activity_hours_layout, day, True)
-        self.create_activity_widget(activity_hours_layout, day, False)
+        return activity_hours_layout
 
     def create_activity_hours_labels(self, activity_hours_layout, day, label_day):
         full_label = "Enter " + label_day + " activity"
@@ -143,21 +145,17 @@ class ProdClientMainScreen(Screen):
         self.create_text_label(activity_hours_layout, "from:", 1, day)
         self.create_text_label(activity_hours_layout, "to:", 3, day)
 
-    def create_activity_widget(self, activity_hours_layout, day, is_opening):
+    def create_activity_widget(self, activity_hours_layout, row, day, init_value, field):
         activity_time = QTimeEdit(self)
-        default = QTime(23, 0)
-        row = 4
-        if is_opening:
-            default = QTime(8, 0)
-            row = 2
+        init_time = Time(total_minutes=init_value)
+        default = QTime(init_time.hours, init_time.minutes)
         activity_time.setTime(default)
-        activity_time.editingFinished.connect(lambda: self.update_activity_hours(activity_time, day, is_opening))
+        activity_time.editingFinished.connect(lambda: self.update_activity_hours(activity_time, field))
         activity_hours_layout.addWidget(activity_time, row, day)
 
-    def update_activity_hours(self, activity_time, day, is_opening):
+    def update_activity_hours(self, activity_time, field):
         value = activity_time.time().toPyTime()
-        idx = 0 if is_opening else 1
-        self.res_activity_hours[2 * day + idx] = Time(hours=value.hour, minutes=value.minute).get_total_minutes()
+        self.res_activity[field["name"]] = Time(hours=value.hour, minutes=value.minute).get_total_minutes()
 
     def update_location_data(self):
         self.res_location["city"] = self.city_text_box.text()
@@ -168,17 +166,7 @@ class ProdClientMainScreen(Screen):
         self.res.update(self.res_bool)
         self.res.update(self.res_multi_choice)
         self.res.update(self.res_location)
-        self.res.update(self.res_get_activity_time())
-
-    def res_get_activity_time(self):
-        data = {}
-        activity_hours = []
-        for day in range(7):
-            activity_hours.append([self.res_activity_hours[day * 2], self.res_activity_hours[(day * 2) + 1]])
-        data["activity_time_as_list"] = activity_hours
-        for idx, day in enumerate(self.activity_fields):
-            data[day["name"]] = activity_hours[idx]
-        return data
+        self.res.update(self.res_activity)
 
     def build_buttons(self):
         calculate_button = self.build_button("Calculate", self.on_calculate_button_clicked, 4, align_center=True)

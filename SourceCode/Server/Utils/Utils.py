@@ -16,23 +16,13 @@ def is_closes_places(value1, value2, max_distance_km=0.3):
     return location_distance(value1, value2) < max_distance_km
 
 
-def common_activity_hours(value1, value2, min_common_percentage=0.8):
+def is_time_bigger(value1, value2):
     if value1 == value2:
         return True
-    if value1 == (-1, -1) or value2 == (-1, -1):
+    elif value1 == -1 or value2 == -1:
         return False
     else:
-        total_minutes = (value1[1] - value1[0]) + (value2[1] - value2[0])
-        intersection_total_minutes = get_intersection_total_minutes(value1, value2)
-
-        common = (intersection_total_minutes * 2) / total_minutes
-        return common > min_common_percentage
-
-
-def get_intersection_total_minutes(interval1, interval2):
-    new_min = max(interval1[0], interval2[0])
-    new_max = min(interval1[1], interval2[1])
-    return max(0, new_max - new_min)
+        return value2 >= value1
 
 
 def get_street_distance(cbs_street, g_street, g_reversed_street):

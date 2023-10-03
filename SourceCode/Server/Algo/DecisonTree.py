@@ -36,7 +36,7 @@ def node_to_dict(node):
 def dict_to_node(node):
     if "question" in node:
         q = node["question"]
-        value = tuple(q["value"]) if q["field_type"] in ["ACTIVITY_HOURS", "GEO_LOCATION"] else q["value"]
+        value = tuple(q["value"]) if q["field_type"] == "GEO_LOCATION" else q["value"]
         question = Question(q["column"], q["field_type"], q["column_idx"], value)
         return DecisionNode(question, dict_to_node(node["true"]), dict_to_node(node["false"]))
     else:
@@ -58,7 +58,7 @@ class Question:
         if self.field_type == "GEO_LOCATION":
             return is_closes_places(self.value, val)
         elif self.field_type == "ACTIVITY_HOURS":
-            return common_activity_hours(self.value, val)
+            return is_time_bigger(self.value, val)
         elif self.field_type == "NUMBER":
             return val >= self.value
         else:
@@ -72,8 +72,6 @@ class Question:
                 return True
             elif self.field_type == "GEO_LOCATION":
                 return is_closes_places(self.value, other.value, 0.1)
-            elif self.field_type == "ACTIVITY_HOURS":
-                return common_activity_hours(self.value, other.value, 0.9)
             else:
                 return self.value == other.value
 
@@ -82,9 +80,9 @@ class Question:
         # the question in a readable format.
         condition = "=="
         val_str = str(self.value)
-        if self.field_type in ["GEO_LOCATION", "ACTIVITY_HOURS"]:
+        if self.field_type == "GEO_LOCATION":
             condition = "∩"
-        if self.field_type == "NUMBER":
+        if self.field_type in ["NUMBER", "ACTIVITY_HOURS"]:
             condition = ">="
             val_str = '{:.2f}'.format(self.value)
         return "%s %s %s" % (self.column, condition, val_str)

@@ -60,8 +60,6 @@ class DataParser:
             field_type = field["type"]
             if field_type == "BOOL":
                 self.google_df[field_name] = self.google_df[field_name].apply(self.parse_bool_field)
-            elif field_type == "REVIEWS":
-                self.google_df[field_name] = self.google_df[field_name].apply(self.parse_reviews_field)
             elif field_type == "GEO_LOCATION":
                 self.google_df[field_name] = self.google_df[field_name].apply(self.data_filler.parse_geo_location_field)
 
@@ -226,16 +224,6 @@ class DataParser:
     @staticmethod
     def parse_bool_field(value):
         return None if value is None else bool(value)
-
-    @staticmethod
-    def parse_reviews_field(value):
-        if value is None:
-            return None
-        reviews_words = set()
-        for review in value:
-            clean_r_text = review.replace('!', ' ').replace('.', ' ').replace(',', ' ').replace('\n', ' ').replace('?', ' ')
-            reviews_words.update(clean_r_text.split(' '))
-        return reviews_words
 
     @staticmethod
     def get_common_words_size(name1, name2):

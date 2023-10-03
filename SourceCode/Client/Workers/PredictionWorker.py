@@ -27,11 +27,9 @@ class PredictionWorker(QThread):
         self.user_selection.update(self.res_calc_features_by_loc())
 
     def res_calc_features_by_activity(self):
-        data = {}
-        activity_hours = self.user_selection["activity_time_as_list"]
-        for is_open, mean in enumerate(["open_activity_hour", "close_activity_hour"]):
-            data[mean] = ActivityTimeFiller.get_most_common_activity_hour(activity_hours, 1 - is_open)
-        data["open_on_saturday"] = ActivityTimeFiller.is_open_on_saturday(activity_hours)
+        friday_activity = [self.user_selection["friday_open"], self.user_selection["friday_close"]]
+        saturday_activity = [self.user_selection["saturday_open"], self.user_selection["saturday_close"]]
+        data = {"open_on_saturday": ActivityTimeFiller.is_open_on_saturday(friday_activity, saturday_activity)}
         return data
 
     def res_calc_features_by_loc(self):

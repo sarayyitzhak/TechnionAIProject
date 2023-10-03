@@ -97,12 +97,11 @@ class ActivityTimeFiller:
         return None if len(activity_hours_by_index) == 0 else activity_hours_by_index.most_common()[0][0]
 
     @staticmethod
-    def is_open_on_saturday(activity_hours):
-        if activity_hours[5] is None or activity_hours[6] is None:
+    def is_open_on_saturday(friday_activity, saturday_activity):
+        if friday_activity is None or saturday_activity is None:
             return None
         latest_closing_time_friday = Time(hours=17, minutes=0)
         earliest_opening_time_saturday = Time(hours=19, minutes=0)
-        open_on_friday = Time(total_minutes=activity_hours[5][1]).is_later_than(latest_closing_time_friday)
-        open_on_saturday = Time(total_minutes=activity_hours[6][0]).is_earlier_than(earliest_opening_time_saturday) and \
-                           activity_hours[6][0] != -1
+        open_on_friday = Time(total_minutes=friday_activity[1]).is_later_than(latest_closing_time_friday)
+        open_on_saturday = Time(total_minutes=saturday_activity[0]).is_earlier_than(earliest_opening_time_saturday) and saturday_activity[0] != -1
         return open_on_friday or open_on_saturday

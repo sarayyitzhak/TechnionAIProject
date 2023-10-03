@@ -15,18 +15,12 @@ class FeatureSelectionAnalysis:
             field_names = [field["name"] for field in fields]
             data = data[field_names]
 
-            for col in [field["name"] for field in fields if field["type"] in ["ACTIVITY_HOURS", "GEO_LOCATION"]]:
+            for col in [field["name"] for field in fields if field["type"] == "GEO_LOCATION"]:
                 data[col] = data[col].apply(lambda x: np.nan if pd.isnull(x) else tuple(eval(x)))
 
             for col in [field["name"] for field in config["fields"] if field["type"] == "GEO_LOCATION"]:
                 data["latitude"] = data[col].apply(lambda x: np.nan if pd.isnull(x) else float(x[0]))
                 data["longitude"] = data[col].apply(lambda x: np.nan if pd.isnull(x) else float(x[1]))
-
-            for col in [field["name"] for field in config["fields"] if field["type"] == "ACTIVITY_HOURS"]:
-                open_field_name = col.split("_")[0] + "_open"
-                close_field_name = col.split("_")[0] + "_close"
-                data[open_field_name] = data[col].apply(lambda x: np.nan if pd.isnull(x) else int(x[0]))
-                data[close_field_name] = data[col].apply(lambda x: np.nan if pd.isnull(x) else int(x[1]))
 
             for col in [field["name"] for field in config["fields"] if field["type"] == "BOOL"]:
                 data[col] = data[col].apply(lambda x: np.nan if pd.isnull(x) else int(x))

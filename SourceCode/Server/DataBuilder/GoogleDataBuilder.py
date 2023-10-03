@@ -108,18 +108,15 @@ class GoogleDataBuilder:
         data.update(self.get_address(details))
 
         activity_hours = self.get_activity_hours(details)
-        data['sunday_activity_hours'] = activity_hours[0]
-        data['monday_activity_hours'] = activity_hours[1]
-        data['tuesday_activity_hours'] = activity_hours[2]
-        data['wednesday_activity_hours'] = activity_hours[3]
-        data['thursday_activity_hours'] = activity_hours[4]
-        data['friday_activity_hours'] = activity_hours[5]
-        data['saturday_activity_hours'] = activity_hours[6]
+        data.update(self.get_activity_hours_for_day(activity_hours[0], "sunday"))
+        data.update(self.get_activity_hours_for_day(activity_hours[1], "monday"))
+        data.update(self.get_activity_hours_for_day(activity_hours[2], "tuesday"))
+        data.update(self.get_activity_hours_for_day(activity_hours[3], "wednesday"))
+        data.update(self.get_activity_hours_for_day(activity_hours[4], "thursday"))
+        data.update(self.get_activity_hours_for_day(activity_hours[5], "friday"))
+        data.update(self.get_activity_hours_for_day(activity_hours[6], "saturday"))
 
-        data["open_activity_hour"] = ActivityTimeFiller.get_most_common_activity_hour(activity_hours, True)
-        data["close_activity_hour"] = ActivityTimeFiller.get_most_common_activity_hour(activity_hours, False)
-
-        data["open_on_saturday"] = ActivityTimeFiller.is_open_on_saturday(activity_hours)
+        data["open_on_saturday"] = ActivityTimeFiller.is_open_on_saturday(activity_hours[5], activity_hours[6])
 
         return data
 
@@ -164,7 +161,7 @@ class GoogleDataBuilder:
             periods = details["opening_hours"]["periods"]
             if "close" not in periods[0]:
                 for day in range(7):
-                    activity_hours[day] = [0, 2 * Time.ONE_DAY]
+                    activity_hours[day] = [0, Time.ONE_DAY]
             else:
                 for period in periods:
                     day = period["open"]["day"]
@@ -180,3 +177,14 @@ class GoogleDataBuilder:
                         activity_hours[day] = [-1, -1]
 
         return activity_hours
+
+    @staticmethod
+    def get_activity_hours_for_day(details, day):
+        data = {
+            f"{day}_open": None,
+            f"{day}_close": None
+        }
+        if details is not None:
+            data[f"{day}_open"] = details[0]
+            data[f"{day}_close"] = details[1]
+        return data

@@ -94,7 +94,7 @@
             "lng": 35.14285674877937
         }
     ],
-    "estimated_restaurants_total": 1420,
+    "estimated_restaurants_total": 1414,
     "output_path": "./DataOutput/google-data.csv",
     "output_places_path": "./DataOutput/google-places-data.csv"
 }

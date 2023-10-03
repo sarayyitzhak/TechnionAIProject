@@ -53,28 +53,36 @@
       "type": "NUMBER"
     },
     {
-      "name": "sunday_activity_hours",
-      "type": "ACTIVITY_HOURS"
+        "name": "sunday_open",
+        "type": "ACTIVITY_HOURS"
     },
     {
-      "name": "wednesday_activity_hours",
-      "type": "ACTIVITY_HOURS"
+        "name": "sunday_close",
+        "type": "ACTIVITY_HOURS"
     },
     {
-      "name": "friday_activity_hours",
-      "type": "ACTIVITY_HOURS"
+        "name": "wednesday_open",
+        "type": "ACTIVITY_HOURS"
     },
     {
-      "name": "saturday_activity_hours",
-      "type": "ACTIVITY_HOURS"
+        "name": "wednesday_close",
+        "type": "ACTIVITY_HOURS"
     },
     {
-      "name": "open_activity_hour",
-      "type": "NUMBER"
+        "name": "friday_open",
+        "type": "ACTIVITY_HOURS"
     },
     {
-      "name": "close_activity_hour",
-      "type": "NUMBER"
+        "name": "friday_close",
+        "type": "ACTIVITY_HOURS"
+    },
+    {
+        "name": "saturday_open",
+        "type": "ACTIVITY_HOURS"
+    },
+    {
+        "name": "saturday_close",
+        "type": "ACTIVITY_HOURS"
     },
     {
       "name": "open_on_saturday",

@@ -17,7 +17,7 @@ class ID3Experiments:
                 field_names = [field["name"] for field in config["fields"]] + [config["target_field"]]
                 train_set = train_set[field_names]
 
-                for col in [field["name"] for field in config["fields"] if field["type"] in ["ACTIVITY_HOURS", "GEO_LOCATION"]]:
+                for col in [field["name"] for field in config["fields"] if field["type"] == "GEO_LOCATION"]:
                     train_set[col] = train_set[col].apply(lambda x: np.nan if pd.isnull(x) else tuple(eval(x)))
 
                 # msk = np.random.rand(len(train_set)) < 0.9
