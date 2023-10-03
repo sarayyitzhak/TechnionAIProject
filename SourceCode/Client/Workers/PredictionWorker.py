@@ -60,5 +60,5 @@ class PredictionWorker(QThread):
         self.pre_run_algo()
         prediction = Prediction()
         prediction.create_decision_tree(self.formatted_tree)
-        rate = prediction.predict_sample(self.algo_input)
+        rate = prediction.predict_sample(self.algo_input).value
         self.finished.emit(rate)

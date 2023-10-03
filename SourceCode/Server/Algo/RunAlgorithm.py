@@ -1,5 +1,6 @@
 from SourceCode.Server.Algo.ID3Experiments import *
 from SourceCode.Server.Utils.FileUtils import write_to_file
+from SourceCode.Server.Algo.AlgoUtils import *
 
 
 class RunAlgorithm:
@@ -15,12 +16,7 @@ class RunAlgorithm:
         self.algo = None
 
     def pre_run_algo(self):
-        self.data = pd.read_csv(self.data_set_path)
-        field_names = [field["name"] for field in self.fields] + [self.target_field]
-        self.data = self.data[field_names]
-
-        for col in [field["name"] for field in self.fields if field["type"] in ["ACTIVITY_HOURS", "GEO_LOCATION"]]:
-            self.data[col] = self.data[col].apply(lambda x: np.nan if pd.isnull(x) else tuple(eval(x)))
+        self.data = get_data(self.data_set_path, self.fields, self.target_field)
 
     def run_algo(self):
         self.algo = ID3(self.fields, self.min_for_pruning, self.max_depth, self.progress_func)

@@ -1,6 +1,4 @@
-import math
 import numpy as np
-import pandas as pd
 
 from SourceCode.Server.Algo.DecisonTree import *
 
@@ -108,25 +106,3 @@ class ID3:
         var_right = np.mean((right_labels - mean_of_right_child) ** 2)
 
         return ((len_left / total_len) * var_left) + ((len_right / total_len) * var_right)
-
-    def score(self, rows, labels):
-        return (100 - (np.mean(np.abs(labels - self.predict(rows))))) / 100
-
-    def score_MSE(self, rows, labels):
-        return (np.sum((labels - self.predict(rows)) ** 2)) / len(labels)
-
-    def predict(self, rows, return_none_values=False):
-        return np.array([self.predict_sample(row, return_none_values) for row in rows])
-
-    def predict_sample(self, row, return_none_values, node: DecisionNode or Leaf = None):
-        if node is None:
-            node = self.tree_root
-
-        if isinstance(node, Leaf):
-            return node.value
-
-        if isinstance(node, DecisionNode):
-            if return_none_values and pd.isnull(row[node.question.column_idx]):
-                return None
-            branch = node.true_branch if node.question.match(row) else node.false_branch
-            return self.predict_sample(row, return_none_values, branch)

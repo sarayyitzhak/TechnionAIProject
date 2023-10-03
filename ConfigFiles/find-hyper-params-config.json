@@ -1,0 +1,134 @@
+{
+    "data_set_path": "./DataOutput/data.csv",
+    "target_field": "grade",
+    "min_for_pruning_values": [3, 10, 25, 50],
+    "max_depth_values": [3, 4, 5, 6, 7, 8, 9, 10],
+    "k_value": 5,
+    "fields": [
+            {
+                "name": "dine_in",
+                "type": "BOOL"
+            },
+            {
+                "name": "delivery",
+                "type": "BOOL"
+            },
+            {
+                "name": "reservable",
+                "type": "BOOL"
+            },
+            {
+                "name": "serves_beer",
+                "type": "BOOL"
+            },
+            {
+                "name": "serves_breakfast",
+                "type": "BOOL"
+            },
+            {
+                "name": "serves_brunch",
+                "type": "BOOL"
+            },
+            {
+                "name": "serves_dinner",
+                "type": "BOOL"
+            },
+            {
+                "name": "serves_lunch",
+                "type": "BOOL"
+            },
+            {
+                "name": "serves_vegetarian_food",
+                "type": "BOOL"
+            },
+            {
+                "name": "takeout",
+                "type": "BOOL"
+            },
+            {
+                "name": "wheelchair_accessible_entrance",
+                "type": "BOOL"
+            },
+            {
+                "name": "curbside_pickup",
+                "type": "BOOL"
+            },
+            {
+                "name": "price_level",
+                "type": "NUMBER"
+            },
+            {
+                "name": "sunday_activity_hours",
+                "type": "ACTIVITY_HOURS"
+            },
+            {
+                "name": "wednesday_activity_hours",
+                "type": "ACTIVITY_HOURS"
+            },
+            {
+                "name": "friday_activity_hours",
+                "type": "ACTIVITY_HOURS"
+            },
+            {
+                "name": "saturday_activity_hours",
+                "type": "ACTIVITY_HOURS"
+            },
+            {
+                "name": "open_activity_hour",
+                "type": "NUMBER"
+            },
+            {
+                "name": "close_activity_hour",
+                "type": "NUMBER"
+            },
+            {
+                "name": "open_on_saturday",
+                "type": "BOOL"
+            },
+            {
+                "name": "geo_location",
+                "type": "GEO_LOCATION"
+            },
+            {
+                "name": "percent of religious",
+                "type": "NUMBER"
+            },
+            {
+                "name": "socio-economic rank",
+                "type": "NUMBER"
+            },
+            {
+                "name": "store_100",
+                "type": "NUMBER"
+            },
+            {
+                "name": "store_500",
+                "type": "NUMBER"
+            },
+            {
+                "name": "rest_100",
+                "type": "NUMBER"
+            },
+            {
+                "name": "rest_500",
+                "type": "NUMBER"
+            },
+            {
+                "name": "bus_station_100",
+                "type": "NUMBER"
+            },
+            {
+                "name": "bus_station_500",
+                "type": "NUMBER"
+            },
+            {
+                "name": "type",
+                "type": "STRING"
+            },
+            {
+                "name": "kosher",
+                "type": "BOOL"
+            }
+    ],
+    "output_path": "./DataOutput/hyper-params.csv"
+}

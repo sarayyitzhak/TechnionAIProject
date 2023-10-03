@@ -1,4 +1,5 @@
 from SourceCode.Server.Algo.ID3 import *
+from SourceCode.Server.Algo.Prediction import *
 import pandas as pd
 import json
 import matplotlib.pyplot as plt
@@ -26,22 +27,36 @@ class ID3Experiments:
                 y_train = np.array(train[config["target_field"]].copy())
                 x_test = np.array(test.drop(config["target_field"], axis=1).copy())
                 y_test = np.array(test[config["target_field"]].copy())
-                id3 = ID3(config["fields"], config["min_for_pruning"], config["max_depth"])
-                id3.fit(x_train, y_train)
-                self.print_tree(id3.tree_root)
-                preds = id3.predict(x_test)
-                print(f"Train Score: {id3.score(x_train, y_train)}")
-                print(f"Train MSE: {id3.score_MSE(x_train, y_train)}")
-                print(f"Score: {id3.score(x_test, y_test)}")
-                print(f"MSE: {id3.score_MSE(x_test, y_test)}")
+                # id3 = ID3(config["fields"], config["min_for_pruning"], config["max_depth"])
+                # id3.fit(x_train, y_train)
+                # self.print_tree(id3.tree_root)
+                tree_file = open('./DataOutput/algo-tree.json', 'r', encoding='utf-8')
+                formatted_tree = json.load(tree_file)
+                # prediction = Prediction(id3.tree_root)
+                prediction = Prediction()
+                prediction.create_decision_tree(formatted_tree)
+
+                preds = prediction.predict(x_test)
+                print(f"Train Score: {prediction.score(x_train, y_train)}")
+                print(f"Train MSE: {prediction.score_MSE(x_train, y_train)}")
+                print(f"Score: {prediction.score(x_test, y_test)}")
+                print(f"MSE: {prediction.score_MSE(x_test, y_test)}")
+
+                res = []
+                for idx, row in enumerate(x_test):
+                    sample = prediction.predict_sample(row)
+                    res.append({
+                        "pred": sample.value,
+                        "pred_mae": sample.mae,
+                        "grade": y_test[idx]
+                    })
+
+                pd.DataFrame(res).to_csv("./DataOutput/test.csv", index=False, encoding='utf-8-sig')
 
                 plt.plot(list(range(len(x_test))), preds, 'o', color='r', label='preds')
                 plt.plot(list(range(len(x_test))), y_test, 'o', color='g', label='origs')
                 plt.legend()
                 plt.show()
-
-                # print("\n\nPreds: " + str([(y_test[idx], preds[idx]) for idx in range(len(preds))]))
-                # print("Acc: {:.2f}%".format(100 - (np.mean(np.abs(y_test - preds)))))
 
         except IOError:
             print("Error")
