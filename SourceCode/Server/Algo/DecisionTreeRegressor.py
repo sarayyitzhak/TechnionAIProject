@@ -3,7 +3,7 @@ import numpy as np
 from SourceCode.Server.Algo.DecisonTree import *
 
 
-class ID3:
+class DecisionTreeRegressor:
     def __init__(self, fields, min_for_pruning=0, max_depth=10, progress_func=None):
         self.fields = fields
         self.tree_root = None

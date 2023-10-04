@@ -1,4 +1,4 @@
-from SourceCode.Server.Algo.ID3 import *
+from SourceCode.Server.Algo.DecisionTreeRegressor import *
 from SourceCode.Server.Algo.Prediction import *
 import pandas as pd
 import json
@@ -27,12 +27,12 @@ class ID3Experiments:
                 y_train = np.array(train[config["target_field"]].copy())
                 x_test = np.array(test.drop(config["target_field"], axis=1).copy())
                 y_test = np.array(test[config["target_field"]].copy())
-                # id3 = ID3(config["fields"], config["min_for_pruning"], config["max_depth"])
-                # id3.fit(x_train, y_train)
-                # self.print_tree(id3.tree_root)
+                # regressor = DecisionTreeRegressor(config["fields"], config["min_for_pruning"], config["max_depth"])
+                # regressor.fit(x_train, y_train)
+                # self.print_tree(regressor.tree_root)
                 tree_file = open('./DataOutput/algo-tree.json', 'r', encoding='utf-8')
                 formatted_tree = json.load(tree_file)
-                # prediction = Prediction(id3.tree_root)
+                # prediction = Prediction(regressor.tree_root)
                 prediction = Prediction()
                 prediction.create_decision_tree(formatted_tree)
 

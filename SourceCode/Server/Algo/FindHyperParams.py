@@ -1,4 +1,4 @@
-from SourceCode.Server.Algo.ID3 import *
+from SourceCode.Server.Algo.DecisionTreeRegressor import *
 from SourceCode.Server.Algo.Prediction import *
 from SourceCode.Server.Algo.AlgoUtils import *
 import numpy as np
@@ -38,9 +38,9 @@ class FindHyperParams:
                 y_train_fold = np.array(train_fold[self.target_field].copy())
                 x_validation_fold = np.array(validation_fold.drop(self.target_field, axis=1).copy())
                 y_validation_fold = np.array(validation_fold[self.target_field].copy())
-                algo = ID3(self.fields, min_for_pruning, max_depth, None)
-                algo.fit(x_train_fold, y_train_fold)
-                prediction = Prediction(algo.tree_root)
+                regressor = DecisionTreeRegressor(self.fields, min_for_pruning, max_depth, None)
+                regressor.fit(x_train_fold, y_train_fold)
+                prediction = Prediction(regressor.tree_root)
                 train_scores += prediction.score(x_train_fold, y_train_fold)
                 train_scores_MSE += prediction.score_MSE(x_train_fold, y_train_fold)
                 valid_scores += prediction.score(x_validation_fold, y_validation_fold)

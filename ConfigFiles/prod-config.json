@@ -1,158 +1,157 @@
 {
     "fields": [
-            {
-                "string": "Dine in",
-                "name": "dine_in",
-                "type": "BOOL"
-            },
-            {
-                "string": "Delivery",
-                "name": "delivery",
-                "type": "BOOL"
-            },
-            {
-                "string": "Reservable",
-                "name": "reservable",
-                "type": "BOOL"
-            },
-            {
-                "string": "Serves beer",
-                "name": "serves_beer",
-                "type": "BOOL"
-            },
-            {
-                "string": "Serves breakfast",
-                "name": "serves_breakfast",
-                "type": "BOOL"
-            },
-            {
-                "string": "Serves brunch",
-                "name": "serves_brunch",
-                "type": "BOOL"
-            },
-            {
-                "string": "Serves dinner",
-                "name": "serves_dinner",
-                "type": "BOOL"
-            },
-            {
-                "string": "Serves lunch",
-                "name": "serves_lunch",
-                "type": "BOOL"
-            },
-            {
-                "string": "Serves vegeterian food",
-                "name": "serves_vegetarian_food",
-                "type": "BOOL"
-            },
-            {
-                "string": "Takeout",
-                "name": "takeout",
-                "type": "BOOL"
-            },
-            {
-                "string": "Wheelchair Accessible Entrance",
-                "name": "wheelchair_accessible_entrance",
-                "type": "BOOL"
-            },
-            {
-                "string": "Curbside Pickup",
-                "name": "curbside_pickup",
-                "type": "BOOL"
-            },
-            {
-                "string": "Kosher",
-                "name": "kosher",
-                "type": "BOOL"
-            },
-            {
-                "name": "name",
-                "type": "STRING"
-            },
-            {
-                "string": "Select price level",
-                "name": "price_level",
-                "type": "SELECTION"
-            },
-            {
-                "string": "Select restaurant type",
-                "name": "type",
-                "type": "SELECTION"
-            },
-            {
-                "name": "city",
-                "type": "LOCATION"
-            },
-            {
-                "name": "street",
-                "type": "LOCATION"
-            },
-            {
-                "name": "geo_location",
-                "type": "LOCATION"
-            },
-            {
-                "name": "sunday_open",
-                "type": "OPEN"
-            },
-            {
-                "name": "sunday_close",
-                "type": "CLOSE"
-            },
-            {
-                "name": "monday_open",
-                "type": "OPEN"
-            },
-            {
-                "name": "monday_close",
-                "type": "CLOSE"
-            },
-            {
-                "name": "tuesday_open",
-                "type": "OPEN"
-            },
-            {
-                "name": "tuesday_close",
-                "type": "CLOSE"
-            },
-            {
-                "name": "wednesday_open",
-                "type": "OPEN"
-            },
-            {
-                "name": "wednesday_close",
-                "type": "CLOSE"
-            },
-            {
-                "name": "thursday_open",
-                "type": "OPEN"
-            },
-            {
-                "name": "thursday_close",
-                "type": "CLOSE"
-            },
-            {
-                "name": "friday_open",
-                "type": "OPEN"
-            },
-            {
-                "name": "friday_close",
-                "type": "CLOSE"
-            },
-            {
-                "name": "saturday_open",
-                "type": "OPEN"
-            },
-            {
-                "name": "saturday_close",
-                "type": "CLOSE"
-            },
-            {
-                "name": "open_on_saturday",
-                "type": "SATURDAY"
-            }
-        ],
-
+        {
+            "string": "Dine in",
+            "name": "dine_in",
+            "type": "BOOL"
+        },
+        {
+            "string": "Delivery",
+            "name": "delivery",
+            "type": "BOOL"
+        },
+        {
+            "string": "Reservable",
+            "name": "reservable",
+            "type": "BOOL"
+        },
+        {
+            "string": "Serves beer",
+            "name": "serves_beer",
+            "type": "BOOL"
+        },
+        {
+            "string": "Serves breakfast",
+            "name": "serves_breakfast",
+            "type": "BOOL"
+        },
+        {
+            "string": "Serves brunch",
+            "name": "serves_brunch",
+            "type": "BOOL"
+        },
+        {
+            "string": "Serves dinner",
+            "name": "serves_dinner",
+            "type": "BOOL"
+        },
+        {
+            "string": "Serves lunch",
+            "name": "serves_lunch",
+            "type": "BOOL"
+        },
+        {
+            "string": "Serves vegeterian food",
+            "name": "serves_vegetarian_food",
+            "type": "BOOL"
+        },
+        {
+            "string": "Takeout",
+            "name": "takeout",
+            "type": "BOOL"
+        },
+        {
+            "string": "Wheelchair Accessible Entrance",
+            "name": "wheelchair_accessible_entrance",
+            "type": "BOOL"
+        },
+        {
+            "string": "Curbside Pickup",
+            "name": "curbside_pickup",
+            "type": "BOOL"
+        },
+        {
+            "string": "Kosher",
+            "name": "kosher",
+            "type": "BOOL"
+        },
+        {
+            "name": "name",
+            "type": "STRING"
+        },
+        {
+            "string": "Select price level",
+            "name": "price_level",
+            "type": "SELECTION"
+        },
+        {
+            "string": "Select restaurant type",
+            "name": "type",
+            "type": "SELECTION"
+        },
+        {
+            "name": "city",
+            "type": "LOCATION"
+        },
+        {
+            "name": "street",
+            "type": "LOCATION"
+        },
+        {
+            "name": "geo_location",
+            "type": "LOCATION"
+        },
+        {
+            "name": "sunday_open",
+            "type": "OPEN"
+        },
+        {
+            "name": "sunday_close",
+            "type": "CLOSE"
+        },
+        {
+            "name": "monday_open",
+            "type": "OPEN"
+        },
+        {
+            "name": "monday_close",
+            "type": "CLOSE"
+        },
+        {
+            "name": "tuesday_open",
+            "type": "OPEN"
+        },
+        {
+            "name": "tuesday_close",
+            "type": "CLOSE"
+        },
+        {
+            "name": "wednesday_open",
+            "type": "OPEN"
+        },
+        {
+            "name": "wednesday_close",
+            "type": "CLOSE"
+        },
+        {
+            "name": "thursday_open",
+            "type": "OPEN"
+        },
+        {
+            "name": "thursday_close",
+            "type": "CLOSE"
+        },
+        {
+            "name": "friday_open",
+            "type": "OPEN"
+        },
+        {
+            "name": "friday_close",
+            "type": "CLOSE"
+        },
+        {
+            "name": "saturday_open",
+            "type": "OPEN"
+        },
+        {
+            "name": "saturday_close",
+            "type": "CLOSE"
+        },
+        {
+            "name": "open_on_saturday",
+            "type": "SATURDAY"
+        }
+    ],
     "days": [
         "Sunday",
         "Monday",
@@ -162,9 +161,8 @@
         "Friday",
         "Saturday"
     ],
-
     "default_location": {
-        "lat": 32.793137,
-        "lng": 35.017856
+        "lat": 32.805,
+        "lng": 35.0079
     }
 }
