@@ -1,3 +1,4 @@
+from SourceCode.Server.Algo.AlgoUtils import get_data
 from SourceCode.Server.Algo.DecisionTreeRegressor import *
 from SourceCode.Server.Algo.Prediction import *
 import pandas as pd
@@ -13,12 +14,7 @@ class ID3Experiments:
         try:
             with open(config_path, 'r', encoding='utf-8') as f:
                 config = json.load(f)
-                train_set = pd.read_csv(config["data_set_path"])
-                field_names = [field["name"] for field in config["fields"]] + [config["target_field"]]
-                train_set = train_set[field_names]
-
-                for col in [field["name"] for field in config["fields"] if field["type"] == "GEO_LOCATION"]:
-                    train_set[col] = train_set[col].apply(lambda x: np.nan if pd.isnull(x) else tuple(eval(x)))
+                train_set = get_data(config["data_set_path"], config["fields"], config["target_field"])
 
                 # msk = np.random.rand(len(train_set)) < 0.9
                 train = train_set[msk]
@@ -27,36 +23,36 @@ class ID3Experiments:
                 y_train = np.array(train[config["target_field"]].copy())
                 x_test = np.array(test.drop(config["target_field"], axis=1).copy())
                 y_test = np.array(test[config["target_field"]].copy())
-                # regressor = DecisionTreeRegressor(config["fields"], config["min_for_pruning"], config["max_depth"])
-                # regressor.fit(x_train, y_train)
+                regressor = DecisionTreeRegressor(config["fields"], config["min_for_pruning"], config["max_depth"])
+                regressor.fit(x_train, y_train)
                 # self.print_tree(regressor.tree_root)
-                tree_file = open('./DataOutput/algo-tree.json', 'r', encoding='utf-8')
-                formatted_tree = json.load(tree_file)
-                # prediction = Prediction(regressor.tree_root)
-                prediction = Prediction()
-                prediction.create_decision_tree(formatted_tree)
+                # tree_file = open('./DataOutput/algo-tree.json', 'r', encoding='utf-8')
+                # formatted_tree = json.load(tree_file)
+                prediction = Prediction(regressor.tree_root)
+                # prediction = Prediction()
+                # prediction.create_decision_tree(formatted_tree)
 
-                preds = prediction.predict(x_test)
+                # preds = prediction.predict(x_test)
                 print(f"Train Score: {prediction.score(x_train, y_train)}")
                 print(f"Train MSE: {prediction.score_MSE(x_train, y_train)}")
                 print(f"Score: {prediction.score(x_test, y_test)}")
                 print(f"MSE: {prediction.score_MSE(x_test, y_test)}")
 
-                res = []
-                for idx, row in enumerate(x_test):
-                    sample = prediction.predict_sample(row)
-                    res.append({
-                        "pred": sample.value,
-                        "pred_mae": sample.mae,
-                        "grade": y_test[idx]
-                    })
+                # res = []
+                # for idx, row in enumerate(x_test):
+                #     sample = prediction.predict_sample(row)
+                #     res.append({
+                #         "pred": sample.value,
+                #         "pred_mae": sample.mae,
+                #         "grade": y_test[idx]
+                #     })
+                #
+                # pd.DataFrame(res).to_csv("./DataOutput/test.csv", index=False, encoding='utf-8-sig')
 
-                pd.DataFrame(res).to_csv("./DataOutput/test.csv", index=False, encoding='utf-8-sig')
-
-                plt.plot(list(range(len(x_test))), preds, 'o', color='r', label='preds')
-                plt.plot(list(range(len(x_test))), y_test, 'o', color='g', label='origs')
-                plt.legend()
-                plt.show()
+                # plt.plot(list(range(len(x_test))), preds, 'o', color='r', label='preds')
+                # plt.plot(list(range(len(x_test))), y_test, 'o', color='g', label='origs')
+                # plt.legend()
+                # plt.show()
 
         except IOError:
             print("Error")

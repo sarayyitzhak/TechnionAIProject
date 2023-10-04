@@ -51,6 +51,10 @@
       "type": "BOOL"
     },
     {
+      "name": "website",
+      "type": "BOOL"
+    },
+    {
       "name": "price_level",
       "type": "NUMBER"
     },

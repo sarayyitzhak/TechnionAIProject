@@ -1,6 +1,7 @@
 from SourceCode.Server.Utils.Time import Time
 from SourceCode.Server.Utils.Utils import *
 import pandas as pd
+import numpy as np
 
 RESTAURANT = "restaurant"
 STORE = "store"

@@ -61,6 +61,11 @@
             "type": "BOOL"
         },
         {
+            "string": "Website",
+            "name": "website",
+            "type": "BOOL"
+        },
+        {
             "string": "Kosher",
             "name": "kosher",
             "type": "BOOL"

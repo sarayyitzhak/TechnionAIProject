@@ -102,6 +102,10 @@
                 "type": "BOOL"
             },
             {
+                "name": "website",
+                "type": "BOOL"
+            },
+            {
                 "name": "name",
                 "type": "STRING"
             },

@@ -1,5 +1,6 @@
 from SourceCode.Server.DataParser.DataFiller import *
 from SourceCode.Server.Utils.Utils import *
+import numpy as np
 
 RESTAURANT = "restaurant"
 STORE = "store"
