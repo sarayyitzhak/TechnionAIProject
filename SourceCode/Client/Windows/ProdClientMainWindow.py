@@ -5,9 +5,8 @@ from SourceCode.Client.Screens.DevClientMainScreen import *
 from SourceCode.Client.Screens.WelcomeMainScreen import *
 from PyQt5 import QtGui
 from PyQt5.QtWidgets import *
-from PyQt5.QtCore import QThread
 from PyQt5.QtWidgets import QMainWindow
-from SourceCode.Client.Workers.PredictionWorker import PredictionWorker
+from SourceCode.Client.Workers.RunPredicitionWorker import RunPredictionWorker
 
 
 class ProdClientMainWindow(QMainWindow):
@@ -19,8 +18,7 @@ class ProdClientMainWindow(QMainWindow):
         self.prod_results_screen = ProdClientResultScreen(self.on_try_again_button_clicked)
         self.dev_main_screen = DevClientMainScreen(self.on_return_button_clicked)
         self.main_screen = WelcomeMainScreen(self.on_build_dev_button_clicked, self.on_build_prod_button_clicked)
-        self.prediction_worker_thread = None
-        self.prediction_worker = None
+        self.thread_pool = QThreadPool()
         self.init_stack()
 
         self.screens.setWindowTitle("Restaurant Rating Predictor")
@@ -37,32 +35,18 @@ class ProdClientMainWindow(QMainWindow):
         self.screens.addWidget(self.dev_main_screen)
 
     def on_calc_button_clicked(self):
-        # loading_thread = QThread()
-        # loading_worker = PredictionWorker(self.main_window.res)
-        # loading_thread.started.connect(self.loading_window.run_gif())
-        # loading_worker.moveToThread(loading_worker)
-        # loading_thread.start()
-
-
         self.screens.setCurrentWidget(self.prod_loading_screen)
         QCoreApplication.processEvents()
-        self.create_worker()
-        self.prediction_worker.moveToThread(self.prediction_worker_thread)
-        self.prediction_worker_thread.start()
+        run_prediction_worker = RunPredictionWorker("./ConfigFiles/prediction-config.json", self.prod_main_screen.res)
+        run_prediction_worker.signals.finished.connect(self.calc_finished)
+        self.thread_pool.start(run_prediction_worker)
 
     def calc_finished(self, rate):
         self.prod_results_screen.set_rate(rate)
-        self.prediction_worker_thread.quit()
         self.screens.setCurrentWidget(self.prod_results_screen)
 
     def on_try_again_button_clicked(self):
         self.screens.setCurrentWidget(self.prod_main_screen)
-
-    def create_worker(self):
-        self.prediction_worker_thread = QThread()
-        self.prediction_worker = PredictionWorker(self.prod_main_screen.res)
-        self.prediction_worker_thread.started.connect(self.prediction_worker.run_alg)
-        self.prediction_worker.finished.connect(self.calc_finished)
 
     def on_build_dev_button_clicked(self):
         self.screens.setCurrentWidget(self.dev_main_screen)

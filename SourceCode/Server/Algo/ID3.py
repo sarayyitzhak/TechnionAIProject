@@ -20,7 +20,7 @@ class ID3:
         if total_weights == 0:
             mean = np.mean(labels)
         else:
-            mean = np.sum((labels * weights) / total_weights)
+            mean = np.sum(labels * weights) / total_weights
         mae = np.mean(np.abs(labels - mean)) / 100
         size = len(labels)
 
@@ -37,8 +37,8 @@ class ID3:
         return DecisionNode(best_question, true_branch, false_branch)
 
     def find_best_split(self, rows, labels, weights, used_questions, print_str):
-        best_var = math.inf  # keep track of the best information gain
-        best_question = None  # keep train of the feature / value that produced it
+        best_var = math.inf
+        best_question = None
         best_true_rows, best_true_labels, best_true_weights = None, None, None
         best_false_rows, best_false_labels, best_false_weights = None, None, None
 
@@ -60,10 +60,13 @@ class ID3:
                     best_false_labels = partition[5]
                     best_false_weights = partition[6]
 
-        return best_question, best_true_rows, best_true_labels, best_true_weights, best_false_rows, best_false_labels, best_false_weights
+        return best_question, np.array(best_true_rows), np.array(best_true_labels), np.array(best_true_weights), \
+               np.array(best_false_rows), np.array(best_false_labels), np.array(best_false_weights)
 
     def partition(self, rows, labels, weights, question: Question):
-        true_rows, true_labels, true_weights, false_rows, false_labels, false_weights = [], [], [], [], [], []
+        true_rows, true_labels, true_weights = [], [], []
+        false_rows, false_labels, false_weights = [], [], []
+        left_labels, right_labels = [], []
 
         for idx, row in enumerate(rows):
             if pd.isnull(row[question.column_idx]):
@@ -77,18 +80,14 @@ class ID3:
                 true_rows.append(row)
                 true_labels.append(float(labels[idx]))
                 true_weights.append(weights[idx] + 1)
+                left_labels.append(float(labels[idx]))
             else:
                 false_rows.append(row)
                 false_labels.append(float(labels[idx]))
                 false_weights.append(weights[idx] + 1)
+                right_labels.append(float(labels[idx]))
 
-        true_rows = np.array(true_rows)
-        true_labels = np.array(true_labels)
-        true_weights = np.array(true_weights)
-        false_rows = np.array(false_rows)
-        false_labels = np.array(false_labels)
-        false_weights = np.array(false_weights)
-        variance = self.variance_reduction(true_labels, false_labels)
+        variance = self.variance_reduction(np.array(left_labels), np.array(right_labels))
 
         return variance, true_rows, true_labels, true_weights, false_rows, false_labels, false_weights
 

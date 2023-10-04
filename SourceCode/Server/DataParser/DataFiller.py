@@ -91,12 +91,6 @@ class DataFiller:
 class ActivityTimeFiller:
 
     @staticmethod
-    def get_most_common_activity_hour(activity_hours, is_open):
-        idx = 0 if is_open else 1
-        activity_hours_by_index = Counter([activity_hours[day][idx] for day in range(7) if activity_hours[day] is not None])
-        return None if len(activity_hours_by_index) == 0 else activity_hours_by_index.most_common()[0][0]
-
-    @staticmethod
     def is_open_on_saturday(friday_activity, saturday_activity):
         if friday_activity is None or saturday_activity is None:
             return None

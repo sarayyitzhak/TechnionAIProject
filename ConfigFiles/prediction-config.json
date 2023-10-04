@@ -1,4 +1,6 @@
 {
+  "decision_tree_path": "./DataOutput/algo-tree.json",
+  "data_parser_config_path": "./ConfigFiles/data-parser-config.json",
   "fields": [
     {
       "name": "dine_in",

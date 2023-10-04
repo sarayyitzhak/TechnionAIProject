@@ -88,12 +88,14 @@ class DevClientMainScreen(Screen):
         progress_bar.setRange(0, 100)
         title = QLabel()
         subtitle = QLabel()
+        actual_time = QLabel()
         estimated_time = QLabel()
 
         layout = QVBoxLayout()
         layout.addWidget(title)
         layout.addWidget(subtitle)
         layout.addWidget(progress_bar)
+        layout.addWidget(actual_time)
         layout.addWidget(estimated_time)
         group_box.setLayout(layout)
 
@@ -103,6 +105,7 @@ class DevClientMainScreen(Screen):
         worker.signals.progress.connect(progress_bar.setValue)
         worker.signals.title.connect(title.setText)
         worker.signals.subtitle.connect(subtitle.setText)
+        worker.signals.actual_time.connect(actual_time.setText)
         worker.signals.estimated_time.connect(estimated_time.setText)
         worker.signals.error.connect(self.show_error_message_box)
         worker.signals.finished.connect(lambda: self.on_worker_finished(group_box))
