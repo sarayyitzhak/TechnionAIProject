@@ -49,8 +49,9 @@ class ID3Experiments:
                 # pd.DataFrame(res).to_csv("./DataOutput/test.csv", index=False, encoding='utf-8-sig')
 
                 preds = prediction.predict(x_test)
-                plt.plot(list(range(len(x_test))), preds, 'o', color='r', label='preds')
-                plt.plot(list(range(len(x_test))), y_test, 'o', color='g', label='origs')
+                x = sorted(zip(y_test, preds))
+                plt.plot(list(range(len(x_test))), [val[1] for val in x], 'o', color='r', label='preds')
+                plt.plot(list(range(len(x_test))), [val[0] for val in x], 'o', color='g', label='origs')
                 plt.legend()
                 plt.show()
 
