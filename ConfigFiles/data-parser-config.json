@@ -51,59 +51,87 @@
         "fields": [
             {
                 "name": "dine_in",
-                "type": "BOOL"
+                "type": "BOOL",
+                "missing_none_values_method": "DEFAULT_VALUE",
+                "default_value": false
             },
             {
                 "name": "delivery",
-                "type": "BOOL"
+                "type": "BOOL",
+                "missing_none_values_method": "DEFAULT_VALUE",
+                "default_value": false
             },
             {
                 "name": "reservable",
-                "type": "BOOL"
+                "type": "BOOL",
+                "missing_none_values_method": "DEFAULT_VALUE",
+                "default_value": false
             },
             {
                 "name": "serves_beer",
-                "type": "BOOL"
+                "type": "BOOL",
+                "missing_none_values_method": "DEFAULT_VALUE",
+                "default_value": false
             },
             {
                 "name": "serves_breakfast",
-                "type": "BOOL"
+                "type": "BOOL",
+                "missing_none_values_method": "DEFAULT_VALUE",
+                "default_value": false
             },
             {
                 "name": "serves_brunch",
-                "type": "BOOL"
+                "type": "BOOL",
+                "missing_none_values_method": "DEFAULT_VALUE",
+                "default_value": false
             },
             {
                 "name": "serves_dinner",
-                "type": "BOOL"
+                "type": "BOOL",
+                "missing_none_values_method": "DEFAULT_VALUE",
+                "default_value": false
             },
             {
                 "name": "serves_lunch",
-                "type": "BOOL"
+                "type": "BOOL",
+                "missing_none_values_method": "DEFAULT_VALUE",
+                "default_value": false
             },
             {
                 "name": "serves_vegetarian_food",
-                "type": "BOOL"
+                "type": "BOOL",
+                "missing_none_values_method": "DEFAULT_VALUE",
+                "default_value": false
             },
             {
                 "name": "serves_wine",
-                "type": "BOOL"
+                "type": "BOOL",
+                "missing_none_values_method": "DEFAULT_VALUE",
+                "default_value": false
             },
             {
                 "name": "takeout",
-                "type": "BOOL"
+                "type": "BOOL",
+                "missing_none_values_method": "DEFAULT_VALUE",
+                "default_value": false
             },
             {
                 "name": "wheelchair_accessible_entrance",
-                "type": "BOOL"
+                "type": "BOOL",
+                "missing_none_values_method": "DEFAULT_VALUE",
+                "default_value": false
             },
             {
                 "name": "curbside_pickup",
-                "type": "BOOL"
+                "type": "BOOL",
+                "missing_none_values_method": "DEFAULT_VALUE",
+                "default_value": false
             },
             {
                 "name": "website",
-                "type": "BOOL"
+                "type": "BOOL",
+                "missing_none_values_method": "DEFAULT_VALUE",
+                "default_value": false
             },
             {
                 "name": "name",
@@ -111,63 +139,78 @@
             },
             {
                 "name": "price_level",
-                "type": "NUMBER"
+                "type": "NUMBER",
+                "missing_none_values_method": "MEAN_ROUND"
             },
             {
                 "name": "sunday_open",
-                "type": "ACTIVITY_HOURS"
+                "type": "ACTIVITY_HOURS",
+                "missing_none_values_method": "MEAN_ROUND"
             },
             {
                 "name": "sunday_close",
-                "type": "ACTIVITY_HOURS"
+                "type": "ACTIVITY_HOURS",
+                "missing_none_values_method": "MEAN_ROUND"
             },
             {
                 "name": "monday_open",
-                "type": "ACTIVITY_HOURS"
+                "type": "ACTIVITY_HOURS",
+                "missing_none_values_method": "MEAN_ROUND"
             },
             {
                 "name": "monday_close",
-                "type": "ACTIVITY_HOURS"
+                "type": "ACTIVITY_HOURS",
+                "missing_none_values_method": "MEAN_ROUND"
             },
             {
                 "name": "tuesday_open",
-                "type": "ACTIVITY_HOURS"
+                "type": "ACTIVITY_HOURS",
+                "missing_none_values_method": "MEAN_ROUND"
             },
             {
                 "name": "tuesday_close",
-                "type": "ACTIVITY_HOURS"
+                "type": "ACTIVITY_HOURS",
+                "missing_none_values_method": "MEAN_ROUND"
             },
             {
                 "name": "wednesday_open",
-                "type": "ACTIVITY_HOURS"
+                "type": "ACTIVITY_HOURS",
+                "missing_none_values_method": "MEAN_ROUND"
             },
             {
                 "name": "wednesday_close",
-                "type": "ACTIVITY_HOURS"
+                "type": "ACTIVITY_HOURS",
+                "missing_none_values_method": "MEAN_ROUND"
             },
             {
                 "name": "thursday_open",
-                "type": "ACTIVITY_HOURS"
+                "type": "ACTIVITY_HOURS",
+                "missing_none_values_method": "MEAN_ROUND"
             },
             {
                 "name": "thursday_close",
-                "type": "ACTIVITY_HOURS"
+                "type": "ACTIVITY_HOURS",
+                "missing_none_values_method": "MEAN_ROUND"
             },
             {
                 "name": "friday_open",
-                "type": "ACTIVITY_HOURS"
+                "type": "ACTIVITY_HOURS",
+                "missing_none_values_method": "MEAN_ROUND"
             },
             {
                 "name": "friday_close",
-                "type": "ACTIVITY_HOURS"
+                "type": "ACTIVITY_HOURS",
+                "missing_none_values_method": "MEAN_ROUND"
             },
             {
                 "name": "saturday_open",
-                "type": "ACTIVITY_HOURS"
+                "type": "ACTIVITY_HOURS",
+                "missing_none_values_method": "MEAN_ROUND"
             },
             {
                 "name": "saturday_close",
-                "type": "ACTIVITY_HOURS"
+                "type": "ACTIVITY_HOURS",
+                "missing_none_values_method": "MEAN_ROUND"
             },
             {
                 "name": "open_on_saturday",
@@ -183,19 +226,23 @@
         "fields": [
             {
                 "name": "percent of religious",
-                "type": "NUMBER"
+                "type": "NUMBER",
+                "missing_none_values_method": "MEAN"
             },
             {
                 "name": "socio-economic index value",
-                "type": "NUMBER"
+                "type": "NUMBER",
+                "missing_none_values_method": "MEAN"
             },
             {
                 "name": "socio-economic rank",
-                "type": "NUMBER"
+                "type": "NUMBER",
+                "missing_none_values_method": "MEAN"
             },
             {
                 "name": "socio-economic cluster",
-                "type": "NUMBER"
+                "type": "NUMBER",
+                "missing_none_values_method": "MEAN"
             }
         ]
     },

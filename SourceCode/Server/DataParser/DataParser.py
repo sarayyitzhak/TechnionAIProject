@@ -40,6 +40,7 @@ class DataParser:
         self.fill_google_missing_data()
         self.fill_cbs_missing_data()
         self.fill_rest_missing_data()
+        self.fill_none_value()
 
     def clean_data(self):
         for field_name in self.fields_to_remove:
@@ -65,7 +66,7 @@ class DataParser:
                 self.google_df[field_name] = self.google_df[field_name].apply(self.data_filler.parse_geo_location_field)
 
     def get_rest_data(self):
-        rest_df = pd.read_csv(self.data_set_paths["rest"])
+        rest_df = pd.read_csv(self.data_set_paths["rest"]).replace({np.nan: None})
 
         for row in range(len(rest_df)):
             city = rest_df[self.global_fields["CITY"]][row]
@@ -218,6 +219,18 @@ class DataParser:
             for missing_type_value in missing_type_data["values"]:
                 if missing_type_value["contains"] in self.data[name_field][blank_idx]:
                     self.data[type_field][blank_idx] = missing_type_value["fill"]
+
+    def fill_none_value(self):
+        fields = self.google_config["fields"] + self.cbs_config["fields"]
+        for field in fields:
+            if "missing_none_values_method" in field:
+                if field["missing_none_values_method"] == "DEFAULT_VALUE":
+                    replacement_value = field["default_value"]
+                else:
+                    replacement_value = np.mean([val for val in self.data[field["name"]] if val is not None and val >= 0])
+                    if field["missing_none_values_method"] == "MEAN_ROUND":
+                        replacement_value = round(replacement_value)
+                self.data[field["name"]] = [replacement_value if val is None else val for val in self.data[field["name"]]]
 
     def remove_common_words(self, name):
         return " ".join([item for item in name.split(" ") if item not in self.common_words])

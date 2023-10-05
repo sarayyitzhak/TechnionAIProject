@@ -21,7 +21,7 @@ class DataFiller:
         self.places_data = {place_key: [] for place_key in PLACE_KEYS}
 
     def get_places_data(self):
-        google_places_df = pd.read_csv(self.data_set_paths["google_places"])
+        google_places_df = pd.read_csv(self.data_set_paths["google_places"]).replace({np.nan: None})
         gov_df = pd.read_csv(self.data_set_paths["gov"])
 
         geo_location_field = self.global_fields["GEO_LOCATION"]
