@@ -3,6 +3,7 @@
     "target_field": "grade",
     "min_for_pruning": 3,
     "max_depth": 8,
+    "min_samples_leaf": 0.1,
     "fields": [
             {
                 "name": "dine_in",

@@ -4,11 +4,12 @@ from SourceCode.Server.Algo.DecisonTree import *
 
 
 class DecisionTreeRegressor:
-    def __init__(self, fields, min_for_pruning=0, max_depth=10, progress_func=None):
+    def __init__(self, fields, min_for_pruning=0, max_depth=10, min_samples_leaf=0.1, progress_func=None):
         self.fields = fields
         self.tree_root = None
         self.min_for_pruning = min_for_pruning
         self.max_depth = max_depth
+        self.min_samples_leaf = min_samples_leaf
         self.progress_func = progress_func
         self.nodes = (2 ** max_depth) - 1
 
@@ -91,12 +92,12 @@ class DecisionTreeRegressor:
 
         return variance, true_rows, true_labels, true_weights, false_rows, false_labels, false_weights
 
-    @staticmethod
-    def variance_reduction(left_labels, right_labels):
+    def variance_reduction(self, left_labels, right_labels):
         len_left = len(left_labels)
         len_right = len(right_labels)
         total_len = len_right + len_left
-        if len_right == 0 or len_left == 0:
+        min_samples = self.min_samples_leaf * total_len
+        if len_left < min_samples or len_right < min_samples:
             return math.inf
         mean_of_left_child = np.mean(left_labels)
         mean_of_right_child = np.mean(right_labels)

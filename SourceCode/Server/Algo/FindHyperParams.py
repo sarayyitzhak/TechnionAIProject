@@ -10,6 +10,7 @@ class FindHyperParams:
         self.target_field = config["target_field"]
         self.min_for_pruning_values = config["min_for_pruning_values"]
         self.max_depth_values = config["max_depth_values"]
+        self.min_samples_leaf_values = config["min_samples_leaf_values"]
         self.k = config["k_value"]
         self.fields = config["fields"]
         self.output_path = config["output_path"]
@@ -22,23 +23,23 @@ class FindHyperParams:
 
     def find_hyper_params(self):
         k_fold_idx = self.data.index % self.k
-        hyper_params = [(x, y) for x in self.min_for_pruning_values for y in self.max_depth_values]
+        hyper_params = [(x, y, z) for x in self.min_for_pruning_values for y in self.max_depth_values for z in self.min_samples_leaf_values]
 
-        for min_for_pruning, max_depth in hyper_params:
+        for min_for_pruning, max_depth, min_samples_leaf in hyper_params:
             train_scores = 0
             train_scores_MSE = 0
             valid_scores = 0
             valid_scores_MSE = 0
             for fold in range(self.k):
                 if self.progress_func is not None:
-                    self.progress_func(f"Fold: {fold} | Min For Pruning: {min_for_pruning} | Max Depth: {max_depth}", self.k * len(hyper_params))
+                    self.progress_func(f"Fold: {fold} | Min For Pruning: {min_for_pruning} | Max Depth: {max_depth} | Min Samples Leaf: {min_samples_leaf}", self.k * len(hyper_params))
                 train_fold = self.data[k_fold_idx != fold]
                 validation_fold = self.data[k_fold_idx == fold]
                 x_train_fold = np.array(train_fold.drop(self.target_field, axis=1).copy())
                 y_train_fold = np.array(train_fold[self.target_field].copy())
                 x_validation_fold = np.array(validation_fold.drop(self.target_field, axis=1).copy())
                 y_validation_fold = np.array(validation_fold[self.target_field].copy())
-                regressor = DecisionTreeRegressor(self.fields, min_for_pruning, max_depth, None)
+                regressor = DecisionTreeRegressor(self.fields, min_for_pruning, max_depth, min_samples_leaf, None)
                 regressor.fit(x_train_fold, y_train_fold)
                 prediction = Prediction(regressor.tree_root)
                 train_scores += prediction.score(x_train_fold, y_train_fold)
@@ -48,10 +49,11 @@ class FindHyperParams:
             self.result.append({
                 "min for pruning": min_for_pruning,
                 "max depth": max_depth,
-                "train score": round(train_scores / self.k, 3),
-                "train score MSE": round(train_scores_MSE / self.k, 3),
-                "valid score": round(valid_scores / self.k, 3),
-                "valid score MSE": round(valid_scores_MSE / self.k, 3)
+                "min samples leaf": min_samples_leaf,
+                "train score": train_scores / self.k,
+                "train score MSE": train_scores_MSE / self.k,
+                "valid score": valid_scores / self.k,
+                "valid score MSE": valid_scores_MSE / self.k
             })
 
     def save_data(self):
