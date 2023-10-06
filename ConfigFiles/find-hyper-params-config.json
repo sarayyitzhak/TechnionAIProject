@@ -1,7 +1,7 @@
 {
     "data_set_path": "./DataOutput/data.csv",
     "target_field": "grade",
-    "min_for_pruning_values": [3, 10, 25, 50],
+    "min_for_pruning_values": [3, 10, 25, 50, 65],
     "max_depth_values": [3, 5, 8, 10, 12, 15],
     "min_samples_leaf_values": [0.1, 0.15, 0.2, 0.25],
     "k_value": 5,

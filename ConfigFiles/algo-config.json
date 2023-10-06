@@ -1,9 +1,9 @@
 {
     "data_set_path": "./DataOutput/data.csv",
     "target_field": "grade",
-    "min_for_pruning": 3,
-    "max_depth": 8,
-    "min_samples_leaf": 0.1,
+    "min_for_pruning": 50,
+    "max_depth": 10,
+    "min_samples_leaf": 0.2,
     "fields": [
             {
                 "name": "dine_in",
