@@ -50,8 +50,8 @@ class ID3Experiments:
 
                 preds = prediction.predict(x_test)
                 x = sorted(zip(y_test, preds))
-                plt.plot(list(range(len(x_test))), [val[1] for val in x], 'o', color='r', label='preds')
-                plt.plot(list(range(len(x_test))), [val[0] for val in x], 'o', color='g', label='origs')
+                plt.plot(list(range(len(x_test))), [val[1] for val in x], '.-', color='r', label='preds')
+                plt.plot(list(range(len(x_test))), [val[0] for val in x], '.-', color='g', label='origs')
                 plt.legend()
                 plt.show()
 
