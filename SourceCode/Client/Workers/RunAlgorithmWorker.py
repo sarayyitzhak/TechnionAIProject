@@ -7,10 +7,10 @@ class RunAlgorithmWorker(Worker):
         super(RunAlgorithmWorker, self).__init__(config_path)
 
     def inner_run(self, config):
-        algo = RunAlgorithm(config, self.progress)
-        algo.pre_run_algo()
+        run_algorithm = RunAlgorithm(config, self.progress)
+        run_algorithm.pre_run_algo()
         self.emit_pre_build("Run Algorithm...")
-        algo.run_algo()
+        run_algorithm.run_algo()
         self.signals.title.emit("Save Data...")
-        algo.save_data()
+        run_algorithm.save_data()
         self.signals.title.emit("Run Algorithm Completed!")

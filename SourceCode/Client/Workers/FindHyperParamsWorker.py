@@ -7,10 +7,10 @@ class FindHyperParamsWorker(Worker):
         super(FindHyperParamsWorker, self).__init__(config_path)
 
     def inner_run(self, config):
-        parser = FindHyperParams(config, self.progress)
-        parser.pre_find_hyper_params()
+        find_hyper_params = FindHyperParams(config, self.progress)
+        find_hyper_params.pre_find_hyper_params()
         self.emit_pre_build("Find Hyper Params...")
-        parser.find_hyper_params()
+        find_hyper_params.find_hyper_params()
         self.signals.title.emit("Save Data...")
-        parser.save_data()
+        find_hyper_params.save_data()
         self.signals.title.emit("Find Hyper Params Completed!")
