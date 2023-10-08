@@ -24,6 +24,8 @@ class ShowHyperParamsAnalysis:
         measure_type_column = 'MSE' if 'MSE' in self.y_axis_type else 'acc'
         value_column = f"{data_type_column} {measure_type_column}"
 
+        y_label = 'MSE' if 'MSE' in self.y_axis_type else 'accuracy'
+
         fig.suptitle(fig_title)
         for idx, min_samples_leaf in enumerate(min_samples_leaf_groups.groups.keys()):
             data_by_min_samples_leaf = min_samples_leaf_groups.get_group(min_samples_leaf)
@@ -32,7 +34,7 @@ class ShowHyperParamsAnalysis:
             graph = axes[int(idx / 2), idx % 2]
             graph.set_title(f"min samples leaf = {min_samples_leaf}")
             graph.set_xlabel("max depth")
-            graph.set_ylabel("accuracy")
+            graph.set_ylabel(y_label)
             graph.grid()
             for min_for_pruning in min_for_pruning_groups.groups.keys():
                 data_by_min_for_pruning = min_for_pruning_groups.get_group(min_for_pruning)
