@@ -37,11 +37,13 @@ class DevClientMainScreen(Screen):
         self.build_button("Build All Data", self.on_build_all_clicked, 1, 0, 4)
         self.build_button("Parse Data", self.on_parse_data_clicked, 2, 0, 4)
         self.build_button("Create Production Data Config", self.on_data_config_clicked, 3, 0, 4)
-        self.build_button("Find Hyper Params", self.on_find_hyper_params_clicked, 4, 0, 2)
-        self.build_button("Show Validation Analysis", self.on_show_valid_analysis_clicked, 4, 2, 1)
-        self.build_button("Show Train Analysis", self.on_show_train_analysis_clicked, 4, 3, 1)
-        self.build_button("Run Algorithm", self.on_run_alg_clicked, 5, 0, 4)
-        self.build_button("Go Back To Main Screen", self.on_return_clicked, 7, 0, 4)
+        self.build_button("Find Hyper Params", self.on_find_hyper_params_clicked, 4, 0, 4)
+        self.build_button("Show Validation Analysis", self.on_show_valid_analysis_clicked, 5, 0, 1)
+        self.build_button("Show Train Analysis", self.on_show_train_analysis_clicked, 5, 1, 1)
+        self.build_button("Show Validation MSE Analysis", self.on_show_valid_mse_analysis_clicked, 5, 2, 1)
+        self.build_button("Show Train MSE Analysis", self.on_show_train_mse_analysis_clicked, 5, 3, 1)
+        self.build_button("Run Algorithm", self.on_run_alg_clicked, 6, 0, 4)
+        self.build_button("Go Back To Main Screen", self.on_return_clicked, 8, 0, 4)
 
     def build_scroll_bar(self):
         self.scroll = QScrollArea()
@@ -52,7 +54,7 @@ class DevClientMainScreen(Screen):
         self.scroll.setWidgetResizable(True)
         self.scroll.setFixedHeight(150)
 
-        self.layout.addWidget(self.scroll, 6, 0, 1, 4)
+        self.layout.addWidget(self.scroll, 7, 0, 1, 4)
         self.scroll.hide()
 
     def on_build_google_clicked(self):
@@ -87,6 +89,12 @@ class DevClientMainScreen(Screen):
 
     def on_show_train_analysis_clicked(self):
         self.on_show_hyper_params_analysis_clicked('TRAIN')
+
+    def on_show_valid_mse_analysis_clicked(self):
+        self.on_show_hyper_params_analysis_clicked('VALIDATION_MSE')
+
+    def on_show_train_mse_analysis_clicked(self):
+        self.on_show_hyper_params_analysis_clicked('TRAIN_MSE')
 
     @staticmethod
     def on_show_hyper_params_analysis_clicked(y_axis_type):

@@ -1,4 +1,4 @@
-﻿min for pruning,max depth,min samples leaf,train score,train score MSE,valid score,valid score MSE
+﻿min for pruning,max depth,min samples leaf,train acc,train MSE,valid acc,valid MSE
 3,3,0.1,0.876367224,264.5022819,0.874325039,271.9370204
 3,3,0.15,0.87582168,264.1419114,0.874144269,270.3936519
 3,3,0.2,0.878249746,256.3586648,0.876066036,264.4383905

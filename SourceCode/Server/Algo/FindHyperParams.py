@@ -50,10 +50,10 @@ class FindHyperParams:
                 "min for pruning": min_for_pruning,
                 "max depth": max_depth,
                 "min samples leaf": min_samples_leaf,
-                "train score": train_scores / self.k,
-                "train score MSE": train_scores_MSE / self.k,
-                "valid score": valid_scores / self.k,
-                "valid score MSE": valid_scores_MSE / self.k
+                "train acc": train_scores / self.k,
+                "train MSE": train_scores_MSE / self.k,
+                "valid acc": valid_scores / self.k,
+                "valid MSE": valid_scores_MSE / self.k
             })
 
     def save_data(self):
