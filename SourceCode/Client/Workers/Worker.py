@@ -1,9 +1,7 @@
 from PyQt5.QtCore import *
 
-import json
-import traceback
-import sys
 import time
+from SourceCode.Common.FileUtils import *
 
 
 class WorkerSignals(QObject):
@@ -32,17 +30,12 @@ class Worker(QRunnable):
         self.signals.title.emit("Read Config File...")
         self.signals.actual_time.emit(f"Actual Time: Calculating...")
         self.signals.estimated_time.emit(f"Estimated Time: Calculating...")
-        try:
-            with open(self.config_path, 'r', encoding='utf-8') as f:
-                self.inner_run(json.load(f))
-                self.post_inner_run()
-                time.sleep(2)
-        except:
-            print(traceback.format_exc())
-            exctype, value = sys.exc_info()[:2]
-            self.signals.error.emit((str(exctype), str(value), str(traceback.format_exc())))
-        finally:
-            self.signals.finished.emit(None)
+        read_from_file(self.config_path, self.on_config_file_read, self.signals.error.emit, self.on_finished)
+
+    def on_config_file_read(self, config):
+        self.inner_run(config)
+        self.post_inner_run()
+        time.sleep(2)
 
     def inner_run(self, config):
         pass
@@ -50,6 +43,9 @@ class Worker(QRunnable):
     def post_inner_run(self):
         self.signals.subtitle.emit("")
         self.signals.progress.emit(100)
+
+    def on_finished(self):
+        self.signals.finished.emit(None)
 
     def emit_pre_build(self, title):
         self.signals.title.emit(title)

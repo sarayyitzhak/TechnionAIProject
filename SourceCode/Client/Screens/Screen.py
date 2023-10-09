@@ -13,19 +13,16 @@ class Screen(QDialog):
         self.setStyle(QStyleFactory.create("Fusion"))
         self.setStyleSheet('QPushButton {padding: 5ex; margin: 2ex;}')
 
-        screen_layout = QGridLayout()
-
-        scroll = QScrollArea()
         widget = QWidget()
         self.layout = QGridLayout(widget)
+
+        scroll = QScrollArea()
         scroll.setWidget(widget)
         scroll.setFrameShape(QFrame.NoFrame)
-
         scroll.setWidgetResizable(True)
 
+        screen_layout = QGridLayout()
         screen_layout.addWidget(scroll)
-
-        # screen_layout.setContentsMargins(50, 50, 50, 50)
         self.setLayout(screen_layout)
 
     def build_button(self, label, function, row, column=0, column_span=1, align_center=False):
@@ -40,3 +37,14 @@ class Screen(QDialog):
         else:
             layout.addWidget(button, row, column, 1, column_span)
         return button
+
+    @staticmethod
+    def show_error_message_box(value=None):
+        title = "Error" if value is None else value[0]
+        text = "An error occurred" if value is None else value[1]
+        msg = QMessageBox()
+        msg.setIcon(QMessageBox.Critical)
+        msg.setText(text)
+        msg.setWindowTitle(title)
+        msg.setStandardButtons(QMessageBox.Ok)
+        msg.exec()

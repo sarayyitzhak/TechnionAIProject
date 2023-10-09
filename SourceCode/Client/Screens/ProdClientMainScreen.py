@@ -1,10 +1,10 @@
 import io
-import json
 import folium
 from PyQt5.QtCore import QTime
 from PyQt5.QtWebEngineWidgets import QWebEngineView
 from SourceCode.Client.Screens.Screen import Screen
 from PyQt5.QtWidgets import *
+from SourceCode.Common.FileUtils import *
 
 from SourceCode.Server.Utils.Time import Time
 
@@ -16,12 +16,8 @@ class ProdClientMainScreen(Screen):
         self.on_calc_clicked = on_calc_clicked
         self.on_return_clicked = on_return_clicked
 
-        try:
-            with open('./ConfigFiles/prod-config.json', 'r', encoding='utf-8') as f:
-                self.config = json.load(f)
-        except IOError:
-            print("Error")
-
+        self.config = None
+        self.data_config = None
         self.res = {}
 
         self.res_activity = None
@@ -33,12 +29,28 @@ class ProdClientMainScreen(Screen):
         self.street_text_box = None
         self.geo_loc_text_box = None
 
+        self.data_fields = None
+        self.bool_fields = None
+        self.selection_fields = None
+        self.location_fields = None
+        self.open_fields = None
+        self.close_fields = None
+        read_from_file('./ConfigFiles/prod-config.json', self.on_config_file_read, self.show_error_message_box)
+
+    def on_config_file_read(self, config):
+        self.config = config
+
         self.data_fields = [field for field in self.config["fields"]]
         self.bool_fields = [field for field in self.config["fields"] if field["type"] == "BOOL"]
         self.selection_fields = [field for field in self.data_fields if field["type"] == "SELECTION"]
         self.location_fields = [field for field in self.data_fields if field["type"] == "LOCATION"]
         self.open_fields = [field for field in self.data_fields if field["type"] == "OPEN"]
         self.close_fields = [field for field in self.data_fields if field["type"] == "CLOSE"]
+
+        read_from_file('./ConfigFiles/prod-data-config.json', self.on_data_config_file_read, self.show_error_message_box)
+
+    def on_data_config_file_read(self, data_config):
+        self.data_config = data_config
 
         self.init_selection()
 
@@ -79,22 +91,18 @@ class ProdClientMainScreen(Screen):
     def create_combo_box_layout(self):
         combo_box_layout = QGridLayout()
         combo_box_layout.setSpacing(100)
-        try:
-            with open('./ConfigFiles/prod-data-config.json', 'r', encoding='utf-8') as f:
-                config = json.load(f)
-                for idx, field in enumerate([field for field in self.selection_fields]):
-                    self.create_combo_box(combo_box_layout, config, field, 0, idx)
-        except IOError:
-            print("Error")
+
+        for idx, field in enumerate([field for field in self.selection_fields]):
+            self.create_combo_box(combo_box_layout, field, idx)
 
         return combo_box_layout
 
-    def create_combo_box(self, combo_box_layout, config, field, i, j):
+    def create_combo_box(self, combo_box_layout, field, j):
         combo_box = QComboBox(self)
         combo_box.addItem(field["string"])
-        combo_box.addItems(config[field["name"]])
+        combo_box.addItems(self.data_config[field["name"]])
         combo_box.currentTextChanged.connect(lambda: self.on_combo_box_changed(field, combo_box))
-        combo_box_layout.addWidget(combo_box, i, j)
+        combo_box_layout.addWidget(combo_box, 0, j)
 
     def on_combo_box_changed(self, field, combo_box):
         self.res_multi_choice[field["name"]] = combo_box.currentText()
@@ -158,9 +166,9 @@ class ProdClientMainScreen(Screen):
         self.res_activity[field["name"]] = Time(hours=value.hour, minutes=value.minute).get_total_minutes()
 
     def update_location_data(self):
-        self.res_location["city"] = self.city_text_box.text()
-        self.res_location["street"] = self.street_text_box.text()
-        self.res_location["geo_location"] = [float(s) for s in self.geo_loc_text_box.text().split() if s.replace('.', '', 1).isdigit()]
+        self.res_location["city"] = None if self.city_text_box.text() == '' else self.city_text_box.text()
+        self.res_location["street"] = None if self.street_text_box.text() == '' else self.street_text_box.text()
+        self.res_location["geo_location"] = None if self.geo_loc_text_box.text() == '' else [float(s) for s in self.geo_loc_text_box.text().split() if s.replace('.', '', 1).isdigit()]
 
     def set_info(self):
         self.res.update(self.res_bool)
@@ -170,15 +178,20 @@ class ProdClientMainScreen(Screen):
 
     def build_buttons(self):
         calculate_button = self.build_button("Calculate", self.on_calculate_button_clicked, 4, align_center=True)
-        calculate_button.setFixedSize(500, 80)
+        calculate_button.setFixedSize(500, 50)
+        calculate_button.setStyleSheet("padding: 0px;")
 
         return_button = self.build_button("Go Back To Main Screen", self.on_return_clicked, 5, align_center=True)
-        return_button.setFixedSize(400, 80)
+        return_button.setFixedSize(400, 50)
+        return_button.setStyleSheet("padding: 0px;")
 
     def on_calculate_button_clicked(self):
         self.update_location_data()
         self.set_info()
-        self.on_calc_clicked()
+        if None in self.res.values():
+            self.show_error_message_box(("Error", "One or more of the fields are empty\nPlease fill in the missing values"))
+        else:
+            self.on_calc_clicked()
 
     @staticmethod
     def create_text_label(layout, text, i, j):

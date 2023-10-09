@@ -140,12 +140,3 @@ class DevClientMainScreen(Screen):
         self.scroll_layout.removeWidget(widget)
         if self.thread_pool.activeThreadCount() == 0:
             self.scroll.hide()
-
-    @staticmethod
-    def show_error_message_box(value):
-        msg = QMessageBox()
-        msg.setIcon(QMessageBox.Critical)
-        msg.setText(f"{value[1]}\n\n{value[2]}")
-        msg.setWindowTitle(value[0])
-        msg.setStandardButtons(QMessageBox.Ok)
-        msg.exec()
