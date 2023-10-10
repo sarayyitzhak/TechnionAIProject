@@ -1,7 +1,7 @@
 from SourceCode.Client.Screens.Screen import Screen
 
 
-class WelcomeMainScreen(Screen):
+class WelcomeScreen(Screen):
     def __init__(self, on_dev_clicked, on_prod_clicked):
         super().__init__()
 

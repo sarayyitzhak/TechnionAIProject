@@ -20,11 +20,6 @@ class ProdClientMainScreen(Screen):
         self.data_config = None
         self.res = {}
 
-        self.res_activity = None
-        self.res_bool = None
-        self.res_multi_choice = None
-        self.res_location = None
-
         self.city_text_box = None
         self.street_text_box = None
         self.geo_loc_text_box = None
@@ -60,11 +55,11 @@ class ProdClientMainScreen(Screen):
     def init_selection(self):
         open_total_minutes = Time(hours=8, minutes=0).get_total_minutes()
         close_total_minutes = Time(hours=23, minutes=0).get_total_minutes()
-        self.res_activity = {field["name"]: open_total_minutes for field in self.open_fields}
-        self.res_activity.update({field["name"]: close_total_minutes for field in self.close_fields})
-        self.res_bool = {field["name"]: False for field in self.bool_fields}
-        self.res_multi_choice = {field["name"]: None for field in self.selection_fields}
-        self.res_location = {field["name"]: None for field in self.location_fields}
+        self.res.update({field["name"]: open_total_minutes for field in self.open_fields})
+        self.res.update({field["name"]: close_total_minutes for field in self.close_fields})
+        self.res.update({field["name"]: False for field in self.bool_fields})
+        self.res.update({field["name"]: None for field in self.selection_fields})
+        self.res.update({field["name"]: None for field in self.location_fields})
 
     def build_layouts(self):
         self.layout.addLayout(self.create_check_box_layout(), 0, 0)
@@ -86,7 +81,7 @@ class ProdClientMainScreen(Screen):
         checkbox.stateChanged.connect(lambda: self.on_check_box_clicked(field))
 
     def on_check_box_clicked(self, field):
-        self.res_bool[field["name"]] = not self.res_bool[field["name"]]
+        self.res[field["name"]] = not self.res[field["name"]]
 
     def create_combo_box_layout(self):
         combo_box_layout = QGridLayout()
@@ -105,9 +100,9 @@ class ProdClientMainScreen(Screen):
         combo_box_layout.addWidget(combo_box, 0, j)
 
     def on_combo_box_changed(self, field, combo_box):
-        self.res_multi_choice[field["name"]] = None
+        self.res[field["name"]] = None
         if combo_box.currentIndex() > 0:
-            self.res_multi_choice[field["name"]] = combo_box.currentText()
+            self.res[field["name"]] = combo_box.currentText()
 
     def create_address_layout(self):
         address_layout = QGridLayout()
@@ -143,9 +138,9 @@ class ProdClientMainScreen(Screen):
         for idx, day in enumerate(days):
             self.create_activity_hours_labels(activity_hours_layout, idx, day)
         for idx, field in enumerate(self.open_fields):
-            self.create_activity_widget(activity_hours_layout, 2, idx, self.res_activity[field["name"]], field)
+            self.create_activity_widget(activity_hours_layout, 2, idx, self.res[field["name"]], field)
         for idx, field in enumerate(self.close_fields):
-            self.create_activity_widget(activity_hours_layout, 4, idx, self.res_activity[field["name"]], field)
+            self.create_activity_widget(activity_hours_layout, 4, idx, self.res[field["name"]], field)
 
         return activity_hours_layout
 
@@ -165,18 +160,12 @@ class ProdClientMainScreen(Screen):
 
     def update_activity_hours(self, activity_time, field):
         value = activity_time.time().toPyTime()
-        self.res_activity[field["name"]] = Time(hours=value.hour, minutes=value.minute).get_total_minutes()
+        self.res[field["name"]] = Time(hours=value.hour, minutes=value.minute).get_total_minutes()
 
     def update_location_data(self):
-        self.res_location["city"] = None if self.city_text_box.text() == '' else self.city_text_box.text()
-        self.res_location["street"] = None if self.street_text_box.text() == '' else self.street_text_box.text()
-        self.res_location["geo_location"] = None if self.geo_loc_text_box.text() == '' else [float(s) for s in self.geo_loc_text_box.text().split() if s.replace('.', '', 1).isdigit()]
-
-    def set_info(self):
-        self.res.update(self.res_bool)
-        self.res.update(self.res_multi_choice)
-        self.res.update(self.res_location)
-        self.res.update(self.res_activity)
+        self.res["city"] = None if self.city_text_box.text() == '' else self.city_text_box.text()
+        self.res["street"] = None if self.street_text_box.text() == '' else self.street_text_box.text()
+        self.res["geo_location"] = None if self.geo_loc_text_box.text() == '' else [float(s) for s in self.geo_loc_text_box.text().split() if s.replace('.', '', 1).isdigit()]
 
     def build_buttons(self):
         calculate_button = self.build_button("Calculate", self.on_calculate_clicked, 4, align_center=True)
@@ -189,7 +178,6 @@ class ProdClientMainScreen(Screen):
 
     def on_calculate_clicked(self):
         self.update_location_data()
-        self.set_info()
         if None in [self.res[key] for key in self.res if key != "type"]:
             self.show_error_message_box(("Error", "One or more of the fields are empty\nPlease fill in the missing values"))
         else:
