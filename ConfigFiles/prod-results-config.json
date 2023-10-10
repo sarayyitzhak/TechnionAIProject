@@ -1,0 +1,176 @@
+{
+  "fields": [
+      {
+        "string": "Type",
+        "name": "type",
+        "type": "FIRST_ROW"
+      },
+      {
+        "string": "Price level",
+        "name": "price_level",
+        "type": "FIRST_ROW"
+      },
+      {
+        "string": "Geo location",
+        "name": "geo_location",
+        "type": "FIRST_ROW"
+      },
+      {
+        "string": "Dine in",
+        "name": "dine_in",
+        "type": "BOOL"
+      },
+      {
+        "string": "Delivery",
+        "name": "delivery",
+        "type": "BOOL"
+      },
+      {
+        "string": "Reservable",
+        "name": "reservable",
+        "type": "BOOL"
+      },
+      {
+        "string": "Serves beer",
+        "name": "serves_beer",
+        "type": "BOOL"
+      },
+      {
+        "string": "Serves breakfast",
+        "name": "serves_breakfast",
+        "type": "BOOL"
+      },
+      {
+        "string": "Serves brunch",
+        "name": "serves_brunch",
+        "type": "BOOL"
+      },
+      {
+        "string": "Serves dinner",
+        "name": "serves_dinner",
+        "type": "BOOL"
+      },
+      {
+        "string": "Serves lunch",
+        "name": "serves_lunch",
+        "type": "BOOL"
+      },
+      {
+        "string": "Serves vegetarian food",
+        "name": "serves_vegetarian_food",
+        "type": "BOOL"
+      },
+      {
+        "string": "Takeout",
+        "name": "takeout",
+        "type": "BOOL"
+      },
+      {
+        "string": "Wheelchair Accessible Entrance",
+        "name": "wheelchair_accessible_entrance",
+        "type": "BOOL"
+      },
+      {
+        "string": "Curbside Pickup",
+        "name": "curbside_pickup",
+        "type": "BOOL"
+      },
+      {
+        "string": "Website",
+        "name": "website",
+        "type": "BOOL"
+      },
+      {
+        "string": "Kosher",
+        "name": "kosher",
+        "type": "BOOL"
+      },
+      {
+        "string": "Open on Saturday",
+        "name": "open_on_saturday",
+        "type": "BOOL"
+      },
+      {
+        "string": "Sunday activity hours",
+        "from_name": "sunday_open",
+        "to_name": "sunday_close",
+        "type": "ACTIVITY_HOURS"
+      },
+      {
+        "string": "Monday activity hours",
+        "from_name": "monday_open",
+        "to_name": "monday_close",
+        "type": "ACTIVITY_HOURS"
+      },
+      {
+        "string": "Tuesday activity hours",
+        "from_name": "tuesday_open",
+        "to_name": "tuesday_close",
+        "type": "ACTIVITY_HOURS"
+      },
+      {
+        "string": "Wednesday activity hours",
+        "from_name": "wednesday_open",
+        "to_name": "wednesday_close",
+        "type": "ACTIVITY_HOURS"
+      },
+      {
+        "string": "Thursday activity hours",
+        "from_name": "thursday_open",
+        "to_name": "thursday_close",
+        "type": "ACTIVITY_HOURS"
+      },
+      {
+        "string": "Friday activity hours",
+        "from_name": "friday_open",
+        "to_name": "friday_close",
+        "type": "ACTIVITY_HOURS"
+      },
+      {
+        "string": "Saturday activity hours",
+        "from_name": "saturday_open",
+        "to_name": "saturday_close",
+        "type": "ACTIVITY_HOURS"
+      },
+      {
+        "string": "Percent of religious",
+        "name": "percent of religious",
+        "type": "NUMBER"
+      },
+      {
+        "string": "Socio-economic rank",
+        "name": "socio-economic rank",
+        "type": "NUMBER"
+      },
+      {
+        "string": "Stores in radius of 100 meters",
+        "name": "store_100",
+        "type": "NUMBER"
+      },
+      {
+        "string": "Stores in radius of 500 meters",
+        "name": "store_500",
+        "type": "NUMBER"
+      },
+      {
+        "string": "Restaurants in radius of 100 meters",
+        "name": "rest_100",
+        "type": "NUMBER"
+      },
+      {
+        "string": "Restaurants in radius of 500 meters",
+        "name": "rest_500",
+        "type": "NUMBER"
+      },
+      {
+        "string": "Bus stations in radius of 100 meters",
+        "name": "bus_station_100",
+        "type": "NUMBER"
+      },
+      {
+        "string": "Bus stations in radius of 500 meters",
+        "name": "bus_station_500",
+        "type": "NUMBER"
+      }
+  ]
+}

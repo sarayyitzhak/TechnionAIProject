@@ -41,7 +41,7 @@
             "type": "BOOL"
         },
         {
-            "string": "Serves vegeterian food",
+            "string": "Serves vegetarian food",
             "name": "serves_vegetarian_food",
             "type": "BOOL"
         },
@@ -69,10 +69,6 @@
             "string": "Kosher",
             "name": "kosher",
             "type": "BOOL"
-        },
-        {
-            "name": "name",
-            "type": "STRING"
         },
         {
             "string": "Select price level",
@@ -151,10 +147,6 @@
         {
             "name": "saturday_close",
             "type": "CLOSE"
-        },
-        {
-            "name": "open_on_saturday",
-            "type": "SATURDAY"
         }
     ],
     "days": [

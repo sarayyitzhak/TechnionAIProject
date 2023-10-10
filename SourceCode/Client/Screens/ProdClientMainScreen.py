@@ -24,7 +24,6 @@ class ProdClientMainScreen(Screen):
         self.street_text_box = None
         self.geo_loc_text_box = None
 
-        self.data_fields = None
         self.bool_fields = None
         self.selection_fields = None
         self.location_fields = None
@@ -35,12 +34,11 @@ class ProdClientMainScreen(Screen):
     def on_config_file_read(self, config):
         self.config = config
 
-        self.data_fields = [field for field in self.config["fields"]]
         self.bool_fields = [field for field in self.config["fields"] if field["type"] == "BOOL"]
-        self.selection_fields = [field for field in self.data_fields if field["type"] == "SELECTION"]
-        self.location_fields = [field for field in self.data_fields if field["type"] == "LOCATION"]
-        self.open_fields = [field for field in self.data_fields if field["type"] == "OPEN"]
-        self.close_fields = [field for field in self.data_fields if field["type"] == "CLOSE"]
+        self.selection_fields = [field for field in self.config["fields"] if field["type"] == "SELECTION"]
+        self.location_fields = [field for field in self.config["fields"] if field["type"] == "LOCATION"]
+        self.open_fields = [field for field in self.config["fields"] if field["type"] == "OPEN"]
+        self.close_fields = [field for field in self.config["fields"] if field["type"] == "CLOSE"]
 
         read_from_file('./ConfigFiles/prod-data-config.json', self.on_data_config_file_read, self.show_error_message_box)
 
@@ -178,6 +176,13 @@ class ProdClientMainScreen(Screen):
 
     def on_calculate_clicked(self):
         self.update_location_data()
+        # REMOVE
+        self.res["city"] = "חיפה"
+        self.res["street"] = "הרב מימון"
+        self.res["geo_location"] = [32.805, 35.0079]
+        self.res["price_level"] = "2"
+        self.res["type"] = "חומוסייה"
+
         if None in [self.res[key] for key in self.res if key != "type"]:
             self.show_error_message_box(("Error", "One or more of the fields are empty\nPlease fill in the missing values"))
         else:

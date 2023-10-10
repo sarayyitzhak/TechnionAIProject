@@ -2,141 +2,141 @@
   "decision_tree_path": "./DataOutput/algo-tree.json",
   "data_parser_config_path": "./ConfigFiles/data-parser-config.json",
   "fields": [
-    {
-      "name": "dine_in",
-      "type": "BOOL"
-    },
-    {
-      "name": "delivery",
-      "type": "BOOL"
-    },
-    {
-      "name": "reservable",
-      "type": "BOOL"
-    },
-    {
-      "name": "serves_beer",
-      "type": "BOOL"
-    },
-    {
-      "name": "serves_breakfast",
-      "type": "BOOL"
-    },
-    {
-      "name": "serves_brunch",
-      "type": "BOOL"
-    },
-    {
-      "name": "serves_dinner",
-      "type": "BOOL"
-    },
-    {
-      "name": "serves_lunch",
-      "type": "BOOL"
-    },
-    {
-      "name": "serves_vegetarian_food",
-      "type": "BOOL"
-    },
-    {
-      "name": "takeout",
-      "type": "BOOL"
-    },
-    {
-      "name": "wheelchair_accessible_entrance",
-      "type": "BOOL"
-    },
-    {
-      "name": "curbside_pickup",
-      "type": "BOOL"
-    },
-    {
-      "name": "website",
-      "type": "BOOL"
-    },
-    {
-      "name": "price_level",
-      "type": "NUMBER"
-    },
-    {
-        "name": "sunday_open",
-        "type": "ACTIVITY_HOURS"
-    },
-    {
-        "name": "sunday_close",
-        "type": "ACTIVITY_HOURS"
-    },
-    {
-        "name": "wednesday_open",
-        "type": "ACTIVITY_HOURS"
-    },
-    {
-        "name": "wednesday_close",
-        "type": "ACTIVITY_HOURS"
-    },
-    {
-        "name": "friday_open",
-        "type": "ACTIVITY_HOURS"
-    },
-    {
-        "name": "friday_close",
-        "type": "ACTIVITY_HOURS"
-    },
-    {
-        "name": "saturday_open",
-        "type": "ACTIVITY_HOURS"
-    },
-    {
-        "name": "saturday_close",
-        "type": "ACTIVITY_HOURS"
-    },
-    {
-      "name": "open_on_saturday",
-      "type": "BOOL"
-    },
-    {
-      "name": "geo_location",
-      "type": "GEO_LOCATION"
-    },
-    {
-      "name": "percent of religious",
-      "type": "NUMBER"
-    },
-    {
-      "name": "socio-economic rank",
-      "type": "NUMBER"
-    },
-    {
-      "name": "store_100",
-      "type": "NUMBER"
-    },
-    {
-      "name": "store_500",
-      "type": "NUMBER"
-    },
-    {
-      "name": "rest_100",
-      "type": "NUMBER"
-    },
-    {
-      "name": "rest_500",
-      "type": "NUMBER"
-    },
-    {
-      "name": "bus_station_100",
-      "type": "NUMBER"
-    },
-    {
-      "name": "bus_station_500",
-      "type": "NUMBER"
-    },
-    {
-      "name": "type",
-      "type": "STRING"
-    },
-    {
-      "name": "kosher",
-      "type": "BOOL"
-    }
+      {
+        "name": "dine_in",
+        "type": "BOOL"
+      },
+      {
+        "name": "delivery",
+        "type": "BOOL"
+      },
+      {
+        "name": "reservable",
+        "type": "BOOL"
+      },
+      {
+        "name": "serves_beer",
+        "type": "BOOL"
+      },
+      {
+        "name": "serves_breakfast",
+        "type": "BOOL"
+      },
+      {
+        "name": "serves_brunch",
+        "type": "BOOL"
+      },
+      {
+        "name": "serves_dinner",
+        "type": "BOOL"
+      },
+      {
+        "name": "serves_lunch",
+        "type": "BOOL"
+      },
+      {
+        "name": "serves_vegetarian_food",
+        "type": "BOOL"
+      },
+      {
+        "name": "takeout",
+        "type": "BOOL"
+      },
+      {
+        "name": "wheelchair_accessible_entrance",
+        "type": "BOOL"
+      },
+      {
+        "name": "curbside_pickup",
+        "type": "BOOL"
+      },
+      {
+        "name": "website",
+        "type": "BOOL"
+      },
+      {
+        "name": "price_level",
+        "type": "NUMBER"
+      },
+      {
+          "name": "sunday_open",
+          "type": "ACTIVITY_HOURS"
+      },
+      {
+          "name": "sunday_close",
+          "type": "ACTIVITY_HOURS"
+      },
+      {
+          "name": "wednesday_open",
+          "type": "ACTIVITY_HOURS"
+      },
+      {
+          "name": "wednesday_close",
+          "type": "ACTIVITY_HOURS"
+      },
+      {
+          "name": "friday_open",
+          "type": "ACTIVITY_HOURS"
+      },
+      {
+          "name": "friday_close",
+          "type": "ACTIVITY_HOURS"
+      },
+      {
+          "name": "saturday_open",
+          "type": "ACTIVITY_HOURS"
+      },
+      {
+          "name": "saturday_close",
+          "type": "ACTIVITY_HOURS"
+      },
+      {
+        "name": "open_on_saturday",
+        "type": "BOOL"
+      },
+      {
+        "name": "geo_location",
+        "type": "GEO_LOCATION"
+      },
+      {
+        "name": "percent of religious",
+        "type": "NUMBER"
+      },
+      {
+        "name": "socio-economic rank",
+        "type": "NUMBER"
+      },
+      {
+        "name": "store_100",
+        "type": "NUMBER"
+      },
+      {
+        "name": "store_500",
+        "type": "NUMBER"
+      },
+      {
+        "name": "rest_100",
+        "type": "NUMBER"
+      },
+      {
+        "name": "rest_500",
+        "type": "NUMBER"
+      },
+      {
+        "name": "bus_station_100",
+        "type": "NUMBER"
+      },
+      {
+        "name": "bus_station_500",
+        "type": "NUMBER"
+      },
+      {
+        "name": "type",
+        "type": "STRING"
+      },
+      {
+        "name": "kosher",
+        "type": "BOOL"
+      }
   ]
 }

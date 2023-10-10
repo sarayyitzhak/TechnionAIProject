@@ -17,6 +17,9 @@ class Time:
             self.hours = hours
             self.minutes = minutes
 
+    def __str__(self):
+        return f"{str(int(self.hours)).zfill(2)}:{str(int(self.minutes)).zfill(2)}"
+
     def get_total_minutes(self):
         return (self.hours * 60) + self.minutes
 

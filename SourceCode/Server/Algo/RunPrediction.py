@@ -37,7 +37,6 @@ class RunPrediction:
 
     def res_calc_features_by_loc(self):
         data = {}
-        cbs_data = None
         try:
             with open(self.data_parser_config_path, 'r', encoding='utf-8') as f:
                 data_filler = DataFiller(json.load(f))
@@ -45,9 +44,9 @@ class RunPrediction:
                 data.update(data_filler.get_places_data_by_point(tuple(self.user_selection["geo_location"]), None))
                 data_filler.get_cbs_data()
                 cbs_data = data_filler.get_cbs_data_by_address(self.user_selection["city"], self.user_selection["street"])
+                data.update(cbs_data if cbs_data is not None else {"percent of religious": None, "socio-economic rank": None})
         except IOError:
             print("Error")
-        data.update(cbs_data if cbs_data is not None else {"percent of religious": None, "socio-economic rank": None})
         return data
 
     def prepare_tree_input(self):
