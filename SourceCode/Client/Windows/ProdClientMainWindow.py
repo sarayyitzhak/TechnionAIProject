@@ -37,12 +37,14 @@ class ProdClientMainWindow(QMainWindow):
     def on_calc_button_clicked(self):
         self.screens.setCurrentWidget(self.prod_loading_screen)
         QCoreApplication.processEvents()
-        run_prediction_worker = RunPredictionWorker("./ConfigFiles/prediction-config.json", self.prod_main_screen.res)
+        user_selection = self.prod_main_screen.res
+        rest_types = self.prod_main_screen.data_config["type"]
+        run_prediction_worker = RunPredictionWorker("./ConfigFiles/prediction-config.json", user_selection, rest_types)
         run_prediction_worker.signals.finished.connect(self.calc_finished)
         self.thread_pool.start(run_prediction_worker)
 
-    def calc_finished(self, rate):
-        self.prod_results_screen.set_rate(rate)
+    def calc_finished(self, result):
+        self.prod_results_screen.set_result(result)
         self.screens.setCurrentWidget(self.prod_results_screen)
 
     def on_try_again_button_clicked(self):

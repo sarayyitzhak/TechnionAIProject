@@ -12,10 +12,13 @@ class RunPrediction:
         self.formatted_tree = None
         self.tree_input = None
 
+    def set_rest_type(self, rest_type):
+        self.user_selection["type"] = rest_type
+
     def pre_run_prediction(self):
         self.fill_user_data()
-        self.prepare_tree_input()
         self.get_formatted_tree()
+        self.prepare_tree_input()
 
     def run_prediction(self):
         prediction = Prediction()
@@ -42,7 +45,7 @@ class RunPrediction:
                 data.update(data_filler.get_places_data_by_point(tuple(self.user_selection["geo_location"]), None))
                 data_filler.get_cbs_data()
                 cbs_data = data_filler.get_cbs_data_by_address(self.user_selection["city"], self.user_selection["street"])
-        except:
+        except IOError:
             print("Error")
         data.update(cbs_data if cbs_data is not None else {"percent of religious": None, "socio-economic rank": None})
         return data
@@ -62,5 +65,5 @@ class RunPrediction:
         try:
             with open(self.decision_tree_path, 'r', encoding='utf-8') as f:
                 self.formatted_tree = json.load(f)
-        except:
+        except IOError:
             print("Error")

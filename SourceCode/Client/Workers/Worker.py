@@ -15,15 +15,17 @@ class WorkerSignals(QObject):
 
 
 class Worker(QRunnable):
-    def __init__(self, config_path):
+    def __init__(self, config_path, delay_after_run=True):
         super(Worker, self).__init__()
         self.config_path = config_path
+        self.delay_after_run = delay_after_run
         self.signals = WorkerSignals()
         self.completed_percentage = 0
         self.completed_index = 0
         self.actual_time = 0
         self.start_time = 0
         self.last_time = 0
+        self.result = None
 
     @pyqtSlot()
     def run(self):
@@ -33,9 +35,10 @@ class Worker(QRunnable):
         read_from_file(self.config_path, self.on_config_file_read, self.signals.error.emit, self.on_finished)
 
     def on_config_file_read(self, config):
-        self.inner_run(config)
+        self.result = self.inner_run(config)
         self.post_inner_run()
-        time.sleep(2)
+        if self.delay_after_run:
+            time.sleep(2)
 
     def inner_run(self, config):
         pass
@@ -45,7 +48,7 @@ class Worker(QRunnable):
         self.signals.progress.emit(100)
 
     def on_finished(self):
-        self.signals.finished.emit(None)
+        self.signals.finished.emit(self.result)
 
     def emit_pre_build(self, title):
         self.signals.title.emit(title)

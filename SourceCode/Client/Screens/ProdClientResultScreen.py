@@ -32,6 +32,9 @@ class ProdClientResultScreen(Screen):
         try_again_button = self.build_button("Try Again", self.on_try_again_clicked, 3)
         try_again_button.setFixedSize(350, 70)
 
+    def set_result(self, result):
+        self.set_rate(result["prediction"].value)
+
     def set_rate(self, rate):
         self.rate_label.setText(str(rate))
         pix_map = QPixmap(self.choose_chef_image(rate))

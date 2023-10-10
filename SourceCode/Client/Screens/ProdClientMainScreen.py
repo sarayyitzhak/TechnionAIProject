@@ -105,7 +105,9 @@ class ProdClientMainScreen(Screen):
         combo_box_layout.addWidget(combo_box, 0, j)
 
     def on_combo_box_changed(self, field, combo_box):
-        self.res_multi_choice[field["name"]] = combo_box.currentText()
+        self.res_multi_choice[field["name"]] = None
+        if combo_box.currentIndex() > 0:
+            self.res_multi_choice[field["name"]] = combo_box.currentText()
 
     def create_address_layout(self):
         address_layout = QGridLayout()
@@ -177,18 +179,18 @@ class ProdClientMainScreen(Screen):
         self.res.update(self.res_activity)
 
     def build_buttons(self):
-        calculate_button = self.build_button("Calculate", self.on_calculate_button_clicked, 4, align_center=True)
+        calculate_button = self.build_button("Calculate", self.on_calculate_clicked, 4, align_center=True)
         calculate_button.setFixedSize(500, 50)
         calculate_button.setStyleSheet("padding: 0px;")
 
-        return_button = self.build_button("Go Back To Main Screen", self.on_return_clicked, 5, align_center=True)
+        return_button = self.build_button("Go Back To Main Screen", self.on_return_clicked, 6, align_center=True)
         return_button.setFixedSize(400, 50)
         return_button.setStyleSheet("padding: 0px;")
 
-    def on_calculate_button_clicked(self):
+    def on_calculate_clicked(self):
         self.update_location_data()
         self.set_info()
-        if None in self.res.values():
+        if None in [self.res[key] for key in self.res if key != "type"]:
             self.show_error_message_box(("Error", "One or more of the fields are empty\nPlease fill in the missing values"))
         else:
             self.on_calc_clicked()

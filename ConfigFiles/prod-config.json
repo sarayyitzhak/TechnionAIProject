@@ -80,7 +80,7 @@
             "type": "SELECTION"
         },
         {
-            "string": "Select restaurant type",
+            "string": "Find best restaurant type",
             "name": "type",
             "type": "SELECTION"
         },
