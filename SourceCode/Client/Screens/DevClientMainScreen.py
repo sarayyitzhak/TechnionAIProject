@@ -8,7 +8,7 @@ from SourceCode.Client.Workers.CbsDataBuilderWorker import *
 from SourceCode.Client.Workers.GovDataBuilderWorker import *
 from SourceCode.Client.Workers.RunAlgorithmWorker import *
 from SourceCode.Client.Workers.ProdConfigDataCreatorWorker import *
-from SourceCode.Client.Workers.FindHyperParamsWorker import *
+from SourceCode.Client.Workers.TuneHyperParamsWorker import *
 from SourceCode.Client.Workers.Worker import *
 from SourceCode.Server.Algo.ShowHyperParamsAnalysis import *
 
@@ -37,7 +37,7 @@ class DevClientMainScreen(Screen):
         self.build_button("Build All Data", self.on_build_all_clicked, 1, 0, 4)
         self.build_button("Parse Data", self.on_parse_data_clicked, 2, 0, 4)
         self.build_button("Create Production Data Config", self.on_data_config_clicked, 3, 0, 4)
-        self.build_button("Find Hyper Params", self.on_find_hyper_params_clicked, 4, 0, 4)
+        self.build_button("Tune Hyper Params", self.on_tune_hyper_params_clicked, 4, 0, 4)
         self.build_button("Show Validation Analysis", self.on_show_valid_analysis_clicked, 5, 0, 1)
         self.build_button("Show Train Analysis", self.on_show_train_analysis_clicked, 5, 1, 1)
         self.build_button("Show Validation MSE Analysis", self.on_show_valid_mse_analysis_clicked, 5, 2, 1)
@@ -81,8 +81,8 @@ class DevClientMainScreen(Screen):
     def on_parse_data_clicked(self):
         self.on_button_clicked(DataParserWorker('./ConfigFiles/data-parser-config.json'))
 
-    def on_find_hyper_params_clicked(self):
-        self.on_button_clicked(FindHyperParamsWorker('./ConfigFiles/find-hyper-params-config.json'))
+    def on_tune_hyper_params_clicked(self):
+        self.on_button_clicked(TuneHyperParamsWorker('./ConfigFiles/tune-hyper-params-config.json'))
 
     def on_show_valid_analysis_clicked(self):
         self.on_show_hyper_params_analysis_clicked('VALIDATION')

@@ -4,7 +4,7 @@ from SourceCode.Server.Algo.AlgoUtils import *
 import numpy as np
 
 
-class FindHyperParams:
+class TuneHyperParams:
     def __init__(self, config, progress_func):
         self.data_set_path = config["data_set_path"]
         self.target_field = config["target_field"]
