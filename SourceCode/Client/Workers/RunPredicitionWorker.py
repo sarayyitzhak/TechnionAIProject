@@ -11,10 +11,9 @@ class RunPredictionWorker(Worker):
     def inner_run(self, config):
         best_prediction = None
         best_user_selection = None
-        find_best_rest_type = self.user_selection["type"] is None
         run_prediction = RunPrediction(config, self.user_selection)
         run_prediction.pre_run_prediction()
-        if find_best_rest_type:
+        if self.user_selection["type"] is None:
             for rest_type in self.rest_types:
                 run_prediction.set_rest_type(rest_type)
                 run_prediction.prepare_tree_input()
@@ -27,7 +26,6 @@ class RunPredictionWorker(Worker):
             best_user_selection = run_prediction.user_selection
 
         return {
-            "find_best_rest_type": find_best_rest_type,
             "prediction": best_prediction,
             "user_selection": best_user_selection
         }
