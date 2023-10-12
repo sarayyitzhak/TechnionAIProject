@@ -82,12 +82,14 @@
             "type": "SELECTION"
         },
         {
+            "string": "Select city",
             "name": "city",
-            "type": "LOCATION"
+            "type": "LOCATION_SELECTION"
         },
         {
+            "string": "Select street",
             "name": "street",
-            "type": "LOCATION"
+            "type": "LOCATION_SELECTION"
         },
         {
             "name": "geo_location",

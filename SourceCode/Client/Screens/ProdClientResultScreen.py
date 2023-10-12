@@ -52,7 +52,8 @@ class ProdClientResultScreen(Screen):
         row_index += 3
 
         for idx, field in enumerate([field for field in self.config["fields"] if field["type"] == "NUMBER"]):
-            label = self.get_user_selection_label(field['string'], str(user_selection[field['name']]))
+            value = "Unknown" if user_selection[field['name']] is None else str(user_selection[field['name']])
+            label = self.get_user_selection_label(field['string'], value)
             self.layout.addWidget(label, row_index + idx % 2, int(idx / 2), 1, 1)
 
         row_index = self.layout.rowCount()

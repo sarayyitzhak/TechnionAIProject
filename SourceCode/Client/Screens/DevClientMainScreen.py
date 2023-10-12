@@ -7,7 +7,7 @@ from SourceCode.Client.Workers.RestDataBuilderWorker import *
 from SourceCode.Client.Workers.CbsDataBuilderWorker import *
 from SourceCode.Client.Workers.GovDataBuilderWorker import *
 from SourceCode.Client.Workers.RunAlgorithmWorker import *
-from SourceCode.Client.Workers.ProdConfigDataCreatorWorker import *
+from SourceCode.Client.Workers.ProdDataConfigCreatorWorker import *
 from SourceCode.Client.Workers.TuneHyperParamsWorker import *
 from SourceCode.Client.Workers.Worker import *
 from SourceCode.Server.Algo.ShowHyperParamsAnalysis import *
@@ -76,7 +76,7 @@ class DevClientMainScreen(Screen):
         self.on_build_gov_clicked()
 
     def on_data_config_clicked(self):
-        self.on_button_clicked(ProdConfigDataCreatorWorker('./ConfigFiles/prod-data-creator-config.json'))
+        self.on_button_clicked(ProdDataConfigCreatorWorker('./ConfigFiles/prod-data-creator-config.json'))
 
     def on_parse_data_clicked(self):
         self.on_button_clicked(DataParserWorker('./ConfigFiles/data-parser-config.json'))

@@ -1,4 +1,5 @@
 {
     "data_set_path": "./DataOutput/data.csv",
+    "cbs_data_set_path": "./DataOutput/cbs-data.csv",
     "output_path": "./ConfigFiles/prod-data-config.json"
 }

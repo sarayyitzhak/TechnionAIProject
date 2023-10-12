@@ -21,12 +21,12 @@ class ProdClientMainScreen(Screen):
         self.res = {}
         self.find_best_rest_type = False
 
-        self.city_text_box = None
-        self.street_text_box = None
+        self.street_combo_box = None
         self.geo_loc_text_box = None
 
         self.bool_fields = None
         self.selection_fields = None
+        self.location_selection_fields = None
         self.location_fields = None
         self.open_fields = None
         self.close_fields = None
@@ -37,6 +37,7 @@ class ProdClientMainScreen(Screen):
 
         self.bool_fields = [field for field in self.config["fields"] if field["type"] == "BOOL"]
         self.selection_fields = [field for field in self.config["fields"] if field["type"] == "SELECTION"]
+        self.location_selection_fields = [field for field in self.config["fields"] if field["type"] == "LOCATION_SELECTION"]
         self.location_fields = [field for field in self.config["fields"] if field["type"] == "LOCATION"]
         self.open_fields = [field for field in self.config["fields"] if field["type"] == "OPEN"]
         self.close_fields = [field for field in self.config["fields"] if field["type"] == "CLOSE"]
@@ -58,6 +59,7 @@ class ProdClientMainScreen(Screen):
         self.res.update({field["name"]: close_total_minutes for field in self.close_fields})
         self.res.update({field["name"]: False for field in self.bool_fields})
         self.res.update({field["name"]: None for field in self.selection_fields})
+        self.res.update({field["name"]: None for field in self.location_selection_fields})
         self.res.update({field["name"]: None for field in self.location_fields})
 
     def build_layouts(self):
@@ -97,6 +99,7 @@ class ProdClientMainScreen(Screen):
         if field["name"] == "type":
             combo_box.addItem(field["find_string"])
         combo_box.addItems(self.data_config[field["name"]])
+        # combo_box.setEditable(True)
         combo_box.currentTextChanged.connect(lambda: self.on_combo_box_changed(field, combo_box))
         combo_box_layout.addWidget(combo_box, 0, j)
 
@@ -117,11 +120,38 @@ class ProdClientMainScreen(Screen):
         coor_layout = QGridLayout()
         coor_layout.setContentsMargins(0, 50, 50, 50)
         self.create_text_label(coor_layout, "Please enter your city and street below", 0, 0)
-        self.city_text_box = self.create_address_text_box(coor_layout, "Enter city", 1, 0)
-        self.street_text_box = self.create_address_text_box(coor_layout, "Enter street", 2, 0)
+        self.create_city(coor_layout, self.location_selection_fields[0])
+        self.street_combo_box = self.create_street(coor_layout, self.location_selection_fields[1])
         self.create_text_label(coor_layout, "Then find your coordinates in the map and enter them below", 3, 0)
         self.geo_loc_text_box = self.create_address_text_box(coor_layout, "Enter coordinates", 4, 0)
         address_layout.addLayout(coor_layout, 0, 0)
+
+    def create_city(self, coor_layout, field):
+        combo_box = QComboBox(self)
+        # combo_box.setEditable(True)
+        combo_box.addItem(field["string"])
+        combo_box.addItems(self.data_config["city_streets"].keys())
+        combo_box.currentTextChanged.connect(lambda: self.on_city_changed(field, combo_box))
+        coor_layout.addWidget(combo_box, 1, 0)
+
+    def on_city_changed(self, field, combo_box):
+        for loc_select_field in self.location_selection_fields:
+            self.res[loc_select_field["name"]] = None
+        street_title = self.street_combo_box.itemText(0)
+        self.street_combo_box.clear()
+        if combo_box.currentIndex() > 0:
+            self.res[field["name"]] = combo_box.currentText()
+            self.street_combo_box.addItem(street_title)
+            self.street_combo_box.addItems(self.data_config["city_streets"][self.res[field["name"]]])
+            self.street_combo_box.addItem("My street is not on the list")
+
+    def create_street(self, coor_layout, field):
+        combo_box = QComboBox(self)
+        # combo_box.setEditable(True)
+        combo_box.addItem(field["string"])
+        combo_box.currentTextChanged.connect(lambda: self.on_combo_box_changed(field, combo_box))
+        coor_layout.addWidget(combo_box, 2, 0)
+        return combo_box
 
     def create_map(self, address_layout):
         def_location = (self.config["default_location"]["lat"], self.config["default_location"]["lng"])
@@ -166,8 +196,6 @@ class ProdClientMainScreen(Screen):
         self.res[field["name"]] = Time(hours=value.hour, minutes=value.minute).get_total_minutes()
 
     def update_location_data(self):
-        self.res["city"] = None if self.city_text_box.text() == '' else self.city_text_box.text()
-        self.res["street"] = None if self.street_text_box.text() == '' else self.street_text_box.text()
         self.res["geo_location"] = None if self.geo_loc_text_box.text() == '' else [float(s) for s in self.geo_loc_text_box.text().split() if s.replace('.', '', 1).isdigit()]
 
     def build_buttons(self):
