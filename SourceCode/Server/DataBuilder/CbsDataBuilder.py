@@ -71,9 +71,6 @@ class CbsDataBuilder:
         self.religious_df.reset_index(drop=True)
         for idx in [0, 2]:
             self.transition_key_df.iloc[:, idx] = self.str_col_to_int(self.transition_key_df.iloc[:, idx])
-        for row in range(len(self.streets_df)):
-            self.streets_df.iloc[:, 0] = self.streets_df.iloc[:, 0].replace(self.cities_config["city_names_to_replace"]["old"],
-                                                                            self.cities_config["city_names_to_replace"]["new"])
 
     def join_data_frames(self, df, df_config):
         df_by_street_raw = df.merge(self.transition_key_df, how='left',
@@ -112,6 +109,8 @@ class CbsDataBuilder:
     def add_religious_to_dict(self):
         for row in range(len(self.rel_by_street_df)):
             for city, street in self.get_city_street_list(self.rel_by_street_df, row, 0, 2):
+                if self.progress_func is not None:
+                    self.progress_func(f"{street}, {city}", self.rel_by_street_count)
                 people_count = self.rel_by_street_df.iloc[:, 3][row]
                 religions_count = self.rel_by_street_df.iloc[:, 4][row]
                 if religions_count == '..':
@@ -119,23 +118,23 @@ class CbsDataBuilder:
                 if self.streets_dict[(street, city)]["amount of people"] is None:
                     self.init_rel_by_street(street, city)
                 self.update_rel_by_street(street, city, people_count, religions_count)
-                if self.progress_func is not None:
-                    self.progress_func(f"{street}, {city}", self.rel_by_street_count)
 
     def add_ser_to_dict(self):
         for row in range(len(self.ser_by_street_df)):
             for city, street in self.get_city_street_list(self.ser_by_street_df, row, 0, 4):
+                if self.progress_func is not None:
+                    self.progress_func(f"{street}, {city}", self.ser_by_street_count)
                 index_value = self.ser_by_street_df.iloc[:, 1][row]
                 rank = self.ser_by_street_df.iloc[:, 2][row]
                 cluster = self.ser_by_street_df.iloc[:, 3][row]
                 if self.streets_dict[(street, city)]["socio-economic index value"] is None:
                     self.init_ser_by_street(street, city)
                 self.update_ser_by_street(street, city, index_value, rank, cluster)
-                if self.progress_func is not None:
-                    self.progress_func(f"{street}, {city}", self.ser_by_street_count)
 
     def data_dict_to_list(self):
         for street, city in self.streets_dict.keys():
+            if self.progress_func is not None:
+                self.progress_func(f"{street}, {city}", len(self.streets_dict))
             value = self.streets_dict[(street, city)]
             percent_of_religious, index_value_avg, rank_avg, cluster_avg = None, None, None, None
             if value["amount of religious"] is not None:
@@ -146,16 +145,17 @@ class CbsDataBuilder:
                 rank_avg = round(value["socio-economic rank"] / socio_economic_counter, 3)
                 cluster_avg = round(value["socio-economic cluster"] / socio_economic_counter, 3)
 
+            old_city_names = self.cities_config["city_names_to_replace"]["old"]
+            new_city_names = self.cities_config["city_names_to_replace"]["new"]
+            new_city = new_city_names[old_city_names.index(city)] if city in old_city_names else city
             self.data.append({
-                "city": city,
+                "city": new_city,
                 "street": street,
                 "percent of religious": percent_of_religious,
                 "socio-economic index value": index_value_avg,
                 "socio-economic rank": rank_avg,
                 "socio-economic cluster": cluster_avg
             })
-            if self.progress_func is not None:
-                self.progress_func(f"{street}, {city}", len(self.streets_dict))
 
     def get_street_count(self, df, city_col, street_col):
         return sum([len(self.get_city_street_list(df, row, city_col, street_col)) for row in range(len(df))])
