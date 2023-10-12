@@ -76,7 +76,8 @@
             "type": "SELECTION"
         },
         {
-            "string": "Find best restaurant type",
+            "string": "Select restaurant type",
+            "find_string": "Find best restaurant type",
             "name": "type",
             "type": "SELECTION"
         },

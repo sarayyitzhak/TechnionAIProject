@@ -19,6 +19,7 @@ class ProdClientMainScreen(Screen):
         self.config = None
         self.data_config = None
         self.res = {}
+        self.find_best_rest_type = False
 
         self.city_text_box = None
         self.street_text_box = None
@@ -93,12 +94,16 @@ class ProdClientMainScreen(Screen):
     def create_combo_box(self, combo_box_layout, field, j):
         combo_box = QComboBox(self)
         combo_box.addItem(field["string"])
+        if field["name"] == "type":
+            combo_box.addItem(field["find_string"])
         combo_box.addItems(self.data_config[field["name"]])
         combo_box.currentTextChanged.connect(lambda: self.on_combo_box_changed(field, combo_box))
         combo_box_layout.addWidget(combo_box, 0, j)
 
     def on_combo_box_changed(self, field, combo_box):
         self.res[field["name"]] = None
+        if field["name"] == "type":
+            self.find_best_rest_type = combo_box.currentIndex() == 1
         if combo_box.currentIndex() > 0:
             self.res[field["name"]] = combo_box.currentText()
 
@@ -176,14 +181,8 @@ class ProdClientMainScreen(Screen):
 
     def on_calculate_clicked(self):
         self.update_location_data()
-        # REMOVE
-        self.res["city"] = "חיפה"
-        self.res["street"] = "הרב מימון"
-        self.res["geo_location"] = [32.805, 35.0079]
-        self.res["price_level"] = "2"
-        self.res["type"] = "חומוסייה"
 
-        if None in [self.res[key] for key in self.res if key != "type"]:
+        if None in [self.res[key] for key in self.res]:
             self.show_error_message_box(("Error", "One or more of the fields are empty\nPlease fill in the missing values"))
         else:
             self.on_calc_clicked()

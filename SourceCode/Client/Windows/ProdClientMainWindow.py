@@ -39,7 +39,8 @@ class ProdClientMainWindow(QMainWindow):
         QCoreApplication.processEvents()
         user_selection = self.prod_main_screen.res
         rest_types = self.prod_main_screen.data_config["type"]
-        run_prediction_worker = RunPredictionWorker("./ConfigFiles/prediction-config.json", user_selection, rest_types)
+        find_best_rest_type = self.prod_main_screen.find_best_rest_type
+        run_prediction_worker = RunPredictionWorker("./ConfigFiles/prediction-config.json", user_selection, rest_types, find_best_rest_type)
         run_prediction_worker.signals.finished.connect(self.on_prediction_finished)
         self.thread_pool.start(run_prediction_worker)
 
