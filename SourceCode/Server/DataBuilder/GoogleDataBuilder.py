@@ -1,10 +1,11 @@
 from googleplaces import GooglePlaces, types, lang, ranking
 
-from SourceCode.Server.DataParser.DataFiller import *
 import time
 import json
 import math
 import pandas as pd
+
+from SourceCode.Server.Utils.Utils import is_open_on_saturday
 
 
 class GoogleDataBuilder:
@@ -116,7 +117,7 @@ class GoogleDataBuilder:
         data.update(self.get_activity_hours_for_day(activity_hours[5], "friday"))
         data.update(self.get_activity_hours_for_day(activity_hours[6], "saturday"))
 
-        data["open_on_saturday"] = ActivityTimeFiller.is_open_on_saturday(activity_hours[5], activity_hours[6])
+        data["open_on_saturday"] = is_open_on_saturday(activity_hours[5], activity_hours[6])
 
         return data
 

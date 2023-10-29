@@ -210,7 +210,7 @@ class ProdClientMainScreen(Screen):
     def on_calculate_clicked(self):
         self.update_location_data()
 
-        if None in [self.res[key] for key in self.res]:
+        if None in [self.res[field["name"]] for field in self.config["fields"]]:
             self.show_error_message_box(("Error", "One or more of the fields are empty\nPlease fill in the missing values"))
         else:
             self.on_calc_clicked()

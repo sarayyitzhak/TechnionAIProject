@@ -1,6 +1,8 @@
-from SourceCode.Server.Algo.ID3Experiments import *
-from SourceCode.Server.DataParser.DataFiller import ActivityTimeFiller, DataFiller
+from SourceCode.Server.Algo.Prediction import *
 from SourceCode.Server.Algo.AlgoUtils import *
+from SourceCode.Server.DataParser.DataParser import DataParser
+from SourceCode.Server.Utils.Utils import is_open_on_saturday
+import json
 
 
 class RunPrediction:
@@ -32,18 +34,19 @@ class RunPrediction:
     def res_calc_features_by_activity(self):
         friday_activity = [self.user_selection["friday_open"], self.user_selection["friday_close"]]
         saturday_activity = [self.user_selection["saturday_open"], self.user_selection["saturday_close"]]
-        data = {"open_on_saturday": ActivityTimeFiller.is_open_on_saturday(friday_activity, saturday_activity)}
+        data = {"open_on_saturday": is_open_on_saturday(friday_activity, saturday_activity)}
         return data
 
     def res_calc_features_by_loc(self):
         data = {}
         try:
             with open(self.data_parser_config_path, 'r', encoding='utf-8') as f:
-                data_filler = DataFiller(json.load(f))
-                data_filler.get_places_data()
-                data.update(data_filler.get_places_data_by_point(tuple(self.user_selection["geo_location"]), None))
-                data_filler.get_cbs_data()
-                cbs_data = data_filler.get_cbs_data_by_address(self.user_selection["city"], self.user_selection["street"])
+                config = json.load(f)
+                data_parser = DataParser(config)
+                data_parser.get_places_data()
+                data.update(data_parser.get_places_data_by_point(tuple(self.user_selection["geo_location"]), None))
+                data_parser.get_cbs_data()
+                cbs_data = data_parser.get_cbs_data_by_address(self.user_selection["city"], self.user_selection["street"])
                 data.update(cbs_data if cbs_data is not None else {"percent of religious": None, "socio-economic rank": None})
         except IOError:
             print("Error")
