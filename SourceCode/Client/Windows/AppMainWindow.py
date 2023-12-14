@@ -9,7 +9,7 @@ from PyQt5.QtWidgets import QMainWindow
 from SourceCode.Client.Workers.RunPredicitionWorker import RunPredictionWorker
 
 
-class ProdClientMainWindow(QMainWindow):
+class AppMainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.screens = QStackedWidget()
@@ -49,10 +49,13 @@ class ProdClientMainWindow(QMainWindow):
         self.screens.setCurrentWidget(self.prod_results_screen)
 
     def change_to_prod_main_screen(self):
+        self.screens.setWindowTitle("Restaurant Rating Predictor | Production")
         self.screens.setCurrentWidget(self.prod_main_screen)
 
     def change_to_dev_main_screen(self):
+        self.screens.setWindowTitle("Restaurant Rating Predictor | Development")
         self.screens.setCurrentWidget(self.dev_main_screen)
 
     def change_to_welcome_screen(self):
+        self.screens.setWindowTitle("Restaurant Rating Predictor")
         self.screens.setCurrentWidget(self.welcome_screen)
