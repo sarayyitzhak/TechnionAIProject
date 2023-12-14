@@ -6,6 +6,7 @@ import math
 import pandas as pd
 
 from SourceCode.Server.Utils.Utils import is_open_on_saturday
+from SourceCode.Server.Utils.Utils import Time
 
 
 class GoogleDataBuilder:

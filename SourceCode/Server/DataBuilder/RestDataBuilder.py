@@ -1,5 +1,5 @@
 from selenium import webdriver
-from selenium.common import NoSuchElementException
+from selenium.common import NoSuchElementException, SessionNotCreatedException
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -8,13 +8,19 @@ import re
 import math
 import pandas as pd
 
+from SourceCode.Server.Utils.Utils import AppException
+
 
 class RestDataBuilder:
 
     def __init__(self, config, progress_func):
         service = Service(executable_path=config["chrome_driver_path"])
         options = webdriver.ChromeOptions()
-        self.driver = webdriver.Chrome(service=service, options=options)
+        options.add_experimental_option('excludeSwitches', ['enable-logging'])
+        try:
+            self.driver = webdriver.Chrome(service=service, options=options)
+        except SessionNotCreatedException as e:
+            raise AppException(e.msg)
         self.driver.minimize_window()
         self.api_url = config['api_url']
         self.web_paths = config['web_paths']

@@ -1,6 +1,6 @@
 import numpy as np
 
-from SourceCode.Server.Algo.DecisonTree import *
+from SourceCode.Server.Algo.DecisionTree import *
 
 
 class DecisionTreeRegressor:

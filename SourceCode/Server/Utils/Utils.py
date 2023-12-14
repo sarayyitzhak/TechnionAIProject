@@ -38,3 +38,13 @@ def is_open_on_saturday(friday_activity, saturday_activity):
     open_on_friday = Time(total_minutes=friday_activity[1]).is_later_than(latest_closing_time_friday)
     open_on_saturday = Time(total_minutes=saturday_activity[0]).is_earlier_than(earliest_opening_time_saturday) and saturday_activity[0] != -1
     return open_on_friday or open_on_saturday
+
+
+class AppException(Exception):
+
+    def __init__(self, msg):
+        super().__init__()
+        self.msg = msg
+
+    def __str__(self) -> str:
+        return self.msg

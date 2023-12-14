@@ -2,6 +2,7 @@ from PyQt5.QtCore import *
 
 import time
 from SourceCode.Common.FileUtils import *
+from SourceCode.Server.Utils.Utils import AppException
 
 
 class WorkerSignals(QObject):
@@ -35,7 +36,11 @@ class Worker(QRunnable):
         read_from_file(self.config_path, self.on_config_file_read, self.signals.error.emit, self.on_finished)
 
     def on_config_file_read(self, config):
-        self.result = self.inner_run(config)
+        try:
+            self.result = self.inner_run(config)
+        except AppException as e:
+            self.signals.error.emit(("An error occurred", e.msg))
+
         self.post_inner_run()
         if self.delay_after_run:
             time.sleep(2)
