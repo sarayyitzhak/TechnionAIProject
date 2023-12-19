@@ -1,5 +1,5 @@
-from SourceCode.Server.Algo.Prediction import *
-from SourceCode.Server.Algo.AlgoUtils import *
+from SourceCode.Server.Core.Prediction import *
+from SourceCode.Server.Operations.OperationUtils import *
 from SourceCode.Server.DataParser.DataParser import DataParser
 from SourceCode.Server.Utils.Utils import is_open_on_saturday
 import json

@@ -1,6 +1,6 @@
-from SourceCode.Server.Algo.DecisionTreeRegressor import *
-from SourceCode.Server.Algo.Prediction import *
-from SourceCode.Server.Algo.AlgoUtils import *
+from SourceCode.Server.Core.DecisionTreeRegressor import *
+from SourceCode.Server.Core.Prediction import *
+from SourceCode.Server.Operations.OperationUtils import *
 import numpy as np
 
 

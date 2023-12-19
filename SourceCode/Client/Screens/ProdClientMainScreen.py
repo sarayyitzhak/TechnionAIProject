@@ -71,8 +71,9 @@ class ProdClientMainScreen(Screen):
     def create_check_box_layout(self):
         check_box_layout = QGridLayout()
 
+        self.create_text_label(check_box_layout, "Please enter your restaurants options:", 0, 0)
         for idx, field in enumerate([field for field in self.bool_fields]):
-            self.create_check_box(check_box_layout, field, int(idx / 3), idx % 3)
+            self.create_check_box(check_box_layout, field, int(idx / 3) + 1, idx % 3)
 
         return check_box_layout
 

@@ -1,1 +1,0 @@
-download chrome driver from: "https://chromedriver.chromium.org/downloads" to current folder, according to your chrome version.

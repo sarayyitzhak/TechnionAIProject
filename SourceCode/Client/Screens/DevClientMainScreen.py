@@ -10,7 +10,7 @@ from SourceCode.Client.Workers.RunAlgorithmWorker import *
 from SourceCode.Client.Workers.ProdDataConfigCreatorWorker import *
 from SourceCode.Client.Workers.TuneHyperParamsWorker import *
 from SourceCode.Client.Workers.Worker import *
-from SourceCode.Server.Algo.ShowHyperParamsAnalysis import *
+from SourceCode.Server.Operations.ShowHyperParamsAnalysis import *
 
 
 class DevClientMainScreen(Screen):

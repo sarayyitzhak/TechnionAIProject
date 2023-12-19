@@ -1,6 +1,6 @@
 from SourceCode.Client.Workers.Worker import Worker
-from SourceCode.Server.Algo.AlgoUtils import *
-from SourceCode.Server.Algo.RunPrediction import RunPrediction
+from SourceCode.Server.Operations.OperationUtils import *
+from SourceCode.Server.Operations.RunPrediction import RunPrediction
 
 
 class RunPredictionWorker(Worker):

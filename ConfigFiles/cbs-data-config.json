@@ -19,7 +19,7 @@
     "rows_to_skip": null
   },
   "ser": {
-    "file": "./DataFiles/CbsFiles/socio_economic_rank_2015.xls",
+    "file": "./DataFiles/CbsFiles/socio_economic_rank.xls",
     "sheet_name": 0,
     "columns": "A:C, E:G",
     "columns_names": ["סמל יישוב", "שם יישוב", "סמל אס", "ערך מדד", "דירוג", "אשכול"],

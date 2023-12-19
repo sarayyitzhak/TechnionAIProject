@@ -1,6 +1,6 @@
 from SourceCode.Common.FileUtils import write_to_file
-from SourceCode.Server.Algo.AlgoUtils import *
-from SourceCode.Server.Algo.DecisionTreeRegressor import *
+from SourceCode.Server.Operations.OperationUtils import *
+from SourceCode.Server.Core.DecisionTreeRegressor import *
 
 
 class RunAlgorithm:

@@ -1,5 +1,5 @@
 from SourceCode.Client.Workers.Worker import Worker
-from SourceCode.Server.Algo.TuneHyperParams import TuneHyperParams
+from SourceCode.Server.Operations.TuneHyperParams import TuneHyperParams
 
 
 class TuneHyperParamsWorker(Worker):
