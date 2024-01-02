@@ -21,3 +21,5 @@ from: "https://www.cbs.gov.il/he/mediarelease/doclib/2022/026/%D7%9E%D7%A4%D7%AA
 
 # .\DataFiles\RestFiles\chromedriver.exe - driver that we use for selenium module
 download chrome driver from: "https://chromedriver.chromium.org/downloads" to .\DataFiles\RestFiles folder, according to your chrome version.
+
+More explanations about files in this project in: Documents\Software Guide.pdf
