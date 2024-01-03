@@ -20,6 +20,7 @@ from: "https://www.cbs.gov.il/he/mediarelease/doclib/2022/026/%D7%9E%D7%A4%D7%AA
 # .\DataFiles\GoogleFiles\full-google-data.json - data file that we made by google api that contains all the google data (there is option to use this file or use the google api again).
 
 # .\DataFiles\RestFiles\chromedriver.exe - driver that we use for selenium module
-download chrome driver from: "https://chromedriver.chromium.org/downloads" to .\DataFiles\RestFiles folder, according to your chrome version.
+download chrome driver from: "https://chromedriver.chromium.org/downloads" to DataFiles\RestFiles folder, according to your chrome version.
+current version: 120.0.6099.109
 
 More explanations about files in this project in: Documents\Software Guide.pdf
